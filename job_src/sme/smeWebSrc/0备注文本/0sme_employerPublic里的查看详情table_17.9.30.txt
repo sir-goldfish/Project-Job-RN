@@ -1,0 +1,91 @@
+//***.details-info里的结构
+<tr class="details-info">
+    <td colspan="6">
+        <ul>
+            <li class="info-top f-clearfix"></li>
+            <li class="info-title f-clearfix">
+                <div class="info-org">服务明细</div>
+                <div class="info-desc">服务描述</div>
+                <div class="info-price">服务金额</div>
+            </li>
+            <li class="info-content f-clearfix">
+                <div class="info-org"><?php echo isset($service_user['company'])?$service_user['company']:"";?></div>
+                <div class="info-desc">
+                    <?php echo isset($service_category['memo'])?$service_category['memo']:"";?>
+                </div>
+                <div class="info-price"><?php echo isset($order['pay_amount'])?$order['pay_amount']:0;?></div>
+            </li>
+            <li class="info-sum f-clearfix">
+                <div class="sum">合计：<span><?php echo isset($order['pay_amount'])?$order['pay_amount']:0;?></span></div>
+            </li>
+            <li class="info-btm f-clearfix">
+                <div class="btn-group">
+                    <a href="<?php echo '/orderpay_'.get_key_val($order['oid']);?>" class="continue-pay">继续支付</a>
+                </div>
+            </li>
+        </ul>
+    </td>
+</tr>
+//***.details-info里的css
+td {
+      padding: 0;
+    }
+    li {
+      & > * {
+        padding: 15px 10px;
+        float: left;
+      }
+    }
+    li + li {
+      border-top: 1px solid #ddd;
+    }
+    .info-org, .info-desc, .info-price {
+      margin-left: -1px;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+    .info-org {
+      width: 258px;
+    }
+    .info-desc {
+      width: 460px;
+    }
+    .info-price {
+      width: 138px;
+      border-right: none;
+    }
+    .info-top {
+      padding: 15px 0;
+    }
+    .info-title {
+      font-weight: bold;
+    }
+    .info-sum {
+      .sum {
+        float: right;
+        margin-right: 24px;
+        font-weight: bold;
+        span {
+          margin-left: 15px;
+          font-weight: normal;
+        }
+      }
+    }
+    .info-btm {
+      .btn-group {
+        float: right;
+        margin-right: 24px;
+        .continue-pay {
+          width: 150px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          color: #fff;
+          background-color: $onColorOrange;
+          border-radius: 5px;
+          &:active {
+            background-color: $onColorOrange - 10%;
+          }
+        }
+      }
+    }

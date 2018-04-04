@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfFixedHeadHeight: 22.7rem;
+$selfFixedFootHeight: 4.2rem;
+
+/* shop-info-panel */
+.shop-info-panel {
+  height: 100%;
+  padding-top: 2.9rem;
+  background-image: url(../resource/img/par_pic002.jpg);
+  background-color: #efeff4;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  overflow: hidden;
+  .upgrade-btn {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+  .avatar {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    border: .4rem solid rgba(0, 0, 0, .15);
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+  }
+  .name-wrap {
+    margin-bottom: 1.9rem;
+    text-align: center;
+    .name {
+      padding: .2rem;
+      vertical-align: middle;
+      font-size: 1rem;
+      background-color: rgba(0, 0, 0, .15);
+      border-radius: 2.2rem;
+      .icon {
+        display: inline-block;
+        width: 1.7rem;
+        height: 1.7rem;
+        vertical-align: middle;
+        background-image: url(../resource/img/par_icon000.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 50%;
+      }
+      .text {
+        display: inline-block;
+        padding: 0 .5rem;
+        vertical-align: middle;
+        color: #fff;
+      }
+    }
+  }
+  .info-card {
+    display: flex;
+    width: 100%;
+    height: 7.8rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.3rem;
+    text-align: center;
+    background-image: url(../resource/img/par_pic005.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: .4rem;
+    .info-item {
+      height: 100%;
+      color: #fff;
+      .num {
+        margin-bottom: .6rem;
+        font-size: 1.7rem;
+        font-family: Arial;
+      }
+    }
+    .info-item + .info-item {
+      border-left: 1px solid #5d6b76;
+    }
+  }
+  &.vip {
+    background-image: url(../resource/img/par_pic003.jpg);
+    .name-wrap {
+      .name {
+        .icon {
+          background-image: url(../resource/img/par_icon001.png);
+        }
+      }
+    }
+  }
+  &.city {
+    background-image: url(../resource/img/par_pic004.jpg);
+    .name-wrap {
+      .name {
+        .icon {
+          background-image: url(../resource/img/par_icon002.png);
+        }
+      }
+    }
+  }
+}
+
+/* shop-body */
+.shop-body {
+  .content-container {
+    background-color: #fff;
+  }
+  .products-list {
+    .product-card {
+      $selfRightWidth: 7rem;
+      .card-inner {
+        width: 100%;
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      &:last-child {
+        .card-inner {
+          border-bottom: none;
+        }
+      }
+      &:first-child {
+        .card-inner {
+          border-bottom: 1px solid #e5e5e5;
+        }
+      }
+      .desc {
+        padding-right: 1rem;
+        margin-right: $selfRightWidth;
+        .title {
+          font-size: 1.4rem;
+        }
+        .para {
+          margin-top: .5rem;
+        }
+      }
+      .price-wrap {
+        position: relative;
+        z-index: 1;
+        float: right;
+        margin-left: - $selfRightWidth;
+        text-align: right;
+        .price {
+          & > * {
+            display: inline;
+          }
+          .num {
+            font-size: 1.4rem;
+          }
+        }
+        .badge {
+          padding: .3rem;
+          margin-top: .5rem;
+          color: #fff;
+          background-color: $globeColorStress;
+          border-radius: 1.1rem;
+          & > * {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}

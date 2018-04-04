@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* head-bg */
+.head-bg {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+/* login-container */
+.login-container {
+  .login-tab {
+    $selfBorderColor: #e5e5e5;
+    $selfHeight: 3.7rem;
+    .tab-nav {
+      display: flex;
+      width: 100%;
+      border-top: 1px solid $selfBorderColor;
+    }
+    .tab-nav-item {
+      flex-basis: 50%;
+      height: $selfHeight;
+      line-height: $selfHeight;
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: #fafafa;
+      &:active {
+        color: inherit;
+      }
+      &.current {
+        background-color: #eaeaea;
+      }
+    }
+    .tab-nav-item + .tab-nav-item {
+      border-left: 1px solid $selfBorderColor;
+    }
+    .tab-content-item {
+      display: none;
+      &.current {
+        display: block;
+      }
+    }
+    .m-input-group {
+      margin-top: 0;
+    }
+  }
+  .login-foot {
+    margin-top: 4.2rem;
+  }
+}

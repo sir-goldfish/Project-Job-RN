@@ -1,0 +1,74 @@
+body { background-color: #f7f7f7; }
+
+/* head-container */
+.head-container { height: 174px; background: url(../resource/img/sme_brand_banner2.jpg) no-repeat top center; }
+
+.head-container .search-wrapper { padding-top: 58px; }
+
+.head-container .search-box { position: relative; width: 990px; height: 57px; margin: 0 auto; border-radius: 57px; }
+
+.head-container .search-box .icon { position: absolute; top: 14px; left: 22px; font-size: 29px; color: #bbb; }
+
+.head-container .search-box .search-btn { position: absolute; top: 0; right: 0; width: 230px; height: 100%; line-height: 57px; text-align: center; font-size: 20px; color: #fff; background-color: #f78e24; border-top-right-radius: 57px; border-bottom-right-radius: 57px; }
+
+.head-container .search-box .search-btn:hover { background-color: #ed841a; }
+
+.head-container .search-box .search-btn:active { background-color: #d97006; }
+
+.head-container .search-box .search-input { display: block; width: 663px; height: 55px; padding: 0 260px 0 65px; line-height: 55px; border: 1px solid #bbb; border-radius: 57px; }
+
+.head-container .search-box .search-input:focus { border-color: #f78e24; }
+
+.head-container .search-box .search-input:focus + .icon { color: #f78e24; }
+
+/* head-crumbs-nav */
+.head-crumbs-nav { padding-top: 9px; padding-bottom: 9px; }
+
+.head-crumbs-nav .m-crumbs-nav { background-color: transparent; }
+
+/* result-container */
+.result-container { padding-bottom: 10px; }
+
+.result-container .result-table-wrapper { min-height: 500px; padding: 40px; background-color: #fff; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.result-container .result-empty { padding-top: 50px; padding-bottom: 50px; text-align: center; line-height: 1.5; font-size: 20px; color: #333; }
+
+.result-container .result-table { border-collapse: collapse; border-spacing: 0; width: 100%; text-align: center; font-size: 14px; color: #666; }
+
+.result-container .result-table .keyword { display: inline; color: #f00; }
+
+.result-container .result-table td { padding-left: 26px; padding-right: 26px; border: 1px solid #ddd; }
+
+.result-container .result-table td.category-cell { width: 242px; }
+
+.result-container .result-table td.group-cell { width: 439px; }
+
+.result-container .result-table td.name-cell { width: 439px; }
+
+.result-container .result-table thead { font-size: 18px; color: #333; }
+
+.result-container .result-table thead td { padding-top: 22px; padding-bottom: 22px; }
+
+.result-container .result-table tbody td { padding-top: 17px; padding-bottom: 17px; }
+
+.result-container .result-table tbody td.category-cell .desc { max-width: 170px; margin-left: auto; margin-right: auto; color: inherit; }
+
+.result-container .result-table tbody td.category-cell .desc .icon { width: 58px; height: 58px; margin: 0 auto 14px; line-height: 58px; font-size: 38px; color: #03d6d0; border: 1px solid #03d6d0; border-radius: 50%; }
+
+.result-container .result-table tbody td.category-cell .desc .text { margin-top: 10px; line-height: 22px; font-size: 16px; color: #333; }
+
+.result-container .result-table tbody td.category-cell .desc:hover { color: #03d6d0; }
+
+.result-container .result-table tbody td.category-cell .desc:hover .icon { color: #fff; background-color: #03d6d0; }
+
+.result-container .result-table tbody td.category-cell .desc:hover .text { color: inherit; }
+
+.result-container .result-table tbody td.group-cell { line-height: 24px; }
+
+.result-container .result-table tbody td.group-cell a { line-height: inherit; color: inherit; }
+
+.result-container .result-table tbody td.group-cell a:hover { text-decoration: underline; color: #03d6d0; }
+
+.result-container .result-table tbody td.name-cell { line-height: 24px; }
+
+.result-container .result-table tbody tr.divide-tr td { padding-top: 5px; padding-bottom: 5px; border: none; }

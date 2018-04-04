@@ -1,0 +1,18 @@
+/* security-info */
+.security-info { padding: 30px 0; }
+
+.security-info .info-item { margin-bottom: 36px; font-size: 0; }
+
+.security-info .info-item > * { display: inline-block; margin-right: 5px; vertical-align: top; font-size: 14px; color: #363636; word-wrap: break-word; word-break: break-all; }
+
+.security-info .info-item .title { width: 116px; text-align: right; }
+
+.security-info .info-item .value { width: 206px; }
+
+.security-info .info-item .btn-wrap { width: 160px; }
+
+.security-info .info-item .btn-wrap a { color: #363636; }
+
+.security-info .info-item .btn-wrap a:hover { color: #f78e24; }
+
+.security-info .info-item .notice { width: 320px; color: #999; }

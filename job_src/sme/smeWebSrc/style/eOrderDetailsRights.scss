@@ -1,0 +1,392 @@
+@charset "utf-8";
+@import "publicVariable";
+
+.m-crumbs-nav {
+  margin-bottom: 18px;
+}
+
+/* rights-content-container */
+.rights-content-container {
+  background-color: #fff;
+  .content-title {
+    padding: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #363636;
+  }
+  .content-body {
+    margin: 0 30px;
+  }
+}
+
+/* rights-path-container */
+.rights-path-container {
+  padding: 62px 0;
+  border-top: 1px solid #eee;
+  .steps-nav {
+    text-align: center;
+    font-size: 0;
+  }
+  .step-item {
+    display: inline-block;
+    vertical-align: top;
+    .icon, .text {
+      vertical-align: middle;
+    }
+    .icon {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 28px;
+      color: #aaa;
+      background-color: #fff;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+    }
+    .text {
+      margin-left: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #aaa;
+    }
+  }
+  .step-item + .step-item {
+    margin-left: 30px;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 77px;
+      height: 5px;
+      margin-right: 28px;
+      vertical-align: middle;
+      background: url(../resource/img/sme_member_sprites2.png) no-repeat 0 0;
+    }
+  }
+  .step-item.current-step, .step-item.passed-step {
+    .icon {
+      color: #fff;
+      background-color: $onColorOrange;
+      border-color: $onColorOrange;
+    }
+    .text {
+      color: $onColorOrange;
+    }
+    &:before {
+      background-position-y: -7px;
+    }
+  }
+}
+
+/* rights-btm-info */
+.rights-btm-info {
+  padding-bottom: 30px;
+  font-size: 14px;
+  color: #333;
+  .info-item {
+    float: left;
+    line-height: 32px;
+  }
+  .info-item + .info-item {
+    margin-left: 32px;
+  }
+  .details-btn {
+    width: 129px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: $onColorOrange;
+    &:active {
+      background-color: $onColorOrange - 20%;
+    }
+  }
+}
+
+/* rights-status-desc */
+.rights-status-desc {
+  width: 100%;
+  padding: 13px 0;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #aaa;
+  .icon {
+    margin-right: 17px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 26px;
+    font-weight: normal;
+  }
+  &.pass {
+    background-color: $onColorOrange;
+  }
+}
+
+/* presentation-cards-container */
+.presentation-cards-container {
+  width: 100%;
+  margin-top: 10px;
+  .presentation-cards {
+    width: 487px;
+  }
+  .info-card {
+    background-color: #fff;
+    .card-title {
+      border-bottom: 1px solid #ddd;
+      .text {
+        position: relative;
+        padding: 16px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 0;
+          border-bottom: 1px solid #1d2088;
+        }
+      }
+    }
+    .card-body {
+      margin: 0 30px;
+      padding: 28px 0 33px 0;
+      .avatar {
+        float: left;
+        width: 68px;
+        height: 68px;
+        margin-right: -74px;
+        border: 3px solid #eee;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .desc-container {
+        margin-left: 108px;
+        .name {
+          margin: 15px 0 10px 0;
+          font-size: 16px;
+          color: #333;
+        }
+        .desc-text {
+          line-height: 24px;
+          font-size: 13px;
+          color: #666;
+        }
+      }
+    }
+  }
+  .presentation-list {
+    min-height: 455px;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+  .presentation-card {
+    margin: 0 30px;
+    .card-title {
+      padding: 19px 0 7px 0;
+      font-size: 13px;
+      color: #333;
+    }
+    .card-body {
+      padding: 20px 0;
+      .avatar {
+        float: left;
+        width: 68px;
+        height: 68px;
+        margin-right: -74px;
+        border: 3px solid #eee;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .desc-container {
+        margin-left: 108px;
+        .desc-text {
+          line-height: 24px;
+          font-size: 13px;
+          color: #666;
+        }
+        .desc-text + .desc-text {
+          margin-top: 10px;
+        }
+        .proof-group {
+          .proof-title {
+            float: left;
+            width: 42px;
+            margin-right: -42px;
+          }
+          .proof-list {
+            margin-left: 42px;
+            overflow: hidden;
+          }
+          .proof-list-inner {
+            margin-left: -15px;
+          }
+          .proof-item {
+            float: left;
+            margin-left: 15px;
+            line-height: inherit;
+            color: #1d2088;
+            &:hover {
+              color: $onColorOrange;
+            }
+          }
+        }
+      }
+    }
+  }
+  .presentation-card + .presentation-card {
+    border-top: 1px dashed #eee;
+  }
+  .presentation-handle {
+    margin: 0 30px;
+    padding: 10px 0 20px 0;
+    .handle-btn-group {
+      margin-bottom: 24px;
+      font-size: 0;
+      .handle-btn {
+        font-size: 13px;
+        color: #333;
+        &:hover {
+          color: $onColorOrange;
+        }
+        &.current {
+          color: $onColorOrange;
+        }
+      }
+      .handle-btn + .handle-btn {
+        margin-left: 15px;
+      }
+    }
+    .handle-body {
+      .continue-content {
+        textarea {
+          resize: none;
+          width: 405px;
+          height: 140px;
+          padding: 8px 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+        }
+        .upload-btn {
+          position: relative;
+          display: inline-block;
+          margin-bottom: 10px;
+          line-height: 16px;
+          font-size: 14px;
+          color: #1d2088;
+          cursor: default;
+          overflow: hidden;
+          i {
+            margin-right: 2px;
+            vertical-align: -1px;
+          }
+          input[type='file'] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            filter: alpha(opacity=0);
+          }
+          .uploadify {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            filter: alpha(opacity=0);
+          }
+          &:hover {
+            color: $onColorOrange;
+          }
+        }
+        .proof-group {
+          margin-bottom: 25px;
+          line-height: 20px;
+          font-size: 13px;
+          color: #666;
+          .proof-title {
+            float: left;
+            width: 80px;
+            margin-right: -80px;
+          }
+          .proof-list {
+            margin-left: 80px;
+            overflow: hidden;
+          }
+          .proof-list-inner {
+            margin: -5px 0 0 -5px;
+          }
+          .proof-item {
+            float: left;
+            margin: 5px 0 0 5px;
+            padding: 0 4px;
+            color: #fff;
+            background-color: #81cef2;
+            a {
+              font-size: inherit;
+              color: inherit;
+              &:hover {
+                color: $onColorOrange;
+              }
+            }
+            &:hover {
+              background-color: #81cef2 - 10%;
+            }
+          }
+        }
+        .btn-group {
+          text-align: right;
+          .submit-btn {
+            width: 105px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            background-color: $onColorOrange;
+            border-radius: 5px;
+            &:active {
+              background-color: $onColorOrange - 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+  //个性
+  .employer-cards {
+    float: left;
+  }
+  .facilitator-cards {
+    float: right;
+    .info-card {
+      .card-title {
+        .text:after {
+          border-bottom-color: #ff0000;
+        }
+      }
+    }
+  }
+}

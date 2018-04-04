@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* head-banner */
+.head-banner { position: relative; width: 100%; overflow: hidden; }
+
+.head-banner .banner-pic { float: left; display: block; }
+
+.head-banner .banner-pic img { display: block; width: 100%; height: 15.4rem; }
+
+.head-banner .swiper-pagination { position: absolute; bottom: .5rem; }
+
+.head-banner .swiper-pagination .swiper-pagination-bullet { background-color: #fff; opacity: .6; filter: alpha(opacity=60); }
+
+.head-banner .swiper-pagination .swiper-pagination-bullet-active, .head-banner .swiper-pagination .swiper-pagination-bullet:hover { opacity: 1; filter: alpha(opacity=100); }
+
+/* inquiry-form-container */
+.inquiry-container { background-color: #fff; }
+
+.inquiry-container .inquiry-form-container { padding: 2.25rem 0; font-size: 1.3rem; }
+
+.inquiry-container .inquiry-form-container .hint-info { padding: .75rem 1.5rem; font-size: 1.1rem; color: #999; }
+
+.inquiry-container .inquiry-form-container .input-box { position: relative; width: 100%; height: 4rem; border-radius: 4rem; overflow: hidden; }
+
+.inquiry-container .inquiry-form-container .input-box .title { position: absolute; top: 0; left: 0; width: 8.5rem; height: 100%; line-height: 4rem; text-align: center; color: #fff; background-color: #f78e24; }
+
+.inquiry-container .inquiry-form-container .input-box .title.star-title:before { content: '*'; display: inline-block; margin-right: .5rem; color: #f00; }
+
+.inquiry-container .inquiry-form-container .input-box input[type='text'] { width: 100%; height: 100%; padding: 0 1rem 0 9.5rem; vertical-align: middle; font-size: 1.3rem; border: 1px solid #c9c9c9; border-radius: 4rem; }
+
+.inquiry-container .inquiry-form-container .input-box input[type='text']:focus { border-color: #f78e24; }
+
+.inquiry-container .inquiry-form-container .input-box select { width: 100%; height: 100%; padding: 0 1rem 0 9.5rem; vertical-align: middle; font-size: 1.3rem; border: 1px solid #c9c9c9; border-radius: 4rem; }
+
+.inquiry-container .inquiry-form-container .input-box select:focus { border-color: #f78e24; }
+
+.inquiry-container .inquiry-form-container .form-btn { display: block; width: 100%; height: 4rem; line-height: 4rem; text-align: center; font-size: 1.5rem; color: #fff; background-color: #f78e24; border-radius: 4rem; box-shadow: 0 0.5rem 0.5rem 0 rgba(249, 144, 3, 0.3); }
+
+.inquiry-container .inquiry-form-container .form-btn:active { background-color: #de750b; }
+
+/* 共用section-title */
+.section-title { padding: 1.5rem 0; text-align: center; font-size: 1.8rem; color: #333; border-bottom: .05rem solid #ddd; }
+
+/* reason-section */
+.reason-section { padding-bottom: 2.25rem; margin-top: 1rem; background-color: #fff; }
+
+.reason-section .reason-desc { padding-top: 2rem; text-align: center; font-size: 0; }
+
+.reason-section .reason-desc li { display: inline-block; width: 50%; margin-bottom: 2rem; vertical-align: top; }
+
+.reason-section .reason-desc .card { width: 10.2rem; height: 3.75rem; margin: 0 auto; line-height: 3.5rem; font-size: 1.5rem; font-weight: bold; color: #03d6d0; background: url(../resource/img/smep_bgi5.png) no-repeat center; background-size: 100%; }
+
+.reason-section .reason-desc .text { margin-top: 1rem; line-height: 1.5rem; font-size: 1rem; color: #333; }
+
+.reason-section .foot-handle { text-align: center; }
+
+.reason-section .foot-handle .inquiry-btn { width: 15rem; height: 3.5rem; vertical-align: middle; line-height: 3.5rem; text-align: center; font-size: 1.5rem; color: #fff; background-color: #f78e24; border-radius: 3.5rem; box-shadow: 0 0.5rem 0.5rem 0 rgba(249, 144, 3, 0.3); }
+
+.reason-section .foot-handle .inquiry-btn:active { background-color: #de750b; }
+
+/* advantage-section */
+.advantage-section { padding-bottom: 2.25rem; margin-top: 1rem; background-color: #fff; }
+
+.advantage-section .advantage-desc { padding-top: 3.75rem; padding-bottom: 2rem; text-align: center; font-size: 0; }
+
+.advantage-section .advantage-desc dl { position: relative; display: inline-block; width: 13.5rem; height: 12.5rem; padding-top: 1.6rem; padding-left: 2rem; margin-left: .4rem; margin-right: .4rem; vertical-align: top; text-align: justify; border: 0.1rem dotted #03d6d0; border-radius: .2rem; }
+
+.advantage-section .advantage-desc dl dt { position: absolute; top: -1.05rem; left: 50%; width: 6rem; height: 2rem; margin-left: -3rem; line-height: 2rem; text-align: center; font-size: 1rem; font-weight: bold; color: #fff; background-color: #03d6d0; border-radius: 2rem; }
+
+.advantage-section .advantage-desc dl dd { position: relative; font-size: .9rem; color: #03d6d0; }
+
+.advantage-section .advantage-desc dl dd:before { content: ''; position: absolute; top: .3rem; left: -1rem; display: block; width: 0; height: 0; border-left: 0.4rem solid #03d6d0; border-right: none; border-top: .25rem solid transparent; border-bottom: .25rem solid transparent; }
+
+.advantage-section .advantage-desc dl dd + dd { margin-top: .9rem; }
+
+.advantage-section .advantage-desc dl.right-desc { border-color: #999; }
+
+.advantage-section .advantage-desc dl.right-desc dt { background-color: #999; }
+
+.advantage-section .advantage-desc dl.right-desc dd { color: #333; }
+
+.advantage-section .advantage-desc dl.right-desc dd:before { border-left-color: #666; }
+
+.advantage-section .foot-handle { text-align: center; }
+
+.advantage-section .foot-handle .inquiry-btn { width: 15rem; height: 3.5rem; vertical-align: middle; line-height: 3.5rem; text-align: center; font-size: 1.5rem; color: #fff; background-color: #f78e24; border-radius: 3.5rem; box-shadow: 0 0.5rem 0.5rem 0 rgba(249, 144, 3, 0.3); }
+
+.advantage-section .foot-handle .inquiry-btn:active { background-color: #de750b; }
+
+/* certificate-section */
+.certificate-section { padding-bottom: 2.25rem; margin-top: 1rem; background-color: #fff; }
+
+.certificate-section .certificate-desc { position: relative; height: 12rem; margin: 3.8rem auto; background: url(../resource/img/smep_bgi6.png) no-repeat center; background-size: 12rem 12rem; }
+
+.certificate-section .certificate-desc li { position: absolute; text-align: center; }
+
+.certificate-section .certificate-desc li .icon { width: 4.2rem; height: 4.2rem; margin: 0 auto; line-height: 4.2rem; font-size: 2.8rem; color: #03d6d0; border: 0.05rem solid #03d6d0; border-radius: 50%; }
+
+.certificate-section .certificate-desc li .text { margin-top: .6rem; font-size: .9rem; color: #333; }
+
+.certificate-section .foot-handle { text-align: center; }
+
+.certificate-section .foot-handle .inquiry-btn { width: 15rem; height: 3.5rem; vertical-align: middle; line-height: 3.5rem; text-align: center; font-size: 1.5rem; color: #fff; background-color: #f78e24; border-radius: 3.5rem; box-shadow: 0 0.5rem 0.5rem 0 rgba(249, 144, 3, 0.3); }
+
+.certificate-section .foot-handle .inquiry-btn:active { background-color: #de750b; }
+
+/* path-section */
+.path-section { padding-bottom: 2.25rem; margin-top: 1rem; background-color: #fff; }
+
+.path-section .path-desc { padding-top: 2.5rem; padding-bottom: 3.3rem; text-align: center; font-size: 0; }
+
+.path-section .path-desc li { display: inline-block; vertical-align: top; text-align: center; }
+
+.path-section .path-desc li.item { font-size: .8rem; color: #333; min-width: 6rem; }
+
+.path-section .path-desc li.item .icon { width: 4rem; height: 4rem; margin: 0 auto; line-height: 4rem; font-size: 2.3rem; color: #fff; background-color: #03d6d0; border-radius: 50%; }
+
+.path-section .path-desc li.item .text { margin-top: 1.4rem; }
+
+.path-section .path-desc li.arrow .icon { margin-top: 1.6rem; font-size: .9rem; color: #eee; }
+
+.path-section .foot-handle { text-align: center; }
+
+.path-section .foot-handle .inquiry-btn { width: 15rem; height: 3.5rem; vertical-align: middle; line-height: 3.5rem; text-align: center; font-size: 1.5rem; color: #fff; background-color: #f78e24; border-radius: 3.5rem; box-shadow: 0 0.5rem 0.5rem 0 rgba(249, 144, 3, 0.3); }
+
+.path-section .foot-handle .inquiry-btn:active { background-color: #de750b; }

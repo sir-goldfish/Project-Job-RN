@@ -1,0 +1,117 @@
+//-----------html-----------------
+            <!--未上传回传文件-->
+            <section class="customer-file-panel panel">
+                <div class="panel-head clearfix">
+                    <div class="pull-left left-inline-wrap">
+                        <div class="head-title inline-item">客户回传</div>
+                        <a href="javascript:;" class="inline-item btn btn-default">上传回传文件</a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="file-container"></div>
+                </div>
+            </section>
+            <!--已上传过回传文件-->
+            <section class="customer-file-panel panel">
+                <div class="panel-head clearfix">
+                    <div class="pull-left left-inline-wrap">
+                        <div class="head-title inline-item">客户回传</div>
+                        <a href="javascript:;" class="inline-item btn btn-default">重新上传</a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="file-container">
+                        <div class="file-swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="javascript:alert('放大预览');" class="slide-file"><img src="theme/img/a9.jpg"></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:alert('放大预览');" class="slide-file"><img src="theme/img/a8.jpg"></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:alert('放大预览');" class="slide-file"><img src="theme/img/a7.jpg"></a>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="swiper-btn-prev swiper-btn iconfont">&#xe629;</a>
+                            <a href="javascript:;" class="swiper-btn-next swiper-btn iconfont">&#xe628;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!--customer-file-panel-->
+            <section class="customer-file-panel panel">
+                <div class="panel-head clearfix">
+                    <div class="pull-left left-inline-wrap">
+                        <div class="head-title inline-item">客户回传</div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="file-container">
+                        <div class="file-swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="javascript:alert('放大预览');" class="slide-file"><img src="theme/img/a9.jpg"></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:alert('放大预览');" class="slide-file"><img src="theme/img/a8.jpg"></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:alert('放大预览');" class="slide-file"><img src="theme/img/a7.jpg"></a>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="swiper-btn-prev swiper-btn iconfont">&#xe629;</a>
+                            <a href="javascript:;" class="swiper-btn-next swiper-btn iconfont">&#xe628;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+//-----------style-----------------
+/* customer-file-panel */
+.main-container .customer-file-panel {
+  .file-container {
+    width: 100%;
+    height: 474px;
+    padding: 22px 28px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    .file-swiper {
+      height: 100%;
+      .swiper-slide {
+        height: 100%;
+        text-align: center;
+        .slide-file {
+          display: inline-block;
+          height: 100%;
+          border: 1px solid #ddd;
+          img {
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+      .swiper-btn {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        margin-top: - ( 36px / 2 );
+        line-height: 1;
+        font-size: 36px;
+        color: #d6d6d6;
+        &:hover {
+          color: #d6d6d6 - 20%;
+        }
+        &:active {
+          color: #d6d6d6 - 50%;
+        }
+        &.swiper-btn-prev {
+          left: 0;
+        }
+        &.swiper-btn-next {
+          right: 0;
+        }
+      }
+    }
+  }
+}

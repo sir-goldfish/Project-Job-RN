@@ -1,0 +1,26 @@
+/*
+*/
+body fieldset {
+    border: 1px solid #D8D8D8;
+    padding: 10px;
+}
+body fieldset legend {
+    padding: 3px 8px;
+    font-weight: 700;
+    border: 1px solid #D8D8D8;
+    background-color: #F9F9F9;
+}
+.selectAll2 label{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+font {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}

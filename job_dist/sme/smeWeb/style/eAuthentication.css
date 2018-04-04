@@ -1,0 +1,34 @@
+/* content-body */
+.content-body .top-notice { margin-bottom: 40px; font-size: 13px; color: #999; }
+
+.content-body .top-notice i { margin-right: 5px; font-size: 16px; color: #fdb42a; }
+
+.content-body .entry-container { padding-bottom: 30px; color: #666; }
+
+.content-body .entry-notice { margin-bottom: 76px; }
+
+.content-body .entry-content { text-align: center; }
+
+.content-body .entry-item { display: inline-block; width: 390px; vertical-align: top; }
+
+.content-body .entry-item .item-icon { display: block; width: 114px; height: 114px; margin: 0 auto 22px auto; background: #e96678 url(../resource/img/sme_member_icon10.png) no-repeat center; border-radius: 50%; }
+
+.content-body .entry-item .item-link { margin-bottom: 18px; font-size: 15px; font-weight: bold; color: #363636; }
+
+.content-body .entry-item .item-link:hover { color: #f78e24; }
+
+.content-body .entry-item .notice { margin-bottom: 56px; font-size: 13px; color: #999; }
+
+.content-body .entry-item .path .title { margin-bottom: 30px; color: #363636; }
+
+.content-body .entry-item .path ul li .path-desc { display: inline-block; padding: 10px 24px; font-size: 13px; color: #e96678; border: 1px dashed #e96678; }
+
+.content-body .entry-item .path ul li + li:before { content: ''; display: block; width: 11px; height: 25px; margin: 9px auto; background: url(../resource/img/sme_member_sprites1.png) no-repeat 0 0; }
+
+.content-body .org-entry { margin-left: 50px; }
+
+.content-body .org-entry .item-icon { background: #cea975 url(../resource/img/sme_member_icon11.png) no-repeat center; }
+
+.content-body .org-entry .path ul li .path-desc { color: #cea975; border-color: #cea975; }
+
+.content-body .org-entry .path ul li + li:before { background-position-x: -13px; }

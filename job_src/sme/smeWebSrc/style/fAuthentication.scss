@@ -1,0 +1,91 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* content-body */
+.content-body {
+  .top-notice {
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #999;
+    i {
+      margin-right: 5px;
+      font-size: 16px;
+      color: #fdb42a;
+    }
+  }
+  .entry-container {
+    padding-bottom: 30px;
+    color: #666;
+  }
+  .entry-content {
+    $selfColor: #cea975;
+    .entry-steps {
+      .steps-path {
+        padding: 28px 0 70px 0;
+        ul {
+          text-align: center;
+          font-size: 0;
+        }
+        li {
+          display: inline-block;
+          font-size: 13px;
+          color: $selfColor;
+          span {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px dashed $selfColor;
+          }
+        }
+        li + li:before {
+          content: '';
+          display: inline-block;
+          width: 24px;
+          height: 10px;
+          margin: 0 20px;
+          background: url(../resource/img/sme_member_sprites1.png) no-repeat 0  -51px;
+        }
+      }
+    }
+    .entry-files {
+      .files-title {
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+      }
+      .files-list {
+        padding: 35px 0;
+        font-size: 13px;
+        ul {
+          margin: -13px 0 0 -38px;
+        }
+        li {
+          float: left;
+          margin: 13px 0 0 38px;
+          i {
+            margin-right: 2px;
+            font-size: inherit;
+            color: $selfColor;
+          }
+        }
+      }
+    }
+    .btn-group {
+      padding: 20px 0;
+      text-align: center;
+      .entry-btn {
+        height: 30px;
+        padding: 0 20px;
+        line-height: 30px;
+        color: #fff;
+        background-color: $onColorOrange;
+        border-radius: 5px;
+        &:hover {
+          background-color: $onColorOrange - 15%;
+        }
+        &:active {
+          background-color: $onColorOrange - 30%;
+        }
+      }
+    }
+  }
+}

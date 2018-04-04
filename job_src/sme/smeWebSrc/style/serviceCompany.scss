@@ -1,0 +1,433 @@
+@charset "utf-8";
+@import "publicVariable";
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* head-banner */
+.head-banner {
+  height: 450px;
+}
+
+/* main-body */
+.main-body {
+  position: relative;
+  margin-top: -195px;
+}
+
+/* head-search */
+.head-search {
+  padding-bottom: 40px;
+  //search-wrapper
+  .search-wrapper {
+    $selfBorderRadius: 10px;
+    width: 708px;
+    height: 50px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    .input-wrapper {
+      float: left;
+      width: 474px;
+      height: 100%;
+      background-color: #fff;
+      border-top-left-radius: $selfBorderRadius;
+      border-bottom-left-radius: $selfBorderRadius;
+      overflow: hidden;
+      input, i {
+        float: left;
+      }
+      i {
+        display: block;
+        width: 38px;
+        height: 100%;
+        line-height: 50px;
+        text-align: right;
+        font-size: 20px;
+        color: #ddd;
+      }
+      input {
+        width: 416px;
+        height: 18px;
+        padding: 16px 10px;
+        line-height: 18px;
+        font-size: 14px;
+        border: none;
+      }
+    }
+    .search-btn {
+      float: right;
+      width: 228px;
+      height: 100%;
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      background-color: $onColorOrange;
+      border-top-right-radius: $selfBorderRadius;
+      border-bottom-right-radius: $selfBorderRadius;
+      transition: background-color .2s ease-out;
+    }
+    .search-btn:hover {
+      background-color: $onColorOrange + 25%;
+    }
+  }
+  //search-desc
+  .search-desc {
+    text-align: center;
+    .desc-cards {
+      margin-bottom: 40px;
+      font-size: 0;
+      .desc-card {
+        display: inline-block;
+        width: 380px;
+        height: 344px;
+        background-color: #fff;
+        box-shadow: 0 0 20px 0 rgba(14, 5, 10, .1);
+        overflow: hidden;
+        transition: transform .2s ease-out;
+        .card-pic {
+          width: 118px;
+          height: 118px;
+          margin-top: 48px;
+          margin-bottom: 38px;
+          margin-left: auto;
+          margin-right: auto;
+          background: url(../resource/img/sme_service_sprites.png) no-repeat 999px 999px;
+          background-position-y: 0;
+        }
+        h3 {
+          margin-bottom: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          color: #363636;
+        }
+        p {
+          width: 208px;
+          margin-left: auto;
+          margin-right: auto;
+          line-height: 30px;
+          font-size: 16px;
+          color: #666;
+        }
+      }
+      .desc-card + .desc-card {
+        margin-left: 30px;
+      }
+      .desc-card:hover {
+        transform: translateY(-3%);
+      }
+    }
+    .desc-btn {
+      width: 252px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: $onColorOrange;
+      transition: background-color .2s ease-out;
+    }
+    .desc-btn:hover {
+      background-color: $onColorOrange + 25%;
+    }
+  }
+}
+
+/* 公用标题 */
+.section-title {
+  line-height: 1;
+  text-align: center;
+  font-size: 24px;
+  color: #363636;
+}
+
+/* org-register-path */
+.org-register-path {
+  background-color: #fff;
+  .section-title {
+    padding-top: 47px;
+    padding-bottom: 62px;
+  }
+  .path-tree {
+    padding-bottom: 56px;
+    text-align: center;
+    font-size: 0;
+    .branch {
+      display: inline-block;
+      width: 166px;
+      vertical-align: top;
+      font-size: 12px;
+      .icon {
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 90px;
+        font-size: 50px;
+        color: #fff;
+        border-radius: 50%;
+        transition: transform .2s ease-out;
+      }
+      .connect-line {
+        width: 4px;
+        height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .border-line {
+        width: 100%;
+        height: 4px;
+      }
+      h6 {
+        margin-top: 20px;
+        margin-bottom: 14px;
+        font-size: 16px;
+        font-weight: normal;
+        transition: font-weight .2s ease-out;
+      }
+      p {
+        padding: 0 10px;
+        line-height: 20px;
+      }
+    }
+    .branch:hover {
+      .icon {
+        transform: scale(1.1);
+      }
+      h6 {
+        font-weight: bold;
+      }
+    }
+    .branch-1 {
+      $selfColor: #f6b45b;
+      .icon, .connect-line, .border-line {
+        background-color: $selfColor;
+      }
+      h6 {
+        color: $selfColor;
+      }
+    }
+    .branch-2 {
+      $selfColor: #28b5ad;
+      .icon, .connect-line, .border-line {
+        background-color: $selfColor;
+      }
+      h6 {
+        color: $selfColor;
+      }
+    }
+    .branch-3 {
+      $selfColor: #3ecefb;
+      .icon, .connect-line, .border-line {
+        background-color: $selfColor;
+      }
+      h6 {
+        color: $selfColor;
+      }
+    }
+    .branch-4 {
+      $selfColor: #e96678;
+      .icon, .connect-line, .border-line {
+        background-color: $selfColor;
+      }
+      h6 {
+        color: $selfColor;
+      }
+    }
+    .branch-5 {
+      $selfColor: #a989bb;
+      .icon, .connect-line, .border-line {
+        background-color: $selfColor;
+      }
+      h6 {
+        color: $selfColor;
+      }
+    }
+    .branch-6 {
+      $selfColor: #576fb3;
+      .icon, .connect-line, .border-line {
+        background-color: $selfColor;
+      }
+      h6 {
+        color: $selfColor;
+      }
+      .border-line {
+        position: relative;
+      }
+      .border-line:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 6px solid $selfColor;
+        border-top-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+  }
+}
+
+/* advantage-section */
+.advantage-section {
+  height: 549px;
+  background: url(../resource/img/sme_service_bgi.jpg) no-repeat center;
+  .section-title {
+    padding-top: 44px;
+    padding-bottom: 28px;
+  }
+  .advantage-tree {
+    text-align: center;
+    font-size: 0;
+    .advantage, .weakness {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+      font-size: 16px;
+      .tree-top {
+        height: 90px;
+        padding-bottom: 14px;
+        line-height: 90px;
+        .circle {
+          width: 90px;
+          height: 100%;
+          text-align: center;
+          font-size: 30px;
+          font-weight: bold;
+          color: #fff;
+          border-radius: 50%;
+        }
+        .text {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+      .branch {
+        height: 50px;
+        margin-top: 10px;
+        line-height: 50px;
+        .circle {
+          width: 50px;
+          height: 100%;
+          text-align: center;
+          font-size: 18px;
+          color: #fff;
+          border-radius: 50%;
+        }
+        .line {
+          position: relative;
+          top: 25px;
+          width: 48px;
+          height: 0;
+          margin: 0 15px;
+          border-bottom: 1px dashed #fff;
+        }
+        .text {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+    .advantage {
+      $selfColor: $onColorOrange;
+      border-right: 1px solid $selfColor;
+      .tree-top {
+        margin-right: -46px;
+        & > * {
+          float: right;
+        }
+        .circle {
+          background-color: $selfColor;
+        }
+        .text {
+          margin-right: 60px;
+          color: $selfColor;
+        }
+      }
+      .branch {
+        margin-right: -26px;
+        & > * {
+          float: right;
+        }
+        .circle {
+          background-color: $selfColor;
+        }
+        .line {
+          border-color: $selfColor;
+        }
+        .text {
+          color: $selfColor;
+        }
+      }
+    }
+    .weakness {
+      $selfColor: #545454;
+      .tree-top {
+        margin-left: 106px;
+        & > * {
+          float: left;
+        }
+        .text {
+          color: $selfColor;
+        }
+      }
+      .branch {
+        margin-left: 26px;
+        & > * {
+          float: left;
+        }
+        .line {
+          border-color: $selfColor;
+        }
+        .text {
+          color: $selfColor;
+        }
+      }
+    }
+  }
+}
+
+/* service-cards */
+.service-cards {
+  background: url(../resource/img/sme_service_bgi1.jpg) no-repeat center;
+  background-size: cover;
+  .section-title {
+    padding-top: 44px;
+    padding-bottom: 30px;
+    color: #fff;
+  }
+  .m-service-cards {
+    padding-bottom: 44px;
+  }
+}
+
+/* question-cards */
+.question-cards {
+  padding-bottom: 18px;
+  background-color: #fff;
+  .section-title {
+    padding-top: 44px;
+    padding-bottom: 30px;
+  }
+  .m-question-cards {
+    margin: 0 60px;
+  }
+}
+
+/* other-services */
+.other-services {
+  padding-bottom: 65px;
+  margin-bottom: 35px;
+  background-color: #fff;
+  .section-title {
+    padding: 24px 0;
+  }
+  .m-other-services {
+    margin: 0 60px;
+  }
+}

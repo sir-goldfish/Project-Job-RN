@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* content-body */
+.content-body {
+  .top-notice {
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #999;
+    i {
+      margin-right: 5px;
+      font-size: 16px;
+      color: #fdb42a;
+    }
+  }
+  .entry-container {
+    padding-bottom: 30px;
+    color: #666;
+  }
+  .entry-notice {
+    margin-bottom: 76px;
+  }
+  .entry-content {
+    text-align: center;
+  }
+  // 共性
+  .entry-item {
+    $selfColor: #e96678;
+    display: inline-block;
+    width: 390px;
+    vertical-align: top;
+    .item-icon {
+      display: block;
+      width: 114px;
+      height: 114px;
+      margin: 0 auto 22px auto;
+      background: $selfColor url(../resource/img/sme_member_icon10.png) no-repeat center;
+      border-radius: 50%;
+    }
+    .item-link {
+      margin-bottom: 18px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #363636;
+      &:hover {
+        color: $onColorOrange;
+      }
+    }
+    .notice {
+      margin-bottom: 56px;
+      font-size: 13px;
+      color: #999;
+    }
+    .path {
+      .title {
+        margin-bottom: 30px;
+        color: #363636;
+      }
+      ul {
+        li {
+          .path-desc {
+            display: inline-block;
+            padding: 10px 24px;
+            font-size: 13px;
+            color: $selfColor;
+            border: 1px dashed $selfColor;
+          }
+        }
+        li + li:before {
+          content: '';
+          display: block;
+          width: 11px;
+          height: 25px;
+          margin: 9px auto;
+          background: url(../resource/img/sme_member_sprites1.png) no-repeat 0 0;
+        }
+      }
+    }
+  }
+  // 个性
+  .org-entry {
+    $selfColor: #cea975;
+    margin-left: 50px;
+    .item-icon {
+      background: $selfColor url(../resource/img/sme_member_icon11.png) no-repeat center;
+    }
+    .path {
+      ul {
+        li {
+          .path-desc {
+            color: $selfColor;
+            border-color: $selfColor;
+          }
+        }
+        li + li:before {
+          background-position-x: -13px;
+        }
+      }
+    }
+  }
+}

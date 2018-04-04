@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* main-body */
+.main-body {
+  padding: 10px 0;
+  background-color: #f7f7f7;
+}
+
+/* order-pay-container */
+.order-pay-container {
+  padding: 44px 0 135px 0;
+  background-color: #fff;
+  // container-head
+  .container-head {
+    margin: 0 45px 28px 30px;
+    color: #333;
+    line-height: 18px;
+    .title {
+      float: left;
+      padding-left: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-left: 5px solid $onColorOrange;
+    }
+    .notice {
+      float: right;
+      color: #333;
+      i {
+        margin-right: 6px;
+        font-size: 15px;
+        color: #fc2837;
+      }
+    }
+  }
+  // pay-box
+  .pay-box {
+    $selfBorder: 1px solid #ddd;
+    // height: 295px;
+    margin: 0 45px;
+    color: #333;
+    // pay-table
+    .pay-table {
+      float: left;
+      width: 533px;
+      height: 293px;
+      font-size: 13px;
+      border: $selfBorder;
+      .stress {
+        color: #f00;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+      }
+      th, td {
+        padding: 10px;
+        text-align: center;
+        border-right: $selfBorder;
+        border-bottom: $selfBorder;
+      }
+      .cell-name {
+        width: 37%;
+      }
+      .cell-num {
+        width: 25%;
+      }
+      .cell-money {
+        width: 37%;
+        border-right: none;
+      }
+      .table-body {
+        height: 225px;
+        overflow: auto;
+        tr:hover {
+          background: #f5f5f5;
+        }
+      }
+      .table-foot {
+        td {
+          border-top: $selfBorder;
+          border-bottom: none;
+        }
+        .cell-sum {
+          text-align: right;
+          border-right: none;
+        }
+      }
+    }
+    // pay-card
+    .pay-card {
+      float: right;
+      width: 574px;
+      height: 293px;
+      margin-left: -1px;
+      border: $selfBorder;
+      .card-title {
+        margin-top: -1px;
+        text-align: center;
+        border-top: 2px solid $onColorOrange;
+        .text {
+          width: 182px;
+          height: 37px;
+          line-height: 37px;
+          font-weight: bold;
+          color: #fff;
+          background: url(../resource/img/sme_bgi2.png) no-repeat center;
+        }
+      }
+      .card-body {
+        margin: 26px 36px 0 36px;
+        .order-info {
+          float: left;
+          width: 270px;
+          .info-item {
+            .stress {
+              color: #f00;
+            }
+            .title {
+              float: left;
+              width: 72px;
+              margin-right: -72px;
+            }
+            .desc {
+              margin-left: 73px;
+            }
+          }
+          .info-item + .info-item {
+            margin-top: 22px;
+          }
+        }
+        .order-qrcode {
+          float: right;
+          .title {
+            margin-bottom: 12px;
+            font-weight: bold;
+            i {
+              margin-right: 5px;
+              vertical-align: middle;
+              font-weight: normal;
+              color: #48af40;
+            }
+          }
+          .qrcode-pic {
+            padding: 10px;
+            margin-left: 20px;
+            background-color: #fff;
+            img {
+              display: block;
+              width: 140px;
+              height: 140px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

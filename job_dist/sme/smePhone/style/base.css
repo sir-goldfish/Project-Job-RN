@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* ---全局样式重置--- */
+* { box-sizing: border-box; padding: 0; margin: 0; border: 0; }
+
+*:before, *:after { box-sizing: border-box; }
+
+/* 媒体查询设置根元素字体 */
+html { font-size: 10px; }
+
+@media screen and (min-width: 321px) and (max-width: 375px) { html { font-size: 11px; } }
+
+@media screen and (min-width: 376px) and (max-width: 414px) { html { font-size: 12px; } }
+
+@media screen and (min-width: 415px) and (max-width: 639px) { html { font-size: 15px; } }
+
+@media screen and (min-width: 640px) and (max-width: 719px) { html { font-size: 20px; } }
+
+@media screen and (min-width: 720px) and (max-width: 749px) { html { font-size: 22.5px; } }
+
+@media screen and (min-width: 750px) { html { font-size: 23.5px; } }
+
+html { min-height: 100%; }
+
+body { min-height: 100%; line-height: 1.2; font-family: 'Microsoft YaHei', Helvitica, Verdana, Tohoma, Arial, san-serif; font-size: 1rem; color: #999; background-color: #f1f1f1; }
+
+a { display: inline-block; text-decoration: none; color: inherit; -webkit-tap-highlight-color: transparent; }
+
+a:hover, a:active { color: #f78e24; }
+
+ul, ol, dl { list-style: none; }
+
+th, td { word-wrap: break-word; word-break: break-all; }
+
+fieldset, img { border: none; }
+
+input, button, textarea, select { outline: none; font-size: 1em; -webkit-tap-highlight-color: transparent; }
+
+textarea { resize: none; }
+
+em { font-style: normal; }
+
+span { display: inline-block; }
+
+.iconfont { font-size: inherit; }
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */ font-size: 1em; color: #c9c9c9; }
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ font-size: 1em; color: #c9c9c9; }
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ font-size: 1em; color: #c9c9c9; }
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */ font-size: 1em; color: #c9c9c9; }
+
+textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */ font-size: 1em; color: #c9c9c9; }
+
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ font-size: 1em; color: #c9c9c9; }
+
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */ font-size: 1em; color: #c9c9c9; }
+
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */ font-size: 1em; color: #c9c9c9; }

@@ -1,0 +1,61 @@
+/* main-body */
+.main-body { height: 577px; background: url(../resource/img/sme_banner3.jpg) no-repeat center; }
+
+/* login-container */
+.login-container { float: right; padding-top: 51px; margin-top: 50px; margin-right: 48px; background-color: #fff; box-shadow: 0 0 15px 0 rgba(14, 5, 10, 0.2); }
+
+.login-container .login-tab { width: 246px; margin: 0 60px; }
+
+.login-container .login-tab .tab-nav { text-align: center; font-size: 0; }
+
+.login-container .login-tab .tab-nav li { display: inline-block; width: 50%; padding-bottom: 15px; vertical-align: top; line-height: 18px; font-size: 16px; color: #999; border-bottom: 1px solid #ddd; cursor: default; -webkit-transition: color .2s ease-out, border-color .2s ease-out; transition: color .2s ease-out, border-color .2s ease-out; }
+
+.login-container .login-tab .tab-nav .current, .login-container .login-tab .tab-nav li:hover { color: #363636; border-color: #f78e24; }
+
+.login-container .login-tab .tab-content .content-item { display: none; padding-top: 33px; padding-bottom: 35px; }
+
+.login-container .login-tab .tab-content .content-item input::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color: #d8d8d8; }
+
+.login-container .login-tab .tab-content .content-item input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #d8d8d8; }
+
+.login-container .login-tab .tab-content .content-item input::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #d8d8d8; }
+
+.login-container .login-tab .tab-content .content-item input:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #d8d8d8; }
+
+.login-container .login-tab .tab-content .content-item .form-item { margin-bottom: 18px; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box { position: relative; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box input { width: 169px; height: 20px; padding: 11px 15px 11px 60px; line-height: 20px; font-size: 16px; color: #363636; border: 1px solid #ddd; -webkit-transition: border-color .2s ease-out; transition: border-color .2s ease-out; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box input:focus { border-color: #f78e24; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box i { position: absolute; top: 12px; left: 20px; font-size: 24px; color: #f78e24; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box .msg-btn { position: absolute; top: 0; right: 0; width: 106px; height: 100%; line-height: 44px; text-align: center; font-size: 14px; color: #fff; background-color: #f78e24; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box .msg-btn:hover { background-color: #ffa73d; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box .pic-btn { position: absolute; top: 1px; right: 1px; width: 104px; height: 42px; border-left: 1px solid #ddd; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box .pic-btn img { width: 100%; height: 100%; }
+
+.login-container .login-tab .tab-content .content-item .input-wrapper .input-box .msg-input { width: 68px; padding-right: 116px; }
+
+.login-container .login-tab .tab-content .content-item .form-btn { width: 100%; height: 44px; line-height: 44px; text-align: center; font-size: 18px; font-weight: bold; color: #fff; background-color: #f78e24; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.login-container .login-tab .tab-content .content-item .form-btn:hover { background-color: #ffa73d; }
+
+.login-container .login-tab .tab-content .content-item .hint-info { padding: 17px 0; text-align: center; font-size: 12px; }
+
+.login-container .login-tab .tab-content .content-item .reset-pw { margin-bottom: 12px; line-height: 18px; font-size: 14px; color: #f78e24; }
+
+.login-container .login-tab .tab-content .content-item .reset-pw:hover { text-decoration: underline; }
+
+.login-container .login-tab .tab-content .content-item .register-text { text-align: right; font-size: 14px; color: #666; }
+
+.login-container .login-tab .tab-content .content-item .register-link { color: #f78e24; }
+
+.login-container .login-tab .tab-content .content-item .register-link:hover { text-decoration: underline; }
+
+.login-container .login-tab .tab-content .current, .login-container .login-tab .tab-content .tab-nav li:hover, .login-container .login-tab .tab-nav .tab-content li:hover { display: block; }

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务商历史任务-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/facilitatorPublic.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--sme-head3-->
+<header class="sme-head3">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="name">用户名</a>，欢迎您！
+                </li>
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <a href="javascript:;" class="back-home"><i class="iconfont">&#xe670;</i>返回首页</a>
+        </div>
+    </div>
+</header>
+<!--main-body-->
+<section class="main-body sme-inner f-clearfix">
+    <aside class="g-member-aside">
+        <!--user-card-->
+        <div class="user-card">
+            <div class="card-inner">
+                <figure class="avatar">
+                    <img src="resource/img/sme_avatar3.png" alt="">
+                </figure>
+                <a href="javascript:;" class="name">用户名</a>
+                <div class="member-type">
+                    <i class="iconfont">&#xe69e;</i>普通会员
+                </div>
+            </div>
+        </div>
+        <!--m-member-aside-nav-->
+        <nav class="m-member-aside-nav">
+            <a href="facilitatorCenter.html" class="title"><i class="iconfont">&#xe67b;</i>会员中心</a>
+            <dl>
+                <dt><i class="iconfont">&#xe9a1;</i>任务管理</dt>
+                <dd><a href="fTaskNew.html">新任务</a></dd>
+                <dd class="current"><a href="fTaskHistory.html">历史任务</a></dd>
+                <dd><a href="fPushOpportunities.html">推送商机</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe6a0;</i>订单管理</dt>
+                <dd><a href="fOrderFollow.html">待跟进</a></dd>
+                <dd><a href="fOrderConfirm.html">待确认</a></dd>
+                <dd><a href="fOrderAll.html">全部订单</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe6d3;</i>服务管理</dt>
+                <dd><a href="fMySkills.html">我的技能</a></dd>
+                <dd><a href="fMyHomepage_v1.html">我的主页</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe6a9;</i>客户管理</dt>
+                <dd><a href="fOrderEvaluated.html">评价管理</a></dd>
+                <dd><a href="fOrderRefund.html">退款管理</a></dd>
+                <dd><a href="fOrderRights.html">交易维权</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe69b;</i>会员服务</dt>
+                <dd><a href="fMemberService.html">会员服务</a></dd>
+                <dd><a href="fMyService.html">我的服务</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe672;</i>账户管理</dt>
+                <dd><a href="fAccountInfo.html">账户资料</a></dd>
+                <dd><a href="fAccountSecurity.html">账户安全</a></dd>
+                <dd><a href="fAuthenticationO.html">账户认证</a></dd>
+            </dl>
+        </nav>
+    </aside>
+    <section class="g-member-section">
+        <section class="main-content-container">
+            <div class="main-content-title">历史任务</div>
+            <!--content-body-->
+            <section class="content-body">
+                <div class="m-order-filter-container f-clearfix">
+                    <div class="filter-item">
+                        <span class="title">订单编号：</span>
+                        <input type="text">
+                    </div>
+                    <div class="filter-item">
+                        <span class="title">订单状态：</span>
+                        <select>
+                            <option value="全部">全部</option>
+                            <option value="已接单">已接单</option>
+                            <option value="已放弃">已放弃</option>
+                            <option value="已过期">已过期</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <span class="title">订单时间：</span>
+                        <span class="time-choose"><i class="iconfont">&#xe67e;</i><input type="text" readonly
+                                                                                         id="time-begin"></span>
+                        <span class="dash-line">--</span>
+                        <span class="time-choose"><i class="iconfont">&#xe67e;</i><input type="text" readonly
+                                                                                         id="time-end"></span>
+                    </div>
+                    <div class="filter-item">
+                        <a href="javascript:;" class="filter-btn">筛选</a>
+                    </div>
+                    <div class="filter-item reset-filter">
+                        <a href="javascript:;" class="filter-link">清空筛选条件</a>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="m-history-task-table sme-table sme-table-bordered sme-table-centered sme-table-hover">
+                        <thead>
+                        <tr>
+                            <th class="cell-num">订单编号</th>
+                            <th class="cell-time">订单时间</th>
+                            <th class="cell-content">服务内容</th>
+                            <th class="cell-org">雇主</th>
+                            <th class="cell-area">所在地区</th>
+                            <th class="cell-price">订单金额</th>
+                            <th class="cell-status">订单状态</th>
+                            <th class="cell-handle">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="8">无数据~</td>
+                        </tr>
+                        <tr>
+                            <td colspan="8">
+                                <div class="table-loading"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-num">RNW201704070000001</td>
+                            <td class="cell-time">2017-04-07<br>14:20:32</td>
+                            <td class="cell-content">公司注册（无地址）</td>
+                            <td class="cell-org">张先生</td>
+                            <td class="cell-area">山东省青岛市市南区</td>
+                            <td class="cell-price">150000</td>
+                            <td class="cell-status">已接单</td>
+                            <td class="cell-handle">
+                                <a href="fTaskHistoryDetails.html" class="handle-btn">查看详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-num">RNW201704070000001</td>
+                            <td class="cell-time">2017-04-07<br>14:20:32</td>
+                            <td class="cell-content">代理记账</td>
+                            <td class="cell-org">司马先生</td>
+                            <td class="cell-area">山东省青岛市市南区</td>
+                            <td class="cell-price">150000</td>
+                            <td class="cell-status">已放弃</td>
+                            <td class="cell-handle">
+                                <a href="fTaskHistoryDetails.html" class="handle-btn">查看详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-num">RNW201704070000001</td>
+                            <td class="cell-time">2017-04-07<br>14:20:32</td>
+                            <td class="cell-content">公司注册（无地址）</td>
+                            <td class="cell-org">林女士</td>
+                            <td class="cell-area">山东省青岛市市南区</td>
+                            <td class="cell-price">150000</td>
+                            <td class="cell-status">已过期</td>
+                            <td class="cell-handle">
+                                <a href="fTaskHistoryDetails.html" class="handle-btn">查看详情</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination-container">
+                    <div class="m-default-pagination">800 条记录 2/50 页<a href="javascript:;">上一页</a><a
+                            href="javascript:;">1</a><span class="current">2</span><span>…</span><a href="javascript:;">49</a><a
+                            href="javascript:;">50</a><a href="javascript:;">下一页</a></div>
+                </div>
+            </section>
+        </section>
+    </section>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script src="plugin/laydate-v1.1/laydate.js"></script>
+<script>
+    //筛选时间段设置
+    var start = {
+        elem: '#time-begin',
+        format: 'YYYY-MM-DD',
+        min: '1900-01-01 00:00:00', //设定最小日期为当前日期
+        max: laydate.now(), //最大日期
+        istime: false,
+        istoday: true,
+        choose: function (datas) {
+            end.min = datas; //开始日选好后，重置结束日的最小日期
+            end.start = datas; //将结束日的初始值设定为开始日
+        }
+    };
+    var end = {
+        elem: '#time-end',
+        format: 'YYYY-MM-DD',
+        min: '1900-01-01 00:00:00',
+        max: laydate.now(),
+        istime: false,
+        istoday: true,
+        choose: function (datas) {
+            start.max = datas; //结束日选好后，重置开始日的最大日期
+        }
+    };
+    laydate(start);
+    laydate(end);
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* ---rn公用样式--- */
+.rn-main-body {
+  min-width: 320px;
+  max-width: 750px;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rn-wrapper {
+  width: 100%;
+  padding-left: 1.36rem;
+  padding-right: 1.36rem;
+}
+
+/* ---方法类公用(.f-开头)--- */
+/* 清除浮动 */
+.f-clearfix {
+  zoom: 1;
+  &:after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+  }
+}
+
+/* 单行省略号 */
+.f-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 强制换行 */
+.f-word-break {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* 左浮 */
+.f-pull-left {
+  float: left;
+}
+
+/* 右浮 */
+.f-pull-right {
+  float: right;
+}
+
+/* 居中 */
+.f-text-center {
+  text-align: center;
+}
+
+/* ---布局类公用(.g-开头)--- */
+.g-fixed-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  .g-fixed-inner {
+    min-width: 320px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

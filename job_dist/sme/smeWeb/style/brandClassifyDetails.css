@@ -1,0 +1,77 @@
+body { background-color: #f7f7f7; }
+
+/* head-container */
+.head-container { height: 174px; background: url(../resource/img/sme_brand_banner2.jpg) no-repeat top center; }
+
+.head-container .search-wrapper { padding-top: 58px; }
+
+.head-container .search-box { position: relative; width: 990px; height: 57px; margin: 0 auto; border-radius: 57px; }
+
+.head-container .search-box .icon { position: absolute; top: 14px; left: 22px; font-size: 29px; color: #bbb; }
+
+.head-container .search-box .search-btn { position: absolute; top: 0; right: 0; width: 230px; height: 100%; line-height: 57px; text-align: center; font-size: 20px; color: #fff; background-color: #f78e24; border-top-right-radius: 57px; border-bottom-right-radius: 57px; }
+
+.head-container .search-box .search-btn:hover { background-color: #ed841a; }
+
+.head-container .search-box .search-btn:active { background-color: #d97006; }
+
+.head-container .search-box .search-input { display: block; width: 663px; height: 55px; padding: 0 260px 0 65px; line-height: 55px; border: 1px solid #bbb; border-radius: 57px; }
+
+.head-container .search-box .search-input:focus { border-color: #f78e24; }
+
+.head-container .search-box .search-input:focus + .icon { color: #f78e24; }
+
+/* head-crumbs-nav */
+.head-crumbs-nav { padding-top: 9px; padding-bottom: 9px; }
+
+.head-crumbs-nav .m-crumbs-nav { background-color: transparent; }
+
+/* desc-container */
+.desc-container { padding-bottom: 10px; }
+
+.desc-container .stress { color: #03d6d0; }
+
+/* category-info */
+.desc-container .category-info { box-sizing: border-box; padding: 38px 40px 33px; color: #fff; background-color: #03d6d0; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.desc-container .category-info * { box-sizing: inherit; }
+
+.desc-container .category-info .title { text-align: center; font-size: 20px; font-weight: bold; }
+
+.desc-container .category-info .para { margin-top: 12px; line-height: 24px; }
+
+/* category-note */
+.desc-container .category-note { box-sizing: border-box; padding: 40px 40px 33px; color: #333; background-color: #fff; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.desc-container .category-note * { box-sizing: inherit; }
+
+.desc-container .category-note .title { font-size: 16px; }
+
+.desc-container .category-note .para { margin-top: 10px; line-height: 28px; }
+
+/* category-group */
+.desc-container .category-group { box-sizing: border-box; margin-top: 10px; color: #333; background-color: #fff; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.desc-container .category-group * { box-sizing: inherit; }
+
+.desc-container .category-group .group-list { float: left; width: 687px; min-height: 600px; padding: 34px 40px; margin-right: -687px; font-size: 15px; border-right: 1px solid #ddd; }
+
+.desc-container .category-group .group-list ul a { line-height: 29px; color: inherit; }
+
+.desc-container .category-group .group-list ul a:hover { color: #03d6d0; }
+
+.desc-container .category-group .group-list ul li + li { margin-top: 20px; }
+
+.desc-container .category-group .group-list ul li.current a { color: #03d6d0; }
+
+.desc-container .category-group .group-desc { position: relative; min-height: 100px; padding: 34px 40px; margin-left: 686px; border-left: 1px solid #ddd; }
+
+.desc-container .category-group .group-desc:before { content: ''; position: absolute; top: 40px; left: -10px; width: 10px; height: 16px; background: url(../resource/img/sme_icon18.jpg) no-repeat center; }
+
+.desc-container .category-group .group-desc .info { color: #666; }
+
+.desc-container .category-group .group-desc .info .title { font-weight: bold; }
+
+.desc-container .category-group .group-desc .info .para { margin-top: 10px; padding-bottom: 42px; line-height: 30px; font-size: 13px; }
+
+.desc-container .category-group .group-desc .note { line-height: 30px; font-size: 13px; color: #666; }

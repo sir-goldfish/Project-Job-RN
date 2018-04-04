@@ -1,0 +1,60 @@
+body { background-color: #f7f7f7; }
+
+/* main-body */
+.main-body { position: relative; margin: 10px auto; }
+
+/* aside-content-container */
+.aside-content-container { position: absolute; top: 0; bottom: 0; left: 0; width: 163px; background-color: #fff; }
+
+.aside-content-container .aside-nav { margin-top: 50px; }
+
+.aside-content-container .aside-nav .nav-item { text-indent: 30px; }
+
+.aside-content-container .aside-nav .nav-item a { padding: 2px 0 2px 8px; text-indent: 0; font-size: 16px; font-weight: bold; color: #333; border-left: 3px solid transparent; }
+
+.aside-content-container .aside-nav .nav-item a:hover { color: #f78e24; }
+
+.aside-content-container .aside-nav .nav-item + .nav-item { margin-top: 30px; }
+
+.aside-content-container .aside-nav .current a { color: #f78e24; border-left-color: #f78e24; }
+
+/* main-content-container */
+.main-content-container { float: right; width: 927px; min-height: 1000px; padding: 50px; background-color: #fff; }
+
+.main-content-container .main-content-item { display: none; color: #333; }
+
+.main-content-container .main-content-item .content-title { margin-bottom: 28px; text-align: center; font-size: 30px; font-weight: bold; color: #333; }
+
+.main-content-container .main-content-item .content-banner { display: block; width: 100%; margin-bottom: 30px; }
+
+.main-content-container .main-content-item .content-article { line-height: 35px; }
+
+.main-content-container .main-content-item .content-article .title { font-size: 16px; font-weight: bold; }
+
+.main-content-container .main-content-item .content-article .sub-title { font-size: 16px; font-weight: normal; }
+
+.main-content-container .main-content-item .content-article + .content-article { margin-top: 40px; }
+
+.main-content-container .main-content-item.current { display: block; }
+
+.main-content-container .contact-way .address-container { padding-top: 42px; }
+
+.main-content-container .contact-way .address-box .title { font-size: 18px; font-weight: bold; }
+
+.main-content-container .contact-way .address-box .desc-item { margin-top: 16px; font-size: 16px; }
+
+.main-content-container .contact-way .address-box .map-wrapper { width: 430px; height: 240px; margin-top: 33px; border: 1px solid #c9c9c9; }
+
+.main-content-container .contact-way .address-box .map-wrapper img { width: 100%; height: 100%; }
+
+.main-content-container .contact-way .float-left { float: left; }
+
+.main-content-container .contact-way .float-right { float: right; }
+
+.main-content-container .pay-way .pay-container { padding: 40px 0 0 340px; }
+
+.main-content-container .pay-way .pay-container .desc-item { font-size: 16px; }
+
+.main-content-container .pay-way .pay-container .desc-item span { font-weight: bold; }
+
+.main-content-container .pay-way .pay-container .desc-item + .desc-item { margin-top: 20px; }

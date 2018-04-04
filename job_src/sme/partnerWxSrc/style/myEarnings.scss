@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* earnings-container */
+.earnings-container {
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.earnings-panel {
+  padding-top: 2.5rem;
+  padding-bottom: 1.2rem;
+  background-color: #fff;
+  .panel-content {
+    .info-row {
+      $selfWidth: 6.5rem;
+      font-size: 1.3rem;
+      .title {
+        float: left;
+        width: $selfWidth;
+        margin-right: - $selfWidth;
+      }
+      .content {
+        margin-left: $selfWidth;
+        color: #576b95;
+      }
+    }
+    .info-row + .info-row {
+      margin-top: 1rem;
+    }
+    .handle-earnings {
+      margin-top: 3.8rem;
+      .title {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .handle-box {
+        $selfWidth: 2.8rem;
+        $selfHeight: 3.7rem;
+        $selfFontSize: 2.6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        line-height: $selfHeight;
+        font-size: $selfFontSize;
+        font-weight: bold;
+        border-bottom: 1px solid #ebebea;
+        .addon {
+          float: left;
+          width: $selfWidth;
+          margin-right: - $selfWidth;
+        }
+        .input-wrap {
+          margin-left: $selfWidth;
+        }
+        .handle-input {
+          width: 100%;
+          height: $selfHeight;
+          vertical-align: text-top;
+          line-height: $selfHeight;
+          font-weight: inherit;
+          background-color: transparent;
+          border: none;
+        }
+      }
+      .handle-info {
+        margin-top: 1.2rem;
+        text-align: center;
+      }
+    }
+  }
+  .panel-foot {
+    margin-top: 2.4rem;
+    .foot-info {
+      margin-top: 4.3rem;
+      text-align: center;
+    }
+  }
+}

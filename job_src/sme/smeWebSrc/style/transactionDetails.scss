@@ -1,0 +1,479 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: #23d7d0;
+
+.main-body {
+  padding: 10px 0;
+  background-color: #f7f7f7;
+}
+
+/* details-desc-panel */
+.details-desc-panel {
+  padding: 30px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  .desc-card {
+    $selfPicWidth: 280px + 2px;
+    float: left;
+    .desc-pic-box {
+      float: left;
+      width: $selfPicWidth;
+      margin-right: - $selfPicWidth;
+      .pic {
+        position: relative;
+        width: $selfPicWidth - 2px;
+        height: 206px;
+        margin-bottom: 18px;
+        text-align: center;
+        font-size: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        &:after {
+          @include globalVerticalMiddleAssist;
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          max-width: 100%;
+          max-height: 100%;
+        }
+        &.sold {
+          &:before {
+            content: '';
+            position: absolute;
+            top: -9px;
+            left: -9px;
+            display: block;
+            width: 104px;
+            height: 104px;
+            background: url(../resource/img/sme_icon24.png) no-repeat center;
+          }
+        }
+      }
+      .tools {
+        text-align: center;
+        .tool-btn {
+          vertical-align: middle;
+          font-size: 12px;
+          color: #999;
+          i {
+            position: relative;
+            top: 1px;
+            margin-left: 4px;
+            vertical-align: top;
+            font-size: inherit;
+            font-weight: bold;
+          }
+        }
+        .tool-btn + .tool-btn {
+          margin-left: 30px;
+        }
+        .tool-btn:hover {
+          color: $selfActiveColor;
+        }
+        .collected {
+          color: $selfActiveColor;
+        }
+      }
+    }
+    .desc-text-box {
+      width: 470px;
+      margin-left: $selfPicWidth + 30px;
+      margin-right: 55px;
+      .box-head {
+        margin-bottom: 18px;
+        .title {
+          margin-right: 15px;
+          vertical-align: middle;
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+        }
+        .tag {
+          height: 20px;
+          padding: 0 5px;
+          margin-right: 10px;
+          vertical-align: middle;
+          line-height: 20px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-radius: 20px;
+        }
+      }
+      .box-body {
+        .desc-list {
+          float: left;
+        }
+        .desc-item {
+          $selfWidth: 70px;
+          line-height: 36px;
+          .title {
+            float: left;
+            width: $selfWidth;
+            margin-right: - $selfWidth;
+            color: #333;
+          }
+          .content {
+            margin-left: $selfWidth;
+            word-wrap: break-word;
+            word-break: break-all;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+  .consult-card {
+    $selfStressColor: #fe4654;
+    float: right;
+    width: 274px;
+    padding: 45px 12px;
+    margin: 20px auto;
+    text-align: center;
+    border-left: 1px dashed #ddd;
+    .price-box {
+      .price {
+        & > * {
+          display: inline;
+          white-space: nowrap;
+        }
+        .addon {
+          color: #333;
+        }
+        .num {
+          font-size: 24px;
+          font-weight: bold;
+          color: $selfStressColor;
+        }
+        &.old-price {
+          margin-top: 20px;
+          color: #666;
+          & > * {
+            text-decoration: line-through;
+            color: inherit;
+          }
+          .num {
+            font-size: inherit;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    .consult-box {
+      $selfWidth: 216px;
+      $selfHeight: 38px;
+      margin-top: 30px;
+      .input-box {
+        position: relative;
+        width: $selfWidth;
+        height: $selfHeight;
+        margin: 0 auto;
+        input[type='text'] {
+          width: $selfWidth - 2px - 20px - 82px;
+          height: $selfHeight - 2px - 20px;
+          padding: 10px 82px + 10px 10px 10px;
+          line-height: $selfHeight - 2px - 20px;
+          border: 1px solid $selfStressColor;
+          border-radius: 4px;
+        }
+        .consult-btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 82px;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          font-weight: bold;
+          color: #fff;
+          background-color: $selfStressColor;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          &:hover {
+            background-color: $selfStressColor - 15%;
+          }
+          &:active {
+            background-color: $selfStressColor - 30%;
+          }
+        }
+      }
+      .hint-info {
+        padding: 8px 0;
+        line-height: 14px;
+        font-size: 12px;
+        color: #666;
+      }
+      .notice {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* jump-tab-container */
+.jump-tab-container {
+  position: relative;
+  width: 100%;
+  .jump-tab-nav {
+    $selfActiveColor: $selfActiveColor;
+    position: relative;
+    width: 932px;
+    height: 55px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    ul {
+      text-align: center;
+      font-size: 0;
+      li {
+        position: relative;
+        display: inline-block;
+        width: 159px;
+        height: 55px;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 55px;
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+        cursor: default;
+        transition: color .2s ease-out;
+        .line {
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          text-align: center;
+          em {
+            display: inline-block;
+            vertical-align: top;
+            width: 0;
+            height: 100%;
+            background-color: $selfActiveColor;
+            transition: width .2s ease-out;
+          }
+        }
+        &.current {
+          color: $selfActiveColor;
+          .line {
+            em {
+              width: 100%;
+            }
+          }
+        }
+        &:hover {
+          color: $selfActiveColor;
+          .line {
+            em {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .jump-tab-content {
+    width: 100%;
+    background-color: #fff;
+  }
+  &.set-nav-fixed {
+    padding-top: 56px;
+    .jump-tab-nav {
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 1px 4px 0 rgba(51, 51, 51, .2);
+    }
+  }
+}
+
+/* main-container */
+.main-container {
+  width: 932px;
+}
+
+/* desc-tab-container */
+.main-container .desc-tab-container {
+  .jump-tab-content {
+    min-height: 1236px - 56px;
+  }
+  // 共性
+  .jump-content-item {
+    padding: 0 50px;
+    .content-title {
+      padding: 40px 0;
+      .title {
+        padding-left: 18px;
+        margin-left: -4px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        border-left: 4px solid $selfActiveColor;
+      }
+    }
+    .content-body {
+      min-height: 50px;
+    }
+  }
+  // 个性
+  .item-intro {
+    img {
+      display: block;
+      width: 70%;
+      margin: 15px auto;
+      border: 1px solid #ddd;
+    }
+    .intro-text {
+      line-height: 24px;
+      color: #666;
+    }
+  }
+  .item-path {
+    .path-list {
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0;
+      .path-item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        color: #666;
+        .icon {
+          position: relative;
+          width: 58px;
+          height: 58px;
+          margin-bottom: 22px;
+          background: url(../resource/img/sme_details_sprites1.png) no-repeat 0 0;
+          border: 5px solid #ebf8ff;
+          border-radius: 50%;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 54px;
+            display: block;
+            width: 63px;
+            height: 47px;
+            margin-top: -23.5px;
+            background: url(../resource/img/sme_details_sprites1.png) no-repeat 0 -60px;
+          }
+        }
+        &.icon-no-arrow {
+          .icon {
+            &:after {
+              width: 0;
+              height: 0;
+              background: none;
+            }
+          }
+        }
+      }
+      .path-item + .path-item {
+        margin-left: 60px;
+      }
+    }
+  }
+  .item-material {
+    padding-bottom: 80px;
+    .material-table {
+      margin-bottom: 0;
+      line-height: 1.5;
+      & > thead {
+        & > tr {
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}
+
+/* aside-container */
+.aside-container {
+  width: 258px;
+}
+
+/* query-entry */
+.aside-container .query-entry {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+}
+
+/* brand-list */
+.aside-container .brand-list {
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  .brand-card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+    .pic {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 172px;
+      text-align: center;
+      font-size: 0;
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+      &:before {
+        @include globalVerticalMiddleAssist;
+      }
+      img {
+        display: inline-block;
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+        transition: transform .3s ease-out;
+      }
+      .price {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 7px 9px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #fe4654;
+        border-top-left-radius: 26px;
+        border-bottom-left-radius: 26px;
+      }
+      &:hover {
+        img {
+          transform: scale(1.06);
+        }
+      }
+    }
+    .desc {
+      padding: 28px;
+      .title {
+        a {
+          max-width: 100%;
+          vertical-align: middle;
+          color: #333;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      .price {
+        margin-top: 10px;
+        .num {
+          font-size: 16px;
+          color: #fe4654;
+        }
+      }
+    }
+  }
+  .brand-card + .brand-card {
+    margin-top: 10px;
+  }
+}

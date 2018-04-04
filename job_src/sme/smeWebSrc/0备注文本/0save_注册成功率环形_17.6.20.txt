@@ -1,0 +1,61 @@
+ //--注册成功率环形图示例
+    var registerData = [
+        {
+            name: '注册成功',
+            y: 9623
+        }, {
+            name: '注册未成功',
+            y: 377
+        }
+    ];
+    var rateChart = Highcharts.chart('rate-chart', {
+        chart: {
+            type: 'pie',
+            backgroundColor: null,
+            spacing: [0, 0, 0, 0]
+        },
+        colors: ['#5a4ab3', '#9485ac'],
+        title: {
+            // title是成功率的比率
+            text: (registerData[0].y / (registerData[1].y + registerData[0].y) * 100).toFixed(2) + '%',
+            floating: true,
+            y: 55,
+            style: {
+                'font-family': 'Arial',
+                'font-size': '14px',
+                'color': '#1e2285'
+            }
+        },
+        tooltip: {
+            enabled: false
+        },
+        plotOptions: {
+            pie: {
+                point: {
+                    events: {
+                        legendItemClick: function (e) {
+                            return false;
+                        }
+                    }
+                }
+            }
+        },
+        series: [
+            {
+                type: 'pie',
+                dataLabels: {
+                    enabled: false
+                },
+                innerSize: '80%',
+                showInLegend: true,
+                borderWidth: 0,
+                data: registerData
+            }
+        ],
+        legend: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        }
+    });

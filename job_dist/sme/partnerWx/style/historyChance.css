@@ -1,0 +1,32 @@
+/* chance-list */
+.chance-list { padding-top: .9rem; padding-bottom: .9rem; }
+
+.chance-list .chance-card { font-size: 1.3rem; background-color: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+.chance-list .chance-card .card-row { padding-top: 1.1rem; padding-bottom: 1.1rem; }
+
+.chance-list .chance-card .card-row + .card-row { border-top: 1px solid #eee; }
+
+.chance-list .chance-card .head-row { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 1.1rem; }
+
+.chance-list .chance-card .head-row .time { -ms-flex-preferred-size: 50%; flex-basis: 50%; text-align: left; color: #a9a9a9; }
+
+.chance-list .chance-card .head-row .status { -ms-flex-preferred-size: 50%; flex-basis: 50%; text-align: right; }
+
+.chance-list .chance-card .base-info-row .info-box .name { font-size: 1.4rem; }
+
+.chance-list .chance-card .base-info-row .info-box .phone { margin-top: .5rem; font-size: 1.1rem; }
+
+.chance-list .chance-card .base-info-row .info-box .phone i { vertical-align: middle; font-size: 1.4rem; }
+
+.chance-list .chance-card .base-info-row .info-box .phone span { margin-left: .8rem; vertical-align: middle; }
+
+.chance-list .chance-card .type-row .title { float: left; width: 6.5rem; margin-right: -6.5rem; }
+
+.chance-list .chance-card .type-row .content { margin-left: 6.5rem; }
+
+.chance-list .chance-card .desc-row .title { float: left; width: 6.5rem; margin-right: -6.5rem; }
+
+.chance-list .chance-card .desc-row .content { margin-left: 6.5rem; }
+
+.chance-list .chance-card + .chance-card { margin-top: .9rem; }

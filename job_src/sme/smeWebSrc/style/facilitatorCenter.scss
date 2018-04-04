@@ -1,0 +1,401 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* section-row 共 */
+.section-row + .section-row {
+  margin-top: 10px;
+}
+
+/* section-panel 共 */
+.section-panel {
+  padding: 15px 30px;
+  background-color: #fff;
+  .panel-head {
+    margin-bottom: 10px;
+    line-height: 32px;
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $facilitatorBaseBlue;
+      .icon {
+        margin-right: 10px;
+        font-size: 18px;
+        font-weight: normal;
+        color: $facilitatorBaseOrange;
+      }
+    }
+    a {
+      color: $facilitatorBaseBlue;
+      &:hover {
+        color: $facilitatorBaseOrange;
+      }
+    }
+  }
+}
+
+/* business-panel */
+.business-panel {
+  width: 536px;
+  height: 185px;
+  overflow: hidden;
+  .business-notice {
+    p {
+      margin-bottom: 36px;
+      font-size: 13px;
+    }
+    .notice-container {
+      text-align: center;
+      font-size: 0;
+      .notice-item {
+        display: inline-block;
+        width: 20%;
+        height: 75px;
+        margin-left: -1px;
+        vertical-align: top;
+        font-size: 14px;
+        color: #333;
+        .icon {
+          position: relative;
+          width: 38px;
+          height: 38px;
+          margin-bottom: 14px;
+          font-size: 38px;
+          color: #708e9f;
+          .num {
+            position: absolute;
+            top: -4px;
+            right: -6px;
+            display: block;
+            min-width: 14px;
+            height: 18px;
+            padding: 0 2px;
+            line-height: 18px;
+            font-size: 12px;
+            color: #fff;
+            background-color: $facilitatorBaseOrange;
+            border-radius: 18px;
+          }
+          &:hover {
+            color: $facilitatorBaseOrange;
+          }
+        }
+        .text {
+          color: inherit;
+          &:hover {
+            color: $facilitatorBaseOrange;
+          }
+        }
+      }
+      .notice-item + .notice-item {
+        border-left: 1px solid #ddd;
+      }
+    }
+  }
+}
+
+/* notice-panel */
+.notice-panel {
+  width: 318px;
+  height: 185px;
+  overflow: hidden;
+  .notice-list {
+    .notice-link {
+      width: 100%;
+      font-size: 13px;
+      color: #666;
+      &:before {
+        content: '·';
+        display: inline-block;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+      &:hover {
+        color: $facilitatorBaseOrange;
+      }
+    }
+    .notice-link + .notice-link {
+      margin-top: 15px;
+    }
+  }
+}
+
+/* manage-data-panel */
+.manage-data-panel {
+  .panel-head {
+    .filter-container {
+      font-size: 0;
+      & > * {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: middle;
+        font-size: 14px;
+      }
+    }
+    .time-filter {
+      font-size: 0;
+      color: #999;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+      }
+      .addon {
+        color: #333;
+      }
+      .dash-line {
+        margin: 0 6px;
+      }
+      .time-choose {
+        position: relative;
+        width: 122px;
+        height: 32px;
+        background-color: #fff;
+        i {
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          line-height: 1;
+          font-size: 16px;
+          color: #c9c9c9;
+        }
+        span, input[type='text'] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 82px;
+          height: 18px;
+          padding: 6px 28px 6px 10px;
+          line-height: 18px;
+          font-size: 14px;
+          background-color: transparent;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+    .filter-btn {
+      height: 32px;
+      padding: 0 10px;
+      line-height: 32px;
+      text-align: center;
+      color: #fff;
+      background-color: #24a6df;
+      border-radius: 5px;
+      &:hover {
+        color: #fff;
+        background-color: #24a6df - 10%;
+      }
+      &:active {
+        background-color: #24a6df - 30%;
+      }
+    }
+  }
+  .manage-table {
+    & > thead {
+      & > tr {
+        & > th {
+          background-color: #e8ebf0;
+        }
+      }
+    }
+  }
+}
+
+/* new-task-panel */
+.new-task-panel {
+  width: 427px;
+  height: 270px;
+  overflow: hidden;
+  .task-table {
+    margin-bottom: 0;
+    & > thead, & > tbody {
+      & > tr {
+        & > th, & > td {
+          width: 25%;
+          color: #666;
+        }
+      }
+    }
+    & > tbody {
+      & > tr {
+        & > td {
+          border-bottom: none;
+          border-top: 1px dashed #eee;
+        }
+      }
+    }
+    .empty-table {
+      padding: 20px 0;
+      .icon {
+        font-size: 72px;
+        color: #ebedf2;
+      }
+      .text {
+        color: #ddd;
+      }
+    }
+    .price {
+      color: #fb3c3c;
+      &:before {
+        content: '¥';
+        display: inline-block;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+/* strategy-panel */
+.strategy-panel {
+  width: 427px;
+  height: 270px;
+  overflow: hidden;
+  .strategy-group-container {
+    overflow: hidden;
+    .container-inner {
+      margin-left: -47px;
+      margin-top: -15px;
+      font-size: 0;
+    }
+    .strategy-group {
+      display: inline-block;
+      width: 190px;
+      margin-left: 47px;
+      margin-top: 15px;
+      vertical-align: top;
+      font-size: 13px;
+      color: #666;
+      .group-head {
+        border-bottom: 1px solid #ddd;
+        .title {
+          position: relative;
+          padding: 15px 10px 12px 0;
+          font-weight: bold;
+          &:before {
+            content: '·';
+            display: inline-block;
+            margin-right: 4px;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid #fd833c;
+          }
+        }
+      }
+      .group-list {
+        font-size: 0;
+        li {
+          display: inline-block;
+          width: 50%;
+          margin-top: 15px;
+          vertical-align: top;
+          font-size: 13px;
+        }
+        .list-item {
+          color: inherit;
+          &:hover {
+            color: $facilitatorBaseOrange;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* service-panel */
+.service-panel {
+  .panel-body {
+    min-height: 551px;
+  }
+  .service-cards-container {
+    overflow: hidden;
+    .container-inner {
+      margin-top: -8px;
+      margin-left: -8px;
+      font-size: 0;
+    }
+    .service-card {
+      display: inline-block;
+      width: 225px;
+      height: 236px;
+      padding: 39px 0 35px 0;
+      margin-top: 8px;
+      margin-left: 8px;
+      vertical-align: top;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      background-color: #f2f3f7;
+      transition: background-color .3s ease-out;
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: $facilitatorBaseBlue;
+        &:after {
+          content: '';
+          display: block;
+          width: 173px;
+          height: 1px;
+          margin: 18px auto 23px auto;
+          background: url(../resource/img/sme_member_icon20.png) no-repeat center;
+        }
+      }
+      .desc {
+        width: 120px;
+        min-height: 105px;
+        margin: 0 auto;
+        text-align: justify;
+        line-height: 1.2;
+        color: $facilitatorBaseBlue;
+        .desc-item {
+          margin-left: 10px;
+          &:before {
+            content: '·';
+            display: inline-block;
+            margin-right: 4px;
+            margin-left: -10px;
+            font-weight: bold;
+          }
+        }
+        .desc-item + .desc-item {
+          margin-top: 8px;
+        }
+      }
+      .status {
+        margin: 12px 0 15px 0;
+      }
+      .card-btn {
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: $facilitatorBaseOrange;
+        &:hover {
+          background-color: $facilitatorBaseOrange - 10%;
+        }
+        &:active {
+          background-color: $facilitatorBaseOrange - 35%;
+        }
+        &.renewal-btn {
+          background-color: #24a6df;
+          &:hover {
+            background-color: #24a6df - 10%;
+          }
+          &:active {
+            background-color: #24a6df - 35%;
+          }
+        }
+      }
+      &:hover {
+        background-color: #f2f3f7 - 10%;
+      }
+    }
+  }
+}

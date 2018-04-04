@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>融诺网-未来活动详情页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <!--countdown style-->
+    <link rel="stylesheet" href="plugin/jcountdown/jcountdown.css">
+    <link rel="stylesheet" href="style/futureDetailsModule.css">
+    <!--BMap style-->
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部（取1200样式，尺寸990）-->
+<header class="header-1200 rn-wrapper">
+    <div class="header-bar">
+        <div class="rn-inner clearfix">
+            <div class="bar-notice">
+                <span>服务热线：<em>4006616855</em></span>
+                <span class="welcome">您好，欢迎来到融诺网！</span>
+                <a href="javascript:;" class="login-btn">请登录</a><a href="javascript:;" class="register-btn">免费注册</a>
+            </div>
+            <div class="bar-links">
+                <a href="javascript:;">帮助中心</a>
+                <a href="javascript:;">联系我们</a>
+                <a href="javascript:;" class="noborder">收藏本站</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-body">
+        <div class="rn-inner clearfix">
+            <a href="javascript:;" class="logo">
+                <img src="resource/img/logo-main.png" alt="">
+            </a>
+            <div class="body-links">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;">找资金</a>
+                <a href="javascript:;">选项目</a>
+                <a href="javascript:;">聚人脉</a>
+                <a href="javascript:;">资讯</a>
+                <a href="javascript:;" class="current">活动</a>
+                <a href="javascript:;" class="last-link">会员服务</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--面包屑导航-->
+<nav class="rn-wrapper">
+    <div class="rn-inner">
+        <div class="breadcrumb">
+            <i class="rniconfont">&#xe601;</i><a href="javascript:;">首页</a>
+            <span class="arrows">&gt;</span>
+            <a href="javascript:;">往期超级对话</a>
+            <span class="arrows">&gt;</span>
+            <span>活动名称</span>
+        </div>
+    </div>
+</nav>
+<!--head-banner-->
+<section class="head-banner rn-wrapper">
+    <a href="javascript:;" class="banner-pic"
+       style=" background: url(resource/img/activity_banner2.jpg) no-repeat center;"></a>
+</section>
+<!--section-tab-->
+<nav class="section-tab rn-wrapper">
+    <div class="rn-inner">
+        <a href="javascript:;" class="current-tab">活动流程</a>
+        <a href="javascript:;">投资机构</a>
+        <a href="javascript:;">组织机构</a>
+        <a href="javascript:;">活动须知</a>
+        <a href="javascript:;">我要报名</a>
+    </div>
+</nav>
+<div class="content-container rn-wrapper">
+    <div class="rn-inner clearfix">
+        <!--main-body-->
+        <section class="main-body">
+            <div class="main-inner">
+                <!--活动流程-->
+                <section class="activity-plan current-tab-body tab-body">
+                    <section class="desc-section">
+                        <div class="section-title">活动简介</div>
+                        <div class="section-body">
+                            由融诺网主办的《超级对话》活动，旨在为创业者提供更便捷的融资服务，对话知名创投公司，投资机构将入驻融诺网杭州营运中心，并定期设立驻点，筛选最优质项目。
+                            投资者和创业者是社会分工中的两个不同的角色，是同等协作、能力互补的关系。投资人横跨多个领域相对见多识广，思维广阔，不易受局限，宏观比较好，看问题往往能站在一定高度。创业者在专业领域纵深的能力较强，执行能力强，但可能在思维上容易受到限制，容易当局者迷。
+                            此次一对一VIP交流方式也让创业者们能够更真实准确地表达项目的想法，去了解投资人的谈判逻辑，采取与投资方面谈的方式双方更加高效配置资源，从横向纵向角度为创业者们做项目诊断，出谋划策。
+                        </div>
+                    </section>
+                    <section class="path-section">
+                        <div class="section-title">活动流程</div>
+                        <div class="section-body">
+                            <div class="time-tree">
+                                <div class="first-branch branch clearfix">
+                                    <div class="time">
+                                        <span class="text"><em class="date">2017年04月24日</em>9:00-9:30</span>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="text">嘉宾签到</span>
+                                    </div>
+                                </div>
+                                <div class="branch clearfix">
+                                    <div class="time">
+                                        <span class="text">9:30-9:40</span>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="text">嘉宾合影</span>
+                                    </div>
+                                </div>
+                                <div class="branch clearfix">
+                                    <div class="time">
+                                        <span class="text">9:40-10:00</span>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="text">资金方介绍</span>
+                                    </div>
+                                </div>
+                                <div class="branch clearfix">
+                                    <div class="time">
+                                        <span class="text">10:00-16:30</span>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="text">项目方&投资方洽谈</span>
+                                    </div>
+                                </div>
+                                <div class="branch clearfix">
+                                    <div class="time">
+                                        <span class="text">16:30-17:00</span>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="text">商业计划书等资料交换</span>
+                                    </div>
+                                </div>
+                                <div class="last-branch branch clearfix">
+                                    <div class="time">
+                                        <span class="text">17:30</span>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="text">活动结束</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--投资机构-->
+                <section class="activity-invest tab-body">
+                    <section class="invest-section">
+                        <div class="section-title">投资机构</div>
+                        <div class="section-body">
+                            <ul class="list">
+                                <li class="clearfix">
+                                    <a href="javascript:;" class="pic-link">
+                                        <img src="resource/img/activity_logo1.jpg" alt="">
+                                    </a>
+                                    <div class="desc">
+                                        <div class="inner">
+                                            <a href="javascript:;" class="title">浙商创投</a>
+                                            <p>
+                                                硅谷天堂目前在杭州、上海、天津、深圳、成都、武汉、香港、加拿大、南非等重点城市及国家设立了10余家分支机构。硅谷天堂以优异的业绩及稳健成熟的投资风格受到业内外广泛认可，多次被中国创投委、清科集团、投中集团等行业权威机构评选为“优秀创投机构金奖”。</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="javascript:;" class="pic-link">
+                                        <img src="resource/img/activity_logo2.jpg" alt="">
+                                    </a>
+                                    <div class="desc">
+                                        <div class="inner">
+                                            <a href="javascript:;" class="title">硅谷天堂</a>
+                                            <p>
+                                                硅谷天堂目前在杭州、上海、天津、深圳、成都、武汉、香港、加拿大、南非等重点城市及国家设立了10余家分支机构。硅谷天堂以优异的业绩及稳健成熟的投资风格受到业内外广泛认可，多次被中国创投委、清科集团、投中集团等行业权威机构评选为“优秀创投机构金奖”。</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="javascript:;" class="pic-link">
+                                        <img src="resource/img/activity_pic1.png" alt="">
+                                    </a>
+                                    <div class="desc">
+                                        <div class="inner">
+                                            <a href="javascript:;" class="title">厚道资本</a>
+                                            <p>
+                                                硅谷天堂目前在杭州、上海、天津、深圳、成都、武汉、香港、加拿大、南非等重点城市及国家设立了10余家分支机构。硅谷天堂以优异的业绩及稳健成熟的投资风格受到业内外广泛认可，多次被中国创投委、清科集团、投中集团等行业权威机构评选为“优秀创投机构金奖”。</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="javascript:;" class="pic-link">
+                                        <img src="resource/img/activity_pic6.png" alt="">
+                                    </a>
+                                    <div class="desc">
+                                        <div class="inner">
+                                            <a href="javascript:;" class="title">KKM资产</a>
+                                            <p>
+                                                硅谷天堂目前在杭州、上海、天津、深圳、成都、武汉、香港、加拿大、南非等重点城市及国家设立了10余家分支机构。硅谷天堂以优异的业绩及稳健成熟的投资风格受到业内外广泛认可，多次被中国创投委、清科集团、投中集团等行业权威机构评选为“优秀创投机构金奖”。</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+                <!--组织机构-->
+                <section class="activity-hold tab-body">
+                    <section class="host-section">
+                        <div class="section-title">主办单位</div>
+                        <div class="section-body">
+                            <div class="list">
+                                <a href="javascript:;">
+                                    <img src="resource/img/activity_logo.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="jointly-section">
+                        <div class="section-title">协办单位</div>
+                        <div class="section-body">
+                            <div class="list">
+                                <a href="javascript:;">
+                                    <img src="resource/img/activity_pic1.png" alt="">
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="resource/img/activity_pic2.png" alt="">
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="resource/img/activity_logo.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--活动须知-->
+                <section class="activity-notice tab-body">
+                    <section class="notice-section">
+                        <div class="section-title">活动须知</div>
+                        <div class="section-item">
+                            <h3>【活动使命】</h3>
+                            <div class="desc-text">邀请国内知名投资机构</div>
+                        </div>
+                        <div class="section-item">
+                            <h3>【活动愿景】</h3>
+                            <div class="desc-text">为创业者提供更好的融资服务</div>
+                        </div>
+                        <div class="section-item">
+                            <h3>【活动时间】</h3>
+                            <div class="desc-text">2017年4月24日（周一）</div>
+                        </div>
+                        <div class="section-item">
+                            <h3>【活动地点】</h3>
+                            <div class="desc-text">融诺网（杭州运营中心）</div>
+                            <div class="desc-text">地址：杭州市西湖区文一西路776号西溪福地创业园</div>
+                        </div>
+                        <div class="address-map" id="address-map">占位：地址定位地图</div>
+                    </section>
+                </section>
+                <!--我要报名-->
+                <section class="activity-enroll tab-body">
+                    <section class="way-section1">
+                        <div class="section-title">报名方式一</div>
+                        <div class="section-body">
+                            <form action="">
+                                <p class="top-notice">填写您的基础信息，立即报名参与此次活动！</p>
+                                <div class="form-item clearfix">
+                                    <span class="title">您的姓名：</span>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <div class="input-box">
+                                                <input type="text" name="name" class="l-input" placeholder="请输入姓名">
+                                            </div>
+                                            <div class="hint-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item clearfix">
+                                    <span class="title">公司名称：</span>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <div class="input-box">
+                                                <input type="text" name="org" class="l-input" placeholder="请输入公司名称">
+                                            </div>
+                                            <div class="hint-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item clearfix">
+                                    <span class="title">手机号码：</span>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <div class="input-box">
+                                                <input type="text" name="mobile" class="l-input" placeholder="请输入手机号码">
+                                            </div>
+                                            <div class="hint-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item clearfix">
+                                    <span class="title">图形验证码：</span>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <div class="input-box">
+                                                <input type="text" name="pic-code" class="s-input" placeholder="请输入验证码">
+                                                <a href="javascript:;" class="pic-code input-btn">
+                                                    <img src="resource/img/activity_pic1.png" alt="">
+                                                </a>
+                                                <a href="javascript:;" class="refresh-pic input-btn">刷新</a>
+                                            </div>
+                                            <div class="hint-info">提示信息</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item clearfix">
+                                    <span class="title">短信验证码：</span>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <div class="input-box">
+                                                <input type="text" name="msg-code" class="s-input" placeholder="请输入验证码">
+                                                <a href="javascript:;" class="get-msg input-btn">获取验证码</a>
+                                            </div>
+                                            <div class="hint-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-btn-wrapper">
+                                    <a href="javascript:;" class="enroll-btn form-btn">立即报名</a>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="way-section2">
+                        <div class="section-title">报名方式二</div>
+                        <div class="section-body">
+                            <div class="call"><i class="rniconfont">&#xe62b;</i>拨打咨询热线：<b>400-6616-855</b></div>
+                            <div class="text">2017年新一年投融资市场绝对超出您的期待。<br>我们将为您提供最现实、最直接的创业扶持。<br>融诺网期待您的加入！</div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <!--aside-body-->
+        <aside class="aside-body">
+            <div class="aside-inner">
+                <!--倒计时-->
+                <div class="aside-timer">
+                    <p>距离活动开始还有：</p>
+                    <div class="countdown-box"></div>
+                    <div class="text"><span>天</span><span>小时</span><span>分</span><span>秒</span></div>
+                </div>
+                <!--主办单位-->
+                <div class="aside-host">
+                    <div class="aside-title">主办单位</div>
+                    <ul class="list">
+                        <li>
+                            <a href="javascript:;" title="融诺网">
+                                <img src="resource/img/activity_logo.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--协办单位-->
+                <div class="aside-jointly">
+                    <div class="aside-title">协办单位</div>
+                    <ul class="list">
+                        <li>
+                            <a href="javascript:;" title="协办单位">
+                                <img src="resource/img/activity_pic1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="协办单位">
+                                <img src="resource/img/activity_pic2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="协办单位">
+                                <img src="resource/img/activity_logo.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <!--等高分割线-->
+        <div class="body-line"></div>
+    </div>
+</div>
+
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<!--countdown js-->
+<script src="plugin/jcountdown/jquery-migrate-1.2.1.min.js"></script>
+<script src="plugin/jcountdown/jquery.jcountdown.min.js"></script>
+<!--注：使用搜索功能，用2.0更丰富，2.0需要申请密钥。-->
+<!--<script src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"></script>-->
+<script src="http://api.map.baidu.com/api?v=1.4"></script>
+<script src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<script>
+    //主题内容跳转
+    function jumpTab($tabs, $contents) {
+        var currentIndex = 0;
+        $tabs.on('click', function () {
+            if ($(this).hasClass('current-tab') == false) {
+                currentIndex = $(this).index();
+                $('.current-tab').removeClass('current-tab');
+                $('.current-tab-body').removeClass('current-tab-body');
+                $(this).addClass('current-tab');
+                $contents.eq(currentIndex).addClass('current-tab-body');
+            }
+        });
+    }
+    jumpTab($('.section-tab').find('a'), $('.content-container').find('.tab-body'));
+    //实例化倒计时
+    function setCountdown($dom) {
+        var zone = -new Date().getTimezoneOffset() / 60, //北京时间东八区
+                time = '2017/6/18 00:00:00',
+                config = {
+                    timeText: time, //倒计时时间
+                    timeZone: zone, //时区
+                    style: "slide", //显示的样式，可选值有flip,slide,metal,crystal
+                    color: "black", //显示的颜色，可选值white,black
+                    width: 280, //倒计时宽度
+                    textGroupSpace: 5, //天、时、分、秒之间间距
+                    textSpace: 0, //数字之间间距
+                    reflection: 0, //是否显示倒影
+                    reflectionOpacity: 10, //倒影透明度
+                    reflectionBlur: 0, //倒影模糊程度
+                    dayTextNumber: 2, //倒计时天数数字个数
+                    displayDay: !0, //是否显示天数
+                    displayHour: !0, //是否显示小时数
+                    displayMinute: !0, //是否显示分钟数
+                    displaySecond: !0, //是否显示秒数
+                    displayLabel: 0, //是否显示倒计时底部label
+                    onFinish: function () {
+                    }
+                };
+        $dom.jCountdown(config);
+    }
+    setCountdown($('.countdown-box'));
+    //实例化百度地图
+    var map = new BMap.Map('address-map');
+    var point = new BMap.Point(120.077897, 30.293021);
+    map.centerAndZoom(point, 18);
+    map.enableScrollWheelZoom();  //滚轮缩放
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">'
+            + '地址：杭州市西湖区文一西路776号西溪福地创业园<br/>电话：4006616855<br/>简介：融诺网是一家投融资项目信息服务平台。此处为杭州运营中心。'
+            + '</div>';
+    var searchInfoWindow = null; //配置搜索框
+    searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+        title: "融诺网（杭州运营中心）", //标题
+        width: 290,             //宽度
+        height: 105,              //高度
+        panel: "panel",         //检索结果面板
+        enableAutoPan: true,     //自动平移
+        searchTypes: [
+            BMAPLIB_TAB_SEARCH,   //周边检索
+            BMAPLIB_TAB_TO_HERE,  //到这里去
+            BMAPLIB_TAB_FROM_HERE //从这里出发
+        ]
+    });
+    var marker = new BMap.Marker(point); // 创建标注
+    map.addOverlay(marker);
+    marker.addEventListener("click", function (e) {
+        searchInfoWindow.open(marker);
+    });
+</script>
+
+</body>
+</html>

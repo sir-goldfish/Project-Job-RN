@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑接口详情-融诺API管理系统</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/css/font-awesome.min.css">
+    <link rel="stylesheet" href="theme/css/animate.css">
+    <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/apiDetails.css">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper-content animated fadeInDown">
+    <section class="api-edit-container api-details-container">
+        <!--api-container-head-->
+        <div class="api-container-head clearfix">
+            <div class="head-title pull-left font-bold">
+                <a class="fa fa-refresh" href="javascript:window.location.reload();" title="刷新本页"></a>
+                编辑接口
+            </div>
+            <div class="head-handle-group pull-right">
+                <a href="javascript:;" title="删除该接口">删除</a>
+            </div>
+        </div>
+        <!--api-container-body-->
+        <div class="api-container-body">
+            <form class="api-edit-form">
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">接口名称：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <input type="text" class="form-control" placeholder="接口名称">
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">接口描述：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <input type="text" class="form-control" placeholder="接口描述">
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title">关键词：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <input type="text" class="form-control" placeholder="关键词">
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">项目分类：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <select class="form-control">
+                            <option value="项目分类">项目分类</option>
+                            <option value="分类级别1">分类级别1</option>
+                            <option value="分类级别2">分类级别2</option>
+                            <option value="分类级别3">分类级别3</option>
+                            <option value="分类级别4">分类级别4</option>
+                            <option value="分类级别5">分类级别5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">接口地址：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <input type="text" class="form-control" placeholder="接口地址">
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">method：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <select class="form-control" style="max-width: 150px;">
+                            <option value="POST">POST</option>
+                            <option value="GET">GET</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">请求字段：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <div class="add-param-container">
+                            <div class="head-handle-group">
+                                <a href="javascript:;" class="add-request-btn btn btn-self-blue">添加请求参数 <i
+                                        class="fa fa-plus"></i></a>
+                            </div>
+                            <ul class="add-request-list add-param-list list-unstyled"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">返回字段：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <div class="add-param-container">
+                            <div class="head-handle-group">
+                                <a href="javascript:;" class="add-response-btn btn btn-self-blue">添加返回参数 <i
+                                        class="fa fa-plus"></i></a>
+                            </div>
+                            <ul class="add-response-list add-param-list list-unstyled"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title u-asterisk-before">返回数据：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <div class="head-handle-group" style="margin-bottom:15px;">
+                            <a href="javascript:;" class="btn btn-self-blue">获取返回值</a>
+                        </div>
+                        <textarea class="form-control" style="resize:none; height:500px;" placeholder="返回数据"></textarea>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-group-addon">
+                        <span class="addon-title">备注：</span>
+                    </div>
+                    <div class="form-group-content">
+                        <textarea class="form-control" style="resize:none; height:100px;" placeholder="备注"></textarea>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <a href="javascript:;" class="submit-btn btn btn-self-blue m-l"><i class="fa fa-save"></i> 保存提交</a>
+                    <a href="javascript:;" class="reset-btn btn btn-danger m-l"><i class="fa fa-close"></i> 重置</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+<!--#request-row-tpl-->
+<script type="text/html" id="request-row-tpl">
+    <li class="list-item">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="参数名" style="width:100px;">
+            <select class="form-control" style="width:120px;">
+                <option value="参数类型">参数类型</option>
+                <option value="type1">type1</option>
+                <option value="type2">type2</option>
+                <option value="type3">type3</option>
+                <option value="type4">type4</option>
+                <option value="type5">type5</option>
+            </select>
+            <select class="form-control" style="width:80px;">
+                <option value="必传">必传</option>
+                <option value="选传">选传</option>
+            </select>
+            <input type="text" class="form-control" placeholder="参数描述" style="width:200px;">
+            <input type="text" class="form-control" placeholder="参数值（选填）"
+                   style="width:130px;">
+            <a href="javascript:;" class="del-self-btn btn btn-danger" title="移除该参数"><i
+                    class="fa fa-remove"></i></a>
+        </div>
+    </li>
+</script>
+<!--#response-row-tpl-->
+<script type="text/html" id="response-row-tpl">
+    <li class="list-item">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="参数名" style="width:100px;">
+            <select class="form-control" style="width:120px;">
+                <option value="参数类型">参数类型</option>
+                <option value="type1">type1</option>
+                <option value="type2">type2</option>
+                <option value="type3">type3</option>
+                <option value="type4">type4</option>
+                <option value="type5">type5</option>
+            </select>
+            <input type="text" class="form-control" placeholder="参数描述" style="width:200px;">
+            <a href="javascript:;" class="del-self-btn btn btn-danger" title="移除该参数"><i
+                    class="fa fa-remove"></i></a>
+        </div>
+    </li>
+</script>
+<!--script-->
+<script src="theme/js/jquery.min.js"></script>
+<script>
+    //***操作字段示例
+    function handleParam($addBtn, $list, rowHtml) {
+        $list.find('.del-self-btn').on('click.del-self', function () {
+            $(this).parents('.list-item').remove();
+        });
+        $addBtn.on('click', function () {
+            $list.append(rowHtml);
+            $list.find('.del-self-btn').off('click.del-self');
+            $list.find('.del-self-btn').on('click.del-self', function () {
+                $(this).parents('.list-item').remove();
+            });
+        });
+    }
+
+    handleParam($('.add-request-btn'), $('.add-request-list'), $('#request-row-tpl').html());
+    handleParam($('.add-response-btn'), $('.add-response-list'), $('#response-row-tpl').html());
+</script>
+</body>
+</html>

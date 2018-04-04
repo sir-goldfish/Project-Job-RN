@@ -1,0 +1,88 @@
+<ul class="list">
+	<li class="list-item">
+		<div class="user-info f-clearfix">
+			<figure class="avatar"><img src="/statics/resource/img/sme_avatar5_1.png"></figure>
+			<div class="info-right">
+				<div class="info-text">
+					<span class="name">林女士</span>
+					<span class="org">重庆某农产品开发</span>
+				</div>
+				<div class="tag-group">
+					<div class="group-list">
+						<span class="tag tag-white">服务好</span>
+						<span class="tag tag-green">有保障</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="desc-container">
+			<div class="evaluation-text">
+				刚提交资料，顾问就打电话过来了，好快。顾问很耐心的告诉我要准备哪些资料，服务真的很用心。
+			</div>
+		</div>
+	</li>
+	<li class="list-item">
+		<div class="user-info f-clearfix">
+			<figure class="avatar"><img src="/statics/resource/img/sme_avatar6_1.png"></figure>
+			<div class="info-right">
+				<div class="info-text">
+					<span class="name">刘先生</span>
+					<span class="org">四川某小商品开发公司</span>
+				</div>
+				<div class="tag-group">
+					<div class="group-list">
+						<span class="tag tag-green">高效</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="desc-container">
+			<div class="evaluation-text">
+				服务很靠谱，申请资料审核的很快，有缺少的或者不满足条件的资料，顾问都帮我过滤了。还不用承担风险。
+			</div>
+		</div>
+	</li>
+	<li class="list-item">
+		<div class="user-info f-clearfix">
+			<figure class="avatar"><img src="/statics/resource/img/sme_avatar7_1.png"></figure>
+			<div class="info-right">
+				<div class="info-text">
+					<span class="name">周先生</span>
+					<span class="org">四川某天猫电商</span>
+				</div>
+				<div class="tag-group">
+					<div class="group-list">
+						<span class="tag tag-white">服务好</span>
+						<span class="tag tag-green">有保障</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="desc-container">
+			<div class="evaluation-text">
+				查询的时候很细心，网申也有专门的顾问负责，不用害怕钱交了没人管。真的是良心商家。
+			</div>
+		</div>
+	</li>
+	<li class="list-item">
+		<div class="user-info f-clearfix">
+			<figure class="avatar"><img src="/statics/resource/img/sme_avatar8_1.png"></figure>
+			<div class="info-right">
+				<div class="info-text">
+					<span class="name">王女士</span>
+					<span class="org">重庆某灯饰店</span>
+				</div>
+				<div class="tag-group">
+					<div class="group-list">
+						<span class="tag tag-green">高效</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="desc-container">
+			<div class="evaluation-text">
+				服务很好，刚刚申请就有顾问过来询问。不用承担风险这一点很好。
+			</div>
+		</div>
+	</li>
+</ul>

@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专利服务-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/servicePatent.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head5">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item stress"><a href="home.html"><i class="icon iconfont">&#xe601;</i>首页</a></li>
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="serviceBrand_v1.html" class="logo-link"><img src="resource/img/sme_logo_property.jpg"></a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="serviceBrand_v1.html" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="serviceBrand_v2.html" class="item-name">商标服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="serviceCopyright.html" class="item-name">版权服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicePatent.html" class="item-name">专利服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="transactionHome.html" class="item-name">交易市场</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--head-container-->
+<section class="head-container sme-wrapper">
+    <div class="wrapper sme-inner">
+        <!--search-container-->
+        <div class="search-container">
+            <div class="search-title">一个想法可以<b>改变世界</b>，and you?</div>
+            <div class="search-box">
+                <input type="text" placeholder="请输入您的创新点或产品能否申请，如“可重复使用的本子和笔”" class="search-input">
+                <i class="icon iconfont">&#xe6fa;</i>
+                <a href="javascript:;" class="search-btn">免费查询能否申请</a>
+            </div>
+        </div>
+        <!--query-container-->
+        <div class="query-container">
+            <div class="section-head">
+                <div class="section-title">
+                    <span class="title">专利查询</span>
+                    <span class="desc">我的想法能不能申请专利？</span>
+                </div>
+            </div>
+            <div class="query-card f-clearfix">
+                <div class="query-box">
+                    <a href="javascript:;" class="query-entry" title="点击免费查询">
+                        <div class="icon"></div>
+                        <div class="title">免费查询专利能否申请</div>
+                        <div class="para">查询我的想法是否已被申请专利</div>
+                    </a>
+                </div>
+                <div class="query-desc">
+                    <ul class="desc-list">
+                        <li class="desc-item">
+                            <div class="icon" style="background-image:url(resource/img/sme_patent_pic1.png);"></div>
+                            <div class="dot"></div>
+                            <div class="title">专利挖掘</div>
+                            <div class="para">挖掘想法中的创新点，包装专利</div>
+                        </li>
+                        <li class="desc-item">
+                            <div class="icon" style="background-image:url(resource/img/sme_patent_pic2.png);"></div>
+                            <div class="dot"></div>
+                            <div class="title">专利评估</div>
+                            <div class="para">技术评估，判断专利申请</div>
+                        </li>
+                        <li class="desc-item">
+                            <div class="icon" style="background-image:url(resource/img/sme_patent_pic3.png);"></div>
+                            <div class="dot"></div>
+                            <div class="title">专利申请</div>
+                            <div class="para">资料整理，送达专利部门</div>
+                        </li>
+                        <li class="desc-item">
+                            <div class="icon" style="background-image:url(resource/img/sme_patent_pic4.png);"></div>
+                            <div class="dot"></div>
+                            <div class="title">获得专利</div>
+                            <div class="para">顺丰送达</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--patent-service-section-->
+<section class="patent-service-section sme-wrapper">
+    <div class="sme-inner">
+        <div class="section-head">
+            <div class="section-title">
+                <span class="title">专利服务</span>
+                <span class="desc">我该申请什么专利？</span>
+            </div>
+        </div>
+        <div class="section-body f-clearfix">
+            <div class="desc-cards-container f-clearfix">
+                <div class="title-card">
+                    <img src="resource/img/sme_patent_pic5.jpg" class="card-bg">
+                </div>
+                <a href="javascript:;" class="desc-card ani-line-card"
+                   style="background-image:url(resource/img/sme_patent_pic6.jpg);">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="title">
+                            <span class="title-text">发明专利</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">6999</span>
+                        </div>
+                        <div class="price-info">（含减免官费）</div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="desc-card ani-line-card"
+                   style="background-image:url(resource/img/sme_patent_pic7.jpg);">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="title">
+                            <span class="title-text">实用新型专利</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">2899</span>
+                        </div>
+                        <div class="price-info">（含减免官费）</div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="desc-card ani-line-card"
+                   style="background-image:url(resource/img/sme_patent_pic8.jpg);">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="title">
+                            <span class="title-text">外观专利</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">1800</span>
+                        </div>
+                        <div class="price-info">（含减免官费）</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--patent-apply-section-->
+<section class="patent-apply-section sme-wrapper">
+    <div class="sme-inner">
+        <div class="section-head">
+            <div class="section-title">
+                <span class="title">专利申请流程</span>
+                <span class="desc">从申请前，到拿证后，操作遇阻，如何处理？</span>
+            </div>
+        </div>
+        <div class="section-body f-clearfix">
+            <div class="desc-cards-container f-clearfix">
+                <!--申请前-->
+                <div class="title-card">
+                    <img src="resource/img/sme_patent_pic9.jpg" class="card-bg">
+                </div>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe778;</div>
+                        <div class="title">
+                            <span class="title-text">专利撰写</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">1000</span><span class="unit">起</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe734;</div>
+                        <div class="title">
+                            <span class="title-text">专利官方检索</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">2000</span><span class="unit">起</span>
+                        </div>
+                    </div>
+                </a>
+                <!--申请中-->
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe72f;</div>
+                        <div class="title">
+                            <span class="title-text">审查意见答复</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">1000</span><span class="unit">起</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="title-card">
+                    <img src="resource/img/sme_patent_pic10.jpg" class="card-bg">
+                </div>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe733;</div>
+                        <div class="title">
+                            <span class="title-text">专利申请复审</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">4000</span><span class="unit">起</span>
+                        </div>
+                    </div>
+                </a>
+                <!--申请后-->
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe732;</div>
+                        <div class="title">
+                            <span class="title-text">权利恢复</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">1500</span><span class="unit">起</span>
+                        </div>
+                        <div class="price-info">（含官费）</div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe728;</div>
+                        <div class="title">
+                            <span class="title-text">专利权评价报告</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">3000</span><span class="unit">起</span>
+                        </div>
+                        <div class="price-info">（含官费）</div>
+                    </div>
+                </a>
+                <div class="title-card" style="float:right; height:380px;">
+                    <img src="resource/img/sme_patent_pic11.jpg" class="card-bg">
+                </div>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe735;</div>
+                        <div class="title">
+                            <span class="title-text">许可备案</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">1000</span><span class="unit">起</span>
+                        </div>
+                        <div class="price-info">（含官费）</div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe6ee;</div>
+                        <div class="title">
+                            <span class="title-text">著录项目变更</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">1000</span><span class="unit">起</span>
+                        </div>
+                        <div class="price-info">（含官费）</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--patent-rights-section-->
+<section class="patent-rights-section sme-wrapper">
+    <div class="sme-inner">
+        <div class="section-head">
+            <div class="section-title">
+                <span class="title">专利维权</span>
+                <span class="desc">拒绝专利侵权，打好专利保护攻防战</span>
+            </div>
+        </div>
+        <div class="section-body f-clearfix">
+            <div class="desc-cards-container f-clearfix">
+                <div class="title-card">
+                    <img src="resource/img/sme_patent_pic12.jpg" class="card-bg">
+                </div>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe72e;</div>
+                        <div class="title">
+                            <span class="title-text">专利无效请求</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">28500</span><span class="unit">起</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="desc-card ani-line-card">
+                    <span class="line-hover"><em></em></span>
+                    <div class="card-inner">
+                        <div class="icon iconfont">&#xe79c;</div>
+                        <div class="title">
+                            <span class="title-text">专利无效答辩</span>
+                        </div>
+                        <div class="para">
+                            描述是什么呢？ I don't know.<br>描述待添加……
+                        </div>
+                        <div class="price">
+                            <span class="num">20000</span><span class="unit">起</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--path-section-->
+<section class="path-section sme-wrapper">
+    <div class="sme-inner">
+        <div class="section-head">
+            <div class="section-title">
+                <span class="title">服务流程</span>
+                <span class="desc">一对一专利顾问，专业服务</span>
+            </div>
+        </div>
+        <div class="path-container">
+            <div class="path-item">
+                <div class="icon iconfont">&#xe731;</div>
+                <div class="title">提案</div>
+            </div>
+            <div class="path-line">
+                <div class="line-desc">10分钟内响应</div>
+            </div>
+            <div class="path-item">
+                <div class="icon iconfont">&#xe736;</div>
+                <div class="title">代理人联系客户</div>
+            </div>
+            <div class="path-line">
+                <div class="line-desc">确定专利需求</div>
+            </div>
+            <div class="path-item">
+                <div class="icon iconfont">&#xe727;</div>
+                <div class="title">融诺托管服务</div>
+            </div>
+            <div class="path-line">
+                <div class="line-desc">客户提交材料</div>
+            </div>
+            <div class="path-item">
+                <div class="icon iconfont">&#xe7ee;</div>
+                <div class="title">审核申报</div>
+            </div>
+            <div class="path-line">
+                <div class="line-desc">材料寄往国知局</div>
+            </div>
+            <div class="path-item">
+                <div class="icon iconfont">&#xe72d;</div>
+                <div class="title">领取证书</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--news-section-->
+<section class="news-section sme-wrapper">
+    <div class="sme-inner">
+        <div class="section-head">
+            <div class="section-title">
+                <span class="title">专利资讯</span>
+            </div>
+        </div>
+        <div class="section-body f-clearfix">
+            <div class="flag-news-wrap">
+                <a href="javascript:;" class="pic">
+                    <img src="resource/img/sme_cr_pic6.jpg">
+                </a>
+                <div class="desc">
+                    <div class="desc-inner">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">如何判断你的外观专利被侵权了?</a>
+                        </div>
+                        <div class="para f-ellipsis">
+                            如何判断你的外观专利被侵权了，大发生的发送发达发斯蒂如何判断你的外观专利被侵权了，大发生的发送发达发斯蒂
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-news-wrap">
+                <ul class="news-list">
+                    <li class="list-item">
+                        <a href="javascript:;" class="pic">
+                            <img src="resource/img/sme_cr_pic9.jpg">
+                        </a>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="javascript:;" class="f-ellipsis">如何判断你的外观专利被侵权了?</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:;" class="pic">
+                            <img src="resource/img/sme_cr_pic13.jpg">
+                        </a>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="javascript:;" class="f-ellipsis">如何判断你的外观专利被侵权了?</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-news-wrap">
+                <div class="wrap-head">
+                    <div class="title">专利干货</div>
+                </div>
+                <ul class="news-list">
+                    <li class="list-item">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">《专利优先审查管理办法》将于正式实施</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">专利优先审查管理办法将于正式实施正式实施正式实施</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">正式实施正式实施正式实施正式实施正式</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">《专利优先审查管理办法》将于正式实施</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">专利优先审查管理办法将于正式实施正式实施正式实施</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">正式实施正式实施正式实施正式实施正式</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="title">
+                            <a href="javascript:;" class="f-ellipsis">《专利优先审查管理办法》将于正式实施</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--other-services-->
+<section class="other-services sme-wrapper">
+    <div class="sme-inner">
+        <div class="section-head">
+            <div class="section-title">
+                <span class="title">您可能还需要</span>
+            </div>
+        </div>
+        <div class="m-other-services">
+            <div class="other-services-list f-clearfix">
+                <a href="javascript:;" class="service-link">免费查询公司能否注册</a>
+                <a href="javascript:;" class="service-link">免费获取法律文书</a>
+                <a href="javascript:;" class="service-link">免费定制人力方案</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt>关于我们</dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt>服务支持</dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt>新手指南</dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link f-clearfix">
+                        <dl class="service-links f-pull-left">
+                            <dt>融诺旗下服务</dt>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#f99003;">&#xe708;</a>
+                                <a href="javascript:;" class="text">融诺知产</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#f21e02;">&#xe706;</a>
+                                <a href="javascript:;" class="text">融诺工商</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#d69f56;">&#xe8b2;</a>
+                                <a href="javascript:;" class="text">融诺法律</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#00b7ee;">&#xe705;</a>
+                                <a href="javascript:;" class="text">融诺人事</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#e60012;">&#xe707;</a>
+                                <a href="javascript:;" class="text">融诺金融</a>
+                            </dd>
+                        </dl>
+                        <dl class="friend-links f-pull-right">
+                            <dt>友情链接</dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">更多</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure>
+                    <img src="resource/img/sme_wx_qrcode.png">
+                </figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+    <!--m-default-float-consult-->
+    <aside class="m-default-float-consult">
+        <div class="consult-head"></div>
+        <div class="consult-body">
+            <div class="consult-btn content-item">
+                <a href="javascript:;" class="content-item-in"><span>在线咨询</span></a>
+            </div>
+            <div class="qrcode-btn with-hide content-item">
+                <a href="javascript:;" class="content-item-in"><span class="iconfont">&#xe6cf;</span></a>
+                <div class="hide-qrcode hide-item">
+                    <figure class="pic">
+                        <img src="resource/img/sme_wx_qrcode.png">
+                    </figure>
+                    <p>扫一扫<br>了解更多动态</p>
+                </div>
+            </div>
+            <div class="back-top-btn content-item">
+                <a href="javascript:;" class="content-item-in"><span class="iconfont">&#xe6ce;</span></a>
+            </div>
+        </div>
+    </aside>
+</footer>
+</body>
+</html>

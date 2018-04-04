@@ -1,0 +1,114 @@
+<!--html-->
+<div class="table-head">
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name">服务名称</div>
+                            <div class="table-cell num">数量</div>
+                            <div class="table-cell money">服务金额（元）</div>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name" title="商标注册">商标注册</div>
+                            <div class="table-cell num">1</div>
+                            <div class="table-cell money">1200</div>
+                        </div>
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name" title="商标无忧注册">商标无忧注册</div>
+                            <div class="table-cell num">2</div>
+                            <div class="table-cell money">2600</div>
+                        </div>
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name" title="商标无忧注册商标无忧注册商标无忧注册">商标无忧注册商标无忧注册商标无忧注册</div>
+                            <div class="table-cell num">2</div>
+                            <div class="table-cell money">2600</div>
+                        </div>
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name" title="商标无忧注册商标无忧注册商标无忧注册">商标无忧注册商标无忧注册商标无忧注册</div>
+                            <div class="table-cell num">2</div>
+                            <div class="table-cell money">2600</div>
+                        </div>
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name" title="商标无忧注册商标无忧注册商标无忧注册">商标无忧注册商标无忧注册商标无忧注册</div>
+                            <div class="table-cell num">2</div>
+                            <div class="table-cell money">2600</div>
+                        </div>
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name" title="商标无忧注册商标无忧注册商标无忧注册">商标无忧注册商标无忧注册商标无忧注册</div>
+                            <div class="table-cell num">2</div>
+                            <div class="table-cell money">2600</div>
+                        </div>
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell name" title="商标无忧注册商标无忧注册商标无忧注册">商标无忧注册商标无忧注册商标无忧注册</div>
+                            <div class="table-cell num">2</div>
+                            <div class="table-cell money">2600</div>
+                        </div>
+                    </div>
+                    <div class="table-foot">
+                        <div class="table-row f-clearfix">
+                            <div class="table-cell sum">订单总额：<span class="stress">6400</span>元</div>
+                        </div>
+                    </div>
+
+// style
+.pay-table {
+      float: left;
+      width: 535px;
+      height: 295px;
+      .stress {
+        color: #f00;
+      }
+      .table-row {
+        border: $selfBorder;
+      }
+      .table-row + .table-row {
+        border-top: none;
+      }
+      .table-cell {
+        float: left;
+        height: 16px;
+        padding: 10px;
+        line-height: 16px;
+        text-align: center;
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &.name {
+          width: 192px;
+          border-right: $selfBorder;
+        }
+        &.num {
+          width: 85px;
+          border-left: $selfBorder;
+          border-right: $selfBorder;
+        }
+        &.money {
+          width: 192px;
+          border-left: $selfBorder;
+        }
+        &.sum {
+          float: none;
+          text-align: right;
+        }
+      }
+      .table-cell + .table-cell {
+        margin-left: -1px;
+      }
+      .table-head {
+        font-weight: bold;
+      }
+      .table-body {
+        height: 220px;
+        margin-top: -1px;
+        border-left: $selfBorder;
+        border-right: $selfBorder;
+        overflow: auto;
+        .table-row {
+          border-left: none;
+          border-right: none;
+          &:hover {
+            background-color: #f5f5f5;
+          }
+        }
+      }
+    }

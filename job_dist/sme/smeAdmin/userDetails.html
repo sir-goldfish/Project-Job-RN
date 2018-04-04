@@ -1,0 +1,1848 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户详情-融诺企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/css/animate.css">
+    <link rel="stylesheet" href="theme/css/style.css">
+    <!--toastr css-->
+    <link rel="stylesheet" href="theme/css/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/userDetails.css">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body class="gray-bg">
+<div class="wrapper-content animated fadeInRight">
+    <div class="main-body-wrapper row">
+        <div class="main-container col-sm-8">
+            <!--user-info-bar-->
+            <section class="user-info-bar col-sm-12 clearfix">
+                <figure class="avatar pull-left">
+                    <img src="resource/img/smea_avatar.jpg">
+                </figure>
+                <div class="content">
+                    <div class="info-desc">
+                        <span class="desc-item">用户名：rnw-2373432</span><span
+                            class="desc-item">手机号：13890902323</span><span
+                            class="desc-item">邮箱：rongnuo@rongnuo.com</span>
+                    </div>
+                    <div class="info-btm">
+                        <span class="info-money">预计成交金额<b class="num">1800.01</b>元</span>
+                        <span class="info-money">实际成交金额<b class="num">0</b>元</span>
+                        <a href="javascript:popPayDialog(); alert('列出所有的case，调用付款弹框')" class="total-buy">总付款</a>
+                    </div>
+                </div>
+            </section>
+            <!--user-info-tab-->
+            <section class="user-info-tab col-sm-12">
+                <nav class="tab-nav">
+                    <ul class="clearfix">
+                        <li class="nav-item current">详细</li>
+                        <li class="nav-item">用户资料</li>
+                        <li class="nav-item">支付记录</li>
+                        <li class="nav-item">跟进记录</li>
+                        <li class="nav-item">发票记录</li>
+                        <li class="nav-item">备注</li>
+                    </ul>
+                </nav>
+                <div class="tab-content">
+                    <!--content 详细-->
+                    <div class="content-details content-item">
+                        <div class="base-info">
+                            <div class="base-info-inner clearfix">
+                                <div class="info-item col-sm-5 col-xs-12">
+                                    机会来源：免费查询
+                                </div>
+                                <div class="info-item col-sm-7 col-xs-12">
+                                    商标名称：融诺网融诺网融诺网融诺网
+                                </div>
+                                <div class="info-item col-sm-5 col-xs-12">
+                                    联系电话：13890902323
+                                </div>
+                                <div class="info-item col-sm-7 col-xs-12">
+                                    联系人：张无忌
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-list">
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">商标登记人：</span>
+                                <div class="desc">李元霸霸</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人类型：</span>
+                                <div class="desc">不晓得</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人名称：</span>
+                                <div class="desc">不告诉你</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">联系人：</span>
+                                <div class="desc">李元霸霸</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人性别：</span>
+                                <div class="desc">汉子</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">邮箱：</span>
+                                <div class="desc">waixingren@163.com</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">电话号码：</span>
+                                <div class="desc">158 6666 6666</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">QQ号码：</span>
+                                <div class="desc">310000000</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">邮政编码：</span>
+                                <div class="desc">310002</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">经营行业：</span>
+                                <div class="desc">?</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人地址：</span>
+                                <div class="desc">南山南</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content 用户资料-->
+                    <div class="content-info content-item">
+                        <div class="base-info info-container">
+                            <div class="container-title">基础信息：</div>
+                            <div class="container-body">
+                                <div class="container-body-inner clearfix">
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">会员性质：</span>
+                                        <div class="desc">个人</div>
+                                    </div>
+                                    <div class="info-item col-sm-7 col-xs-12 clearfix">
+                                        <span class="title pull-left">用户名：</span>
+                                        <div class="desc">rnw-123456789</div>
+                                    </div>
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">昵称：</span>
+                                        <div class="desc">路途上的月光</div>
+                                    </div>
+                                    <div class="info-item col-sm-7 col-xs-12 clearfix">
+                                        <span class="title pull-left">性别：</span>
+                                        <div class="desc">汉子</div>
+                                    </div>
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">手机号：</span>
+                                        <div class="desc">15012349876</div>
+                                    </div>
+                                    <div class="info-item col-sm-7 col-xs-12 clearfix">
+                                        <span class="title pull-left">邮箱：</span>
+                                        <div class="desc">mailmailmailmail@163.com</div>
+                                    </div>
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">所在地区：</span>
+                                        <div class="desc">青岛</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-info info-container">
+                            <div class="container-title">其他信息：</div>
+                            <div class="container-body">
+                                <div class="info-item">
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">公司名称：</span>
+                                        <div class="desc">融诺网</div>
+                                    </div>
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">公司地址：</span>
+                                        <div class="desc">山东省青岛市市南区福州南路6号</div>
+                                    </div>
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">固定电话：</span>
+                                        <div class="desc">0532-88888888</div>
+                                    </div>
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">QQ：</span>
+                                        <div class="desc">111111</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content 支付记录-->
+                    <div class="content-pay-record content-item">
+                        <div class="table-responsive">
+                            <table class="pay-record-table table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>名称</th>
+                                    <th>订单时间</th>
+                                    <th>订单状态</th>
+                                    <th>金额</th>
+                                    <th>雇主</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>23235509876543245</td>
+                                    <td>普通取名套餐 共计1个类目</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>未付款</td>
+                                    <td>1800</td>
+                                    <td>rnw_23456789</td>
+                                    <td>
+                                        <a href="javascript:popDiscountDialog1();" class="handle-btn">打折</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23235509876543245</td>
+                                    <td>普通取名套餐 共计1个类目</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>已付款</td>
+                                    <td>1800</td>
+                                    <td>rnw_23456789</td>
+                                    <td>
+                                        <a href="javascript:popRefundDialog1();" class="handle-btn">退款</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="empty-text">无数据~</div>
+                        </div>
+                        <div class="pagination-container">
+                            <div class="m-default-pagination">800 条记录 2/50 页<input value="0" type="text"><input
+                                    value="跳转" type="button"><a href='javascript:;'>上一页</a><a
+                                    href="javascript:;">1</a><span class='current'>2</span><span>…</span><a
+                                    href='javascript:;'>49</a><a href='javascript:;'>50</a><a
+                                    href="javascript:;">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content 跟进记录-->
+                    <div class="content-follow-record content-item">
+                        <div class="table-responsive">
+                            <table class="follow-record-table table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>客户意向</th>
+                                    <th class="col-sm-4">最新跟进</th>
+                                    <th>最近跟进时间</th>
+                                    <th>跟进人</th>
+                                    <th>下次跟进时间</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td class="col-sm-4">有需求，客户为馆阿金人，有签单异议，能提供主体资格证明</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>张三丰丰</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                </tr>
+                                <tr>
+                                    <td>E</td>
+                                    <td class="col-sm-4">电话未接通</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>张三丰丰</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--content 发票记录-->
+                    <div class="content-receipt-record content-item">
+                        <div class="table-responsive">
+                            <table class="receipt-record-table table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>流水号</th>
+                                    <th>caseID</th>
+                                    <th>开票金额（元）</th>
+                                    <th>开票抬头</th>
+                                    <th>开票类型</th>
+                                    <th>申请时间</th>
+                                    <th>开票状态</th>
+                                    <th>状态时间</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>12345678</td>
+                                    <td>234858</td>
+                                    <td>1800</td>
+                                    <td>企业呀企业呀企业呀</td>
+                                    <td>这是个谜</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>已出票</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                </tr>
+                                <tr>
+                                    <td>879546123</td>
+                                    <td>234858</td>
+                                    <td>1800</td>
+                                    <td>企业呀企业呀企业呀</td>
+                                    <td>这是个谜</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>已出票</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--content 备注-->
+                    <div class="content-note content-item">
+                        <div class="table-responsive">
+                            <table class="note-table table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th class="col-sm-6">内容</th>
+                                    <th>备注人</th>
+                                    <th>时间</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-sm-6">生成支付链接成功，金额1800</td>
+                                    <td>张三丰丰</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-sm-6">张三创建了普通取名套餐，订单ID：124328，机会ID：236278，机会case1件</td>
+                                    <td>李元霸霸</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--chance-card-->
+            <section class="chance-card col-sm-12">
+                <div class="card-head clearfix">
+                    <div class="title pull-left">
+                        <span class="text">商标担保注册</span>
+                        <a href="javascript:popEditChanceDialog();" class="head-btn"><i class="icon iconfont">
+                            &#xe624;</i>编辑</a><a href="javascript:;"
+                                                 class="toggle-case-btn head-btn btn btn-danger">展开case</a>
+                    </div>
+                    <div class="tools-group pull-right">
+                        <a href="javascript:popDiscountDialog();" class="head-btn"><i class="icon iconfont">
+                            &#xe696;</i>打折</a>
+                        <a href="javascript:popPayDialog();" class="head-btn"><i
+                                class="icon iconfont">&#xe602;</i>付款</a>
+                        <a href="javascript:popRefundDialog();" class="head-btn"><i class="icon iconfont">
+                            &#xe64e;</i>退款</a>
+                        <a href="javascript:popEditCaseDialog(); alert('设计稿：此对话框标题为添加case');" class="head-btn"><i
+                                class="icon iconfont">&#xe60a;</i>添加case</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标中文名称：</span>
+                            <div class="content pull-left">融诺网</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标英文名称：</span>
+                            <div class="content pull-left">rongnuowang</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">申请商标图形：</span>
+                            <div class="content pull-left">
+                                <div class="brand-pic">
+                                    <p>
+                                        <img src="theme/img/p1.jpg">
+                                        <img src="theme/img/p1.jpg" class="hidden-img">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-tree">
+                        <div class="tree-branch">
+                            <div class="branch-inner">
+                                <div class="desc">
+                                    本次机会总计：<b class="stress">2000.01</b>元，折后价：<b class="stress">1800.01</b>元，实际收益<b
+                                        class="stress">0</b>元。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-foot-info">
+                        <span class="info-item"><i class="icon iconfont">&#xe63e;</i>2017-06-19 09:12:34</span>
+                        <span class="info-item">来源：免费查询</span>
+                        <span class="info-item">机会ID：3427833</span>
+                    </div>
+                </div>
+            </section>
+            <section class="chance-card col-sm-12">
+                <div class="card-head clearfix">
+                    <div class="title pull-left">
+                        <span class="text">商标担保注册1</span>
+                        <a href="javascript:popEditChanceDialog();" class="head-btn"><i class="icon iconfont">
+                            &#xe624;</i>编辑</a><a href="javascript:;"
+                                                 class="toggle-case-btn head-btn btn btn-danger">展开case</a>
+                    </div>
+                    <div class="tools-group pull-right">
+                        <a href="javascript:popDiscountDialog();" class="head-btn"><i class="icon iconfont">
+                            &#xe696;</i>打折</a>
+                        <a href="javascript:popPayDialog();" class="head-btn"><i
+                                class="icon iconfont">&#xe602;</i>付款</a>
+                        <a href="javascript:popRefundDialog();" class="head-btn"><i class="icon iconfont">
+                            &#xe64e;</i>退款</a>
+                        <a href="javascript:popEditCaseDialog(); alert('设计稿：此对话框标题为添加case')" class="head-btn"><i
+                                class="icon iconfont">&#xe60a;</i>添加case</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标中文名称：</span>
+                            <div class="content pull-left">融诺网</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标英文名称：</span>
+                            <div class="content pull-left">rongnuowang</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">申请商标图形：</span>
+                            <div class="content pull-left">
+                                <div class="brand-pic">
+                                    <p>
+                                        <img src="theme/img/a9.jpg">
+                                        <img src="theme/img/a9.jpg" class="hidden-img">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-tree">
+                        <div class="case-branch-odd case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23128</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:popEditCaseDialog(); alert('设计稿：此弹框标题为更改case');"
+                                           class="head-btn">更改</a><a href="javascript:popChangeTypeDialog();"
+                                                                     class="head-btn">修改类别</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    商标取名 一级类别<b class="stress">1</b>项，每项<b class="stress">200</b>元，共计：<b
+                                        class="stress">200.00</b>元，折后金额：<b class="stress">0.01</b>元，实际收益：<b
+                                        class="stress">0.01</b>元（官费<b class="stress">0.00</b>元，服务费<b
+                                        class="stress">0.01</b>元）。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-branch-even case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23234</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:popEditCaseDialog(); alert('设计稿：此弹框标题为更改case');"
+                                           class="head-btn">更改</a><a href="javascript:popChangeTypeDialog();"
+                                                                     class="head-btn">修改类别</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    商标取名 一级类别<b class="stress">1</b>项，每项<b class="stress">200</b>元，共计：<b
+                                        class="stress">200.00</b>元，折后金额：<b class="stress">0.01</b>元，实际收益：<b
+                                        class="stress">0.01</b>元（官费<b class="stress">0.00</b>元，服务费<b
+                                        class="stress">0.01</b>元）。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-branch-odd case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23234</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:popEditCaseDialog(); alert('设计稿：此弹框标题为更改case');"
+                                           class="head-btn">更改</a><a href="javascript:popChangeTypeDialog();"
+                                                                     class="head-btn">修改类别</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    商标取名 一级类别<b class="stress">1</b>项，每项<b class="stress">200</b>元，共计：<b
+                                        class="stress">200.00</b>元，折后金额：<b class="stress">0.01</b>元，实际收益：<b
+                                        class="stress">0.01</b>元（官费<b class="stress">0.00</b>元，服务费<b
+                                        class="stress">0.01</b>元）。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tree-branch">
+                            <div class="branch-inner">
+                                <div class="desc">
+                                    本次机会总计：<b class="stress">2000.01</b>元，折后价：<b class="stress">1800.01</b>元，实际收益<b
+                                        class="stress">0</b>元。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-foot-info">
+                        <span class="info-item"><i class="icon iconfont">&#xe63e;</i>2017-06-19 09:12:34</span>
+                        <span class="info-item">来源：免费查询</span>
+                        <span class="info-item">机会ID：3427833</span>
+                    </div>
+                </div>
+            </section>
+            <section class="backstage-chance chance-card col-sm-12">
+                <div class="card-head clearfix">
+                    <div class="title pull-left">
+                        <span class="text">商标担保注册2</span>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe624;</i>编辑</a><a
+                            href="javascript:;" class="toggle-case-btn head-btn btn btn-danger">展开case</a>
+                    </div>
+                    <div class="tools-group pull-right">
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe696;</i>打折</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe602;</i>付款</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe64e;</i>退款</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe60a;</i>添加case</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标中文名称：</span>
+                            <div class="content pull-left">融诺网</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标英文名称：</span>
+                            <div class="content pull-left">rongnuowang</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">申请商标图形：</span>
+                            <div class="content pull-left">
+                                <div class="brand-pic">
+                                    <p>
+                                        <img src="theme/img/p3.jpg">
+                                        <img src="theme/img/p3.jpg" class="hidden-img">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-tree">
+                        <div class="case-branch-odd case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23128</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:;" class="head-btn">更改</a><a href="javascript:;"
+                                                                                         class="head-btn">修改类别</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    商标取名 一级类别<b class="stress">1</b>项，每项<b class="stress">200</b>元，共计：<b
+                                        class="stress">200.00</b>元，折后金额：<b class="stress">0.01</b>元，实际收益：<b
+                                        class="stress">0.01</b>元（官费<b class="stress">0.00</b>元，服务费<b
+                                        class="stress">0.01</b>元）。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-branch-even case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23234</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:;" class="head-btn">更改</a><a href="javascript:;"
+                                                                                         class="head-btn">修改类别</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    商标取名 一级类别<b class="stress">1</b>项，每项<b class="stress">200</b>元，共计：<b
+                                        class="stress">200.00</b>元，折后金额：<b class="stress">0.01</b>元，实际收益：<b
+                                        class="stress">0.01</b>元（官费<b class="stress">0.00</b>元，服务费<b
+                                        class="stress">0.01</b>元）。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tree-branch">
+                            <div class="branch-inner">
+                                <div class="desc">
+                                    本次机会总计：<b class="stress">2000.01</b>元，折后价：<b class="stress">1800.01</b>元，实际收益<b
+                                        class="stress">0</b>元。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-foot-info">
+                        <span class="info-item"><i class="icon iconfont">&#xe63e;</i>2017-06-19 09:12:34</span>
+                        <span class="info-item">来源：免费查询</span>
+                        <span class="info-item">机会ID：3427833</span>
+                    </div>
+                </div>
+            </section>
+            <!--最新的case详情展示-->
+            <div style="font-size:18px; color:red;">
+                注：chance-card：前台加front-chance类名，后台加backstage-chance。<br>case-branch：前台加front-case类名，后台加backstage-case。
+            </div>
+            <section class="front-chance chance-card col-sm-12">
+                <div class="card-head clearfix">
+                    <div class="title pull-left">
+                        <span class="text">最新case详情展示</span>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe624;</i>编辑</a><a
+                            href="javascript:;" class="toggle-case-btn head-btn btn btn-danger">展开case</a>
+                    </div>
+                    <div class="tools-group pull-right">
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe696;</i>打折</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe602;</i>付款</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe64e;</i>退款</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe60a;</i>添加case</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标中文名称：</span>
+                            <div class="content pull-left">融诺网</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">商标英文名称：</span>
+                            <div class="content pull-left">rongnuowang</div>
+                        </div>
+                        <div class="info-item clearfix">
+                            <span class="title pull-left">申请商标图形：</span>
+                            <div class="content pull-left">
+                                <div class="brand-pic">
+                                    <p>
+                                        <img src="theme/img/p3.jpg">
+                                        <img src="theme/img/p3.jpg" class="hidden-img">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-tree">
+                        <div class="front-case case-branch-odd case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23128</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:;" class="head-btn">更改</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    放心保；数量：<b class="stress">1</b>；类别：<b class="stress">3</b>；每类<b
+                                        class="stress">1580</b>元，共计：<b
+                                        class="stress">4740.00</b>元，折后金额：<b class="stress">4740.00</b>元，实际收益：<b
+                                        class="stress">0.00</b>元（官费：<b class="stress">300</b>元，服务费：<b
+                                        class="stress">1280</b>元）。
+                                </div>
+                                <div class="desc-details">
+                                    <div class="details-info details-item">
+                                        <div class="item-head">申请信息：</div>
+                                        <div class="item-body">
+                                            商标名称：<span class="content-text">-</span>；所属行业：<span
+                                                class="content-text">-</span>；申请人：<span
+                                                class="content-text">-</span>；联系电话：<span class="content-text">13303886895</span>
+                                        </div>
+                                    </div>
+                                    <div class="details-type details-item">
+                                        <div class="item-head">申请类别：</div>
+                                        <div class="item-body">
+                                            <ul class="type-list">
+                                                <li class="list-item">
+                                                    <div class="type-content sme-col-9">
+                                                        <span class="type-num">1类 —— </span>
+                                                        <span class="type-group"></span>
+                                                        <span class="type-sum">共10项</span>
+                                                    </div>
+                                                    <div class="type-handle sme-col-3">
+                                                        <a href="javascript:;" class="handle-btn">修改类别</a>
+                                                        <a href="javascript:;" class="handle-btn">删除</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="type-content sme-col-9">
+                                                        <span class="type-num">3类 —— </span>
+                                                        <span class="type-group"></span>
+                                                        <span class="type-sum">共10项</span>
+                                                    </div>
+                                                    <div class="type-handle sme-col-3">
+                                                        <a href="javascript:;" class="handle-btn">修改类别</a>
+                                                        <a href="javascript:;" class="handle-btn">删除</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="type-content sme-col-9">
+                                                        <span class="type-num">5类 —— </span>
+                                                        <span class="type-group"></span>
+                                                        <span class="type-sum">共10项</span>
+                                                    </div>
+                                                    <div class="type-handle sme-col-3">
+                                                        <a href="javascript:;" class="handle-btn">修改类别</a>
+                                                        <a href="javascript:;" class="handle-btn">删除</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backstage-case case-branch-even case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23234</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:;" class="head-btn">更改</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    放心保；数量：<b class="stress">1</b>；类别：<b class="stress">3</b>；每类<b
+                                        class="stress">1580</b>元，共计：<b
+                                        class="stress">4740.00</b>元，折后金额：<b class="stress">4740.00</b>元，实际收益：<b
+                                        class="stress">0.00</b>元（官费：<b class="stress">300</b>元，服务费：<b
+                                        class="stress">1280</b>元）。
+                                </div>
+                                <div class="desc-details">
+                                    <div class="details-info details-item">
+                                        <div class="item-head">申请信息：</div>
+                                        <div class="item-body">
+                                            商标名称：<span class="content-text">融诺网</span>；所属行业：<span
+                                                class="content-text">金融</span>；申请人：<span
+                                                class="content-text">刘总</span>；联系电话：<span class="content-text">13303886895</span>
+                                        </div>
+                                    </div>
+                                    <div class="details-type details-item">
+                                        <div class="item-head">申请类别：</div>
+                                        <div class="item-body">
+                                            <ul class="type-list">
+                                                <li class="list-item">
+                                                    <div class="type-content sme-col-9">
+                                                        <span class="type-num">1类 —— </span>
+                                                        <span class="type-group">1，土壤调节制剂010053；2，氮肥010094；3，氰氨化钙（肥料）010141；4，肥料010271；5，肥料制剂010293；6，腐殖土010355；7，磷酸盐（肥料）010427；8，矿渣（肥料）010428；9，过磷酸盐（肥料）010431；10，盐类（肥料）010478</span>
+                                                        <span class="type-sum">共10项</span>
+                                                    </div>
+                                                    <div class="type-handle sme-col-3">
+                                                        <a href="javascript:;" class="handle-btn">修改类别</a>
+                                                        <a href="javascript:;" class="handle-btn">删除</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="type-content sme-col-9">
+                                                        <span class="type-num">3类 —— </span>
+                                                        <span class="type-group">1，土壤调节制剂010053；2，氮肥010094；3，氰氨化钙（肥料）010141；4，肥料010271；5，肥料制剂010293；6，腐殖土010355；7，磷酸盐（肥料）010427；8，矿渣（肥料）010428；9，过磷酸盐（肥料）010431；10，盐类（肥料）010478</span>
+                                                        <span class="type-sum">共10项</span>
+                                                    </div>
+                                                    <div class="type-handle sme-col-3">
+                                                        <a href="javascript:;" class="handle-btn">修改类别</a>
+                                                        <a href="javascript:;" class="handle-btn">删除</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="type-content sme-col-9">
+                                                        <span class="type-num">5类 —— </span>
+                                                        <span class="type-group">1，土壤调节制剂010053；2，氮肥010094；3，氰氨化钙（肥料）010141；4，肥料010271；5，肥料制剂010293；6，腐殖土010355；7，磷酸盐（肥料）010427；8，矿渣（肥料）010428；9，过磷酸盐（肥料）010431；10，盐类（肥料）010478</span>
+                                                        <span class="type-sum">共10项</span>
+                                                    </div>
+                                                    <div class="type-handle sme-col-3">
+                                                        <a href="javascript:;" class="handle-btn">修改类别</a>
+                                                        <a href="javascript:;" class="handle-btn">删除</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tree-branch">
+                            <div class="branch-inner">
+                                <div class="desc">
+                                    本次机会总计：<b class="stress">2000.01</b>元，折后价：<b class="stress">1800.01</b>元，实际收益<b
+                                        class="stress">0</b>元。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-foot-info">
+                        <span class="info-item"><i class="icon iconfont">&#xe63e;</i>2017-06-19 09:12:34</span>
+                        <span class="info-item">来源：免费查询</span>
+                        <span class="info-item">机会ID：3427833</span>
+                    </div>
+                </div>
+            </section>
+            <!--商标交易的case展示效果-->
+            <div style="font-size:18px; color:red;">
+                注：chance-card：商标交易的加transaction-card类名
+            </div>
+            <section class="front-chance transaction-card chance-card col-sm-12">
+                <div class="card-head clearfix">
+                    <div class="title pull-left">
+                        <span class="text">最新case详情展示</span>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe624;</i>编辑</a><a
+                            href="javascript:;" class="toggle-case-btn head-btn btn btn-danger">展开case</a>
+                    </div>
+                    <div class="tools-group pull-right">
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe696;</i>打折</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe602;</i>付款</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe64e;</i>退款</a>
+                        <a href="javascript:;" class="head-btn"><i class="icon iconfont">&#xe60a;</i>添加case</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <ul class="info-list list-unstyled">
+                            <li class="info-item">商标类别：第2类</li>
+                            <li class="info-item">商标结构：中文</li>
+                            <li class="info-item">使用期限：2017.1.12-2018.1.12</li>
+                            <li class="info-item">商标状态：R注册</li>
+                            <li class="info-item">商标群组：0301 0302 0303 0305 0306 0307 0308 0309 0310</li>
+                        </ul>
+                    </div>
+                    <div class="card-tree">
+                        <div class="front-case case-branch-odd case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23128</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:;" class="head-btn">更改</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <ul class="desc-list list-unstyled">
+                                        <li class="desc-item">商标名称：起名字起名字</li>
+                                        <li class="desc-item">商标交易状态：未出售</li>
+                                        <li class="desc-item">商标类别：这个又是啥类别</li>
+                                        <li class="desc-item">商标图样：<img class="brand-pic" src="theme/img/p3.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backstage-case case-branch-even case-branch tree-branch">
+                            <div class="branch-inner">
+                                <div class="head clearfix">
+                                    <div class="pull-left">
+                                        <span class="info-item">caseID：23234</span><span
+                                            class="info-item">商标取名（套餐服务）</span>
+                                        <a href="javascript:;" class="head-btn">更改</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="status">未付款</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <ul class="desc-list list-unstyled">
+                                        <li class="desc-item">商标名称：起名字起名字</li>
+                                        <li class="desc-item">商标交易状态：未出售</li>
+                                        <li class="desc-item">商标类别：这个又是啥类别</li>
+                                        <li class="desc-item">商标图样：<img class="brand-pic" src="theme/img/p3.jpg">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tree-branch">
+                            <div class="branch-inner">
+                                <div class="desc">
+                                    本次机会总计：<b class="stress">2000.01</b>元，折后价：<b class="stress">1800.01</b>元，实际收益<b
+                                        class="stress">0</b>元。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-foot-info">
+                        <span class="info-item"><i class="icon iconfont">&#xe63e;</i>2017-06-19 09:12:34</span>
+                        <span class="info-item">来源：免费查询</span>
+                        <span class="info-item">机会ID：3427833</span>
+                    </div>
+                </div>
+            </section>
+            <!--add-chance-->
+            <div class="add-chance-wrapper col-sm-12">
+                <a href="javascript:popEditChanceDialog();" class="btn btn-danger">添加更多机会类型</a>
+            </div>
+        </div>
+        <div class="aside-container col-sm-4">
+            <div class="aside-container-inner col-sm-12">
+                <!--consultant-info-bar-->
+                <aside class="consultant-info-bar col-sm-12">
+                    <div class="head">[IPR]知识产权顾问：</div>
+                    <div class="content">
+                        <span class="name"><i class="iconfont">&#xe752;</i>张三丰丰（重庆销售2-1小组）</span>
+                        <a href="javascript:;" class="head-btn">更改</a>
+                    </div>
+                </aside>
+                <!--transaction-record-->
+                <aside class="transaction-record col-sm-12">
+                    <div class="transaction-info">
+                        <div class="info-item">
+                            跟进状态：跟进中
+                        </div>
+                        <div class="info-item">
+                            客户意向：？
+                        </div>
+                        <div class="info-item">
+                            下次跟进时间：？
+                        </div>
+                        <div class="info-item">
+                            <span class="ending-time">2017-06-19 10:01:42 前跟进</span>
+                        </div>
+                        <div class="self-btn-group">
+                            <div class="btn-row">
+                                <a href="javascript:popFollowDialog();" class="btn btn-info"><i class="iconfont">
+                                    &#xe69f;</i>跟进</a><a href="javascript:popExpandFollowDialog();"
+                                                         class="self-l-btn btn btn-warning"><i class="iconfont">
+                                &#xe621;</i>延长跟进时间</a>
+                            </div>
+                            <div class="btn-row">
+                                <a href="javascript:alert('弹框提示内容：确定要放弃跟进此客户吗？--确认按钮文本：放弃');"
+                                   class="btn btn-danger"><i class="iconfont">&#xe9d0;</i>放弃</a><a
+                                    href="javascript:;" class="self-l-btn btn btn-success"><i class="iconfont">
+                                &#xe63f;</i>电话未接通</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record-text">
+                        <div class="title">客户意向从D到A</div>
+                        <div class="desc f-word-break">
+                            Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!
+                            Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!
+                            Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!Hello,word!
+                        </div>
+                        <div class="btm">张三丰丰<span>创建于</span>2017-6-19 09:11:23</div>
+                    </div>
+                </aside>
+                <!--transaction-handle-container-->
+                <aside class="transaction-handle-container col-sm-12">
+                    <div class="self-btn-group">
+                        <div class="btn-row">
+                            <a href="javascript:;" class="btn btn-info"><i class="iconfont">&#xe603;</i>注册用户</a><a
+                                href="javascript:;" class="btn btn-info"><i class="iconfont">&#xe6cf;</i>创建专利</a>
+                        </div>
+                        <div class="btn-row">
+                            <a href="javascript:;" class="btn btn-info"><i class="iconfont">&#xe69d;</i>创建合同</a><a
+                                href="javascript:;" class="btn btn-info"><i class="iconfont">&#xe859;</i>申请发票</a>
+                        </div>
+                        <div class="btn-row">
+                            <a href="javascript:;" class="btn btn-info"><i class="iconfont">&#xe664;</i>创建共享机会</a>
+                        </div>
+                    </div>
+                </aside>
+                <!--other-chance-->
+                <aside class="other-chance col-sm-12">
+                    <div class="title">客户的其他机会</div>
+                    <div class="table-responsive">
+                        <table class="other-chance-table table table-hover">
+                            <thead>
+                            <tr>
+                                <th>机会类型</th>
+                                <th>机会编号</th>
+                                <th>预付/已付</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>机会类型A</td>
+                                <td>007</td>
+                                <td>预付</td>
+                            </tr>
+                            <tr>
+                                <td>机会类型B</td>
+                                <td>008</td>
+                                <td>已付</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--*注：当没有其他机会时，展示此结构-->
+                        <div class="empty-text">没有其他机会~</div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#edit-chance-dialog-->
+<section class="m-default-dialog-form" style="display: none;" id="edit-chance-dialog">
+    <div class="form-item with-hint clearfix">
+        <span class="title">机会类型：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <select class="l-select">
+                    <option value="请选择">请选择</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                </select>
+            </div>
+            <div class="hint-info">*提示信息占位</div>
+        </div>
+    </div>
+    <div class="form-item with-hint clearfix">
+        <span class="title">商标中文名称：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <input type="text">
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+    <div class="form-item with-hint clearfix">
+        <span class="title">商标英文名称：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <input type="text">
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+    <div class="form-item with-hint clearfix">
+        <span class="title">申请商标图形：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <div class="upload-preview">
+                    <div class="preview-file">
+                        <img src="theme/img/p1.jpg" alt="" class="pic">
+                        <div class="shade"></div>
+                        <div class="btn-group">
+                            <a href="javascript:;" class="preview-file-btn iconfont">&#xe669;</a>
+                            <a href="javascript:;" class="del-file-btn iconfont">&#xe9d0;</a>
+                        </div>
+                    </div>
+                    <div class="upload-file"><input type="file"></div>
+                    <p class="notice">
+                        图片要求：<br>必须清晰、完整，仅支持.jpg.bmp.png.gif的图片格式。<br>图片大小不超过3M。
+                    </p>
+                </div>
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+</section>
+<!--#discount-dialog-->
+<section class="m-fund-dialog" style="display: none;" id="discount-dialog">
+    <div class="choose-container">
+        <div class="choose-all">
+            <label><input type="checkbox" class="all-check">全选/全不选</label>
+        </div>
+        <div class="choose-list">
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294），预计成交：<span class="stress">1300</span>元，实际收益：<span
+                            class="stress">1300</span>元
+                    </div>
+                    <div class="info-form clearfix">
+                        <div class="title pull-left">折后金额：</div>
+                        <div class="input-wrapper pull-left">
+                            <div class="input-box">
+                                <input type="text"><span style="margin-left: 8px;">元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294），预计成交：<span class="stress">1300</span>元，实际收益：<span
+                            class="stress">1300</span>元
+                    </div>
+                    <div class="info-form clearfix">
+                        <div class="title pull-left">折后金额：</div>
+                        <div class="input-wrapper pull-left">
+                            <div class="input-box">
+                                <input type="text"><span style="margin-left: 8px;">元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sum-container">
+        <div class="sum-text">
+            <b>机会总额：</b><span class="stress">1300</span>元，<b>已付金额：</b><span
+                class="stress">1300</span>元，<b>折后合计：</b><span class="stress">0</span>元
+        </div>
+    </div>
+</section>
+<!--#pay-dialog-->
+<section class="m-fund-dialog" style="display: none;" id="pay-dialog">
+    <div class="choose-container">
+        <div class="choose-all">
+            <label><input type="checkbox" class="all-check">全选/全不选</label>
+        </div>
+        <div class="choose-list">
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294）
+                    </div>
+                    <div class="info-text">
+                        注册范围：一级类别<span class="stress">1</span>项，每项<span class="stress">1300</span>元，共计：<span
+                            class="stress">1300</span>元，折后总额：<span class="stress">1300</span>元
+                    </div>
+                    <div class="info-text">
+                        已付金额：<span class="stress">0</span>元
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sum-container">
+        <div class="sum-text">
+            <b>机会总额：</b><span class="stress">1300</span>元，<b>已付金额：</b><span
+                class="stress">1300</span>元，<b>折后合计：</b><span class="stress">0</span>元
+        </div>
+        <div class="sum-link-content clearfix">
+            <label class="pull-left"><input type="checkbox"></label>
+            <div class="desc">
+                生成支付订单链接<span class="stress">（生成支付链接后，可发给用户，由用户操作支付）</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--#refund-dialog-->
+<section class="m-fund-dialog" style="display: none;" id="refund-dialog">
+    <div class="choose-container">
+        <div class="choose-all">
+            <label><input type="checkbox" class="all-check">全选/全不选</label>
+        </div>
+        <div class="choose-list">
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294），预计成交：<span class="stress">1300</span>元，实际收益：<span
+                            class="stress">1300</span>元
+                    </div>
+                    <div class="info-form clearfix">
+                        <div class="title pull-left">退款金额：</div>
+                        <div class="input-wrapper pull-left">
+                            <div class="input-box">
+                                <input type="text"><span style="margin-left: 8px;">元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-item clearfix">
+                <label class="pull-left"><input type="checkbox" class="item-check"></label>
+                <div class="item-content">
+                    <div class="info-text">
+                        普通商标注册（caseID：2378294），预计成交：<span class="stress">1300</span>元，实际收益：<span
+                            class="stress">1300</span>元
+                    </div>
+                    <div class="info-form clearfix">
+                        <div class="title pull-left">退款金额：</div>
+                        <div class="input-wrapper pull-left">
+                            <div class="input-box">
+                                <input type="text"><span style="margin-left: 8px;">元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sum-container">
+        <div class="sum-text">
+            <b>机会总额：</b><span class="stress">1300</span>元，<b>已付金额：</b><span
+                class="stress">1300</span>元，<b>退款合计：</b><span class="stress">0</span>元
+        </div>
+    </div>
+</section>
+<!--#edit-case-dialog-->
+<section class="m-default-dialog-form" style="display: none;" id="edit-case-dialog">
+    <div class="form-item with-hint clearfix">
+        <span class="title">类型：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <select class="l-select">
+                    <option value="请选择">请选择</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                </select>
+            </div>
+            <div class="hint-info">*提示信息占位</div>
+        </div>
+    </div>
+    <div class="form-item with-hint clearfix">
+        <span class="title">行业模板：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <select class="l-select">
+                    <option value="请选择">请选择</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                </select>
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+    <div class="form-item with-hint clearfix">
+        <span class="title">申请方式：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <label class="input-label"><input type="radio" name="apply-style">普通</label>
+                <label class="input-label"><input type="radio" name="apply-style">加急</label>
+                <label class="input-label"><input type="radio" name="apply-style">担保</label>
+                <label class="input-label"><input type="radio" name="apply-style">无忧</label>
+                <label class="input-label"><input type="radio" name="apply-style">双享</label>
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+    <div class="form-item with-hint clearfix">
+        <span class="title">CASE数量：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <input type="text">
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+</section>
+<!--#change-type-dialog-->
+<section class="m-default-dialog-form" style="display: none;" id="change-type-dialog">
+    <div class="form-item with-hint clearfix">
+        <span class="title">类别：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <select class="l-select">
+                    <option value="请选择">请选择</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                    <option value="选项">选项</option>
+                </select>
+            </div>
+            <div class="hint-info">*提示信息占位</div>
+        </div>
+    </div>
+    <div class="form-item with-hint clearfix">
+        <span class="title">商标/服务项目：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <input type="text">
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+</section>
+<!--#refund-dialog-1-->
+<section class="m-default-dialog-form" style="display: none;" id="refund-dialog-1">
+    <div class="form-item with-hint clearfix">
+        <span class="title">退款金额：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <input type="text"><span style="margin-left: 8px;">元</span>
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+</section>
+<!--#discount-dialog-1-->
+<section class="m-default-dialog-form" style="display: none;" id="discount-dialog-1">
+    <div class="form-item with-hint clearfix">
+        <span class="title">折后金额：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <input type="text"><span style="margin-left: 8px;">元</span>
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+</section>
+<!--#follow-dialog-->
+<section class="m-follow-dialog-form" style="display: none;" id="follow-dialog">
+    <div class="user-info-container info-container">
+        <div class="container-title">用户资料</div>
+        <div class="container-body clearfix">
+            <div class="form-item clearfix">
+                <span class="title star-title">申请人名称：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <input type="text">
+                    </div>
+                    <div class="hint-info">*提示信息占位</div>
+                </div>
+            </div>
+            <div class="form-item clearfix">
+                <span class="title">申请人类型：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <label class="input-label"><input type="radio" name="type">个人</label>
+                        <label class="input-label"><input type="radio" name="type">企业</label>
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+            <div class="form-item clearfix">
+                <span class="title star-title">联系人：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <input type="text">
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+            <div class="form-item clearfix">
+                <span class="title">邮箱：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <input type="text">
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+            <div class="form-item clearfix">
+                <span class="title star-title">手机号码：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <input type="text">
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+            <div class="form-item clearfix">
+                <span class="title star-title">微信号：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <input type="text">
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+            <div class="form-item clearfix">
+                <span class="title star-title">经营行业：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <select>
+                            <option value="请选择">请选择</option>
+                            <option value="选项">选项</option>
+                            <option value="选项">选项</option>
+                            <option value="选项">选项</option>
+                            <option value="选项">选项</option>
+                        </select>
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+            <div class="form-item clearfix">
+                <span class="title">QQ号码：</span>
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <input type="text">
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow-info-container info-container">
+        <div class="container-title">跟进要素</div>
+        <div class="container-body clearfix">
+            <ul class="labels-list">
+                <li class="clearfix">
+                    <label class="pull-left"><input type="checkbox"></label>
+                    <div class="desc">1.有品牌保护需求</div>
+                </li>
+                <li class="clearfix">
+                    <label class="pull-left"><input type="checkbox"></label>
+                    <div class="desc">2.客户为关键人</div>
+                </li>
+                <li class="clearfix">
+                    <label class="pull-left"><input type="checkbox"></label>
+                    <div class="desc">3.有签单异议</div>
+                </li>
+                <li class="clearfix">
+                    <label class="pull-left"><input type="checkbox"></label>
+                    <div class="desc">4.能提供主体资格证明</div>
+                </li>
+                <li class="clearfix">
+                    <label class="pull-left"><input type="checkbox"></label>
+                    <div class="desc">5.已确定标样</div>
+                </li>
+            </ul>
+            <div class="container-item clearfix">
+                <span class="title pull-left">客户意向：</span>
+                <div class="content pull-left">?</div>
+            </div>
+            <div class="container-item clearfix">
+                <span class="star-title title pull-left">预计成交时间：</span>
+                <div class="content pull-left">
+                    <div class="time-btn-group">
+                        <a href="javascript:;" class="time-btn">3天内</a>
+                        <a href="javascript:;" class="time-btn">10天内</a>
+                        <a href="javascript:;" class="time-btn">20天内</a>
+                        <a href="javascript:;" class="current time-btn">20天以上</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-item clearfix">
+                <span class="star-title title pull-left">跟进记录：</span>
+                <div class="content pull-left">
+                    <div class="input-box">
+                        <textarea class="follow-note"></textarea>
+                    </div>
+                    <div class="hint-info">*提示信息占位</div>
+                </div>
+            </div>
+            <div class="container-item clearfix">
+                <span class="star-title title pull-left">预约时间：</span>
+                <div class="content pull-left">
+                    <div class="input-box date-input">
+                        <input type="text" disabled="disabled">
+                        <i class="icon iconfont">&#xe633;</i>
+                    </div>
+                    <div class="hint-info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--#expand-follow-dialog-->
+<section class="m-default-dialog-form" style="display: none;" id="expand-follow-dialog">
+    <div class="form-item with-hint clearfix">
+        <span class="title">延长跟进时间至：</span>
+        <div class="input-wrapper">
+            <div class="input-box date-input">
+                <input type="text" disabled="disabled">
+                <i class="icon iconfont">&#xe633;</i>
+            </div>
+            <div class="hint-info"></div>
+        </div>
+    </div>
+</section>
+<!--#notice-dialog-->
+<section class="m-dialog-notice" style="display: none;" id="notice-dialog">
+    <div class="notice-main">
+        <i class="icon iconfont">&#xe818;</i>默认提示
+    </div>
+    <div class="notice-main">
+        <i class="success-icon icon iconfont">&#xe67d;</i>成功提示
+    </div>
+    <div class="notice-main">
+        <i class="fail-icon icon iconfont">&#xe614;</i>失败提示
+    </div>
+    <div class="notice-sub">
+        相关消息描述（选填）
+    </div>
+</section>
+<!--模板#m-default-notification-->
+<script type="text/html" id="m-default-notification">
+    <div class="m-default-notification">
+        <div class="note-head">有新的资源到库！</div>
+        <div class="note-body">
+            <div class="content-item">姓名：包云</div>
+            <div class="content-item">电话：15100000000</div>
+            <div class="content-item">公司名称：国际公司国际公司国际公司</div>
+        </div>
+        <div class="note-foot">
+            <a href="javascript:alert('执行操作！');" class="btn btn-default">立即查看</a>
+        </div>
+    </div>
+</script>
+<!--script-->
+<script src="theme/js/jquery.min.js"></script>
+<script src="plugin/artDialog4.1.6/jquery.artDialog.js"></script>
+<!--toastr js-->
+<script src="theme/js/plugins/toastr/toastr.min.js"></script>
+<script>
+    //--user-info-tab切换示例
+    $('.user-info-tab .tab-nav').find('.nav-item').on('click', function () {
+        if ($(this).hasClass('current') == false) {
+            $(this).siblings('.current').removeClass('current');
+            $(this).addClass('current');
+        }
+    });
+
+    //弹出框
+    var editChanceDialog = null,
+        discountDialog = null,
+        payDialog = null,
+        refundDialog = null,
+        editCaseDialog = null,
+        changeTypeDialog = null,
+        refundDialog1 = null,
+        discountDialog1 = null,
+        followDialog = null,
+        expandFollowDialog = null,
+        noticeDialog = null;
+
+    function popEditChanceDialog() {
+        editChanceDialog = art.dialog({
+            content: document.getElementById('edit-chance-dialog'),
+            title: '<div class="dialog-default-head">机会编辑</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popDiscountDialog() {
+        discountDialog = art.dialog({
+            content: document.getElementById('discount-dialog'),
+            title: '<div class="dialog-default-head">打折</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popPayDialog() {
+        payDialog = art.dialog({
+            content: document.getElementById('pay-dialog'),
+            title: '<div class="dialog-default-head">付款</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popRefundDialog() {
+        refundDialog = art.dialog({
+            content: document.getElementById('refund-dialog'),
+            title: '<div class="dialog-default-head">退款</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popEditCaseDialog() {
+        editCaseDialog = art.dialog({
+            content: document.getElementById('edit-case-dialog'),
+            title: '<div class="dialog-default-head">case编辑</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popChangeTypeDialog() {
+        changeTypeDialog = art.dialog({
+            content: document.getElementById('change-type-dialog'),
+            title: '<div class="dialog-default-head">修改类别</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popRefundDialog1() {
+        refundDialog1 = art.dialog({
+            content: document.getElementById('refund-dialog-1'),
+            title: '<div class="dialog-default-head">退款</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popDiscountDialog1() {
+        discountDialog1 = art.dialog({
+            content: document.getElementById('discount-dialog-1'),
+            title: '<div class="dialog-default-head">打折</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popFollowDialog() {
+        followDialog = art.dialog({
+            content: document.getElementById('follow-dialog'),
+            title: '<div class="dialog-default-head">跟进</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                popNoticeDialog();
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popExpandFollowDialog() {
+        expandFollowDialog = art.dialog({
+            content: document.getElementById('expand-follow-dialog'),
+            title: '<div class="dialog-default-head">延长跟进时间</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    function popNoticeDialog() {
+        noticeDialog = art.dialog({
+            content: document.getElementById('notice-dialog'),
+            title: '<div class="dialog-default-head"></div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+
+    //--右下角消息示例
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-bottom-right",
+        "preventDuplicates": true,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "6000",
+        "extendedTimeOut": "2500",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "show",
+        "hideMethod": "hide"
+    };
+    var noteHtml = $('#m-default-notification').html();
+    toastr.info(noteHtml);
+
+    //--机会中case列表展示效果示例
+    $('.chance-card .toggle-case-btn').on('click', function () {
+        if ($(this).hasClass('toggle-off') == false) {
+            if ($(this).parents('.chance-card').find('.card-tree').css('display') == 'none') {
+                $(this).addClass('toggle-off').text('隐藏case');
+                $(this).parents('.chance-card').find('.card-tree').slideDown();
+            }
+        } else {
+            $(this).removeClass('toggle-off').text('展示case');
+            $(this).parents('.chance-card').find('.card-tree').slideUp();
+        }
+    });
+</script>
+</body>
+</html>

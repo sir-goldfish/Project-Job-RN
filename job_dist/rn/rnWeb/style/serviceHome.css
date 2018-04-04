@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/*--begin：以下为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, form, fieldset, legend, input, textarea, select, header, footer, figure, article, aside, section, nav { margin: 0; padding: 0; }
+
+html, body { width: 100%; height: 100%; }
+
+body { color: #333; font-family: "微软雅黑", sans-serif, "Times New Roman"; background: #fff; }
+
+a { color: #666; text-decoration: none; }
+
+a:hover, a:active, a:focus { color: #cd0200; }
+
+ul, ol, dl { list-style: none; }
+
+fieldset, img { border: none; }
+
+input, button { outline: none; }
+
+em { font-style: normal; }
+
+/*--end：以上为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+.rn-wrapper { width: 100%; min-width: 1200px; }
+
+.rn-inner { width: 1200px; margin: 0 auto; }
+
+.clearfix:after { content: "."; display: block; height: 0; font-size: 0; clear: both; visibility: hidden; }
+
+.clearfix { zoom: 1; }
+
+.text-ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* head-banner */
+.head-banner { position: relative; height: 500px; }
+
+.head-banner .bd { height: 500px; overflow: hidden; }
+
+.head-banner .slide-pic { float: left; display: block; width: 100%; height: 100%; }
+
+.head-banner .hd { position: absolute; bottom: 20px; left: 0; width: 100%; font-size: 0; text-align: center; }
+
+.head-banner .slide-bullet { display: inline-block; width: 50px; height: 5px; background-color: #c1c1c1; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.head-banner .slide-bullet + .slide-bullet { margin-left: 10px; }
+
+.head-banner .on, .head-banner .slide-bullet:hover { background-color: #cd0200; }
+
+/* 共用标题 */
+.section-title { line-height: 1; text-align: center; font-size: 26px; color: #363636; }
+
+.section-title span { position: relative; display: inline-block; }
+
+.section-title span:after { content: ''; position: absolute; bottom: -12px; left: 50%; display: block; width: 80px; height: 2px; margin-left: -40px; background-color: #d40013; }
+
+/* service-desc-cards */
+.service-desc-cards { padding-top: 80px; padding-bottom: 80px; }
+
+.service-desc-cards .section-title { margin-bottom: 60px; }
+
+.service-desc-cards .list .inner { margin-top: -16px; margin-left: -16px; }
+
+.service-desc-cards .list .list-item { position: relative; float: left; margin-top: 16px; margin-left: 16px; overflow: hidden; }
+
+.service-desc-cards .list .list-item .init-item { position: relative; width: 100%; height: 100%; }
+
+.service-desc-cards .list .list-item .init-item img { display: block; width: 100%; height: 100%; }
+
+.service-desc-cards .list .list-item .init-item .desc { position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fff; }
+
+.service-desc-cards .list .list-item .init-item .desc h3, .service-desc-cards .list .list-item .init-item .desc p { margin-left: 10px; margin-right: 10px; }
+
+.service-desc-cards .list .list-item .init-item .desc h3 { margin-top: 88px; line-height: 1; font-size: 24px; font-weight: normal; }
+
+.service-desc-cards .list .list-item .init-item .desc p { margin-top: 8px; line-height: 1.2; font-size: 14px; }
+
+.service-desc-cards .list .list-item .hover-item { position: absolute; top: 100%; left: 0; width: 100%; height: 100%; text-align: center; color: #fff; background-color: #000; -webkit-transition: top .4s ease-out; transition: top .4s ease-out; }
+
+.service-desc-cards .list .list-item .hover-item .icon { width: 62px; height: 62px; margin-top: 36px; margin-left: auto; margin-right: auto; background: url(../resource/img/service_icon_sprites.png) no-repeat 0 0; }
+
+.service-desc-cards .list .list-item .hover-item h3, .service-desc-cards .list .list-item .hover-item p { margin-left: 10px; margin-right: 10px; }
+
+.service-desc-cards .list .list-item .hover-item h3 { margin-top: 20px; line-height: 1; font-size: 24px; font-weight: normal; }
+
+.service-desc-cards .list .list-item .hover-item p { margin-top: 8px; line-height: 1.2; font-size: 14px; }
+
+.service-desc-cards .list .list-item:hover .hover-item { top: 0; }
+
+.service-desc-cards .list .l-item { width: 389px; height: 220px; }
+
+.service-desc-cards .list .s-item { width: 288px; height: 220px; }
+
+/* service-set-cards */
+.service-set-cards { padding-top: 58px; padding-bottom: 84px; background-color: #f0f0f0; }
+
+.service-set-cards .section-title { margin-bottom: 62px; }
+
+.service-set-cards .list { line-height: 1; }
+
+.service-set-cards .list .inner { margin-left: -13px; }
+
+.service-set-cards .list .list-item { position: relative; float: left; width: 391px; height: 386px; padding-top: 55px; margin-left: 13px; text-align: center; color: #fff; -webkit-transition: -webkit-transform .2s ease-out; transition: -webkit-transform .2s ease-out; transition: transform .2s ease-out; transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+
+.service-set-cards .list .title { margin-bottom: 28px; font-size: 24px; font-weight: bold; }
+
+.service-set-cards .list .price { margin-bottom: 24px; }
+
+.service-set-cards .list .price .num { margin-bottom: 10px; font-size: 60px; }
+
+.service-set-cards .list .price .num:before { content: '¥'; display: inline-block; vertical-align: 25px; font-size: 28px; }
+
+.service-set-cards .list .price .unit { font-size: 20px; }
+
+.service-set-cards .list .desc { margin: 0 30px; }
+
+.service-set-cards .list .desc .row { font-size: 0; text-align: justify; border-top: 1px solid #e2e9f0; }
+
+.service-set-cards .list .desc .row span { display: inline-block; width: 50%; padding: 14px 0; font-size: 14px; }
+
+.service-set-cards .list .desc .row em { display: block; margin-left: 40px; font-weight: normal; }
+
+.service-set-cards .list .details-btn { position: absolute; bottom: 30px; left: 50%; display: block; width: 128px; height: 40px; margin-left: -65px; line-height: 40px; font-size: 14px; color: #fff; border: 1px solid #fff; border-radius: 40px; -webkit-transition: background-color .3s ease-out, color .3s ease-out; transition: background-color .3s ease-out, color .3s ease-out; }
+
+.service-set-cards .list .list-item:hover { -webkit-transform: translateY(-15px); -ms-transform: translateY(-15px); transform: translateY(-15px); }
+
+.service-set-cards .list .details-btn:hover { color: #363636; background-color: #fff; }
+
+/* individual-service-cards */
+.individual-service-cards { padding-top: 79px; }
+
+.individual-service-cards .section-title { margin-bottom: 60px; }
+
+.individual-service-cards .cards-container { width: 100%; height: 400px; background-color: #131313; }
+
+.individual-service-cards .list-item { position: relative; float: left; line-height: 1; width: 180px; height: 400px; overflow: hidden; -webkit-transition: width .2s ease-out; transition: width .2s ease-out; }
+
+.individual-service-cards .list-item .pic { position: absolute; bottom: 0; left: 0; width: 100%; height: 168px; }
+
+.individual-service-cards .list-item .shade { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #202020; opacity: .5; filter: alpha(opacity=50); -webkit-transition: opacity .2s ease-out; transition: opacity .2s ease-out; }
+
+.individual-service-cards .list-item .text { position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: #fff; }
+
+.individual-service-cards .list-item .text .title, .individual-service-cards .list-item .text .desc, .individual-service-cards .list-item .text .btn-wrapper { margin-left: 14px; margin-right: 14px; }
+
+.individual-service-cards .list-item .text .title { padding-top: 52px; padding-bottom: 11px; margin-bottom: 17px; font-size: 24px; border-bottom: 1px solid #4b4b4b; }
+
+.individual-service-cards .list-item .text .desc { min-height: 54px; margin-bottom: 30px; line-height: 18px; font-size: 12px; color: #d2d2d2; }
+
+.individual-service-cards .list-item .text .btn-wrapper .price { float: left; display: none; line-height: 32px; font-size: 14px; color: #fc2736; }
+
+.individual-service-cards .list-item .text .btn-wrapper .price .num:before { content: '¥'; }
+
+.individual-service-cards .list-item .text .btn-wrapper .see-btn { display: block; float: left; text-align: center; font-size: 0; color: #fff; background-color: #d40013; border-radius: 50%; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.individual-service-cards .list-item .text .btn-wrapper .see-btn span { display: inline-block; width: 0; height: 0; font-size: 14px; overflow: hidden; -webkit-transition: width .2s ease-out; transition: width .2s ease-out; }
+
+.individual-service-cards .list-item .text .btn-wrapper .see-btn i { display: inline-block; width: 24px; height: 24px; line-height: 26px; font-size: 14px; overflow: hidden; -webkit-transition: width .2s ease-out; transition: width .2s ease-out; }
+
+.individual-service-cards .list-item .text .btn-wrapper .see-btn:hover { background-color: #ed192c; }
+
+.individual-service-cards .current { width: 300px; background-color: #373737; }
+
+.individual-service-cards .current .shade { opacity: 0; }
+
+.individual-service-cards .current .text .title, .individual-service-cards .current .text .desc, .individual-service-cards .current .text .btn-wrapper { margin-left: 20px; margin-right: 20px; }
+
+.individual-service-cards .current .text .title { border-color: #fff; }
+
+.individual-service-cards .current .text .desc { min-height: 44px; line-height: 22px; font-size: 14px; color: #fff; }
+
+.individual-service-cards .current .text .btn-wrapper .price { display: block; }
+
+.individual-service-cards .current .text .btn-wrapper .see-btn { float: right; border-radius: 32px; }
+
+.individual-service-cards .current .text .btn-wrapper .see-btn span { width: 100px; height: 32px; line-height: 32px; }
+
+.individual-service-cards .current .text .btn-wrapper .see-btn i { width: 0; height: 0; }
+
+/* case-list */
+.case-list { padding-top: 80px; padding-bottom: 130px; }
+
+.case-list .section-title { margin-bottom: 60px; }
+
+.case-list .list .inner { margin-left: -12px; }
+
+.case-list .list-item { position: relative; float: left; width: 291px; height: 322px; margin-left: 12px; overflow: hidden; }
+
+.case-list .list-item .init-item .pic { display: block; width: 100%; height: 228px; overflow: hidden; }
+
+.case-list .list-item .init-item .pic img { width: 100%; height: 100%; }
+
+.case-list .list-item .init-item .text { width: 289px; padding-top: 14px; border: 1px solid #f2f2f2; }
+
+.case-list .list-item .init-item .title { display: block; margin-bottom: 10px; margin-left: 19px; margin-right: 19px; line-height: 1; font-size: 14px; font-weight: normal; color: #363636; }
+
+.case-list .list-item .init-item p { height: 44px; margin-bottom: 10px; margin-left: 19px; margin-right: 19px; line-height: 22px; font-size: 14px; color: #aaa; overflow: hidden; }
+
+.case-list .list-item .hover-item { position: absolute; top: 100%; left: 0; width: 100%; height: 100%; line-height: 1; color: #fff; background-color: #e74a30; -webkit-transition: top .4s ease-out; transition: top .4s ease-out; }
+
+.case-list .list-item .hover-item .title, .case-list .list-item .hover-item .desc, .case-list .list-item .hover-item .money, .case-list .list-item .hover-item .type, .case-list .list-item .hover-item .area { margin-left: 20px; margin-right: 20px; }
+
+.case-list .list-item .hover-item .title { margin-top: 33px; margin-bottom: 20px; font-size: 14px; font-weight: bold; }
+
+.case-list .list-item .hover-item .desc, .case-list .list-item .hover-item .money, .case-list .list-item .hover-item .type, .case-list .list-item .hover-item .area { line-height: 18px; font-size: 12px; }
+
+.case-list .list-item .hover-item .desc span, .case-list .list-item .hover-item .money span, .case-list .list-item .hover-item .type span, .case-list .list-item .hover-item .area span { font-weight: bold; }
+
+.case-list .list-item .hover-item .desc { max-height: 250px; margin-bottom: 12px; overflow: hidden; }
+
+.case-list .list-item .hover-item .money, .case-list .list-item .hover-item .type, .case-list .list-item .hover-item .area { margin-bottom: 10px; }
+
+.case-list .list-item .hover-item .see-btn { display: block; width: 100px; height: 30px; margin-top: 18px; margin-left: auto; margin-right: auto; line-height: 30px; text-align: center; font-size: 14px; color: #fff; border: 1px solid #fff; border-radius: 30px; -webkit-transition: color .2s ease-out, background-color .2s ease-out; transition: color .2s ease-out, background-color .2s ease-out; }
+
+.case-list .list-item .hover-item .see-btn:hover { color: #e74a30; background-color: #fff; }
+
+.case-list .list-item:hover .hover-item { top: 0; }

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>共用弹出层表单</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+</head>
+<body>
+<div class="sme-main-body">
+    <!--m-default-dialog-form-->
+    <section class="m-default-dialog-form">
+        <div style="padding-bottom: 1rem; text-align: center; font-size: 1.2rem; font-weight: bold; color: #0a2640;">
+            默认弹出层表单结构示例
+        </div>
+        <div class="form-item f-clearfix">
+            <span class="title">不带*标题：</span>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <input type="text">
+                </div>
+                <p class="notice">
+                    （注：若内容下有注释信息，加此结构）
+                </p>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <span class="title star-title">input：</span>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <span class="title star-title">msgcode：</span>
+            <div class="input-wrapper">
+                <div class="input-box code-input">
+                    <input type="text">
+                    <a href="javascript:;" class="code-btn">10s后再获取</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <span class="title star-title">textarea：</span>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <span class="title star-title">select：</span>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <select>
+                        <option value="请选择">请选择</option>
+                        <option value="选项">选项</option>
+                        <option value="选项">选项</option>
+                        <option value="选项">选项</option>
+                        <option value="选项">选项</option>
+                        <option value="选项">选项</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <span class="title star-title">radio：</span>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <label class="input-label"><input type="radio" name="gender">男</label>
+                    <label class="input-label"><input type="radio" name="gender">女</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <span class="title star-title">checkbox：</span>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <label class="input-label"><input type="checkbox">类型1</label>
+                    <label class="input-label"><input type="checkbox">类型2</label>
+                    <label class="input-label"><input type="checkbox">类型3</label>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>默认用户付款界面-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/orderPayDefault.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="javascript:;" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">知识产权</a>
+                        <div class="hide-group" style="margin-left:-49px;">
+                            <ul class="group-list">
+                                <li class="group-item chosen"><a href="javascript:;">商标注册</a></li>
+                                <li class="group-item"><a href="javascript:;">版权登记</a></li>
+                                <li class="group-item"><a href="javascript:;">专利申请</a></li>
+                                <li class="group-item"><a href="javascript:;">知产交易</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">公司注册</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">人事社保</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">案例库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">资讯</a>
+                    </li>
+                </ul>
+                <div class="logo-search">
+                    <input type="text" placeholder="搜索服务">
+                    <a href="javascript:;" class="search-btn iconfont">&#xe66e;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--main-body-->
+<section class="main-body sme-wrapper">
+    <!--order-pay-container-->
+    <section class="order-pay-container sme-inner">
+        <div class="container-inner">
+            <!--container-head-->
+            <div class="container-head f-clearfix">
+                <div class="title f-pull-left">付款</div>
+                <div class="notice f-pull-left">
+                    <i class="iconfont">&#xe673;</i>此链接24小时内有效，请及时支付
+                </div>
+                <div class="order-info f-pull-right f-clearfix">
+                    <div class="info-item">订单编号：2017060622222</div>
+                    <div class="info-item">订单时间：2017-06-06 12:22:22</div>
+                </div>
+            </div>
+            <!--order-details-->
+            <div class="order-details">
+                <div class="details-table">
+                    <table class="sme-table sme-table-bordered sme-table-hover sme-table-centered">
+                        <thead>
+                        <tr>
+                            <th class="cell-name">服务名称</th>
+                            <th class="cell-num">数量</th>
+                            <th class="cell-money">服务金额（元）</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="cell-name">商标注册</td>
+                            <td class="cell-num">1</td>
+                            <td class="cell-money">1200</td>
+                        </tr>
+                        <tr>
+                            <td class="cell-name">商标无忧注册</td>
+                            <td class="cell-num">2</td>
+                            <td class="cell-money">2600</td>
+                        </tr>
+                        <tr>
+                            <td class="cell-name">商标无忧注册</td>
+                            <td class="cell-num">2</td>
+                            <td class="cell-money">2600</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td class="cell-note" colspan="3">
+                                <div class="note-item">手机号：13300003333</div>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="details-sum f-clearfix">
+                    <div class="sum-desc f-pull-left f-clearfix">
+                        <span class="f-pull-left">购买商品信息：</span>
+                        <b class="f-ellipsis f-pull-left" title="商标注册+商标无忧注册+商标无忧注册">商标注册+商标无忧注册+商标无忧注册商标注册+商标无忧注册+商标无忧注册商标注册+商标无忧注册+商标无忧注册商标注册+商标无忧注册+商标无忧注册</b>
+                    </div>
+                    <div class="sum-price f-pull-right">订单金额：<span>100000元</span></div>
+                </div>
+            </div>
+            <!--payment-tab-->
+            <div class="payment-tab">
+                <ul class="tab-nav f-clearfix">
+                    <li class="current">通联支付</li>
+                    <li>支付宝/微信支付</li>
+                    <li>网银在线支付</li>
+                    <li>柜台汇款</li>
+                </ul>
+                <div class="tab-content">
+                    <!--通联-->
+                    <div class="content-item current">
+                        <div class="pay-check-group">
+                            <div class="pay-check-list f-clearfix">
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo0.jpg" alt=""></figure>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pay-btm-control">
+                            <div class="btn-group">
+                                <a href="javascript:popPayNoticeDialog();" class="next-btn handle-btn">下一步</a>
+                            </div>
+                            <div class="protocol-notice">
+                                <input type="checkbox" checked="checked">
+                                <span>已阅读并同意<a href="javascript:;" class="protocol-link">《融诺网在线服务协议》</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--支/微-->
+                    <div class="content-item">
+                        <div class="pay-check-group">
+                            <div class="pay-check-list f-clearfix">
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo1.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo2.jpg" alt=""></figure>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pay-btm-control">
+                            <div class="btn-group">
+                                <a href="javascript:popPayNoticeDialog();" class="next-btn handle-btn">下一步</a>
+                            </div>
+                            <div class="protocol-notice">
+                                <input type="checkbox" checked="checked">
+                                <span>已阅读并同意<a href="javascript:;" class="protocol-link">《融诺网在线服务协议》</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--网银-->
+                    <div class="content-item">
+                        <div class="top-notice">
+                            <i class="iconfont">&#xe6c1;</i>请选择支付银行：请确保您的银行卡已开通网银支付功能
+                        </div>
+                        <div class="pay-check-group">
+                            <div class="pay-check-list f-clearfix">
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo3.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo4.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo5.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo6.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo7.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo3.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo4.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo5.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo6.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo7.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo3.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo4.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo5.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo6.jpg" alt=""></figure>
+                                </label>
+                                <label class="pay-check-item">
+                                    <input type="radio" name="pay-check">
+                                    <figure><img src="resource/img/sme_pay_logo7.jpg" alt=""></figure>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pay-btm-control">
+                            <div class="btn-group">
+                                <a href="javascript:popPayNoticeDialog();" class="next-btn handle-btn">下一步</a>
+                                <span class="note">订单完成后请点击银行支付页面“返回按钮”确保顺利完成订单确认！</span>
+                            </div>
+                            <div class="protocol-notice">
+                                <input type="checkbox" checked="checked">
+                                <span>已阅读并同意<a href="javascript:;" class="protocol-link">《融诺网在线服务协议》</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--汇款-->
+                    <div class="content-item">
+                        <div class="pay-table">
+                            <table class="sme-table sme-table-bordered sme-table-centered sme-table-hover">
+                                <thead>
+                                <tr>
+                                    <th class="cell-bank-name">银行名称</th>
+                                    <th class="cell-account-num">汇款账号</th>
+                                    <th class="cell-bank-org">开户行</th>
+                                    <th class="cell-account-name">开户名</th>
+                                    <th class="cell-phone">短信发送账号</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="cell-bank-name">招商银行</td>
+                                    <td class="cell-account-num">571910624310601</td>
+                                    <td class="cell-bank-org">招商银行杭州分行城西支行</td>
+                                    <td class="cell-account-name">浙江融诺企业服务有限公司</td>
+                                    <td class="cell-phone"><a href="javascript:popSmsDialog();"
+                                                              class="handle-btn">发短信</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-bank-name">工商银行</td>
+                                    <td class="cell-account-num">1202224919900232635</td>
+                                    <td class="cell-bank-org">工行杭州古墩路支行</td>
+                                    <td class="cell-account-name">浙江融诺企业服务有限公司</td>
+                                    <td class="cell-phone"><a href="javascript:popSmsDialog();"
+                                                              class="handle-btn">发短信</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-bank-name">农业银行</td>
+                                    <td class="cell-account-num">19036401040023671</td>
+                                    <td class="cell-bank-org">中国农业银行杭州科技城支行</td>
+                                    <td class="cell-account-name">浙江融诺企业服务有限公司</td>
+                                    <td class="cell-phone"><a href="javascript:popSmsDialog();"
+                                                              class="handle-btn">发短信</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-bank-name">建设银行</td>
+                                    <td class="cell-account-num">33050161678300000259</td>
+                                    <td class="cell-bank-org">中国建设银行股份有限公司杭州华星支行</td>
+                                    <td class="cell-account-name">浙江融诺企业服务有限公司</td>
+                                    <td class="cell-phone"><a href="javascript:popSmsDialog();"
+                                                              class="handle-btn">发短信</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btm-notice">
+                            <p>请您汇款后将汇款信息（ 汇款方式、日期、金额、购买的服务名称、汇款人真实姓名）或汇款凭证通过以下任一方式告之融诺网。</p>
+                            <p>（1）周一至周五致电4006196199</p>
+                            <p>（2）将汇款信息发送至kefu@rongnuo.com</p>
+                            <p>如果收到您的款项，我们会电话联系您，同时我们将为您开通所购买的对应服务。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+<!--#pay-notice-dialog-->
+<div class="m-dialog-pay-notice" id="pay-notice-dialog" style="display: none;">
+    <div class="notice-icon iconfont">&#xe818;</div>
+    <div class="notice-desc">
+        <div class="top-notice">
+            <div class="notice-title">
+                <b>请在新开支付页面完成付款后选择：</b>
+            </div>
+            <div class="notice-para">
+                支付完成前，请不要关闭此支付验证窗口。<br>支付完成后，请根据您支付的情况点击下面按钮。
+            </div>
+        </div>
+        <div class="handle-notice">
+            <div class="notice-item f-clearfix">
+                <div class="notice-title"><b>支付成功</b></div>
+                <div class="notice-para">
+                    您可以选择：<a href="javascript:;" class="handle-link">查看我的订单</a>
+                </div>
+            </div>
+            <div class="notice-item f-clearfix">
+                <div class="notice-title"><b>支付失败</b></div>
+                <div class="notice-para">
+                    建议您选择：<a href="javascript:;" class="handle-link">选择其他支付方式</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#sms-dialog-->
+<div class="m-default-dialog-form" id="sms-dialog" style="display: none;">
+    <div class="form-space">
+        <i class="iconfont" style="margin-right:5px; vertical-align: middle; color:#f78e24;">&#xe673;</i>请填写正常使用的手机号码，方便接收银行账号信息。
+    </div>
+    <div class="form-space"></div>
+    <div class="form-item with-hint f-clearfix">
+        <span class="title">手机号码：</span>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <input type="text" placeholder="请输入手机号码">
+            </div>
+            <div class="hint-info">*提示信息占位</div>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script src="script/switch-tab.js"></script>
+<script src="plugin/artDialog4.1.6/jquery.artDialog.js"></script>
+<script>
+    //创建tab切换
+    switchTab($('.payment-tab'), 'click');
+    //弹出框
+    var payNoticeDialog = null, smsDialog = null;
+    function popPayNoticeDialog() {
+        payNoticeDialog = art.dialog({
+            content: document.getElementById('pay-notice-dialog'),
+            title: '<div class="dialog_confirm_head">网上支付提示</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: .55,
+            fixed: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+    function popSmsDialog() {
+        smsDialog = art.dialog({
+            content: document.getElementById('sms-dialog'),
+            title: '<div class="dialog_confirm_head">发短信到手机</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: .55,
+            fixed: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '确定'
+        });
+    }
+</script>
+</body>
+</html>

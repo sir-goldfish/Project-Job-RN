@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body { background-color: #f7f7f7; }
+
+/* filter-container */
+.filter-container { margin: 10px 0 18px 0; }
+
+.filter-container .filter-container-inner { color: #666; background-color: #fff; }
+
+.filter-container .type-filter { padding: 16px 10px; line-height: 24px; }
+
+.filter-container .type-filter .title { float: left; width: 90px; margin-right: -90px; }
+
+.filter-container .type-filter .title .text { padding-left: 9px; line-height: 1; border-left: 3px solid #f78e24; }
+
+.filter-container .type-filter .content { margin-left: 96px; }
+
+.filter-container .type-filter .content-inner { margin-left: -7px; margin-top: -7px; }
+
+.filter-container .type-filter .filter-item { height: 24px; padding: 0 11px; margin-left: 7px; margin-top: 7px; vertical-align: top; line-height: 24px; color: #666; border: 1px solid transparent; border-radius: 5px; }
+
+.filter-container .type-filter .filter-item.current { color: #f78e24; border-color: #f78e24; }
+
+.filter-container .type-filter .filter-item:hover { color: #f78e24; border-color: #f78e24; }
+
+.filter-container .default-filter { padding: 18px 10px; border-top: 1px solid #ddd; }
+
+.filter-container .default-filter .filter-item { margin-left: 11px; vertical-align: middle; line-height: 16px; }
+
+.filter-container .default-filter .filter-item a { color: #666; }
+
+.filter-container .default-filter .filter-item.current a { color: #f78e24; }
+
+.filter-container .default-filter .filter-item:hover a { color: #f78e24; }
+
+.filter-container .default-filter .filter-item + .filter-item:before { content: ''; display: inline-block; width: 0; height: 16px; margin-right: 11px; vertical-align: middle; border-left: 1px solid #666; }
+
+/* case-container */
+.case-container { min-height: 600px; }
+
+.case-container .cards-list { margin-left: -26px; margin-top: -20px; }
+
+.case-container .case-card { position: relative; float: left; width: 280px; height: 340px; margin-left: 26px; margin-top: 20px; background-color: #fff; overflow: hidden; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, transform .3s ease-out; transition: box-shadow .3s ease-out, transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.case-container .case-card .pic { display: block; width: 100%; height: 200px; margin-bottom: 19px; overflow: hidden; }
+
+.case-container .case-card .pic img { width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.case-container .case-card .desc { margin: 0 10px; }
+
+.case-container .case-card .desc .title { max-width: 100%; margin-bottom: 10px; font-size: 15px; font-weight: bold; color: #363636; }
+
+.case-container .case-card .desc .title:hover { color: #f78e24; }
+
+.case-container .case-card .desc .org { margin-bottom: 12px; font-size: 12px; }
+
+.case-container .case-card .desc .btm-info { padding: 13px 0; text-align: center; font-size: 0; border-top: 2px solid #f78e24; }
+
+.case-container .case-card .desc .btm-info > * { display: inline-block; padding: 4px 13px; vertical-align: top; font-size: 14px; color: #666; }
+
+.case-container .case-card .desc .btm-info .price .num { color: #fc0018; }
+
+.case-container .case-card .desc .btm-info .price .num:before { content: '¥'; display: inline-block; }
+
+.case-container .case-card .desc .btm-info .info-title { margin-top: 8px; font-size: 12px; color: #999; }
+
+.case-container .case-card .desc .btm-info .strike-price { padding-left: 0; border-right: 1px solid #ddd; }
+
+.case-container .case-card .desc .btm-info .page-views { padding-right: 0; border-left: 1px solid #ddd; }
+
+.case-container .case-card.self:after { content: '自营'; position: absolute; top: 0; right: 0; display: block; padding: 5px 9px; font-size: 14px; color: #fff; background-color: #f78e24; }
+
+.case-container .case-card:hover { box-shadow: 0 0 10px 0 rgba(14, 5, 10, 0.1); -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); }
+
+.case-container .case-card:hover .pic img { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
+
+.case-container .pagination-container { padding: 24px 0; }

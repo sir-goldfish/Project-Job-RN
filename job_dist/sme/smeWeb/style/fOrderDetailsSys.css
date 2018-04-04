@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* order-info-container */
+.order-info-container { margin-top: 18px; border-top: 1px solid #eee; }
+
+.order-info-container .order-num { margin-top: 26px; color: #333; }
+
+/* info-box */
+.order-info-container .info-box { margin-top: 38px; }
+
+.order-info-container .info-box .box-head { padding: 0 13px; margin-bottom: 30px; font-size: 20px; font-weight: bold; color: #333; border-left: 5px solid #f78e24; }
+
+.order-info-container .info-box .btn-orange { min-width: 123px; height: 32px; padding: 0 15px; line-height: 32px; text-align: center; color: #fff; background-color: #f78e24; border-radius: 5px; }
+
+.order-info-container .info-box .btn-orange:active { background-color: #e87f15; }
+
+.order-info-container .progress-box .progress-desc { line-height: 1.3; font-size: 0; color: #666; }
+
+.order-info-container .progress-box .progress-desc > * { display: inline-block; vertical-align: top; font-size: 14px; }
+
+.order-info-container .progress-box .progress-desc .time { width: 174px; padding-top: 8px; }
+
+.order-info-container .progress-box .progress-desc .desc-text { min-width: 288px; max-width: 500px; padding-top: 8px; margin-right: 15px; }
+
+.order-info-container .product-info-box .product-card { position: relative; width: 450px; height: 135px; cursor: default; }
+
+.order-info-container .product-info-box .product-card .card-icon { width: 85px; height: 100%; margin-right: -85px; background: #03d6d1 url(../resource/img/sme_icon15.png) no-repeat center; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+
+.order-info-container .product-info-box .product-card .card-desc { width: 364px; height: 133px; margin-left: 85px; font-size: 0; background-color: #fff; border: 1px solid #ddd; border-left: none; border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+
+.order-info-container .product-info-box .product-card .card-desc > * { display: inline-block; vertical-align: middle; font-size: 14px; }
+
+.order-info-container .product-info-box .product-card .card-desc .desc-align { width: 20px; height: 100%; }
+
+.order-info-container .product-info-box .product-card .card-desc .desc-text { width: 314px; margin: 0 30px 0 0; }
+
+.order-info-container .product-info-box .product-card .card-desc .desc-text .title { font-size: 20px; color: #333; }
+
+.order-info-container .product-info-box .product-card .card-desc .desc-text .price-row { margin-top: 10px; }
+
+.order-info-container .product-info-box .product-card .card-desc .desc-text .price-row .price { font-size: 20px; color: #fe4654; }
+
+.order-info-container .product-info-box .product-card .card-desc .desc-text .price-row .price:before { content: '￥'; font-size: 16px; }
+
+.order-info-container .product-info-box .product-card .card-desc .desc-text .desc-para { padding-top: 5px; margin-top: 10px; line-height: 20px; border-top: 1px dashed #ddd; }
+
+.order-info-container .product-info-box .product-card.multiple-product-card { height: 75px; }
+
+.order-info-container .product-info-box .product-card.multiple-product-card .card-desc { height: 73px; }
+
+.order-info-container .product-info-box .product-card.multiple-product-card .card-desc .desc-text .title .price { margin-left: 36px; color: #fe4654; }
+
+.order-info-container .product-info-box .product-card.multiple-product-card .card-desc .desc-text .title .price .num:before { content: '￥'; font-size: 16px; }
+
+.order-info-container .apply-info-box .apply-info-list .list-item { line-height: 1.3; color: #666; }
+
+.order-info-container .apply-info-box .apply-info-list .list-item .price:before { content: '￥'; }
+
+.order-info-container .apply-info-box .apply-info-list .list-item .stress { color: #fe4654; }
+
+.order-info-container .apply-info-box .apply-info-list .list-item .title { float: left; width: 80px; margin-right: -80px; }
+
+.order-info-container .apply-info-box .apply-info-list .list-item .content { margin-left: 80px; }
+
+.order-info-container .apply-info-box .apply-info-list .list-item + .list-item { margin-top: 20px; }
+
+.order-info-container .apply-info-box .handle-btn-group { margin-top: 30px; }

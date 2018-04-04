@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* api-container-head */
+.api-details-container .api-container-head {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+/* api-edit-form */
+.api-edit-container .api-edit-form {
+  $selfTitleWidth: 120px;
+  .form-control {
+    height: 34px;
+  }
+  .form-group {
+    .form-group-addon {
+      float: left;
+      width: $selfTitleWidth;
+      margin-right: -$selfTitleWidth;
+      padding: 9px 5px;
+      text-align: right;
+      font-weight: 700;
+    }
+    .form-group-content {
+      margin-left: $selfTitleWidth;
+      padding: 0 5px;
+    }
+  }
+  .add-param-container {
+    .add-param-list {
+      margin-top: 15px;
+      .list-item + .list-item {
+        margin-top: 12px;
+      }
+      .del-self-btn {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .api-edit-container .api-edit-form {
+    $selfTitleWidth: 0;
+    .form-group {
+      .form-group-addon {
+        width: 100%;
+        margin-right: $selfTitleWidth;
+        text-align: justify;
+      }
+      .form-group-content {
+        margin-left: $selfTitleWidth;
+      }
+    }
+  }
+}
+
+/* api-details-table */
+.api-details-table {
+  .form-control {
+    height: 34px;
+  }
+}

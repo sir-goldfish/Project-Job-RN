@@ -1,0 +1,12 @@
+= self test: 8000 | gulp | job_src/self---job_dist/self
+= hqw: 8001 | gulp hqwgulp | hqwsrc---hqw/html
+= rn admin: 8002 | gulp rnAdminGulp | job_src/rn/rnAdminSrc---job_dist/rn/rnAdmin
+= rn web: 8003 | gulp rnWebGulp | job_src/rn/rnWebSrc---job_dist/rn/rnWeb
+= rn phone: 8004 | gulp rnPhoneGulp | job_src/rn/rnPhoneSrc---job_dist/rn/rnPhone
+= sme web: 8005 | gulp smeWebGulp | job_src/sme/smeWebSrc---job_dist/sme/smeWeb
+= sme admin: 8006 | gulp smeAdminGulp | job_src/sme/smeAdminSrc---job_dist/sme/smeAdmin
+= sme phone: 8007 | gulp smePhoneGulp | job_src/sme/smePhoneSrc---job_dist/sme/smePhone
+= api amdin: 8008 | gulp apiAdminGulp | job_src/api/apiAdminSrc---job_dist/api/apiAdmin
+= bp web: 8009 | gulp bpWebGulp | job_src/rn/bpWebSrc---job_dist/rn/bpWeb
+= rn app: 8010 | gulp rnAppGulp | job_src/rn/rnAppSrc---job_dist/rn/rnApp
+= partner wx: 8011 | gulp partnerWxGulp | job_src/sme/partnerWxSrc---job_dist/sme/partnerWx

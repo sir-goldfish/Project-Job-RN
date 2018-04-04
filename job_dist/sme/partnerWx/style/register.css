@@ -1,0 +1,13 @@
+/* rn-main-body */
+.rn-main-body { padding-bottom: 2.3rem; background: #573bf4 url(../resource/img/par_pic001.jpg) no-repeat center top; background-size: 100% auto; }
+
+/* register-container */
+.register-container { padding-top: 17.7rem; }
+
+.register-container .container-inner { background-color: #fff; border-radius: .3rem; overflow: hidden; }
+
+.register-container .register-form .rn-input-row.with-addon .rn-input-addon { -ms-flex-preferred-size: 35%; flex-basis: 35%; }
+
+.register-container .register-form .rn-input-row.with-addon .rn-input-box { -ms-flex-preferred-size: 65%; flex-basis: 65%; }
+
+.register-container .register-foot { padding-top: 3.8rem; padding-bottom: 2.7rem; }

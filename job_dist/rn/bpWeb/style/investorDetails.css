@@ -1,0 +1,130 @@
+@charset "UTF-8";
+body { background-color: #f1f1f1; }
+
+/* main-body */
+.main-body { padding-top: 10px; padding-bottom: 10px; }
+
+/* main-content-container */
+.main-content-container { width: 882px; }
+
+/* investor-intro-card */
+.main-content-container .investor-intro-card { padding: 30px; background-color: #fff; }
+
+.main-content-container .investor-intro-card .card-pic { float: left; width: 145px; height: 175px; margin-right: -145px; }
+
+.main-content-container .investor-intro-card .card-pic img { width: 100%; height: 100%; vertical-align: top; }
+
+.main-content-container .investor-intro-card .card-desc { margin-left: 169px; }
+
+.main-content-container .investor-intro-card .card-desc .desc-head { color: #333; }
+
+.main-content-container .investor-intro-card .card-desc .desc-head > * { vertical-align: bottom; }
+
+.main-content-container .investor-intro-card .card-desc .desc-head .name { margin-right: 25px; font-size: 24px; }
+
+.main-content-container .investor-intro-card .card-desc .desc-para { height: 60px; margin-top: 24px; line-height: 30px; overflow: hidden; }
+
+.main-content-container .investor-intro-card .card-desc .desc-foot { margin-top: 34px; color: #333; }
+
+.main-content-container .investor-intro-card .card-desc .desc-foot > * { vertical-align: middle; }
+
+.main-content-container .investor-intro-card .card-desc .desc-foot i { margin-right: 8px; font-size: 16px; color: #03d6d0; }
+
+/* desc-panel 共 */
+.main-content-container .desc-panel { padding: 25px 0; margin-top: 10px; background-color: #fff; }
+
+.main-content-container .desc-panel .panel-head .panel-title { position: relative; min-width: 87px; height: 38px; padding: 0 15px 0 30px; line-height: 38px; font-size: 18px; color: #fff; background-color: #2c3e50; }
+
+.main-content-container .desc-panel .panel-head .panel-title:after { content: ''; position: absolute; top: 0; left: 100%; display: block; width: 15px; height: 38px; background: url(../resource/img/bp_icon4.png) no-repeat left center; }
+
+.main-content-container .desc-panel .panel-body { padding: 15px 30px 0 30px; }
+
+.main-content-container .desc-panel .panel-body .desc-article { line-height: 30px; color: #333; }
+
+.main-content-container .desc-panel .panel-body .desc-article img { display: block; width: 45%; height: auto; margin: 10px auto; }
+
+/* case-panel */
+.main-content-container .case-panel .panel-body .case-list { margin-left: -30px; }
+
+.main-content-container .case-panel .panel-body .case-list .list-item { float: left; width: 183px; margin: 12px 0 0 30px; }
+
+.main-content-container .case-panel .panel-body .case-list .list-item .item-pic { width: 181px; height: 113px; border: 1px solid #ddd; overflow: hidden; }
+
+.main-content-container .case-panel .panel-body .case-list .list-item .item-pic img { display: block; width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.main-content-container .case-panel .panel-body .case-list .list-item .item-pic:hover img { -webkit-transform: scale(1.07); -ms-transform: scale(1.07); transform: scale(1.07); }
+
+.main-content-container .case-panel .panel-body .case-list .list-item .item-name { width: 100%; padding: 5px 0; margin-top: 12px; text-align: center; }
+
+/* aside-content-container */
+.aside-content-container { width: 308px; }
+
+/* invest-plan */
+.aside-content-container .invest-plan .head-card { min-height: 114px; padding: 28px 26px 15px; background-color: #fff; }
+
+.aside-content-container .invest-plan .head-card .card-title { text-align: center; }
+
+.aside-content-container .invest-plan .head-card .card-title .title .text { padding: 7px 16px; vertical-align: middle; color: #fff; background-color: #2c3e50; }
+
+.aside-content-container .invest-plan .head-card .card-title .title:before, .aside-content-container .invest-plan .head-card .card-title .title:after { content: ''; display: inline-block; width: 65px; height: 1px; vertical-align: middle; background: url(../resource/img/bp_sprites2.png) no-repeat 0 0; }
+
+.aside-content-container .invest-plan .head-card .card-title .title:before { margin-right: 12px; }
+
+.aside-content-container .invest-plan .head-card .card-title .title:after { margin-left: 12px; background-position-y: -3px; }
+
+.aside-content-container .invest-plan .head-card .card-body { margin-top: 20px; }
+
+.aside-content-container .invest-plan .head-card .card-body .field-title { font-weight: bold; }
+
+.aside-content-container .invest-plan .head-card .card-body .field-group-wrapper { height: 18px; margin-top: 10px; line-height: 16px; overflow: hidden; -webkit-transition: height .3s ease-out; transition: height .3s ease-out; }
+
+.aside-content-container .invest-plan .head-card .card-body .field-group > * { display: inline; vertical-align: middle; }
+
+.aside-content-container .invest-plan .head-card .card-body .field-group .item + .item:before { content: '·'; margin: 0 4px; }
+
+.aside-content-container .invest-plan .head-card .card-body .field-handle { margin-top: 10px; text-align: center; color: #999; }
+
+.aside-content-container .invest-plan .head-card .card-body .field-handle .toggle-btn { font-size: 12px; -webkit-transition: -webkit-transform .2s ease-out; transition: -webkit-transform .2s ease-out; transition: transform .2s ease-out; transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+
+.aside-content-container .invest-plan .head-card .card-body .field-handle .toggle-btn.open { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+.aside-content-container .invest-plan .foot-card .cards-list { margin-left: -2px; }
+
+.aside-content-container .invest-plan .foot-card .item-card { float: left; width: 153px; height: 75px; margin: 2px 0 0 2px; text-align: center; background-color: #fff; }
+
+.aside-content-container .invest-plan .foot-card .item-card .num { font-size: 20px; }
+
+.aside-content-container .invest-plan .foot-card .item-card .text { margin-top: 10px; font-size: 12px; color: #999; }
+
+.aside-content-container .invest-plan .foot-card .item-card .card-inner { display: inline-block; vertical-align: middle; padding: 0 10px; }
+
+.aside-content-container .invest-plan .foot-card .item-card:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+/* products-container */
+.aside-content-container .products-container { width: 100%; margin-top: 10px; background-color: #fff; }
+
+.aside-content-container .products-container .inner { padding: 20px 0 28px 0; margin: 0 20px; }
+
+.aside-content-container .products-container .aside-title { margin-bottom: 22px; line-height: 18px; font-size: 16px; color: #333; }
+
+.aside-content-container .products-container .aside-title span { padding-left: 9px; border-left: 3px solid #03d6d0; }
+
+.aside-content-container .products-container .list .list-item { width: 255px; margin-left: auto; margin-right: auto; }
+
+.aside-content-container .products-container .list .list-item .card-pic { position: relative; display: block; width: 100%; height: 205px; margin-bottom: 18px; overflow: hidden; }
+
+.aside-content-container .products-container .list .list-item .card-pic .pic-bg { display: block; width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-content-container .products-container .list .list-item .card-pic .content { position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; font-size: 20px; color: #fff; }
+
+.aside-content-container .products-container .list .list-item .card-pic .content .icon { width: 79px; height: 88px; margin: 36px auto 18px auto; line-height: 88px; font-size: 45px; background: url(../resource/img/bp_sprites.png) no-repeat 0 0; }
+
+.aside-content-container .products-container .list .list-item .card-pic:hover .pic-bg { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.aside-content-container .products-container .list .list-item .card-pic:hover .content { color: #03d6d0; }
+
+.aside-content-container .products-container .list .list-item .card-pic:hover .content .icon { background-position-x: -81px; }
+
+.aside-content-container .products-container .list .list-item .card-title { text-align: center; font-size: 16px; color: #333; }
+
+.aside-content-container .products-container .list .list-item + .list-item { margin-top: 18px; }

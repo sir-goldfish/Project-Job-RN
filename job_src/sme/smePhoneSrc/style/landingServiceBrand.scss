@@ -1,0 +1,402 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* head-banner */
+.head-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .banner-pic {
+    float: left;
+    display: block;
+    img {
+      display: block;
+      width: 100%;
+      height: 15rem;
+    }
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: .5rem;
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      opacity: .6;
+      filter: alpha(opacity=60);
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+    .swiper-pagination-bullet:hover {
+      @extend .swiper-pagination-bullet-active;
+    }
+  }
+}
+
+/* inquiry-form-container */
+.inquiry-container {
+  background-color: #fff;
+}
+
+.inquiry-container .inquiry-form-container {
+  padding: 1.75rem 0 1.4rem 0;
+  font-size: 1.5rem;
+  .form-item + .form-item {
+    margin-top: 1.75rem;
+  }
+  .input-box {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8.5rem;
+      height: 100%;
+      line-height: 4.5rem;
+      text-align: center;
+      color: #fff;
+      background-color: $onColorOrange;
+      &.star-title:before {
+        content: '*';
+        display: inline-block;
+        margin-right: .5rem;
+        color: #f00;
+      }
+    }
+    input[type='text'] {
+      width: 100%;
+      height: 100%;
+      padding: 0 1rem 0 9.5rem;
+      font-size: 1.5rem;
+      border: 1px solid #c9c9c9;
+      border-radius: .5rem;
+      &:focus {
+        border-color: $onColorOrange;
+      }
+    }
+  }
+  .form-btn-wrapper {
+    margin-top: 1.75rem;
+  }
+  .form-btn {
+    display: block;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: $onColorOrange;
+    border-radius: .5rem;
+    &:active {
+      background-color: $onColorOrange - 25%;
+    }
+  }
+}
+
+/* inquiry-data-container */
+.inquiry-container .inquiry-data-container {
+  .stress {
+    color: #f00;
+  }
+  .data-notice {
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  .data-list {
+    padding-bottom: 1.6rem;
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      width: 25%;
+      vertical-align: top;
+      font-size: 1.1rem;
+    }
+    .desc {
+      width: 5rem;
+      height: 5.5rem;
+      margin: 0 auto .5rem auto;
+      color: #fff;
+      background: url(../resource/img/smep_bgi.png) no-repeat center;
+      background-size: 5rem 5.5rem;
+      overflow: hidden;
+      .num {
+        margin: 1.5rem 0 .3rem 0;
+        font-size: 1.2rem;
+      }
+      .unit {
+        font-size: .9rem;
+      }
+      &.desc-bg-white {
+        color: #fc5656;
+        background: url(../resource/img/smep_bgi1.png) no-repeat center;
+        background-size: 5rem 5.5rem;
+      }
+    }
+    .title {
+      color: #333;
+    }
+  }
+}
+
+/* roll-notice-bar */
+.roll-notice-bar {
+  height: 3.25rem;
+  line-height: 3.25rem;
+  font-size: 1.1rem;
+  background-color: #686d7f;
+  .notice-title {
+    float: left;
+    margin-right: -3.8rem;
+    color: #fff;
+  }
+  .notice-list {
+    height: 100%;
+    margin-left: 5rem;
+    overflow: hidden;
+    .stress {
+      color: #1d2088;
+    }
+    .list-body {
+      color: #c9c9c9;
+    }
+  }
+}
+
+/* 共用section-title */
+.section-title {
+  margin-bottom: 1.7rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  .text:after {
+    content: '';
+    display: block;
+    width: 9.2rem;
+    height: .3rem;
+    margin: .75rem auto 0 auto;
+    background-color: $onColorOrange;
+    border-radius: .3rem;
+  }
+}
+
+/* hot-service-section */
+.hot-service-section {
+  padding-top: 1.5rem;
+  padding-bottom: 2.85rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  .service-card {
+    float: left;
+    width: 50%;
+    text-align: center;
+    .pic {
+      position: relative;
+      width: 11.2rem;
+      height: 7.75rem;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        right: .2rem;
+        bottom: -1.1rem;
+        display: block;
+        width: 3.3rem;
+        height: 4rem;
+        background: url(../resource/img/smep_icon1.png) no-repeat center;
+        background-size: 3.3rem 4rem;
+      }
+    }
+    .title {
+      margin: 1.4rem 0 .75rem 0;
+      font-size: 1.3rem;
+      color: #333;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .apply-btn {
+      width: 8rem;
+      height: 3rem;
+      margin-top: 1.25rem;
+      line-height: 3rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: $onColorOrange;
+      border-radius: .5rem;
+      &:active {
+        background-color: $onColorOrange - 25%;
+      }
+    }
+    &.hot-service {
+      .pic:before {
+        content: '';
+        position: absolute;
+        top: -1.4rem;
+        left: -.3rem;
+        display: block;
+        width: 2.55rem;
+        height: 3.65rem;
+        background: url(../resource/img/smep_icon.png) no-repeat center;
+        background-size: 2.55rem 3.65rem;
+      }
+    }
+  }
+  .service-card + .service-card {
+    border-left: .05rem dashed #eee;
+  }
+  .top-cards-row {
+    .service-card {
+      padding-bottom: 2rem;
+    }
+  }
+  .btm-cards-row {
+    border-top: .05rem dashed #eee;
+    .service-card {
+      padding-top: 2rem;
+    }
+  }
+}
+
+/* reason-section */
+.reason-section {
+  $selfBlue: #1eb8ec;
+  padding-top: 1.5rem;
+  padding-bottom: 2.25rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  .desc-item {
+    margin-left: .7rem;
+    font-size: 0;
+    .icon, .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .icon {
+      width: 4.5rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+      text-align: center;
+      font-size: 2.6rem;
+      color: $selfBlue;
+      border: .1rem solid $selfBlue;
+      border-radius: 50%;
+    }
+    .text {
+      height: 3.5rem;
+      padding: 0 2.2rem 0 .5rem;
+      margin-left: 1.45rem;
+      line-height: 3.5rem;
+      font-size: 1.1rem;
+      color: $selfBlue;
+      border: .1rem solid $selfBlue;
+      border-right: none;
+      background: url(../resource/img/smep_bgi2.png) no-repeat right center;
+      background-size: 1.85rem 3.5rem;
+    }
+    &.desc-item-even {
+      margin-left: 2.5rem;
+    }
+  }
+  .desc-item + .desc-item {
+    margin-top: 1.25rem;
+  }
+}
+
+/* advantage-section */
+.advantage-section {
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  .advantage-desc {
+    font-size: 0;
+  }
+  .desc-item {
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 2.25rem;
+    vertical-align: top;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    .icon {
+      width: 6.4rem;
+      height: 6.4rem;
+      margin: 0 auto;
+      line-height: 5.4rem;
+      font-size: 3.4rem;
+      color: #fff;
+      border: .5rem solid #ffeed6;
+      background-color: #fdaa3d;
+      border-radius: 50%;
+    }
+    .title {
+      margin: .9rem 0 .8rem 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    p {
+      line-height: 1.4rem;
+    }
+  }
+}
+
+/* path-section */
+.path-section {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  .path-desc {
+    position: relative;
+    height: 39.2rem;
+    background: url(../resource/img/smep_bgi3.png) no-repeat center top;
+    background-size: 14.7rem 35.8rem;
+    .desc-text {
+      position: absolute;
+      left: 50%;
+      width: auto;
+      height: 2.5rem;
+      padding: 0 .8rem;
+      line-height: 2.5rem;
+      font-size: 1.2rem;
+      color: #fff;
+      border-radius: 2.5rem;
+      .desc-btn {
+        color: #fef035;
+      }
+      &.desc-red {
+        background-color: #fc8c9b;
+      }
+      &.desc-blue {
+        background-color: #81cef2;
+      }
+    }
+  }
+}
+
+/* btm-desc-section */
+.btm-desc-section {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  .desc-body {
+    width: 100%;
+    height: 4.9rem;
+    background: url(../resource/img/smep_bgi4.jpg) no-repeat center;
+    background-size: auto 100%;
+  }
+}

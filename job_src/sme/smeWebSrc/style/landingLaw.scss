@@ -1,0 +1,551 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $onColorOrange;
+$selfBoxShadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+
+/* self-btn */
+.self-btn {
+  $selfWidth: 180px;
+  $selfHeight: 46px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: $selfWidth;
+  height: $selfHeight;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  &:hover {
+    color: #fff;
+  }
+  &.rounded-btn {
+    border-radius: $selfHeight;
+  }
+  &.linear-yellow-btn {
+    background: linear-gradient(#fcc213, $selfActiveColor);
+    &:hover {
+      background: linear-gradient(#fcc213 - 5%, $selfActiveColor - 5%);
+    }
+    &:active {
+      background: linear-gradient(#fcc213 - 15%, $selfActiveColor - 15%);
+    }
+  }
+  &.linear-blue-btn {
+    background: linear-gradient(#55e0fe, #00b7ee);
+    &:hover {
+      background: linear-gradient(#55e0fe - 5%, #00b7ee - 5%);
+    }
+    &:active {
+      background: linear-gradient(#55e0fe - 15%, #00b7ee - 15%);
+    }
+  }
+}
+
+/* head-bg-wrapper */
+.head-bg-wrapper {
+  height: 815px;
+  background: url(../resource/img/sme_landing_bgi17.jpg) no-repeat center top;
+}
+
+/* sme-head4 */
+.sme-head4 {
+  .head-logo {
+    padding-top: 25px;
+    background-color: transparent;
+    .stress {
+      color: $selfActiveColor;
+    }
+    .right-info {
+      line-height: 49px;
+      .hot-line {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* head-section */
+.head-section {
+  padding-top: 50px;
+  .head-title {
+    text-align: center;
+    color: #fff;
+    .main-title {
+      .text {
+        position: relative;
+        display: inline-block;
+        width: 700px;
+        height: 67px;
+        vertical-align: top;
+        background: url(../resource/img/sme_landing_pic50.png) no-repeat center;
+        &:before {
+          content: '';
+          position: absolute;
+          top: -6px;
+          left: -38px;
+          display: inline-block;
+          width: 46px;
+          height: 36px;
+          background: url(../resource/img/sme_landing_pic48.png) no-repeat center;
+        }
+      }
+    }
+    .sub-title {
+      margin-top: 19px;
+      .text {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 45px;
+        font-style: italic;
+        &:before, &:after {
+          content: '';
+          display: inline-block;
+          width: 120px;
+          height: 0;
+          margin-top: 7px;
+          vertical-align: top;
+          border-top: 1px solid #fff;
+        }
+        &:before {
+          margin-right: 12px;
+        }
+        &:after {
+          margin-left: 28px;
+        }
+      }
+    }
+  }
+  .query-panel {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    * {
+      box-sizing: border-box;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: -42px;
+      left: 107px;
+      display: block;
+      width: 57px;
+      height: 66px;
+      background: url(../resource/img/sme_landing_pic49.png) no-repeat center;
+    }
+  }
+  .query-container {
+    background-color: #fff;
+    .container-head {
+      padding: 44px 0 50px;
+      text-align: center;
+      font-size: 32px;
+      color: #333;
+    }
+    .query-options {
+      padding: 0 30px;
+      font-size: 0;
+      .option {
+        display: inline-block;
+        width: 340px;
+        padding-left: 40px;
+        margin-bottom: 42px - 2px;
+        vertical-align: top;
+        font-size: 14px;
+        .check-btn {
+          float: left;
+          margin-right: -24px;
+        }
+        .content {
+          margin-left: 24px + 10px;
+          .title {
+            line-height: 24px;
+            font-size: 18px;
+            color: #333;
+          }
+          .desc {
+            margin-top: 12px - 2px;
+            line-height: 18px;
+          }
+        }
+        &.other-option {
+          input[type='text'] {
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 0 12px;
+            line-height: 40px - 2px;
+            font-size: 16px;
+            border: 1px solid #c9c9c9;
+            &:focus {
+              border-color: #fcc213 - 10%;
+            }
+          }
+        }
+      }
+    }
+    .query-input-wrap {
+      $selfWidth: 600px;
+      $selfHeight: 50px;
+      .input-box {
+        position: relative;
+        width: $selfWidth;
+        margin: 0 auto;
+        input[type='text'] {
+          display: block;
+          width: 100%;
+          height: $selfHeight;
+          padding: 0 17px + 240px 0 17px;
+          line-height: $selfHeight;
+          font-size: 16px;
+          background-color: #fff;
+          border: 1px solid #c9c9c9;
+          border-radius: 8px;
+          &:focus {
+            border-color: #fcc213 - 10%;
+          }
+        }
+        .query-btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          width: 240px;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+      .hint-info {
+        height: 20px;
+        margin-top: 8px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+  .query-record {
+    height: 84px;
+    padding: 9px 38px 0;
+    background: url(../resource/img/sme_landing_pic51.png) no-repeat center top;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0;
+      border-top: 1px dashed #ddd;
+    }
+    .record-swiper {
+      padding: 27px 0;
+      margin: 0 60px;
+      text-align: center;
+      color: #999;
+      overflow: hidden;
+    }
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+    .swiper-slide {
+      float: left;
+      width: auto;
+      margin-right: 60px;
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  padding: 55px 0;
+  text-align: center;
+  .head-title {
+    font-size: 36px;
+    color: #333;
+    .stress {
+      color: $selfActiveColor;
+    }
+  }
+  &.head-w {
+    .head-title {
+      color: #fff;
+    }
+  }
+}
+
+/* path-section */
+.path-section {
+  .section-body {
+    padding-top: 10px;
+  }
+  .path-list {
+    box-sizing: border-box;
+    width: 1067px;
+    min-height: 37px + 42px;
+    padding-bottom: 46px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+    background: url(../resource/img/sme_landing_pic52.png) no-repeat center 42px;
+    * {
+      box-sizing: border-box;
+    }
+    .path-item {
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: top;
+      .icon-wrap {
+        position: relative;
+        width: 132px;
+        margin: 0 auto;
+        .icon {
+          vertical-align: middle;
+          transition: transform .3s ease-out;
+        }
+        .num {
+          position: absolute;
+          top: 46px;
+          left: -80px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px - 2px;
+          font-family: Arial;
+          font-size: 24px;
+          font-weight: bold;
+          background-color: #fff;
+          border: 1px solid #c9c9c9;
+          border-radius: 50%;
+        }
+      }
+      .title {
+        margin-top: 30px;
+        font-size: 20px;
+        color: #333;
+      }
+      .desc {
+        margin-top: 16px;
+        font-size: 14px;
+      }
+      &:hover {
+        .icon-wrap {
+          .icon {
+            transform: scale(.9);
+          }
+        }
+        .title {
+          color: $selfActiveColor;
+        }
+      }
+    }
+    .path-item + .path-item {
+      margin-left: 213px;
+    }
+  }
+  .section-foot {
+    padding-bottom: 48px;
+    text-align: center;
+    .self-btn {
+      min-width: 220px;
+      border-radius: 46px;
+    }
+  }
+}
+
+/* reason-section */
+.reason-section {
+  height: 500px;
+  background: url(../resource/img/sme_landing_bgi18.jpg) no-repeat center top;
+  .desc-list {
+    padding: 10px 0 40px - 4px;
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      .icon {
+        width: 196px;
+        height: 120px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform .3s ease-out;
+      }
+      .text {
+        width: 181px;
+        margin: 22px - 4px auto 0;
+        line-height: 24px;
+        font-size: 16px;
+        color: #fff;
+      }
+      &:hover {
+        .icon {
+          transform: translateY(-8px);
+        }
+      }
+    }
+    li + li {
+      margin-left: 75px;
+    }
+  }
+  .section-foot {
+    text-align: center;
+    .self-btn {
+      min-width: 220px;
+      border-radius: 46px;
+    }
+  }
+}
+
+/* group-section */
+.group-section {
+  background-color: #f1f1f1;
+  .lawyer-cards {
+    box-sizing: border-box;
+    padding-bottom: 33px;
+    margin: -20px 0 0 -20px;
+    * {
+      box-sizing: border-box;
+    }
+  }
+  .lawyer-card {
+    float: left;
+    width: 285px;
+    height: 350px;
+    padding: 40px 30px 0;
+    margin: 20px 0 0 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: $selfBoxShadow;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    .avatar {
+      width: 138px;
+      height: 138px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        border-radius: inherit;
+      }
+    }
+    .name {
+      margin-top: 27px;
+      font-size: 20px;
+      color: #333;
+    }
+    .desc-item {
+      margin-top: 29px - 2px;
+      line-height: 18px;
+      color: #666;
+    }
+    .desc-item + .desc-item {
+      margin-top: 18px - 4px;
+    }
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 5px 15px 0 rgba(24, 5, 9, .1);
+    }
+  }
+  .section-foot {
+    padding-bottom: 50px;
+    text-align: center;
+    .self-btn {
+      margin: 0 12px;
+      border-radius: 46px;
+    }
+  }
+}
+
+/* service-section */
+.service-section {
+  height: 936px;
+  background: url(../resource/img/sme_landing_bgi19.jpg) no-repeat center;
+  .service-cards {
+    box-sizing: border-box;
+    padding: 22px 0 19px;
+    text-align: center;
+    font-size: 0;
+    * {
+      box-sizing: border-box;
+    }
+  }
+  .service-card {
+    position: relative;
+    display: inline-block;
+    width: 294px;
+    height: 340px;
+    padding-top: 80px;
+    margin: 0 53px 0;
+    vertical-align: top;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    background: url(../resource/img/sme_landing_pic60.png) no-repeat center;
+    transition: transform .3s ease-out;
+    .icon {
+      position: absolute;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .desc {
+      margin-top: 23px - 5px;
+      line-height: 24px;
+    }
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+  .section-foot {
+    text-align: center;
+    .self-btn {
+      min-width: 220px;
+      border-radius: 46px;
+    }
+  }
+}
+
+/* btm-desc-section */
+.btm-desc-section {
+  padding: 44px 0;
+  background-color: #eee;
+  .desc-list {
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      width: 132px;
+      height: 132px;
+      vertical-align: top;
+      font-size: 18px;
+      color: #333;
+      border: 1px solid #a0a0a0;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: color .3s ease-out, background-color .4s ease-out, border-color .4s ease-out;
+      .top-text {
+        margin: 33px 0 10px;
+        font-family: Arial;
+        .big {
+          font-size: 36px;
+        }
+      }
+      &:hover {
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-color: $selfActiveColor;
+      }
+    }
+    li + li {
+      margin-left: 90px;
+    }
+  }
+}

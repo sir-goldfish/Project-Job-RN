@@ -1,0 +1,457 @@
+<!--查询对话框-->
+<section class="m-inquiry-dialog" id="inquiry-dialog">
+    <div class="dialog-head">
+        <h3>商标免费查询</h3>
+        <p>专业顾问查询，结果精准迅速</p>
+        <a href="javascript:;" class="close-btn iconfont">&#xe723;</a>
+    </div>
+    <div class="dialog-body">
+        <div class="form-item f-clearfix">
+            <div class="title">商标名称：</div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <input type="text" placeholder="查询商标名称">
+                </div>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <div class="title star-title">联系电话：</div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <input type="text" placeholder="用于获取商标查询结果，已进行隐私保护">
+                </div>
+            </div>
+        </div>
+        <div class="form-item f-clearfix">
+            <div class="title">联系人：</div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <input type="text" placeholder="请输入您的姓名">
+                </div>
+            </div>
+        </div>
+        <div class="hint-info">*提示信息</div>
+        <div class="form-btn-wrapper">
+            <a href="javascript:;" class="submit-btn form-btn">获取查询结果</a>
+        </div>
+    </div>
+</section>
+<!--申请对话框-->
+<section class="m-apply-dialog" id="apply-dialog">
+    <!--17.6.7change-->
+    <div class="dialog-head">
+        <h3>立即申请服务</h3>
+        <p>24小时内响应，专家顾问帮您解决问题！</p>
+        <a href="javascript:;" class="close-btn iconfont">&#xe723;</a>
+    </div>
+    <div class="dialog-body">
+        <div class="form-item type-item f-clearfix">
+            <div class="title">服务类型：</div>
+            <div class="input-wrapper">
+                <label class="type-label"><input type="radio" name="type">商标</label>
+                <label class="type-label"><input type="radio" name="type">版权</label>
+                <label class="type-label"><input type="radio" name="type">专利</label>
+                <label class="type-label"><input type="radio" name="type">交易</label>
+                <div class="select-box">
+                    <select>
+                        <option value="请选择" selected="selected">请选择</option>
+                        <option value="服务1">服务1</option>
+                        <option value="服务2">服务2</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-item name-item f-clearfix">
+            <div class="title">您的姓名：</div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="form-item phone-item f-clearfix">
+            <div class="title">联系方式：</div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <label><input type="radio" name="phone" checked="checked">13300001111</label>
+                </div>
+                <div class="input-box other-phone">
+                    <label><input type="radio" name="phone">其他号码</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="form-item demand-item f-clearfix">
+            <div class="title">具体要求：</div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-item pic-code-item f-clearfix">
+            <div class="title">图形验证码：</div>
+            <div class="input-wrapper">
+                <div class="input-box code-input">
+                    <input type="text">
+                    <a href="javascript:;" class="code-btn pic-btn">
+                        <img src="resource/img/sme_pic2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="form-item msg-code-item f-clearfix">
+            <div class="title">短信验证码：</div>
+            <div class="input-wrapper">
+                <div class="input-box code-input">
+                    <input type="text">
+                    <a href="javascript:;" class="code-btn msg-btn">获取验证码</a>
+                </div>
+            </div>
+        </div>
+        <div class="hint-info">*提示信息</div>
+        <div class="form-btn-wrapper">
+            <a href="javascript:;" class="submit-btn form-btn">立即申请</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    var inquiryDialog, applyDialog;
+    //查询框
+    $('.head-search .search-btn').on('click', function () {
+        inquiryDialog = art.dialog({
+            content: document.getElementById('inquiry-dialog'),
+            title: null,
+            cancel: false,
+            padding: '0 0',
+            lock: true,
+            opacity: .55,
+            fixed: true
+        });
+    });
+    $('#inquiry-dialog').find('.close-btn').on('click', function () {
+        inquiryDialog.close();
+    });
+    $('#inquiry-dialog').find('.submit-btn').on('click', function () {
+        inquiryDialog.close();
+    });
+    //申请框
+    //17.6.7change
+//    $('.service-content .apply-btn').on('click', function () {
+//        applyDialog = art.dialog({
+//            content: document.getElementById('apply-dialog'),
+//            title: '<div class="dialog-head"><h3>立即申请服务</h3><p>24小时内响应，专家顾问帮您解决问题！</p></div>',
+//            padding: '0 0',
+//            lock: true,
+//            opacity: .55,
+//            fixed: true
+//        });
+//    });
+    $('.service-content .apply-btn').on('click', function () {
+        applyDialog = art.dialog({
+            content: document.getElementById('apply-dialog'),
+            title: null,
+            cancel: false,
+            padding: '0 0',
+            lock: true,
+            opacity: .55,
+            fixed: true
+        });
+    });
+    $('#apply-dialog').find('.close-btn').on('click', function () {
+        applyDialog.close();
+    });
+    $('#apply-dialog').find('.submit-btn').on('click', function () {
+        applyDialog.close();
+    });
+    //***监测申请框中的type的示例
+    var selectList;
+    function watchRadio() {
+        selectList = '<select><option value="请选择" selected="selected">请选择</option>';
+        for (var i = 0; i < 6; i++) {
+            selectList += '<option value="服务' + i + '">服务' + i + '</option>';
+        }
+        selectList += '</select>';
+
+        $('#apply-dialog').find('input[name="type"]').on('change', function () {
+            $(this).parent().siblings('.select-box').html(selectList).css('display', 'block');
+        });
+    }
+    watchRadio();
+</script>
+
+// 旧版对话框
+/* m-inquiry-dialog */
+.m-inquiry-dialog {
+  display: none;
+  width: 564px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  .dialog-head {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    color: #fff;
+    background: url(../resource/img/sme_dialog_bgi.png) no-repeat center;
+    background-size: cover;
+    h3 {
+      padding-top: 43px;
+      margin-bottom: 13px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: #fff;
+      transition: transform .5s ease-out;
+    }
+    .close-btn:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .dialog-body {
+    padding-top: 37px;
+    padding-bottom: 60px;
+    .form-item {
+      margin-bottom: 18px;
+      .title {
+        float: left;
+        width: 154px;
+        margin-right: -154px;
+        line-height: 32px;
+        text-align: right;
+        color: #363636;
+      }
+      .star-title:before {
+        content: '*';
+        display: inline-block;
+        margin-right: 4px;
+        font-size: 14px;
+        color: #fc0018;
+      }
+      .input-wrapper {
+        margin-left: 156px;
+        .input-box {
+          position: relative;
+          input[type='text'] {
+            width: 305px;
+            height: 16px;
+            padding: 7px 10px;
+            line-height: 16px;
+            font-size: 12px;
+            border: 1px solid #ddd;
+          }
+        }
+      }
+    }
+    .hint-info {
+      padding-top: 2px;
+      padding-bottom: 18px;
+      text-align: center;
+      line-height: 1;
+      font-size: 14px;
+      color: #363636;
+    }
+    .form-btn-wrapper {
+      text-align: center;
+      font-size: 0;
+      .form-btn {
+        display: inline-block;
+        height: 35px;
+        min-width: 135px;
+        padding: 0 20px;
+        line-height: 35px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #51bef3;
+        border-radius: 4px;
+        transition: background-color .2s ease-out;
+      }
+      .form-btn:hover {
+        background-color: #51bef3 - 15%;
+      }
+    }
+  }
+}
+
+//17.6.7change
+/* m-apply-dialog */
+.m-apply-dialog {
+  display: none;
+  width: 602px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 6px; //
+  overflow: hidden; //
+  .dialog-head {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    color: #fff;
+    background-color: $onColorOrange;
+    h3 {
+      padding-top: 43px;
+      margin-bottom: 13px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: #fff;
+      transition: transform .5s ease-out;
+    }
+    .close-btn:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .dialog-body {
+    padding-top: 37px;
+    padding-bottom: 44px;
+    .form-item {
+      margin-bottom: 18px;
+      .title {
+        float: left;
+        width: 172px;
+        margin-right: -154px;
+        line-height: 32px;
+        text-align: right;
+        color: #363636;
+      }
+      .star-title:before {
+        content: '*';
+        display: inline-block;
+        margin-right: 4px;
+        font-size: 14px;
+        color: #fc0018;
+      }
+      .input-wrapper {
+        margin-left: 176px;
+        label {
+          line-height: 32px;
+          font-size: 14px;
+          color: #666;
+        }
+        input[type='radio'] {
+          margin-right: 4px;
+          vertical-align: middle;
+        }
+        .type-label + .type-label {
+          margin-left: 24px;
+        }
+        .input-box {
+          position: relative;
+          input[type='text'] {
+            width: 196px;
+            height: 16px;
+            padding: 7px 10px;
+            line-height: 16px;
+            font-size: 12px;
+            border: 1px solid #ddd;
+          }
+          textarea {
+            resize: none;
+            width: 306px;
+            height: 64px;
+            padding: 8px 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+          }
+        }
+        .other-phone {
+          input[type='text'] {
+            margin-left: 33px;
+          }
+        }
+        .code-input {
+          width: 218px;
+          height: 32px;
+          input[type='text'] {
+            width: 100px;
+            padding-right: 106px;
+          }
+          .code-btn {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            display: block;
+            width: 95px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-left: 1px solid #ddd;
+          }
+          .pic-btn {
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .msg-btn {
+            color: #666;
+            background-color: #eee;
+          }
+        }
+      }
+    }
+    .hint-info {
+      padding-top: 2px;
+      padding-bottom: 18px;
+      text-align: center;
+      line-height: 1;
+      font-size: 14px;
+      color: #363636;
+    }
+    .form-btn-wrapper {
+      text-align: center;
+      font-size: 0;
+      .form-btn {
+        display: inline-block;
+        height: 35px;
+        min-width: 135px;
+        padding: 0 20px;
+        line-height: 35px;
+        font-size: 16px;
+        color: #fff;
+        background-color: $onColorOrange;
+        border-radius: 4px;
+        transition: background-color .2s ease-out;
+      }
+      .form-btn:hover {
+        background-color: $onColorOrange + 25%;
+      }
+    }
+    .type-item {
+      .select-box {
+        margin-top: 12px;
+        display: none;
+        select {
+          width: 218px;
+          padding: 8px 10px;
+          line-height: 14px;
+          font-size: 14px;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}

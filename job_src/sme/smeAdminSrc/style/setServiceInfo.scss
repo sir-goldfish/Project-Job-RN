@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import "publicVariable";
+
+// blue:#31a0f6;
+/* base container style */
+.wrapper-content {
+  padding: 10px;
+}
+
+.main-body-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* form-table */
+.form-table {
+  width: 100%;
+  color: #363636;
+  .form-row {
+    padding: 0 5px;
+    font-size: 0;
+  }
+  .form-cell {
+    $selfTitleWidth: 130px;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    font-size: 13px;
+    .cell-inner {
+      display: block;
+      width: 100%;
+    }
+    .cell-title {
+      float: left;
+      width: $selfTitleWidth;
+      margin-right: -$selfTitleWidth;
+      line-height: 32px;
+      text-align: right;
+      &.star-title {
+        &:before {
+          content: '*';
+          margin-right: 3px;
+          color: #fc0018;
+        }
+      }
+    }
+    .cell-content {
+      padding: 0 5px;
+      margin-left: $selfTitleWidth;
+      input[type="text"], input[type="password"], select, textarea {
+        width: 100%;
+        height: 32px;
+        padding: 6px 10px;
+        border: 1px solid #ddd;
+        outline: none;
+        background-color: #fff;
+        border-radius: 4px;
+        &:focus {
+          border-color: #23b7e5;
+        }
+      }
+      textarea {
+        resize: none;
+        height: 132px;
+      }
+      input[type="radio"], input[type="checkbox"] {
+        margin: 0;
+        vertical-align: middle;
+      }
+      .input-label {
+        margin-bottom: 0;
+        margin-right: 10px;
+        line-height: 32px;
+        font-weight: normal;
+        input[type="radio"], input[type="checkbox"] {
+          margin-right: 3px;
+        }
+      }
+      .input-box {
+        position: relative;
+      }
+      .hint-info {
+        padding: 3px 0;
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+  .form-btn-group {
+    padding: 5px 0;
+    text-align: center;
+    .form-btn {
+      min-width: 70px;
+      margin: 8px;
+    }
+  }
+}
+
+/* service-info-container */
+.service-info-container {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+/* service-info-tab */
+.service-info-tab {
+  padding-top: 26px;
+  margin-top: 10px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 6px;
+  .tab-nav {
+    border-bottom: 2px solid #ddd;
+    ul {
+      margin: 0 0 -2px 0;
+      padding: 0;
+      list-style: none;
+    }
+    .nav-item {
+      float: left;
+      padding: 0 22px 14px 22px;
+      border-bottom: 2px solid transparent;
+      cursor: default;
+      &:hover {
+        color: #31a0f6;
+      }
+      &.current {
+        font-weight: bold;
+        color: #31a0f6;
+        border-bottom-color: #31a0f6;
+      }
+    }
+  }
+  .tab-content {
+    min-height: 500px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* tab content-item */
+.service-info-tab .content-item {
+  display: none;
+  &.current {
+    display: block;
+  }
+  &.set-type-content {
+    .head-handle {
+      padding: 10px 0;
+    }
+    .set-type-form {
+      .form-cell {
+        $selfTitleWidth: 85px;
+        .cell-title {
+          width: $selfTitleWidth;
+          margin-right: -$selfTitleWidth;
+        }
+        .cell-content {
+          margin-left: $selfTitleWidth;
+        }
+      }
+      .handle-cell {
+        $selfTitleWidth: 0;
+        .cell-title {
+          width: $selfTitleWidth;
+          margin-right: $selfTitleWidth;
+        }
+        .cell-content {
+          margin-left: $selfTitleWidth;
+        }
+        .btn {
+          padding-top: 4px;
+          padding-bottom: 4px;
+        }
+      }
+      .form-tbody {
+        .form-row + .form-row {
+          padding-top: 10px;
+          margin-top: 7px;
+          border-top: 2px dotted #ddd;
+        }
+      }
+    }
+  }
+  &.set-desc-content {
+    .set-desc-form {
+      .form-cell {
+        $selfTitleWidth: auto;
+        .cell-title {
+          float: none;
+          width: $selfTitleWidth;
+          margin-right: $selfTitleWidth;
+          text-align: justify;
+          font-weight: bold;
+        }
+        .cell-content {
+          margin-left: $selfTitleWidth;
+          textarea {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}

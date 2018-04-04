@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* reset */
+th, td { word-wrap: break-word; word-break: break-all; }
+
+/* ---rn共用样式--- */
+/* rn-col-num */
+.rn-col-1 { width: 8.33333%; }
+
+.rn-col-2 { width: 16.66667%; }
+
+.rn-col-3 { width: 25.0%; }
+
+.rn-col-4 { width: 33.33333%; }
+
+.rn-col-5 { width: 41.66666%; }
+
+.rn-col-6 { width: 50.0%; }
+
+.rn-col-7 { width: 58.33333%; }
+
+.rn-col-8 { width: 66.66666%; }
+
+.rn-col-9 { width: 75.0%; }
+
+.rn-col-10 { width: 83.33333%; }
+
+.rn-col-11 { width: 91.66666%; }
+
+.rn-col-12 { width: 100.0%; }
+
+@media (max-width: 767px) { .rn-col-1 { width: 100%; }
+  .rn-col-2 { width: 100%; }
+  .rn-col-3 { width: 100%; }
+  .rn-col-4 { width: 100%; }
+  .rn-col-5 { width: 100%; }
+  .rn-col-6 { width: 100%; }
+  .rn-col-7 { width: 100%; }
+  .rn-col-8 { width: 100%; }
+  .rn-col-9 { width: 100%; }
+  .rn-col-10 { width: 100%; }
+  .rn-col-11 { width: 100%; }
+  .rn-col-12 { width: 100%; } }
+
+/* ---方法类公用(.f-开头)--- */
+/* 单行省略号 */
+.f-ellipsis { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+/* 强制换行 */
+.f-word-break { word-wrap: break-word; word-break: break-all; }
+
+/* ---元件类公用(.u-开头)--- */
+/* u-asterisk-before */
+.u-asterisk-before:before { content: '*'; margin-right: 3px; color: #ed5565; }

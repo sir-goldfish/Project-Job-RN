@@ -1,0 +1,760 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfBgColor: #f82d48;
+
+/* 共用标题 */
+.section-title {
+  line-height: 1;
+  text-align: center;
+  font-size: 24px;
+  color: #363636;
+}
+
+/* top-body */
+.top-body {
+  padding: 100px 0 35px 0;
+  background: #eee url(../resource/img/sme_service_bgi17.jpg) no-repeat center top;
+}
+
+/* head-search */
+.head-search {
+  position: relative;
+  margin-bottom: 119px;
+  .search-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #363636;
+    b {
+      color: #f82d48;
+    }
+  }
+  .search-container {
+    $selfWidth: 704px;
+    $selfHeight: 60px;
+    $selfSpace: 5px;
+    $selfBtnWidth: 180px;
+    box-sizing: border-box;
+    position: relative;
+    width: $selfWidth;
+    height: $selfHeight;
+    margin: 29px auto 0;
+    background-color: rgba(14, 5, 10, .06);
+    border-radius: 8px;
+    overflow: hidden;
+    * {
+      box-sizing: border-box;
+    }
+    input[type='text'] {
+      display: block;
+      width: $selfWidth - 2*$selfSpace;
+      height: $selfHeight - 2*$selfSpace;
+      padding: 0 $selfBtnWidth + 20px 0 20px;
+      margin: 5px auto;
+      line-height: $selfHeight - 2*$selfSpace;
+      font-size: 14px;
+      background-color: #fff;
+      border: none;
+      border-radius: 7px;
+    }
+    .search-btn {
+      position: absolute;
+      top: $selfSpace;
+      right: $selfSpace;
+      width: $selfBtnWidth;
+      height: $selfHeight - 2*$selfSpace;
+      text-align: center;
+      line-height: $selfHeight - 2*$selfSpace;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #f82d48;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      transition: background-color .2s ease-out;
+      &:hover {
+        background-color: #f82d48 - 20%;
+      }
+    }
+  }
+  .category-entry {
+    position: absolute;
+    top: -80px;
+    right: 28px;
+    width: 124px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: url(../resource/img/sme_brand_bgi9.png) no-repeat center;
+    &:hover {
+      background: url(../resource/img/sme_brand_bgi10.png) no-repeat center;
+    }
+  }
+}
+
+/* service-content */
+.service-content {
+  margin-bottom: 14px;
+  .list {
+    margin-left: -26px;
+  }
+  .content-card {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 170px;
+    margin-left: 26px;
+    transition: transform .3s ease-out;
+    .card-title {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      width: 75px;
+      height: 75px;
+      margin-left: -37.5px;
+      background: url(../resource/img/sme_service_bgi15.png) no-repeat center;
+      overflow: hidden;
+      border-radius: 50%;
+      .inner {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        transition: top .3s ease-out;
+      }
+      .icon, .text {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 75px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #363636;
+      }
+      .icon {
+        font-size: 42px;
+        font-weight: normal;
+        color: $onColorOrange;
+      }
+    }
+    .card-body {
+      width: 220px;
+      height: 115px;
+      padding: 50px 30px 0 30px;
+      font-size: 0;
+      overflow: hidden;
+      background: url(../resource/img/sme_service_bgi16.png) no-repeat center;
+      .link {
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 20px;
+        vertical-align: top;
+        font-size: 14px;
+        a {
+          padding: 0 4px;
+          margin-left: 10px;
+          line-height: 18px;
+          color: #363636;
+          &:hover {
+            color: #fff;
+            background-color: $onColorOrange;
+          }
+        }
+      }
+    }
+    &:hover {
+      transform: translateY(-12px);
+      .card-title {
+        .inner {
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+/* head-notice */
+.head-notice {
+  margin-bottom: 14px;
+  .notice-wrapper {
+    width: 100%;
+    height: 36px;
+    background: url(../resource/img/sme_service_bgi30.png) no-repeat center;
+  }
+  .latest-data {
+    line-height: 36px;
+    color: #fff;
+    .title {
+      float: left;
+      width: 190px;
+      margin-right: -190px;
+      text-align: right;
+      .icon {
+        color: #fef035;
+        margin-right: 12px;
+      }
+    }
+    .content {
+      margin-left: 192px;
+      text-align: center;
+      .item {
+        margin-left: 52px;
+        vertical-align: top;
+      }
+      .item + .item {
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 0;
+          height: 16px;
+          margin-right: 52px;
+          vertical-align: -3px;
+          border-left: 1px solid #aeadb7;
+        }
+      }
+      .num {
+        margin: 0 2px;
+        vertical-align: baseline;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* 共tag-section */
+.tag-section {
+  .tag-container {
+    float: right;
+    width: 1142px;
+    height: 392px;
+    padding-right: 30px;
+    background: #fff url(../resource/img/sme_service_bgi23.jpg) no-repeat left bottom;
+    .tag-title {
+      float: left;
+      width: 160px;
+      height: 110px;
+      padding: 38px 66px 0 28px;
+      margin-top: 24px;
+      margin-left: -28px;
+      color: #fff;
+      background: url(../resource/img/sme_service_bgi14.png) no-repeat left top;
+      .title {
+        margin-bottom: 10px;
+        line-height: 33px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .desc {
+        font-size: 14px;
+      }
+    }
+    .tag-content {
+      float: right;
+    }
+  }
+}
+
+/* service-brand */
+.service-brand {
+  .tag-container {
+    height: 455px;
+    .tag-title {
+      width: 170px;
+      padding-right: 56px;
+      margin-right: 8px;
+    }
+    .tag-content {
+      float: none;
+      padding-left: 30px;
+    }
+  }
+  .content-container {
+    padding-top: 40px;
+  }
+  .service-cards {
+    margin: -15px 0 0 -15px;
+  }
+  .service-card {
+    position: relative;
+    float: left;
+    margin: 15px 0 0 15px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    box-shadow: 0 0 20px 0 rgba(4, 0, 0, .15);
+    .card-inner {
+      position: relative;
+      width: 237px;
+      height: 150px;
+      padding: 30px 25px 0 25px;
+      overflow: hidden;
+    }
+    .card-init {
+      transition: opacity .5s ease-out;
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+      }
+      .desc {
+        height: 40px;
+        margin: 12px 0;
+        line-height: 20px;
+        font-size: 13px;
+        color: #333;
+      }
+      .price {
+        font-size: 15px;
+        font-weight: bold;
+        color: #f00;
+        .num {
+          font-size: 30px;
+        }
+        .num:before {
+          content: '¥';
+          margin-right: 5px;
+          font-size: 15px;
+        }
+      }
+    }
+    .hover-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../resource/img/sme_landing_bgi9.png) no-repeat center;
+      background-size: 100% 100%;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      transition: opacity .4s ease-out;
+    }
+    .card-hover {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: top .6s ease-out;
+      a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 103px;
+        height: 33px;
+        margin: -17.5px 0 0 -52.5px;
+        line-height: 33px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 35px;
+        transition: color .2s ease-out, background-color .2s ease-out;
+        &:hover {
+          color: #13b5b1;
+          background-color: #fff;
+        }
+      }
+    }
+    &.s-card {
+      .card-inner {
+        width: 216px;
+      }
+    }
+    &:hover {
+      .card-init {
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      .hover-bg {
+        opacity: .7;
+        filter: alpha(opacity=70);
+      }
+      .card-hover {
+        top: 0;
+      }
+    }
+    &.hot-card:after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      display: block;
+      width: 77px;
+      height: 76px;
+      background: url(../resource/img/sme_service_sprites3.png) no-repeat -90px -393px;
+    }
+  }
+}
+
+/* service-copyright */
+.service-copyright {
+  height: 509px;
+  background: #000 url(../resource/img/sme_service_bgi11.jpg) no-repeat center bottom;
+  //background-attachment: fixed;
+  .section-title-card {
+    float: left;
+    width: 277px;
+    padding-top: 120px;
+    text-align: center;
+    color: #fff;
+    .title {
+      margin-bottom: 30px;
+      font-size: 48px;
+      font-weight: bold;
+    }
+    .subtitle {
+      margin-bottom: 110px;
+      font-size: 18px;
+      font-weight: bold;
+      span + span {
+        margin-left: 14px;
+      }
+    }
+    .desc {
+      line-height: 24px;
+      p {
+        display: inline-block;
+        margin: 0 14px;
+        vertical-align: middle;
+      }
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        width: 45px;
+        height: 0;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  .service-cards {
+    float: left;
+    width: 698px;
+    padding-top: 70px;
+    .list {
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+    .card {
+      position: relative;
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 182px;
+      height: 152px;
+      padding: 28px 22px 0 22px;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      transition: transform .3s ease-out;
+      .title {
+        margin-bottom: 12px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+        &:hover {
+          color: $onColorOrange;
+        }
+      }
+      .desc {
+        margin-bottom: 18px;
+        line-height: 16px;
+        font-size: 13px;
+        color: #666;
+      }
+      .price {
+        font-size: 14px;
+        font-weight: bold;
+        color: #f82d48;
+        .num {
+          font-size: 30px;
+        }
+        .num:before {
+          content: '¥';
+          margin-right: 5px;
+          font-size: 14px;
+        }
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    .l-card {
+      width: 300px;
+    }
+    .hot-card:after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      display: block;
+      width: 77px;
+      height: 76px;
+      background: url(../resource/img/sme_service_sprites3.png) no-repeat -90px -393px;
+    }
+  }
+  .news-cards {
+    float: left;
+    width: 215px;
+    padding-top: 70px;
+    margin-left: 10px;
+    .list {
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+    .card {
+      position: relative;
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 215px;
+      height: 180px;
+      overflow: hidden;
+      transition: transform .3s ease-out;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        .bg {
+          width: 100%;
+          height: 100%;
+          background-color: #040404;
+          opacity: .65;
+          filter: alpha(opacity=65);
+          transition: opacity .3s ease-out;
+        }
+        .text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          a {
+            display: block;
+            margin: 0 12px;
+            line-height: 30px;
+            font-size: 12px;
+            color: #fff;
+          }
+        }
+        &:hover {
+          .bg {
+            opacity: .8;
+            filter: alpha(opacity=80);
+          }
+        }
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+/* service-path */
+.service-path {
+  padding: 83px 0 78px 0;
+  background: #000 url(../resource/img/sme_service_bgi12.jpg) no-repeat center bottom;
+  //background-attachment: fixed;
+  .path-container {
+    height: 385px;
+  }
+  .section-title-card {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 289px;
+    height: 413px;
+    margin-top: -28px;
+    background: url(../resource/img/sme_service_bgi26.jpg) no-repeat center;
+    box-shadow: 0 0 20px 0 rgba(14, 5, 10, .6);
+  }
+  .path-desc {
+    float: left;
+    width: 911px;
+    height: 100%;
+    background: url(../resource/img/sme_service_bgi24.jpg) no-repeat right bottom;
+    box-shadow: 0 0 20px 0 rgba(14, 5, 10, .6);
+  }
+  .desc-list {
+    float: left;
+    width: 362px;
+    padding-top: 19px;
+    margin-left: 40px;
+    .desc-item {
+      margin-top: 30px;
+      .num {
+        float: left;
+        width: 70px;
+        margin-right: -70px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #363636;
+        &:after {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 3px;
+          margin-top: 8px;
+          background-color: #f82d48;
+        }
+      }
+      .text {
+        float: left;
+        margin-left: 76px;
+        .title {
+          margin-bottom: 10px;
+          line-height: 18px;
+          font-size: 16px;
+          font-weight: normal;
+          color: #363636;
+        }
+        .para {
+          line-height: 20px;
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+/* importance-section */
+.importance-section {
+  padding: 73px 0;
+  background: #000 url(../resource/img/sme_service_bgi13.jpg) no-repeat center bottom;
+  //background-attachment: fixed;
+  .tag-section {
+    .tag-container {
+      background-image: url(../resource/img/sme_service_bgi25.jpg);
+      .tag-title {
+        .title {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .importance-desc {
+    width: 816px;
+    padding-top: 64px;
+    font-size: 0;
+  }
+  .desc-item {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+    vertical-align: top;
+    .inner, .icon, .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .inner {
+      transition: transform .3s ease-out;
+    }
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      background: url(../resource/img/sme_service_sprites3.png) no-repeat 999px -341px;
+    }
+    .text {
+      font-size: 14px;
+      color: #363636;
+      transition: font-weight .3s ease-out;
+    }
+    .inner:hover {
+      transform: translateX(-10px);
+      .text {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* advantage-section */
+.advantage-section {
+  background-color: #eee;
+  .u-linetitle-black {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .list {
+    padding-bottom: 45px;
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      width: 186px;
+      vertical-align: top;
+      font-size: 14px;
+      .icon {
+        width: 130px;
+        height: 115px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+        background: url(../resource/img/sme_service_sprites3.png) no-repeat 999px -224px;
+      }
+      .title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #363636;
+      }
+      .desc {
+        line-height: 24px;
+        color: #363636;
+      }
+    }
+    li + li {
+      margin-left: 62px;
+    }
+  }
+}
+
+/* question-cards */
+.question-cards {
+  padding-bottom: 34px;
+  background-color: #fff;
+  .u-linetitle-black {
+    padding-top: 56px;
+    padding-bottom: 50px;
+  }
+  .m-question-cards {
+    margin: 0 60px;
+  }
+}
+
+/* other-services */
+.other-services {
+  padding-bottom: 65px;
+  background-color: #fff;
+  .section-title {
+    padding: 24px 0;
+  }
+  .m-other-services {
+    margin: 0 60px;
+    .other-services-list {
+      .service-link {
+        background-color: $selfBgColor;
+        border-color: $selfBgColor;
+      }
+      .service-link:hover {
+        background-color: $selfBgColor - 25%;
+      }
+    }
+  }
+}

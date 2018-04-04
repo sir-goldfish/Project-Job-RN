@@ -1,0 +1,226 @@
+<!--实用 patent-intro-->
+<div class="patent-intro">
+	<div class="container-title">实用新型专利</div>
+	<div class="container-body">
+		<p>
+			实用新型是指对产品的形状、构造或者其结合所提出的适于实用的新的技术方案。专利法中对实用新型的创造性和技术水平要求较发明专利低，<br>但实用价值大，在这个意义上，实用新型有时会被人们又称小发明或小专利。
+		</p>
+		<p style="margin-top:14px;"><b>产品有效期：10年，自申请日起计算。</b></p>
+		<p style="color:#999;">例:新功能笔、多功能台灯、新型洗衣机、光学鼠标、榨汁机</p>
+	</div>
+</div>
+<!--patent-necessity-->
+<div class="patent-necessity">
+	<div class="container-title">为什么要申请专利</div>
+	<div class="container-body">
+		<div class="ask-content f-clearfix">
+			<div class="avatar"><img src="/statics/resource/img/sme_details_pic3.png"></div>
+			<div class="text-wrap">
+				<ul>
+					<li>个人：平时喜欢研究小东西，希望可以拿来赚钱</li>
+					<li>上学：我有好的创新点，但是成绩不好，我想要上一所好的大学</li>
+					<li>老板：我想要公司能够持续的盈利</li>
+				</ul>
+			</div>
+		</div>
+		<div class="answer-content f-clearfix">
+			<div class="avatar"><img src="/statics/resource/img/sme_consultant1.jpg"></div>
+			<div class="text-wrap">
+				<ul>
+					<li class="f-clearfix">
+						<div class="num">1</div>
+						<div class="text"><b>上学：</b>拥有创新成果，就可以加分。</div>
+					</li>
+					<li class="f-clearfix">
+						<div class="num">2</div>
+						<div class="text"><b>留学：</b>美国、应该、德国、加拿大的名牌大学去留学。</div>
+					</li>
+					<li class="f-clearfix">
+						<div class="num">3</div>
+						<div class="text"><b>移民：</b>技术移民，费用低、签证速度快、签证成功率高。</div>
+					</li>
+					<li class="f-clearfix">
+						<div class="num">4</div>
+						<div class="text"><b>生活：</b>通过专利可以获得政府贴息贷款，还可以获得政府的科技奖励扶持。</div>
+					</li>
+					<li class="f-clearfix">
+						<div class="num">5</div>
+						<div class="text"><b>政府扶持：</b>通过专利，可以申请认定成为高新企业，获得税费减少。</div>
+					</li>
+					<li class="f-clearfix">
+						<div class="num">6</div>
+						<div class="text"><b>品牌推广：</b>更易于获得消费者的信赖，有助于企业的宣传推广、打开市场，在市场竞争中取胜。
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--专利 资料-->
+<div class="material-container">
+	<div class="container-title">所需资料</div>
+	<div class="container-body">
+		<table class="material-table sme-table sme-table-bordered sme-table-centered"
+			   style="width:828px; margin-left:auto; margin-right:auto;">
+			<thead>
+			<tr class="th-with-bar">
+				<th style="width:50%;">
+					<div class="bar" style="background-color:#ddd;"></div>
+					个人名义申请
+				</th>
+				<th style="width:50%;">
+					<div class="bar" style="background-color:#03d6d1;"></div>
+					企业名义申请
+				</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td style="width:50%;">合同（融诺知识产权代准备）</td>
+				<td style="width:50%;">合同（融诺知识产权代准备）</td>
+			</tr>
+			<tr>
+				<td style="width:50%;">委托书（融诺知识产权代准备）</td>
+				<td style="width:50%;">委托书（融诺知识产权代准备）</td>
+			</tr>
+			<tr>
+				<td style="width:50%;">个人身份证</td>
+				<td style="width:50%;">法人身份证</td>
+			</tr>
+			<tr>
+				<td style="width:50%;">技术交底书</td>
+				<td style="width:50%;">技术交底书</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!--专利 比较-->
+<div class="patent-compare services-compare-container">
+	<div class="container-title">服务内容</div>
+	<table class="compare-table sme-table sme-table-bordered sme-table-centered">
+		<thead>
+		<tr class="th-with-bg">
+			<th class="cell-title">&nbsp;</th>
+			<th style="width:29%;">发明专利</th>
+			<th style="width:29%;">实用新型专利</th>
+			<th style="width:29%;">外观专利</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="cell-title">费用</td>
+			<td style="width:29%; font-weight:bold;">
+				<span class="price">
+					<span class="num">6999</span><span class="unit">元/件</span>
+				</span>
+			</td>
+			<td style="width:29%; font-weight:bold;">
+				<span class="price">
+					<span class="num">2899</span><span class="unit">元/件</span>
+				</span>
+			</td>
+			<td style="width:29%; font-weight:bold;">
+				<span class="price">
+					<span class="num">1800</span><span class="unit">元/件</span>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="cell-title">申报方式</td>
+			<td style="width:29%;">普通申请</td>
+			<td style="width:29%;">普通申请</td>
+			<td style="width:29%;">普通申请</td>
+		</tr>
+		<tr>
+			<td class="cell-title">服务标准</td>
+			<td style="width:29%; text-align:justify;">
+				1、收到完整材料后5个人工作日内代理人联系客户。<br>2、联系后11个工作日内确认初稿。<br>3、回传完整且正确材料后3个工作日内申报。<br>4、发明专利费用不包含年费、办登费、印花税
+			</td>
+			<td style="width:29%; text-align:justify;">
+				1、收到完整材料后5个人工作日内代理人联系客户。<br>2、联系后11个工作日内确认初稿。<br>3、回传完整且正确材料后3个工作日内申报。
+			</td>
+			<td style="width:29%; text-align:justify;">
+				1、收到完整材料后3个人工作日内代理人联系客户。<br>2、联系后2个工作日内确认初稿。<br>3、回传完整且正确材料后3个工作日内申报。
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!--实用 patent-inventory-->
+<div class="patent-inventory">
+	<div class="container-title">融诺服务清单</div>
+	<div class="container-body">
+		<table class="inventory-table sme-table sme-table-bordered sme-table-centered"
+			   style="width:828px; margin-left:auto; margin-right:auto;">
+			<tbody>
+			<tr>
+				<td style="width:50%;">1、专利查询</td>
+				<td style="width:50%;">2、制图</td>
+			</tr>
+			<tr>
+				<td style="width:50%;">3、费减指导</td>
+				<td style="width:50%;">4、整理技术交底书</td>
+			</tr>
+			<tr>
+				<td style="width:50%;">5、撰写</td>
+				<td style="width:50%;">6、递交</td>
+			</tr>
+			<tr>
+				<td style="width:50%;">7、含答复(不限次数）</td>
+				<td style="width:50%;">8、证书送达（顺丰送达）</td>
+			</tr>
+			<tr>
+				<td style="width:50%;">9、首年年费<span style="color:#03d6d1;">（免费）</span></td>
+				<td style="width:50%;">10、办登费<span style="color:#03d6d1;">（免费）</span></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					11、印花税<span style="color:#03d6d1;">（免费）</span>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!--patent-path-->
+<div class="patent-path">
+	<div class="container-title">融诺服务流转</div>
+	<div class="container-body">
+		<div class="path-list">
+			<div class="path-item">
+				<div class="icon iconfont">&#xe731;</div>
+				<div class="title">提案</div>
+			</div>
+			<div class="path-line">
+				<div class="line-desc">10分钟内响应</div>
+			</div>
+			<div class="path-item">
+				<div class="icon iconfont">&#xe736;</div>
+				<div class="title">代理人联系客户</div>
+			</div>
+			<div class="path-line">
+				<div class="line-desc">确定专利需求</div>
+			</div>
+			<div class="path-item">
+				<div class="icon iconfont">&#xe727;</div>
+				<div class="title">融诺托管服务</div>
+			</div>
+			<div class="path-line">
+				<div class="line-desc">客户提交材料</div>
+			</div>
+			<div class="path-item">
+				<div class="icon iconfont">&#xe7ee;</div>
+				<div class="title">审核申报</div>
+			</div>
+			<div class="path-line">
+				<div class="line-desc">材料寄往国知局</div>
+			</div>
+			<div class="path-item">
+				<div class="icon iconfont">&#xe72d;</div>
+				<div class="title">领取证书</div>
+			</div>
+		</div>
+	</div>
+</div>

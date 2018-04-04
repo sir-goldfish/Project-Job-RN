@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户付款-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/orderPay.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="javascript:;" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">知识产权</a>
+                        <div class="hide-group" style="margin-left:-49px;">
+                            <ul class="group-list">
+                                <li class="group-item chosen"><a href="javascript:;">商标注册</a></li>
+                                <li class="group-item"><a href="javascript:;">版权登记</a></li>
+                                <li class="group-item"><a href="javascript:;">专利申请</a></li>
+                                <li class="group-item"><a href="javascript:;">知产交易</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">公司注册</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">人事社保</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">案例库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">资讯</a>
+                    </li>
+                </ul>
+                <div class="logo-search">
+                    <input type="text" placeholder="搜索服务">
+                    <a href="javascript:;" class="search-btn iconfont">&#xe66e;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--main-body-->
+<section class="main-body sme-wrapper">
+    <!--order-pay-container-->
+    <section class="order-pay-container sme-inner">
+        <div class="container-head f-clearfix">
+            <div class="title">付款</div>
+            <div class="notice">
+                <i class="iconfont">&#xe673;</i>此链接24小时内有效，请及时支付
+            </div>
+        </div>
+        <div class="container-body">
+            <div class="pay-box f-clearfix">
+                <div class="pay-table">
+                    <div class="table-head">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="cell-name">服务名称</th>
+                                <th class="cell-num">数量</th>
+                                <th class="cell-money">服务金额（元）</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table-body">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="cell-name">商标注册</td>
+                                <td class="cell-num">1</td>
+                                <td class="cell-money">1200</td>
+                            </tr>
+                            <tr>
+                                <td class="cell-name">商标无忧注册</td>
+                                <td class="cell-num">2</td>
+                                <td class="cell-money">2600</td>
+                            </tr>
+                            <tr>
+                                <td class="cell-name">商标无忧注册</td>
+                                <td class="cell-num">2</td>
+                                <td class="cell-money">2600</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-foot">
+                        <table>
+                            <tfoot>
+                            <tr>
+                                <td class="cell-sum" colspan="3">订单总额：<span class="stress">6400</span>元</td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="pay-card">
+                    <div class="card-title">
+                        <span class="text">支付订单</span>
+                    </div>
+                    <div class="card-body f-clearfix">
+                        <ul class="order-info">
+                            <li class="info-item f-clearfix">
+                                <div class="title">订单编号：</div>
+                                <div class="desc">2017060622222</div>
+                            </li>
+                            <li class="info-item f-clearfix">
+                                <div class="title">手机号：</div>
+                                <div class="desc">13755555555</div>
+                            </li>
+                            <li class="info-item f-clearfix">
+                                <div class="title">订单时间：</div>
+                                <div class="desc">2017-06-06 12:20:20</div>
+                            </li>
+                            <li class="info-item f-clearfix">
+                                <div class="title">商品信息：</div>
+                                <div class="desc f-ellipsis"><b title="商标注册+商标无忧注册+商标无忧注册">商标注册+商标无忧注册+商标无忧注册</b></div>
+                            </li>
+                            <li class="info-item f-clearfix">
+                                <div class="title">应付金额：</div>
+                                <div class="desc"><b class="stress">6400元</b></div>
+                            </li>
+                        </ul>
+                        <div class="order-qrcode">
+                            <div class="title">
+                                <i class="iconfont">&#xe6d1;</i>微信扫码支付：
+                            </div>
+                            <figure class="qrcode-pic">
+                                <img src="resource/img/sme_wx_qrcode.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+
+<!--script-->
+<script src="script/jquery.min.js"></script>
+</body>
+</html>

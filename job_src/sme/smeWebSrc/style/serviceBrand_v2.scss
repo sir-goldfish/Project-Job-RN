@@ -1,0 +1,798 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: #03d6d1;
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* head-container */
+.head-container {
+  height: 465px;
+  background: url(../resource/img/sme_brand_banner.png) no-repeat top center;
+  .search-wrapper {
+    padding-top: 330px;
+  }
+  .search-container {
+    width: 100%;
+    height: 135px;
+    background: url(../resource/img/sme_brand_bgi.jpg) no-repeat center;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+  }
+  .search-box {
+    position: relative;
+    width: 990px;
+    height: 57px;
+    margin: 39px auto 0 auto;
+    border-radius: 57px;
+    .icon {
+      position: absolute;
+      top: 14px;
+      left: 22px;
+      font-size: 29px;
+      color: #bbb;
+    }
+    .search-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 245px;
+      height: 100%;
+      line-height: 57px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      background-color: $selfActiveColor;
+      border-top-right-radius: 57px;
+      border-bottom-right-radius: 57px;
+      &:hover {
+        background-color: $selfActiveColor - 10%;
+      }
+      &:active {
+        background-color: $selfActiveColor - 30%;
+      }
+    }
+    .search-input {
+      display: block;
+      width: 990px - 2px - 65px - 260px;
+      height: 57px - 2px;
+      padding: 0 260px 0 65px;
+      line-height: 57px - 2px;
+      border: 1px solid #bbb;
+      border-radius: 57px;
+      box-shadow: 0 5px 5px 0 rgba(24, 5, 9, .1);
+      &:focus {
+        border-color: $selfActiveColor;
+        & + .icon {
+          color: $selfActiveColor;
+        }
+      }
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  padding: 45px 0 22px 0;
+  .section-title {
+    font-size: 0;
+    & > * {
+      display: inline-block;
+      vertical-align: bottom;
+      font-size: 16px;
+    }
+    .title {
+      font-size: 30px;
+      color: #333;
+    }
+    .desc {
+      margin-left: 14px;
+      color: #666;
+    }
+  }
+  .head-handle {
+    padding-top: 14px;
+    .more-link {
+      font-size: 16px;
+      color: #666;
+      &:hover {
+        color: $selfActiveColor;
+      }
+    }
+  }
+}
+
+/* ani-line-card 共 */
+.ani-line-card {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+  transition: transform .3s ease-out;
+  .line-init {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #b9efee;
+  }
+  .line-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    text-align: center;
+    em {
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: top;
+      background-color: $selfActiveColor;
+      overflow: hidden;
+      transition: width .3s ease-out;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    .line-hover {
+      em {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* brand-register-section */
+.brand-register-section {
+  $selfWidth: 232px;
+  .section-flag {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: $selfWidth;
+    height: 370px;
+    margin-right: - $selfWidth;
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+  }
+  .desc-cards-wrapper {
+    float: left;
+    width: 100%;
+  }
+  .desc-cards-container {
+    margin-left: $selfWidth;
+  }
+  .desc-cards-list {
+    margin: -10px 0 0 0;
+    .desc-card {
+      position: relative;
+      float: left;
+      width: 312px;
+      height: 180px;
+      margin: 10px 0 0 10px;
+      color: #999;
+      .card-inner {
+        margin: 30px 25px 0 30px;
+      }
+      .title {
+        margin-bottom: 12px;
+        font-size: 20px;
+        color: #000;
+      }
+      .para {
+        min-height: 40px;
+        margin-bottom: 25px;
+        line-height: 20px;
+        font-size: 13px;
+      }
+      .price {
+        font-size: 15px;
+        color: #f00;
+        .num {
+          font-size: 24px;
+          &:before {
+            content: '￥';
+            font-size: 15px;
+          }
+        }
+      }
+      .icon {
+        position: absolute;
+        bottom: 16px;
+        right: 25px;
+        width: 54px;
+        height: 54px;
+        line-height: 54px + 2px;
+        text-align: center;
+        font-size: 36px;
+        color: $selfActiveColor;
+        border: 1px solid $selfActiveColor;
+        border-radius: 50%;
+      }
+      &.hot-card {
+        .title {
+          .title-text {
+            position: relative;
+            &:after {
+              content: '';
+              position: absolute;
+              top: -6px;
+              left: 100%;
+              width: 39px;
+              height: 32px;
+              margin-left: 6px;
+              background: url(../resource/img/sme_icon16.png) no-repeat center;
+            }
+          }
+        }
+      }
+      &.s-card {
+        width: 232px;
+      }
+    }
+  }
+}
+
+/* brand-change-section */
+.brand-change-section {
+  .desc-cards-list {
+    margin: -10px 0 0 -10px;
+    .desc-card {
+      float: left;
+      width: 230px;
+      height: 265px;
+      margin: 10px 0 0 10px;
+      color: #999;
+      .card-inner {
+        margin: 25px 32px 0;
+        text-align: center;
+      }
+      .icon {
+        width: 54px;
+        height: 54px;
+        margin: 0 auto 20px;
+        line-height: 54px + 2px;
+        text-align: center;
+        font-size: 36px;
+        color: $selfActiveColor;
+        border: 1px solid $selfActiveColor;
+        border-radius: 50%;
+      }
+      .title {
+        margin-bottom: 12px;
+        font-size: 20px;
+        color: #000;
+      }
+      .para {
+        min-height: 78px;
+        line-height: 20px;
+        font-size: 13px;
+      }
+      .price {
+        font-size: 15px;
+        color: #f00;
+        .num {
+          font-size: 24px;
+          &:before {
+            content: '￥';
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* brand-resolution-section */
+.brand-resolution-section {
+  $selfWidth: 273px;
+  .section-flag {
+    $selfColor: #6b3403;
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: $selfWidth;
+    height: 396px;
+    margin-right: - $selfWidth;
+    background: url(../resource/img/sme_brand_bgi1.jpg) no-repeat center;
+    .flag-inner {
+      margin: 57px 31px 0;
+      text-align: center;
+      color: $selfColor;
+    }
+    .title {
+      margin-bottom: 40px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .para {
+      padding: 10px 0;
+      margin-bottom: 45px;
+      line-height: 20px;
+      font-size: 13px;
+      border-top: 1px solid $selfColor;
+      border-bottom: 1px solid $selfColor;
+    }
+    .price {
+      margin-bottom: 44px;
+      font-size: 16px;
+      .num {
+        font-size: 30px;
+        font-weight: bold;
+        &:before {
+          content: '￥';
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+    }
+    .details-btn {
+      width: 110px;
+      height: 32px;
+      line-height: 32px;
+      color: $selfColor;
+      border: 1px solid $selfColor;
+      border-radius: 32px;
+      &:hover {
+        color: #ddd;
+        background-color: $selfColor;
+      }
+    }
+  }
+  .desc-cards-wrapper {
+    float: left;
+    width: 100%;
+  }
+  .desc-cards-container {
+    margin-left: $selfWidth;
+  }
+  .desc-card {
+    margin: 10px 0 0 10px;
+    color: #999;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+    transition: transform .3s ease-out;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  .product-cards-list {
+    float: left;
+    width: 463px;
+    margin: -10px 0 0 0;
+    .product-card {
+      float: left;
+      width: 453px;
+      height: 193px;
+      .card-inner {
+        margin: 30px 30px 0;
+      }
+      .title {
+        margin-bottom: 14px;
+        font-size: 20px;
+        color: #000;
+      }
+      .para {
+        min-height: 56px;
+        line-height: 20px;
+        font-size: 13px;
+      }
+      .price {
+        font-size: 15px;
+        color: #f00;
+        .num {
+          font-size: 24px;
+          &:before {
+            content: '￥';
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .news-cards-list {
+    float: left;
+    width: 463px;
+    margin: -10px 0 0 0;
+    .desc-card {
+      float: left;
+      height: 193px;
+    }
+    .news-card {
+      width: 453px;
+      .card-inner {
+        margin: 30px 30px 0;
+      }
+      .title {
+        margin-bottom: 22px;
+        font-size: 20px;
+        color: #000;
+        a {
+          max-width: 100%;
+          color: inherit;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      .para {
+        $selfWidth: 125px;
+        img {
+          float: left;
+          width: $selfWidth;
+          height: 90px;
+          margin-right: - $selfWidth;
+        }
+        .text {
+          float: left;
+          height: 100px;
+          margin-left: $selfWidth + 20px;
+          margin-top: -3px;
+          line-height: 20px;
+          font-size: 13px;
+          overflow: hidden;
+        }
+      }
+    }
+    .pic-news-card {
+      width: 221px;
+      .link-pic {
+        display: block;
+        width: 100%;
+        height: 140px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          vertical-align: top;
+          transition: transform .3s ease-out;
+        }
+      }
+      .title {
+        height: 53px;
+        margin: 0 12px;
+        font-size: 0;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 0;
+          height: 100%;
+          vertical-align: middle;
+          font-size: 0;
+          overflow: hidden;
+        }
+        a {
+          max-height: 40px;
+          line-height: 20px;
+          vertical-align: middle;
+          font-size: 14px;
+          color: #000;
+          overflow: hidden;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      &:hover {
+        .link-pic {
+          img {
+            transform: scale(1.07);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* brand-objection-section */
+.brand-objection-section {
+  $selfWidth: 273px;
+  .section-flag {
+    $selfColor: #fff;
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: $selfWidth;
+    height: 396px;
+    margin-right: - $selfWidth;
+    background: url(../resource/img/sme_brand_bgi2.jpg) no-repeat center;
+    .flag-inner {
+      margin: 57px 31px 0;
+      text-align: center;
+      color: $selfColor;
+    }
+    .title {
+      margin-bottom: 40px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .para {
+      padding: 10px 0;
+      margin-bottom: 45px;
+      line-height: 20px;
+      font-size: 13px;
+      border-top: 1px solid $selfColor;
+      border-bottom: 1px solid $selfColor;
+    }
+    .price {
+      margin-bottom: 44px;
+      font-size: 16px;
+      .num {
+        font-size: 30px;
+        font-weight: bold;
+        &:before {
+          content: '￥';
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+    }
+    .details-btn {
+      width: 110px;
+      height: 32px;
+      line-height: 32px;
+      color: $selfColor;
+      border: 1px solid $selfColor;
+      border-radius: 32px;
+      &:hover {
+        color: #4c94cf;
+        background-color: $selfColor;
+      }
+    }
+  }
+  .desc-cards-wrapper {
+    float: left;
+    width: 100%;
+  }
+  .desc-cards-container {
+    margin-left: $selfWidth;
+  }
+  .desc-cards-list {
+    margin: -10px 0 0 0;
+    .desc-card {
+      float: left;
+      width: 453px;
+      height: 193px;
+      margin: 10px 0 0 10px;
+      color: #999;
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+      transition: transform .3s ease-out;
+      .card-inner {
+        margin: 30px 30px 0;
+      }
+      .title {
+        margin-bottom: 14px;
+        font-size: 20px;
+        color: #000;
+      }
+      .para {
+        min-height: 56px;
+        line-height: 20px;
+        font-size: 13px;
+      }
+      .price {
+        font-size: 15px;
+        color: #f00;
+        .num {
+          font-size: 24px;
+          &:before {
+            content: '￥';
+            font-size: 15px;
+          }
+        }
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+/* brand-news-section */
+.brand-news-section {
+  width: 638px;
+  .desc-cards-list {
+    margin: -10px 0 0 0;
+    .desc-card {
+      float: left;
+      width: 100%;
+      height: 122px;
+      margin: 10px 0 0 0;
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+      transition: transform .3s ease-out;
+      .card-inner {
+        margin: 25px 30px 0;
+      }
+      .title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #000;
+        a {
+          max-width: 100%;
+          color: inherit;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      .para {
+        height: 48px;
+        line-height: 24px;
+        font-size: 14px;
+        overflow: hidden;
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+/* brand-case-section */
+.brand-case-section {
+  width: 536px;
+  .desc-cards-list {
+    margin: -10px 0 0 -10px;
+    .desc-card {
+      position: relative;
+      float: left;
+      width: 263px;
+      height: 188px;
+      margin: 10px 0 0 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+      transition: transform .3s ease-out;
+      .link-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          vertical-align: top;
+          transition: transform .3s ease-out;
+        }
+      }
+      .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background-color: rgba(0, 0, 0, .75);
+        .text {
+          margin: 0 10px;
+        }
+        a {
+          max-width: 100%;
+          line-height: 30px;
+          color: #fff;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      &:hover {
+        transform: translateY(-5px);
+        .link-pic {
+          img {
+            transform: scale(1.07);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* brand-path-section */
+.brand-path-section {
+  background-color: #fff;
+  .section-head {
+    text-align: center;
+  }
+  .section-body {
+    padding: 21px 0 43px;
+  }
+  .path-list {
+    text-align: center;
+    font-size: 0;
+  }
+  .path-item {
+    display: inline-block;
+    width: 124px;
+    line-height: 20px;
+    font-size: 12px;
+    vertical-align: top;
+    .icon-box {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 20px;
+      background-color: rgba(3, 214, 209, .08);
+      border-radius: 50%;
+      cursor: default;
+      transition: background-color .3s ease-out;
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -24px;
+        margin-left: -24px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px + 2px;
+        font-size: 32px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-radius: 50%;
+        transition: transform .3s ease-out;
+      }
+    }
+    .title {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: #000;
+    }
+    &:hover {
+      .icon-box {
+        background-color: rgba(3, 214, 209, .3);
+        .icon {
+          transform: scale(1.08);
+        }
+      }
+      .title {
+        font-weight: bold;
+      }
+    }
+  }
+  .path-item + .path-item {
+    margin-left: 16px;
+    .icon-box {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -58px;
+        display: block;
+        width: 48px;
+        height: 0;
+        border-bottom: 2px dashed #f1f1f1;
+      }
+    }
+  }
+}
+
+/* other-services */
+.other-services {
+  padding: 18px 0 63px;
+  .section-head {
+    text-align: center;
+    .section-title {
+      .title {
+        font-size: 24px;
+      }
+    }
+  }
+  .m-other-services {
+    .service-link {
+      background-color: $selfActiveColor;
+      border-color: $selfActiveColor;
+      &:hover {
+        background-color: $selfActiveColor - 10%;
+      }
+      &:active {
+        background-color: $selfActiveColor - 30%;
+      }
+    }
+  }
+}

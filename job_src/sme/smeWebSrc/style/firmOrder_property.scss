@@ -1,0 +1,458 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfColorGreen: #03d6d1;
+
+.main-body {
+  padding: 10px 0;
+  background-color: #f7f7f7;
+}
+
+/* section-head 共 */
+.section-head {
+  .head-title {
+    & > * {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 20px;
+        margin-right: 12px;
+        vertical-align: -3px;
+        background-color: $selfColorGreen;
+      }
+    }
+    .title-desc {
+      margin-left: 18px;
+    }
+  }
+}
+
+/* product-info-section */
+.product-info-section {
+  padding: 45px 60px;
+  background-color: #fff;
+  .section-body {
+    margin-top: 34px;
+    overflow: hidden;
+  }
+  .product-cards {
+    margin: -25px 0 0 -45px;
+  }
+  .product-card {
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 135px;
+    margin: 25px 0 0 45px;
+    cursor: default;
+    .card-icon {
+      width: 85px;
+      height: 100%;
+      margin-right: -85px;
+      background: $selfColorGreen url(../resource/img/sme_icon15.png) no-repeat center;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .card-desc {
+      width: 450px - 85px - 1px;
+      height: 135px - 2px;
+      margin-left: 85px;
+      font-size: 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-left: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+      }
+      .desc-align {
+        width: 20px;
+        height: 100%;
+      }
+      .desc-text {
+        width: 450px - 86px - 50px;
+        margin: 0 30px 0 0;
+        .title {
+          font-size: 20px;
+          color: #333;
+        }
+        .price-row {
+          margin-top: 10px;
+          .price {
+            font-size: 20px;
+            color: #fe4654;
+            &:before {
+              content: '￥';
+              font-size: 16px;
+            }
+          }
+        }
+        .desc-para {
+          padding-top: 5px;
+          margin-top: 10px;
+          line-height: 20px;
+          border-top: 1px dashed #ddd;
+        }
+      }
+    }
+    &.multiple-product-card {
+      height: 75px;
+      .card-desc {
+        height: 75px - 2px;
+        .desc-text {
+          .title {
+            .price {
+              margin-left: 36px;
+              color: #fe4654;
+              .num:before {
+                content: '￥';
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      .card-desc {
+        border-color: $selfColorGreen;
+      }
+    }
+    &.chose {
+      .card-desc {
+        border-color: $selfColorGreen;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          display: block;
+          width: 35px;
+          height: 35px;
+          background: url(../resource/img/sme_icon_chose_g.png) no-repeat center;
+        }
+      }
+    }
+  }
+}
+
+/* apply-info-section */
+.apply-info-section {
+  padding: 45px 60px;
+  margin-top: 10px;
+  background-color: #fff;
+  .section-body {
+    margin-top: 40px;
+  }
+  .apply-form-container {
+    width: 100%;
+    font-size: 16px;
+    color: #666;
+    .form-row {
+      font-size: 0;
+    }
+    .form-cell {
+      $selfTitleWidth: 90px;
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      line-height: 42px;
+      font-size: 16px;
+      .cell-title {
+        float: left;
+        width: $selfTitleWidth;
+        margin-right: -$selfTitleWidth;
+        line-height: 42px;
+        &.star-title {
+          &:before {
+            content: '*';
+            margin-right: 3px;
+            color: #fc0018;
+          }
+        }
+      }
+      .cell-content {
+        margin-left: $selfTitleWidth;
+        input[type="text"], input[type="password"], select, textarea {
+          width: 245px - 2px - 28px;
+          height: 42px - 2px - 20px;
+          padding: 10px 14px;
+          line-height: 20px;
+          border: 1px solid #ddd;
+          outline: none;
+          background-color: #fff;
+          border-radius: 4px;
+          transition: box-shadow .3s ease-out;
+          &:focus {
+            box-shadow: 0 0 10px 0 rgba(14, 5, 10, .2);
+          }
+        }
+        textarea {
+          resize: none;
+          width: 550px - 2px - 28px;
+          height: 200px - 2px - 20px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+          margin: 0;
+          vertical-align: middle;
+        }
+        .input-label {
+          margin-bottom: 0;
+          margin-right: 10px;
+          line-height: 42px;
+          font-weight: normal;
+          input[type="radio"], input[type="checkbox"] {
+            margin-right: 3px;
+          }
+        }
+        .dropdown-box {
+          position: relative;
+          .dropdown-trigger {
+            position: relative;
+            width: 245px - 2px - 14px - 30px;
+            height: 42px - 2px - 20px;
+            padding: 10px 30px 10px 14px;
+            line-height: 20px;
+            border: 1px solid #ddd;
+            outline: none;
+            background-color: #fff;
+            border-radius: 4px;
+            transition: box-shadow .3s ease-out;
+            &:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              right: 14px;
+              margin-top: -3px;
+              border-top: 7px solid #aaa;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-bottom: none;
+            }
+          }
+          .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 2;
+            display: none;
+            min-width: 245px - 2px;
+            max-width: 300px - 2px;
+            max-height: 380px;
+            margin-top: 2px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            overflow-y: auto;
+            border-radius: 4px;
+            li {
+              height: 38px;
+              padding: 0 12px;
+              line-height: 38px;
+              font-size: 14px;
+              cursor: pointer;
+              &:hover {
+                color: #fff;
+                background-color: $selfColorGreen;
+              }
+              &.chose {
+                color: #fff;
+                background-color: $selfColorGreen;
+              }
+            }
+          }
+          &.open {
+            .dropdown-trigger {
+              box-shadow: 0 0 10px 0 rgba(14, 5, 10, .2);
+              &:after {
+                border-top: none;
+                border-bottom: 7px solid #aaa;
+              }
+            }
+            .dropdown-menu {
+              display: block;
+            }
+          }
+        }
+        .type-list-container {
+          overflow: hidden;
+          .type-list {
+            margin: -5px 0 0 -10px;
+            li {
+              position: relative;
+              float: left;
+              width: 240px - 2px - 20px;
+              height: 32px - 2px;
+              padding: 0 10px;
+              margin: 10px 0 0 10px;
+              line-height: 30px;
+              font-size: 12px;
+              background-color: #fff;
+              border: 1px solid #ddd;
+              cursor: pointer;
+              &:hover {
+                color: $selfColorGreen;
+                border-color: $selfColorGreen;
+              }
+              &.chose {
+                color: #fff;
+                background-color: $selfColorGreen;
+                border-color: $selfColorGreen;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  bottom: 1px;
+                  right: 1px;
+                  display: block;
+                  width: 21px;
+                  height: 17px;
+                  background: url(../resource/img/sme_icon_chose_w.png) no-repeat center;
+                }
+              }
+            }
+          }
+        }
+        .chosen-list-container {
+          overflow: hidden;
+          .chosen-list {
+            margin: -5px 0 0 -10px;
+            li {
+              position: relative;
+              float: left;
+              width: 240px - 10px - 30px;
+              height: 32px;
+              padding: 0 30px 0 10px;
+              margin: 10px 0 0 10px;
+              line-height: 32px;
+              font-size: 12px;
+              color: #fff;
+              background-color: $selfColorGreen;
+              cursor: default;
+              transition: background-color .3s ease-out;
+              .del-self {
+                position: absolute;
+                top: 50%;
+                right: 6px;
+                margin-top: -9px;
+                font-size: 20px;
+                color: #fff;
+                &:hover {
+                  color: #fe4654;
+                }
+              }
+              &:hover {
+                background-color: $selfColorGreen - 20%;
+              }
+            }
+          }
+        }
+        .input-box {
+          position: relative;
+        }
+        .hint-info {
+          padding: 9px 0;
+          line-height: 1.2;
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+  .apply-foot {
+    padding-top: 40px;
+    .total-data {
+      text-align: right;
+      color: #666;
+      .count {
+        font-size: 16px;
+        color: #333;
+        margin: 0 3px;
+      }
+      .price {
+        font-size: 20px;
+        color: #fe4654;
+        .num {
+          &:before {
+            content: '￥';
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* submit-order-section */
+.submit-order-section {
+  padding: 35px 60px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-top: 5px solid $selfColorGreen;
+  .submit-box {
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .total-sum {
+      .price {
+        .num {
+          font-size: 20px;
+          font-weight: bold;
+          &:before {
+            content: '￥';
+            font-size: 16px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    .submit-btn {
+      width: 145px;
+      height: 50px;
+      margin-left: 24px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      background-color: #fe4654;
+      border-radius: 5px;
+      &:hover {
+        background-color: #fe4654 - 30%;
+      }
+      &:active {
+        background-color: #fe4654 - 60%;
+      }
+      &.loading-btn {
+        text-indent: 28px;
+        background-image: url(../resource/img/sme_loading_circle_w.gif);
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: auto 50%;
+      }
+    }
+  }
+}
+
+/* loading-shade */
+.loading-shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 5, 10, .15);
+}

@@ -1,0 +1,55 @@
+.main-body { min-width: 1100px; padding: 50px 5%; }
+
+.main-body .filter-section .filter-head { margin-bottom: 20px; line-height: 30px; }
+
+.main-body .filter-section .filter-head > * { float: left; }
+
+.main-body .filter-section .filter-head .head-title { margin-right: 25px; font-size: 18px; color: #363636; }
+
+.main-body .filter-section .filter-head .curr-month { font-size: 16px; }
+
+.main-body .filter-section .filter-head .curr-month .date-wrapper { display: inline-block; position: relative; width: 95px; height: 30px; margin-left: 10px; font-size: 14px; border: 1px solid #dedede; }
+
+.main-body .filter-section .filter-head .curr-month .date-wrapper .date-item { width: 90%; padding-left: 5%; }
+
+.main-body .filter-section .filter-head .curr-month .date-wrapper i { position: absolute; top: 0; right: 2px; }
+
+.main-body .filter-section .filter-body { margin-bottom: 25px; line-height: 30px; }
+
+.main-body .filter-section .filter-body > * { float: left; }
+
+.main-body .filter-section .filter-body .filter-item { margin-right: 20px; }
+
+.main-body .filter-section .filter-body .date-wrapper { display: inline-block; position: relative; width: 120px; height: 30px; font-size: 14px; border: 1px solid #dedede; }
+
+.main-body .filter-section .filter-body .date-wrapper .date-item { width: 90%; padding-left: 5%; }
+
+.main-body .filter-section .filter-body .date-wrapper i { position: absolute; top: 0; right: 2px; }
+
+.main-body .filter-section .filter-body .select-filter { min-width: 85px; height: 30px; border: 1px solid #dedede; }
+
+.main-body .filter-section .filter-body .search-btn { line-height: 30px; padding: 0 25px; color: #fff; background-color: #418fdd; border: 1px solid #418fdd; border-radius: 3px; }
+
+.main-body .filter-section .filter-body .search-btn:hover { background-color: #5fadfb; border-color: #5fadfb; }
+
+.main-body .analysis-body .data-table { margin-bottom: 20px; }
+
+.main-body .analysis-body .data-table .table-title { margin-bottom: 10px; line-height: 30px; }
+
+.main-body .analysis-body .data-table .table-title .title-text { float: left; font-size: 16px; }
+
+.main-body .analysis-body .data-table .table-title .title-text .detail-btn { margin-left: 15px; font-size: 12px; color: #999; }
+
+.main-body .analysis-body .data-table .table-title .title-text .detail-btn i { margin-right: 2px; font-size: 18px; color: #418fdd; }
+
+.main-body .analysis-body .data-table .table-title .title-text .detail-btn:hover { color: #418fdd; }
+
+.main-body .analysis-body .data-table .table-title .title-desc { float: right; font-size: 12px; color: #999999; }
+
+.main-body .analysis-body .data-table table { width: 100%; border-collapse: collapse; text-align: center; }
+
+.main-body .analysis-body .data-table th, .main-body .analysis-body .data-table td { padding: 10px; border: 1px solid #dedede; }
+
+.main-body .analysis-body .data-table th { font-weight: normal; color: #363636; background-color: #f7f7f7; }
+
+.main-body .analysis-body .data-table td { color: #666; }

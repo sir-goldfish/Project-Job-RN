@@ -1,0 +1,273 @@
+@charset "UTF-8";
+body { background-color: #f7f7f7; }
+
+/* section-head 共 */
+.section-head { padding: 40px 0 20px 0; }
+
+.section-head .section-title { font-size: 0; }
+
+.section-head .section-title > * { display: inline-block; vertical-align: bottom; font-size: 16px; }
+
+.section-head .section-title .title { font-size: 24px; font-weight: bold; color: #222; }
+
+.section-head .section-title .desc { margin-left: 14px; color: #666; }
+
+.section-head .head-handle { padding-top: 14px; }
+
+.section-head .head-handle .more-link { font-size: 16px; color: #666; }
+
+.section-head .head-handle .more-link:hover { color: #00cb92; }
+
+/* ani-line-card 共 */
+.ani-line-card { position: relative; background-color: #fff; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.ani-line-card .line-init { position: absolute; top: 0; left: 0; width: 100%; height: 2px; background-color: #b9efee; }
+
+.ani-line-card .line-hover { position: absolute; top: 0; left: 0; width: 100%; height: 2px; text-align: center; }
+
+.ani-line-card .line-hover em { display: inline-block; width: 0; height: 100%; vertical-align: top; background-color: #00cb92; overflow: hidden; -webkit-transition: width .3s ease-out; transition: width .3s ease-out; }
+
+.ani-line-card:hover { -webkit-transform: translateY(-5px); -ms-transform: translateY(-5px); transform: translateY(-5px); }
+
+.ani-line-card:hover .line-hover em { width: 100%; }
+
+/* head-container */
+.head-container { min-height: 375px; padding-bottom: 49px; background: #fff url(../resource/img/sme_patent_banner.jpg) no-repeat top center; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.head-container .wrapper { padding-top: 295px; }
+
+.head-container .search-container { width: 100%; padding: 30px 0; background-color: #fff; overflow: hidden; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.head-container .search-container .search-title { text-align: center; font-size: 24px; color: #333; }
+
+.head-container .search-box { position: relative; width: 990px; height: 57px; margin: 20px auto 0 auto; border-radius: 57px; }
+
+.head-container .search-box .icon { position: absolute; top: 14px; left: 22px; font-size: 29px; color: #bbb; }
+
+.head-container .search-box .search-btn { position: absolute; top: 0; right: 0; width: 245px; height: 100%; line-height: 57px; text-align: center; font-size: 20px; color: #fff; background-color: #00cb92; border-top-right-radius: 57px; border-bottom-right-radius: 57px; }
+
+.head-container .search-box .search-btn:hover { background-color: #00c188; }
+
+.head-container .search-box .search-btn:active { background-color: #00ad74; }
+
+.head-container .search-box .search-input { display: block; width: 663px; height: 55px; padding: 0 260px 0 65px; line-height: 55px; border: 1px solid #bbb; border-radius: 57px; }
+
+.head-container .search-box .search-input:focus { border-color: #00cb92; }
+
+.head-container .search-box .search-input:focus + .icon { color: #00cb92; }
+
+.head-container .query-container .query-card { width: 1204px; height: 211px; background: url(../resource/img/sme_patent_bgi.png) no-repeat center; }
+
+.head-container .query-container .query-box { float: left; width: 240px; padding: 30px; text-align: center; }
+
+.head-container .query-container .query-box .query-entry { vertical-align: middle; }
+
+.head-container .query-container .query-box .icon { width: 132px; height: 82px; margin: 0 auto; background: url(../resource/img/sme_patent_pic0.jpg) no-repeat center; }
+
+.head-container .query-container .query-box .title { margin-top: 20px; font-size: 16px; color: #333; }
+
+.head-container .query-container .query-box .para { margin-top: 16px; }
+
+.head-container .query-container .query-box .query-entry:hover { color: #999; }
+
+.head-container .query-container .query-box .query-entry:hover .title { color: #00cb92; }
+
+.head-container .query-container .query-desc { position: relative; width: 900px; height: 100%; margin-left: 300px; }
+
+.head-container .query-container .query-desc:before { content: ''; position: absolute; top: 50%; left: 50%; width: 745px; height: 0; margin-left: -372.5px; border-bottom: 1px solid #aaa; }
+
+.head-container .query-container .query-desc .desc-list { position: relative; z-index: 1; padding: 30px 0; text-align: center; font-size: 0; }
+
+.head-container .query-container .query-desc .desc-list .desc-item { display: inline-block; min-width: 164px; margin: 0 20px; vertical-align: top; font-size: 14px; cursor: default; }
+
+.head-container .query-container .query-desc .desc-list .desc-item .icon { width: 50px; height: 60px; margin: 0 auto; background-repeat: no-repeat; background-position: center; -webkit-transition: -webkit-transform .2s ease-out; transition: -webkit-transform .2s ease-out; transition: transform .2s ease-out; transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+
+.head-container .query-container .query-desc .desc-list .desc-item .dot { width: 24px; height: 24px; margin: 4px auto 0 auto; font-size: 0; background-color: #fff; }
+
+.head-container .query-container .query-desc .desc-list .desc-item .dot:before { content: ''; display: inline-block; vertical-align: middle; height: 100%; width: 0; font-size: 0; overflow: hidden; }
+
+.head-container .query-container .query-desc .desc-list .desc-item .dot:after { content: ''; display: inline-block; vertical-align: middle; width: 6px; height: 6px; border: 1px solid #00cb92; border-radius: 50%; }
+
+.head-container .query-container .query-desc .desc-list .desc-item .title { margin-top: 14px; font-size: 16px; color: #333; }
+
+.head-container .query-container .query-desc .desc-list .desc-item .para { margin-top: 16px; }
+
+.head-container .query-container .query-desc .desc-list .desc-item:hover .icon { -webkit-transform: scale(1.13); -ms-transform: scale(1.13); transform: scale(1.13); }
+
+.head-container .query-container .query-desc .desc-list .desc-item:hover .dot:after { border-width: 4px; }
+
+.head-container .query-container .query-desc .desc-list .desc-item:hover .title { color: #00cb92; }
+
+/* patent-service-section */
+.patent-service-section .desc-cards-container { float: left; margin: -10px 0 0 -10px; }
+
+.patent-service-section .desc-cards-container > * { position: relative; float: left; margin: 10px 0 0 10px; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.patent-service-section .desc-cards-container .title-card { width: 595px; height: 205px; overflow: hidden; }
+
+.patent-service-section .desc-cards-container .title-card .card-bg { display: block; width: 100%; height: 100%; }
+
+.patent-service-section .desc-cards-container .desc-card { width: 595px; height: 205px; color: #999; background-color: #fff; background-repeat: no-repeat; background-position: right bottom; }
+
+.patent-service-section .desc-cards-container .desc-card .card-inner { margin: 30px 25px 0 30px; }
+
+.patent-service-section .desc-cards-container .desc-card .title { margin-bottom: 12px; font-size: 20px; color: #000; }
+
+.patent-service-section .desc-cards-container .desc-card .para { min-height: 40px; margin-bottom: 25px; line-height: 20px; font-size: 13px; }
+
+.patent-service-section .desc-cards-container .desc-card .price { font-size: 15px; color: #f00; }
+
+.patent-service-section .desc-cards-container .desc-card .price .num { font-size: 24px; }
+
+.patent-service-section .desc-cards-container .desc-card .price .num:before { content: '￥'; font-size: 15px; }
+
+.patent-service-section .desc-cards-container .desc-card .price-info { margin-top: 6px; font-size: 13px; }
+
+/* patent-apply-section */
+.patent-apply-section .desc-cards-container { float: left; margin: -10px 0 0 -10px; }
+
+.patent-apply-section .desc-cards-container > * { position: relative; float: left; margin: 10px 0 0 10px; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.patent-apply-section .desc-cards-container .title-card { width: 232px; height: 185px; overflow: hidden; }
+
+.patent-apply-section .desc-cards-container .title-card .card-bg { display: block; width: 100%; height: 100%; }
+
+.patent-apply-section .desc-cards-container .desc-card { width: 474px; height: 185px; color: #999; background-color: #fff; }
+
+.patent-apply-section .desc-cards-container .desc-card .card-inner { margin: 30px 25px 0 30px; }
+
+.patent-apply-section .desc-cards-container .desc-card .title { margin-bottom: 12px; font-size: 20px; color: #000; }
+
+.patent-apply-section .desc-cards-container .desc-card .para { min-height: 40px; margin-bottom: 22px; line-height: 20px; font-size: 13px; }
+
+.patent-apply-section .desc-cards-container .desc-card .price { font-size: 15px; color: #f00; }
+
+.patent-apply-section .desc-cards-container .desc-card .price .num { font-size: 24px; }
+
+.patent-apply-section .desc-cards-container .desc-card .price .num:before { content: '￥'; font-size: 15px; }
+
+.patent-apply-section .desc-cards-container .desc-card .price .unit { margin-left: 5px; }
+
+.patent-apply-section .desc-cards-container .desc-card .price-info { margin-top: 6px; font-size: 13px; }
+
+.patent-apply-section .desc-cards-container .desc-card .icon { position: absolute; top: 50%; right: 60px; width: 78px; height: 78px; margin-top: -40px; line-height: 80px; text-align: center; font-size: 45px; color: #00cb92; border: 1px solid #00cb92; border-radius: 50%; }
+
+/* patent-rights-section */
+.patent-rights-section { padding-bottom: 40px; }
+
+.patent-rights-section .desc-cards-container { float: left; margin: -10px 0 0 -10px; }
+
+.patent-rights-section .desc-cards-container > * { position: relative; float: left; margin: 10px 0 0 10px; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.patent-rights-section .desc-cards-container .title-card { width: 480px; height: 205px; overflow: hidden; }
+
+.patent-rights-section .desc-cards-container .title-card .card-bg { display: block; width: 100%; height: 100%; }
+
+.patent-rights-section .desc-cards-container .desc-card { width: 350px; height: 205px; color: #999; background-color: #fff; }
+
+.patent-rights-section .desc-cards-container .desc-card .card-inner { margin: 30px 25px 0 30px; }
+
+.patent-rights-section .desc-cards-container .desc-card .title { margin-bottom: 12px; font-size: 20px; color: #000; }
+
+.patent-rights-section .desc-cards-container .desc-card .para { min-height: 40px; margin-bottom: 25px; line-height: 20px; font-size: 13px; }
+
+.patent-rights-section .desc-cards-container .desc-card .price { font-size: 15px; color: #f00; }
+
+.patent-rights-section .desc-cards-container .desc-card .price .num { font-size: 24px; }
+
+.patent-rights-section .desc-cards-container .desc-card .price .num:before { content: '￥'; font-size: 15px; }
+
+.patent-rights-section .desc-cards-container .desc-card .price .unit { margin-left: 5px; }
+
+.patent-rights-section .desc-cards-container .desc-card .price-info { margin-top: 6px; font-size: 13px; }
+
+.patent-rights-section .desc-cards-container .desc-card .icon { position: absolute; bottom: 30px; right: 40px; width: 78px; height: 78px; line-height: 80px; text-align: center; font-size: 45px; color: #00cb92; border: 1px solid #00cb92; border-radius: 50%; }
+
+/* path-section */
+.path-section { background-color: #fff; }
+
+.path-section .path-container { padding: 45px 0 68px 0; text-align: center; font-size: 0; }
+
+.path-section .path-container > * { display: inline-block; vertical-align: top; font-size: 14px; }
+
+.path-section .path-item { width: 130px; cursor: default; }
+
+.path-section .path-item .icon { width: 90px; height: 90px; margin: 0 auto; line-height: 90px; text-align: center; font-size: 45px; color: #fff; background-color: #00cb92; border-radius: 50%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.path-section .path-item .title { margin-top: 25px; font-size: 18px; color: #333; }
+
+.path-section .path-item:hover .icon { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+
+.path-section .path-item:hover .title { color: #00cb92; }
+
+.path-section .path-line { padding-top: 10px; }
+
+.path-section .path-line .line-desc { position: relative; padding: 9px 6px; color: #00cb92; border-bottom: 3px solid #00cb92; }
+
+.path-section .path-line .line-desc:after { content: ''; position: absolute; top: 100%; right: -8px; display: block; width: 0; height: 0; border-top: 4px solid #00cb92; border-left: 9px solid #00cb92; border-bottom: 4px solid transparent; border-right: 9px solid transparent; }
+
+/* news-section */
+.news-section { padding-bottom: 23px; }
+
+.news-section .flag-news-wrap { position: relative; float: left; width: 410px; height: 350px; overflow: hidden; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.news-section .flag-news-wrap .pic { display: block; width: 100%; height: 100%; overflow: hidden; }
+
+.news-section .flag-news-wrap .pic img { display: block; width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.news-section .flag-news-wrap .desc { position: absolute; bottom: 0; left: 0; width: 100%; color: #fff; background-color: rgba(0, 0, 0, 0.45); }
+
+.news-section .flag-news-wrap .desc .desc-inner { padding: 17px 15px; }
+
+.news-section .flag-news-wrap .desc .title a { max-width: 100%; vertical-align: middle; font-size: 16px; font-weight: bold; color: #fff; }
+
+.news-section .flag-news-wrap .desc .title a:hover { color: #00cb92; }
+
+.news-section .flag-news-wrap .desc .para { width: 100%; margin-top: 10px; }
+
+.news-section .flag-news-wrap:hover .pic img { -webkit-transform: scale(1.04); -ms-transform: scale(1.04); transform: scale(1.04); }
+
+.news-section .pic-news-wrap { float: left; width: 370px; margin-left: 10px; }
+
+.news-section .pic-news-wrap .list-item { position: relative; width: 100%; height: 170px; overflow: hidden; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.news-section .pic-news-wrap .list-item .pic { display: block; width: 100%; height: 100%; overflow: hidden; }
+
+.news-section .pic-news-wrap .list-item .pic img { display: block; width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.news-section .pic-news-wrap .list-item .desc { position: absolute; bottom: 0; left: 0; width: 100%; height: 36px; background-color: rgba(0, 0, 0, 0.45); }
+
+.news-section .pic-news-wrap .list-item .desc .title { height: 100%; padding: 0 14px; line-height: 36px; }
+
+.news-section .pic-news-wrap .list-item .desc .title a { max-width: 100%; vertical-align: middle; font-size: 16px; color: #fff; }
+
+.news-section .pic-news-wrap .list-item .desc .title a:hover { color: #00cb92; }
+
+.news-section .pic-news-wrap .list-item:hover .pic img { -webkit-transform: scale(1.04); -ms-transform: scale(1.04); transform: scale(1.04); }
+
+.news-section .pic-news-wrap .list-item + .list-item { margin-top: 10px; }
+
+.news-section .list-news-wrap { float: right; width: 340px; height: 320px; padding: 30px 30px 0; background-color: #fff; overflow: hidden; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.1); }
+
+.news-section .list-news-wrap .wrap-head .title { padding-left: 8px; line-height: 20px; font-size: 18px; font-weight: bold; color: #333; border-left: 3px solid #00cb92; }
+
+.news-section .list-news-wrap .news-list { margin-top: 26px; }
+
+.news-section .list-news-wrap .news-list .list-item .title a { max-width: 100%; vertical-align: middle; font-size: 16px; color: #666; }
+
+.news-section .list-news-wrap .news-list .list-item .title a:hover { color: #00cb92; }
+
+.news-section .list-news-wrap .news-list .list-item + .list-item { margin-top: 20px; }
+
+/* other-services */
+.other-services { padding-bottom: 69px; }
+
+.other-services .section-head { padding-top: 45px; text-align: center; }
+
+.other-services .section-head .section-title .title { font-size: 24px; font-weight: normal; }
+
+.other-services .m-other-services .service-link { color: #00cb92; background-color: transparent; border-color: #00cb92; }
+
+.other-services .m-other-services .service-link:hover { color: #fff; background-color: #00cb92; }
+
+.other-services .m-other-services .service-link:active { background-color: #00ad74; }

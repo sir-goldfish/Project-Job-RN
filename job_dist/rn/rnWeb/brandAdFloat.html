@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识产权引流浮动广告示例-融诺网</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+    <style>
+        body { height: 3000px; }
+        /* 知识产权浮动广告所需样式 */
+        .brand-ad-float { position: fixed; top: 50%; right: -108px; z-index: 10; display: block; }
+    </style>
+</head>
+<body>
+<a href="http://www.rongnuo.org/landing.html" class="brand-ad-float">
+    <img src="resource/img/brand_ad_bgi.png" alt="">
+</a>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    //知识产权右侧浮动广告
+    function setBrandAdFloat($dom) {
+        var winW = $(window).width(),
+                winH = $(window).height(),
+                domW = $dom.width(),
+                domH = $dom.height(),
+                domMarginT = -(domH / 2),
+                domR;
+        //监测尺寸变化，设置right
+        $(window).resize(function () {
+            winW = $(window).width();
+            winH = $(window).height();
+            setRight();
+        });
+        //设置位置
+        function setRight() {
+            if ((winW - 1200) / 2 >= domW + 20) {
+                domR = (winW - 1200) / 2 - (domW + 20);
+            } else {
+                domR = 0;
+            }
+            $dom.css('right', domR + 'px');
+        }
+
+        setRight();
+        $dom.css('margin-top', domMarginT + 'px');
+    }
+    setBrandAdFloat($('.brand-ad-float'));
+</script>
+</body>
+</html>

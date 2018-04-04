@@ -1,0 +1,12 @@
+/* main-body */
+.main-body { padding: 10px 0; background-color: #f7f7f7; }
+
+.main-body .sme-inner { padding-top: 160px; padding-bottom: 190px; text-align: center; background-color: #fff; }
+
+.main-body .sme-inner .jump-pic, .main-body .sme-inner .jump-info { display: inline-block; vertical-align: middle; }
+
+.main-body .sme-inner .jump-info { margin-left: 80px; text-align: justify; }
+
+.main-body .sme-inner .jump-info .info-text { line-height: 30px; font-size: 16px; color: #666; }
+
+.main-body .sme-inner .jump-info .count span { color: #f78e24; margin: 0 2px; }

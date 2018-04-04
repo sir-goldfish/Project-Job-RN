@@ -1,0 +1,337 @@
+@charset "utf-8";
+@import "publicVariable";
+
+body {
+  background-color: #f1f1f1;
+}
+
+/* main-body */
+.main-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* main-content-container */
+.main-content-container {
+  width: 882px;
+}
+
+/* investor-intro-card */
+.main-content-container .investor-intro-card {
+  // height:235px;
+  $selfWidth: 145px;
+  padding: 30px;
+  background-color: #fff;
+  .card-pic {
+    float: left;
+    width: $selfWidth;
+    height: 175px;
+    margin-right: - $selfWidth;
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+  }
+  .card-desc {
+    margin-left: $selfWidth + 24px;
+    .desc-head {
+      color: #333;
+      & > * {
+        vertical-align: bottom;
+      }
+      .name {
+        margin-right: 25px;
+        font-size: 24px;
+      }
+    }
+    .desc-para {
+      height: 60px;
+      margin-top: 24px;
+      line-height: 30px;
+      overflow: hidden;
+    }
+    .desc-foot {
+      margin-top: 34px;
+      color: #333;
+      & > * {
+        vertical-align: middle;
+      }
+      i {
+        margin-right: 8px;
+        font-size: 16px;
+        color: $globeColorStress;
+      }
+    }
+  }
+}
+
+/* desc-panel 共 */
+.main-content-container .desc-panel {
+  padding: 25px 0;
+  margin-top: 10px;
+  background-color: #fff;
+  .panel-head {
+    .panel-title {
+      position: relative;
+      min-width: 132px - 45px;
+      height: 38px;
+      padding: 0 15px 0 30px;
+      line-height: 38px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #2c3e50;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: block;
+        width: 15px;
+        height: 38px;
+        background: url(../resource/img/bp_icon4.png) no-repeat left center;
+      }
+    }
+  }
+  .panel-body {
+    padding: 15px 30px 0 30px;
+    .desc-article {
+      line-height: 30px;
+      color: #333;
+      img {
+        display: block;
+        width: 45%;
+        height: auto;
+        margin: 10px auto;
+      }
+    }
+  }
+}
+
+/* case-panel */
+.main-content-container .case-panel {
+  .panel-body {
+    .case-list {
+      margin-left: -30px;
+      .list-item {
+        float: left;
+        width: 183px;
+        margin: 12px 0 0 30px;
+        .item-pic {
+          width: 183px - 2px;
+          height: 115px - 2px;
+          border: 1px solid #ddd;
+          overflow: hidden;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease-out;
+          }
+          &:hover {
+            img {
+              transform: scale(1.07);
+            }
+          }
+        }
+        .item-name {
+          width: 100%;
+          padding: 5px 0;
+          margin-top: 12px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* aside-content-container */
+.aside-content-container {
+  width: 308px;
+}
+
+/* invest-plan */
+.aside-content-container .invest-plan {
+  .head-card {
+    min-height: 157px - 28px - 15px;
+    padding: 28px 26px 15px;
+    background-color: #fff;
+    .card-title {
+      text-align: center;
+      .title {
+        .text {
+          padding: 7px 16px;
+          vertical-align: middle;
+          color: #fff;
+          background-color: #2c3e50;
+        }
+        &:before, &:after {
+          content: '';
+          display: inline-block;
+          width: 65px;
+          height: 1px;
+          vertical-align: middle;
+          background: url(../resource/img/bp_sprites2.png) no-repeat 0 0;
+        }
+        &:before {
+          margin-right: 12px;
+        }
+        &:after {
+          margin-left: 12px;
+          background-position-y: -3px;
+        }
+      }
+    }
+    .card-body {
+      margin-top: 20px;
+      .field-title {
+        font-weight: bold;
+      }
+      .field-group-wrapper {
+        height: 18px;
+        margin-top: 10px;
+        line-height: 16px;
+        overflow: hidden;
+        transition: height .3s ease-out;
+      }
+      .field-group {
+        & > * {
+          display: inline;
+          vertical-align: middle;
+        }
+        .item + .item {
+          &:before {
+            content: '·';
+            margin: 0 4px;
+          }
+        }
+      }
+      .field-handle {
+        margin-top: 10px;
+        text-align: center;
+        color: #999;
+        .toggle-btn {
+          font-size: 12px;
+          transition: transform .2s ease-out;
+          &.open {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  .foot-card {
+    .cards-list {
+      margin-left: -2px;
+    }
+    .item-card {
+      float: left;
+      width: 153px;
+      height: 75px;
+      margin: 2px 0 0 2px;
+      text-align: center;
+      background-color: #fff;
+      .num {
+        font-size: 20px;
+      }
+      .text {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #999;
+      }
+      .card-inner {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 10px;
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+        font-size: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+/* products-container */
+.aside-content-container .products-container {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+  .inner {
+    padding: 20px 0 28px 0;
+    margin: 0 20px;
+  }
+  .aside-title {
+    margin-bottom: 22px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #333;
+    span {
+      padding-left: 9px;
+      border-left: 3px solid $globeColorStress;
+    }
+  }
+  .list {
+    .list-item {
+      width: 255px;
+      margin-left: auto;
+      margin-right: auto;
+      .card-pic {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 205px;
+        margin-bottom: 18px;
+        overflow: hidden;
+        .pic-bg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transition: transform .3s ease-out;
+        }
+        .content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          font-size: 20px;
+          color: #fff;
+          .icon {
+            width: 79px;
+            height: 88px;
+            margin: 36px auto 18px auto;
+            line-height: 88px;
+            font-size: 45px;
+            background: url(../resource/img/bp_sprites.png) no-repeat 0 0;
+          }
+        }
+        &:hover {
+          .pic-bg {
+            transform: scale(1.1);
+          }
+          .content {
+            color: $globeColorStress;
+            .icon {
+              background-position-x: -81px;
+            }
+          }
+        }
+      }
+      .card-title {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+    .list-item + .list-item {
+      margin-top: 18px;
+    }
+  }
+}

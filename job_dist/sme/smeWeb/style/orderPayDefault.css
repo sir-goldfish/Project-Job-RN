@@ -1,0 +1,115 @@
+/* main-body */
+.main-body { padding: 10px 0; background-color: #f7f7f7; }
+
+/* order-pay-container */
+.order-pay-container { padding: 44px 0; background-color: #fff; }
+
+.order-pay-container .container-inner { margin: 0 45px; }
+
+.order-pay-container .container-head { margin-bottom: 23px; color: #333; line-height: 18px; }
+
+.order-pay-container .container-head .title { padding-left: 10px; margin-left: -15px; font-size: 16px; font-weight: bold; border-left: 5px solid #f78e24; }
+
+.order-pay-container .container-head .notice { margin-left: 18px; }
+
+.order-pay-container .container-head .notice i { margin-right: 6px; font-size: 14px; color: #fc2837; }
+
+.order-pay-container .container-head .order-info .info-item { float: left; }
+
+.order-pay-container .container-head .order-info .info-item + .info-item { margin-left: 30px; }
+
+/* order-details */
+.order-pay-container .order-details { margin-bottom: 63px; }
+
+.order-pay-container .order-details .details-table table { margin-bottom: 10px; }
+
+.order-pay-container .order-details .details-table table th { color: #333; background-color: #f7f7f7; }
+
+.order-pay-container .order-details .details-table table .cell-name { width: 55%; }
+
+.order-pay-container .order-details .details-table table .cell-note { padding: 20px 30px; text-align: right; font-size: 14px; color: #333; }
+
+.order-pay-container .order-details .details-sum { height: 51px; line-height: 51px; background-color: #f1f1f1; }
+
+.order-pay-container .order-details .details-sum .sum-desc { margin-left: 25px; font-size: 14px; color: #333; }
+
+.order-pay-container .order-details .details-sum .sum-desc b { max-width: 700px; }
+
+.order-pay-container .order-details .details-sum .sum-price { position: relative; height: 100%; padding: 0 30px 0 12px; font-size: 15px; color: #fff; background-color: #f78e24; }
+
+.order-pay-container .order-details .details-sum .sum-price:before { content: ''; position: absolute; top: 0; left: -22px; display: inline-block; width: 22px; height: 100%; background: url(../resource/img/sme_bgi3.png) no-repeat left center; }
+
+.order-pay-container .order-details .details-sum .sum-price span { font-size: 20px; }
+
+/* payment-tab */
+.order-pay-container .payment-tab { color: #333; }
+
+.order-pay-container .payment-tab .tab-nav { height: 38px; border-bottom: 1px solid #ddd; }
+
+.order-pay-container .payment-tab .tab-nav li { float: left; height: 37px; padding: 0 16px; line-height: 37px; font-size: 14px; background-color: #f7f7f7; border: 1px solid #ddd; border-top-left-radius: 5px; border-top-right-radius: 5px; cursor: default; }
+
+.order-pay-container .payment-tab .tab-nav li:hover { background-color: #e8e8e8; }
+
+.order-pay-container .payment-tab .tab-nav li + li { margin-left: 8px; }
+
+.order-pay-container .payment-tab .tab-nav .current { background-color: #fff; border-bottom: 1px solid #fff; }
+
+.order-pay-container .payment-tab .tab-nav .current:hover { background-color: #fff; }
+
+.order-pay-container .payment-tab .tab-content { background-color: #fff; }
+
+.order-pay-container .payment-tab .tab-content .content-item { display: none; padding: 45px 24px; }
+
+.order-pay-container .payment-tab .tab-content .content-item.current { display: block; }
+
+.order-pay-container .payment-tab .tab-content .top-notice { margin-bottom: 24px; line-height: 16px; font-size: 12px; color: #999; }
+
+.order-pay-container .payment-tab .tab-content .top-notice i { margin-right: 6px; vertical-align: middle; font-size: 16px; color: #cea975; }
+
+.order-pay-container .payment-tab .tab-content .pay-check-group { margin-bottom: 50px; }
+
+.order-pay-container .payment-tab .tab-content .pay-check-group .pay-check-list { margin: -18px 0 0 -30px; }
+
+.order-pay-container .payment-tab .tab-content .pay-check-group .pay-check-item { float: left; margin: 18px 0 0 30px; font-size: 0; }
+
+.order-pay-container .payment-tab .tab-content .pay-check-group .pay-check-item > * { display: inline-block; vertical-align: middle; }
+
+.order-pay-container .payment-tab .tab-content .pay-check-group .pay-check-item figure { width: 130px; height: 50px; margin-left: 6px; border: 1px solid #e4e4e4; border-radius: 7px; overflow: hidden; }
+
+.order-pay-container .payment-tab .tab-content .pay-check-group .pay-check-item figure img { width: 100%; height: 100%; border-radius: inherit; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group { margin-bottom: 20px; font-size: 0; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group > * { font-size: 14px; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group .handle-btn, .order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group .note { display: inline-block; vertical-align: middle; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group .handle-btn { min-width: 82px; padding: 0 20px; line-height: 38px; text-align: center; font-weight: bold; color: #fff; background-color: #f78e24; border-radius: 6px; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group .handle-btn:hover { background-color: #ff982e; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group .handle-btn:active { background-color: #e37a10; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .btn-group .note { margin-left: 10px; font-size: 12px; color: #666; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .protocol-notice input[type="checkbox"] { vertical-align: -2px; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .protocol-notice span { margin-left: 2px; font-size: 12px; color: #333; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .protocol-notice span a { color: inherit; }
+
+.order-pay-container .payment-tab .tab-content .pay-btm-control .protocol-notice span a:hover { color: #f78e24; text-decoration: underline; }
+
+.order-pay-container .payment-tab .tab-content .pay-table { width: 926px; }
+
+.order-pay-container .payment-tab .tab-content .pay-table table { margin-bottom: 24px; font-size: 12px; color: #666; }
+
+.order-pay-container .payment-tab .tab-content .pay-table table th { font-weight: normal; color: inherit; background-color: #f7f7f7; }
+
+.order-pay-container .payment-tab .tab-content .pay-table table .handle-btn { color: inherit; }
+
+.order-pay-container .payment-tab .tab-content .pay-table table .handle-btn:hover { color: #f78e24; }
+
+.order-pay-container .payment-tab .tab-content .btm-notice { line-height: 1.3; color: #666; }
+
+.order-pay-container .payment-tab .tab-content .btm-notice p + p { margin-top: 14px; }

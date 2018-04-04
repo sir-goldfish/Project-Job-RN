@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* head-banner */
+.head-banner { position: relative; width: 100%; overflow: hidden; }
+
+.head-banner .banner-pic { float: left; display: block; }
+
+.head-banner .banner-pic img { display: block; width: 100%; height: 15rem; }
+
+.head-banner .swiper-pagination { position: absolute; bottom: .5rem; }
+
+.head-banner .swiper-pagination .swiper-pagination-bullet { background-color: #fff; opacity: .6; filter: alpha(opacity=60); }
+
+.head-banner .swiper-pagination .swiper-pagination-bullet-active, .head-banner .swiper-pagination .swiper-pagination-bullet:hover { opacity: 1; filter: alpha(opacity=100); }
+
+/* inquiry-form-container */
+.inquiry-container { background-color: #fff; }
+
+.inquiry-container .inquiry-form-container { padding: 1.75rem 0 1.4rem 0; font-size: 1.5rem; }
+
+.inquiry-container .inquiry-form-container .form-item + .form-item { margin-top: 1.75rem; }
+
+.inquiry-container .inquiry-form-container .input-box { position: relative; width: 100%; height: 4.5rem; border-radius: .5rem; overflow: hidden; }
+
+.inquiry-container .inquiry-form-container .input-box .title { position: absolute; top: 0; left: 0; width: 8.5rem; height: 100%; line-height: 4.5rem; text-align: center; color: #fff; background-color: #f78e24; }
+
+.inquiry-container .inquiry-form-container .input-box .title.star-title:before { content: '*'; display: inline-block; margin-right: .5rem; color: #f00; }
+
+.inquiry-container .inquiry-form-container .input-box input[type='text'] { width: 100%; height: 100%; padding: 0 1rem 0 9.5rem; font-size: 1.5rem; border: 1px solid #c9c9c9; border-radius: .5rem; }
+
+.inquiry-container .inquiry-form-container .input-box input[type='text']:focus { border-color: #f78e24; }
+
+.inquiry-container .inquiry-form-container .form-btn-wrapper { margin-top: 1.75rem; }
+
+.inquiry-container .inquiry-form-container .form-btn { display: block; width: 100%; height: 4.5rem; line-height: 4.5rem; text-align: center; font-weight: bold; color: #fff; background-color: #f78e24; border-radius: .5rem; }
+
+.inquiry-container .inquiry-form-container .form-btn:active { background-color: #de750b; }
+
+/* inquiry-data-container */
+.inquiry-container .inquiry-data-container .stress { color: #f00; }
+
+.inquiry-container .inquiry-data-container .data-notice { margin-bottom: 1.25rem; text-align: center; font-size: 1.2rem; color: #666; }
+
+.inquiry-container .inquiry-data-container .data-list { padding-bottom: 1.6rem; text-align: center; font-size: 0; }
+
+.inquiry-container .inquiry-data-container .data-list li { display: inline-block; width: 25%; vertical-align: top; font-size: 1.1rem; }
+
+.inquiry-container .inquiry-data-container .data-list .desc { width: 5rem; height: 5.5rem; margin: 0 auto .5rem auto; color: #fff; background: url(../resource/img/smep_bgi.png) no-repeat center; background-size: 5rem 5.5rem; overflow: hidden; }
+
+.inquiry-container .inquiry-data-container .data-list .desc .num { margin: 1.5rem 0 .3rem 0; font-size: 1.2rem; }
+
+.inquiry-container .inquiry-data-container .data-list .desc .unit { font-size: .9rem; }
+
+.inquiry-container .inquiry-data-container .data-list .desc.desc-bg-white { color: #fc5656; background: url(../resource/img/smep_bgi1.png) no-repeat center; background-size: 5rem 5.5rem; }
+
+.inquiry-container .inquiry-data-container .data-list .title { color: #333; }
+
+/* roll-notice-bar */
+.roll-notice-bar { height: 3.25rem; line-height: 3.25rem; font-size: 1.1rem; background-color: #686d7f; }
+
+.roll-notice-bar .notice-title { float: left; margin-right: -3.8rem; color: #fff; }
+
+.roll-notice-bar .notice-list { height: 100%; margin-left: 5rem; overflow: hidden; }
+
+.roll-notice-bar .notice-list .stress { color: #1d2088; }
+
+.roll-notice-bar .notice-list .list-body { color: #c9c9c9; }
+
+/* 共用section-title */
+.section-title { margin-bottom: 1.7rem; text-align: center; font-size: 1.8rem; color: #333; }
+
+.section-title .text:after { content: ''; display: block; width: 9.2rem; height: .3rem; margin: .75rem auto 0 auto; background-color: #f78e24; border-radius: .3rem; }
+
+/* hot-service-section */
+.hot-service-section { padding-top: 1.5rem; padding-bottom: 2.85rem; margin-top: 1.5rem; background-color: #fff; }
+
+.hot-service-section .service-card { float: left; width: 50%; text-align: center; }
+
+.hot-service-section .service-card .pic { position: relative; width: 11.2rem; height: 7.75rem; margin: 0 auto; }
+
+.hot-service-section .service-card .pic img { width: 100%; height: 100%; }
+
+.hot-service-section .service-card .pic:after { content: ''; position: absolute; right: .2rem; bottom: -1.1rem; display: block; width: 3.3rem; height: 4rem; background: url(../resource/img/smep_icon1.png) no-repeat center; background-size: 3.3rem 4rem; }
+
+.hot-service-section .service-card .title { margin: 1.4rem 0 .75rem 0; font-size: 1.3rem; color: #333; }
+
+.hot-service-section .service-card p { line-height: 1.5; }
+
+.hot-service-section .service-card .apply-btn { width: 8rem; height: 3rem; margin-top: 1.25rem; line-height: 3rem; font-size: 1.2rem; font-weight: bold; color: #fff; background-color: #f78e24; border-radius: .5rem; }
+
+.hot-service-section .service-card .apply-btn:active { background-color: #de750b; }
+
+.hot-service-section .service-card.hot-service .pic:before { content: ''; position: absolute; top: -1.4rem; left: -.3rem; display: block; width: 2.55rem; height: 3.65rem; background: url(../resource/img/smep_icon.png) no-repeat center; background-size: 2.55rem 3.65rem; }
+
+.hot-service-section .service-card + .service-card { border-left: .05rem dashed #eee; }
+
+.hot-service-section .top-cards-row .service-card { padding-bottom: 2rem; }
+
+.hot-service-section .btm-cards-row { border-top: .05rem dashed #eee; }
+
+.hot-service-section .btm-cards-row .service-card { padding-top: 2rem; }
+
+/* reason-section */
+.reason-section { padding-top: 1.5rem; padding-bottom: 2.25rem; margin-top: 1.5rem; background-color: #fff; }
+
+.reason-section .desc-item { margin-left: .7rem; font-size: 0; }
+
+.reason-section .desc-item .icon, .reason-section .desc-item .text { display: inline-block; vertical-align: middle; }
+
+.reason-section .desc-item .icon { width: 4.5rem; height: 4.5rem; line-height: 4.5rem; text-align: center; font-size: 2.6rem; color: #1eb8ec; border: 0.1rem solid #1eb8ec; border-radius: 50%; }
+
+.reason-section .desc-item .text { height: 3.5rem; padding: 0 2.2rem 0 .5rem; margin-left: 1.45rem; line-height: 3.5rem; font-size: 1.1rem; color: #1eb8ec; border: 0.1rem solid #1eb8ec; border-right: none; background: url(../resource/img/smep_bgi2.png) no-repeat right center; background-size: 1.85rem 3.5rem; }
+
+.reason-section .desc-item.desc-item-even { margin-left: 2.5rem; }
+
+.reason-section .desc-item + .desc-item { margin-top: 1.25rem; }
+
+/* advantage-section */
+.advantage-section { padding-top: 1.5rem; margin-top: 1.5rem; background-color: #fff; }
+
+.advantage-section .advantage-desc { font-size: 0; }
+
+.advantage-section .desc-item { display: inline-block; width: 50%; padding-bottom: 2.25rem; vertical-align: top; text-align: center; font-size: 1rem; color: #666; }
+
+.advantage-section .desc-item .icon { width: 6.4rem; height: 6.4rem; margin: 0 auto; line-height: 5.4rem; font-size: 3.4rem; color: #fff; border: .5rem solid #ffeed6; background-color: #fdaa3d; border-radius: 50%; }
+
+.advantage-section .desc-item .title { margin: .9rem 0 .8rem 0; font-size: 1.2rem; color: #333; }
+
+.advantage-section .desc-item p { line-height: 1.4rem; }
+
+/* path-section */
+.path-section { padding-top: 1.5rem; padding-bottom: 2.5rem; margin-top: 1.5rem; background-color: #fff; }
+
+.path-section .path-desc { position: relative; height: 39.2rem; background: url(../resource/img/smep_bgi3.png) no-repeat center top; background-size: 14.7rem 35.8rem; }
+
+.path-section .path-desc .desc-text { position: absolute; left: 50%; width: auto; height: 2.5rem; padding: 0 .8rem; line-height: 2.5rem; font-size: 1.2rem; color: #fff; border-radius: 2.5rem; }
+
+.path-section .path-desc .desc-text .desc-btn { color: #fef035; }
+
+.path-section .path-desc .desc-text.desc-red { background-color: #fc8c9b; }
+
+.path-section .path-desc .desc-text.desc-blue { background-color: #81cef2; }
+
+/* btm-desc-section */
+.btm-desc-section { padding-top: 2rem; padding-bottom: 1.5rem; margin-top: 1.5rem; background-color: #fff; }
+
+.btm-desc-section .desc-body { width: 100%; height: 4.9rem; background: url(../resource/img/smep_bgi4.jpg) no-repeat center; background-size: auto 100%; }

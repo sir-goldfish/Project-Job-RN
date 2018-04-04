@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: #03d6d0;
+$selfBoxShadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* head-container */
+.head-container {
+  min-height: 400px;
+  background: url(../resource/img/sme_brand_banner1.jpg) no-repeat top center;
+  .search-wrapper {
+    padding-top: 313px;
+  }
+  .search-container {
+    width: 100%;
+    padding-bottom: 35px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+  }
+  .search-box {
+    position: relative;
+    width: 990px;
+    height: 57px;
+    margin: 39px auto 0 auto;
+    border-radius: 57px;
+    .icon {
+      position: absolute;
+      top: 14px;
+      left: 22px;
+      font-size: 29px;
+      color: #bbb;
+    }
+    .search-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 230px;
+      height: 100%;
+      line-height: 57px;
+      text-align: center;
+      font-size: 20px;
+      color: #fff;
+      background-color: $onColorOrange;
+      border-top-right-radius: 57px;
+      border-bottom-right-radius: 57px;
+      &:hover {
+        background-color: $onColorOrange - 10%;
+      }
+      &:active {
+        background-color: $onColorOrange - 30%;
+      }
+    }
+    .search-input {
+      display: block;
+      width: 990px - 2px - 65px - 260px;
+      height: 57px - 2px;
+      padding: 0 260px 0 65px;
+      line-height: 57px - 2px;
+      border: 1px solid #bbb;
+      border-radius: 57px;
+      &:focus {
+        border-color: $onColorOrange;
+        & + .icon {
+          color: $onColorOrange;
+        }
+      }
+    }
+  }
+  .hot-service {
+    width: 990px;
+    margin: 17px auto 0 auto;
+    font-size: 0;
+    & > * {
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .title {
+      color: #b5b5b5;
+    }
+    .item {
+      margin-left: 20px;
+      margin-right: 10px;
+      color: #666;
+      &:hover {
+        color: $onColorOrange;
+      }
+    }
+  }
+}
+
+/* classify-container */
+.classify-container {
+  $selfWidth: 292px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  .container-head {
+    padding: 22px 0;
+    .head-title {
+      font-size: 18px;
+      color: #333;
+    }
+  }
+  .main-content {
+    float: left;
+    margin-right: $selfWidth;
+    .classify-list {
+      margin: -10px 0 0 -10px;
+      .list-item {
+        float: left;
+        width: 217px - 28px - 28px;
+        height: 184px - 25px;
+        padding: 25px 28px 0;
+        margin: 10px 0 0 10px;
+        text-align: center;
+        color: #666;
+        background-color: #fff;
+        box-shadow: $selfBoxShadow;
+        overflow: hidden;
+        .icon {
+          width: 58px;
+          height: 58px;
+          margin: 0 auto 14px;
+          line-height: 58px;
+          font-size: 30px;
+          color: $selfActiveColor;
+          border: 1px solid $selfActiveColor;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+        .text {
+          margin-top: 6px;
+          line-height: 22px;
+          font-size: 16px;
+          color: #333;
+        }
+        &:hover {
+          color: #fff;
+          background-color: $selfActiveColor;
+          .text {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .aside-content {
+    float: right;
+    width: $selfWidth;
+    margin-left: - $selfWidth;
+    .aside-flag {
+      display: block;
+      width: 100%;
+      box-shadow: $selfBoxShadow;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+    .aside-flag + .aside-flag {
+      margin-top: 10px;
+    }
+  }
+}

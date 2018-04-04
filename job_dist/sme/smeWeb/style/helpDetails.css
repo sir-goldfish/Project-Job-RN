@@ -1,0 +1,35 @@
+body { background-color: #f7f7f7; }
+
+/* m-crumbs-nav */
+.m-crumbs-nav { margin-top: 10px; margin-bottom: 10px; }
+
+/* content-container */
+.content-container { position: relative; margin-bottom: 10px; }
+
+/* aside-nav */
+.aside-nav { position: absolute; top: 0; left: 0; width: 195px; height: 100%; background-color: #fff; }
+
+.aside-nav dl { padding-top: 20px; }
+
+.aside-nav dt { margin-bottom: 17px; line-height: 17px; text-indent: 20px; }
+
+.aside-nav dt a { font-size: 16px; color: #363636; text-indent: 0; }
+
+.aside-nav dt:before { content: ''; display: inline-block; width: 3px; height: 17px; margin-right: 7px; vertical-align: -3px; background-color: #f78e24; }
+
+.aside-nav dd a { width: 100%; padding: 12px 0; font-size: 14px; color: #363636; text-indent: 30px; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.aside-nav dd a:hover { background-color: #eee; }
+
+.aside-nav .current a { background-color: #eee; }
+
+/* main-content */
+.main-content { margin-left: 205px; min-height: 600px; background-color: #fff; }
+
+.main-content .content-body { padding: 46px 50px; }
+
+.main-content .content-body .title { margin-bottom: 22px; font-size: 20px; color: #666; }
+
+.main-content .content-body .answer { line-height: 30px; color: #999; }
+
+.main-content .content-body .answer img { display: block; width: 100%; margin: 10px auto; }

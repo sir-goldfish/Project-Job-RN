@@ -1,0 +1,21 @@
+/* head-bg */
+.head-bg { display: block; width: 100%; margin-bottom: 1.6rem; }
+
+/* login-container */
+.login-container .login-tab .tab-nav { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; border-top: 1px solid #e5e5e5; }
+
+.login-container .login-tab .tab-nav-item { -ms-flex-preferred-size: 50%; flex-basis: 50%; height: 3.7rem; line-height: 3.7rem; text-align: center; font-size: 1.4rem; background-color: #fafafa; }
+
+.login-container .login-tab .tab-nav-item:active { color: inherit; }
+
+.login-container .login-tab .tab-nav-item.current { background-color: #eaeaea; }
+
+.login-container .login-tab .tab-nav-item + .tab-nav-item { border-left: 1px solid #e5e5e5; }
+
+.login-container .login-tab .tab-content-item { display: none; }
+
+.login-container .login-tab .tab-content-item.current { display: block; }
+
+.login-container .login-tab .m-input-group { margin-top: 0; }
+
+.login-container .login-foot { margin-top: 4.2rem; }

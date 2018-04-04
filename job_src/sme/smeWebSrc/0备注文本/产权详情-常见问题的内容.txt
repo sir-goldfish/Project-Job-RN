@@ -1,0 +1,26 @@
+<ul class="list">
+	<li>
+		<a href="javascript:;" class="title">这个可不可以付全款？</a>
+		<p class="desc">
+			这款产品是不需要付全款的，您只需支付一半的费用，注册失败风险共担。
+		</p>
+	</li>
+	<li>
+		<a href="javascript:;" class="title">如果注册不成功，那么另一半的钱就拿不回来了吗？</a>
+		<p class="desc">
+			注册不成功是不收尾款，意味着已经付过的一半费用是不会退回的。
+		</p>
+	</li>
+	<li>
+		<a href="javascript:;" class="title">尾款就是一半的价格吗？如果申请失败还可不可以再申请？</a>
+		<p class="desc">
+			是的，尾款就是一半的价格。如果注册失败，是可以再重新提交材料申请注册的。
+		</p>
+	</li>
+	<li>
+		<a href="javascript:;" class="title">这个的申请方式网申，递交材料怎么办？</a>
+		<p class="desc">
+			提交材料申请书和委托书都是融诺知识产权代理，您只需提供营业执照复印件，和您的商标LOGO，均可以通过网络提交。
+		</p>
+	</li>
+</ul>

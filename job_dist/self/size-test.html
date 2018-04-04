@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>size</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            background: url(test1.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+<div>其他内容</div>
+<script src="jquery.min.js"></script>
+<script>
+    $('.container').height($(window).height());
+    $(window).resize(function () {
+        $('.container').height($(window).height());
+    });
+</script>
+</body>
+</html>

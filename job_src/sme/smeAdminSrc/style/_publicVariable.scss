@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+// 全局变量
+$globeColorStress: #31a0f6;
+$globeColorStressHover: #31a0f6 - 40%;
+$globeColorStressActive: #31a0f6 - 60%;
+@mixin globalVerticalMiddleAssist {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筛选容器</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/css/animate.css">
+    <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" href="style/public.css">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+    <style>
+        .self-btn-demos .btn {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body style="padding-left:15px; padding-right:15px;">
+<h3>*知识产权客户管理头部筛选容器</h3>
+<div class="m-filter-container form-inline">
+    <div class="form-row row">
+        <div class="form-group">
+            <select class="form-control">
+                <option value="请选择部门">请选择部门</option>
+            </select>
+            <select class="form-control">
+                <option value="请选择销售人员">请选择销售人员</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <select class="form-control">
+                        <option value="搜索类型">搜索类型</option>
+                        <option value="用户名称">用户名称</option>
+                        <option value="手机号码">手机号码</option>
+                        <option value="用户ID">用户ID</option>
+                    </select>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">创建人</span>
+                <div class="input-group">
+                    <select class="form-control">
+                        <option value="请选择部门">请选择部门</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <select class="form-control">
+                        <option value="请选择销售人员">请选择销售人员</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">提交时间</span>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="提交开始时间">
+                    <span class="input-group-addon">到</span>
+                    <input type="text" class="form-control" placeholder="提交结束时间">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-row row">
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">跟进状态</span>
+                <select class="form-control">
+                    <option value="所有">所有</option>
+                    <option value="今日需跟进">今日需跟进</option>
+                    <option value="今日已跟进">今日已跟进</option>
+                    <option value="今日已跟进今日已跟进今日已跟进">今日已跟进今日已跟进今日已跟进</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">客户意向</span>
+                <select class="form-control">
+                    <option value="所有">所有</option>
+                    <option value="A类">A类</option>
+                    <option value="B类">B类</option>
+                    <option value="C类">C类</option>
+                    <option value="D类">D类</option>
+                    <option value="E类">E类</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">跟进时间</span>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="跟进开始时间">
+                    <span class="input-group-addon">到</span>
+                    <input type="text" class="form-control" placeholder="跟进结束时间">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">所在地区</span>
+                <div class="input-group">
+                    <select class="form-control">
+                        <option value="请选择">请选择</option>
+                    </select>
+                    <span class="input-group-addon">省</span>
+                    <select class="form-control">
+                        <option value="请选择">请选择</option>
+                    </select>
+                    <span class="input-group-addon">市</span>
+                    <select class="form-control">
+                        <option value="请选择">请选择</option>
+                    </select>
+                    <span class="input-group-addon">区</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary"> 搜索</button>
+        </div>
+    </div>
+</div>
+<h3>*新增自定义按钮色值示例</h3>
+<div class="self-btn-demos">
+    <a href="javascript:;" class="btn btn-self-green">btn-self-green</a>
+    <a href="javascript:;" class="btn btn-self-purple">btn-self-purple</a>
+    <a href="javascript:;" class="btn btn-self-orange">btn-self-orange</a>
+    <a href="javascript:;" class="btn btn-self-orange1">btn-self-orange1</a>
+    <a href="javascript:;" class="btn btn-self-black">btn-self-black</a>
+    <a href="javascript:;" class="btn btn-self-green1">btn-self-green1</a>
+    <a href="javascript:;" class="btn btn-self-blue">btn-self-blue</a>
+    <a href="javascript:;" class="btn btn-self-blue1">btn-self-blue1</a>
+    <a href="javascript:;" class="btn btn-self-khaki">btn-self-khaki</a>
+</div>
+</body>
+</html>

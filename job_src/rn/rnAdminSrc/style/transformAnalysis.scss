@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+.main-body {
+  $bgcBlue: #418fdd;
+  $borderGrey: #dedede;
+  min-width: 1100px;
+  padding: 50px 5%;
+  //筛选
+  .filter-section {
+    .filter-head {
+      margin-bottom: 20px;
+      line-height: 30px;
+      & > * {
+        float: left;
+      }
+      .head-title {
+        margin-right: 25px;
+        font-size: 18px;
+        color: #363636;
+      }
+      .curr-month {
+        font-size: 16px;
+        .date-wrapper {
+          display: inline-block;
+          position: relative;
+          width: 95px;
+          height: 30px;
+          margin-left: 10px;
+          font-size: 14px;
+          border: 1px solid $borderGrey;
+          .date-item {
+            width: 90%;
+            padding-left: 5%;
+          }
+          i {
+            position: absolute;
+            top: 0;
+            right: 2px;
+          }
+        }
+      }
+    }
+    .filter-body {
+      margin-bottom: 25px;
+      line-height: 30px;
+      & > * {
+        float: left;
+      }
+      .filter-item {
+        margin-right: 20px;
+      }
+      .date-wrapper {
+        display: inline-block;
+        position: relative;
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+        border: 1px solid $borderGrey;
+        .date-item {
+          width: 90%;
+          padding-left: 5%;
+        }
+        i {
+          position: absolute;
+          top: 0;
+          right: 2px;
+        }
+      }
+      .select-filter {
+        min-width: 85px;
+        height: 30px;
+        border: 1px solid $borderGrey;
+      }
+      .search-btn {
+        line-height: 30px;
+        padding: 0 25px;
+        color: #fff;
+        background-color: $bgcBlue;
+        border: 1px solid $bgcBlue;
+        border-radius: 3px;
+      }
+      .search-btn:hover {
+        background-color: $bgcBlue + 30%;
+        border-color: $bgcBlue + 30%;
+      }
+    }
+  }
+  //分析表格
+  .analysis-body {
+    //共性
+    .data-table {
+      margin-bottom: 20px;
+      .table-title {
+        margin-bottom: 10px;
+        line-height: 30px;
+        .title-text {
+          float: left;
+          font-size: 16px;
+          .detail-btn {
+            margin-left: 15px;
+            font-size: 12px;
+            color: #999;
+            i {
+              margin-right: 2px;
+              font-size: 18px;
+              color: $bgcBlue;
+            }
+          }
+          .detail-btn:hover {
+            color: $bgcBlue;
+          }
+        }
+        .title-desc {
+          float: right;
+          font-size: 12px;
+          color: #999999
+        }
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th, td {
+        padding: 10px;
+        border: 1px solid $borderGrey;
+      }
+      th {
+        font-weight: normal;
+        color: #363636;
+        background-color: #f7f7f7;
+      }
+      td {
+        color: #666;
+      }
+    }
+  }
+}

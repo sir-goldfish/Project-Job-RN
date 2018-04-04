@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import "publicVariable";
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* main-body */
+.main-body {
+  position: relative;
+  margin: 10px auto;
+}
+
+/* aside-content-container */
+.aside-content-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 163px;
+  background-color: #fff;
+  .aside-nav {
+    margin-top: 50px;
+    .nav-item {
+      text-indent: 30px;
+      a {
+        padding: 2px 0 2px 8px;
+        text-indent: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        border-left: 3px solid transparent;
+        &:hover {
+          color: $onColorOrange;
+        }
+      }
+    }
+    .nav-item + .nav-item {
+      margin-top: 30px;
+    }
+    .current {
+      a {
+        color: $onColorOrange;
+        border-left-color: $onColorOrange;
+      }
+    }
+  }
+}
+
+/* main-content-container */
+.main-content-container {
+  float: right;
+  width: 927px;
+  min-height: 1000px;
+  padding: 50px;
+  background-color: #fff;
+  .main-content-item {
+    display: none;
+    color: #333;
+    .content-title {
+      margin-bottom: 28px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #333;
+    }
+    .content-banner {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .content-article {
+      line-height: 35px;
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .sub-title {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    .content-article + .content-article {
+      margin-top: 40px;
+    }
+    &.current {
+      display: block;
+    }
+  }
+  .contact-way {
+    .address-container {
+      padding-top: 42px;
+    }
+    .address-box {
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .desc-item {
+        margin-top: 16px;
+        font-size: 16px;
+      }
+      .map-wrapper {
+        width: 430px;
+        height: 240px;
+        margin-top: 33px;
+        border: 1px solid #c9c9c9;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .float-left {
+      float: left;
+    }
+    .float-right {
+      float: right;
+    }
+  }
+  .pay-way {
+    .pay-container {
+      padding: 40px 0 0 340px;
+      .desc-item {
+        font-size: 16px;
+        span {
+          font-weight: bold;
+        }
+      }
+      .desc-item + .desc-item {
+        margin-top: 20px;
+      }
+    }
+  }
+}

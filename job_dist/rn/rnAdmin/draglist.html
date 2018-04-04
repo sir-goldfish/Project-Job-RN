@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>融诺网-拖拽列表</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/baseCrm.css">
+    <link rel="stylesheet" href="plugin/dragslot/dragslot.css">
+    <link rel="stylesheet" href="style/draglist.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section class="dragslot-wrapper">
+    <div class="dragslot-inner">
+        <div id="dragslot" class="dragslot-container clearfix">
+            <div class="slot-box-1 slot-box">
+                <div class="slot-title">融诺小组</div>
+                <div class="slot">
+                    <ul class="slot-list">
+                        <li class="slot-item">
+                            <div class="slot-handler">
+                                <div class="avatar">
+                                    <img src="resource/img/ranking_logo_preson.png"/>
+                                </div>
+                                <div class="content">
+                                    <div class="name">成员名称</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slot-box-2 slot-box">
+                <div class="slot-title">融诺小组</div>
+                <div class="slot">
+                    <ul class="slot-list">
+                        <li class="slot-item">
+                            <div class="slot-handler">
+                                <div class="avatar">
+                                    <img src="resource/img/ranking_logo_preson.png"/>
+                                </div>
+                                <div class="content">
+                                    <div class="name">成员名称</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slot-box-3 slot-box">
+                <div class="slot-title">融诺小组</div>
+                <div class="slot">
+                    <ul class="slot-list">
+                        <li class="slot-item">
+                            <div class="slot-handler">
+                                <div class="avatar">
+                                    <img src="resource/img/ranking_logo_preson.png"/>
+                                </div>
+                                <div class="content">
+                                    <div class="name">成员名称</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slot-box-1 slot-box">
+                <div class="slot-title">融诺小组</div>
+                <div class="slot">
+                    <ul class="slot-list">
+                        <li class="slot-item">
+                            <div class="slot-handler">
+                                <div class="avatar">
+                                    <img src="resource/img/ranking_logo_preson.png"/>
+                                </div>
+                                <div class="content">
+                                    <div class="name">成员名称</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slot-box-2 slot-box">
+                <div class="slot-title">融诺小组</div>
+                <div class="slot">
+                    <ul class="slot-list">
+                        <li class="slot-item">
+                            <div class="slot-handler">
+                                <div class="avatar">
+                                    <img src="resource/img/ranking_logo_preson.png"/>
+                                </div>
+                                <div class="content">
+                                    <div class="name">成员名称</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slot-box-3 slot-box">
+                <div class="slot-title">融诺小组</div>
+                <div class="slot">
+                    <ul class="slot-list">
+                        <li class="slot-item">
+                            <div class="slot-handler">
+                                <div class="avatar">
+                                    <img src="resource/img/ranking_logo_preson.png"/>
+                                </div>
+                                <div class="content">
+                                    <div class="name">成员名称</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script src="plugin/dragslot/dragslot.js"></script>
+<script>
+    $('#dragslot').dragslot({
+        dropCallback: function (el) {
+            //	alert(el);
+        }
+    });
+</script>
+
+</body>
+</html>

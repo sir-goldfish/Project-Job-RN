@@ -1,0 +1,544 @@
+@charset "utf-8";
+
+/*--begin：以下为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+@import "baseNew";
+/*--end：以上为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+
+//font-size要自己设置
+//共用
+.rn-wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.rn-inner {
+  width: 990px;
+  margin: 0 auto;
+}
+
+//清除浮动
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//单行省略号
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//头部
+/* 该页面取1200头部的样式，尺寸为990 */
+.header-1200 {
+  font-size: 14px;
+  line-height: 1;
+  .header-bar {
+    padding: 8px 0;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    .bar-notice {
+      float: left;
+      em {
+        font-size: 13px;
+        color: #b00819;
+      }
+      .welcome {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      a {
+        margin-right: 10px;
+      }
+      .register-btn {
+        color: #b00819;
+      }
+      a:hover {
+        color: #cd0200;
+        text-decoration: underline;
+      }
+    }
+    .bar-links {
+      float: right;
+      a {
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 1px solid #d0ccd0;
+      }
+      .noborder {
+        padding-right: 0;
+        border: none;
+      }
+    }
+  }
+  .header-body {
+    padding: 22px 0;
+    font-size: 14px;
+    .logo {
+      float: left;
+    }
+    .body-links {
+      float: right;
+      a {
+        display: inline-block;
+        padding: 8px 15px;
+      }
+      .last-link {
+        padding-right: 0;
+      }
+      .current {
+        color: #cd0200;
+      }
+    }
+  }
+}
+
+//面包屑导航
+.breadcrumb {
+  padding-bottom: 4px;
+  line-height: 16px;
+  font-size: 12px;
+  i {
+    vertical-align: middle;
+    color: #999;
+  }
+  a {
+    padding: 0 3px;
+    color: #999;
+  }
+  a:hover {
+    color: #cd0200;
+  }
+  span {
+    padding-left: 5px;
+    color: #999;
+  }
+  .arrows {
+    padding-right: 5px;
+    font-family: SimSun;
+  }
+}
+
+//head-banner
+.head-banner {
+  .banner-pic {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+//content-container
+.content-container {
+  .rn-inner {
+    position: relative;
+  }
+  //main-body
+  .main-body {
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: -325px;
+    line-height: 1;
+    font-size: 14px;
+    .main-inner {
+      margin-right: 350px;
+    }
+    //共性
+    .section-title {
+      width: 146px;
+      height: 48px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      background: url(../resource/img/activity_sprites.png) no-repeat -500px 0;
+    }
+    //个性
+    .activity-hold {
+      margin-bottom: 30px;
+      .hold-item {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        .title {
+          float: left;
+          line-height: 32px;
+          font-size: 16px;
+          font-weight: bold;
+          i {
+            margin-right: 5px;
+            vertical-align: middle;
+            font-size: 22px;
+            font-weight: normal;
+            color: #f5333e;
+          }
+        }
+        .list {
+          margin-left: 110px;
+          font-size: 0;
+          a {
+            display: inline-block;
+            height: 34px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            img {
+              height: 100%;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+    .activity-desc {
+      margin-bottom: 30px;
+      .section-title {
+        margin-bottom: 20px;
+      }
+      .desc-para {
+        line-height: 24px;
+      }
+    }
+    .activity-path {
+      margin-bottom: 40px;
+      .section-title {
+        margin-bottom: 30px;
+      }
+      .section-body {
+        margin-left: 10px;
+      }
+      .time-tree {
+        margin-bottom: 20px;
+        .branch {
+          height: 60px;
+          .time {
+            float: left;
+            width: 24%;
+            height: 100%;
+            text-align: right;
+            font-size: 0;
+            border-right: 2px solid #d9d9d9;
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 12px;
+              color: #9b9b9b;
+            }
+            .icon {
+              width: 14px;
+              height: 14px;
+              margin-left: 22px;
+              margin-right: -8px;
+              margin-top: -1px;
+              background: url(../resource/img/activity_sprites.png) no-repeat -105px -160px;
+            }
+          }
+          .desc {
+            float: left;
+            height: 100%;
+            font-size: 0;
+            .text {
+              display: inline-block;
+              width: 256px;
+              height: 30px;
+              padding-left: 23px;
+              margin-top: 8px;
+              margin-left: 28px;
+              line-height: 30px;
+              font-size: 14px;
+              color: #474747;
+              background: url(../resource/img/activity_sprites.png) no-repeat -221px -160px;
+            }
+          }
+        }
+        .first-branch {
+          .time {
+            .date {
+              display: block;
+              font-size: 14px;
+              color: #474747
+            }
+            .icon {
+              width: 22px;
+              height: 23px;
+              margin-top: -14px;
+              margin-right: -12px;
+              background-position-x: -75px;
+            }
+          }
+        }
+        .last-branch {
+          height: 42px;
+        }
+      }
+    }
+    .activity-notice {
+      margin-bottom: 20px;
+      .section-title {
+        margin-bottom: 20px;
+      }
+      .section-item {
+        margin-bottom: 16px;
+      }
+      .section-item, .address-map {
+        margin-left: 10px;
+      }
+      h3 {
+        margin-bottom: 8px;
+        line-height: 1;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .desc-text {
+        line-height: 24px;
+        font-size: 14px;
+        color: #888;
+      }
+      .address-map {
+        width: 548px;
+        height: 358px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+  //aside-body
+  .aside-body {
+    position: relative;
+    z-index: 1;
+    float: right;
+    width: 324px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1;
+    font-size: 14px;
+    .aside-inner {
+      margin-left: 24px;
+    }
+    //共性
+    .aside-title {
+      padding: 12px 0;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #38a1ef;
+      border-radius: 10px;
+    }
+    //倒计时
+    .aside-timer {
+      width: 100%;
+      height: 108px;
+      margin-bottom: 40px;
+      background-color: #eee;
+      border-radius: 10px;
+      p {
+        margin-left: 15px;
+        line-height: 38px;
+        font-size: 16px;
+      }
+      .countdown-box {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .text {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 0;
+        span {
+          display: inline-block;
+          width: 25%;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    }
+    //报名方式一
+    .aside-enroll-way1 {
+      margin-bottom: 20px;
+      .aside-title {
+        margin-bottom: 20px;
+      }
+      .enroll-form {
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        .top-notice {
+          margin-bottom: 20px;
+          text-align: center;
+          font-size: 12px;
+          color: #888;
+        }
+        .form-item {
+          font-size: 0;
+          .input-wrap {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            i {
+              position: absolute;
+              top: 8px;
+              left: 8px;
+              font-size: 20px;
+              color: #9b9b9b;
+            }
+            .l-input, .s-input {
+              height: 12px;
+              padding: 10px 10px 10px 30px;
+              line-height: 1;
+              font-size: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            }
+            .l-input:focus, .s-input:focus {
+              border-color: #38a1ef;
+            }
+            .l-input {
+              width: 218px;
+            }
+            .s-input {
+              width: 112px;
+            }
+          }
+          .input-btn {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+            font-size: 12px;
+          }
+          .pic-code {
+            width: 48px;
+            height: 20px;
+            margin: 0 9px;
+            border: 1px solid #9e9e9d;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .refresh-pic {
+            color: #5871b1;
+          }
+          .refresh-pic:hover {
+            color: #cd0200;
+          }
+          .get-msg {
+            padding: 10px 8px;
+            margin-left: 9px;
+            color: #494949;
+            background-color: #e6e6e6;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: all .2s ease-out;
+          }
+          .get-msg:hover {
+            color: #494949 - 30%;
+            background-color: #e6e6e6 - 30%;
+            border-color: #ddd - 30%;
+          }
+          .hint-info {
+            height: 16px;
+            line-height: 16px;
+            font-size: 12px;
+          }
+        }
+        .form-btn-wrapper {
+          padding: 10px 0;
+          text-align: center;
+          .form-btn {
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #f5333e;
+            border-radius: 8px;
+            transition: all .2s ease-out;
+          }
+          .enroll-btn {
+            width: 170px;
+            padding: 10px 0;
+          }
+          .enroll-btn:hover {
+            background-color: #f5333e + 20%;
+          }
+        }
+        .hint-box {
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+    }
+    //报名方式二
+    .aside-enroll-way2 {
+      margin-bottom: 30px;
+      .aside-title {
+        margin-bottom: 20px;
+      }
+      .call {
+        text-align: center;
+        font-size: 16px;
+        i {
+          margin-right: 5px;
+          vertical-align: middle;
+          font-size: 24px;
+        }
+        b {
+          vertical-align: baseline;
+          font-size: 20px;
+        }
+        i, b {
+          font-weight: bold;
+          color: #fc001f;
+        }
+      }
+    }
+    //投资机构
+    .list {
+      /* begin: 投资机构 */
+      margin-bottom: 50px;
+      li {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 0;
+        a {
+          display: inline-block;
+          width: 258px;
+          height: 78px;
+          background-color: #fff;
+          border: 1px solid #efefef;
+          overflow: hidden;
+          transition: border-color .2s ease-out;
+          img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            transition: all .2s ease-out;
+          }
+        }
+        a:hover {
+          border-color: #999;
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

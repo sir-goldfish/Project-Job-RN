@@ -1,0 +1,66 @@
+/* page-head */
+.page-head .head-inner { height: 100%; padding-top: 2.4rem; background-image: url(../resource/img/par_pic007.jpg); background-repeat: no-repeat; background-position: center top; background-size: cover; overflow: hidden; }
+
+.page-head .head-inner .avatar { display: block; width: 8rem; height: 8rem; margin-left: auto; margin-right: auto; margin-bottom: 1.4rem; border: 0.6rem solid rgba(0, 0, 0, 0.15); border-radius: 50%; overflow: hidden; }
+
+.page-head .head-inner .avatar img { display: block; width: 100%; height: 100%; border-radius: inherit; }
+
+.page-head .head-inner .desc-wrap { text-align: center; }
+
+.page-head .head-inner .desc-wrap .desc { padding: .2rem; vertical-align: middle; font-size: 1rem; background-color: rgba(0, 0, 0, 0.15); border-radius: 2.2rem; }
+
+.page-head .head-inner .desc-wrap .desc .icon { display: inline-block; width: 1.7rem; height: 1.7rem; vertical-align: middle; background-image: url(../resource/img/par_icon003.png); background-repeat: no-repeat; background-position: center; background-size: 100%; border-radius: 50%; }
+
+.page-head .head-inner .desc-wrap .desc .text { display: inline-block; padding: 0 .8rem; vertical-align: middle; color: #fff; }
+
+/* content-container */
+.page-body .content-container { background-color: #fff; }
+
+.page-body .products-list .product-card .card-inner { width: 100%; padding-top: 1.7rem; padding-bottom: 1.7rem; border-bottom: 1px solid #e5e5e5; }
+
+.page-body .products-list .product-card:last-child .card-inner { border-bottom: none; }
+
+.page-body .products-list .product-card:first-child .card-inner { border-bottom: 1px solid #e5e5e5; }
+
+.page-body .products-list .product-card .desc { padding-left: 1rem; padding-right: 1rem; margin-right: 7rem; }
+
+.page-body .products-list .product-card .desc .title { font-size: 1.4rem; }
+
+.page-body .products-list .product-card .desc .para { margin-top: .5rem; }
+
+.page-body .products-list .product-card .price-wrap { position: relative; z-index: 1; float: right; margin-left: -7rem; text-align: right; }
+
+.page-body .products-list .product-card .price-wrap .price > * { display: inline; }
+
+.page-body .products-list .product-card .price-wrap .price .num { font-size: 1.4rem; }
+
+.page-body .products-list .product-card .price-wrap .handle { margin-top: .5rem; }
+
+.page-body .products-list .product-card .price-wrap .handle .handle-btn { font-size: 1.1rem; }
+
+/* transaction-container */
+.page-body .transaction-container .aside-container { background-color: #fff; border-right: 1px solid #e5e5e5; }
+
+.page-body .transaction-container .aside-container .category-nav { width: 100%; }
+
+.page-body .transaction-container .aside-container .category-nav .nav-item { display: block; padding: 1rem 1.2rem; margin-top: -1px; font-size: 1.2rem; color: #888; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; }
+
+.page-body .transaction-container .aside-container .category-nav .nav-item.current { color: #f82d48; }
+
+.page-body .transaction-container .main-container .brand-list { padding-top: 1.3rem; }
+
+.page-body .transaction-container .main-container .brand-item { float: left; width: 50%; padding-bottom: 1.3rem; }
+
+.page-body .transaction-container .main-container .brand-card { width: 7.7rem; margin-left: auto; margin-right: auto; background-color: #fff; }
+
+.page-body .transaction-container .main-container .brand-card .pic { width: 100%; height: 7.7rem; text-align: center; font-size: 0; }
+
+.page-body .transaction-container .main-container .brand-card .pic:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.page-body .transaction-container .main-container .brand-card .pic img { display: inline-block; max-width: 100%; max-height: 100%; vertical-align: middle; }
+
+.page-body .transaction-container .main-container .brand-card .consult-btn { display: block; width: 100%; padding: .6rem 0; text-align: center; color: #fff; background-color: #23d7d0; }
+
+.page-body .transaction-container .main-container .brand-card .consult-btn:active { background-color: #0abeb7; }
+
+.page-body .transaction-container .main-container .main-foot { padding-bottom: 1.3rem; }

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body { background-color: #efeff4; }
+
+/* article-container */
+.article-container { background-color: #fff; box-shadow: 0 0.17rem 0.17rem 0 rgba(4, 0, 0, 0.08); }
+
+.article-container .article-head { padding-top: 2.29rem; padding-bottom: 1.91rem; }
+
+.article-container .article-head .article-title { font-size: 1.45rem; font-weight: bold; }
+
+.article-container .article-head .head-info { margin-top: 1.45rem; font-size: 0; color: #999; }
+
+.article-container .article-head .head-info > * { display: inline-block; vertical-align: middle; font-size: .94rem; }
+
+.article-container .article-head .head-info .count { padding-left: .76rem; margin-left: .76rem; margin-right: 2.3rem; border-left: solid .04rem #999; }
+
+.article-container .article-body { padding-bottom: 2.12rem; line-height: 2.29rem; font-size: 1.27rem; }
+
+.article-container .article-body img { display: block; min-width: 80%; max-width: 100%; height: auto; margin: 1.27rem auto; }
+
+/* section-head 共 */
+.section-head { padding-top: 2.42rem; padding-bottom: 1.36rem; }
+
+.section-head .section-title { font-size: 1.27rem; font-weight: bold; color: #333; }
+
+/* news-recommend */
+.news-recommend { margin-top: .85rem; background-color: #fff; box-shadow: 0 0.17rem 0.17rem 0 rgba(4, 0, 0, 0.08); }
+
+.news-recommend .news-list { padding-bottom: 2.34rem; }
+
+.news-recommend .news-list .list-item .tag { float: left; width: 4.5rem; margin-right: -4.5rem; color: #00a0e9; }
+
+.news-recommend .news-list .list-item .title { margin-left: 5.26rem; color: #333; }
+
+.news-recommend .news-list .list-item .title a { max-width: 100%; }
+
+.news-recommend .news-list .list-item + .list-item { margin-top: .68rem; }
+
+/* user-comment */
+.user-comment { padding-bottom: 3.57rem; margin-top: .85rem; background-color: #fff; }
+
+.user-comment .publish-comment .head-info { margin-bottom: .75rem; text-align: right; font-size: 1.02rem; color: #999; }
+
+.user-comment .publish-comment .head-info .num { color: #ee2714; }
+
+.user-comment .publish-comment .input-wrap textarea { resize: none; width: 100%; height: 8.5rem; padding: 1.06rem .85rem; vertical-align: top; background-color: #f7f7f7; border: none; border-radius: .42rem; }
+
+.user-comment .publish-comment .handle-wrap { margin-top: 2.55rem; text-align: center; }
+
+.user-comment .publish-comment .handle-wrap .submit-btn { width: 12.76rem; height: 2.89rem; line-height: 2.89rem; vertical-align: middle; font-size: 1.27rem; font-weight: bold; color: #fff; background-color: #00a0e9; border-radius: 2.89rem; }
+
+.user-comment .comment-container .comment-empty { padding: 2.25rem 0; }
+
+.user-comment .comment-container .comment-empty img { display: block; width: 11.14rem; height: auto; margin: 0 auto; }
+
+.user-comment .comment-container .comment-list { padding-top: 3.9rem; }
+
+.user-comment .comment-container .comment-list .list-item .avatar { float: left; width: 3.74rem; height: 3.74rem; margin-right: -3.74rem; border-radius: 50%; overflow: hidden; }
+
+.user-comment .comment-container .comment-list .list-item .avatar img { display: block; width: 100%; height: 100%; border-radius: inherit; }
+
+.user-comment .comment-container .comment-list .list-item .content { margin-left: 4.59rem; color: #999; }
+
+.user-comment .comment-container .comment-list .list-item .content .name { font-size: 1.27rem; color: #333; }
+
+.user-comment .comment-container .comment-list .list-item .content .para { margin-top: .9rem; line-height: 1.82rem; font-size: 1.11rem; }
+
+.user-comment .comment-container .comment-list .list-item .content .time { margin-top: .34rem; text-align: right; font-size: .85rem; }
+
+.user-comment .comment-container .comment-list .list-item + .list-item { margin-top: 1.53rem; }

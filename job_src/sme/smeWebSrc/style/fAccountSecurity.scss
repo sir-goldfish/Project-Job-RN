@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* security-info */
+.security-info {
+  padding: 30px 0;
+  .info-item {
+    margin-bottom: 36px;
+    font-size: 0;
+    & > * {
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: top;
+      font-size: 14px;
+      color: #363636;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+    .title {
+      width: 116px;
+      text-align: right;
+    }
+    .value {
+      width: 206px;
+    }
+    .btn-wrap {
+      width: 160px;
+      a {
+        color: #363636;
+        &:hover {
+          color: $onColorOrange;
+        }
+      }
+    }
+    .notice {
+      width: 320px;
+      color: #999;
+    }
+  }
+}

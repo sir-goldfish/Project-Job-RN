@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/errorPage.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head4">
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <div class="right-info">
+                <a href="javascript:;" class="home-link">官方首页</a>
+                <span class="hot-line">全国统一咨询热线：400-6616-855</span>
+            </div>
+        </div>
+    </div>
+</header>
+<!--main-body-->
+<section class="main-body sme-wrapper">
+    <div class="sme-inner">
+        <img src="resource/img/sme_error404.png" class="error-pic">
+        <div class="error-info">
+            <div class="info-text">真的很抱歉，您要找的页面可能被吃掉了……</div>
+            <div class="info-text">请尝试<a href="javascript:;" class="refresh">刷新</a>，或者去其他页面看看吧！</div>
+            <div class="info-btn">
+                <a href="home.html" class="go-home">返回首页</a><a href="javascript:;" class="go-prev">返回上一页</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>©2015 RongNuo.Com Inc. All Rights Reserved. 融诺网 粤ICP备15023200号-2</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    $('.refresh').on('click', function () {
+        location.reload();
+    });
+    $('.go-prev').on('click', function () {
+        history.back(-1);
+    });
+</script>
+</body>
+</html>

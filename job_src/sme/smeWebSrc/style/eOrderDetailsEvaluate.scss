@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import "publicVariable";
+
+.m-crumbs-nav {
+  margin-bottom: 18px;
+}
+
+.order-details-body {
+  border-top: 1px solid #eee;
+}
+
+.m-order-info-card {
+  margin: 28px 0 46px 0;
+}
+
+.evaluate-container {
+  .evaluate-box {
+    margin: 38px 0 40px 0;
+  }
+}
+
+/* evaluate-item */
+.evaluate-container .evaluate-item {
+  .title, .content {
+    float: left;
+  }
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+  }
+  textarea {
+    resize: none;
+    width: 328px;
+    height: 102px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+  }
+  .evaluate-score {
+    margin-bottom: 25px;
+    .title {
+      line-height: 18px;
+    }
+  }
+  .evaluate-desc {
+    .title {
+      line-height: 32px;
+    }
+  }
+  &.service-evaluate {
+    float: left;
+  }
+  &.org-evaluate {
+    float: right;
+  }
+}
+
+.evaluate-container .anony-wrapper {
+  margin-bottom: 60px;
+  text-align: right;
+  .anony-check {
+    color: #666;
+    input[type='checkbox'] {
+      margin-right: 2px;
+      vertical-align: -1px;
+    }
+  }
+}
+
+.evaluate-container .btn-group {
+  padding: 22px 0;
+  text-align: center;
+  .submit-btn {
+    width: 153px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    background-color: $onColorOrange;
+    border-radius: 5px;
+    &:active {
+      background-color: $onColorOrange - 20%;
+    }
+  }
+}

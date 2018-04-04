@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import "publicVariable";
+
+body {
+  background-color: #f1f1f1;
+}
+
+/* result-section */
+.result-section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* result-container */
+.result-container {
+  box-sizing: border-box;
+  min-height: 500px;
+  padding: 30px;
+  background-color: #fff;
+  * {
+    box-sizing: border-box;
+  }
+  .container-head {
+    padding: 0 10px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-left: 5px solid $globeColorStress;
+  }
+  .container-body {
+    padding-top: 30px;
+    font-size: 0;
+    .result-status, .result-info {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      font-size: 14px;
+      color: #333;
+    }
+    .result-status {
+      padding-top: 42px;
+      text-align: center;
+      .icon {
+        img {
+          vertical-align: middle;
+        }
+      }
+      .text {
+        padding: 25px 5px;
+        font-size: 18px;
+      }
+    }
+    .result-info {
+      min-height: 290px;
+      border: 1px solid #ddd;
+      border-top: 2px solid $globeColorStress;
+      .info-head {
+        width: 182px;
+        height: 37px;
+        margin: -2px auto 0;
+        line-height: 37px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        background: url(../resource/img/bp_pay_pic3.png) no-repeat center;
+      }
+      .info-list {
+        $selfWidth: 80px;
+        padding: 24px 36px 30px;
+        line-height: 20px;
+        .stress {
+          color: #f00;
+        }
+        .title {
+          float: left;
+          width: $selfWidth;
+          margin-right: - $selfWidth;
+        }
+        .content {
+          margin-left: $selfWidth;
+        }
+        li + li {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}

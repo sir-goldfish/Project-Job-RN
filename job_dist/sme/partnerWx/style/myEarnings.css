@@ -1,0 +1,30 @@
+/* earnings-container */
+.earnings-container { padding-top: 1.7rem; padding-bottom: 1.7rem; }
+
+.earnings-panel { padding-top: 2.5rem; padding-bottom: 1.2rem; background-color: #fff; }
+
+.earnings-panel .panel-content .info-row { font-size: 1.3rem; }
+
+.earnings-panel .panel-content .info-row .title { float: left; width: 6.5rem; margin-right: -6.5rem; }
+
+.earnings-panel .panel-content .info-row .content { margin-left: 6.5rem; color: #576b95; }
+
+.earnings-panel .panel-content .info-row + .info-row { margin-top: 1rem; }
+
+.earnings-panel .panel-content .handle-earnings { margin-top: 3.8rem; }
+
+.earnings-panel .panel-content .handle-earnings .title { font-size: 1.3rem; font-weight: bold; }
+
+.earnings-panel .panel-content .handle-earnings .handle-box { padding-top: 1rem; padding-bottom: 1rem; line-height: 3.7rem; font-size: 2.6rem; font-weight: bold; border-bottom: 1px solid #ebebea; }
+
+.earnings-panel .panel-content .handle-earnings .handle-box .addon { float: left; width: 2.8rem; margin-right: -2.8rem; }
+
+.earnings-panel .panel-content .handle-earnings .handle-box .input-wrap { margin-left: 2.8rem; }
+
+.earnings-panel .panel-content .handle-earnings .handle-box .handle-input { width: 100%; height: 3.7rem; vertical-align: text-top; line-height: 3.7rem; font-weight: inherit; background-color: transparent; border: none; }
+
+.earnings-panel .panel-content .handle-earnings .handle-info { margin-top: 1.2rem; text-align: center; }
+
+.earnings-panel .panel-foot { margin-top: 2.4rem; }
+
+.earnings-panel .panel-foot .foot-info { margin-top: 4.3rem; text-align: center; }

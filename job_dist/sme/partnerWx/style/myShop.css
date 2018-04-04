@@ -1,0 +1,57 @@
+/* shop-info-panel */
+.shop-info-panel { height: 100%; padding-top: 2.9rem; background-image: url(../resource/img/par_pic002.jpg); background-color: #efeff4; background-repeat: no-repeat; background-position: center top; background-size: 100% auto; overflow: hidden; }
+
+.shop-info-panel .upgrade-btn { position: absolute; top: 1.2rem; right: 1.2rem; }
+
+.shop-info-panel .avatar { display: block; width: 6rem; height: 6rem; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem; border: 0.4rem solid rgba(0, 0, 0, 0.15); border-radius: 50%; overflow: hidden; }
+
+.shop-info-panel .avatar img { display: block; width: 100%; height: 100%; border-radius: inherit; }
+
+.shop-info-panel .name-wrap { margin-bottom: 1.9rem; text-align: center; }
+
+.shop-info-panel .name-wrap .name { padding: .2rem; vertical-align: middle; font-size: 1rem; background-color: rgba(0, 0, 0, 0.15); border-radius: 2.2rem; }
+
+.shop-info-panel .name-wrap .name .icon { display: inline-block; width: 1.7rem; height: 1.7rem; vertical-align: middle; background-image: url(../resource/img/par_icon000.png); background-repeat: no-repeat; background-position: center; background-size: 100%; border-radius: 50%; }
+
+.shop-info-panel .name-wrap .name .text { display: inline-block; padding: 0 .5rem; vertical-align: middle; color: #fff; }
+
+.shop-info-panel .info-card { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 7.8rem; padding-top: 1.6rem; padding-bottom: 1.3rem; text-align: center; background-image: url(../resource/img/par_pic005.jpg); background-repeat: no-repeat; background-position: center; background-size: 100%; border-radius: .4rem; }
+
+.shop-info-panel .info-card .info-item { height: 100%; color: #fff; }
+
+.shop-info-panel .info-card .info-item .num { margin-bottom: .6rem; font-size: 1.7rem; font-family: Arial; }
+
+.shop-info-panel .info-card .info-item + .info-item { border-left: 1px solid #5d6b76; }
+
+.shop-info-panel.vip { background-image: url(../resource/img/par_pic003.jpg); }
+
+.shop-info-panel.vip .name-wrap .name .icon { background-image: url(../resource/img/par_icon001.png); }
+
+.shop-info-panel.city { background-image: url(../resource/img/par_pic004.jpg); }
+
+.shop-info-panel.city .name-wrap .name .icon { background-image: url(../resource/img/par_icon002.png); }
+
+/* shop-body */
+.shop-body .content-container { background-color: #fff; }
+
+.shop-body .products-list .product-card .card-inner { width: 100%; padding-top: 1.7rem; padding-bottom: 1.7rem; border-bottom: 1px solid #e5e5e5; }
+
+.shop-body .products-list .product-card:last-child .card-inner { border-bottom: none; }
+
+.shop-body .products-list .product-card:first-child .card-inner { border-bottom: 1px solid #e5e5e5; }
+
+.shop-body .products-list .product-card .desc { padding-right: 1rem; margin-right: 7rem; }
+
+.shop-body .products-list .product-card .desc .title { font-size: 1.4rem; }
+
+.shop-body .products-list .product-card .desc .para { margin-top: .5rem; }
+
+.shop-body .products-list .product-card .price-wrap { position: relative; z-index: 1; float: right; margin-left: -7rem; text-align: right; }
+
+.shop-body .products-list .product-card .price-wrap .price > * { display: inline; }
+
+.shop-body .products-list .product-card .price-wrap .price .num { font-size: 1.4rem; }
+
+.shop-body .products-list .product-card .price-wrap .badge { padding: .3rem; margin-top: .5rem; color: #fff; background-color: #23d7d0; border-radius: 1.1rem; }
+
+.shop-body .products-list .product-card .price-wrap .badge > * { display: inline; }

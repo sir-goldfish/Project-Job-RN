@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* 主体 */
+.main-body { padding-top: 30px; padding-bottom: 40px; background-color: #f7f7f7; }
+
+.main-body .quick-demand-path { width: 100%; min-height: 476px; background-color: #fff; }
+
+.main-body .path-inner { width: 802px; padding-top: 60px; padding-bottom: 60px; margin-left: auto; margin-right: auto; }
+
+.main-body .steps-nav { position: relative; width: 100%; height: 30px; }
+
+.main-body .steps-nav .line { position: absolute; top: 50%; left: 0; margin-top: -3px; width: 100%; height: 6px; background-color: #c9c9c9; border-radius: 6px; }
+
+.main-body .steps-nav .step-item { position: relative; float: left; width: 33.3%; height: 100%; text-align: center; }
+
+.main-body .steps-nav .step-item .line { background-color: #c9c9c9; }
+
+.main-body .steps-nav .step-item .icon { position: absolute; top: 0; left: 50%; margin-left: -15px; width: 30px; height: 30px; text-align: center; line-height: 30px; color: #fff; background-color: #c9c9c9; border-radius: 50%; }
+
+.main-body .steps-nav .step-item .iconfont { font-size: 14px; }
+
+.main-body .steps-nav .step-item .text { margin-top: 44px; color: #c9c9c9; }
+
+.main-body .steps-nav .current-step .line { background-color: #f78e24; }
+
+.main-body .steps-nav .current-step .icon { background-color: #f78e24; }
+
+.main-body .steps-nav .current-step .text { color: #f78e24; }
+
+.main-body .steps-nav .passed-step .line { background-color: #f9cc8d; }
+
+.main-body .steps-nav .passed-step .icon { background-color: #f9cc8d; }
+
+.main-body .steps-nav .passed-step .text { color: #f9cc8d; }
+
+.main-body .steps-content .content-item { display: none; }
+
+.main-body .steps-content .content-item .content-btn { height: 34px; padding: 0 20px; line-height: 34px; text-align: center; font-size: 16px; color: #fff; -webkit-transition: all .2s ease-out; transition: all .2s ease-out; }
+
+.main-body .steps-content .current { display: block; }
+
+.main-body .steps-content .content-1 { margin-top: 90px; }
+
+.main-body .steps-content .content-1 .form-item .title { float: left; width: 286px; margin-right: -286px; text-align: right; line-height: 34px; color: #666; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper { margin-left: 288px; font-size: 0; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .input-box input[type='text'] { height: 18px; padding: 8px 10px; font-size: 14px; line-height: 18px; border: 1px solid #ddd; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .input-box input[type='text']:focus { border-color: #82cef3; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .l-input input[type='text'] { width: 264px; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .s-input input[type='text'] { width: 140px; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .input-box, .main-body .steps-content .content-1 .form-item .input-wrapper .input-btn { display: inline-block; vertical-align: middle; font-size: 14px; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .pic-code { width: 115px; height: 34px; border: 1px solid #ddd; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .pic-code img { width: 100%; height: 100%; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .refresh-pic { vertical-align: bottom; font-size: 12px; color: #142d86; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .pic-code, .main-body .steps-content .content-1 .form-item .input-wrapper .refresh-pic { margin-left: 10px; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .input-btn:hover { color: #f78e24; }
+
+.main-body .steps-content .content-1 .form-item .input-wrapper .hint-info { padding: 7px 0; line-height: 1; font-size: 12px; }
+
+.main-body .steps-content .content-1 .form-btn-wrapper { padding: 14px 0; }
+
+.main-body .steps-content .content-1 .form-btn-wrapper .submit-btn { width: 246px; margin-left: 288px; background-color: #f78e24; }
+
+.main-body .steps-content .content-1 .form-btn-wrapper .submit-btn:hover { background-color: #ffa73d; }
+
+.main-body .steps-content .content-2 { padding: 0 33px; margin-top: 73px; }
+
+.main-body .steps-content .content-2 .item-box .item-title { font-size: 16px; color: #363636; }
+
+.main-body .steps-content .content-2 .item-box .item-inner { margin-left: 30px; }
+
+.main-body .steps-content .content-2 .item-box .item-inner ul { margin-left: -50px; font-size: 0; }
+
+.main-body .steps-content .content-2 .item-box .item-inner ul li { display: inline-block; margin-left: 50px; margin-top: 26px; font-size: 14px; color: #666; }
+
+.main-body .steps-content .content-2 .item-box .item-inner ul li input[type='checkbox'] { width: 14px; height: 14px; margin-right: 5px; vertical-align: middle; }
+
+.main-body .steps-content .content-2 .item-box .item-inner .service-input { width: 97%; height: 18px; padding: 7px 1%; margin-top: 18px; line-height: 18px; font-size: 14px; border: 1px solid #ddd; }
+
+.main-body .steps-content .content-2 .item-box .item-inner input[type='text']:focus { border-color: #91d4f4; }
+
+.main-body .steps-content .content-2 .item-box + .item-box { margin-top: 60px; }
+
+.main-body .steps-content .content-2 .btn-wrapper { padding: 10px 0; margin-top: 38px; text-align: center; }
+
+.main-body .steps-content .content-2 .btn-wrapper .order-btn { width: 246px; background-color: #f78e24; }
+
+.main-body .steps-content .content-2 .btn-wrapper .order-btn:hover { background-color: #ffa73d; }
+
+.main-body .steps-content .content-3 { margin-top: 99px; text-align: center; }
+
+.main-body .steps-content .content-3 .info { display: inline-block; margin-bottom: 44px; }
+
+.main-body .steps-content .content-3 .info .iconfont, .main-body .steps-content .content-3 .info .text { display: inline-block; vertical-align: middle; color: #82cef3; }
+
+.main-body .steps-content .content-3 .info .iconfont { font-size: 32px; }
+
+.main-body .steps-content .content-3 .info .text { margin-left: 12px; text-align: justify; }
+
+.main-body .steps-content .content-3 .info .text .top { margin-bottom: 8px; font-size: 18px; }
+
+.main-body .steps-content .content-3 .info .text .btm { color: #999; }
+
+.main-body .steps-content .content-3 .btn-wrapper { padding: 10px 0; }
+
+.main-body .steps-content .content-3 .btn-wrapper .back-home-btn { width: 246px; background-color: #52bef3; }
+
+.main-body .steps-content .content-3 .btn-wrapper .back-home-btn:hover { background-color: #6bd7ff; }

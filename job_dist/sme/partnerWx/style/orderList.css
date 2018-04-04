@@ -1,0 +1,42 @@
+/* order-list */
+.order-list { padding-top: .9rem; padding-bottom: .9rem; }
+
+.order-list .order-card { background-color: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+.order-list .order-card .card-row { padding-top: 1rem; padding-bottom: 1rem; }
+
+.order-list .order-card .head-row { display: -webkit-box; display: -ms-flexbox; display: flex; border-bottom: 1px solid #eee; }
+
+.order-list .order-card .head-row .time { -ms-flex-preferred-size: 50%; flex-basis: 50%; text-align: left; color: #a9a9a9; }
+
+.order-list .order-card .head-row .status { -ms-flex-preferred-size: 50%; flex-basis: 50%; text-align: right; }
+
+.order-list .order-card .base-info-row { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.order-list .order-card .base-info-row .phone { margin-left: 1.7rem; }
+
+.order-list .order-card .base-info-row .phone i { vertical-align: top; font-size: 1.3rem; }
+
+.order-list .order-card .base-info-row .phone span { margin-left: .8rem; vertical-align: top; }
+
+.order-list .order-card .product-row { background-color: #fafafa; }
+
+.order-list .order-card .product-row .row-inner { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.order-list .order-card .product-row .title { -ms-flex-preferred-size: 40%; flex-basis: 40%; }
+
+.order-list .order-card .product-row .num { -ms-flex-preferred-size: 20%; flex-basis: 20%; text-align: center; }
+
+.order-list .order-card .product-row .price { -ms-flex-preferred-size: 40%; flex-basis: 40%; text-align: right; }
+
+.order-list .order-card .sum-row { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.order-list .order-card .sum-row .num { -ms-flex-preferred-size: 30%; flex-basis: 30%; text-align: left; }
+
+.order-list .order-card .sum-row .total { -ms-flex-preferred-size: 70%; flex-basis: 70%; text-align: right; }
+
+.order-list .order-card .sum-row .total .big { font-size: 1.4em; }
+
+.order-list .order-card .sum-row .total .income { margin-top: .6rem; }
+
+.order-list .order-card + .order-card { margin-top: .9rem; }

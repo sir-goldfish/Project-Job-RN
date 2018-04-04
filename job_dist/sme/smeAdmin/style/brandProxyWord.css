@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* 字体 */
+.font-simsun { font-family: SimSun; }
+
+.font-kaiti { font-family: KaiTi; }
+
+.font-yahei { font-family: "Microsoft YaHei"; }
+
+/* 字号 */
+.font-pt-2 { font-size: 22pt; }
+
+.font-pt-s2 { font-size: 18pt; }
+
+.font-pt-3 { font-size: 16pt; }
+
+.font-pt-s4 { font-size: 12pt; }
+
+.font-pt-5 { font-size: 10.5pt; }
+
+/* 加粗 */
+b, .font-bold { font-weight: bold; }
+
+/* stress */
+.stress { color: #f00; }
+
+/* document style */
+.document-container { width: 500pt; margin: 0 auto; line-height: 1.6; font-family: SimSun; font-size: 10.5pt; color: #000; background-color: #fff; }
+
+.document-container .option-group .option { float: left; width: 50%; padding: 0 5pt; line-height: 22.5pt; }
+
+.document-container .option-group .option input[type='checkbox'] { margin-right: -12pt; margin-top: 6pt; vertical-align: top; }
+
+.document-container .option-group .option .check-box { display: inline-block; width: 11.5pt; margin-right: -12pt; margin-top: 6pt; vertical-align: top; }
+
+.document-container .option-group .option .text { display: inline-block; margin-left: 15pt; vertical-align: top; }
+
+.document-foot { position: relative; font-size: 12pt; }
+
+.document-foot .left-info .info-item .title { width: 72pt; margin-right: -72pt; line-height: 28px; }
+
+.document-foot .left-info .info-item .content { margin-left: 73pt; }
+
+.document-foot .left-info .info-item + .info-item { margin-top: 5pt; }
+
+.document-foot .right-info { position: absolute; top: 0; right: 0; width: 50%; height: 90pt; text-align: center; }
+
+.document-foot .right-info .info-date { margin-top: 23pt; }
+
+/* document edit style */
+.document-edit-input { border: none; border-bottom: 1px solid #a9a9a9; outline: none; }
+
+.document-edit-input:focus { border-bottom-color: #4D90FE; }
+
+.s-input { width: 63pt; }
+
+.document-foot-btn-group { padding: 15px; text-align: center; }
+
+.document-foot-btn-group .btn { margin: 5px; }

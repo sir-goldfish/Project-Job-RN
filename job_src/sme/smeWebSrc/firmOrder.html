@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中小企业服务-下单页面</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/firmOrder.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="javascript:;" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">知识产权</a>
+                        <div class="hide-group" style="margin-left:-49px;">
+                            <ul class="group-list">
+                                <li class="group-item chosen"><a href="javascript:;">商标注册</a></li>
+                                <li class="group-item"><a href="javascript:;">版权登记</a></li>
+                                <li class="group-item"><a href="javascript:;">专利申请</a></li>
+                                <li class="group-item"><a href="javascript:;">知产交易</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">公司注册</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">人事社保</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">案例库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">资讯</a>
+                    </li>
+                </ul>
+                <div class="logo-search">
+                    <input type="text" placeholder="搜索服务">
+                    <a href="javascript:;" class="search-btn iconfont">&#xe66e;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="main-body sme-wrapper">
+    <!--title-bar-->
+    <section class="title-bar sme-inner">
+        <div class="title">确认订单</div>
+    </section>
+    <!--content-container-->
+    <section class="content-container f-clearfix sme-inner">
+        <!--main-content-container-->
+        <section class="main-content-container">
+            <!--service-desc-->
+            <section class="service-desc main-content-card">
+                <div class="card-title">
+                    <span class="text">服务内容：</span>
+                </div>
+                <div class="card-content f-clearfix">
+                    <figure>
+                        <img src="resource/img/sme_pic23.jpg" alt="">
+                    </figure>
+                    <div class="desc-text">
+                        <div class="title">公司注册（无地址）</div>
+                        <div class="para">
+                            提供您的公司名称，必要资料，我们的专业顾问，将会对您的材料进行审核，全程跟踪，帮您完成公司注册的全过程。
+                        </div>
+                        <div class="price-text">
+                            服务价格：<span class="price"><span class="num">1500</span><span class="unit">起</span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--service-demand-->
+            <section class="service-demand main-content-card">
+                <div class="card-title">
+                    <span class="text">具体要求：</span>
+                </div>
+                <div class="card-content">
+                    <textarea placeholder="请在此处填写您的具体要求"></textarea>
+                </div>
+            </section>
+            <!--service-facilitator-->
+            <section class="service-facilitator main-content-card">
+                <div class="card-title">
+                    <span class="text">推荐服务商：</span>
+                </div>
+                <div class="card-content">
+                    <div class="notice-red">
+                        友情提示：请选择您中意的服务商为您进行服务
+                    </div>
+                    <div class="facilitator-list">
+                        <ul class="list f-clearfix">
+                            <li class="chose list-item">青岛德诚财务有限公司</li>
+                            <li class="list-item">青岛企业帮代账公司</li>
+                            <li class="list-item">山东信德律师事务所</li>
+                            <li class="list-item">山东信德律师事务所</li>
+                        </ul>
+                    </div>
+                    <div class="facilitator-info f-clearfix">
+                        <div class="info-notice">
+                            由<a href="javascript:;" class="org-link">青岛企业帮代账公司</a>提供服务及售后服务
+                        </div>
+                        <div class="info-card f-clearfix">
+                            <figure>
+                                <img src="resource/img/sme_pic30.jpg" alt="">
+                            </figure>
+                            <div class="desc-text">
+                                <div class="title">主营：</div>
+                                <div class="para">
+                                    注册公司、注册公司、代账、代账等等
+                                </div>
+                                <div class="btm">
+                                    <a href="javascript:;" class="org-link">进入主页>></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--contact-info-->
+            <section class="contact-info main-content-card">
+                <div class="card-title">
+                    <span class="text">确认联系信息：</span>
+                </div>
+                <div class="card-content">
+                    <div class="form-item phone-item f-clearfix">
+                        <div class="star-title title">联系电话：</div>
+                        <div class="input-wrapper">
+                            <div class="input-box">
+                                <label><input type="radio" name="phone" checked="checked">13300001111</label>
+                            </div>
+                            <div class="input-box other-phone">
+                                <label><input type="radio" name="phone">其他号码</label>
+                                <input type="text">
+                            </div>
+                            <div class="hint-info">*提示信息占位</div>
+                        </div>
+                    </div>
+                    <div class="form-item name-item f-clearfix">
+                        <div class="star-title title">联系人：</div>
+                        <div class="input-wrapper">
+                            <div class="input-box">
+                                <input type="text" placeholder="请输入您的姓名">
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                    <div class="form-item address-item f-clearfix">
+                        <div class="title">联系地址：</div>
+                        <div class="input-wrapper">
+                            <div class="area-input input-box">
+                                <select class="area-choose">
+                                    <option value="请选择">请选择</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                </select>
+                                <span class="text">省</span>
+                                <select class="area-choose">
+                                    <option value="请选择">请选择</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                </select>
+                                <span class="text">市</span>
+                                <select class="area-choose">
+                                    <option value="请选择">请选择</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                    <option value="地区">地区</option>
+                                </select>
+                                <span class="text">区</span>
+                            </div>
+                            <div class="area-input input-box">
+                                <input type="text" class="l-input" placeholder="请输入您的详细地址">
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                    <div class="form-item msg-code-item f-clearfix">
+                        <div class="star-title title">短信验证码：</div>
+                        <div class="input-wrapper">
+                            <div class="input-box code-input">
+                                <input type="text">
+                                <a href="javascript:;" class="code-btn msg-btn">获取验证码</a>
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--other-service-->
+            <section class="other-service main-content-card">
+                <div class="card-title">
+                    <span class="text">您可能还需要：</span>
+                </div>
+                <div class="card-content">
+                    <ul class="form-item-list">
+                        <li class="form-item f-clearfix">
+                            <div class="title">
+                                <input type="checkbox">
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="desc f-clearfix">
+                                    <div class="text">免费查询公司名</div>
+                                    <div class="para">免费查询你的公司名称是否能够注册，先查询后注册，成功率高达98.6%！</div>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="输入您想要注册的公司名称">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-item f-clearfix">
+                            <div class="title">
+                                <input type="checkbox">
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="desc f-clearfix">
+                                    <div class="text">免费查询商标</div>
+                                    <div class="para">免费查询商标是否能够注册，专业顾问帮您提高商标注册的成功率！</div>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="输入您想要注册的商标名称">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-item f-clearfix">
+                            <div class="title">
+                                <input type="checkbox">
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="desc f-clearfix">
+                                    <div class="text">免费获取法律文书</div>
+                                    <div class="para">免费获取您所需要的法律文书，为您解决公司的法律问题！</div>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="输入您想要获取的法律文书">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-item f-clearfix">
+                            <div class="title">
+                                <input type="checkbox">
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="desc f-clearfix">
+                                    <div class="text">免费定制人力方案</div>
+                                    <div class="para">资深人力专家帮您免费定制人力解决方案，快速发展，解决后顾之忧！</div>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="填写您的需求和公司规模">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <!--aside-content-container-->
+        <aside class="aside-content-container">
+            <aside class="order-settlement-card">
+                <div class="card-title">
+                    <span class="text">订单金额</span>
+                </div>
+                <div class="card-content">
+                    <table class="order-table">
+                        <thead>
+                        <tr class="table-title">
+                            <td class="item-left">服务提供商</td>
+                            <td class="item-right">数量</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="table-item">
+                            <td class="item-left">青岛德诚财务有限公司青岛德诚财务有限公司青岛德诚财务有限公司</td>
+                            <td class="item-right amount-choose">
+                                <!--数量加减结构-->
+                                <!--<span class="amount-text">100</span>-->
+                                <!--<span class="amount-btn-group f-clearfix">-->
+                                <!--<a href="javascript:;" class="add-btn amount-btn iconfont">&#xe6c2;</a>-->
+                                <!--<a href="javascript:;" class="minus-btn amount-btn iconfont">&#xe9a2;</a>-->
+                                <!--</span>-->
+                                <!--固定数量结构-->
+                                <span>×100</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr class="table-space">
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr class="table-sum">
+                            <td class="item-left">
+                                小计：（单价<span class="unit-price">20000</span>x<span class="count">100</span>）
+                            </td>
+                            <td class="item-right">
+                                <span class="sum-price">2000000.00</span>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <div class="btn-group">
+                        <a href="javascript:;" class="settlement-btn">立即结算</a>
+                    </div>
+                </div>
+            </aside>
+        </aside>
+    </section>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    //--服务商选择示例
+    $('.service-facilitator .facilitator-list').find('.list-item').on('click', function () {
+        if ($(this).hasClass('chose') == false) {
+            $('.service-facilitator .facilitator-list').find('.chose').removeClass('chose');
+            $(this).addClass('chose');
+        }
+    });
+    //--input获得焦点后选中对应的checkbox的示例
+    function focusInput($dom) {
+        $dom.find('input[type="text"]').each(function (i, ele) {
+            $(this).focus(function () {
+                if ($(this).parents('.form-item').find('input[type="checkbox"]').length) {
+                    if ($(this).parents('.form-item').find('input[type="checkbox"]').prop('checked') == false) {
+                        $(this).parents('.form-item').find('input[type="checkbox"]').prop('checked', 'checked');
+                    }
+                }
+            });
+        })
+    }
+    focusInput($('.other-service .form-item-list'));
+    //右侧订单结算跟随
+    function setSettlementCard($dom, $mainContainerDom) {
+        var winScrollTop = $(window).scrollTop(),
+                mainContentH = $mainContainerDom.innerHeight(),
+                mainContentOffTop = $mainContainerDom.offset().top,
+                domH = $dom.innerHeight(),
+                domOffsetTop = $dom.offset().top;
+        $(window).on('scroll', function () {
+            winScrollTop = $(window).scrollTop();
+            mainContentH = $mainContainerDom.innerHeight();
+            domH = $dom.innerHeight();
+            if (winScrollTop <= domOffsetTop) {
+                $dom.css('top', '0');
+            } else if (winScrollTop > domOffsetTop && winScrollTop < mainContentOffTop + mainContentH - domH) {
+                $dom.css('top', winScrollTop - domOffsetTop + 'px');
+            } else if (winScrollTop >= mainContentOffTop + mainContentH - domH) {
+                $dom.css('top', mainContentOffTop + mainContentH - domH - domOffsetTop + 'px');
+            }
+        });
+    }
+    setSettlementCard($('.order-settlement-card'), $('.content-container'));
+</script>
+</body>
+</html>

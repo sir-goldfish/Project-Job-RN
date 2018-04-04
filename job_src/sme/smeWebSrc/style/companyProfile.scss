@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* head-banner */
+.head-banner {
+  height: 540px;
+  overflow: hidden;
+  .banner-item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* main-body */
+.main-body {
+  padding-top: 60px;
+  // 共性
+  .content-container {
+    margin: 0 50px;
+    .content-title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #363636;
+    }
+  }
+  // 个性
+  .desc-article {
+    margin-bottom: 70px;
+    .content-title {
+      margin-bottom: 38px;
+    }
+    .content-body {
+      line-height: 35px;
+      font-size: 14px;
+      color: #333;
+      .title-1 {
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .title-2 {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+  }
+  .desc-gallery {
+    margin-bottom: 43px;
+    .content-title {
+      margin-bottom: 30px;
+    }
+  }
+  .about-rn {
+    height: 600px;
+    background: url(../resource/img/sme_bgi4.jpg) no-repeat center;
+    .section-title {
+      padding: 35px 0;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .desc-tab {
+      .tab-nav {
+        padding-bottom: 36px;
+        text-align: center;
+        font-size: 0;
+        li {
+          display: inline-block;
+          min-width: 118px - 30px;
+          height: 34px;
+          padding: 0 15px;
+          margin: 0 29px;
+          vertical-align: top;
+          line-height: 34px;
+          font-size: 16px;
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 34px;
+          cursor: default;
+          &.current {
+            border-color: transparent;
+          }
+        }
+      }
+      .content-item {
+        display: none;
+        &.current {
+          display: block;
+        }
+      }
+      .desc-cards-list {
+        margin: -14px 0 0 -14px;
+        .desc-card {
+          float: left;
+          margin: 14px 0 0 14px;
+          border: 8px solid rgba(255, 255, 255, .28);
+          border-radius: 6px;
+          transition: border-color .3s ease-out;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+          }
+          &:hover {
+            border-color: rgba(255, 255, 255, .65);
+          }
+        }
+      }
+    }
+  }
+}

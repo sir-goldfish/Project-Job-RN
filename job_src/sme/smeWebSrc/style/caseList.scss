@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import "publicVariable";
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* filter-container */
+.filter-container {
+  margin: 10px 0 18px 0;
+  .filter-container-inner {
+    color: #666;
+    background-color: #fff;
+  }
+  .type-filter {
+    padding: 16px 10px;
+    line-height: 24px;
+    .title {
+      float: left;
+      width: 90px;
+      margin-right: -90px;
+      .text {
+        padding-left: 9px;
+        line-height: 1;
+        border-left: 3px solid $onColorOrange;
+      }
+    }
+    .content {
+      margin-left: 96px;
+    }
+    .content-inner {
+      margin-left: -7px;
+      margin-top: -7px;
+    }
+    .filter-item {
+      height: 24px;
+      padding: 0 11px;
+      margin-left: 7px;
+      margin-top: 7px;
+      vertical-align: top;
+      line-height: 24px;
+      color: #666;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      &.current {
+        color: $onColorOrange;
+        border-color: $onColorOrange;
+      }
+      &:hover {
+        color: $onColorOrange;
+        border-color: $onColorOrange;
+      }
+    }
+  }
+  .default-filter {
+    padding: 18px 10px;
+    border-top: 1px solid #ddd;
+    .filter-item {
+      margin-left: 11px;
+      vertical-align: middle;
+      line-height: 16px;
+      a {
+        color: #666;
+      }
+      &.current {
+        a {
+          color: $onColorOrange;
+        }
+      }
+      &:hover {
+        a {
+          color: $onColorOrange;
+        }
+      }
+    }
+    .filter-item + .filter-item {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 16px;
+        margin-right: 11px;
+        vertical-align: middle;
+        border-left: 1px solid #666;
+      }
+    }
+  }
+}
+
+/* case-container */
+.case-container {
+  min-height: 600px;
+  .cards-list {
+    margin-left: -26px;
+    margin-top: -20px;
+  }
+  .case-card {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 340px;
+    margin-left: 26px;
+    margin-top: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: box-shadow .3s ease-out, transform .3s ease-out;
+    .pic {
+      display: block;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 19px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform .3s ease-out;
+      }
+    }
+    .desc {
+      margin: 0 10px;
+      .title {
+        max-width: 100%;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #363636;
+        &:hover {
+          color: $onColorOrange;
+        }
+      }
+      .org {
+        margin-bottom: 12px;
+        font-size: 12px;
+      }
+      .btm-info {
+        padding: 13px 0;
+        text-align: center;
+        font-size: 0;
+        border-top: 2px solid $onColorOrange;
+        & > * {
+          display: inline-block;
+          padding: 4px 13px;
+          vertical-align: top;
+          font-size: 14px;
+          color: #666;
+        }
+        .price {
+          .num {
+            color: #fc0018;
+            &:before {
+              content: '¥';
+              display: inline-block;
+            }
+          }
+        }
+        .info-title {
+          margin-top: 8px;
+          font-size: 12px;
+          color: #999;
+        }
+        .strike-price {
+          padding-left: 0;
+          border-right: 1px solid #ddd;
+        }
+        .page-views {
+          padding-right: 0;
+          border-left: 1px solid #ddd;
+        }
+      }
+    }
+    &.self:after {
+      content: '自营';
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      padding: 5px 9px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #f78e24;
+    }
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(14, 5, 10, .1);
+      transform: translateY(-6px);
+      .pic {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .pagination-container {
+    padding: 24px 0;
+  }
+}

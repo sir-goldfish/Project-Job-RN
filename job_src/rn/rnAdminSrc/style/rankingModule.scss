@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* 排行榜 */
+.ranking-module {
+  position: fixed;
+  top: 90px;
+  right: 10px;
+  z-index: 9999;
+  font-size: 14px;
+  .ranking-logo {
+    display: block;
+    width: 56px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .logo-person {
+    margin-bottom: 5px;
+  }
+  //排行列表
+  .ranking-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #ef5150;
+    border-radius: 10px;
+  }
+  //共性
+  .ranking-box {
+    position: relative;
+    display: none;
+    .close-btn {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      z-index: 2;
+      font-size: 28px;
+      color: #febf3d;
+      transition: color .2s ease-out;
+    }
+    .close-btn:hover {
+      color: #febf3d + 25%;
+    }
+  }
+  //个人
+  .person-ranking {
+    .box-title {
+      position: relative;
+      z-index: 1;
+      padding: 8px 0;
+      background-color: #feedc3;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      span {
+        display: block;
+        width: 185px;
+        height: 38px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 24px;
+        text-align: center;
+        font-size: 16px;
+        color: #feedc3;
+        background: url(../resource/img/ranking_sprites.png) no-repeat 0 -112px;
+      }
+    }
+    table {
+      margin-top: -1px;
+      border-collapse: collapse;
+      background-color: #fff7e4;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      overflow: hidden;
+      tbody {
+        tr {
+          transition: background-color .2s ease-out;
+        }
+        td {
+          padding: 10px;
+          text-align: center;
+          white-space: nowrap;
+        }
+        .pic, .name, .sum {
+          border-top: 1px solid #f1ddae;
+        }
+        .num {
+          font-size: 18px;
+          font-weight: bold;
+          color: #c5c5c5;
+        }
+        .pic {
+          padding: 5px 0;
+          img {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+          }
+        }
+        .name {
+          color: #60534a;
+        }
+        .sum {
+          font-weight: bold;
+          color: #60534a;
+          i {
+            margin-right: 2px;
+            font-size: 18px;
+            font-weight: normal;
+            color: #facf51;
+          }
+        }
+        tr:hover {
+          background-color: #fff7e4 - 20%;
+        }
+      }
+      .first, .second, .third {
+        .pic {
+          figure {
+            padding-top: 10px;
+            background: url(../resource/img/ranking_sprites.png) no-repeat 999px 999px;
+            background-position-y: -160px;
+          }
+        }
+      }
+      .first {
+        .num {
+          color: #f8c22e;
+        }
+        .pic {
+          figure {
+            background-position-x: 0;
+          }
+        }
+      }
+      .second {
+        .num {
+          color: #b8c6df;
+        }
+        .pic {
+          figure {
+            background-position-x: -30px;
+          }
+        }
+      }
+      .third {
+        .num {
+          color: #d7a58a;
+        }
+        .pic {
+          figure {
+            background-position-x: -60px;
+          }
+        }
+      }
+    }
+    .close-btn {
+      top: -7px;
+      left: -5px;
+    }
+  }
+  //团队
+  .team-ranking {
+    .box-title {
+      position: relative;
+      z-index: 1;
+      width: 198px;
+      height: 55px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 50px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      background: url(../resource/img/ranking_sprites.png) no-repeat 0 0;
+    }
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -20px;
+      border-collapse: collapse;
+      background-color: #fff3e5;
+      border-radius: 10px;
+      overflow: hidden;
+      thead {
+        .head-blank {
+          height: 20px;
+        }
+        th {
+          padding: 10px;
+          font-size: 12px;
+          font-weight: normal;
+          color: #b69a8f;
+          white-space: nowrap;
+          i {
+            margin-left: 2px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: color .2s ease-out;
+          }
+          i:hover {
+            color: #ef5150;
+          }
+        }
+      }
+      tbody {
+        tr {
+          transition: background-color .2s ease-out;
+        }
+        td {
+          padding: 10px;
+          text-align: center;
+          white-space: nowrap;
+          border-top: 1px solid #f2e2d4;
+        }
+        .num {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          line-height: 26px;
+          font-weight: bold;
+          color: #fff;
+          span {
+            display: block;
+            width: 26px;
+            height: 26px;
+            background: url(../resource/img/ranking_sprites.png) no-repeat 999px 999px;
+            background-color: #f16869;
+            border-radius: 50%;
+          }
+        }
+        .name {
+          color: #6e3e2e;
+        }
+        .sum {
+          font-weight: bold;
+          color: #ef5c5e;
+        }
+        .percentage {
+          color: #968076;
+        }
+        tr:hover {
+          background-color: #fff3e5 - 20%;
+        }
+      }
+      .first, .second, .third {
+        .num {
+          line-height: 28px;
+          span {
+            width: 27px;
+            height: 37px;
+            background-position-y: -65px;
+            background-color: transparent;
+            border-radius: 0;
+          }
+        }
+      }
+      .first {
+        .num {
+          span {
+            background-position-x: 0;
+          }
+        }
+      }
+      .second {
+        .num {
+          span {
+            background-position-x: -58px;
+          }
+        }
+      }
+      .third {
+        .num {
+          span {
+            background-position-x: -115px;
+          }
+        }
+      }
+    }
+  }
+}

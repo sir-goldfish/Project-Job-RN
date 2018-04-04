@@ -1,0 +1,728 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* ---rn公用样式--- */
+.rn-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.rn-main-body {
+  position: relative;
+  min-width: 320px;
+  max-width: 750px;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rn-content-padded {
+  width: 100%;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+/* button */
+.rn-btn {
+  $selfBgColor: $globeColorStress;
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: $selfBgColor;
+  border: 1px solid $selfBgColor;
+  border-radius: .43rem;
+  cursor: pointer;
+  &.rn-btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+  &.rn-btn-sm {
+    padding: .3rem .6rem;
+    font-size: .8rem;
+  }
+  &.rn-btn-block {
+    display: block;
+    width: 100%;
+  }
+  &.rn-btn-outline {
+    color: $selfBgColor;
+    background-color: transparent;
+  }
+  &:active {
+    color: #fff;
+    background-color: $selfBgColor - 25%;
+  }
+}
+
+.rn-btn {
+  $selfBgColor: #10aeff;
+  &.rn-btn-blue {
+    background-color: $selfBgColor;
+    border-color: $selfBgColor;
+    &.rn-btn-outline {
+      color: $selfBgColor;
+      background-color: transparent;
+    }
+    &:active {
+      color: #fff;
+      background-color: $selfBgColor - 25%;
+    }
+  }
+}
+
+.rn-btn {
+  $selfBgColor: #f82d48;
+  &.rn-btn-red {
+    background-color: $selfBgColor;
+    border-color: $selfBgColor;
+    &.rn-btn-outline {
+      color: $selfBgColor;
+      background-color: transparent;
+    }
+    &:active {
+      color: #fff;
+      background-color: $selfBgColor - 25%;
+    }
+  }
+}
+
+.rn-btn {
+  $selfBgColor: #ffbe00;
+  &.rn-btn-yellow {
+    background-color: $selfBgColor;
+    border-color: $selfBgColor;
+    &.rn-btn-outline {
+      color: $selfBgColor;
+      background-color: transparent;
+    }
+    &:active {
+      color: #fff;
+      background-color: $selfBgColor - 25%;
+    }
+  }
+}
+
+.rn-btn {
+  $selfBgColor: #888;
+  &.rn-btn-gray {
+    background-color: $selfBgColor;
+    border-color: $selfBgColor;
+    &.rn-btn-outline {
+      color: $selfBgColor;
+      background-color: transparent;
+    }
+    &:active {
+      color: #fff;
+      background-color: $selfBgColor - 25%;
+    }
+  }
+}
+
+.rn-btn {
+  $selfBgColor: #576b95;
+  &.rn-btn-grayblue {
+    background-color: $selfBgColor;
+    border-color: $selfBgColor;
+    &.rn-btn-outline {
+      color: $selfBgColor;
+      background-color: transparent;
+    }
+    &:active {
+      color: #fff;
+      background-color: $selfBgColor - 25%;
+    }
+  }
+}
+
+.rn-btn {
+  $selfBgColor: #f8f8f8;
+  &.rn-btn-shallowgray {
+    color: #333;
+    background-color: $selfBgColor;
+    border-color: $selfBgColor - 25%;
+    &.rn-btn-outline {
+      color: #333;
+      background-color: transparent;
+    }
+    &:active {
+      color: #333;
+      background-color: $selfBgColor - 35%;
+    }
+  }
+}
+
+.rn-btn-group {
+  .rn-btn {
+    margin: .4rem;
+    &.rn-btn-block {
+      margin: .4rem 0;
+    }
+  }
+}
+
+/* font-color */
+.rn-font-green {
+  $selfFontColor: $globeColorStress;
+  color: $selfFontColor;
+}
+
+.rn-font-blue {
+  $selfFontColor: #10aeff;
+  color: $selfFontColor;
+}
+
+.rn-font-red {
+  $selfFontColor: #f82d48;
+  color: $selfFontColor;
+}
+
+.rn-font-yellow {
+  $selfFontColor: #ffbe00;
+  color: $selfFontColor;
+}
+
+.rn-font-gray {
+  $selfFontColor: #888;
+  color: $selfFontColor;
+}
+
+.rn-font-grayblue {
+  $selfFontColor: #576b95;
+  color: $selfFontColor;
+}
+
+a.rn-font-green {
+  $selfFontColor: $globeColorStress;
+  &:active {
+    color: $selfFontColor - 25%;
+  }
+}
+
+a.rn-font-blue {
+  $selfFontColor: #10aeff;
+  &:active {
+    color: $selfFontColor - 25%;
+  }
+}
+
+a.rn-font-red {
+  $selfFontColor: #f82d48;
+  &:active {
+    color: $selfFontColor - 25%;
+  }
+}
+
+a.rn-font-yellow {
+  $selfFontColor: #ffbe00;
+  &:active {
+    color: $selfFontColor - 25%;
+  }
+}
+
+a.rn-font-gray {
+  $selfFontColor: #888;
+  &:active {
+    color: $selfFontColor - 25%;
+  }
+}
+
+a.rn-font-grayblue {
+  $selfFontColor: #576b95;
+  &:active {
+    color: $selfFontColor - 25%;
+  }
+}
+
+/* rn-input */
+$selfRnInputHeight: 3.7rem;
+$selfRnInputBgColor: #fff;
+$selfRnInputBorderColor: #e5e5e5;
+.rn-input {
+  width: 100%;
+  height: $selfRnInputHeight;
+  padding: 0 1rem;
+  vertical-align: middle;
+  line-height: $selfRnInputHeight;
+  font-size: 1.4rem;
+  border: 1px solid $selfRnInputBorderColor - 25%;
+  border-radius: .43rem;
+  &:focus {
+    border-color: $selfRnInputBorderColor - 35%;
+  }
+  &:disabled {
+    background-color: $selfRnInputBgColor - 20%;
+    cursor: not-allowed;
+  }
+}
+
+textarea.rn-input {
+  height: auto;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  line-height: 1.2;
+}
+
+.rn-input-row {
+  position: relative;
+  display: flex;
+  font-size: 1.4rem;
+  color: #333;
+  & + & {
+    margin-top: 1rem;
+  }
+  .rn-input-box {
+    flex-basis: 100%;
+  }
+  .rn-input-handle {
+    position: absolute;
+    top: 0;
+    right: 1.2rem;
+    height: $selfRnInputHeight;
+    line-height: $selfRnInputHeight;
+    font-size: 1.1rem;
+    a {
+      line-height: 1.2;
+    }
+  }
+  &.with-addon {
+    .rn-input-addon {
+      flex-basis: 30%;
+      height: $selfRnInputHeight;
+      line-height: $selfRnInputHeight;
+      color: #333;
+      .required {
+        &:before {
+          content: '*';
+          display: inline-block;
+          font-size: .9em;
+        }
+      }
+    }
+    .rn-input-box {
+      flex-basis: 70%;
+    }
+  }
+}
+
+/* ---方法类公用(.f-开头)--- */
+/* 清除浮动 */
+.f-clearfix {
+  zoom: 1;
+  &:after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+  }
+}
+
+/* 单行省略号 */
+.f-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 强制换行 */
+.f-word-break {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* 左浮 */
+.f-pull-left {
+  float: left;
+}
+
+/* 右浮 */
+.f-pull-right {
+  float: right;
+}
+
+/* 居中 */
+.f-text-center {
+  text-align: center;
+}
+
+/* 居右 */
+.f-text-right {
+  text-align: right;
+}
+
+/* 居左 */
+.f-text-left {
+  text-align: left;
+}
+
+/* 隐藏 */
+.f-hide {
+  display: none;
+}
+
+/* ---元件类共用(.u-开头)--- */
+/* u-loading-line */
+.u-loading-line {
+  width: 100%;
+  padding: 2.5rem 0;
+  text-align: center;
+  img {
+    width: 30%;
+    vertical-align: middle;
+  }
+}
+
+/* ---模块类共用(.m-开头)--- */
+/* m-input-group */
+.m-input-group {
+  border-top: 1px solid $selfRnInputBorderColor;
+  border-bottom: 1px solid $selfRnInputBorderColor;
+  .rn-input-row {
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin-top: 0;
+    background-color: #fff;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 1.2rem;
+      right: 1.2rem;
+      display: block;
+      height: 0;
+      border-bottom: 1px solid $selfRnInputBorderColor;
+    }
+    .rn-input {
+      border: none;
+      border-radius: 0;
+    }
+    &:last-child {
+      &:after {
+        border-bottom: none;
+      }
+    }
+    &.rn-link-row {
+      &:active {
+        background-color: #fff - 20%;
+      }
+      .rn-input {
+        background-color: transparent;
+      }
+    }
+  }
+  & + & {
+    margin-top: 1.2rem;
+  }
+}
+
+/* m-tab-nav */
+.m-tab-nav {
+  $selfBorderColor: #e5e5e5;
+  $selfBgColor: #fff;
+  display: flex;
+  width: 100%;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  text-align: center;
+  border-top: 1px solid $selfBorderColor;
+  border-bottom: 1px solid $selfBorderColor;
+  box-shadow: 0 .2rem .4rem 0 rgba(11, 1, 3, .2);
+  .tab-nav-item {
+    position: relative;
+    height: 100%;
+    font-size: 1.3rem;
+    color: #333;
+    background-color: $selfBgColor;
+    &:active {
+      color: inherit;
+      background-color: $selfBgColor - 25%;
+    }
+    &.current {
+      &:active {
+        background-color: $selfBgColor;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: .2rem;
+        background-color: #f82d48;
+      }
+    }
+  }
+  .tab-nav-item + .tab-nav-item {
+    border-left: 1px solid $selfBorderColor;
+  }
+}
+
+/* m-empty-container */
+.m-empty-container {
+  padding: 1.2rem 1rem;
+  text-align: center;
+  font-size: 0;
+  &:before {
+    @include globalVerticalMiddleAssist;
+  }
+  .m-empty-inner {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+}
+
+/* m-fixed-foot */
+.m-fixed-foot {
+  $selfBorderColor: #c6c6c8;
+  $selfBgColor: #f7f7fa;
+  display: flex;
+  width: 100%;
+  height: 4.2rem;
+  line-height: 4.2rem;
+  text-align: center;
+  border-top: 1px solid $selfBorderColor;
+  .handle-btn {
+    height: 100%;
+    font-size: 1.3rem;
+    color: #333;
+    background-color: $selfBgColor;
+    &:active {
+      color: inherit;
+      background-color: $selfBgColor - 25%;
+    }
+  }
+  .handle-btn + .handle-btn {
+    border-left: 1px solid $selfBorderColor;
+  }
+}
+
+/* m-default-dialog-form */
+.m-default-dialog-form {
+  width: 28.7rem;
+  padding: 1rem 1rem .25rem 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #fff;
+  .form-space {
+    padding: .8rem 0;
+    text-align: center;
+    line-height: 1.2;
+    font-size: .9rem;
+    color: #999;
+  }
+  .form-item {
+    .title {
+      float: left;
+      width: 8rem;
+      margin-right: -8rem;
+      line-height: 3rem;
+      text-align: right;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+    .star-title:before {
+      content: '*';
+      display: inline-block;
+      margin-right: .2rem;
+      color: #f82d48;
+    }
+    .input-wrapper {
+      margin-left: 8.2rem;
+      line-height: 3rem;
+      .hint-info {
+        line-height: 1.8;
+        font-size: .9rem;
+      }
+      .notice {
+        margin-top: .25rem;
+        line-height: 1.2;
+        font-size: .6rem;
+        color: #999;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+      .input-box {
+        position: relative;
+      }
+      .input-box + .input-box {
+        margin-top: .5rem;
+      }
+      .input-label {
+        font-weight: normal;
+        margin-bottom: 0;
+        input[type="radio"], input[type="checkbox"] {
+          margin-right: .2rem;
+          vertical-align: middle;
+        }
+      }
+      .input-label + .input-label {
+        margin-left: .75rem;
+      }
+      input[type="text"], input[type="password"] {
+        width: 16.1rem;
+        height: 3rem;
+        padding: 0 .5rem;
+        vertical-align: top;
+        border: .05rem solid #ddd;
+        transition: box-shadow .2s ease-out;
+        &:focus {
+          box-shadow: 0 0 .3rem 0 rgba(14, 5, 10, 0.2);
+        }
+      }
+      textarea {
+        resize: none;
+        width: 16.1rem;
+        padding: .3rem .5rem;
+        vertical-align: bottom;
+        border: .05rem solid #ddd;
+        transition: box-shadow .2s ease-out;
+        &:focus {
+          box-shadow: 0 0 .3rem 0 rgba(14, 5, 10, 0.2);
+        }
+      }
+      select {
+        width: 16.1rem;
+        height: 3rem;
+        padding: 0 .5rem;
+        vertical-align: top;
+        font-size: inherit;
+        color: inherit;
+        border: .05rem solid #ddd;
+        transition: box-shadow .2s ease-out;
+        &:focus {
+          box-shadow: 0 0 .3rem 0 rgba(14, 5, 10, 0.2);
+        }
+      }
+      .code-input {
+        position: relative;
+        width: 16.1rem;
+        input[type='text'] {
+          padding-right: 8rem;
+        }
+        .code-btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          width: 7.5rem;
+          height: 3rem;
+          line-height: 3rem;
+          text-align: center;
+          font-size: .6rem;
+          color: #666;
+          background-color: #eee;
+          border: .05rem solid #ddd;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    &.no-title {
+      .input-wrapper {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        margin-left: 0;
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .form-item + .form-item {
+    margin-top: 1rem;
+  }
+}
+
+/* ---个性化--- */
+/* artdialog个性 */
+.aui_dialog {
+  border-collapse: collapse;
+  border-radius: .3rem;
+  overflow: hidden;
+  box-shadow: 0 0 .5rem 0 rgba(8, 8, 8, .3);
+  .aui_titleBar {
+    position: relative;
+    background-color: $globeColorStress;
+    .aui_title {
+      .dialog-brand-head {
+        position: relative;
+        width: 100%;
+        height: 6.25rem;
+        text-align: center;
+        color: #fff;
+        background-color: $globeColorStress;
+        h3 {
+          padding-top: 1.2rem;
+          margin-bottom: .75rem;
+          line-height: 1;
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+        p {
+          line-height: 1;
+          font-size: 1.2rem;
+          font-weight: normal;
+        }
+      }
+    }
+    .aui_close {
+      position: absolute;
+      top: 0;
+      right: .75rem;
+      font-size: 3rem;
+      color: #fff;
+      outline: none;
+    }
+  }
+  .aui_main {
+    background-color: #fff;
+  }
+  .aui_loading {
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 0;
+    background: #fff url("../resource/img/par_loading.gif") no-repeat center;
+    background-size: 6rem auto;
+  }
+  .aui_footer {
+    .aui_buttons {
+      padding: 1rem 0 2rem 0;
+      text-align: center;
+      background-color: #fff;
+      & > * {
+        display: inline-block;
+        min-width: 3.25rem;
+        max-width: 100%;
+        padding: .75rem 1.5rem;
+        margin: 0 .5rem;
+        font-size: 1.2rem;
+        background-color: #ddd;
+        border: none;
+        border-radius: .25rem;
+        &:active {
+          background-color: #ddd - 25%;
+        }
+      }
+      .aui_state_highlight {
+        color: #fff;
+        background-color: $globeColorStress;
+        &:active {
+          background-color: $globeColorStress - 25%;
+        }
+      }
+    }
+  }
+}

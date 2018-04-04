@@ -1,0 +1,167 @@
+/* html */
+ <!--service-brand-->
+    <section class="service-brand tag-section f-clearfix sme-inner">
+        <div class="tag-container f-clearfix">
+            <div class="tag-title">
+                <div class="title">商标注册</div>
+                <div class="desc">专业服务，效率高，拿证快</div>
+            </div>
+            <div class="tag-content">
+                <div class="content-container">
+                    <ul class="list f-clearfix">
+                        <li class="hot-card content-card"
+                            style="background:url(resource/img/sme_service_bgi27.jpg) no-repeat center;">
+                            <div class="bg"></div>
+                            <div class="card-init">
+                                <h3 class="title">商标担保注册</h3>
+                                <p class="desc">
+                                    省心担保<br>注册不成功退全款
+                                </p>
+                                <div class="price"><span class="num">890</span><span class="unit">/件</span></div>
+                            </div>
+                            <div class="card-hover">
+                                <a href="javascript:popApplyDialog();alert('将弹出框里的申请服务后的内容换成该块的title');">立即申办</a>
+                            </div>
+                        </li>
+                        <li class="content-card"
+                            style="background:url(resource/img/sme_service_bgi28.jpg) no-repeat center;">
+                            <div class="bg"></div>
+                            <div class="card-init">
+                                <h3 class="title">商标无忧注册</h3>
+                                <p class="desc">
+                                    担保升级<br>注册后3月内不满意也可退全款
+                                </p>
+                                <div class="price"><span class="num">1300</span><span class="unit">/件</span></div>
+                            </div>
+                            <div class="card-hover">
+                                <a href="javascript:popApplyDialog();alert('将弹出框里的申请服务后的内容换成该块的title');">立即申办</a>
+                            </div>
+                        </li>
+                        <li class="content-card"
+                            style="background:url(resource/img/sme_service_bgi29.jpg) no-repeat center;">
+                            <div class="bg"></div>
+                            <div class="card-init">
+                                <h3 class="title">商标加急注册</h3>
+                                <p class="desc">
+                                    急速申报<br>官方回执即刻到手
+                                </p>
+                                <div class="price"><span class="num">1300</span><span class="unit">/件</span></div>
+                            </div>
+                            <div class="card-hover">
+                                <a href="javascript:popApplyDialog();alert('将弹出框里的申请服务后的内容换成该块的title');">立即申办</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+/* style */
+/* service-brand */
+.service-brand {
+  .tag-container {
+    .tag-title {
+      width: 170px;
+      padding-right: 56px;
+    }
+  }
+  .list {
+    margin-left: -10px;
+  }
+  .content-card {
+    position: relative;
+    float: left;
+    width: 291px;
+    height: 291px;
+    margin-top: 46px;
+    margin-left: 10px;
+    text-align: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 0 rgba(14, 5, 10, .3);
+    .bg {
+      width: 100%;
+      height: 100%;
+      background-color: #040404;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      transition: opacity .4s ease-out;
+    }
+    .card-init, .card-hover {
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      transition: height .4s ease-out;
+    }
+    .card-init {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      color: #363636;
+      .title {
+        margin-top: 70px;
+        margin-bottom: 25px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .desc {
+        margin-bottom: 25px;
+        line-height: 24px;
+        font-size: 14px;
+      }
+      .price {
+        font-size: 14px;
+        font-weight: bold;
+        color: #f82d48;
+        .num {
+          font-size: 30px;
+        }
+        .num:before {
+          content: '￥';
+          margin-right: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+    .card-hover {
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      a {
+        display: block;
+        width: 100px;
+        height: 35px;
+        margin: 128px auto 0 auto;
+        line-height: 35px;
+        color: #fff;
+        background-color: #f82d48;
+        border-radius: 35px;
+        &:hover {
+          background-color: #f82d48 + 20%;
+        }
+      }
+    }
+    &:hover {
+      .bg {
+        opacity: .45;
+        filter: alpha(opacity=45);
+      }
+      .card-init {
+        height: 0;
+      }
+      .card-hover {
+        height: 100%;
+      }
+    }
+  }
+  .hot-card:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    display: block;
+    width: 88px;
+    height: 86px;
+    background: url(../resource/img/sme_service_sprites3.png) no-repeat 0 -393px;
+  }
+}

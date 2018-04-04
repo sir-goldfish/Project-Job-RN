@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* error-container */
+.error-container {
+  height: 550px;
+  background: #b5d4d9 url(../resource/img/bp_404bgi.jpg) no-repeat center bottom;
+  .error-info {
+    padding-top: 89px;
+    text-align: center;
+    .icon {
+      width: 273px;
+      height: 112px;
+      margin: 0 auto;
+      background: url(../resource/img/bp_404icon.png) no-repeat center;
+    }
+    .info-desc {
+      margin-top: 36px;
+      font-size: 18px;
+      color: #00736d;
+    }
+    .handle-group {
+      margin-top: 20px;
+      .handle-btn {
+        height: 30px;
+        padding: 0 30px;
+        margin: 0 10px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        border-radius: 30px;
+        &.go-home {
+          background-color: #07c8bb;
+          &:hover {
+            background-color: #07c8bb - 15%;
+          }
+          &:active {
+            background-color: #07c8bb - 30%;
+          }
+        }
+        &.go-back {
+          background-color: #404d5a;
+          &:hover {
+            background-color: #404d5a - 15%;
+          }
+          &:active {
+            background-color: #404d5a - 30%;
+          }
+        }
+      }
+    }
+  }
+}

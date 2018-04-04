@@ -1,0 +1,34 @@
+/* content-body */
+.content-body .top-notice { margin-bottom: 40px; font-size: 13px; color: #999; }
+
+.content-body .top-notice i { margin-right: 5px; font-size: 16px; color: #fdb42a; }
+
+.content-body .entry-container { padding-bottom: 30px; color: #666; }
+
+.content-body .entry-content .entry-steps .steps-path { padding: 28px 0 70px 0; }
+
+.content-body .entry-content .entry-steps .steps-path ul { text-align: center; font-size: 0; }
+
+.content-body .entry-content .entry-steps .steps-path li { display: inline-block; font-size: 13px; color: #cea975; }
+
+.content-body .entry-content .entry-steps .steps-path li span { display: inline-block; padding: 10px 15px; border: 1px dashed #cea975; }
+
+.content-body .entry-content .entry-steps .steps-path li + li:before { content: ''; display: inline-block; width: 24px; height: 10px; margin: 0 20px; background: url(../resource/img/sme_member_sprites1.png) no-repeat 0 -51px; }
+
+.content-body .entry-content .entry-files .files-title { font-size: 15px; font-weight: bold; color: #333; }
+
+.content-body .entry-content .entry-files .files-list { padding: 35px 0; font-size: 13px; }
+
+.content-body .entry-content .entry-files .files-list ul { margin: -13px 0 0 -38px; }
+
+.content-body .entry-content .entry-files .files-list li { float: left; margin: 13px 0 0 38px; }
+
+.content-body .entry-content .entry-files .files-list li i { margin-right: 2px; font-size: inherit; color: #cea975; }
+
+.content-body .entry-content .btn-group { padding: 20px 0; text-align: center; }
+
+.content-body .entry-content .btn-group .entry-btn { height: 30px; padding: 0 20px; line-height: 30px; color: #fff; background-color: #f78e24; border-radius: 5px; }
+
+.content-body .entry-content .btn-group .entry-btn:hover { background-color: #e87f15; }
+
+.content-body .entry-content .btn-group .entry-btn:active { background-color: #d97006; }

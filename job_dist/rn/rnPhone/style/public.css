@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* ---全局样式重置--- */
+* { box-sizing: border-box; margin: 0; padding: 0; border: 0; }
+
+*:before, *:after { box-sizing: border-box; }
+
+/* 媒体查询设置根元素字体 */
+html { font-size: 10px; }
+
+@media screen and (min-width: 321px) and (max-width: 375px) { html { font-size: 11px; } }
+
+@media screen and (min-width: 376px) and (max-width: 414px) { html { font-size: 12px; } }
+
+@media screen and (min-width: 415px) and (max-width: 639px) { html { font-size: 15px; } }
+
+@media screen and (min-width: 640px) { html { font-size: 20px; } }
+
+html { min-width: 320px; max-width: 720px; min-height: 100%; margin: 0 auto; }
+
+body { min-height: 100%; line-height: 1; font-family: 'Microsoft YaHei', Helvitica, Verdana, Tohoma, Arial, san-serif; font-size: 1rem; color: #666; background-color: #fff; }
+
+a { line-height: 1; text-decoration: none; color: #666; -webkit-tap-highlight-color: transparent; }
+
+ul, ol, dl { list-style: none; }
+
+th, td { word-wrap: break-word; word-break: break-all; }
+
+fieldset, img { border: none; }
+
+input, button, textarea, select { outline: none; font-size: 1rem; -webkit-tap-highlight-color: transparent; }
+
+em { font-style: normal; }
+
+span { display: inline-block; }
+
+.iconfont { font-size: inherit; }
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color: #c9c9c9; }
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #c9c9c9; }
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #c9c9c9; }
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #c9c9c9; }
+
+textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color: #c9c9c9; }
+
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #c9c9c9; }
+
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #c9c9c9; }
+
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #c9c9c9; }
+
+/* ---rn公用样式--- */
+.rn-main-body { min-width: 320px; max-width: 720px; min-height: 100%; margin-left: auto; margin-right: auto; }
+
+.rn-wrapper { width: 100%; padding-left: 1rem; padding-right: 1rem; }
+
+/* ---方法类公用(.f-开头)--- */
+/* 清除浮动 */
+.f-clearfix { zoom: 1; }
+
+.f-clearfix:after { content: '.'; display: block; visibility: hidden; clear: both; height: 0; font-size: 0; }
+
+/* 单行省略号 */
+.f-ellipsis { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+/* 强制换行 */
+.f-word-break { word-wrap: break-word; word-break: break-all; }
+
+/* 左浮 */
+.f-pull-left { float: left; }
+
+/* 右浮 */
+.f-pull-right { float: right; }
+
+/* 居中 */
+.f-text-center { text-align: center; }
+
+/* ---布局类公用(.g-开头)--- */
+.g-fixed-wrapper { position: fixed; left: 0; width: 100%; }
+
+.g-fixed-wrapper .g-fixed-inner { min-width: 320px; max-width: 720px; margin-left: auto; margin-right: auto; }

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+body { background-color: #f7f7f7; }
+
+/* m-crumbs-nav */
+.m-crumbs-nav { margin-top: 10px; margin-bottom: 10px; }
+
+/* content-container */
+.content-container { margin-bottom: 10px; }
+
+/* main-content-container */
+.main-content-container { float: left; width: 933px; }
+
+.main-content-container .article-container { min-height: 1154px; padding: 50px 50px 0 50px; background-color: #fff; }
+
+.main-content-container .article-container .article-title { margin-bottom: 25px; text-align: center; line-height: 22px; font-size: 18px; color: #363636; }
+
+.main-content-container .article-container .tools { margin-bottom: 30px; text-align: center; font-size: 12px; }
+
+.main-content-container .article-container .tools > * { margin: 0 30px; vertical-align: top; }
+
+.main-content-container .article-container .tools i { margin-right: 5px; vertical-align: -1px; font-size: 14px; }
+
+.main-content-container .article-container .article-body { padding-bottom: 40px; line-height: 30px; color: #666; }
+
+.main-content-container .article-container .article-body img { display: block; max-width: 45%; margin: 10px auto; }
+
+.main-content-container .article-container .article-foot { padding: 25px 0 40px 0; font-size: 12px; border-top: 1px solid #ddd; }
+
+.main-content-container .article-container .article-foot a span { vertical-align: top; color: #363636; }
+
+.main-content-container .article-container .article-foot .prev { float: left; }
+
+.main-content-container .article-container .article-foot .next { float: right; }
+
+.main-content-container .article-container .article-foot a:hover { color: #f78e24; }
+
+.main-content-container .article-container .article-foot a:hover span { color: #f78e24; }
+
+/* aside-content-container */
+.aside-content-container { float: right; width: 257px; }
+
+.aside-content-container .aside-title { margin-bottom: 20px; line-height: 18px; font-size: 16px; color: #363636; }
+
+.aside-content-container .aside-title span { padding-left: 9px; border-left: 3px solid #f78e24; }
+
+.aside-content-container .other-case-container { width: 100%; background-color: #fff; }
+
+.aside-content-container .other-case-container .inner { padding: 20px 0; margin: 0 15px; }
+
+.aside-content-container .other-case-container .case-card { position: relative; padding-bottom: 10px; font-size: 12px; }
+
+.aside-content-container .other-case-container .case-card .pic { display: block; width: 225px; height: 168px; margin-bottom: 15px; border: 1px solid #eee; overflow: hidden; -webkit-transition: border-color .3s ease-out; transition: border-color .3s ease-out; }
+
+.aside-content-container .other-case-container .case-card .pic img { width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-content-container .other-case-container .case-card .pic:hover { border-color: #f78e24; }
+
+.aside-content-container .other-case-container .case-card .pic:hover img { -webkit-transform: scale(1.08); -ms-transform: scale(1.08); transform: scale(1.08); }
+
+.aside-content-container .other-case-container .case-card .title { max-width: 100%; margin-bottom: 14px; font-size: 15px; font-weight: bold; color: #333; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-content-container .other-case-container .case-card .title:hover { color: #f78e24; -webkit-transform: translateX(5px); -ms-transform: translateX(5px); transform: translateX(5px); }
+
+.aside-content-container .other-case-container .case-card .desc-item { line-height: 14px; color: #333; }
+
+.aside-content-container .other-case-container .case-card .desc-item .item-title { float: left; width: 50px; margin-right: -50px; }
+
+.aside-content-container .other-case-container .case-card .desc-item .item-content { margin-left: 50px; }
+
+.aside-content-container .other-case-container .case-card .desc-item + .desc-item { margin-top: 10px; }
+
+.aside-content-container .other-case-container .case-card .price { color: #ff0000; }
+
+.aside-content-container .other-case-container .case-card .price .num:before { content: '¥'; display: inline-block; margin-right: 1px; }
+
+.aside-content-container .other-case-container .case-card .org { color: #999; }
+
+.aside-content-container .other-case-container .case-card.self:after { content: '自营'; position: absolute; top: 0; right: 0; display: block; padding: 5px 9px; font-size: 14px; color: #fff; background-color: #f78e24; }
+
+.aside-content-container .other-case-container .case-card + .case-card { margin-top: 20px; }
+
+/* like-section */
+.like-section { margin-bottom: 10px; background-color: #fff; }
+
+.like-section .section-title { padding: 18px 25px 26px 25px; }
+
+.like-section .section-title .text { float: left; padding-left: 7px; line-height: 18px; font-size: 16px; color: #666; border-left: 3px solid #f78e24; }
+
+.like-section .section-body { margin: 0 24px; }
+
+.like-section .list { margin-left: -20px; }
+
+.like-section .list li { float: left; width: 175px; margin-bottom: 20px; margin-left: 20px; }
+
+.like-section .list li .pic { width: 100%; height: 175px; margin-bottom: 12px; overflow: hidden; }
+
+.like-section .list li .pic img { width: 100%; height: 100%; -webkit-transition: all .2s ease-out; transition: all .2s ease-out; }
+
+.like-section .list li .pic:hover img { -webkit-transform: scale(0.95); -ms-transform: scale(0.95); transform: scale(0.95); }
+
+.like-section .list li .desc .title { max-width: 100%; margin-bottom: 10px; color: #666; }
+
+.like-section .list li .desc .title:hover { color: #f78e24; }
+
+.like-section .list li .desc .price { color: #f78e24; }
+
+.like-section .list li .desc .price .num { font-size: 16px; }
+
+.like-section .list li .desc .price .num:before { content: '¥'; display: inline-block; font-size: 12px; }
+
+.like-section .list li .desc .price .unit { font-size: 14px; }
+
+.like-section .list li .desc .info { padding: 10px 0; font-size: 12px; }
+
+.like-section .list li .desc .info .num { float: left; }
+
+.like-section .list li .desc .info .area { float: right; }
+
+.like-section .list li .desc .info .area i { font-size: 14px; }

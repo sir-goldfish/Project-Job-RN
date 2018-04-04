@@ -1,0 +1,65 @@
+/* main-body */
+.main-body { padding: 10px 0; background-color: #f7f7f7; }
+
+/* order-pay-container */
+.order-pay-container { padding: 44px 0 135px 0; background-color: #fff; }
+
+.order-pay-container .container-head { margin: 0 45px 28px 30px; color: #333; line-height: 18px; }
+
+.order-pay-container .container-head .title { float: left; padding-left: 10px; font-size: 16px; font-weight: bold; border-left: 5px solid #f78e24; }
+
+.order-pay-container .container-head .notice { float: right; color: #333; }
+
+.order-pay-container .container-head .notice i { margin-right: 6px; font-size: 15px; color: #fc2837; }
+
+.order-pay-container .pay-box { margin: 0 45px; color: #333; }
+
+.order-pay-container .pay-box .pay-table { float: left; width: 533px; height: 293px; font-size: 13px; border: 1px solid #ddd; }
+
+.order-pay-container .pay-box .pay-table .stress { color: #f00; }
+
+.order-pay-container .pay-box .pay-table table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+
+.order-pay-container .pay-box .pay-table th, .order-pay-container .pay-box .pay-table td { padding: 10px; text-align: center; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+
+.order-pay-container .pay-box .pay-table .cell-name { width: 37%; }
+
+.order-pay-container .pay-box .pay-table .cell-num { width: 25%; }
+
+.order-pay-container .pay-box .pay-table .cell-money { width: 37%; border-right: none; }
+
+.order-pay-container .pay-box .pay-table .table-body { height: 225px; overflow: auto; }
+
+.order-pay-container .pay-box .pay-table .table-body tr:hover { background: #f5f5f5; }
+
+.order-pay-container .pay-box .pay-table .table-foot td { border-top: 1px solid #ddd; border-bottom: none; }
+
+.order-pay-container .pay-box .pay-table .table-foot .cell-sum { text-align: right; border-right: none; }
+
+.order-pay-container .pay-box .pay-card { float: right; width: 574px; height: 293px; margin-left: -1px; border: 1px solid #ddd; }
+
+.order-pay-container .pay-box .pay-card .card-title { margin-top: -1px; text-align: center; border-top: 2px solid #f78e24; }
+
+.order-pay-container .pay-box .pay-card .card-title .text { width: 182px; height: 37px; line-height: 37px; font-weight: bold; color: #fff; background: url(../resource/img/sme_bgi2.png) no-repeat center; }
+
+.order-pay-container .pay-box .pay-card .card-body { margin: 26px 36px 0 36px; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-info { float: left; width: 270px; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-info .info-item .stress { color: #f00; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-info .info-item .title { float: left; width: 72px; margin-right: -72px; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-info .info-item .desc { margin-left: 73px; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-info .info-item + .info-item { margin-top: 22px; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-qrcode { float: right; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-qrcode .title { margin-bottom: 12px; font-weight: bold; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-qrcode .title i { margin-right: 5px; vertical-align: middle; font-weight: normal; color: #48af40; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-qrcode .qrcode-pic { padding: 10px; margin-left: 20px; background-color: #fff; }
+
+.order-pay-container .pay-box .pay-card .card-body .order-qrcode .qrcode-pic img { display: block; width: 140px; height: 140px; }

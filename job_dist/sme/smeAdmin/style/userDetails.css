@@ -1,0 +1,261 @@
+/* base container style */
+.wrapper-content { padding: 10px; }
+
+.main-body-wrapper { margin-left: 0; margin-right: 0; }
+
+.main-container { padding-left: 0; padding-right: 0; }
+
+.aside-container { padding-left: 10px; padding-right: 0; }
+
+.aside-container-inner { padding-left: 0; padding-right: 0; }
+
+/* user-info-bar */
+.user-info-bar { height: 105px; padding-top: 22px; padding-bottom: 22px; background-color: #fff; border-radius: 6px; }
+
+.user-info-bar .avatar { width: 58px; height: 58px; margin: 0 -60px 0 10px; border: 1px solid #c9c9c9; border-radius: 50%; overflow: hidden; }
+
+.user-info-bar .avatar img { width: 100%; height: 100%; border-radius: 50%; }
+
+.user-info-bar .content { margin-left: 98px; }
+
+.user-info-bar .content .info-desc { margin-bottom: 20px; color: #999; }
+
+.user-info-bar .content .info-desc .desc-item + .desc-item { margin-left: 36px; }
+
+.user-info-bar .content .info-btm { font-weight: bold; color: #333; }
+
+.user-info-bar .content .info-btm .info-money .num { margin: 0 6px; color: #f00; }
+
+.user-info-bar .content .info-btm .info-money + .info-money { margin-left: 30px; }
+
+.user-info-bar .content .info-btm .total-buy { margin-left: 30px; }
+
+/* user-info-tab */
+.user-info-tab { padding-top: 26px; margin-top: 10px; color: #333; background-color: #fff; border-radius: 6px; }
+
+.user-info-tab .tab-nav { border-bottom: 2px solid #ddd; }
+
+.user-info-tab .tab-nav ul { margin: 0 0 -2px 0; padding: 0; list-style: none; }
+
+.user-info-tab .tab-nav .nav-item { float: left; padding: 0 22px 14px 22px; border-bottom: 2px solid transparent; cursor: default; }
+
+.user-info-tab .tab-nav .nav-item:hover { color: #31a0f6; }
+
+.user-info-tab .tab-nav .nav-item.current { font-weight: bold; color: #31a0f6; border-bottom-color: #31a0f6; }
+
+.user-info-tab .tab-content { min-height: 500px; padding-top: 15px; padding-bottom: 15px; }
+
+/* tab content-item */
+.user-info-tab .content-item .table-responsive .empty-text { padding: 10px 0; text-align: center; color: #999; }
+
+.user-info-tab .content-item .table th, .user-info-tab .content-item .table td { text-align: center; }
+
+.user-info-tab .content-item .table th { background-color: transparent; }
+
+/* tab content-details */
+.user-info-tab .content-details .base-info { padding: 18px 40px; background-color: #f4f9fb; }
+
+.user-info-tab .content-details .base-info .base-info-inner { margin-top: -18px; }
+
+.user-info-tab .content-details .base-info .info-item { display: inline-block; padding-left: 0; padding-right: 10px; margin-top: 18px; vertical-align: top; }
+
+.user-info-tab .content-details .info-list { padding: 30px 0; }
+
+.user-info-tab .content-details .info-list .info-item .title { width: 110px; margin-right: -110px; text-align: right; }
+
+.user-info-tab .content-details .info-list .info-item .desc { margin-left: 115px; color: #999; }
+
+.user-info-tab .content-details .info-list .info-item + .info-item { margin-top: 18px; }
+
+/* tab content-info */
+.user-info-tab .content-info .info-container .container-title { font-size: 15px; font-weight: bold; }
+
+.user-info-tab .content-info .info-container .container-body { padding: 26px 0; }
+
+.user-info-tab .content-info .base-info .container-body-inner { margin-top: -18px; }
+
+.user-info-tab .content-info .base-info .info-item { display: inline-block; padding-left: 0; padding-right: 10px; margin-top: 18px; vertical-align: top; }
+
+.user-info-tab .content-info .base-info .info-item .title { width: 103px; margin-right: -103px; text-align: right; }
+
+.user-info-tab .content-info .base-info .info-item .desc { margin-left: 106px; color: #999; }
+
+.user-info-tab .content-info .other-info .info-item .title { width: 103px; margin-right: -103px; text-align: right; }
+
+.user-info-tab .content-info .other-info .info-item .desc { margin-left: 106px; color: #999; }
+
+.user-info-tab .content-info .other-info .info-item + .info-item { margin-top: 18px; }
+
+/* chance-card */
+.chance-card { padding-bottom: 42px; margin-top: 10px; color: #333; background-color: #fff; border-radius: 6px; }
+
+.chance-card .card-head { padding-top: 27px; padding-bottom: 27px; }
+
+.chance-card .card-head .head-btn { font-weight: bold; }
+
+.chance-card .card-head .head-btn .icon { margin-right: 5px; vertical-align: -1px; font-size: 15px; font-weight: normal; }
+
+.chance-card .card-head .head-btn + .head-btn { margin-left: 18px; }
+
+.chance-card .card-head .toggle-case-btn { font-weight: normal; }
+
+.chance-card .card-head .title { position: relative; }
+
+.chance-card .card-head .title .text { margin-right: 10px; font-size: 15px; font-weight: bold; }
+
+.chance-card .card-head .tools-group { line-height: 30px; }
+
+.chance-card .card-info { padding-top: 10px; padding-bottom: 20px; }
+
+.chance-card .card-info .info-item + .info-item { margin-top: 20px; }
+
+.chance-card .card-info .brand-pic { position: relative; width: 75px; height: 75px; border: 1px solid #c9c9c9; overflow: hidden; }
+
+.chance-card .card-info .brand-pic p { position: absolute; top: 50%; left: 50%; width: 100%; margin: 0; padding: 0; }
+
+.chance-card .card-info .brand-pic img { position: absolute; top: -50%; left: -50%; display: block; width: 100%; }
+
+.chance-card .card-info .brand-pic img.hidden-img { position: static; visibility: hidden; }
+
+.chance-card .card-tree { display: none; padding-top: 30px; padding-bottom: 30px; margin-left: 9px; margin-bottom: 16px; border-left: 3px solid #ddd; }
+
+.chance-card .card-tree .tree-branch { position: relative; padding-left: 23px; }
+
+.chance-card .card-tree .tree-branch .branch-inner { padding: 16px 24px; background-color: #f4f9fb; }
+
+.chance-card .card-tree .tree-branch .stress { font-weight: normal; color: #f00; }
+
+.chance-card .card-tree .tree-branch .head { position: relative; margin-bottom: 22px; }
+
+.chance-card .card-tree .tree-branch .head .info-item + .info-item { margin-left: 13px; }
+
+.chance-card .card-tree .tree-branch .head .head-btn { margin-left: 24px; font-weight: bold; }
+
+.chance-card .card-tree .tree-branch .head .status { margin-right: 30px; font-weight: bold; color: #999; }
+
+.chance-card .card-tree .tree-branch .desc-details { margin-top: 15px; padding: 15px 0; color: #666; border-top: 2px solid #d8d8d8; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item ul { list-style: none; padding: 0; margin: 0; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item .item-head { color: #333; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item .item-body { margin-top: 10px; padding: 0 10px; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-info .content-text { color: #999; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-type .list-item { font-size: 0; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-type .list-item > * { display: inline-block; vertical-align: top; font-size: 13px; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-type .list-item .type-content .type-num { color: #333; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-type .list-item .type-content .type-sum { margin-left: 22px; color: #999; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-type .list-item .type-handle { text-align: right; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-type .list-item .type-handle .handle-btn { margin-left: 12px; font-weight: bold; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item.details-type .list-item + .list-item { padding-top: 10px; margin-top: 10px; border-top: 1px dashed #d8d8d8; }
+
+.chance-card .card-tree .tree-branch .desc-details .details-item + .details-item { margin-top: 15px; }
+
+.chance-card .card-tree .tree-branch + .tree-branch { margin-top: 30px; }
+
+.chance-card .card-tree .case-branch:before { content: ''; position: absolute; top: 14px; left: -11px; display: block; width: 21px; height: 21px; background: url(../resource/img/smea_icon_sprites.png) no-repeat 0 0; }
+
+.chance-card .card-tree .case-branch-even:before { background-position-x: -23px; }
+
+.chance-card .card-tree .case-branch.front-case .head { padding-left: 10px; }
+
+.chance-card .card-tree .case-branch.front-case .head:before { content: ''; position: absolute; top: 0; left: -15px; width: 20px; height: 23px; background: url(../resource/img/smea_icon4.png) no-repeat center; }
+
+.chance-card .card-tree .case-branch.backstage-case .head { padding-left: 10px; }
+
+.chance-card .card-tree .case-branch.backstage-case .head:before { content: ''; position: absolute; top: 0; left: -15px; width: 20px; height: 23px; background: url(../resource/img/smea_icon5.png) no-repeat center; }
+
+.chance-card .card-foot-info { color: #999; }
+
+.chance-card .card-foot-info .info-item .icon { margin-right: 6px; font-size: 14px; }
+
+.chance-card .card-foot-info .info-item + .info-item { margin-left: 30px; }
+
+.chance-card.front-chance .card-head .title { padding-left: 25px; }
+
+.chance-card.front-chance .card-head .title:before { content: ''; position: absolute; top: 4px; left: 0; width: 20px; height: 23px; background: url(../resource/img/smea_icon4.png) no-repeat center; }
+
+.chance-card.backstage-chance .card-head .title { padding-left: 25px; }
+
+.chance-card.backstage-chance .card-head .title:before { content: ''; position: absolute; top: 4px; left: 0; width: 20px; height: 23px; background: url(../resource/img/smea_icon5.png) no-repeat center; }
+
+.chance-card.transaction-card .card-info .info-list { margin: -15px 0 0 -30px; font-size: 0; }
+
+.chance-card.transaction-card .card-info .info-item { display: inline-block; margin: 15px 0 0 30px; vertical-align: top; font-size: 13px; }
+
+.chance-card.transaction-card .card-tree .tree-branch .desc .brand-pic { width: 150px; vertical-align: top; border: 1px solid #ddd; }
+
+.chance-card.transaction-card .card-tree .tree-branch .desc .desc-list { margin-bottom: 0; }
+
+.chance-card.transaction-card .card-tree .tree-branch .desc .desc-list .desc-item + .desc-item { margin-top: 15px; }
+
+/* add-chance-wrapper */
+.add-chance-wrapper { padding-top: 30px; padding-bottom: 30px; text-align: center; }
+
+/* consultant-info-bar */
+.consultant-info-bar { height: 105px; padding-top: 22px; padding-bottom: 22px; color: #333; background-color: #fff; border-radius: 6px; }
+
+.consultant-info-bar .head-btn { margin-left: 26px; font-weight: bold; }
+
+.consultant-info-bar .head { margin-bottom: 17px; }
+
+.consultant-info-bar .content .name i { margin-right: 6px; vertical-align: -1px; font-size: 17px; color: #00bbb2; }
+
+/* transaction-record */
+.transaction-record { padding-top: 25px; padding-bottom: 25px; margin-top: 10px; color: #333; background-color: #fff; border-radius: 6px; }
+
+.transaction-record .transaction-info { padding-bottom: 22px; border-bottom: 1px dashed #ddd; }
+
+.transaction-record .transaction-info .info-item { margin-top: 13px; }
+
+.transaction-record .transaction-info .info-item .ending-time { color: #f39700; }
+
+.transaction-record .transaction-info .self-btn-group { margin-top: 18px; }
+
+.transaction-record .transaction-info .self-btn-group .btn { margin-top: 10px; }
+
+.transaction-record .transaction-info .self-btn-group .btn i { margin-right: 5px; vertical-align: -1px; font-size: 17px; }
+
+.transaction-record .transaction-info .self-btn-group .btn + .btn { margin-left: 10px; }
+
+.transaction-record .transaction-info .self-btn-group .self-l-btn { width: 132px; }
+
+.transaction-record .record-text .title { padding: 20px 0 12px 0; font-size: 14px; }
+
+.transaction-record .record-text .desc { margin-bottom: 12px; line-height: 29px; color: #666; }
+
+.transaction-record .record-text .btm { color: #666; }
+
+.transaction-record .record-text .btm span { margin: 0 6px; color: #999; }
+
+/* transaction-handle-container */
+.transaction-handle-container { padding-top: 14px; padding-bottom: 24px; margin-top: 10px; color: #333; background-color: #fff; border-radius: 6px; }
+
+.transaction-handle-container .btn { margin-top: 10px; }
+
+.transaction-handle-container .btn i { margin-right: 5px; vertical-align: -1px; font-size: 17px; }
+
+.transaction-handle-container .btn + .btn { margin-left: 10px; }
+
+/* other-chance */
+.other-chance { padding-top: 24px; padding-bottom: 24px; margin-top: 10px; color: #333; background-color: #fff; border-radius: 6px; }
+
+.other-chance .title { margin-bottom: 10px; font-size: 15px; font-weight: bold; }
+
+.other-chance .other-chance-table th, .other-chance .other-chance-table td { text-align: center; }
+
+.other-chance .other-chance-table tr { color: #666; }
+
+.other-chance .other-chance-table th { font-weight: normal; color: #333; }
+
+.other-chance .other-chance-table td { border-top: none; }
+
+.other-chance .empty-text { padding: 10px 0; text-align: center; color: #999; }

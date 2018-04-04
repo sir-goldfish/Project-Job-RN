@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "publicVariable";
+
+.m-crumbs-nav {
+  margin-bottom: 18px;
+}
+
+.order-details-body {
+  border-top: 1px solid #eee;
+  .details-head {
+    margin-top: 26px;
+    color: #333;
+    .font-grey {
+      color: #999;
+    }
+    .item + .item {
+      margin-left: 50px;
+      vertical-align: top;
+    }
+  }
+}
+
+.m-order-info-card {
+  margin: 28px 0 46px 0;
+}

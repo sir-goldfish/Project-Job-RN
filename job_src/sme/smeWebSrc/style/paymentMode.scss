@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* head-notice */
+.head-notice {
+  height: 113px;
+  padding-top: 52px;
+  color: #fff;
+  background-color: $onColorOrange;
+  .title {
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    margin-left: 50px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+}
+
+/* main-body */
+.main-body {
+  padding: 80px 0;
+  .mode-list {
+    margin: 0 50px;
+    font-size: 0;
+    .mode-item {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 84px;
+      vertical-align: top;
+    }
+    .mode-name {
+      float: left;
+      width: 160px;
+      margin-right: -160px;
+      text-align: center;
+      .icon {
+        display: inline-block;
+        margin-bottom: 8px;
+        width: 70px;
+      }
+      .text {
+        font-size: 16px;
+        font-weight: bold;
+        color: #363636;
+      }
+    }
+    .mode-desc {
+      margin-left: 165px;
+      line-height: 24px;
+      font-size: 16px;
+      color: #666;
+      .text + .text {
+        margin-top: 12px;
+      }
+    }
+  }
+}

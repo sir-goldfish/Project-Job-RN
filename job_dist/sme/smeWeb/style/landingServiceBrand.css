@@ -1,0 +1,223 @@
+/* head-content */
+.head-content { position: relative; height: 580px; background: url(../resource/img/sme_landing_bgi5.jpg) no-repeat center; }
+
+.head-content .head-search { text-align: center; }
+
+.head-content .head-search .search-title { padding: 70px 0 23px 0; font-size: 48px; color: #fff; }
+
+.head-content .head-search .input-wrapper { width: 694px; height: 50px; margin: 35px auto 30px auto; }
+
+.head-content .head-search .input-wrapper .search-input { float: left; width: 508px; height: 18px; padding: 16px 20px; line-height: 18px; font-size: 14px; background-color: #fff; border: none; border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+
+.head-content .head-search .input-wrapper .search-btn { float: right; width: 146px; height: 100%; line-height: 50px; font-size: 16px; color: #fff; background-color: #f99903; border-top-right-radius: 8px; border-bottom-right-radius: 8px; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.head-content .head-search .input-wrapper .search-btn:active { background-color: #e58500; }
+
+.head-content .head-search .register-wrapper { width: 670px; }
+
+.head-content .head-search .register-wrapper .s-input, .head-content .head-search .register-wrapper .search-btn { border-radius: 8px; }
+
+.head-content .head-search .register-wrapper .s-input { width: 210px; }
+
+.head-content .head-search .register-wrapper .s-input + .s-input { margin-left: 10px; }
+
+.head-content .head-search .register-wrapper .search-btn { float: left; margin-left: 10px; }
+
+.head-content .head-search .register-wrapper .input-box { float: left; }
+
+.head-content .head-search .register-wrapper .input-box + .input-box { margin-left: 10px; }
+
+.head-content .head-search .register-wrapper .hint-info { float: left; padding-top: 10px; line-height: 18px; text-align: justify; font-size: 14px; color: #fff; }
+
+.head-content .head-search .search-tab .tab-nav { font-size: 0; }
+
+.head-content .head-search .search-tab .tab-nav li { display: inline-block; padding: 4px 36px; vertical-align: top; text-align: center; font-size: 24px; color: #fff; cursor: default; }
+
+.head-content .head-search .search-tab .tab-nav li + li { border-left: 1px solid #fff; }
+
+.head-content .head-search .search-tab .tab-nav .current { color: #fef035; }
+
+.head-content .head-search .search-tab .tab-content .content-item { display: none; }
+
+.head-content .head-search .search-tab .tab-content .current { display: block; }
+
+.head-content .head-search .search-notice { margin-bottom: 20px; color: #fff; }
+
+.head-content .head-search .search-notice .stress { color: #fef035; }
+
+.head-content .head-info-cards { width: 620px; margin: 0 auto; }
+
+.head-content .head-info-cards .info-card { position: relative; height: 165px; }
+
+.head-content .head-info-cards .bg { width: 100%; height: 100%; background-color: #fff; }
+
+.head-content .head-info-cards .content { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
+
+.head-content .head-info-cards .info-chart { float: left; width: 169px; }
+
+.head-content .head-info-cards .info-chart .chart { width: 78px; height: 78px; margin: 25px auto 14px auto; line-height: 78px; text-align: center; font-family: Arial; font-size: 20px; font-weight: bold; color: #00a0e9; border: 1px solid #00a0e9; border-radius: 50%; }
+
+.head-content .head-info-cards .info-chart .chart-title { text-align: center; font-size: 16px; font-weight: bold; color: #00a0e9; }
+
+.head-content .head-info-cards .info-list { float: right; width: 450px; }
+
+.head-content .head-info-cards .info-list .content-inner { padding-top: 10px; color: #1b1b1b; }
+
+.head-content .head-info-cards .info-list .list-swiper { width: 100%; height: 98px; overflow: hidden; }
+
+.head-content .head-info-cards .info-list .list-title, .head-content .head-info-cards .info-list .list-item { font-size: 0; }
+
+.head-content .head-info-cards .info-list .list-title > *, .head-content .head-info-cards .info-list .list-item > * { display: inline-block; padding-left: 5px; padding-right: 5px; vertical-align: middle; text-align: center; word-wrap: break-word; word-break: break-all; }
+
+.head-content .head-info-cards .info-list .list-title > * { padding-top: 14px; padding-bottom: 14px; font-size: 14px; font-weight: bold; color: #333; }
+
+.head-content .head-info-cards .info-list .list-item > * { padding-top: 6px; padding-bottom: 6px; font-size: 12px; }
+
+.head-content .head-info-cards .info-list .num { width: 130px; }
+
+.head-content .head-info-cards .info-list .brand, .head-content .head-info-cards .info-list .type, .head-content .head-info-cards .info-list .status { width: 90px; }
+
+.head-content .head-btm-info { position: absolute; bottom: 0; left: 0; width: 100%; height: 80px; line-height: 80px; text-align: center; font-size: 0; font-weight: bold; color: #fff; background-color: rgba(0, 0, 0, 0.45); overflow: hidden; }
+
+.head-content .head-btm-info > * { display: inline-block; vertical-align: bottom; font-size: 18px; }
+
+.head-content .head-btm-info .item { margin-left: 25px; }
+
+.head-content .head-btm-info .item + .item:before { content: ''; display: inline-block; width: 0; height: 24px; margin-right: 25px; vertical-align: -5px; border-left: 1px solid #817d8a; }
+
+.head-content .head-btm-info .num { margin: 0 2px; vertical-align: baseline; font-family: Impact; font-size: 30px; color: #fef035; }
+
+/* service-cards-section */
+.service-cards-section { min-height: 445px; padding: 40px 0; background: #000 url(../resource/img/sme_landing_bgi.jpg) no-repeat center bottom; }
+
+.service-cards-section .section-title { margin-bottom: 29px; text-align: center; color: #fff; }
+
+.service-cards-section .section-title .title { margin-bottom: 12px; font-size: 30px; font-weight: bold; }
+
+.service-cards-section .service-cards .list { margin-left: -20px; margin-top: -20px; }
+
+.service-cards-section .service-card { position: relative; float: left; width: 225px; height: 324px; padding: 36px 30px 0 30px; margin-left: 20px; margin-top: 20px; background-color: #fff; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.service-cards-section .service-card .title { margin-bottom: 20px; font-size: 20px; font-weight: bold; color: #004986; }
+
+.service-cards-section .service-card .title:hover { color: #00a0e9; }
+
+.service-cards-section .service-card .desc { margin-bottom: 35px; line-height: 32px; font-size: 16px; color: #000; }
+
+.service-cards-section .service-card .apply-btn { width: 84px; height: 28px; line-height: 28px; text-align: center; color: #f82d48; border: 1px solid #f82d48; border-radius: 5px; -webkit-transition: color .2s ease-out, background-color .2s ease-out; transition: color .2s ease-out, background-color .2s ease-out; }
+
+.service-cards-section .service-card .apply-btn:hover { color: #fff; background-color: #f82d48; }
+
+.service-cards-section .service-card .flag-icon { position: absolute; bottom: 0; right: 18px; width: 66px; height: 102px; text-align: center; font-size: 18px; color: #fff; background: url(../resource/img/sme_landing_sprites.png) no-repeat 0 -170px; }
+
+.service-cards-section .service-card .flag-icon span { display: inline-block; width: 36px; margin-top: 16px; }
+
+.service-cards-section .service-card:hover { -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
+
+.service-cards-section .hot-service:after { content: ''; position: absolute; top: -29px; left: -16px; display: block; width: 51px; height: 73px; background: url(../resource/img/sme_landing_sprites.png) no-repeat 0 0; }
+
+/* advantage-section */
+.advantage-section { background: #000 url(../resource/img/sme_landing_bgi1.jpg) no-repeat center bottom; }
+
+.advantage-section .section-title { width: 442px; height: 125px; margin: 0 auto 15px auto; background: url(../resource/img/sme_landing_pic8.png) no-repeat center -105px; }
+
+.advantage-section .list { padding-bottom: 35px; text-align: center; font-size: 0; }
+
+.advantage-section .list li { display: inline-block; width: 186px; vertical-align: top; font-size: 14px; }
+
+.advantage-section .list li .icon { width: 130px; height: 115px; margin-left: auto; margin-right: auto; margin-bottom: 24px; background: url(../resource/img/sme_service_sprites3.png) no-repeat 999px -224px; }
+
+.advantage-section .list li .title { margin-bottom: 20px; font-size: 18px; font-weight: bold; color: #363636; }
+
+.advantage-section .list li .desc { line-height: 24px; color: #363636; }
+
+.advantage-section .list li + li { margin-left: 62px; }
+
+.advantage-section .btn-wrapper { padding-bottom: 46px; text-align: center; font-size: 0; }
+
+.advantage-section .btn-wrapper a { width: 145px; height: 45px; line-height: 45px; vertical-align: top; font-size: 16px; color: #fff; background-color: #f82d48; border-radius: 6px; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.advantage-section .btn-wrapper a:hover { background-color: #e41934; }
+
+.advantage-section .btn-wrapper a + a { margin-left: 68px; }
+
+/* brand-reason */
+.brand-reason { padding: 52px 0 62px 0; background: #000 url(../resource/img/sme_landing_bgi2.jpg) no-repeat center bottom; }
+
+.brand-reason .section-title { text-align: center; color: #fff; }
+
+.brand-reason .section-title .title { margin-bottom: 33px; font-size: 30px; font-weight: bold; }
+
+.brand-reason .reason-cards .list { margin-left: -20px; margin-top: -20px; }
+
+.brand-reason .reason-card { position: relative; float: left; width: 285px; height: 350px; margin-left: 20px; margin-top: 20px; overflow: hidden; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.brand-reason .reason-card .pic { width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.brand-reason .reason-card .content { position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fff; background-color: rgba(255, 255, 255, 0); -webkit-transition: background-color .3s ease-out; transition: background-color .3s ease-out; }
+
+.brand-reason .reason-card .content .icon { width: 93px; height: 93px; margin: 49px auto 39px auto; background: url(../resource/img/sme_landing_sprites.png) no-repeat 0 -75px; }
+
+.brand-reason .reason-card .content .title { margin-bottom: 15px; font-size: 24px; font-weight: bold; }
+
+.brand-reason .reason-card .content .desc { padding: 0 30px; margin-bottom: 12px; line-height: 24px; font-size: 13px; }
+
+.brand-reason .reason-card .content .btn-wrapper { position: absolute; left: 0; bottom: -35px; width: 100%; text-align: center; font-size: 0; -webkit-transition: bottom .3s ease-out; transition: bottom .3s ease-out; }
+
+.brand-reason .reason-card .content .btn-wrapper a { width: 95px; height: 30px; line-height: 30px; vertical-align: top; font-size: 14px; color: #fff; background-color: #f82d48; overflow: hidden; border-radius: 6px; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.brand-reason .reason-card .content .btn-wrapper a:hover { background-color: #e41934; }
+
+.brand-reason .reason-card .content .btn-wrapper a + a { margin-left: 12px; }
+
+.brand-reason .reason-card:hover { -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
+
+.brand-reason .reason-card:hover .pic { -webkit-transform: scale(1.08); -ms-transform: scale(1.08); transform: scale(1.08); }
+
+.brand-reason .reason-card:hover .content { background-color: rgba(255, 255, 255, 0.16); }
+
+.brand-reason .reason-card:hover .btn-wrapper { bottom: 15px; }
+
+/* service-path */
+.service-path { padding: 83px 0 78px 0; background: #000 url(../resource/img/sme_landing_bgi3.jpg) no-repeat center bottom; }
+
+.service-path .path-container { height: 385px; }
+
+.service-path .section-title-card { position: relative; z-index: 1; float: left; width: 289px; height: 413px; margin-top: -28px; background: url(../resource/img/sme_service_bgi26.jpg) no-repeat center; box-shadow: 0 0 20px 0 rgba(14, 5, 10, 0.6); }
+
+.service-path .path-desc { position: relative; float: left; width: 911px; height: 100%; background: url(../resource/img/sme_service_bgi24.jpg) no-repeat right bottom; box-shadow: 0 0 20px 0 rgba(14, 5, 10, 0.6); }
+
+.service-path .desc-list { float: left; width: 362px; padding-top: 19px; margin-left: 40px; }
+
+.service-path .desc-list .desc-item { margin-top: 30px; }
+
+.service-path .desc-list .desc-item .num { float: left; width: 70px; margin-right: -70px; font-size: 18px; font-weight: bold; color: #363636; }
+
+.service-path .desc-list .desc-item .num:after { content: ''; display: block; width: 30px; height: 3px; margin-top: 8px; background-color: #f82d48; }
+
+.service-path .desc-list .desc-item .text { float: left; margin-left: 76px; }
+
+.service-path .desc-list .desc-item .text .title { margin-bottom: 10px; line-height: 18px; font-size: 16px; font-weight: normal; color: #363636; }
+
+.service-path .desc-list .desc-item .text .para { line-height: 20px; font-size: 12px; color: #999; }
+
+.service-path .stretch-btn { position: absolute; bottom: 30px; right: 55px; display: block; width: 45px; height: 45px; line-height: 45px; text-align: center; font-size: 16px; color: #fff; overflow: hidden; border-radius: 45px; -webkit-transition: width .4s ease-out, background-color .4s ease-out; transition: width .4s ease-out, background-color .4s ease-out; }
+
+.service-path .stretch-btn .icon { float: right; width: 45px; height: 45px; }
+
+.service-path .stretch-btn.apply-btn { bottom: 89px; }
+
+.service-path .stretch-btn:hover { width: 145px; background-color: #f82d48; }
+
+.service-path .stretch-btn:hover .icon { display: none; }
+
+/* btm-desc-section */
+.btm-desc-section { padding: 41px 0; }
+
+.btm-desc-section .desc-list { font-size: 0; text-align: center; }
+
+.btm-desc-section .desc-icon { display: inline-block; width: 156px; height: 156px; vertical-align: top; background: url(../resource/img/sme_landing_sprites1.png) no-repeat 0 0; }
+
+.btm-desc-section .desc-icon:hover { background-position-y: -156px; }
+
+.btm-desc-section .desc-icon + .desc-icon { margin-left: 62px; }

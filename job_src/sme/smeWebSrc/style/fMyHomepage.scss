@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* homepage-settings */
+.homepage-settings {
+  border-top: 2px solid #eee;
+}
+
+/* homepage-setting */
+.homepage-setting {
+  padding: 22px 44px;
+  font-size: 0;
+  border-bottom: 1px solid #eee;
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  .setting-desc {
+    width: 678px;
+    line-height: 1.2;
+    .title {
+      margin-bottom: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+  .setting-handle {
+    width: 158px;
+    text-align: right;
+    .handle-btn {
+      width: 136px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      color: #fff;
+      background-color: $onColorOrange;
+      border-radius: 5px;
+      &:hover {
+        background-color: $onColorOrange - 15%;
+      }
+      &:active {
+        background-color: $onColorOrange - 30%;
+      }
+    }
+  }
+  &:hover {
+    background-color: #eee + 10%;
+  }
+}

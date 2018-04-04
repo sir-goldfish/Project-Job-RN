@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>订单列表-合伙人</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/orderList.css">
+</head>
+<body>
+<!--order-body-->
+<div class="order-body rn-wrapper">
+    <div class="rn-main-body">
+        <div class="rn-wrapper" style="bottom:auto; z-index:1; height:3.7rem;">
+            <div class="m-tab-nav">
+                <a href="javascript:;" class="current tab-nav-item" style="flex-basis:25%;">全部</a>
+                <a href="javascript:;" class="tab-nav-item" style="flex-basis:25%;">进行中</a>
+                <a href="javascript:;" class="tab-nav-item" style="flex-basis:25%;">已成交</a>
+                <a href="javascript:;" class="tab-nav-item" style="flex-basis:25%;">已关闭</a>
+            </div>
+        </div>
+        <div class="content-container m-lazyload-wrap rn-wrapper" style="top:3.7rem; overflow:auto;">
+            <div class="rn-main-body">
+                <!--****
+                    * 提示：订单列表为空，展示 m-empty-container ；非空，展示 order-list 。
+                    ****-->
+                <!--<div class="m-empty-container rn-wrapper">-->
+                <!--<div class="m-empty-inner">-->
+                <!--<div class="rn-font-gray">该列表内容为空</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <ul class="order-list m-lazyload-list">
+                    <li class="order-card m-lazyload-item">
+                        <div class="rn-content-padded">
+                            <div class="head-row card-row">
+                                <div class="time">2018-01-02</div>
+                                <div class="status rn-font-red">进行中</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="base-info-row card-row">
+                                <div class="name">客户：姓名姓名</div>
+                                <div class="phone">
+                                    <i class="iconfont rn-font-green">&#xe61f;</i><span>18808088080</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-row rn-font-gray card-row">
+                            <div class="row-inner rn-content-padded">
+                                <div class="title">任性保</div>
+                                <div class="num">×1</div>
+                                <div class="price">￥1580(未付款)</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="sum-row card-row">
+                                <div class="num">成交0件</div>
+                                <div class="total">
+                                    <div class="price">合计：￥<span class="big">0</span></div>
+                                    <div class="income rn-font-green">提成：￥0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order-card m-lazyload-item">
+                        <div class="rn-content-padded">
+                            <div class="head-row card-row">
+                                <div class="time">2018-01-02</div>
+                                <div class="status rn-font-yellow">已成交</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="base-info-row card-row">
+                                <div class="name">客户：姓名姓名</div>
+                                <div class="phone">
+                                    <i class="iconfont rn-font-green">&#xe61f;</i><span>18808088080</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-row rn-font-gray card-row">
+                            <div class="row-inner rn-content-padded">
+                                <div class="title">任性保</div>
+                                <div class="num">×1</div>
+                                <div class="price">￥1580(已付款)</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="sum-row card-row">
+                                <div class="num">成交1件</div>
+                                <div class="total">
+                                    <div class="price">合计：￥<span class="big">1580.00</span></div>
+                                    <div class="income rn-font-green">提成：￥100.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order-card m-lazyload-item">
+                        <div class="rn-content-padded">
+                            <div class="head-row card-row">
+                                <div class="time">2018-01-02</div>
+                                <div class="status rn-font-gray">已关闭</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="base-info-row card-row">
+                                <div class="name">客户：姓名姓名</div>
+                                <div class="phone">
+                                    <i class="iconfont rn-font-green">&#xe61f;</i><span>18808088080</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-row rn-font-gray card-row">
+                            <div class="row-inner rn-content-padded">
+                                <div class="title">任性保</div>
+                                <div class="num">×1</div>
+                                <div class="price">￥1580(未付款)</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="sum-row card-row">
+                                <div class="num">成交0件</div>
+                                <div class="total">
+                                    <div class="price">合计：￥<span class="big">0</span></div>
+                                    <div class="income rn-font-green">提成：￥0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order-card m-lazyload-item">
+                        <div class="rn-content-padded">
+                            <div class="head-row card-row">
+                                <div class="time">2018-01-02</div>
+                                <div class="status rn-font-red">进行中</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="base-info-row card-row">
+                                <div class="name">客户：姓名姓名</div>
+                                <div class="phone">
+                                    <i class="iconfont rn-font-green">&#xe61f;</i><span>18808088080</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-row rn-font-gray card-row">
+                            <div class="row-inner rn-content-padded">
+                                <div class="title">任性保</div>
+                                <div class="num">×1</div>
+                                <div class="price">￥1580(未付款)</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="sum-row card-row">
+                                <div class="num">成交0件</div>
+                                <div class="total">
+                                    <div class="price">合计：￥<span class="big">0</span></div>
+                                    <div class="income rn-font-green">提成：￥0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order-card m-lazyload-item">
+                        <div class="rn-content-padded">
+                            <div class="head-row card-row">
+                                <div class="time">2018-01-02</div>
+                                <div class="status rn-font-yellow">已成交</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="base-info-row card-row">
+                                <div class="name">客户：姓名姓名</div>
+                                <div class="phone">
+                                    <i class="iconfont rn-font-green">&#xe61f;</i><span>18808088080</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-row rn-font-gray card-row">
+                            <div class="row-inner rn-content-padded">
+                                <div class="title">任性保</div>
+                                <div class="num">×1</div>
+                                <div class="price">￥1580(已付款)</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="sum-row card-row">
+                                <div class="num">成交1件</div>
+                                <div class="total">
+                                    <div class="price">合计：￥<span class="big">1580.00</span></div>
+                                    <div class="income rn-font-green">提成：￥100.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order-card m-lazyload-item">
+                        <div class="rn-content-padded">
+                            <div class="head-row card-row">
+                                <div class="time">2018-01-02</div>
+                                <div class="status rn-font-gray">已关闭</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="base-info-row card-row">
+                                <div class="name">客户：姓名姓名</div>
+                                <div class="phone">
+                                    <i class="iconfont rn-font-green">&#xe61f;</i><span>18808088080</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-row rn-font-gray card-row">
+                            <div class="row-inner rn-content-padded">
+                                <div class="title">任性保</div>
+                                <div class="num">×1</div>
+                                <div class="price">￥1580(未付款)</div>
+                            </div>
+                        </div>
+                        <div class="rn-content-padded">
+                            <div class="sum-row card-row">
+                                <div class="num">成交0件</div>
+                                <div class="total">
+                                    <div class="price">合计：￥<span class="big">0</span></div>
+                                    <div class="income rn-font-green">提成：￥0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中小企业服务-服务详情页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/serviceDetails.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="javascript:;" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">知识产权</a>
+                        <div class="hide-group" style="margin-left:-49px;">
+                            <ul class="group-list">
+                                <li class="group-item chosen"><a href="javascript:;">商标注册</a></li>
+                                <li class="group-item"><a href="javascript:;">版权登记</a></li>
+                                <li class="group-item"><a href="javascript:;">专利申请</a></li>
+                                <li class="group-item"><a href="javascript:;">知产交易</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">公司注册</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">人事社保</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">案例库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">资讯</a>
+                    </li>
+                </ul>
+                <div class="logo-search">
+                    <input type="text" placeholder="搜索服务">
+                    <a href="javascript:;" class="search-btn iconfont">&#xe66e;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="main-body sme-wrapper">
+    <!--service-desc-card-->
+    <section class="service-desc-card sme-inner">
+        <div class="card-inner f-clearfix">
+            <div class="card-left">
+                <img src="resource/img/sme_pic21.jpg" alt="" class="card-pic">
+                <div class="card-tools">
+                    <a href="javascript:;" class="collect-btn tool-btn"><span class="text">收藏</span><i class="iconfont">
+                        &#xe697;</i></a>
+                    <a href="javascript:;" class="share-btn tool-btn"><span class="text">分享</span><i class="iconfont">
+                        &#xe65e;</i></a>
+                </div>
+            </div>
+            <div class="card-right">
+                <div class="card-right-inner">
+                    <!--加载中-->
+                    <div class="u-loading-circle"></div>
+                    <!--默认-->
+                    <h3 class="card-title">公司注册</h3>
+                    <p class="card-desc">手续便捷，安全高效，超低的服务费用</p>
+                    <div class="price-item card-item f-clearfix">
+                        <div class="title">服务费用：</div>
+                        <div class="content">
+                            <div class="price"><span class="num">3000</span><span class="unit">元</span></div>
+                        </div>
+                    </div>
+                    <div class="project-item card-item f-clearfix">
+                        <div class="title">服务项目：</div>
+                        <div class="content">
+                            <div class="inner">
+                                <ul class="list f-clearfix">
+                                    <li class="list-item chose">小规模纳税人</li>
+                                    <li class="list-item">一般纳税人</li>
+                                    <li class="list-item">小规模纳税人</li>
+                                    <li class="list-item">一般纳税人</li>
+                                    <li class="list-item">小规模纳税人</li>
+                                    <li class="list-item">一般纳税人</li>
+                                    <li class="list-item">小规模纳税人</li>
+                                    <li class="list-item">一般纳税人</li>
+                                    <li class="list-item">小规模纳税人</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="area-item card-item f-clearfix">
+                        <div class="title">服务地区：</div>
+                        <div class="content">
+                            <div class="m-area-choose">
+                                <div class="result-container">
+                                    <div class="result-text">请选择地区</div>
+                                    <i class="icon"></i>
+                                </div>
+                                <div class="choose-container">
+                                    <nav class="choose-tab-nav">
+                                        <ul>
+                                            <li class="province current"><span class="text">请选择</span><i
+                                                    class="icon"></i></li>
+                                            <li class="city"><span class="text">请选择</span><i class="icon"></i></li>
+                                            <li class="area"><span class="text">请选择</span><i class="icon"></i></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="choose-tab-content">
+                                        <div class="province content-item current">
+                                            <ul>
+                                                <li>北京</li>
+                                                <li>浙江</li>
+                                                <li>内蒙古</li>
+                                                <li>北京</li>
+                                                <li>浙江</li>
+                                                <li>内蒙古</li>
+                                                <li>北京</li>
+                                                <li>浙江</li>
+                                                <li>内蒙古</li>
+                                                <li>北京</li>
+                                                <li>浙江</li>
+                                                <li>内蒙古</li>
+                                            </ul>
+                                        </div>
+                                        <div class="city content-item">
+                                            <ul>
+                                                <li>222</li>
+                                                <li>222</li>
+                                                <li>222</li>
+                                            </ul>
+                                        </div>
+                                        <div class="area content-item">
+                                            <ul>
+                                                <li>333</li>
+                                                <li>333</li>
+                                                <li>333</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protocol-notice">
+                        <span class="u-custom-check"><input type="checkbox" checked="checked"></span>
+                        <span class="text">我已阅读并同意</span><a href="javascript:;" class="protocol-link">《融诺网企业服务使用协议》</a>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="javascript:;" class="buy-btn card-btn">立即购买</a>
+                        <a href="javascript:;" class="order-btn card-btn">预约顾问</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--content-container-->
+    <section class="content-container sme-inner f-clearfix">
+        <!--main-content-->
+        <section class="main-content-container">
+            <section class="service-tab-container jump-tab-container">
+                <nav class="jump-tab-nav">
+                    <ul>
+                        <li class="current">服务内容<span class="line"><em></em></span></li>
+                        <li>服务流程<span class="line"><em></em></span></li>
+                        <li>服务保障<span class="line"><em></em></span></li>
+                        <li>常见问题<span class="line"><em></em></span></li>
+                        <li>客户说<span class="line"><em></em></span></li>
+                    </ul>
+                </nav>
+                <div class="jump-tab-content">
+                    <div class="jump-content-item item-service-content">
+                        <div class="content-title"><i class="iconfont">&#xe61a;</i>服务内容</div>
+                        <div class="content-body">
+                            <img src="resource/img/sme_details_bgi.jpg" alt="" class="content-bgi">
+                        </div>
+                    </div>
+                    <div class="jump-content-item item-service-path">
+                        <div class="content-title"><i class="iconfont">&#xe636;</i>服务流程</div>
+                        <div class="content-body">
+                            <img src="resource/img/sme_details_bgi1.jpg" alt="" class="content-bgi">
+                        </div>
+                    </div>
+                    <div class="jump-content-item item-service-ensure">
+                        <div class="content-title"><i class="iconfont">&#xe626;</i>服务保障</div>
+                        <div class="content-body">
+                            <img src="resource/img/sme_details_bgi2.jpg" alt="" class="content-bgi">
+                        </div>
+                    </div>
+                    <div class="jump-content-item item-questions">
+                        <div class="content-title"><i class="iconfont">&#xe673;</i>常见问题</div>
+                        <div class="content-body">
+                            <ul class="list">
+                                <li>
+                                    <a href="javascript:;" class="title">购买后，你们如何提供服务？</a>
+                                    <p class="desc">
+                                        付款成功后，我们的客服人员将会在一小时内，与您沟通，请保持电话畅通。
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="title">如果我对服务不满意，能退款吗？</a>
+                                    <p class="desc">
+                                        如果您对我们的服务不满意，我们将会对您的情况进行分析处理，如果由于我们的原因，给您造成不便，我们将会全额退款。
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="title">你们的服务有地区限制吗？</a>
+                                    <p class="desc">
+                                        我们部分服务是有地区限制的，比如公司注册、人事社保，这种带有明显地区性质的服务是由地区限制的，所以在购买服务前，请认真选择地区，如果没有当前地区，你就可以联系我们的客服人员，客服人员将会为您提供定制化的方案，无需担心。
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="title">你们的服务是自营的还是代理的？</a>
+                                    <p class="desc">
+                                        我们的服务首先是自营的服务，如果您所在的地区没有我们自营的部门，我们将会优先为您推荐我们最优质的服务商，推荐之前，我们的客服人员将会与您沟通，请您放心购买服务。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="jump-content-item item-evaluation">
+                        <div class="content-title"><i class="iconfont">&#xe62a;</i>客户说</div>
+                        <div class="content-body">
+                            <div class="empty-list">暂时还没有任何评价哦~</div>
+                            <ul class="list">
+                                <li class="f-clearfix">
+                                    <div class="user-info f-clearfix">
+                                        <img src="resource/img/sme_pic20.jpg" alt="" class="avatar">
+                                        <div class="text">
+                                            <div class="name">j***M</div>
+                                            <div class="area"><i class="iconfont">&#xe604;</i>上海</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p class="para">
+                                            服务很周到，公司资料其实很不齐全，客户经理不厌其烦的帮我们一次一次的整理材料，帮我们去进行注册，后续的服务也很周到，代账也是一起做的，会计很专业，并且很会为我们企业进行着想，制定适合我们的方案。
+                                        </p>
+                                        <div class="btm-info f-clearfix">
+                                            <div class="org">服务商：<a href="javascript:;">青岛德诚财务有限公司</a></div>
+                                            <div class="tips">
+                                                <span class="time"><i class="iconfont">
+                                                    &#xe65d;</i>2017-03-20 14:33:33</span>
+                                                <span class="score"><i class="iconfont">&#xe660;</i>5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="f-clearfix">
+                                    <div class="user-info f-clearfix">
+                                        <img src="resource/img/sme_pic23.jpg" alt="" class="avatar">
+                                        <div class="text">
+                                            <div class="name">小***森</div>
+                                            <div class="area"><i class="iconfont">&#xe604;</i>内蒙古</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p class="para">
+                                            服务很周到，公司资料其实很不齐全，客户经理不厌其烦的帮我们一次一次的整理材料，帮我们去进行注册，后续的服务也很周到，代账也是一起做的，会计很专业，并且很会为我们企业进行着想，制定适合我们的方案。
+                                        </p>
+                                        <div class="btm-info f-clearfix">
+                                            <div class="org">服务商：<a href="javascript:;">山东信德律师事务所</a></div>
+                                            <div class="tips">
+                                                <span class="time"><i class="iconfont">
+                                                    &#xe65d;</i>2017-03-20 14:33:33</span>
+                                                <span class="score"><i class="iconfont">&#xe660;</i>5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="f-clearfix">
+                                    <div class="user-info f-clearfix">
+                                        <img src="resource/img/sme_pic16.jpg" alt="" class="avatar">
+                                        <div class="text">
+                                            <div class="name">Q***M</div>
+                                            <div class="area"><i class="iconfont">&#xe604;</i>杭州</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p class="para">
+                                            服务很周到，公司资料其实很不齐全，客户经理不厌其烦的帮我们一次一次的整理材料，帮我们去进行注册，后续的服务也很周到，代账也是一起做的，会计很专业，并且很会为我们企业进行着想，制定适合我们的方案。
+                                        </p>
+                                        <div class="btm-info f-clearfix">
+                                            <div class="org">服务商：<a href="javascript:;">青岛德诚财务有限公司</a></div>
+                                            <div class="tips">
+                                                <span class="time"><i class="iconfont">
+                                                    &#xe65d;</i>2017-03-20 14:33:33</span>
+                                                <span class="score"><i class="iconfont">&#xe660;</i>5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="f-clearfix">
+                                    <div class="user-info f-clearfix">
+                                        <img src="resource/img/sme_pic15.jpg" alt="" class="avatar">
+                                        <div class="text">
+                                            <div class="name">j***M</div>
+                                            <div class="area"><i class="iconfont">&#xe604;</i>上海</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p class="para">
+                                            服务很周到，公司资料其实很不齐全，客户经理不厌其烦的帮我们一次一次的整理材料，帮我们去进行注册，后续的服务也很周到，代账也是一起做的，会计很专业，并且很会为我们企业进行着想，制定适合我们的方案。
+                                        </p>
+                                        <div class="btm-info f-clearfix">
+                                            <div class="org">服务商：<a href="javascript:;">青岛德诚财务有限公司</a></div>
+                                            <div class="tips">
+                                                <span class="time"><i class="iconfont">
+                                                    &#xe65d;</i>2017-03-20 14:33:33</span>
+                                                <span class="score"><i class="iconfont">&#xe660;</i>5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="f-clearfix">
+                                    <div class="user-info f-clearfix">
+                                        <img src="resource/img/sme_pic21.jpg" alt="" class="avatar">
+                                        <div class="text">
+                                            <div class="name">扎***珠</div>
+                                            <div class="area"><i class="iconfont">&#xe604;</i>西藏</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p class="para">
+                                            服务很周到，公司资料其实很不齐全，客户经理不厌其烦的帮我们一次一次的整理材料，帮我们去进行注册，后续的服务也很周到，代账也是一起做的，会计很专业，并且很会为我们企业进行着想，制定适合我们的方案。
+                                        </p>
+                                        <div class="btm-info f-clearfix">
+                                            <div class="org">服务商：<a href="javascript:;">青岛德诚财务有限公司</a></div>
+                                            <div class="tips">
+                                                <span class="time"><i class="iconfont">
+                                                    &#xe65d;</i>2017-03-20 14:33:33</span>
+                                                <span class="score"><i class="iconfont">&#xe660;</i>5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="pagination-container">
+                                分页器
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--aside-content-->
+        <aside class="aside-content-container">
+            <aside class="other-services">
+                <div class="aside-title"><span>其他服务</span></div>
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="javascript:;" class="pic">
+                            <img src="resource/img/sme_pic22.jpg" alt="">
+                        </a>
+                        <div class="title f-clearfix">
+                            <a href="javascript:;" class="text f-ellipsis">公司注册</a>
+                            <div class="price"><span class="num">300</span><span class="unit"></span></div>
+                        </div>
+                        <p class="desc">
+                            提供您的公司名称，必要资料，我们的专业顾问将会对您的公司。提供您的公司名称，必要资料，我们的专业顾问将会对您的公司。
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:;" class="pic">
+                            <img src="resource/img/sme_pic23.jpg" alt="">
+                        </a>
+                        <div class="title f-clearfix">
+                            <a href="javascript:;" class="text f-ellipsis">公司注册（无地址）</a>
+                            <div class="price"><span class="num">3000</span><span class="unit">/月</span></div>
+                        </div>
+                        <p class="desc">
+                            提供您的公司名称，必要资料，我们的专业顾问将会对您的公司。提供您的公司名称，必要资料，我们的专业顾问将会对您的公司。
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:;" class="pic">
+                            <img src="resource/img/sme_pic23.jpg" alt="">
+                        </a>
+                        <div class="title f-clearfix">
+                            <a href="javascript:;" class="text f-ellipsis">公司注册+代账公司注册+代账公司注册+代账公司注册+代账</a>
+                            <div class="price"><span class="num">30000</span><span class="unit">起/年</span></div>
+                        </div>
+                        <p class="desc">
+                            提供您的公司名称，必要资料，我们的专业顾问将会对您的公司。提供您的公司名称，必要资料，我们的专业顾问将会对您的公司。
+                        </p>
+                    </li>
+                </ul>
+            </aside>
+        </aside>
+    </section>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<!--u-custom-check-->
+<script src="script/u-custom-check.js"></script>
+<!--smooth-scroll-->
+<script src="plugin/jquery.smooth_scroll/jquery.smooth-scroll.min.js"></script>
+<script>
+    //--地区选择功能示例
+    function chooseArea($dom) {
+        var $nav = $dom.find('.choose-tab-nav'),
+            $navItems = $nav.find('li'),
+            $content = $dom.find('.choose-tab-content'),
+            $contentItems = $content.find('.content-item'),
+            $chooseOptions = $content.find('li'),
+            currentIndex = 0;
+        //*点击页面其他位置，让弹框收回的操作
+        $(document).on('click', function () {
+            if ($dom.hasClass('show') == true) {
+                $dom.removeClass('show');
+            }
+        });
+        $dom.on('click', function (event) {
+            event.stopPropagation();
+        });
+        //展现选择区
+        $dom.find('.result-container').on('click', function () {
+            if ($dom.hasClass('show') == false) {
+                $dom.addClass('show');
+            } else {
+                $dom.removeClass('show');
+            }
+        });
+
+        //设置当前
+        function setCurrent() {
+            $nav.find('.current').removeClass('current');
+            $navItems.eq(currentIndex).addClass('current');
+            if (currentIndex - 1 >= 0) {
+                $navItems.eq(currentIndex).prevAll().addClass('show-nav');
+            }
+            $navItems.eq(currentIndex).nextAll().removeClass('show-nav');
+            $content.find('.current').removeClass('current');
+            $contentItems.eq(currentIndex).addClass('current');
+        }
+
+        //导航点击切换当前
+        $navItems.on('click', function () {
+            if ($(this).index() !== $navItems.length - 1 && $(this).index() !== currentIndex) {
+                currentIndex = $(this).index();
+                setCurrent();
+            }
+        });
+
+        //地区选中操作
+        function chooseOption() {
+            $chooseOptions.off('click.default');
+            $chooseOptions.on('click.default', function () {
+                if ($(this).hasClass('chose-option') == false) {
+                    $(this).addClass('chose-option').siblings('.chose-option').removeClass('chose-option');
+                }
+                if ($(this).parents('.content-item').index() !== $contentItems.length - 1) {
+                    currentIndex = $(this).parents('.content-item').next().index();
+                    setCurrent();
+                } else {
+                    $dom.removeClass('show');
+                }
+            });
+        }
+
+        chooseOption();
+        //ajax获取地区渲染到页面上后，再次调用chooseOption
+    }
+
+    chooseArea($('.m-area-choose'));
+    //收藏
+    $('.service-desc-card').find('.collect-btn').on('click', function () {
+        if ($(this).hasClass('collected')) {
+            $(this).removeClass('collected').children('.text').text('收藏');
+        } else {
+            $(this).addClass('collected').children('.text').text('已收藏');
+        }
+    });
+    //项目选择
+    $('.service-desc-card .project-item').find('.list-item').on('click', function () {
+        if ($(this).hasClass('chose') == false) {
+            $('.service-desc-card .project-item').find('.chose').removeClass('chose');
+            $(this).addClass('chose');
+        }
+    });
+
+    //tab跳转
+    function setJumpTab($dom) {
+        var $nav = $dom.find('.jump-tab-nav'),
+            $navItems = $nav.find('li'),
+            navH = $nav.outerHeight(),
+            navOffTop = $nav.offset().top,
+            winH = $(window).height(),
+            winScrollT = $(window).scrollTop(),
+            $jumpContent = $dom.find('.jump-tab-content'),
+            $jumpContentItems = $jumpContent.find('.jump-content-item');
+        //监视页面滚动
+        $(window).scroll(function () {
+            winScrollT = $(window).scrollTop();
+            if (winScrollT >= navOffTop + navH) {
+                $dom.addClass('set-nav-fixed');
+            }
+            if (winScrollT < navOffTop + navH) {
+                $dom.removeClass('set-nav-fixed');
+            }
+            $jumpContentItems.each(function (i, ele) {
+                if (winScrollT > $jumpContentItems.eq(i).offset().top - winH * 0.12) {
+                    $navItems.removeClass('current').eq(i).addClass('current');
+                }
+            });
+        });
+        //点击跳转
+        $navItems.each(function (i, ele) {
+            $(this).on('click', function () {
+                $.smoothScroll({
+                    scrollTarget: $jumpContentItems.eq(i)
+                });
+            });
+        });
+    }
+
+    setJumpTab($('.service-tab-container'));
+</script>
+
+</body>
+</html>

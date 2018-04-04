@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* owned-skills-container */
+.owned-skills-container { color: #333; }
+
+.owned-skills-container .container-head { margin-bottom: 14px; line-height: 32px; }
+
+.owned-skills-container .container-head .add-skill-btn { width: 120px; height: 32px; line-height: inherit; text-align: center; font-size: 14px; color: #fff; background-color: #f78e24; border-radius: 5px; }
+
+.owned-skills-container .container-head .add-skill-btn i { margin-right: 10px; vertical-align: middle; }
+
+.owned-skills-container .container-head .add-skill-btn:hover { background-color: #e87f15; }
+
+.owned-skills-container .container-head .add-skill-btn:active { background-color: #d46b01; }
+
+.owned-skills-container .skill-cards-wrapper { margin-bottom: 22px; overflow: hidden; }
+
+.owned-skills-container .skill-cards-wrapper .skill-cards-inner { margin: -20px 0 0 -20px; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card { position: relative; float: left; width: 390px; height: 123px; padding: 25px 30px; margin: 20px 0 0 20px; background-color: #f2fafe; border: 1px solid #dbe1ea; border-radius: 5px; -webkit-transition: background-color .2s ease-out, box-shadow .2s ease-out; transition: background-color .2s ease-out, box-shadow .2s ease-out; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .card-head { height: 45px; line-height: 20px; font-weight: bold; overflow: hidden; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .card-body { position: relative; z-index: 1; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .desc-item { font-size: 13px; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .desc-item .item-title { width: 66px; margin-right: -66px; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .desc-item .item-content { margin-left: 68px; color: #666; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .desc-item .price { color: #f00; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .desc-item .price .num:before { content: '¥'; margin-right: 2px; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .desc-item .area { max-width: 100%; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .desc-item + .desc-item { margin-top: 12px; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .card-btn-group { margin-top: 24px; font-size: 0; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .card-btn-group a { font-size: 14px; color: #22447a; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .card-btn-group a:hover { color: #f78e24; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card .card-btn-group a + a { margin-left: 30px; }
+
+.owned-skills-container .skill-cards-wrapper .skill-card:hover { background-color: #eff7fb; box-shadow: 0 0 10px 0 #d1d7e0 inset; }
+
+.owned-skills-container .skill-cards-wrapper .skill-passed:after, .owned-skills-container .skill-cards-wrapper .skill-failed:after, .owned-skills-container .skill-cards-wrapper .skill-pending:after { content: ''; position: absolute; bottom: 10px; right: 20px; width: 89px; height: 68px; }
+
+.owned-skills-container .skill-cards-wrapper .skill-passed:after { background: url(../resource/img/sme_member_icon21.png) no-repeat center; }
+
+.owned-skills-container .skill-cards-wrapper .skill-failed:after { background: url(../resource/img/sme_member_icon22.png) no-repeat center; }
+
+.owned-skills-container .skill-cards-wrapper .skill-pending:after { background: url(../resource/img/sme_member_icon23.png) no-repeat center; }
+
+/* add-skill-container */
+.add-skill-container { color: #333; }
+
+.add-skill-container .steps-nav { margin-bottom: 25px; overflow: hidden; border-radius: 5px; }
+
+.add-skill-container .steps-nav .step-item { position: relative; float: left; width: 280px; height: 35px; padding-left: 21px; line-height: 35px; text-align: center; background-color: #e4e9f1; }
+
+.add-skill-container .steps-nav .step-item:after { content: ''; position: absolute; top: 0; left: 100%; display: block; width: 21px; height: inherit; background: url(../resource/img/sme_member_icon25.png) no-repeat center; }
+
+.add-skill-container .steps-nav .step-1 { z-index: 2; }
+
+.add-skill-container .steps-nav .step-2 { z-index: 1; }
+
+.add-skill-container .steps-nav .current-step, .add-skill-container .steps-nav .passed-step { color: #fff; background-color: #00b7ee; }
+
+.add-skill-container .steps-nav .current-step:after, .add-skill-container .steps-nav .passed-step:after { background-image: url(../resource/img/sme_member_icon24.png); }
+
+.add-skill-container .steps-content .content-item { display: none; }
+
+.add-skill-container .steps-content .content-item .content-btn-group { text-align: center; }
+
+.add-skill-container .steps-content .content-item .content-btn-group .content-btn { min-width: 116px; height: 32px; padding: 0 10px; line-height: 32px; text-align: center; font-size: 13px; color: #fff; background-color: #f78e24; border-radius: 5px; }
+
+.add-skill-container .steps-content .content-item .content-btn-group .content-btn:hover { background-color: #e87f15; }
+
+.add-skill-container .steps-content .content-item .content-btn-group .content-btn:active { background-color: #d46b01; }
+
+.add-skill-container .steps-content .content-item .content-btn-group .content-btn + .content-btn { margin-left: 5px; }
+
+.add-skill-container .steps-content .content-item.current { display: block; }
+
+.add-skill-container .steps-content .content-1 { font-size: 13px; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-wrapper { margin-bottom: 34px; }
+
+.add-skill-container .steps-content .content-1 .skill-box .box-head { margin-bottom: 18px; font-weight: bold; }
+
+.add-skill-container .steps-content .content-1 .skill-box .box-content { height: 268px; padding-top: 12px; padding-bottom: 12px; border: 1px solid #ddd; overflow: hidden; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-container .skill-box { float: left; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-container .box-content { width: 163px; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-container .skill-box + .skill-box { margin-left: -1px; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-container .choose-list { height: 100%; overflow: auto; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-container .choose-list .list-item { padding: 6px 15px; line-height: 1.2; cursor: default; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-container .choose-list .list-item:hover { background-color: #f2f3f7; }
+
+.add-skill-container .steps-content .content-1 .skill-choose-container .choose-list .list-item.current { background-color: #f2f3f7; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .box-head { color: #0068b7; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .box-content { width: 253px; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list { height: 100%; padding-left: 15px; padding-right: 15px; color: #999; overflow: auto; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item { border-left: 1px dashed #999; cursor: default; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item .item-name { padding: 6px 0; margin-left: 20px; line-height: 1.2; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item .item-name:before { content: ''; display: inline-block; width: 17px; margin-left: -20px; margin-right: 3px; border-bottom: 1px dashed #999; vertical-align: middle; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item.level-1 { border-left: none; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item.level-1 .item-name { margin-left: 0; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item.level-1 .item-name:before { width: 0; margin-left: 0; margin-right: 0; border-bottom: none; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item.level-2 { margin-left: 5px; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item.level-3 { margin-left: 30px; }
+
+.add-skill-container .steps-content .content-1 .skill-chosen-container .chosen-list .list-item.level-4 { margin-left: 55px; }
+
+.add-skill-container .steps-content .content-2 { font-size: 13px; }
+
+.add-skill-container .steps-content .content-2 .form-item .title { float: left; width: 206px; margin-right: -206px; line-height: 32px; text-align: right; }
+
+.add-skill-container .steps-content .content-2 .form-item .title.star-title:before { content: '*'; margin-right: 4px; color: #fc0018; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper { float: left; width: 230px; margin-left: 208px; margin-right: -230px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .input-box > * { vertical-align: middle; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .input-box input[type="text"] { width: 162px; height: 30px; padding: 0 9px; line-height: 30px; font-size: inherit; border: 1px solid #ddd; border-radius: 5px; -webkit-transition: box-shadow .2s ease-out; transition: box-shadow .2s ease-out; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .input-box input[type="text"]:focus { box-shadow: 0 0 6px 0 rgba(14, 5, 10, 0.2); }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .input-box .input-box-addon { margin-left: 5px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose { position: relative; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-trigger { position: relative; width: 145px; height: 30px; padding: 0 26px 0 9px; line-height: 30px; font-size: inherit; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; cursor: default; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-trigger:after { content: ''; position: absolute; top: 12.5px; right: 13px; display: block; width: 0; height: 0; border-top: 5px solid #9b9a9a; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: none; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container { position: absolute; top: 0; left: 0; display: none; width: 607px; height: 280px; padding: 18px 24px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 0 10px 0 rgba(14, 5, 10, 0.3); }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head { margin-bottom: 10px; line-height: 24px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head .head-title { width: auto; float: left; font-weight: bold; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head a { line-height: inherit; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head .btn-group { float: left; margin-left: 14px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head .btn-group .head-btn { padding: 0 10px; text-align: center; color: #fff; background-color: #f78e24; border-radius: 5px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head .btn-group .head-btn:hover { background-color: #e87f15; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head .btn-group .head-btn:active { background-color: #d46b01; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head .close-icon { float: right; font-size: 18px; color: #81cef2; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .choose-container-head .close-icon:hover { color: #f78e24; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .chosen-result-wrapper { max-height: 54px; margin-bottom: 6px; overflow: auto; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .chosen-result-wrapper .chosen-result-group { margin-left: -5px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .chosen-result-wrapper .chosen-result-item { float: left; padding: 4px; margin: 5px 0 0 5px; color: #fff; background-color: #81cef2; cursor: default; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .chosen-result-wrapper .chosen-result-item .del-self-icon { margin-left: 8px; font-size: inherit; color: inherit; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .chosen-result-wrapper .chosen-result-item .del-self-icon:hover { color: #f78e24; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .chosen-result-wrapper .chosen-result-item:hover { background-color: #77c4e8; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper { padding: 12px 0; border-top: 1px solid #81cef2; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item { position: relative; float: left; color: #0068b7; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .province-name { position: relative; width: 80px; height: 14px; padding: 6px 8px; border: 2px solid transparent; cursor: default; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .province-name .icon { float: left; width: 14px; height: 14px; margin-right: -14px; background: url(../resource/img/sme_member_sprites3.png) no-repeat 0 0; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .province-name .all-check { float: left; display: none; margin-top: 1px; margin-left: 19px; margin-right: -14px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .province-name .name { margin-left: 19px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .province-name .name .text { width: 100%; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .city-item-group { position: absolute; top: 28px; left: 0; z-index: 1; display: none; width: 338px; min-height: 70px; padding-bottom: 10px; background-color: #f5fbfe; border: 2px solid #81cef2; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .city-item-group .city-item { float: left; width: 100px; margin: 15px 5px 0 5px; cursor: default; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .city-item-group .city-item .self-check { float: left; margin-top: 1px; margin-right: -14px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .city-item-group .city-item .name { margin-left: 16px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item .city-item-group .city-item .name .text { width: 100%; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item:hover .province-name { z-index: 2; background-color: #f5fbfe; border-color: #81cef2; border-bottom-color: #f5fbfe; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item:hover .province-name .icon { background-position-x: -16px; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item:hover .province-name .all-check { display: inline-block; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item:hover .province-name .name { margin-left: 36px; font-weight: bold; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose .choose-container .province-item-wrapper .province-item:hover .city-item-group { display: block; }
+
+.add-skill-container .steps-content .content-2 .form-item .input-wrapper .service-area-choose.active-choose .choose-container { display: block; }
+
+.add-skill-container .steps-content .content-2 .form-item .notice { margin-left: 438px; line-height: 20px; color: #c9c9c9; }
+
+.add-skill-container .steps-content .content-2 .form-item + .form-item { margin-top: 16px; }
+
+.add-skill-container .steps-content .content-2 .chosen-result { margin-top: 16px; }
+
+.add-skill-container .steps-content .content-2 .chosen-result .title { float: left; width: 206px; margin-right: -206px; line-height: 20px; text-align: right; }
+
+.add-skill-container .steps-content .content-2 .chosen-result .result-wrapper { float: left; margin-left: 208px; line-height: 20px; }
+
+.add-skill-container .steps-content .content-2 .chosen-result .result-wrapper .result-group { margin: -5px 0 0 -5px; }
+
+.add-skill-container .steps-content .content-2 .chosen-result .result-wrapper li { float: left; padding: 0 4px; margin: 5px 0 0 5px; color: #fff; background-color: #81cef2; cursor: default; }
+
+.add-skill-container .steps-content .content-2 .chosen-result .result-wrapper li .del-self-icon { margin-left: 8px; font-size: inherit; color: inherit; }
+
+.add-skill-container .steps-content .content-2 .chosen-result .result-wrapper li .del-self-icon:hover { color: #f78e24; }
+
+.add-skill-container .steps-content .content-2 .chosen-result .result-wrapper li:hover { background-color: #77c4e8; }
+
+.add-skill-container .steps-content .content-2 .hint-info { padding: 15px 0; text-align: center; line-height: 1.2; color: #999; }
+
+.add-skill-container .steps-content .content-2 .content-btn-group { margin-top: 20px; }
+
+.add-skill-container .steps-content .content-3 { padding-top: 75px; }
+
+.add-skill-container .steps-content .content-3 .status-desc { text-align: center; font-size: 14px; font-weight: bold; }
+
+.add-skill-container .steps-content .content-3 .status-desc .icon { margin-right: 40px; vertical-align: middle; font-size: 47px; font-weight: normal; color: #f78e24; }

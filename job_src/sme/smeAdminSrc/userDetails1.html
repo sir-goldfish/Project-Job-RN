@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户详情1-融诺企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/css/animate.css">
+    <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/userDetails1.css">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body class="gray-bg">
+<div class="wrapper-content animated fadeInRight">
+    <div class="main-body-wrapper row">
+        <div class="main-container col-sm-12">
+            <!--user-info-bar-->
+            <section class="user-info-bar col-sm-12 clearfix">
+                <figure class="avatar pull-left">
+                    <img src="resource/img/smea_avatar.jpg">
+                </figure>
+                <div class="content clearfix">
+                    <div class="content-inner col-sm-12">
+                        <div class="form-container">
+                            <div class="form-item-group">
+                                <div class="form-item with-hint clearfix">
+                                    <div class="title">用户名：</div>
+                                    <div class="input-wrapper">
+                                        <div class="input-box">
+                                            <input type="text">
+                                        </div>
+                                        <div class="hint-info">*提示信息占位</div>
+                                    </div>
+                                </div>
+                                <div class="form-item with-hint clearfix">
+                                    <div class="title">手机号：</div>
+                                    <div class="input-wrapper">
+                                        <div class="input-box">
+                                            <input type="text">
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-group">
+                                <div class="form-item with-hint clearfix">
+                                    <div class="title">邮箱：</div>
+                                    <div class="input-wrapper">
+                                        <div class="input-box">
+                                            <input type="text">
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                </div>
+                                <div class="form-item with-hint clearfix">
+                                    <div class="title">QQ：</div>
+                                    <div class="input-wrapper">
+                                        <div class="input-box">
+                                            <input type="text">
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item with-hint clearfix">
+                                <div class="title">所在地区：</div>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                        </select>
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                        </select>
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                    <div class="hint-info">*提示信息占位</div>
+                                </div>
+                            </div>
+                            <div class="form-item with-hint clearfix">
+                                <div class="title">公司名称：</div>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item with-hint clearfix">
+                                <div class="title">固定电话：</div>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="s-input"><span class="dash-line">-</span><input
+                                            type="text" class="s-input">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <a href="javascript:;" class="form-btn btn-danger btn">提交修改</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--user-info-tab-->
+            <section class="user-info-tab col-sm-12">
+                <nav class="tab-nav">
+                    <ul class="clearfix">
+                        <li class="nav-item current">用户订单</li>
+                        <li class="nav-item">用户详细资料</li>
+                    </ul>
+                </nav>
+                <div class="tab-content">
+                    <div class="content-item">
+                        <div class="table-responsive">
+                            <table class="pay-record-table table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>名称</th>
+                                    <th>订单时间</th>
+                                    <th>订单状态</th>
+                                    <th>金额</th>
+                                    <th>操作人</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>23235509876543245</td>
+                                    <td>普通取名套餐 共计1个类目</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>未付款</td>
+                                    <td>1800</td>
+                                    <td>rnw_23456789</td>
+                                    <td>
+                                        <a href="javascript:popDiscountDialog1();" class="handle-btn">打折</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23235509876543245</td>
+                                    <td>普通取名套餐 共计1个类目</td>
+                                    <td>2017.06.17 16:34:56</td>
+                                    <td>已付款</td>
+                                    <td>1800</td>
+                                    <td>rnw_23456789</td>
+                                    <td>
+                                        <a href="javascript:popRefundDialog1();" class="handle-btn">退款</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="empty-text">无数据~</div>
+                        </div>
+                        <div class="pagination-container">
+                            <div class="m-default-pagination">800 条记录 2/50 页<input value="0" type="text"><input
+                                    value="跳转" type="button"><a href='javascript:;'>上一页</a><a
+                                    href="javascript:;">1</a><span class='current'>2</span><span>…</span><a
+                                    href='javascript:;'>49</a><a href='javascript:;'>50</a><a
+                                    href="javascript:;">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div class="form-container">
+                            <div class="form-item clearfix">
+                                <span class="title">不带*标题：<em class="notice">（注：若标题下有注释信息，加此结构）</em></span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text">
+                                    </div>
+                                    <p class="notice">
+                                        （注：若内容下有注释信息，加此结构）
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-item with-hint clearfix">
+                                <span class="title star-title">带*标题：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text">
+                                    </div>
+                                    <div class="hint-info">
+                                        *此示例为紧跟提示信息。<br>注：若采用紧跟提示信息，需给该form-item加上with-hint类名，并加上此hint-info结构。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">正常input：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">长input(.l-input)：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item with-hint clearfix">
+                                <span class="title star-title">短input(.s-input)：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="s-input">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">textarea：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">select：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                        </select>
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                        </select>
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-box">
+                                        <select class="l-select">
+                                            <option value="请选择">请选择</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                            <option value="选项">选项</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">radio/checkbox：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <label class="input-label"><input type="radio" name="gender">男</label>
+                                        <label class="input-label"><input type="radio" name="gender">女</label>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="input-label"><input type="checkbox">类型1</label>
+                                        <label class="input-label"><input type="checkbox">类型2</label>
+                                        <label class="input-label"><input type="checkbox">类型3</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">连接符：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="s-input"><span class="dash-line">-</span><input
+                                            type="text" class="s-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">验证码：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box code-input">
+                                        <input type="text">
+                                        <a href="javascript:;" class="code-btn">
+                                            <img src="theme/img/p1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="input-box code-input">
+                                        <input type="text">
+                                        <a href="javascript:;" class="code-btn">获取短信验证码</a>
+                                    </div>
+                                    <div class="input-box code-input l-code-input">
+                                        <input type="text">
+                                        <a href="javascript:;" class="code-btn">
+                                            <img src="theme/img/p1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">图片上传+预览：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <div class="upload-preview">
+                                            <div class="preview-file">
+                                                <img src="theme/img/p1.jpg" alt="" class="pic">
+                                                <div class="shade"></div>
+                                                <div class="btn-group">
+                                                    <a href="javascript:;" class="preview-file-btn iconfont">
+                                                        &#xe669;</a>
+                                                    <a href="javascript:;" class="del-file-btn iconfont">
+                                                        &#xe9d0;</a>
+                                                </div>
+                                            </div>
+                                            <div class="upload-file"><input type="file"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item clearfix">
+                                <span class="title star-title">时间日期选择：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box date-input">
+                                        <input type="text" disabled="disabled" value="2017-06-12 10:15:30">
+                                        <i class="icon iconfont">&#xe633;</i>
+                                    </div>
+                                    <div class="input-box date-input l-date-input">
+                                        <input type="text" disabled="disabled">
+                                        <i class="icon iconfont">&#xe633;</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-space"></div>
+                            <div class="form-btn-wrapper">
+                                <a href="javascript:;" class="form-btn btn-danger btn">提交</a>
+                                <a href="javascript:;" class="form-btn btn-info btn">取消</a>
+                            </div>
+                        </div>
+                        <!--内容为空时的展示结构-->
+                        <div class="empty-content">
+                            <div class="icon iconfont">&#xe7ec;</div>
+                            <p>目前没有任何内容…</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="theme/js/jquery.min.js"></script>
+<script>
+    //--user-info-tab切换示例
+    $('.user-info-tab .tab-nav').find('.nav-item').on('click', function () {
+        if ($(this).hasClass('current') == false) {
+            $(this).siblings('.current').removeClass('current');
+            $(this).addClass('current');
+        }
+    });
+</script>
+</body>
+</html>

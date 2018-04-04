@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* main-body */
+.main-body {
+  padding-top: 68px;
+  .content-container {
+    margin: 0 50px 80px 50px;
+    .content-title {
+      margin-bottom: 32px;
+      font-size: 16px;
+      font-weight: bold;
+      color: $onColorOrange;
+    }
+    .list-container {
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+      }
+      .list {
+        padding: 20px 0;
+        ul {
+          margin-top: -16px;
+          margin-left: -6px;
+          font-size: 0;
+        }
+        li {
+          display: inline-block;
+          margin: 16px 20px 0 20px;
+          a {
+            font-size: 14px;
+            color: #666;
+          }
+          a:hover {
+            color: $onColorOrange;
+          }
+        }
+      }
+    }
+    .list-container + .list-container {
+      padding-top: 24px;
+      border-top: 1px dashed #e4e4e4;
+    }
+  }
+}

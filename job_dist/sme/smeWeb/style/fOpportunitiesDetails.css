@@ -1,0 +1,99 @@
+.m-crumbs-nav { margin-bottom: 18px; }
+
+/* content-container */
+.content-container { padding: 27px 0; }
+
+.content-container .container-title { margin-bottom: 28px; font-size: 16px; font-weight: bold; color: #333; }
+
+/* details-container */
+.details-container { border-top: 1px solid #eee; }
+
+.details-container .info-container { margin: 0 24px; line-height: 1.3; }
+
+.details-container .info-container .info-title { margin-bottom: 24px; font-weight: bold; color: #333; }
+
+.details-container .info-container .info-desc .desc-title { float: left; width: 72px; margin-right: -72px; text-align: right; color: #333; }
+
+.details-container .info-container .info-desc .desc-content { margin-left: 74px; }
+
+.details-container .info-container .info-desc + .info-desc { margin-top: 20px; }
+
+.details-container .info-container + .info-container { margin-top: 33px; }
+
+/* record-container */
+.record-container .record-table .cell-num { max-width: 70px; }
+
+.record-container .record-table .cell-record { max-width: 684px; }
+
+.record-container .record-table .cell-time { max-width: 94px; }
+
+/* add-record-container */
+.add-record-container .form-container { margin: 0 24px; }
+
+.add-record-container .form-container .form-item { color: #333; }
+
+.add-record-container .form-container .form-item .title { float: left; width: 72px; margin-right: -72px; line-height: 32px; text-align: right; }
+
+.add-record-container .form-container .form-item .title .notice { display: block; line-height: 16px; font-size: 12px; color: #999; }
+
+.add-record-container .form-container .form-item .star-title:before { content: '*'; display: inline-block; margin-right: 4px; font-size: 14px; color: #fc0018; }
+
+.add-record-container .form-container .form-item .input-wrapper { margin-left: 74px; line-height: 32px; }
+
+.add-record-container .form-container .form-item .input-wrapper .hint-info { padding: 10px 0; line-height: 1; font-size: 12px; color: #999; }
+
+.add-record-container .form-container .form-item .input-wrapper .notice { margin-top: 14px; line-height: 20px; font-size: 12px; color: #999; word-wrap: break-word; word-break: break-all; }
+
+.add-record-container .form-container .form-item .input-wrapper .dash-line { margin: 0 3px; color: #c9c9c9; }
+
+.add-record-container .form-container .form-item .input-wrapper .input-label input[type="radio"] { margin-right: 5px; vertical-align: -2px; }
+
+.add-record-container .form-container .form-item .input-wrapper .input-label + .input-label { margin-left: 36px; }
+
+.add-record-container .form-container .form-item .input-wrapper .time-box .time-choose { position: relative; display: inline-block; width: 208px; height: 32px; vertical-align: middle; font-size: 14px; }
+
+.add-record-container .form-container .form-item .input-wrapper .time-box .time-choose i { position: absolute; top: 8px; right: 10px; line-height: 1; font-size: 16px; color: #c9c9c9; }
+
+.add-record-container .form-container .form-item .input-wrapper .time-box .time-choose span, .add-record-container .form-container .form-item .input-wrapper .time-box .time-choose input[type='text'] { position: absolute; top: 0; left: 0; display: block; width: 168px; height: 18px; padding: 6px 28px 6px 10px; line-height: 18px; font-size: 14px; border: 1px solid #ddd; background-color: transparent; }
+
+.add-record-container .form-container .form-item .input-wrapper .input-btn { margin-left: 10px; color: #1e2284; }
+
+.add-record-container .form-container .form-item .input-wrapper .input-btn:hover { color: #f78e24; }
+
+.add-record-container .form-container .form-item .input-wrapper input[type="text"] { width: 186px; height: 18px; padding: 6px 10px; line-height: 18px; font-size: 14px; border: 1px solid #ddd; -webkit-transition: box-shadow .2s ease-out; transition: box-shadow .2s ease-out; }
+
+.add-record-container .form-container .form-item .input-wrapper input[type="text"].l-input { width: 286px; }
+
+.add-record-container .form-container .form-item .input-wrapper input[type="text"].s-input { width: 90px; }
+
+.add-record-container .form-container .form-item .input-wrapper input[type="text"].zone-input { width: 52px; }
+
+.add-record-container .form-container .form-item .input-wrapper input[type="text"]:focus { box-shadow: 0 0 6px 0 rgba(14, 5, 10, 0.2); }
+
+.add-record-container .form-container .form-item .input-wrapper textarea { resize: none; width: 286px; height: 118px; padding: 6px 10px; vertical-align: bottom; border: 1px solid #ddd; -webkit-transition: box-shadow .2s ease-out; transition: box-shadow .2s ease-out; }
+
+.add-record-container .form-container .form-item .input-wrapper textarea.l-textarea { width: 568px; height: 216px; }
+
+.add-record-container .form-container .form-item .input-wrapper textarea:focus { box-shadow: 0 0 6px 0 rgba(14, 5, 10, 0.2); }
+
+.add-record-container .form-container .form-item .input-wrapper select { width: 208px; height: 32px; padding: 6px 10px; line-height: 30px; border: 1px solid #ddd; -webkit-transition: box-shadow .2s ease-out; transition: box-shadow .2s ease-out; }
+
+.add-record-container .form-container .form-item .input-wrapper select.l-select { width: 308px; }
+
+.add-record-container .form-container .form-item .input-wrapper select.s-select { width: 112px; }
+
+.add-record-container .form-container .form-item .input-wrapper select:focus { box-shadow: 0 0 6px 0 rgba(14, 5, 10, 0.2); }
+
+.add-record-container .form-container .form-item .input-wrapper .area-input .area-choose { width: 96px; height: 30px; padding: 0 10px; font-size: 14px; border: 1px solid #ddd; -webkit-transition: box-shadow .2s ease-out; transition: box-shadow .2s ease-out; }
+
+.add-record-container .form-container .form-item .input-wrapper .area-input .area-choose:focus { box-shadow: 0 0 6px 0 rgba(14, 5, 10, 0.2); }
+
+.add-record-container .form-container .form-item .input-wrapper .area-input .area-choose + .area-choose { margin-left: 5px; }
+
+.add-record-container .form-container .form-item .input-wrapper .area-input + .area-input { margin-top: 18px; }
+
+.add-record-container .form-container .form-btn-wrapper { padding: 15px 0; text-align: center; }
+
+.add-record-container .form-container .form-btn-wrapper .form-btn { min-width: 65px; padding: 9px 20px; font-size: 14px; color: #fff; background-color: #f78e24; border-radius: 5px; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.add-record-container .form-container .form-btn-wrapper .form-btn:hover { background-color: #ffa73d; }

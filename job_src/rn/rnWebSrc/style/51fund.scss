@@ -1,0 +1,533 @@
+@charset "utf-8";
+@import "baseNew";
+
+//变量
+$fontRed: #e30016;
+$fontBlue: #074c84;
+$bgcRed: #fb001b;
+
+//共用
+body {
+  font-size: 14px;
+  line-height: 1;
+}
+
+a {
+  display: inline-block;
+}
+
+.rn-wrapper {
+  width: 100%;
+  min-width: 1366px;
+}
+
+.rn-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//清除浮动
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//单行省略号
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//**主体
+//头部logo
+.head-logo {
+  height: 90px;
+  .logo-link {
+    float: left;
+    width: 236px;
+    height: 80px;
+    margin-top: 5px;
+    background: url("../resource/img/51zj_logo.png") no-repeat center;
+  }
+  .service-phone {
+    float: right;
+    margin-top: 24px;
+    position: relative;
+    i {
+      position: absolute;
+      top: -2px;
+      left: -50px;
+      font-size: 44px;
+      color: $fontRed;
+    }
+    p {
+      line-height: 20px;
+    }
+  }
+}
+
+//注册
+.register-section {
+  height: 517px;
+  background: url("../resource/img/51zj_bgp.png") no-repeat center;
+  .data-list {
+    float: left;
+    margin-top: 308px;
+    margin-left: 100px;
+    .list-item {
+      display: inline-block;
+      width: 116px;
+      height: 104px;
+      padding-top: 30px;
+      margin-right: 15px;
+      text-align: center;
+      background: url("../resource/img/51zj_bgp1.png") no-repeat center;
+      .text {
+        color: #fef368;
+      }
+      .num {
+        padding: 12px 0;
+        font-size: 35px;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+  .register-box {
+    float: right;
+    width: 390px;
+    height: 390px;
+    margin-top: 55px;
+    margin-right: 88px;
+    background-color: #fff;
+    .box-head {
+      width: 100%;
+      height: 59px;
+      line-height: 59px;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+      background-color: $bgcRed;
+    }
+    .box-body {
+      padding-top: 30px;
+    }
+    .input-wrapper {
+      width: 300px;
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 18px;
+      border: 1px solid $bgcRed;
+      border-radius: 50px;
+      position: relative;
+      overflow: hidden;
+      .rniconfont {
+        width: 57px;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        line-height: 40px;
+        font-size: 30px;
+        color: $bgcRed;
+      }
+      .l-input {
+        width: 210px;
+        height: 100%;
+        margin-left: 57px;
+        line-height: 40px;
+        font-size: 16px;
+        border: none;
+      }
+      .pic-btn {
+        width: 105px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 40px;
+        text-align: center;
+        background-color: $bgcRed;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .code-btn {
+        width: 105px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        background-color: $bgcRed;
+      }
+      .code-btn:hover {
+        background-color: $bgcRed + 50%;
+      }
+    }
+    .protocol-notice {
+      text-align: center;
+      input[type="checkbox"] {
+        vertical-align: middle;
+      }
+    }
+    .hint-info {
+      padding: 8px 0;
+      text-align: center;
+      line-height: 1;
+      font-size: 14px;
+    }
+    .btn-wrapper {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .register-btn {
+      width: 100%;
+      line-height: 40px;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      background-color: $bgcRed;
+      border-radius: 50px;
+    }
+    .register-btn:hover {
+      background-color: $bgcRed + 50%;
+    }
+  }
+}
+
+//section共用标题
+.section-title {
+  width: 100%;
+  padding: 35px 0;
+  text-align: center;
+  //***修改5.11-1px
+  .title-line {
+    display: inline-block;
+    height: 1px;
+  }
+  .title-text {
+    display: inline-block;
+    padding: 0 24px;
+    font-size: 36px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+}
+
+.section-title-red {
+  .title-line {
+    background-color: #f24d36;
+  }
+  .title-text {
+    color: #f24d36;
+  }
+}
+
+.section-title-white {
+  .title-line {
+    background-color: #fff;
+  }
+  .title-text {
+    color: #fff;
+  }
+}
+
+//优质项目
+.project-section {
+  background-color: #f1f1f1;
+  .section-title {
+    .title-line {
+      width: 490px;
+    }
+  }
+  .section-content {
+    height: 322px;
+    //overflow: hidden;
+  }
+  .content-body {
+    width: 100%;
+    position: relative;
+    .content-list {
+      width: 10000px;
+      .list-item {
+        position: relative;
+        float: left;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        .item-pic {
+          width: 280px;
+          height: 195px;
+          overflow: hidden;
+          margin-bottom: 13px;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: all .3s ease-out;
+          }
+        }
+        .item-title {
+          font-size: 14px;
+          font-weight: bold;
+          width: 250px;
+          margin-left: 10px;
+          margin-bottom: 15px;
+        }
+        .item-desc {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          color: #666666;
+          .desc-item {
+            float: left;
+          }
+          .desc-location {
+            margin-bottom: 10px;
+          }
+          .desc-money {
+            margin-left: 30px;
+            text-align: center;
+            .money-icon {
+              font-size: 24px;
+              color: #f9c846;
+              vertical-align: middle;
+            }
+            .money-text {
+              color: $fontRed;
+            }
+          }
+        }
+      }
+      .list-item:hover {
+        //***修改5.11-
+        //border-color: $fontRed;
+        .item-pic {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .item-title {
+          color: $fontRed;
+        }
+      }
+    }
+    .slider-btn {
+      //***修改5.11-
+      display: block;
+      text-align: center;
+      color: #dcdcdc;
+      position: absolute;
+      top: 0;
+      margin-top: 120px;
+      i {
+        font-size: 70px;
+      }
+    }
+    .slider-btn:hover {
+      color: #dcdcdc - 60%;
+    }
+    .prev {
+      left: -64px;
+    }
+    .next {
+      right: -64px;
+    }
+  }
+  .btn-wrapper {
+    padding: 30px 0;
+    font-size: 16px;
+    text-align: center;
+    .more-btn {
+      padding: 0 20px;
+      line-height: 35px;
+      color: #fff;
+      background-color: #f24d36;
+    }
+    .more-btn:hover {
+      background-color: #f24d36 + 30%;
+    }
+  }
+}
+
+//实力资金
+.fund-section {
+  height: 495px;
+  background: url("../resource/img/51zj_bgp2.png") no-repeat center;
+  .section-title {
+    .title-line {
+      width: 490px;
+    }
+  }
+  .section-content {
+    padding: 25px 15px 10px;
+    background-color: #faf9f6;
+    .content-body {
+      width: 105%;
+    }
+    .panel-content {
+      float: left;
+      width: 360px;
+      margin-right: 45px;
+      .panel-title {
+        margin-bottom: 33px;
+        line-height: 16px;
+        .title-text {
+          float: left;
+          padding-left: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          border-left: 3px solid $fontBlue;
+        }
+        .more-link {
+          float: right;
+        }
+      }
+      .panel-list {
+        li {
+          margin-bottom: 23px;
+          .fund-type {
+            width: 58px;
+            color: $fontBlue;
+            transition: all .2s ease-out;
+          }
+          .fund-desc {
+            width: 270px;
+            margin-left: 8px;
+            transition: all .2s ease-out;
+          }
+          .fund-type:hover {
+            color: $fontRed;
+            transform: translateX(5%);
+          }
+          .fund-desc:hover {
+            color: $fontRed;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  .btn-wrapper {
+    padding: 30px 0;
+    font-size: 16px;
+    text-align: center;
+    .more-btn {
+      padding: 0 20px;
+      line-height: 35px;
+      color: #fff;
+      background-color: #f24d36;
+    }
+    .more-btn:hover {
+      background-color: #f24d36 + 30%;
+    }
+  }
+}
+
+//知名投资机构
+.org-section {
+  padding-bottom: 35px;
+  background-color: #0f76a7;
+  .section-title {
+    .title-line {
+      width: 455px;
+    }
+  }
+  .section-content {
+    .content-body {
+      width: 105%;
+    }
+    .org-link {
+      //***修改5.11-
+      width: 227px;
+      height: 85px;
+      margin-right: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease-out;
+      }
+    }
+    .org-link:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+//成功案例
+.case-section {
+  background-color: #f1f1f1;
+  .section-title {
+    .title-line {
+      width: 490px;
+    }
+  }
+  .section-content {
+    .content-body {
+      width: 105%;
+    }
+    .case-link {
+      float: left;
+      width: 286px;
+      height: 315px;
+      margin-right: 16px;
+      background-color: #fff;
+      border: 1px solid #fff;
+      figure {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: transform .3s ease-out;
+        }
+      }
+      p {
+        padding: 0 16px;
+        line-height: 24px;
+      }
+    }
+    .case-link:hover {
+      border-color: $fontRed;
+      figure {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .btn-wrapper {
+    padding: 50px 0;
+    font-size: 24px;
+    text-align: center;
+    .register-jump {
+      padding: 0 95px;
+      line-height: 52px;
+      color: #fff;
+      background-color: #f24d36;
+      border-radius: 50px;
+    }
+    .register-jump:hover {
+      background-color: #f24d36 + 30%;
+    }
+  }
+}

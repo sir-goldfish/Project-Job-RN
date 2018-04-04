@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Style Show</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <style>
+        .show-panel {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .show-head {
+            padding: 1.2rem;
+            font-size: 1.6rem;
+            color: #fff;
+            background-color: #ff5722;
+        }
+
+        .show-head:before {
+            content: '§';
+            display: inline-block;
+            padding-right: .8rem;
+            font-weight: bold;
+        }
+
+        .show-body {
+            padding-top: .6rem;
+            padding-bottom: .6rem;
+        }
+
+        .show-body-item + .show-body-item {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="rn-wrapper">
+    <div class="rn-main-body">
+        <!--button-->
+        <div class="show-panel">
+            <div class="show-head">button</div>
+            <div class="show-body">
+                <div class="show-body-item">
+                    <div class="rn-btn-group">
+                        <a href="javascript:;" class="rn-btn rn-btn-lg">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-sm">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-block">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-block rn-btn-outline">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-blue">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-outline rn-btn-blue">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-red">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-outline rn-btn-red">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-yellow">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-outline rn-btn-yellow">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-gray">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-outline rn-btn-gray">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-grayblue">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-outline rn-btn-grayblue">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-shallowgray">btn 按钮</a>
+                        <a href="javascript:;" class="rn-btn rn-btn-outline rn-btn-shallowgray">btn 按钮</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--font-color-->
+        <div class="show-panel">
+            <div class="show-head">文本颜色</div>
+            <div class="show-body">
+                <div class="show-body-item">
+                    <span class="rn-font-green">文本颜色</span>
+                    <span class="rn-font-blue">文本颜色</span>
+                    <span class="rn-font-red">文本颜色</span>
+                    <span class="rn-font-yellow">文本颜色</span>
+                    <span class="rn-font-gray">文本颜色</span>
+                    <span class="rn-font-grayblue">文本颜色</span>
+                </div>
+                <div class="show-body-item">
+                    <a href="javascript:;" class="rn-font-green">链接配合颜色</a>
+                    <a href="javascript:;" class="rn-font-blue">链接配合颜色</a>
+                    <a href="javascript:;" class="rn-font-red">链接配合颜色</a>
+                    <a href="javascript:;" class="rn-font-yellow">链接配合颜色</a>
+                    <a href="javascript:;" class="rn-font-gray">链接配合颜色</a>
+                    <a href="javascript:;" class="rn-font-grayblue">链接配合颜色</a>
+                </div>
+            </div>
+        </div>
+        <!--表单-->
+        <div class="show-panel">
+            <div class="show-head">表单</div>
+            <div class="show-body">
+                <div class="show-body-item">
+                    <div class="rn-input-row">
+                        <div class="rn-input-box">
+                            <input type="text" class="rn-input" placeholder="rn-input">
+                        </div>
+                    </div>
+                    <div class="rn-input-row">
+                        <div class="rn-input-box">
+                            <input type="text" class="rn-input" placeholder="disabled" disabled>
+                        </div>
+                    </div>
+                    <div class="rn-input-row">
+                        <div class="rn-input-box">
+                            <textarea rows="5" class="rn-input" placeholder="textarea高度由rows控制"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--表单组-->
+        <div class="show-panel">
+            <div class="show-head">表单组</div>
+            <div class="show-body">
+                <div class="show-body-item">
+                    <div class="m-input-group">
+                        <div class="rn-input-row">
+                            <div class="rn-input-box">
+                                <input type="text" class="rn-input" placeholder="rn-input">
+                            </div>
+                        </div>
+                        <div class="rn-input-row with-addon">
+                            <span class="rn-input-addon">标题标题标题</span>
+                            <div class="rn-input-box">
+                                <input type="text" class="rn-input" placeholder="rn-input">
+                                <div class="rn-input-handle"><a href="javascript:;" class="rn-font-green">操作</a></div>
+                            </div>
+                        </div>
+                        <div class="rn-input-row with-addon">
+                            <span class="rn-input-addon">标题最多6字</span>
+                            <div class="rn-input-box">
+                                <input type="text" class="rn-input" placeholder="rn-input">
+                                <div class="rn-input-handle"><a href="javascript:;" class="rn-font-green">操作操作操作</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rn-input-row">
+                            <div class="rn-input-box">
+                                <textarea rows="5" class="rn-input" placeholder="textarea高度由rows控制"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--弹框表单-->
+        <div class="show-panel">
+            <div class="show-head">弹框表单</div>
+            <div class="show-body">
+                <div class="show-body-item">
+                    <div class="m-default-dialog-form">
+                        <div class="form-item f-clearfix">
+                            <span class="title">不带*标题：</span>
+                            <div class="input-wrapper">
+                                <div class="input-box">
+                                    <input type="text">
+                                </div>
+                                <p class="notice">
+                                    （注：若内容下有注释信息，加此结构）
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-item f-clearfix">
+                            <span class="title star-title">input：</span>
+                            <div class="input-wrapper">
+                                <div class="input-box">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item f-clearfix">
+                            <span class="title star-title">msgcode：</span>
+                            <div class="input-wrapper">
+                                <div class="input-box code-input">
+                                    <input type="text">
+                                    <a href="javascript:;" class="code-btn">10s后再获取</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item f-clearfix">
+                            <span class="title star-title">textarea：</span>
+                            <div class="input-wrapper">
+                                <div class="input-box">
+                                    <textarea rows="5" placeholder="textarea高度由rows控制"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item no-title f-clearfix">
+                            <div class="input-wrapper">
+                                <div class="input-box">
+                                    <textarea rows="5" placeholder="textarea高度由rows控制"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item f-clearfix">
+                            <span class="title star-title">select：</span>
+                            <div class="input-wrapper">
+                                <div class="input-box">
+                                    <select>
+                                        <option value="请选择">请选择</option>
+                                        <option value="选项">选项</option>
+                                        <option value="选项">选项</option>
+                                        <option value="选项">选项</option>
+                                        <option value="选项">选项</option>
+                                        <option value="选项">选项</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item f-clearfix">
+                            <span class="title star-title">radio：</span>
+                            <div class="input-wrapper">
+                                <div class="input-box">
+                                    <label class="input-label"><input type="radio" name="gender">男</label>
+                                    <label class="input-label"><input type="radio" name="gender">女</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item f-clearfix">
+                            <span class="title star-title">checkbox：</span>
+                            <div class="input-wrapper">
+                                <div class="input-box">
+                                    <label class="input-label"><input type="checkbox">类型1</label>
+                                    <label class="input-label"><input type="checkbox">类型2</label>
+                                    <label class="input-label"><input type="checkbox">类型3</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+</body>
+</html>

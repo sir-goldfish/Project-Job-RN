@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商标交易列表页-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/transactionList.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head5">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item stress"><a href="home.html"><i class="icon iconfont">&#xe601;</i>首页</a></li>
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="serviceBrand_v1.html" class="logo-link"><img src="resource/img/sme_logo_property.jpg"></a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="serviceBrand_v1.html" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="serviceBrand_v2.html" class="item-name">商标服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="serviceCopyright.html" class="item-name">版权服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicePatent.html" class="item-name">专利服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="transactionHome.html" class="item-name">交易市场</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--head-crumbs-nav-->
+<section class="head-crumbs-nav sme-wrapper">
+    <nav class="m-crumbs-nav sme-inner">
+        <ul>
+            <li><a href="javascript:;">交易市场</a></li>
+            <li><span>商标库</span></li>
+        </ul>
+    </nav>
+</section>
+<!--filter-container-->
+<section class="filter-container sme-wrapper">
+    <div class="sme-inner">
+        <section class="filter-panel">
+            <div class="results-container f-clearfix">
+                <div class="title">已选条件：</div>
+                <div class="content f-clearfix">
+                    <ul class="results-group f-clearfix">
+                        <li class="result">
+                            <span class="name f-ellipsis" title="商标类型：第1类 化学原料">商标类型：第1类 化学原料</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="商标结构：中文+英文">商标结构：中文+英文</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="商标状态：出售中">商标状态：出售中</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="交易类型：一口价">交易类型：一口价</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="商标价格：面议">商标价格：面议</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="全部清除">全部清除</span>
+                            <a href="javascript:;" class="del-all del iconfont">&#xe723;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="choose-container">
+                <div class="choose-item choose-brand-type with-more with-multiple">
+                    <div class="title">商标类型：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix test-list">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="第1类 化学原料">第1类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis"
+                                              title="第45类 安保法律、婚礼家政、社会服务">第45类 安保法律、婚礼家政、社会服务</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="第1类 化学原料">第1类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis"
+                                              title="第45类 安保法律、婚礼家政、社会服务">第45类 安保法律、婚礼家政、社会服务</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="第1类 化学原料">第1类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis"
+                                              title="第45类 安保法律、婚礼家政、社会服务">第45类 安保法律、婚礼家政、社会服务</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="第1类 化学原料">第1类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis"
+                                              title="第45类 安保法律、婚礼家政、社会服务">第45类 安保法律、婚礼家政、社会服务</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="第1类 化学原料">第1类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis"
+                                              title="第45类 安保法律、婚礼家政、社会服务">第45类 安保法律、婚礼家政、社会服务</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="第1类 化学原料">第1类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis"
+                                              title="第45类 安保法律、婚礼家政、社会服务">第45类 安保法律、婚礼家政、社会服务</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="options-foot-handle">
+                                <a href="javascript:;" class="confirm-btn handle-btn">确定</a>
+                                <a href="javascript:;" class="cancel-btn handle-btn">取消</a>
+                            </div>
+                        </div>
+                        <div class="handle-group">
+                            <a href="javascript:;" class="multiple-btn handle-btn">
+                                <i class="iconfont">&#xe772;</i><span>多选</span>
+                            </a>
+                            <a href="javascript:;" class="more-btn handle-btn">
+                                <i class="iconfont">&#xe9a2;</i><span>更多</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item">
+                    <div class="title">商标结构：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option chosen">
+                                        <span class="name f-ellipsis" title="中文+英文">中文+英文</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="中文+英文+图形">中文+英文+图形</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item">
+                    <div class="title">商标状态：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="出售中">出售中</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="已成交">已成交</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item">
+                    <div class="title">交易类型：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="一口价">一口价</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="议价">议价</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item">
+                    <div class="title">商标价格：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="2万以下">2万以下</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="2-5万">2-5万</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="5-8万">5-8万</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="8-15万">8-15万</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="15万以上">15万以上</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="面议">面议</span>
+                                    </li>
+                                    <li class="custom-option">
+                                        <span class="name">自定义：</span>
+                                        <input type="text" class="min-price">
+                                        <span class="connector">-</span>
+                                        <input type="text" class="max-price">
+                                        <span class="unit">元</span>
+                                        <a href="javascript:;" class="confirm-btn handle-btn">确定</a>
+                                        <a href="javascript:;" class="cancel-btn handle-btn">清空</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<!--content-container-->
+<section class="content-container sme-wrapper">
+    <div class="sme-inner f-clearfix">
+        <!--main-container-->
+        <main class="main-container f-pull-left">
+            <!--sort-container-->
+            <section class="sort-container f-clearfix">
+                <div class="sort-group f-pull-left">
+                    <a href="javascript:;" class="sort-item chosen">
+                        <span class="text">综合排序</span>
+                    </a>
+                    <a href="javascript:;" class="sort-item">
+                        <span class="text">价格</span><i class="ascend sort-icon"></i><i class="descend sort-icon"></i>
+                    </a>
+                    <a href="javascript:;" class="sort-item">
+                        <span class="text">时间</span><i class="ascend sort-icon"></i><i class="descend sort-icon"></i>
+                    </a>
+                </div>
+                <div class="f-pull-right">
+                    <div class="name-search">
+                        <input type="text" placeholder="搜索商标名称">
+                        <a href="javascript:;" class="search-btn iconfont">&#xe66e;</a>
+                    </div>
+                </div>
+            </section>
+            <!--result-container-->
+            <section class="result-container">
+                <div class="result-empty">
+                    <div class="pic"><img src="resource/img/sme_icon25.png"></div>
+                    <div class="text">没有相关内容……</div>
+                </div>
+                <section class="result-cards-wrap">
+                    <ul class="result-cards f-clearfix">
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic">
+                                <img src="resource/img/sme_transaction_pic8.jpg"><span class="price">优惠价：￥500</span>
+                            </a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第45类-安保法律、婚礼家政、社会服务</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic36.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第45类-安保法律、婚礼家政、社会服务</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic36.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第45类-安保法律、婚礼家政、社会服务</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic36.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第45类-安保法律、婚礼家政、社会服务</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic36.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第45类-安保法律、婚礼家政、社会服务</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic36.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第45类-安保法律、婚礼家政、社会服务</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic36.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第1类-化工用品</div>
+                            </div>
+                        </li>
+                        <li class="result-card">
+                            <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                            <div class="desc">
+                                <div class="title">
+                                    <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称名称名称</a>
+                                </div>
+                                <div class="price"><span class="num">￥1000000</span></div>
+                                <div class="group-name">第45类-安保法律、婚礼家政、社会服务</div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="pagination-container">
+                    <div class="m-default-pagination">100 条记录 2/3 页<a href='javascript:;'>上一页</a><a href="javascript:;">1</a><span
+                            class='current'>2</span><a href='javascript:;'>3</a><a href="javascript:;">下一页</a></div>
+                </section>
+                <section class="pagination-container">
+                    <div class="m-group-pagination">
+                        <div class="page-nav">
+                            <a href='javascript:;'>首页</a><a href='javascript:;'>&lt; 上一页</a><a href="javascript:;">1</a><span
+                                class='current'>2</span><a href='javascript:;'>3</a><span>…</span><a
+                                href="javascript:;">下一页 &gt;</a>
+                        </div>
+                        <div class="page-jump">
+                            到第<input type="text" value="10">页<input type="button" value="确定">
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <!--aside-container-->
+        <aside class="aside-container f-pull-right">
+            <!--chance-container-->
+            <aside class="chance-container">
+                <div class="container-head">快速登记，极速匹配需求</div>
+                <div class="chance-form">
+                    <ul class="tab">
+                        <li class="current">商标求购</li>
+                        <li>商标出售</li>
+                    </ul>
+                    <div class="input-item">
+                        <div class="input-box">
+                            <input type="text"><span class="title">联系人</span>
+                        </div>
+                        <div class="hint-info">*提示信息占位</div>
+                    </div>
+                    <div class="input-item">
+                        <div class="input-box">
+                            <input type="text"><span class="title">联系电话</span>
+                        </div>
+                        <div class="hint-info"></div>
+                    </div>
+                    <div class="form-foot">
+                        <a href="javascript:;" class="submit-btn">立即提交</a>
+                        <div class="note">5分钟内顾问联系您</div>
+                    </div>
+                </div>
+            </aside>
+            <!--hot-recommend-container-->
+            <aside class="hot-recommend-container">
+                <div class="container-head">热门商标推荐</div>
+                <ul class="recommend-list">
+                    <li class="recommend-card">
+                        <a href="javascript:;" class="pic"><img src="resource/img/sme_pic34.jpg"></a>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称</a>
+                            </div>
+                            <div class="price"><span class="num">￥100000</span></div>
+                        </div>
+                    </li>
+                    <li class="recommend-card">
+                        <a href="javascript:;" class="pic"><img src="resource/img/sme_pic35.jpg"></a>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称</a>
+                            </div>
+                            <div class="price"><span class="num">￥100000</span></div>
+                        </div>
+                    </li>
+                    <li class="recommend-card">
+                        <a href="javascript:;" class="pic"><img src="resource/img/sme_pic36.jpg"></a>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="javascript:;" class="f-ellipsis">名称名称名称名称名称名称</a>
+                            </div>
+                            <div class="price"><span class="num">￥100000</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </aside>
+    </div>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt>关于我们</dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt>服务支持</dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt>新手指南</dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link f-clearfix">
+                        <dl class="service-links f-pull-left">
+                            <dt>融诺旗下服务</dt>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#f99003;">&#xe708;</a>
+                                <a href="javascript:;" class="text">融诺知产</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#f21e02;">&#xe706;</a>
+                                <a href="javascript:;" class="text">融诺工商</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#d69f56;">&#xe8b2;</a>
+                                <a href="javascript:;" class="text">融诺法律</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#00b7ee;">&#xe705;</a>
+                                <a href="javascript:;" class="text">融诺人事</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#e60012;">&#xe707;</a>
+                                <a href="javascript:;" class="text">融诺金融</a>
+                            </dd>
+                        </dl>
+                        <dl class="friend-links f-pull-right">
+                            <dt>友情链接</dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">更多</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure>
+                    <img src="resource/img/sme_wx_qrcode.png">
+                </figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+    <!--m-default-float-consult-->
+    <aside class="m-default-float-consult">
+        <div class="consult-head"></div>
+        <div class="consult-body">
+            <div class="consult-btn content-item">
+                <a href="javascript:;" class="content-item-in"><span>在线咨询</span></a>
+            </div>
+            <div class="qrcode-btn with-hide content-item">
+                <a href="javascript:;" class="content-item-in"><span class="iconfont">&#xe6cf;</span></a>
+                <div class="hide-qrcode hide-item">
+                    <figure class="pic">
+                        <img src="resource/img/sme_wx_qrcode.png">
+                    </figure>
+                    <p>扫一扫<br>了解更多动态</p>
+                </div>
+            </div>
+            <div class="back-top-btn content-item">
+                <a href="javascript:;" class="content-item-in"><span class="iconfont">&#xe6ce;</span></a>
+            </div>
+        </div>
+    </aside>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    // 筛选相关功能示例
+    $('.handle-group').find('.handle-btn').on('click', function () {
+        if ($(this).hasClass('more-btn') == true) {
+            if ($(this).hasClass('active') == false) {
+                $(this).addClass('active').find('span').text('收起');
+                $(this).parents('.choose-item').addClass('on-more');
+            } else {
+                $(this).parents('.choose-item').find('.options-group-wrap').scrollTop(0);
+                $(this).removeClass('active').find('span').text('更多');
+                $(this).parents('.choose-item').removeClass('on-more');
+            }
+        }
+        if ($(this).hasClass('multiple-btn') == true) {
+            if ($(this).hasClass('active') == false) {
+                $(this).addClass('active');
+                $(this).parents('.choose-item').addClass('on-multiple');
+                if ($(this).siblings('.more-btn').length > 0) {
+                    $(this).siblings('.more-btn').addClass('hide');
+                    if ($(this).siblings('.more-btn').hasClass('active') == false) {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
+                }
+            } else {
+                $(this).removeClass('active');
+                $(this).parents('.choose-item').removeClass('on-multiple');
+                if ($(this).siblings('.more-btn').length > 0) {
+                    $(this).siblings('.more-btn').removeClass('hide');
+                    if ($(this).siblings('.more-btn').hasClass('active') == true) {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
+                }
+            }
+        }
+    });
+
+    // 排序筛选
+    function sortFilter($dom) {
+        var $sortItem = $dom.find('.sort-item');
+        $sortItem.on('click', function () {
+            if ($(this).hasClass('chosen') == false) {
+                $(this).addClass('chosen').siblings().removeClass('chosen ascending descending');
+            }
+            if ($(this).find('.sort-icon').length > 0) {
+                if ($(this).hasClass('ascending') == false && $(this).hasClass('descending') == false) {
+                    $(this).addClass('ascending');
+                } else if ($(this).hasClass('ascending') == true) {
+                    $(this).addClass('descending').removeClass('ascending')
+                } else if ($(this).hasClass('descending') == true) {
+                    $(this).addClass('ascending').removeClass('descending')
+                }
+            }
+        });
+    }
+
+    sortFilter($('.sort-container .sort-group'));
+</script>
+</body>
+</html>

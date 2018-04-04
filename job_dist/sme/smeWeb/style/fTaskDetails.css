@@ -1,0 +1,51 @@
+.m-crumbs-nav { margin-bottom: 18px; }
+
+/* details-container */
+.details-container { padding: 27px 0; border-top: 1px solid #eee; }
+
+.details-container .container-title { margin-bottom: 28px; font-size: 16px; font-weight: bold; color: #333; }
+
+/* info-container */
+.details-container .info-container { margin: 0 24px 33px 24px; line-height: 1.3; }
+
+.details-container .info-container .info-title { margin-bottom: 24px; font-weight: bold; color: #333; }
+
+.details-container .info-container .info-desc .desc-title { float: left; width: 72px; margin-right: -72px; text-align: right; color: #333; }
+
+.details-container .info-container .info-desc .desc-content { margin-left: 74px; }
+
+.details-container .info-container .info-desc + .info-desc { margin-top: 20px; }
+
+/* foot-btn-group */
+.details-container .foot-btn-group { padding: 20px 0; margin: 0 24px; font-size: 0; }
+
+.details-container .foot-btn-group .foot-btn { height: 32px; padding: 0 20px; line-height: 32px; font-size: 13px; color: #fff; background-color: #f78e24; }
+
+.details-container .foot-btn-group .foot-btn:hover { background-color: #e87f15; }
+
+.details-container .foot-btn-group .foot-btn:active { background-color: #d97006; }
+
+.details-container .foot-btn-group .foot-btn.btn-blue { background-color: #22447a; }
+
+.details-container .foot-btn-group .foot-btn.btn-blue:hover { background-color: #13356b; }
+
+.details-container .foot-btn-group .foot-btn.btn-blue:active { background-color: #04265c; }
+
+.details-container .foot-btn-group .foot-btn + .foot-btn { margin-left: 18px; }
+
+/* status-notice */
+.details-container .status-notice { padding: 20px 0; margin: 0 24px; text-align: center; }
+
+.details-container .status-notice .notice { padding: 9px 0; font-weight: bold; background-color: #e8ebf0; }
+
+.details-container .status-notice .notice.received-notice { color: #f78e24; }
+
+.details-container .status-notice .notice.abandon-notice { color: #22447a; }
+
+.details-container .status-notice .notice.overdue-notice { color: #333; }
+
+.details-container .status-notice .notice-handle { margin-top: 16px; }
+
+.details-container .status-notice .handle-link { font-size: 13px; color: #22447a; }
+
+.details-container .status-notice .handle-link:hover { color: #f78e24; }

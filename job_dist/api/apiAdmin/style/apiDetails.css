@@ -1,0 +1,21 @@
+/* api-container-head */
+.api-details-container .api-container-head { margin-bottom: 15px; font-size: 17px; }
+
+/* api-edit-form */
+.api-edit-container .api-edit-form .form-control { height: 34px; }
+
+.api-edit-container .api-edit-form .form-group .form-group-addon { float: left; width: 120px; margin-right: -120px; padding: 9px 5px; text-align: right; font-weight: 700; }
+
+.api-edit-container .api-edit-form .form-group .form-group-content { margin-left: 120px; padding: 0 5px; }
+
+.api-edit-container .api-edit-form .add-param-container .add-param-list { margin-top: 15px; }
+
+.api-edit-container .api-edit-form .add-param-container .add-param-list .list-item + .list-item { margin-top: 12px; }
+
+.api-edit-container .api-edit-form .add-param-container .add-param-list .del-self-btn { margin-left: 5px; }
+
+@media (max-width: 767px) { .api-edit-container .api-edit-form .form-group .form-group-addon { width: 100%; margin-right: 0; text-align: justify; }
+  .api-edit-container .api-edit-form .form-group .form-group-content { margin-left: 0; } }
+
+/* api-details-table */
+.api-details-table .form-control { height: 34px; }

@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*--begin：以下为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, form, fieldset, legend, input, textarea, select, header, footer, figure, article, aside, section, nav { margin: 0; padding: 0; }
+
+html, body { width: 100%; height: 100%; }
+
+body { color: #333; font-family: "微软雅黑", sans-serif, "Times New Roman"; background: #fff; }
+
+a { color: #666; text-decoration: none; }
+
+a:hover, a:active, a:focus { color: #cd0200; }
+
+ul, ol, dl { list-style: none; }
+
+fieldset, img { border: none; }
+
+input, button { outline: none; }
+
+em { font-style: normal; }
+
+/*--end：以上为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+.rn-wrapper { width: 100%; min-width: 1200px; }
+
+.rn-inner { width: 990px; margin: 0 auto; }
+
+.clearfix:after { content: "."; display: block; height: 0; font-size: 0; clear: both; visibility: hidden; }
+
+.clearfix { zoom: 1; }
+
+.text-ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* 该页面取1200头部的样式，尺寸为990 */
+.header-1200 { font-size: 14px; line-height: 1; }
+
+.header-1200 .header-bar { padding: 8px 0; font-size: 12px; background-color: #f1f1f1; }
+
+.header-1200 .header-bar .bar-notice { float: left; }
+
+.header-1200 .header-bar .bar-notice em { font-size: 13px; color: #b00819; }
+
+.header-1200 .header-bar .bar-notice .welcome { display: inline-block; margin: 0 10px; }
+
+.header-1200 .header-bar .bar-notice a { margin-right: 10px; }
+
+.header-1200 .header-bar .bar-notice .register-btn { color: #b00819; }
+
+.header-1200 .header-bar .bar-notice a:hover { color: #cd0200; text-decoration: underline; }
+
+.header-1200 .header-bar .bar-links { float: right; }
+
+.header-1200 .header-bar .bar-links a { display: inline-block; padding: 0 10px; border-right: 1px solid #d0ccd0; }
+
+.header-1200 .header-bar .bar-links .noborder { padding-right: 0; border: none; }
+
+.header-1200 .header-body { padding: 22px 0; font-size: 14px; }
+
+.header-1200 .header-body .logo { float: left; }
+
+.header-1200 .header-body .body-links { float: right; }
+
+.header-1200 .header-body .body-links a { display: inline-block; padding: 8px 15px; }
+
+.header-1200 .header-body .body-links .last-link { padding-right: 0; }
+
+.header-1200 .header-body .body-links .current { color: #cd0200; }
+
+.breadcrumb { padding: 10px; line-height: 20px; font-size: 12px; background-color: #f5f5f5; }
+
+.breadcrumb i { vertical-align: middle; }
+
+.breadcrumb a { padding: 0 3px; color: #666; }
+
+.breadcrumb a:hover { color: #cd0200; }
+
+.breadcrumb span { padding-left: 5px; color: #999; }
+
+.breadcrumb .arrows { padding-right: 5px; font-family: SimSun; }
+
+.main-body { padding-top: 24px; padding-bottom: 30px; font-size: 14px; line-height: 1; }
+
+.main-body .section-title { width: 100%; border-bottom: 1px solid #ededed; }
+
+.main-body .section-title .text { float: left; height: 28px; padding-right: 5px; padding-bottom: 10px; margin-bottom: -1px; font-size: 20px; font-weight: bold; }
+
+.main-body .section-title .text i { margin-right: 10px; font-size: 28px; font-weight: normal; vertical-align: middle; }
+
+.main-body .past-activity-list { float: left; width: 100%; margin-right: -280px; }
+
+.main-body .past-activity-list .list-body { margin-right: 310px; }
+
+.main-body .past-activity-list .section-title .text { border-bottom: 3px solid #1aa1e6; }
+
+.main-body .past-activity-list .list li { padding: 24px 0; font-size: 12px; border-bottom: 1px solid #ededed; }
+
+.main-body .past-activity-list .list .pic { position: relative; z-index: 1; display: block; float: left; width: 190px; height: 128px; overflow: hidden; }
+
+.main-body .past-activity-list .list .pic img { width: 100%; height: 100%; -webkit-transition: all .3s ease-out; transition: all .3s ease-out; }
+
+.main-body .past-activity-list .list .pic:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.main-body .past-activity-list .list .desc { float: left; width: 100%; margin-left: -190px; }
+
+.main-body .past-activity-list .list dl { margin-left: 214px; margin-right: 15px; }
+
+.main-body .past-activity-list .list dl dt { margin-bottom: 5px; line-height: 26px; font-size: 16px; }
+
+.main-body .past-activity-list .list dl dt a { display: block; }
+
+.main-body .past-activity-list .list dl dt a:hover { text-decoration: underline; }
+
+.main-body .past-activity-list .list dl dd { font-size: 12px; color: #999; }
+
+.main-body .past-activity-list .list dl .para { height: 36px; margin-bottom: 34px; line-height: 18px; overflow: hidden; }
+
+.main-body .past-activity-list .list dl .foot { margin-left: -10px; line-height: 18px; }
+
+.main-body .past-activity-list .list dl .foot i { margin-left: 10px; margin-right: 2px; font-size: 18px; vertical-align: top; }
+
+.main-body .past-activity-list .section-pagination { padding: 30px 0; }
+
+.main-body .future-activity-list { float: right; width: 280px; }
+
+.main-body .future-activity-list .section-title .text { height: 31px; }
+
+.main-body .future-activity-list .list { padding-top: 4px; }
+
+.main-body .future-activity-list .list li { padding: 9px; margin-top: 16px; border: 1px solid #ededed; -webkit-transition: border .2s ease-out; transition: border .2s ease-out; }
+
+.main-body .future-activity-list .list li .pic { display: block; width: 100%; height: 160px; overflow: hidden; }
+
+.main-body .future-activity-list .list li .pic img { width: 100%; height: 100%; -webkit-transition: all .3s ease-out; transition: all .3s ease-out; }
+
+.main-body .future-activity-list .list li .pic:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.main-body .future-activity-list .list li dt { height: 39px; margin: 16px 0; line-height: 20px; overflow: hidden; }
+
+.main-body .future-activity-list .list li dt a:hover { text-decoration: underline; }
+
+.main-body .future-activity-list .list li dd { height: 20px; margin-left: -12px; margin-bottom: 5px; line-height: 20px; font-size: 12px; color: #999; }
+
+.main-body .future-activity-list .list li dd i { margin-left: 12px; margin-right: 0; font-size: 18px; vertical-align: middle; }
+
+.main-body .future-activity-list .list li dd span { vertical-align: middle; }
+
+.main-body .future-activity-list .list li dd b { display: inline-block; padding: 0 6px; margin-left: 12px; font-weight: normal; letter-spacing: 1px; vertical-align: middle; color: #fff; background-color: #fa555c; border-radius: 4px; }
+
+.main-body .future-activity-list .list li dd b.finish { color: #363636; background-color: #dcdcdc; }
+
+.main-body .future-activity-list .list li:hover { border-color: #c5c5c5; }

@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务商维权订单首页-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/facilitatorPublic.css">
+    <link rel="stylesheet" href="style/fOrderDetailsRights.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--sme-head3-->
+<header class="sme-head3">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="name">用户名</a>，欢迎您！
+                </li>
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <a href="javascript:;" class="back-home"><i class="iconfont">&#xe670;</i>返回首页</a>
+        </div>
+    </div>
+</header>
+<!--main-body-->
+<section class="main-body sme-inner f-clearfix">
+    <aside class="g-member-aside">
+        <!--user-card-->
+        <div class="user-card">
+            <div class="card-inner">
+                <figure class="avatar">
+                    <img src="resource/img/sme_avatar3.png" alt="">
+                </figure>
+                <a href="javascript:;" class="name">用户名</a>
+                <div class="member-type">
+                    <i class="iconfont">&#xe69e;</i>普通会员
+                </div>
+            </div>
+        </div>
+        <!--m-member-aside-nav-->
+        <nav class="m-member-aside-nav">
+            <a href="facilitatorCenter.html" class="title"><i class="iconfont">&#xe67b;</i>会员中心</a>
+            <dl>
+                <dt><i class="iconfont">&#xe9a1;</i>任务管理</dt>
+                <dd><a href="fTaskNew.html">新任务</a></dd>
+                <dd><a href="fTaskHistory.html">历史任务</a></dd>
+                <dd><a href="fPushOpportunities.html">推送商机</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe6a0;</i>订单管理</dt>
+                <dd><a href="fOrderFollow.html">待跟进</a></dd>
+                <dd><a href="fOrderConfirm.html">待确认</a></dd>
+                <dd><a href="fOrderAll.html">全部订单</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe6d3;</i>服务管理</dt>
+                <dd><a href="fMySkills.html">我的技能</a></dd>
+                <dd><a href="fMyHomepage_v1.html">我的主页</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe6a9;</i>客户管理</dt>
+                <dd><a href="fOrderEvaluated.html">评价管理</a></dd>
+                <dd><a href="fOrderRefund.html">退款管理</a></dd>
+                <dd class="current"><a href="fOrderRights.html">交易维权</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe69b;</i>会员服务</dt>
+                <dd><a href="fMemberService.html">会员服务</a></dd>
+                <dd><a href="fMyService.html">我的服务</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe672;</i>账户管理</dt>
+                <dd><a href="fAccountInfo.html">账户资料</a></dd>
+                <dd><a href="fAccountSecurity.html">账户安全</a></dd>
+                <dd><a href="fAuthenticationO.html">账户认证</a></dd>
+            </dl>
+        </nav>
+    </aside>
+    <section class="g-member-section">
+        <!--*注：查看维权的三种状态的提示-->
+        <div class="rights-demo-notice"
+             style="padding:10px 0; text-align: center; color:red; background-color:#00C1B3;">
+            <p>*注：.rights-demo-notice该块仅提示查看状态效果使用，与实际页面无关，使用时删除此块内容。</p>
+            <p style="margin-top: 10px; font-size: 20px;">*注：以下将维权的三种状态都展现出来。</p>
+            <p style="margin-top: 10px; font-size: 20px;">*注：进入判定期开始，被举报人的.presentation-handle就不再出现。</p>
+        </div>
+        <!--rights-content-container-->
+        <section class="rights-content-container">
+            <div class="content-title">交易维权</div>
+            <section class="content-body">
+                <!--m-crumbs-nav-->
+                <nav class="m-crumbs-nav">
+                    <ul>
+                        <li><a href="javascript:;">会员中心首页</a></li>
+                        <li><a href="javascript:;">交易维权</a></li>
+                        <li><span>维权编号：RNWWQ20120412001</span></li>
+                    </ul>
+                </nav>
+                <!--rights-path-container-->
+                <div class="rights-path-container">
+                    <nav class="steps-nav">
+                        <ul>
+                            <li class="current-step step-item">
+                                <i class="icon iconfont">&#xe6b7;</i>
+                                <span class="text">举证协商期</span>
+                            </li>
+                            <li class="step-item">
+                                <i class="icon iconfont">&#xe690;</i>
+                                <span class="text">判定期</span>
+                            </li>
+                            <li class="step-item">
+                                <i class="icon iconfont">&#xe68e;</i>
+                                <span class="text">已结案</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--rights-btm-info-->
+                <div class="rights-btm-info f-clearfix">
+                    <div class="info-item">维权编号：RNWWQ20120412001</div>
+                    <div class="info-item">服务名称：公司注册（无地址）</div>
+                    <div class="info-item">订单编号：RNW201704070000001</div>
+                    <div class="info-item"><a href="fOrderDetailsRefund.html" class="details-btn">查看订单详情</a></div>
+                </div>
+            </section>
+        </section>
+        <!--*注：判定期示例-->
+        <section class="rights-content-container">
+            <div class="content-title">交易维权</div>
+            <section class="content-body">
+                <!--m-crumbs-nav-->
+                <nav class="m-crumbs-nav">
+                    <ul>
+                        <li><a href="javascript:;">会员中心首页</a></li>
+                        <li><a href="javascript:;">交易维权</a></li>
+                        <li><span>维权编号：RNWWQ20120412001</span></li>
+                    </ul>
+                </nav>
+                <!--rights-path-container-->
+                <div class="rights-path-container">
+                    <nav class="steps-nav">
+                        <ul>
+                            <li class="passed-step step-item">
+                                <i class="icon iconfont">&#xe6b7;</i>
+                                <span class="text">举证协商期</span>
+                            </li>
+                            <li class="current-step step-item">
+                                <i class="icon iconfont">&#xe690;</i>
+                                <span class="text">判定期</span>
+                            </li>
+                            <li class="step-item">
+                                <i class="icon iconfont">&#xe68e;</i>
+                                <span class="text">已结案</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--rights-btm-info-->
+                <div class="rights-btm-info f-clearfix">
+                    <div class="info-item">维权编号：RNWWQ20120412001</div>
+                    <div class="info-item">服务名称：公司注册（无地址）</div>
+                    <div class="info-item">订单编号：RNW201704070000001</div>
+                    <div class="info-item"><a href="fOrderDetailsRefund.html" class="details-btn">查看订单详情</a></div>
+                </div>
+            </section>
+            <!--rights-status-desc-->
+            <div class="rights-status-desc">
+                <i class="icon iconfont">&#xe696;</i>平台审核中，请耐心等待…
+            </div>
+        </section>
+        <!--*注：已结案示例-->
+        <section class="rights-content-container">
+            <div class="content-title">交易维权</div>
+            <section class="content-body">
+                <!--m-crumbs-nav-->
+                <nav class="m-crumbs-nav">
+                    <ul>
+                        <li><a href="javascript:;">会员中心首页</a></li>
+                        <li><a href="javascript:;">交易维权</a></li>
+                        <li><span>维权编号：RNWWQ20120412001</span></li>
+                    </ul>
+                </nav>
+                <!--rights-path-container-->
+                <div class="rights-path-container">
+                    <nav class="steps-nav">
+                        <ul>
+                            <li class="passed-step step-item">
+                                <i class="icon iconfont">&#xe6b7;</i>
+                                <span class="text">举证协商期</span>
+                            </li>
+                            <li class="passed-step step-item">
+                                <i class="icon iconfont">&#xe690;</i>
+                                <span class="text">判定期</span>
+                            </li>
+                            <li class="current-step step-item">
+                                <i class="icon iconfont">&#xe68e;</i>
+                                <span class="text">已结案</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--rights-btm-info-->
+                <div class="rights-btm-info f-clearfix">
+                    <div class="info-item">维权编号：RNWWQ20120412001</div>
+                    <div class="info-item">服务名称：公司注册（无地址）</div>
+                    <div class="info-item">订单编号：RNW201704070000001</div>
+                    <div class="info-item"><a href="fOrderDetailsRefund.html" class="details-btn">查看订单详情</a></div>
+                </div>
+            </section>
+            <!--rights-status-desc-->
+            <div class="rights-status-desc pass">
+                <i class="icon iconfont">&#xe691;</i>平台审核结束：审核双方提交的证据，以及与双方沟通后，判定服务商退款给用户。
+            </div>
+        </section>
+        <!--presentation-cards-container-->
+        <section class="presentation-cards-container f-clearfix">
+            <div class="presentation-cards employer-cards">
+                <!--info-card-->
+                <div class="info-card">
+                    <div class="card-title">
+                        <span class="text">举报人信息</span>
+                    </div>
+                    <div class="card-body f-clearfix">
+                        <figure class="avatar">
+                            <img src="resource/img/sme_avatar1.png" alt="">
+                        </figure>
+                        <div class="desc-container">
+                            <div class="name">张先生</div>
+                            <div class="desc-text">2017-04-19 09:34:29 发起维权</div>
+                        </div>
+                    </div>
+                </div>
+                <!--presentation-list-->
+                <div class="presentation-list">
+                    <div class="presentation-card">
+                        <div class="card-title">举报人陈述时间：2017-04-19 09:34:29</div>
+                        <div class="card-body f-clearfix">
+                            <figure class="avatar">
+                                <img src="resource/img/sme_avatar1.png" alt="">
+                            </figure>
+                            <div class="desc-container">
+                                <div class="desc-text">
+                                    服务商未在合同规定时间内完成我所需要的公司注册，而且拖延时间，并且企图增加服务费用。总是以各种理由不及时帮我们进行办理，签署合同前说一切都没有问题，但是之后就开始说我们各种不可以，这就是欺骗客户的行为，希望能给解决！
+                                </div>
+                                <div class="desc-text proof-group f-clearfix">
+                                    <div class="proof-title">附件：</div>
+                                    <div class="proof-list">
+                                        <div class="proof-list-inner f-clearfix">
+                                            <a href="javascript:;" class="proof-item">证据1</a>
+                                            <a href="javascript:;" class="proof-item">证据2</a>
+                                            <a href="javascript:;" class="proof-item">证据3</a>
+                                            <a href="javascript:;" class="proof-item">证据4</a>
+                                            <a href="javascript:;" class="proof-item">证据5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentation-card">
+                        <div class="card-title">举报人陈述时间：2017-04-19 09:34:29</div>
+                        <div class="card-body f-clearfix">
+                            <figure class="avatar">
+                                <img src="resource/img/sme_avatar1.png" alt="">
+                            </figure>
+                            <div class="desc-container">
+                                <div class="desc-text">
+                                    服务商未在合同规定时间内完成我所需要的公司注册，而且拖延时间，并且企图增加服务费用。总是以各种理由不及时帮我们进行办理，签署合同前说一切都没有问题，但是之后就开始说我们各种不可以，这就是欺骗客户的行为，希望能给解决！
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="presentation-cards facilitator-cards">
+                <!--info-card-->
+                <div class="info-card">
+                    <div class="card-title">
+                        <span class="text">被举报人信息</span>
+                    </div>
+                    <div class="card-body f-clearfix">
+                        <figure class="avatar">
+                            <img src="resource/img/sme_avatar2.png" alt="">
+                        </figure>
+                        <div class="desc-container">
+                            <div class="name">服务商：青岛德诚财务有限公司</div>
+                            <div class="desc-text">2017-04-19 09:34:29 接受订单</div>
+                        </div>
+                    </div>
+                </div>
+                <!--presentation-list-->
+                <div class="presentation-list">
+                    <div class="presentation-card">
+                        <div class="card-title">被举报人自辩时间：2017-04-19 09:34:29</div>
+                        <div class="card-body f-clearfix">
+                            <figure class="avatar">
+                                <img src="resource/img/sme_avatar2.png" alt="">
+                            </figure>
+                            <div class="desc-container">
+                                <div class="desc-text">
+                                    我们按照合同签署的协议进行办理，但是客户却多次更改需求，导致我们反复准备了多次材料，而且客户态度恶劣，不接我们的电话，也不跟我们沟通，至于加价的事情，根本是不属实的，他想要办理代账，我们的服务费用自然是要增加的，并没有恶意收费和欺骗客户。希望客户可以尽快跟我们沟通。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentation-card">
+                        <div class="card-title">被举报人自辩时间：2017-04-19 09:34:29</div>
+                        <div class="card-body f-clearfix">
+                            <figure class="avatar">
+                                <img src="resource/img/sme_avatar2.png" alt="">
+                            </figure>
+                            <div class="desc-container">
+                                <div class="desc-text">
+                                    我们按照合同签署的协议进行办理，但是客户却多次更改需求，导致我们反复准备了多次材料，而且客户态度恶劣，不接我们的电话，也不跟我们沟通，至于加价的事情，根本是不属实的，他想要办理代账，我们的服务费用自然是要增加的，并没有恶意收费和欺骗客户。希望客户可以尽快跟我们沟通。
+                                </div>
+                                <div class="desc-text proof-group f-clearfix">
+                                    <div class="proof-title">附件：</div>
+                                    <div class="proof-list">
+                                        <div class="proof-list-inner f-clearfix">
+                                            <a href="javascript:;" class="proof-item">证据1</a>
+                                            <a href="javascript:;" class="proof-item">证据2</a>
+                                            <a href="javascript:;" class="proof-item">证据3</a>
+                                            <a href="javascript:;" class="proof-item">证据4</a>
+                                            <a href="javascript:;" class="proof-item">证据5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentation-handle">
+                        <div class="handle-btn-group">
+                            <a href="javascript:;" class="current handle-btn">继续自辩</a>
+                            <a href="javascript:;" class="handle-btn">已与TA协商，进行退款</a>
+                            <a href="javascript:;" class="handle-btn">直接退款</a>
+                            <a href="javascript:;" class="handle-btn">申请平台介入</a>
+                        </div>
+                        <div class="handle-body">
+                            <div class="continue-content">
+                                <textarea></textarea>
+                                <div class="upload-wrapper">
+                                    <a href="javascript:;" class="upload-btn">
+                                        <i class="iconfont">&#xe692;</i>上传凭证
+                                        <input type="file">
+                                    </a>
+                                </div>
+                                <div class="proof-group f-clearfix">
+                                    <div class="proof-title">已上传附件：</div>
+                                    <div class="proof-list">
+                                        <ul class="proof-list-inner f-clearfix">
+                                            <li class="proof-item">
+                                                <a href="javascript:;" class="proof-link">附件1</a>
+                                                <a href="javascript:;" class="del-self-icon iconfont" title="删除该附件">
+                                                    &#xe723;</a>
+                                            </li>
+                                            <li class="proof-item">
+                                                <a href="javascript:;" class="proof-link">附件2</a>
+                                                <a href="javascript:;" class="del-self-icon iconfont" title="删除该附件">
+                                                    &#xe723;</a>
+                                            </li>
+                                            <li class="proof-item">
+                                                <a href="javascript:;" class="proof-link">附件3</a>
+                                                <a href="javascript:;" class="del-self-icon iconfont" title="删除该附件">
+                                                    &#xe723;</a>
+                                            </li>
+                                            <li class="proof-item">
+                                                <a href="javascript:;" class="proof-link">附件4</a>
+                                                <a href="javascript:;" class="del-self-icon iconfont" title="删除该附件">
+                                                    &#xe723;</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="javascript:;" class="submit-btn">提交</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

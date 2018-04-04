@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* head-banner */
+.head-banner { height: 450px; }
+
+.head-banner .banner-item { display: block; width: 100%; height: inherit; }
+
+/* 共用标题 */
+.section-title { line-height: 1; text-align: center; font-size: 24px; color: #363636; }
+
+.section-title-underline { text-align: center; }
+
+.section-title-underline span { line-height: 1; font-size: 24px; font-weight: bold; color: #363636; }
+
+.section-title-underline span:after { content: ''; display: block; width: 96px; height: 2px; margin-left: auto; margin-right: auto; margin-top: 9px; background-color: #ddd; }
+
+/* applicable-org */
+.applicable-org { background-color: #ebf1f6; }
+
+.applicable-org .section-title-underline { padding-top: 40px; padding-bottom: 30px; }
+
+.applicable-org .list { padding-bottom: 58px; text-align: center; font-size: 0; }
+
+.applicable-org .list li { display: inline-block; width: 285px; vertical-align: top; font-size: 14px; }
+
+.applicable-org .list li .icon { width: 160px; height: 160px; margin-left: auto; margin-right: auto; margin-bottom: 30px; background: url(../resource/img/sme_service_sprites2.png) no-repeat 999px 0; }
+
+.applicable-org .list li .title { margin-bottom: 16px; font-size: 18px; font-weight: bold; color: #363636; }
+
+.applicable-org .list li .desc { line-height: 30px; color: #666; }
+
+.applicable-org .list li + li { margin-left: 140px; }
+
+/* info-gather */
+.info-gather .section-title { padding-top: 60px; padding-bottom: 35px; font-weight: bold; }
+
+.info-gather .section-title span { color: #f78e24; }
+
+.info-gather .info-container { padding-bottom: 83px; text-align: center; font-size: 0; }
+
+.info-gather .info-container .input-box { position: relative; display: inline-block; vertical-align: middle; }
+
+.info-gather .info-container .input-box input { width: 340px; height: 22px; padding: 13px 10px 13px 150px; line-height: 22px; font-size: 18px; border: 1px solid #c9c9c9; }
+
+.info-gather .info-container .input-box .text { position: absolute; top: 0; left: 0; height: 50px; line-height: 50px; font-size: 18px; }
+
+.info-gather .info-container .input-box .text i { margin: 0 13px; vertical-align: middle; font-size: 34px; }
+
+.info-gather .info-container .info-btn { display: inline-block; width: 178px; height: 48px; margin-left: 14px; vertical-align: middle; line-height: 48px; font-size: 18px; font-weight: bold; color: #f78e24; background-color: #fff; border: 1px solid #f78e24; -webkit-transition: all .3s ease-out; transition: all .3s ease-out; }
+
+.info-gather .info-container .info-btn:hover { color: #fff; background-color: #f99003; }
+
+/* advantage-section */
+.advantage-section { background: url(../resource/img/sme_service_bgi6.jpg) no-repeat center; background-size: cover; }
+
+.advantage-section .section-title-underline { padding: 57px 0; }
+
+.advantage-section .advantage-container { margin: 0 28px; }
+
+.advantage-section .advantage-container .advantage-list { padding-bottom: 46px; margin-top: -50px; margin-left: -54px; font-size: 0; }
+
+.advantage-section .advantage-container .list-item { display: inline-block; width: 50%; margin-top: 50px; vertical-align: top; }
+
+.advantage-section .advantage-container .content { margin-left: 54px; }
+
+.advantage-section .advantage-container .content .title { position: relative; margin-left: 38px; margin-bottom: 14px; font-size: 18px; font-weight: bold; color: #363636; }
+
+.advantage-section .advantage-container .content .title:before { content: ''; position: absolute; top: 5px; left: -38px; display: block; width: 11px; height: 11px; background-color: #363636; border-radius: 50%; }
+
+.advantage-section .advantage-container .content .desc { margin-left: 38px; line-height: 30px; font-size: 14px; color: #666; }
+
+/* service-content */
+.service-content .section-title-underline { padding-top: 48px; padding-bottom: 45px; }
+
+.service-content .content-container .content-list { padding-bottom: 70px; margin-top: -54px; font-size: 0; }
+
+.service-content .content-container .list-item { display: inline-block; width: 25%; margin-top: 54px; text-align: center; vertical-align: top; font-size: 14px; }
+
+.service-content .content-container .list-item .icon { width: 88px; height: 88px; margin-left: auto; margin-right: auto; margin-bottom: 24px; line-height: 88px; font-size: 48px; font-weight: bold; color: #fff; border-radius: 50%; }
+
+.service-content .content-container .list-item .title { margin-bottom: 12px; font-size: 18px; font-weight: bold; color: #363636; }
+
+.service-content .content-container .list-item .desc { line-height: 24px; color: #666; }
+
+/* service-cards */
+.service-cards { background: url(../resource/img/sme_service_bgi7.jpg) no-repeat center; background-size: cover; }
+
+.service-cards .u-linetitle-white { padding-top: 40px; padding-bottom: 46px; }
+
+.service-cards .m-service-cards { padding-bottom: 50px; }
+
+/* question-cards */
+.question-cards { padding-bottom: 34px; background-color: #fff; }
+
+.question-cards .u-linetitle-black { padding-top: 47px; padding-bottom: 50px; }
+
+.question-cards .m-question-cards { margin: 0 60px; }
+
+/* other-services */
+.other-services { padding-bottom: 65px; background-color: #fff; }
+
+.other-services .section-title { padding: 24px 0; }
+
+.other-services .m-other-services { margin: 0 60px; }

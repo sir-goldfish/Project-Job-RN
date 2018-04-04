@@ -1,0 +1,33 @@
+body { background-color: #f1f1f1; }
+
+/* head-banner */
+.head-banner { padding-top: 30px; padding-bottom: 30px; }
+
+.head-banner .banner-item { width: 100%; height: 295px; }
+
+/* case-section */
+.case-section .case-list { margin: -20px 0 0 -30px; }
+
+.case-section .case-card { float: left; width: 525px; height: 175px; padding: 30px; margin: 20px 0 0 30px; background-color: #fff; }
+
+.case-section .case-card .card-pic { float: left; width: 205px; height: 175px; margin-right: -205px; overflow: hidden; }
+
+.case-section .case-card .card-pic img { width: 100%; height: 100%; vertical-align: top; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.case-section .case-card .card-pic:hover img { -webkit-transform: scale(0.95); -ms-transform: scale(0.95); transform: scale(0.95); }
+
+.case-section .case-card .card-desc { margin-left: 221px; font-size: 13px; color: #333; }
+
+.case-section .case-card .card-desc .title { width: 100%; font-size: 15px; }
+
+.case-section .case-card .card-desc .title a { max-width: 100%; }
+
+.case-section .case-card .card-desc .para { height: 100px; margin-top: 10px; line-height: 25px; color: #999; overflow: hidden; }
+
+.case-section .case-card .card-desc .desc-info { margin-top: 10px; }
+
+.case-section .case-card .card-desc .desc-info .info i { margin-right: 8px; vertical-align: -1px; font-size: 16px; }
+
+.case-section .case-card .card-desc .desc-info .info + .info { margin-top: 8px; }
+
+.case-section .pagination-container { padding: 20px 0; }

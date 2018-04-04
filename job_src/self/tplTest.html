@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="show"></div>
+<!--#tpl-->
+<script type="text/html" id="tpl">
+    <h3>{{name}}</h3>
+    <p>{{text}}</p>
+</script>
+<!--script-->
+<script src="jquery.min.js"></script>
+<script>
+    var data = [
+            {"name": "Jason", "text": "Jason is a boy."},
+            {"name": "Lily", "text": "Lily is a girl."}
+        ],
+        tplHtml = $('#tpl').html(),
+        $showBox = $('#show'),
+        showHtml;
+    for (var i = 0; i <= data.length; i++) {
+        showHtml = tplHtml.replace('{{name}}', data[i].name);
+        showHtml = showHtml.replace('{{text}}', data[i].text);
+        $showBox.append(showHtml);
+    }
+</script>
+</body>
+</html>

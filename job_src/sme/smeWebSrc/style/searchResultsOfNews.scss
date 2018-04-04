@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* main-body */
+.main-body {
+  padding: 10px 0;
+  background-color: #f7f7f7;
+}
+
+/* main-content-container */
+.main-content-container {
+  float: left;
+  width: 872px;
+}
+
+/* search-results-container */
+.search-results-container {
+  width: 772px;
+  min-height: 922px;
+  padding: 50px;
+  background-color: #fff;
+  .container-head {
+    .search-box {
+      width: 548px;
+      height: 40px;
+      margin: 0 auto 36px auto;
+      .search-input {
+        float: left;
+        width: 420px;
+        height: 18px;
+        padding: 10px 16px;
+        line-height: 18px;
+        color: #333;
+        border: 1px solid #c9c9c9;
+        border-right: none;
+        &:focus {
+          border-color: #e81111;
+        }
+      }
+      .search-btn {
+        float: right;
+        width: 95px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        background-color: #e81111;
+        &:hover {
+          background-color: #e81111 - 10%;
+        }
+        &:active {
+          background-color: #e81111 - 30%;
+        }
+      }
+    }
+    .search-notice {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      i {
+        margin-right: 5px;
+        font-size: inherit;
+        color: $onColorOrange;
+      }
+    }
+  }
+  .results-list {
+    padding: 30px 0;
+    .list-item {
+      padding: 25px 0;
+      .title {
+        max-width: 100%;
+        margin-bottom: 18px;
+        font-size: 16px;
+        color: #333;
+      }
+      .title:hover {
+        color: $onColorOrange;
+      }
+      p {
+        height: 56px;
+        line-height: 28px;
+        font-size: 14px;
+        color: #999;
+        overflow: hidden;
+      }
+    }
+    .list-item + .list-item {
+      border-top: 1px dashed #eee;
+    }
+  }
+}
+
+/* aside-content-container */
+.aside-content-container {
+  float: right;
+  width: 318px;
+  // 共用标题
+  .aside-title {
+    margin-bottom: 22px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #363636;
+    span {
+      padding-left: 9px;
+      border-left: 3px solid $onColorOrange;
+    }
+  }
+  // 共用
+  .news-list {
+    width: 100%;
+    background-color: #fff;
+    .inner {
+      padding: 20px 0 14px 0;
+      margin: 0 20px;
+    }
+    .list {
+      dt {
+        position: relative;
+        width: 276px;
+        height: 204px;
+        margin-bottom: 22px;
+        border: 1px solid #eee;
+        .pic {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease-out;
+          }
+        }
+        .pic:hover {
+          img {
+            transform: scale(1.04);
+          }
+        }
+        .desc {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 39px;
+          .bg {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            opacity: .65;
+            filter: alpha(opacity=65);
+          }
+          .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            a {
+              display: block;
+              margin: 12px;
+              font-size: 14px;
+              font-weight: bold;
+              color: #363636;
+            }
+            a:hover {
+              color: $onColorOrange;
+            }
+          }
+        }
+      }
+      dd {
+        margin-bottom: 18px;
+        font-size: 14px;
+        a {
+          width: 100%;
+          color: #666;
+        }
+        a:before {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          margin-right: 4px;
+          vertical-align: middle;
+          background-color: #666;
+          border-radius: 50%;
+        }
+        a:hover {
+          color: $onColorOrange;
+          &:before {
+            background-color: $onColorOrange;
+          }
+        }
+      }
+    }
+  }
+  .news-list + .news-list {
+    margin-top: 10px;
+  }
+}

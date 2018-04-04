@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+//全局变量
+$onColorOrange: #f78e24;
+$onColorOrangeHover: #f78e24 - 15%;
+$onColorOrangeActive: #f78e24 - 30%;
+@mixin globalVerticalMiddleAssist {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 0;
+  overflow: hidden;
+}

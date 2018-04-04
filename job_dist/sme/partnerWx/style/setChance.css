@@ -1,0 +1,21 @@
+/* .set-container */
+.set-container { padding-top: .7rem; padding-bottom: 1.4rem; }
+
+.set-container .set-item + .set-item { padding-top: .7rem; }
+
+.set-container .set-item-title { padding-top: .7rem; padding-bottom: .7rem; font-size: 1.3rem; }
+
+.set-container .set-item-title .required:before { content: '*'; display: inline-block; font-size: .9em; }
+
+.set-container .set-foot { padding-top: 2.5rem; }
+
+/* choose-type-container */
+.choose-type-container { padding-top: .5rem; padding-bottom: 1.4rem; }
+
+.choose-type-container .choose-group + .choose-group { padding-top: .5rem; }
+
+.choose-type-container .group-title { padding-top: .7rem; padding-bottom: .7rem; font-size: 1.3rem; }
+
+.choose-type-container .option-group .option.chosen { color: #fff; background-color: #23d7d0; border-color: #23d7d0; }
+
+.choose-type-container .container-foot { padding-top: 2rem; }

@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* head-banner */
+.head-banner {
+  height: 450px;
+  overflow: hidden;
+  .banner-item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* develop-time-axis */
+.develop-time-axis {
+  .time-tree {
+    padding: 83px 0 100px 0;
+    margin-left: 112px;
+    margin-right: 70px;
+  }
+  .year-branch {
+    padding-bottom: 18px;
+    border-left: 1px solid #eee;
+  }
+  .year-icon {
+    width: 125px;
+    height: 125px;
+    margin-left: -63px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #363636;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    overflow: hidden;
+    span {
+      margin-top: 43px;
+    }
+    span:after {
+      content: 'year';
+      display: block;
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #999;
+    }
+  }
+  .affair-branch {
+    margin-top: 54px;
+    font-size: 0;
+    .affair-date {
+      float: left;
+      display: block;
+      width: 160px;
+      margin-right: -160px;
+      line-height: 20px;
+      font-size: 18px;
+      color: #999;
+    }
+    .affair-date:before {
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin-left: -7px;
+      margin-right: 28px;
+      background-color: $onColorOrange;
+      border-radius: 50%;
+    }
+    .affair-desc {
+      margin-left: 168px;
+      .title {
+        margin-bottom: 20px;
+        line-height: 20px;
+        font-size: 18px;
+        color: #666;
+      }
+      .para {
+        line-height: 18px;
+        font-size: 14px;
+        color: #999;
+      }
+    }
+  }
+}

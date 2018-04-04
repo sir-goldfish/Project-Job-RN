@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雇主企业会员认证-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/employerPublic.css">
+    <link rel="stylesheet" href="style/eAuthenticationO.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--sme-head3-->
+<header class="sme-head3">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="name">用户名</a>，欢迎您！
+                </li>
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <a href="javascript:;" class="back-home"><i class="iconfont">&#xe670;</i>返回首页</a>
+        </div>
+    </div>
+</header>
+<!--main-body-->
+<section class="main-body sme-inner f-clearfix">
+    <aside class="g-member-aside">
+        <!--m-member-aside-nav-->
+        <nav class="m-member-aside-nav">
+            <a href="employerCenter.html" class="title"><i class="iconfont">&#xe67b;</i>会员中心</a>
+            <dl>
+                <dt><i class="iconfont">&#xe684;</i>交易管理</dt>
+                <dd><a href="javascript:;">待支付</a></dd>
+                <dd><a href="javascript:;">待确认</a></dd>
+                <dd><a href="javascript:;">全部订单</a></dd>
+                <dd><a href="javascript:;">我的收藏</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe699;</i>评价管理</dt>
+                <dd><a href="javascript:;">待评价</a></dd>
+                <dd><a href="javascript:;">已评价</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe672;</i>账户管理</dt>
+                <dd><a href="javascript:;">账户资料</a></dd>
+                <dd><a href="javascript:;">账户安全</a></dd>
+                <dd class="current"><a href="javascript:;">会员认证</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont">&#xe680;</i>退款/维权管理</dt>
+                <dd><a href="javascript:;">我的退款</a></dd>
+                <dd><a href="javascript:;">我的维权</a></dd>
+            </dl>
+        </nav>
+    </aside>
+    <section class="g-member-section">
+        <section class="main-content-container">
+            <div class="main-content-title">企业会员认证</div>
+            <!--path-container-->
+            <section class="path-container">
+                <nav class="steps-nav">
+                    <ul>
+                        <li class="current-step step-item"><span>填写企业营业资料</span></li>
+                        <li class="step-item"><span>提交企业对公账户资料</span></li>
+                        <li class="step-item"><span>系统审核</span></li>
+                        <li class="step-item"><span>认证结果</span></li>
+                    </ul>
+                </nav>
+                <div class="steps-content">
+                    <div class="current content-item f-clearfix">
+                        <div class="form-container">
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">公司名称：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" placeholder="名称应与营业执照一致">
+                                    </div>
+                                    <div class="hint-info">*提示信息占位</div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">营业执照注册号：<em class="notice">（统一社会信用代码）</em></span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">营业执照所在地：</span>
+                                <div class="input-wrapper">
+                                    <div class="area-input input-box">
+                                        <select class="area-choose">
+                                            <option value="请选择">请选择</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                        </select>
+                                        <select class="area-choose">
+                                            <option value="请选择">请选择</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                        </select>
+                                        <select class="area-choose">
+                                            <option value="请选择">请选择</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                            <option value="地区">地区</option>
+                                        </select>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">常用地址：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">营业期限：</span>
+                                <div class="input-wrapper">
+                                    <div class="time-box f-clearfix">
+                                        <label class="input-label">
+                                            <input type="radio" name="time-limit" checked="checked">
+                                            <span class="time-choose">
+                                                <i class="iconfont">&#xe67e;</i><input readonly type="text"
+                                                                                       id="time-limit">
+                                            </span>
+                                        </label>
+                                        <label class="input-label"><input type="radio" name="time-limit">长期</label>
+                                    </div>
+                                    <p class="notice">
+                                        若证件有效期为长期，请勾选长期。<br>例如：有效期为2016.01.28— ；长期，则勾选长期。
+                                    </p>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">经营范围：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">组织机构代码证号：<em class="notice">（统一社会信用代码）</em></span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">组织机构代码证扫描件：<em
+                                        class="notice">（三证合一用户请上传营业执照扫描件）</em></span>
+                                <div class="input-wrapper">
+                                    <div class="m-upload-preview">
+                                        <div class="preview-file">
+                                            <img src="resource/img/sme_member_pic1.jpg" alt="" class="pic">
+                                            <div class="shade"></div>
+                                            <div class="btn-group">
+                                                <a href="javascript:;" class="preview-file-btn iconfont">&#xe669;</a>
+                                                <a href="javascript:;" class="del-file-btn iconfont">&#xe676;</a>
+                                            </div>
+                                        </div>
+                                        <div class="upload-file"><input type="file"></div>
+                                        <p class="notice">
+                                            证件要求：<br>必须为清晰、完整的彩色原件扫描件或数码照，仅支持.jpg.bmp.png.gif的图片格式，图片大小不超过3M。必须在有效期内且年检章期权（当年成立的公司可无年检章），必须为中国大陆工商局颁发。
+                                        </p>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title">营业执照副本扫描件：</span>
+                                <div class="input-wrapper">
+                                    <div class="m-upload-preview">
+                                        <div class="preview-file">
+                                            <img src="resource/img/sme_member_pic2.jpg" alt="" class="pic">
+                                            <div class="shade"></div>
+                                            <div class="btn-group">
+                                                <a href="javascript:;" class="preview-file-btn iconfont">&#xe669;</a>
+                                                <a href="javascript:;" class="del-file-btn iconfont">&#xe676;</a>
+                                            </div>
+                                        </div>
+                                        <div class="upload-file"><input type="file"></div>
+                                        <p class="notice">
+                                            证件要求：<br>请上传由中国大陆工商局颁发的，在有效期内且年检章齐全（当当年成立的公司可无年检章）的证件图片。请提供清晰、完成的彩色原件扫描件或数码照，仅支持.jpg.bmp.png.gif的图片格式，图片大小不超过3M。
+                                        </p>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <a href="javascript:;" class="next-btn content-btn">下一步</a>
+                            </div>
+                        </div>
+                        <div class="notice-container">
+                            <div class="title">温馨提示：</div>
+                            <p class="para">营业执照信息仅用作企业认证的审核，请放心填写</p>
+                            <p class="para">组织机构代码证扫描件示例：</p>
+                            <figure class="pic"><img src="resource/img/sme_member_pic1.jpg" alt=""></figure>
+                            <p class="para">营业执照副本扫描件示例：</p>
+                            <figure class="pic"><img src="resource/img/sme_member_pic2.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="content-item f-clearfix">
+                        <div class="form-container">
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">户名：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                    <div class="hint-info">*提示信息占位</div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">账号：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">银行：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">开户行：</span>
+                                <div class="input-wrapper">
+                                    <div class="input-box">
+                                        <input type="text" class="l-input">
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-item f-clearfix">
+                                <span class="title star-title">开户证明：</span>
+                                <div class="input-wrapper">
+                                    <div class="m-upload-preview">
+                                        <div class="preview-file">
+                                            <img src="resource/img/sme_member_pic.jpg" alt="" class="pic">
+                                            <div class="shade"></div>
+                                            <div class="btn-group">
+                                                <a href="javascript:;" class="preview-file-btn iconfont">&#xe669;</a>
+                                                <a href="javascript:;" class="del-file-btn iconfont">&#xe676;</a>
+                                            </div>
+                                        </div>
+                                        <div class="upload-file"><input type="file"></div>
+                                        <p class="notice">注：请上传对公账户的开户证明，要求清晰、可识别</p>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <a href="javascript:;" class="submit-btn content-btn">提交</a>
+                            </div>
+                        </div>
+                        <div class="notice-container">
+                            <div class="title">温馨提示：</div>
+                            <p class="para">银行账户信息用于购买后的售后服务，所以请务必准确填写</p>
+                            <p class="para">企业用户请务必填写对公账户的信息，否则将会审核失败</p>
+                        </div>
+                    </div>
+                    <div class="content-item f-clearfix">
+                        <div class="form-container">
+                            <div class="status-desc">
+                                <div class="desc-icon iconfont">&#xe693;</div>
+                                <div class="desc-title">信息审核中，请耐心等待…</div>
+                            </div>
+                        </div>
+                        <div class="notice-container">
+                            <div class="title">温馨提示：</div>
+                            <p class="para">会员认证提交申请后，将会有1-3个工作日的审核时间，请耐心等待，我们的工作人员在努力工作哟~</p>
+                        </div>
+                    </div>
+                    <!--**提示：该内容区中,左侧上部为成功,下部为失败/右侧温馨提示中,第一条为成功,第二条为失败-->
+                    <div class="content-item f-clearfix">
+                        <div class="form-container">
+                            <div class="status-desc">
+                                <div class="desc-icon iconfont">&#xe6b8;</div>
+                                <div class="desc-title">认证成功</div>
+                            </div>
+                            <div class="status-desc">
+                                <div class="desc-icon iconfont">&#xe6c8;</div>
+                                <div class="desc-title">认证失败</div>
+                                <div class="desc-para">失败原因：营业执照扫描件不清晰，请重新进行认证</div>
+                            </div>
+                            <div class="form-btn-wrapper">
+                                <a href="javascript:;" class="anew-btn content-btn">重新认证</a>
+                            </div>
+                        </div>
+                        <div class="notice-container">
+                            <div class="title">温馨提示：</div>
+                            <p class="para">实名认证成功通过审核，快去购买服务吧~</p>
+                            <p class="para">认证未通过审核，请根据失败原因，重新修改，提交认证</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script src="plugin/laydate-v1.1/laydate.js"></script>
+<script>
+    //--内容切换及步骤效果示例
+    $('.content-btn').on('click', function () {
+        var stepsSum = $('.content-item').length,
+                currentIndex = $(this).parents('.content-item').index(),
+                nextIndex = currentIndex + 1;
+        if (nextIndex < stepsSum) {
+            $('.step-item').eq(currentIndex).removeClass('current-step').addClass('passed-step');
+            $('.step-item').eq(nextIndex).addClass('current-step');
+            $('.content-item').eq(currentIndex).removeClass('current');
+            $('.content-item').eq(nextIndex).addClass('current');
+        }
+    });
+    //营业期限
+    var timeLimit = laydate({
+        elem: '#time-limit', //需显示日期的元素选择器
+        event: 'click', //触发事件
+        format: 'YYYY-MM-DD', //日期格式
+        istime: false, //是否开启时间选择
+        isclear: true, //是否显示清空
+        istoday: true, //是否显示今天
+        issure: true, //是否显示确定
+        min: '1900-01-01 00:00:00', //最小日期
+        max: '2099-12-31 23:59:59', //最大日期
+        start: '2014-6-15 23:00:00',  //开始日期
+        fixed: false, //是否固定在可视区域
+        zIndex: 99999999, //css z-index
+        choose: function (dates) { //选择好日期的回调
+
+        }
+    });
+    //营业期限input[text]框不能触发input[radio]
+    $('#time-limit').on('click', function () {
+        $(this).parents('label').trigger('click');
+    });
+</script>
+</body>
+</html>

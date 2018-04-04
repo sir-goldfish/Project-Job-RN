@@ -1,0 +1,503 @@
+@charset "utf-8";
+
+/*--begin：以下为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+@import "baseNew";
+/*--end：以上为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+
+//共用
+.rn-wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.rn-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//清除浮动
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//单行省略号
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//头部
+.header-1200 {
+  font-size: 14px;
+  line-height: 1;
+  .header-bar {
+    padding: 8px 0;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    .bar-notice {
+      float: left;
+      em {
+        font-size: 13px;
+        color: #b00819;
+      }
+      .welcome {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      a {
+        margin-right: 10px;
+      }
+      .register-btn {
+        color: #b00819;
+      }
+      a:hover {
+        color: #cd0200;
+        text-decoration: underline;
+      }
+    }
+    .bar-links {
+      float: right;
+      a {
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 1px solid #d0ccd0;
+      }
+      .noborder {
+        padding-right: 0;
+        border: none;
+      }
+    }
+  }
+  .header-body {
+    padding: 22px 0;
+    font-size: 14px;
+    .logo {
+      float: left;
+    }
+    .body-links {
+      float: right;
+      a {
+        display: inline-block;
+        padding: 8px 15px;
+      }
+      .last-link {
+        padding-right: 0;
+      }
+      .current {
+        color: #cd0200;
+      }
+    }
+  }
+}
+
+/* head-nav */
+.head-nav {
+  .list {
+    padding-bottom: 22px;
+    font-size: 0;
+    li {
+      position: relative;
+      display: inline-block;
+      padding: 0 20px;
+      a {
+        font-size: 16px;
+        color: #363636;
+      }
+      a:hover {
+        color: #cd0200;
+      }
+    }
+    .current {
+      a {
+        color: #cd0200;
+      }
+    }
+    li + li:before {
+      content: '/';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      font-size: 16px;
+      color: #d6d6d6;
+    }
+  }
+}
+
+//数据统计
+.data-section {
+  padding-bottom: 35px;
+  background-color: #f1f1f1;
+  .section-title {
+    padding: 22px 0;
+    font-size: 20px;
+  }
+  .content-body {
+    width: 105%;
+  }
+  .pie-chart {
+    float: left;
+    width: 326px;
+    height: 330px;
+    margin-right: 20px;
+  }
+  .bar-chart {
+    float: left;
+    width: 420px;
+    height: 330px;
+    margin-right: 20px;
+  }
+}
+
+//共用头部样式
+.section-title-container {
+  padding: 40px 0;
+  text-align: center;
+  .zh-title {
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+  .en-title {
+    font-size: 12px;
+    color: #999999;
+  }
+}
+
+//成功案例
+.case-section {
+  $borderGrey: #eeeeee;
+  .project-cards {
+    width: 105%;
+    .card {
+      float: left;
+      width: 588px;
+      height: 290px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border: 1px solid $borderGrey;
+      background-color: #fff;
+    }
+    .card-desc {
+      padding: 30px 30px 20px;
+      border-bottom: 1px solid $borderGrey;
+      figure {
+        float: left;
+        width: 260px;
+        height: 180px;
+        margin-right: 15px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease-out;
+        }
+      }
+      figure:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .desc-text {
+        float: left;
+        width: 250px;
+        .title {
+          display: inline-block;
+          width: 95%;
+          padding: 15px 0;
+          font-size: 18px;
+          transition: padding .2s ease-out;
+        }
+        .title:hover {
+          padding-left: 4%;
+        }
+        p {
+          font-size: 14px;
+          color: #999999;
+          line-height: 24px;
+        }
+      }
+    }
+    .card-bottom {
+      text-align: center;
+      padding: 16px 30px;
+      line-height: 26px;
+      font-size: 14px;
+      i {
+        font-style: normal;
+      }
+      .rniconfont {
+        font-size: 15px;
+        vertical-align: middle;
+      }
+      .time {
+        margin-left: 5px;
+        margin-right: 10px;
+        color: #999;
+
+      }
+      .left-text {
+        width: 263px;
+        float: left;
+        border-right: 1px solid $borderGrey;
+        i {
+          color: #1aa1e6;
+        }
+      }
+      .right-text {
+        width: 264px;
+        float: right;
+        i {
+          color: #e96678;
+        }
+      }
+    }
+  }
+  table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    font-size: 14px;
+    th, td {
+      padding: 18px 10px;
+    }
+    th {
+      font-weight: normal;
+      color: #666666;
+      background-color: $borderGrey;
+    }
+    td {
+      text-align: center;
+    }
+    .title {
+      width: 300px;
+      margin: 0 auto;
+    }
+    .money {
+      color: #e96678;
+    }
+    .odd {
+      background-color: #fff;
+    }
+    .even {
+      background-color: $borderGrey;
+    }
+    tbody {
+      tr:hover {
+        color: #1aa1e6;
+        .money {
+          color: #1aa1e6;
+        }
+        .detail-btn {
+          color: #1aa1e6;
+        }
+      }
+    }
+    tfoot {
+      .separate-row {
+        height: 18px;
+      }
+      .foot-more {
+        border: 1px solid $borderGrey;
+      }
+      .more-btn {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+//机构分类
+.org-section {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+  //共性
+  .org-card {
+    float: left;
+    width: 380px;
+    height: 426px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .card-title {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-list {
+    padding: 30px;
+    ul {
+      width: 105%;
+    }
+    .list-item {
+      float: left;
+      width: 153px;
+      height: 54px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      figure {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #eeeeee;
+        transition: all .3s ease-out;
+        transform: rotateY(0deg);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .item-title {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        word-break: break-all;
+        border-width: 1px;
+        border-style: solid;
+        overflow: hidden;
+        transition: all .3s ease-out;
+        transform: rotateY(90deg);
+        span {
+          display: inline-block;
+          margin: 8px 5px;
+        }
+      }
+    }
+    .list-item:hover {
+      figure {
+        transform: rotateY(90deg);
+      }
+      .item-title {
+        transform: rotateY(0deg);
+      }
+    }
+  }
+  //个性
+  .vc-card {
+    $color: #e8667c;
+    .card-title {
+      background-color: $color;
+    }
+    .card-list {
+      .list-item {
+        .item-title {
+          background-color: $color;
+          border-color: $color;
+        }
+      }
+    }
+  }
+  .pe-card {
+    $color: #89abd8;
+    .card-title {
+      background-color: $color;
+    }
+    .card-list {
+      .list-item {
+        .item-title {
+          background-color: $color;
+          border-color: $color;
+        }
+      }
+    }
+  }
+  .ag-card {
+    $color: #86ccc8;
+    .card-title {
+      background-color: $color;
+    }
+    .card-list {
+      .list-item {
+        .item-title {
+          background-color: $color;
+          border-color: $color;
+        }
+      }
+    }
+  }
+}
+
+//项目推荐
+.recommend-section {
+  .content-list {
+    width: 105%;
+    padding-bottom: 25px;
+    .list-item {
+      float: left;
+      width: 283px;
+      height: 127px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      border: 1px solid #eeeeee;
+      border-radius: 5px;
+      figure {
+        float: left;
+        margin: 17px 15px;
+        width: 92px;
+        height: 92px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      dl {
+        float: left;
+        line-height: 1;
+        dt {
+          width: 140px;
+          margin-top: 17px;
+          margin-bottom: 24px;
+        }
+        dd {
+          font-size: 12px;
+          b {
+            color: #e72a35;
+          }
+          .project-btn {
+            display: inline-block;
+            padding: 5px 8px;
+            color: #fff;
+            background-color: #d04045;
+            border-radius: 4px;
+          }
+        }
+        .btn-wrapper {
+          margin-top: 17px;
+          text-align: right;
+        }
+        .project-btn:hover {
+          background-color: #d04045 + 30%;
+        }
+      }
+    }
+    .list-item:hover {
+      border-color: #e72a35;
+      dt {
+        font-weight: bold;
+        color: #e72a35;
+      }
+    }
+  }
+}

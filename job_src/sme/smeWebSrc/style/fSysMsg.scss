@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* total-handle */
+.msg-container .total-handle {
+  padding-bottom: 20px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  input[type='checkbox'] {
+    margin-right: 8px;
+    vertical-align: -2px;
+  }
+  .read-all, .del-chose {
+    padding: 5px;
+    margin-left: 15px;
+    color: #333;
+    border-radius: 3px;
+  }
+  .del-chose {
+    &:hover {
+      color: #fff;
+      background-color: #f00;
+    }
+    &:active {
+      background-color: #f00 - 50%;
+    }
+  }
+  .read-all {
+    &:hover {
+      color: #fff;
+      background-color: $onColorOrange;
+    }
+    &:active {
+      background-color: $onColorOrange - 30%;
+    }
+  }
+}
+
+/* msg-item */
+.msg-container .msg-item {
+  padding: 20px 0;
+  border-bottom: 1px dashed #ddd;
+  label {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 14px;
+    margin-right: -14px;
+    input[type='checkbox'] {
+      vertical-align: -2px;
+    }
+  }
+  .btn-wrapper {
+    position: relative;
+    float: right;
+    width: 110px;
+    margin-left: -110px;
+    .msg-handle {
+      padding: 5px;
+      font-size: 13px;
+      color: #fff;
+      background-color: $onColorOrange;
+      border-radius: 3px;
+      &:hover {
+        background-color: $onColorOrange - 10%;
+      }
+      &:active {
+        background-color: $onColorOrange - 30%;
+      }
+      &.del-btn {
+        background-color: #f00;
+        &:hover {
+          background-color: #f00 - 20%;
+        }
+        &:active {
+          background-color: #f00 - 50%;
+        }
+      }
+      &.already-read {
+        background-color: #bcbcbc;
+        cursor: default;
+        &:hover {
+          background-color: #bcbcbc;
+        }
+        &:active {
+          background-color: #bcbcbc;
+        }
+      }
+    }
+    .msg-handle + .msg-handle {
+      margin-left: 10px;
+    }
+  }
+  .item-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    .content-inner {
+      margin: 0 120px 0 20px;
+      color: #333;
+    }
+    a {
+      color: #1d2087;
+      &:hover {
+        color: $onColorOrange;
+      }
+    }
+    .msg-text {
+      margin-bottom: 12px;
+    }
+    .time {
+      font-family: Arial;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}
+
+/* pagination-container */
+.msg-container .pagination-container {
+  padding-top: 30px;
+}

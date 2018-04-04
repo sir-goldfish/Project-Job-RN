@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+.main-body {
+  $bgcBlue: #418fdd;
+  min-width: 1100px;
+  padding: 50px 5%;
+  //面包屑导航
+  .crumbs-nav {
+    line-height: 20px;
+    border-bottom: 1px solid #dddddd;
+    a {
+      color: #333;
+    }
+    a:hover {
+      color: $bgcBlue;
+    }
+  }
+  //文章主体
+  .article-container {
+    padding: 40px 0;
+    .article-title {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 20px;
+    }
+    .article-subtitle {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #999999;
+      .issuer, .time {
+        margin: 0 10px;
+      }
+    }
+    .article-body {
+      line-height: 30px;
+    }
+    .article-download {
+      padding: 10px;
+      .download-btn:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-links {
+    padding: 24px 100px;
+    border-top: 1px solid #dddddd;
+    a {
+      color: #999999;
+    }
+    a:hover {
+      color: $bgcBlue;
+    }
+    .prev-links {
+      float: left;
+    }
+    .next-links {
+      float: right;
+    }
+  }
+}

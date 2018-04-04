@@ -1,0 +1,24 @@
+/* error-container */
+.error-container { height: 550px; background: #b5d4d9 url(../resource/img/bp_404bgi.jpg) no-repeat center bottom; }
+
+.error-container .error-info { padding-top: 89px; text-align: center; }
+
+.error-container .error-info .icon { width: 273px; height: 112px; margin: 0 auto; background: url(../resource/img/bp_404icon.png) no-repeat center; }
+
+.error-container .error-info .info-desc { margin-top: 36px; font-size: 18px; color: #00736d; }
+
+.error-container .error-info .handle-group { margin-top: 20px; }
+
+.error-container .error-info .handle-group .handle-btn { height: 30px; padding: 0 30px; margin: 0 10px; line-height: 30px; text-align: center; vertical-align: middle; color: #fff; border-radius: 30px; }
+
+.error-container .error-info .handle-group .handle-btn.go-home { background-color: #07c8bb; }
+
+.error-container .error-info .handle-group .handle-btn.go-home:hover { background-color: #00b9ac; }
+
+.error-container .error-info .handle-group .handle-btn.go-home:active { background-color: #00aa9d; }
+
+.error-container .error-info .handle-group .handle-btn.go-back { background-color: #404d5a; }
+
+.error-container .error-info .handle-group .handle-btn.go-back:hover { background-color: #313e4b; }
+
+.error-container .error-info .handle-group .handle-btn.go-back:active { background-color: #222f3c; }

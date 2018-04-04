@@ -1,0 +1,282 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* 主体 */
+.main-body {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  .quick-demand-path {
+    width: 100%;
+    min-height: 476px;
+    background-color: #fff;
+  }
+  .path-inner {
+    width: 802px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .steps-nav {
+    $selfInitColor: #c9c9c9;
+    $selfCurrentColor: $onColorOrange;
+    $selfPassedColor: #f9cc8d;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    .line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -3px;
+      width: 100%;
+      height: 6px;
+      background-color: $selfInitColor;
+      border-radius: 6px;
+    }
+    .step-item {
+      position: relative;
+      float: left;
+      width: 33.3%;
+      height: 100%;
+      text-align: center;
+      .line {
+        background-color: $selfInitColor;
+      }
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -15px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        background-color: $selfInitColor;
+        border-radius: 50%;
+      }
+      .iconfont {
+        font-size: 14px;
+      }
+      .text {
+        margin-top: 44px;
+        color: $selfInitColor;
+      }
+    }
+    .current-step {
+      .line {
+        background-color: $selfCurrentColor;
+      }
+      .icon {
+        background-color: $selfCurrentColor;
+      }
+      .text {
+        color: $selfCurrentColor;
+      }
+    }
+    .passed-step {
+      .line {
+        background-color: $selfPassedColor;
+      }
+      .icon {
+        background-color: $selfPassedColor;
+      }
+      .text {
+        color: $selfPassedColor;
+      }
+    }
+  }
+  .steps-content {
+    .content-item {
+      display: none;
+      .content-btn {
+        height: 34px;
+        padding: 0 20px;
+        line-height: 34px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        transition: all .2s ease-out;
+      }
+    }
+    .current {
+      display: block;
+    }
+    .content-1 {
+      margin-top: 90px;
+      .form-item {
+        .title {
+          float: left;
+          width: 286px;
+          margin-right: -286px;
+          text-align: right;
+          line-height: 34px;
+          color: #666;
+        }
+        .input-wrapper {
+          margin-left: 288px;
+          font-size: 0;
+          .input-box {
+            input[type='text'] {
+              height: 18px;
+              padding: 8px 10px;
+              font-size: 14px;
+              line-height: 18px;
+              border: 1px solid #ddd;
+            }
+            input[type='text']:focus {
+              border-color: #82cef3;
+            }
+          }
+          .l-input {
+            input[type='text'] {
+              width: 264px;
+            }
+          }
+          .s-input {
+            input[type='text'] {
+              width: 140px;
+            }
+          }
+          .input-box, .input-btn {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+          }
+          .pic-code {
+            width: 115px;
+            height: 34px;
+            border: 1px solid #ddd;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .refresh-pic {
+            vertical-align: bottom;
+            font-size: 12px;
+            color: #142d86;
+          }
+          .pic-code, .refresh-pic {
+            margin-left: 10px;
+          }
+          .input-btn:hover {
+            color: $onColorOrange;
+          }
+          .hint-info {
+            padding: 7px 0;
+            line-height: 1;
+            font-size: 12px;
+          }
+        }
+      }
+      .form-btn-wrapper {
+        padding: 14px 0;
+        .submit-btn {
+          width: 246px;
+          margin-left: 288px;
+          background-color: $onColorOrange;
+        }
+        .submit-btn:hover {
+          background-color: $onColorOrange + 25%;
+        }
+      }
+    }
+    .content-2 {
+      padding: 0 33px;
+      margin-top: 73px;
+      .item-box {
+        .item-title {
+          font-size: 16px;
+          color: #363636;
+        }
+        .item-inner {
+          margin-left: 30px;
+          ul {
+            margin-left: -50px;
+            font-size: 0;
+            li {
+              display: inline-block;
+              margin-left: 50px;
+              margin-top: 26px;
+              font-size: 14px;
+              color: #666;
+              input[type='checkbox'] {
+                width: 14px;
+                height: 14px;
+                margin-right: 5px;
+                vertical-align: middle;
+              }
+            }
+          }
+          .service-input {
+            width: 97%;
+            height: 18px;
+            padding: 7px 1%;
+            margin-top: 18px;
+            line-height: 18px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+          }
+          input[type='text']:focus {
+            border-color: #91d4f4;
+          }
+        }
+      }
+      .item-box + .item-box {
+        margin-top: 60px;
+      }
+      .btn-wrapper {
+        padding: 10px 0;
+        margin-top: 38px;
+        text-align: center;
+        .order-btn {
+          width: 246px;
+          background-color: $onColorOrange;
+        }
+        .order-btn:hover {
+          background-color: $onColorOrange + 25%;
+        }
+      }
+    }
+    .content-3 {
+      margin-top: 99px;
+      text-align: center;
+      .info {
+        display: inline-block;
+        margin-bottom: 44px;
+        .iconfont, .text {
+          display: inline-block;
+          vertical-align: middle;
+          color: #82cef3;
+        }
+        .iconfont {
+          font-size: 32px;
+        }
+        .text {
+          margin-left: 12px;
+          text-align: justify;
+          .top {
+            margin-bottom: 8px;
+            font-size: 18px;
+          }
+          .btm {
+            color: #999;
+          }
+        }
+      }
+      .btn-wrapper {
+        padding: 10px 0;
+        .back-home-btn {
+          width: 246px;
+          background-color: #52bef3;
+        }
+        .back-home-btn:hover {
+          background-color: #52bef3 + 25%;
+        }
+      }
+    }
+  }
+}

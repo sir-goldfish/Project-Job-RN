@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+/*--begin：以下为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+@import "baseNew";
+/*--end：以上为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+
+//共用
+.rn-wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.rn-inner {
+  width: 990px;
+  margin: 0 auto;
+}
+
+//清除浮动
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//单行省略号
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//头部
+/* 该页面取1200头部的样式，尺寸为990 */
+.header-1200 {
+  font-size: 14px;
+  line-height: 1;
+  .header-bar {
+    padding: 8px 0;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    .bar-notice {
+      float: left;
+      em {
+        font-size: 13px;
+        color: #b00819;
+      }
+      .welcome {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      a {
+        margin-right: 10px;
+      }
+      .register-btn {
+        color: #b00819;
+      }
+      a:hover {
+        color: #cd0200;
+        text-decoration: underline;
+      }
+    }
+    .bar-links {
+      float: right;
+      a {
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 1px solid #d0ccd0;
+      }
+      .noborder {
+        padding-right: 0;
+        border: none;
+      }
+    }
+  }
+  .header-body {
+    padding: 22px 0;
+    font-size: 14px;
+    .logo {
+      float: left;
+    }
+    .body-links {
+      float: right;
+      a {
+        display: inline-block;
+        padding: 8px 15px;
+      }
+      .last-link {
+        padding-right: 0;
+      }
+      .current {
+        color: #cd0200;
+      }
+    }
+  }
+}
+
+//head-banner
+.head-banner {
+  .banner-pic {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+//共用标题
+.section-title-blue {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  padding: 12px 0;
+  line-height: 24px;
+  border-bottom: 2px solid #eee;
+  .text {
+    float: left;
+    font-size: 24px;
+    color: #363636;
+  }
+  .more {
+    float: right;
+    margin-right: 12px;
+    font-size: 16px;
+  }
+  .line {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 47px;
+    border-bottom: 2px solid #142d86;
+  }
+}
+
+//最新活动排期
+.future-activity {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  //共性
+  .future-salon, .future-conversation {
+    width: 480px;
+    .list {
+      li {
+        padding-top: 28px;
+        padding-bottom: 20px;
+        font-size: 12px;
+      }
+      .pic {
+        position: relative;
+        z-index: 1;
+        display: block;
+        float: left;
+        width: 192px;
+        height: 128px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease-out;
+        }
+      }
+      .pic:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .desc {
+        float: left;
+        width: 100%;
+        margin-left: -192px;
+      }
+      dl {
+        margin-left: 214px;
+        dt {
+          height: 48px;
+          margin-top: -4px;
+          line-height: 24px;
+          font-size: 16px;
+          overflow: hidden;
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        dd {
+          height: 20px;
+          margin-top: 18px;
+          line-height: 20px;
+          i {
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: middle;
+          }
+          span {
+            vertical-align: middle;
+          }
+          b {
+            display: inline-block;
+            padding: 0 12px;
+            margin-left: 18px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            vertical-align: middle;
+            color: #fff;
+            background-color: #fa555c;
+          }
+          b.finish {
+            color: #363636;
+            background-color: #dcdcdc;
+          }
+        }
+      }
+    }
+  }
+  //个性
+  .future-salon {
+    float: left;
+  }
+  .future-conversation {
+    float: right;
+  }
+}
+
+//往期活动
+.past-activity {
+  padding-top: 16px;
+  background-color: #f7f7f7;
+  .slider-wrapper {
+    padding: 28px 0;
+  }
+  .slider-container {
+    position: relative;
+    width: 1020px;
+    .bd {
+      li {
+        float: left;
+        margin-right: 30px;
+        width: 310px;
+        font-size: 12px;
+        background-color: #fff;
+      }
+      figure {
+        width: 100%;
+        height: 210px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease-out;
+        }
+      }
+      dl {
+        padding: 14px;
+        dt {
+          height: 40px;
+          margin-bottom: 10px;
+          line-height: 20px;
+          font-size: 14px;
+          overflow: hidden;
+        }
+        dd {
+          margin-left: -10px;
+          color: #999;
+          i {
+            margin-left: 10px;
+            margin-right: 2px;
+            vertical-align: middle;
+          }
+        }
+      }
+      li:hover {
+        figure {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        dt {
+          text-decoration: underline;
+        }
+      }
+    }
+    .slider-btn {
+      position: absolute;
+      top: 122px;
+      i {
+        font-size: 65px;
+        color: #dedede;
+        transition: color .2s ease-out;
+      }
+    }
+    .slider-btn:hover {
+      i {
+        color: #dedede - 50%;
+      }
+    }
+    .prev {
+      left: -65px;
+    }
+    .next {
+      right: -35px;
+    }
+  }
+}
+
+//往期活动个性
+.past-conversation {
+  margin-top: -28px;
+}
+
+//投融资讯
+.news-section {
+  padding-top: 16px;
+  .section-body {
+    padding: 28px 0 45px;
+    font-size: 14px;
+    line-height: 1;
+    .pic-news {
+      position: relative;
+      display: block;
+      float: left;
+      width: 310px;
+      height: 197px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease-out;
+      }
+      .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 280px;
+        height: 14px;
+        padding: 12px 15px;
+        .bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #000;
+          opacity: .4;
+          filter: alpha(opacity=40);
+          transition: all .3s ease-out;
+        }
+        p {
+          position: relative;
+          color: #fff;
+        }
+      }
+    }
+    .pic-news:hover {
+      img {
+        transform: scale(1.1);
+      }
+      .title {
+        .bg {
+          opacity: .7;
+          filter: alpha(opacity=70);
+        }
+        p {
+          text-decoration: underline;
+        }
+      }
+    }
+    .text-news {
+      float: left;
+      margin-left: 28px;
+      dt {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      dd {
+        margin-top: 22px;
+        a {
+          display: block;
+          width: 305px;
+          color: #363636;
+          transition: all .2s ease-out;
+        }
+        a:before {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          margin-right: 5px;
+          vertical-align: middle;
+          background-color: #363636;
+          border-radius: 50%;
+        }
+        a:hover {
+          color: #cd0200;
+          transform: translateX(2%);
+          &:before {
+            background-color: #cd0200;
+          }
+        }
+      }
+    }
+  }
+}

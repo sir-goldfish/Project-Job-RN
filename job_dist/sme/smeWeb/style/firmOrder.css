@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* main-body */
+.main-body { padding: 10px 0; background-color: #f7f7f7; }
+
+/* title-bar */
+.title-bar { margin-bottom: 10px; background-color: #fff; }
+
+.title-bar .title { padding: 14px 20px; color: #666; }
+
+/* content-container */
+.content-container { position: relative; }
+
+/* main-content-container */
+.main-content-container { float: left; width: 810px; }
+
+/* main-content-card */
+.main-content-card { padding: 28px 30px; background-color: #fff; }
+
+.main-content-card .card-title { margin-bottom: 16px; }
+
+.main-content-card .card-title .text { padding: 2px 6px; font-size: 16px; font-weight: bold; color: #363636; border-left: 5px solid #f78e24; }
+
+.main-content-card + .main-content-card { margin-top: 10px; }
+
+/* service-desc */
+.service-desc .card-content figure { float: left; width: 148px; height: 108px; margin-right: -150px; border: 1px solid #eee; overflow: hidden; }
+
+.service-desc .card-content figure img { width: 100%; height: 100%; }
+
+.service-desc .card-content .desc-text { float: left; margin-left: 166px; }
+
+.service-desc .card-content .desc-text .title { margin-bottom: 14px; line-height: 18px; font-size: 14px; font-weight: bold; color: #363636; }
+
+.service-desc .card-content .desc-text .para { margin-bottom: 10px; line-height: 24px; font-size: 13px; color: #999; }
+
+.service-desc .card-content .desc-text .price-text { font-size: 14px; color: #666; }
+
+.service-desc .card-content .desc-text .price-text .price { margin-left: 5px; }
+
+.service-desc .card-content .desc-text .price-text .price .num { color: #fc0018; }
+
+.service-desc .card-content .desc-text .price-text .price .num:before { content: '¥'; display: inline-block; }
+
+/* service-demand */
+.service-demand .card-content textarea { resize: none; width: 688px; height: 138px; padding: 10px; border: 1px solid #ddd; }
+
+/* service-facilitator */
+.service-facilitator .card-content .notice-red { margin-bottom: 20px; font-size: 13px; color: #fc0018; }
+
+.service-facilitator .card-content .facilitator-list { margin-bottom: 35px; }
+
+.service-facilitator .card-content .facilitator-list .list { margin-left: -20px; margin-top: -20px; }
+
+.service-facilitator .card-content .facilitator-list .list-item { position: relative; float: left; padding: 14px 18px; margin-left: 20px; margin-top: 20px; font-size: 16px; color: #363636; background-color: #fff; border: 1px solid #ddd; cursor: default; }
+
+.service-facilitator .card-content .facilitator-list .list-item:hover { border-color: #f78e24; }
+
+.service-facilitator .card-content .facilitator-list .chose { border-color: #f78e24; }
+
+.service-facilitator .card-content .facilitator-list .chose:after { content: ''; position: absolute; bottom: 0; right: 0; display: block; width: 18px; height: 15px; background: url(../resource/img/sme_icon_chose.png) no-repeat center; }
+
+.service-facilitator .card-content .facilitator-info .info-notice { margin-bottom: 14px; color: #999; }
+
+.service-facilitator .card-content .facilitator-info .info-notice .org-link { margin: 0 5px; color: #1e2285; }
+
+.service-facilitator .card-content .facilitator-info .info-notice .org-link:hover { color: #f78e24; }
+
+.service-facilitator .card-content .facilitator-info .info-card { width: 340px; padding: 20px; background-color: #fff; border: 1px solid #ddd; }
+
+.service-facilitator .card-content .facilitator-info .info-card figure { float: left; width: 130px; height: 110px; margin-right: -131px; line-height: 110px; text-align: center; border-right: 1px dashed #ddd; }
+
+.service-facilitator .card-content .facilitator-info .info-card figure img { display: inline-block; width: 100%; max-height: 110px; vertical-align: middle; }
+
+.service-facilitator .card-content .facilitator-info .info-card .desc-text { float: left; margin-left: 151px; }
+
+.service-facilitator .card-content .facilitator-info .info-card .desc-text .title { margin-bottom: 12px; font-weight: bold; color: #666; }
+
+.service-facilitator .card-content .facilitator-info .info-card .desc-text .para { margin-bottom: 20px; line-height: 20px; font-size: 12px; color: #999; }
+
+.service-facilitator .card-content .facilitator-info .info-card .desc-text .btm { text-align: right; }
+
+.service-facilitator .card-content .facilitator-info .info-card .desc-text .btm .org-link { color: #1e2285; }
+
+.service-facilitator .card-content .facilitator-info .info-card .desc-text .btm .org-link:hover { color: #f78e24; }
+
+/* contact-info */
+.contact-info .card-content { padding-top: 20px; }
+
+.contact-info .card-content .form-item .title { float: left; width: 116px; margin-right: -116px; line-height: 32px; text-align: right; color: #363636; }
+
+.contact-info .card-content .form-item .star-title:before { content: '*'; display: inline-block; margin-right: 4px; font-size: 14px; color: #fc0018; }
+
+.contact-info .card-content .form-item .input-wrapper { margin-left: 126px; color: #666; }
+
+.contact-info .card-content .form-item .input-wrapper .hint-info { padding: 9px 0; color: #999; }
+
+.contact-info .card-content .form-item .input-wrapper label { line-height: 32px; font-size: 14px; color: #666; }
+
+.contact-info .card-content .form-item .input-wrapper input[type='radio'] { margin-right: 4px; vertical-align: -2px; }
+
+.contact-info .card-content .form-item .input-wrapper .input-box { position: relative; }
+
+.contact-info .card-content .form-item .input-wrapper .input-box input[type='text'] { width: 196px; height: 18px; padding: 6px 10px; line-height: 18px; font-size: 14px; border: 1px solid #ddd; }
+
+.contact-info .card-content .form-item .input-wrapper .input-box input[type='text'].l-input { width: 306px; }
+
+.contact-info .card-content .form-item .input-wrapper .input-box textarea { resize: none; width: 306px; height: 64px; padding: 8px 10px; font-size: 14px; border: 1px solid #ddd; }
+
+.contact-info .card-content .form-item .input-wrapper .area-input .area-choose { width: 114px; height: 30px; padding: 0 10px; font-size: 14px; border: 1px solid #ddd; }
+
+.contact-info .card-content .form-item .input-wrapper .area-input .area-choose + .area-choose { margin-left: 5px; }
+
+.contact-info .card-content .form-item .input-wrapper .area-input .text { margin: 0 5px; }
+
+.contact-info .card-content .form-item .input-wrapper .area-input + .area-input { margin-top: 18px; }
+
+.contact-info .card-content .form-item .input-wrapper .other-phone input[type='text'] { margin-left: 18px; }
+
+.contact-info .card-content .form-item .input-wrapper .code-input { width: 218px; height: 32px; }
+
+.contact-info .card-content .form-item .input-wrapper .code-input input[type='text'] { width: 100px; padding-right: 106px; }
+
+.contact-info .card-content .form-item .input-wrapper .code-input .code-btn { position: absolute; top: 1px; right: 1px; display: block; width: 95px; height: 30px; line-height: 30px; text-align: center; border-left: 1px solid #ddd; }
+
+.contact-info .card-content .form-item .input-wrapper .code-input .pic-btn img { display: block; width: 100%; height: 100%; }
+
+.contact-info .card-content .form-item .input-wrapper .code-input .msg-btn { color: #666; background-color: #eee; }
+
+.contact-info .card-content .form-btn-wrapper { text-align: center; font-size: 0; }
+
+.contact-info .card-content .form-btn-wrapper .form-btn { display: inline-block; height: 35px; min-width: 135px; padding: 0 20px; line-height: 35px; font-size: 16px; color: #fff; background-color: #f78e24; border-radius: 4px; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.contact-info .card-content .form-btn-wrapper .form-btn:hover { background-color: #ffa73d; }
+
+/* other-service */
+.other-service .card-content { padding-top: 20px; }
+
+.other-service .card-content .form-item .title { float: left; width: 35px; margin-right: -35px; text-align: right; line-height: 18px; }
+
+.other-service .card-content .form-item .input-wrapper { float: left; margin-left: 50px; }
+
+.other-service .card-content .form-item .input-wrapper .desc { margin-bottom: 17px; }
+
+.other-service .card-content .form-item .input-wrapper .desc > * { float: left; }
+
+.other-service .card-content .form-item .input-wrapper .desc .text { position: relative; font-size: 16px; color: #363636; }
+
+.other-service .card-content .form-item .input-wrapper .desc .text:after { content: ''; position: absolute; top: -6px; left: 100%; display: inline-block; width: 30px; height: 16px; margin-left: 4px; background: url(../resource/img/sme_icon_free.png) no-repeat center; }
+
+.other-service .card-content .form-item .input-wrapper .desc .para { margin-left: 46px; line-height: 18px; font-size: 14px; color: #999; }
+
+.other-service .card-content .form-item .input-wrapper .input-box input[type="text"] { width: 308px; height: 18px; padding: 6px 10px; line-height: 18px; font-size: 14px; border: 1px solid #ddd; }
+
+.other-service .card-content .form-item + .form-item { margin-top: 28px; }
+
+/* aside-content-container */
+.aside-content-container { position: relative; float: right; width: 380px; }
+
+/* order-settlement-card */
+.order-settlement-card { position: absolute; top: 0; right: 0; width: 100%; background-color: #fff; }
+
+.order-settlement-card .card-title { padding: 18px 25px; margin-bottom: 20px; border-bottom: 1px solid #ddd; }
+
+.order-settlement-card .card-title .text { padding: 2px 10px; font-size: 16px; font-weight: bold; color: #363636; border-left: 5px solid #f78e24; }
+
+.order-settlement-card .card-content .order-table { border-collapse: collapse; width: 100%; line-height: 16px; font-size: 14px; }
+
+.order-settlement-card .card-content .order-table td { padding-top: 12px; padding-bottom: 12px; word-wrap: break-word; word-break: break-all; }
+
+.order-settlement-card .card-content .order-table .item-left { max-width: 228px; padding-left: 25px; padding-right: 5px; text-align: left; }
+
+.order-settlement-card .card-content .order-table .item-right { max-width: 90px; padding-left: 5px; padding-right: 25px; text-align: right; }
+
+.order-settlement-card .card-content .order-table .table-title { color: #999; }
+
+.order-settlement-card .card-content .order-table .table-item { color: #363636; }
+
+.order-settlement-card .card-content .order-table .table-item .amount-choose .amount-text { min-width: 28px; height: 28px; padding: 0 5px; vertical-align: top; line-height: 28px; text-align: left; border: 1px solid #ddd; }
+
+.order-settlement-card .card-content .order-table .table-item .amount-choose .amount-btn-group { width: 13px; vertical-align: top; }
+
+.order-settlement-card .card-content .order-table .table-item .amount-choose .amount-btn-group .amount-btn { float: left; width: 12px; height: 12px; line-height: 12px; text-align: center; font-size: 14px; font-weight: bold; color: #ddd; border: 1px solid #ddd; }
+
+.order-settlement-card .card-content .order-table .table-item .amount-choose .amount-btn-group .amount-btn:hover { color: #fff; background-color: #bfbfbf; }
+
+.order-settlement-card .card-content .order-table .table-item .amount-choose .amount-btn-group .amount-btn:active { background-color: #a1a1a1; }
+
+.order-settlement-card .card-content .order-table .table-item .amount-choose .amount-btn-group .add-btn { margin-bottom: 2px; }
+
+.order-settlement-card .card-content .order-table .table-sum { color: #666; background-color: #fef4e6; }
+
+.order-settlement-card .card-content .order-table .table-sum td { padding-top: 14px; padding-bottom: 14px; }
+
+.order-settlement-card .card-content .order-table .table-sum .unit-price { margin: 0 3px; }
+
+.order-settlement-card .card-content .order-table .table-sum .unit-price:before { content: '¥'; display: inline-block; margin-right: 2px; }
+
+.order-settlement-card .card-content .order-table .table-sum .count { margin: 0 3px; }
+
+.order-settlement-card .card-content .order-table .table-sum .sum-price { color: #fc0018; }
+
+.order-settlement-card .card-content .order-table .table-sum .sum-price:before { content: '¥'; display: inline-block; margin-right: 3px; }
+
+.order-settlement-card .card-content .btn-group { padding: 30px 0; text-align: center; }
+
+.order-settlement-card .card-content .btn-group .settlement-btn { width: 150px; height: 38px; line-height: 38px; font-weight: bold; color: #fff; background-color: #f78e24; border-radius: 5px; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.order-settlement-card .card-content .btn-group .settlement-btn:hover { background-color: #ffa73d; }

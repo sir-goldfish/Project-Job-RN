@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* main-body */
+.main-body {
+  padding: 10px 0;
+  background-color: #f7f7f7;
+  .sme-inner {
+    padding-top: 160px;
+    padding-bottom: 190px;
+    text-align: center;
+    background-color: #fff;
+    .jump-pic, .jump-info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .jump-info {
+      margin-left: 80px;
+      text-align: justify;
+      .info-text {
+        line-height: 30px;
+        font-size: 16px;
+        color: #666;
+      }
+      .count {
+        span {
+          color: $onColorOrange;
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}

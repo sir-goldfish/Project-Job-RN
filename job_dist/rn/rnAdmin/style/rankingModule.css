@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* 排行榜 */
+.ranking-module { position: fixed; top: 90px; right: 10px; z-index: 9999; font-size: 14px; }
+
+.ranking-module .ranking-logo { display: block; width: 56px; }
+
+.ranking-module .ranking-logo img { width: 100%; height: auto; }
+
+.ranking-module .logo-person { margin-bottom: 5px; }
+
+.ranking-module .ranking-container { position: absolute; top: 0; right: 0; padding: 5px; background-color: #ef5150; border-radius: 10px; }
+
+.ranking-module .ranking-box { position: relative; display: none; }
+
+.ranking-module .ranking-box .close-btn { position: absolute; top: -10px; left: -10px; z-index: 2; font-size: 28px; color: #febf3d; -webkit-transition: color .2s ease-out; transition: color .2s ease-out; }
+
+.ranking-module .ranking-box .close-btn:hover { color: #ffd856; }
+
+.ranking-module .person-ranking .box-title { position: relative; z-index: 1; padding: 8px 0; background-color: #feedc3; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+
+.ranking-module .person-ranking .box-title span { display: block; width: 185px; height: 38px; margin-left: auto; margin-right: auto; line-height: 24px; text-align: center; font-size: 16px; color: #feedc3; background: url(../resource/img/ranking_sprites.png) no-repeat 0 -112px; }
+
+.ranking-module .person-ranking table { margin-top: -1px; border-collapse: collapse; background-color: #fff7e4; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden; }
+
+.ranking-module .person-ranking table tbody tr { -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.ranking-module .person-ranking table tbody td { padding: 10px; text-align: center; white-space: nowrap; }
+
+.ranking-module .person-ranking table tbody .pic, .ranking-module .person-ranking table tbody .name, .ranking-module .person-ranking table tbody .sum { border-top: 1px solid #f1ddae; }
+
+.ranking-module .person-ranking table tbody .num { font-size: 18px; font-weight: bold; color: #c5c5c5; }
+
+.ranking-module .person-ranking table tbody .pic { padding: 5px 0; }
+
+.ranking-module .person-ranking table tbody .pic img { width: 26px; height: 26px; border-radius: 50%; }
+
+.ranking-module .person-ranking table tbody .name { color: #60534a; }
+
+.ranking-module .person-ranking table tbody .sum { font-weight: bold; color: #60534a; }
+
+.ranking-module .person-ranking table tbody .sum i { margin-right: 2px; font-size: 18px; font-weight: normal; color: #facf51; }
+
+.ranking-module .person-ranking table tbody tr:hover { background-color: #ebe3d0; }
+
+.ranking-module .person-ranking table .first .pic figure, .ranking-module .person-ranking table .second .pic figure, .ranking-module .person-ranking table .third .pic figure { padding-top: 10px; background: url(../resource/img/ranking_sprites.png) no-repeat 999px 999px; background-position-y: -160px; }
+
+.ranking-module .person-ranking table .first .num { color: #f8c22e; }
+
+.ranking-module .person-ranking table .first .pic figure { background-position-x: 0; }
+
+.ranking-module .person-ranking table .second .num { color: #b8c6df; }
+
+.ranking-module .person-ranking table .second .pic figure { background-position-x: -30px; }
+
+.ranking-module .person-ranking table .third .num { color: #d7a58a; }
+
+.ranking-module .person-ranking table .third .pic figure { background-position-x: -60px; }
+
+.ranking-module .person-ranking .close-btn { top: -7px; left: -5px; }
+
+.ranking-module .team-ranking .box-title { position: relative; z-index: 1; width: 198px; height: 55px; margin-left: auto; margin-right: auto; line-height: 50px; text-align: center; font-size: 16px; color: #fff; background: url(../resource/img/ranking_sprites.png) no-repeat 0 0; }
+
+.ranking-module .team-ranking table { margin-left: auto; margin-right: auto; margin-top: -20px; border-collapse: collapse; background-color: #fff3e5; border-radius: 10px; overflow: hidden; }
+
+.ranking-module .team-ranking table thead .head-blank { height: 20px; }
+
+.ranking-module .team-ranking table thead th { padding: 10px; font-size: 12px; font-weight: normal; color: #b69a8f; white-space: nowrap; }
+
+.ranking-module .team-ranking table thead th i { margin-left: 2px; font-size: 14px; cursor: pointer; -webkit-transition: color .2s ease-out; transition: color .2s ease-out; }
+
+.ranking-module .team-ranking table thead th i:hover { color: #ef5150; }
+
+.ranking-module .team-ranking table tbody tr { -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
+
+.ranking-module .team-ranking table tbody td { padding: 10px; text-align: center; white-space: nowrap; border-top: 1px solid #f2e2d4; }
+
+.ranking-module .team-ranking table tbody .num { padding-top: 5px; padding-bottom: 5px; line-height: 26px; font-weight: bold; color: #fff; }
+
+.ranking-module .team-ranking table tbody .num span { display: block; width: 26px; height: 26px; background: url(../resource/img/ranking_sprites.png) no-repeat 999px 999px; background-color: #f16869; border-radius: 50%; }
+
+.ranking-module .team-ranking table tbody .name { color: #6e3e2e; }
+
+.ranking-module .team-ranking table tbody .sum { font-weight: bold; color: #ef5c5e; }
+
+.ranking-module .team-ranking table tbody .percentage { color: #968076; }
+
+.ranking-module .team-ranking table tbody tr:hover { background-color: #ebdfd1; }
+
+.ranking-module .team-ranking table .first .num, .ranking-module .team-ranking table .second .num, .ranking-module .team-ranking table .third .num { line-height: 28px; }
+
+.ranking-module .team-ranking table .first .num span, .ranking-module .team-ranking table .second .num span, .ranking-module .team-ranking table .third .num span { width: 27px; height: 37px; background-position-y: -65px; background-color: transparent; border-radius: 0; }
+
+.ranking-module .team-ranking table .first .num span { background-position-x: 0; }
+
+.ranking-module .team-ranking table .second .num span { background-position-x: -58px; }
+
+.ranking-module .team-ranking table .third .num span { background-position-x: -115px; }

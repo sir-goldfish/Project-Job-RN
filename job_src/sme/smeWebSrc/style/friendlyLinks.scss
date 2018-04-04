@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* main-body */
+.main-body {
+  padding-top: 68px;
+  // 共性
+  .content-container {
+    margin: 0 50px 80px 50px;
+    .content-title {
+      margin-bottom: 32px;
+      font-size: 16px;
+      font-weight: bold;
+      color: $onColorOrange;
+    }
+    .content-body {
+      margin: 0 37px;
+    }
+  }
+  // 个性
+  .hot-container, .friendly-container {
+    .content-body {
+      .list {
+        margin-top: -24px;
+        margin-left: -80px;
+        font-size: 0;
+        li {
+          display: inline-block;
+          margin-top: 24px;
+          margin-left: 80px;
+          font-size: 16px;
+          a {
+            color: #666;
+          }
+          a:hover {
+            color: $onColorOrange;
+          }
+        }
+      }
+    }
+  }
+  .apply-container {
+    // 共
+    .self-link {
+      font-size: 0;
+      .link-code, .link-show {
+        display: inline-block;
+        vertical-align: top;
+        .title {
+          margin-bottom: 24px;
+          font-size: 16px;
+          color: #666;
+        }
+        .box {
+          margin-bottom: 12px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #666;
+          border: 1px solid #c9c9c9;
+          border-radius: 5px;
+        }
+      }
+      .link-code {
+        width: 479px;
+        .box {
+          width: 425px;
+          padding-top: 16px;
+          padding-left: 26px;
+          padding-right: 26px;
+          resize: none;
+        }
+        .copy-btn {
+          float: right;
+          width: 54px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+          font-size: 14px;
+          color: $onColorOrange;
+          border: 1px solid $onColorOrange;
+          border-radius: 5px;
+          transition: color .2s ease-out, background-color .2s ease-out;
+        }
+        .copy-btn:hover {
+          color: #fff;
+          background-color: $onColorOrange;
+        }
+      }
+      .link-show {
+        width: 315px;
+        margin-left: 60px;
+      }
+    }
+    // 个
+    .pic-link {
+      margin-bottom: 50px;
+      .link-code {
+        .box {
+          height: 114px;
+        }
+      }
+      .link-show {
+        .box {
+          height: 96px;
+          padding-top: 34px;
+          text-align: center;
+          img {
+            display: inline-block;
+            height: 65px;
+          }
+        }
+      }
+    }
+    .text-link {
+      .link-code {
+        .box {
+          height: 81px;
+        }
+      }
+      .link-show {
+        .box {
+          height: 62px;
+          padding-top: 35px;
+          text-align: center;
+          font-size: 16px;
+          color: #666;
+        }
+      }
+    }
+  }
+  .steps-container {
+    .step {
+      padding-bottom: 20px;
+      .title {
+        margin-bottom: 28px;
+        font-size: 16px;
+        color: #363636;
+      }
+      .para {
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+}

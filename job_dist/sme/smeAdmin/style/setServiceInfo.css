@@ -1,0 +1,84 @@
+/* base container style */
+.wrapper-content { padding: 10px; }
+
+.main-body-wrapper { margin-left: 0; margin-right: 0; }
+
+.main-container { padding-left: 0; padding-right: 0; }
+
+/* form-table */
+.form-table { width: 100%; color: #363636; }
+
+.form-table .form-row { padding: 0 5px; font-size: 0; }
+
+.form-table .form-cell { display: inline-block; padding: 5px; vertical-align: top; font-size: 13px; }
+
+.form-table .form-cell .cell-inner { display: block; width: 100%; }
+
+.form-table .form-cell .cell-title { float: left; width: 130px; margin-right: -130px; line-height: 32px; text-align: right; }
+
+.form-table .form-cell .cell-title.star-title:before { content: '*'; margin-right: 3px; color: #fc0018; }
+
+.form-table .form-cell .cell-content { padding: 0 5px; margin-left: 130px; }
+
+.form-table .form-cell .cell-content input[type="text"], .form-table .form-cell .cell-content input[type="password"], .form-table .form-cell .cell-content select, .form-table .form-cell .cell-content textarea { width: 100%; height: 32px; padding: 6px 10px; border: 1px solid #ddd; outline: none; background-color: #fff; border-radius: 4px; }
+
+.form-table .form-cell .cell-content input[type="text"]:focus, .form-table .form-cell .cell-content input[type="password"]:focus, .form-table .form-cell .cell-content select:focus, .form-table .form-cell .cell-content textarea:focus { border-color: #23b7e5; }
+
+.form-table .form-cell .cell-content textarea { resize: none; height: 132px; }
+
+.form-table .form-cell .cell-content input[type="radio"], .form-table .form-cell .cell-content input[type="checkbox"] { margin: 0; vertical-align: middle; }
+
+.form-table .form-cell .cell-content .input-label { margin-bottom: 0; margin-right: 10px; line-height: 32px; font-weight: normal; }
+
+.form-table .form-cell .cell-content .input-label input[type="radio"], .form-table .form-cell .cell-content .input-label input[type="checkbox"] { margin-right: 3px; }
+
+.form-table .form-cell .cell-content .input-box { position: relative; }
+
+.form-table .form-cell .cell-content .hint-info { padding: 3px 0; font-size: 12px; color: #999; }
+
+.form-table .form-btn-group { padding: 5px 0; text-align: center; }
+
+.form-table .form-btn-group .form-btn { min-width: 70px; margin: 8px; }
+
+/* service-info-container */
+.service-info-container { padding-top: 22px; padding-bottom: 22px; background-color: #fff; border-radius: 6px; }
+
+/* service-info-tab */
+.service-info-tab { padding-top: 26px; margin-top: 10px; color: #333; background-color: #fff; border-radius: 6px; }
+
+.service-info-tab .tab-nav { border-bottom: 2px solid #ddd; }
+
+.service-info-tab .tab-nav ul { margin: 0 0 -2px 0; padding: 0; list-style: none; }
+
+.service-info-tab .tab-nav .nav-item { float: left; padding: 0 22px 14px 22px; border-bottom: 2px solid transparent; cursor: default; }
+
+.service-info-tab .tab-nav .nav-item:hover { color: #31a0f6; }
+
+.service-info-tab .tab-nav .nav-item.current { font-weight: bold; color: #31a0f6; border-bottom-color: #31a0f6; }
+
+.service-info-tab .tab-content { min-height: 500px; padding-top: 15px; padding-bottom: 15px; }
+
+/* tab content-item */
+.service-info-tab .content-item { display: none; }
+
+.service-info-tab .content-item.current { display: block; }
+
+.service-info-tab .content-item.set-type-content .head-handle { padding: 10px 0; }
+
+.service-info-tab .content-item.set-type-content .set-type-form .form-cell .cell-title { width: 85px; margin-right: -85px; }
+
+.service-info-tab .content-item.set-type-content .set-type-form .form-cell .cell-content { margin-left: 85px; }
+
+.service-info-tab .content-item.set-type-content .set-type-form .handle-cell .cell-title { width: 0; margin-right: 0; }
+
+.service-info-tab .content-item.set-type-content .set-type-form .handle-cell .cell-content { margin-left: 0; }
+
+.service-info-tab .content-item.set-type-content .set-type-form .handle-cell .btn { padding-top: 4px; padding-bottom: 4px; }
+
+.service-info-tab .content-item.set-type-content .set-type-form .form-tbody .form-row + .form-row { padding-top: 10px; margin-top: 7px; border-top: 2px dotted #ddd; }
+
+.service-info-tab .content-item.set-desc-content .set-desc-form .form-cell .cell-title { float: none; width: auto; margin-right: auto; text-align: justify; font-weight: bold; }
+
+.service-info-tab .content-item.set-desc-content .set-desc-form .form-cell .cell-content { margin-left: auto; }
+
+.service-info-tab .content-item.set-desc-content .set-desc-form .form-cell .cell-content textarea { height: 400px; }

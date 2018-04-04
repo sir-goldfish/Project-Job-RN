@@ -1,0 +1,228 @@
+@charset "utf-8";
+@import "publicVariable";
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* m-crumbs-nav */
+.m-crumbs-nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* content-container */
+.content-container {
+  margin-bottom: 10px;
+}
+
+/* main-content-container */
+.main-content-container {
+  float: left;
+  width: 872px;
+  .news-list-container {
+    min-height: 1022px;
+    background-color: #fff;
+    .list-nav {
+      width: 100%;
+      height: 59px;
+      border-bottom: 1px solid #eee;
+      ul {
+        height: 100%;
+        margin: 0 20px;
+        font-size: 0;
+      }
+      li {
+        position: relative;
+        display: inline-block;
+        width: 104px;
+        height: 100%;
+        line-height: 59px;
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+        cursor: default;
+        transition: color .2s ease-out;
+        .line {
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 2px;
+          line-height: 1;
+          em {
+            display: inline-block;
+            vertical-align: top;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: width .2s ease-out;
+          }
+        }
+      }
+      .current {
+        color: $onColorOrange;
+        .line {
+          em {
+            width: 100%;
+            background-color: $onColorOrange;
+          }
+        }
+      }
+      li:hover {
+        @extend .current;
+      }
+    }
+    .list-content {
+      .list {
+        padding: 15px 0 30px 0;
+        margin: 0 30px;
+        li {
+          padding: 25px 0;
+          border-bottom: 1px dashed #eee;
+          .title {
+            max-width: 100%;
+            margin-bottom: 18px;
+            font-size: 16px;
+            color: #363636;
+          }
+          .title:hover {
+            color: $onColorOrange;
+          }
+          .tools {
+            margin-bottom: 16px;
+            font-size: 12px;
+            & > * {
+              margin-right: 38px;
+            }
+            i {
+              margin-right: 5px;
+              vertical-align: -1px;
+              font-size: 14px;
+            }
+          }
+          p {
+            height: 56px;
+            line-height: 28px;
+            font-size: 14px;
+            color: #666;
+            overflow: hidden;
+          }
+        }
+      }
+      .pagination-container {
+        padding-bottom: 40px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* aside-content-container */
+.aside-content-container {
+  float: right;
+  width: 318px;
+  // 共用标题
+  .aside-title {
+    margin-bottom: 22px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #363636;
+    span {
+      padding-left: 9px;
+      border-left: 3px solid $onColorOrange;
+    }
+  }
+  // 共用
+  .news-list {
+    width: 100%;
+    background-color: #fff;
+    .inner {
+      padding: 20px 0 14px 0;
+      margin: 0 20px;
+    }
+    .list {
+      dt {
+        position: relative;
+        width: 276px;
+        height: 204px;
+        margin-bottom: 22px;
+        border: 1px solid #eee;
+        .pic {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease-out;
+          }
+        }
+        .pic:hover {
+          img {
+            transform: scale(1.04);
+          }
+        }
+        .desc {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 39px;
+          .bg {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            opacity: .65;
+            filter: alpha(opacity=65);
+          }
+          .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            a {
+              display: block;
+              margin: 12px;
+              font-size: 14px;
+              font-weight: bold;
+              color: #363636;
+            }
+            a:hover {
+              color: $onColorOrange;
+            }
+          }
+        }
+      }
+      dd {
+        margin-bottom: 18px;
+        font-size: 14px;
+        a {
+          max-width: 100%;
+          color: #666;
+        }
+        a:before {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          margin-right: 4px;
+          vertical-align: middle;
+          background-color: #666;
+          border-radius: 50%;
+        }
+        a:hover {
+          color: $onColorOrange;
+          &:before {
+            background-color: $onColorOrange;
+          }
+        }
+      }
+    }
+  }
+  .news-list + .news-list {
+    margin-top: 10px;
+  }
+}

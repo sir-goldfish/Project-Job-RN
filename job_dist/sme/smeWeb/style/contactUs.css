@@ -1,0 +1,21 @@
+/* head-banner */
+.head-banner { height: 450px; overflow: hidden; }
+
+.head-banner .banner-item { width: 100%; height: 100%; }
+
+/* main-body */
+.main-body { padding: 88px 0; }
+
+.main-body .content-container { margin: 0 50px; font-size: 0; }
+
+.main-body .content-container .half-content { display: inline-block; width: 50%; margin-bottom: 33px; vertical-align: top; line-height: 18px; font-size: 16px; color: #666; }
+
+.main-body .content-container .half-content .title { margin-bottom: 20px; font-size: 18px; font-weight: bold; color: #363636; }
+
+.main-body .content-container .half-content .para + .para { margin-top: 16px; }
+
+.main-body .map-container { padding: 26px 0 57px 0; font-size: 16px; }
+
+.main-body .map-container .address-map { width: 100%; height: 300px; background-color: #eee; }
+
+.main-body .contact-info-container .half-content .title { color: #f78e24; }

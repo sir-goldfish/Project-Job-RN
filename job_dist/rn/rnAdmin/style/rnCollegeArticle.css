@@ -1,0 +1,31 @@
+.main-body { min-width: 1100px; padding: 50px 5%; }
+
+.main-body .crumbs-nav { line-height: 20px; border-bottom: 1px solid #dddddd; }
+
+.main-body .crumbs-nav a { color: #333; }
+
+.main-body .crumbs-nav a:hover { color: #418fdd; }
+
+.main-body .article-container { padding: 40px 0; }
+
+.main-body .article-container .article-title { margin-bottom: 20px; text-align: center; font-size: 20px; }
+
+.main-body .article-container .article-subtitle { margin-bottom: 30px; text-align: center; color: #999999; }
+
+.main-body .article-container .article-subtitle .issuer, .main-body .article-container .article-subtitle .time { margin: 0 10px; }
+
+.main-body .article-container .article-body { line-height: 30px; }
+
+.main-body .article-container .article-download { padding: 10px; }
+
+.main-body .article-container .article-download .download-btn:hover { text-decoration: underline; }
+
+.main-body .footer-links { padding: 24px 100px; border-top: 1px solid #dddddd; }
+
+.main-body .footer-links a { color: #999999; }
+
+.main-body .footer-links a:hover { color: #418fdd; }
+
+.main-body .footer-links .prev-links { float: left; }
+
+.main-body .footer-links .next-links { float: right; }

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>表单模块 - layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="../src/css/layui.css">
+  <link rel="stylesheet" href="../dist/css/modules/form_dome.css">
+  <script src="../dist/rem.js"></script>
+<style>
+ 
+</style>
+</head>
+<body>
+
+  <div class="big_box">
+  
+
+   <div class="tb_hed">
+   	 <p class="room_name">凯乐会-4楼-vip03</p>
+   	 <p class="hygiene">卫生全部正常</p>
+     <p class="hygiene">卫生出现问题</p>  	
+   </div>
+   
+      <div class="tb_body">
+	    	<p class="hy_position">选择出现问题位置</p>
+	     <ul class="position_ul">
+        <!--<div id="view"></div>
+  <script id="demo" type="text/html">
+	    
+	   {{# layui.each(d.data, function(index, items){ }}		
+	   
+	   
+	       {{# if(items.inputType === 'checkbox'){ }}		      
+	          {{# layui.each(items.options, function(index, name){ }}	  
+	          <li>{{name}}</li>	            
+		    {{#  }); }}	 
+	     {{#  } }}      
+      {{#  }); }}
+   
+</script>
+	-->
+     </ul> 
+      <div class="position_tex">
+		      <textarea  class="layui-textarea"></textarea>
+		    </div>  
+			 <div class="layui-upload">
+			 	  <div class="layui-upload-list" id="demo2"></div>
+			  <button type="button" class="layui-btn" id="test2">添加图片</button> 	
+			</div>
+   </div>
+   
+  
+
+</div>
+
+<div class="ft_btn">提交</div>
+
+
+<!--<script id="demo" type="text/html">
+	<form class="layui-form layui-form-pane1 pag_form" action="">
+	 {{# layui.each(d.data, function(index, item){ }}
+		<div class="layui-form-item">
+	    <label class="layui-form-label">{{ item.name }}</label>
+	    
+
+	     
+	       {{# if(item.inputType === 'checkbox'){ }}	
+	          <div class="layui-input-block">
+	          {{# layui.each(item.options, function(index, names){ }}	  
+	           <input type={{item.inputType}} name ="test" value='{{names}}' title={{names}}>	         
+		    {{#  }); }}
+		   </div>
+		  </div>
+		  
+	     {{#  } }}  
+	    
+      {{#  }); }}
+      
+            <div class="layui-form-item layui-form-text">
+		    <label class="layui-form-label">请填写描述</label>
+		    <div class="layui-input-block">
+		      <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+		    </div>
+		  </div>
+  
+      
+    
+		  <div class="layui-form-item">
+		    <div class="layui-input-block">
+		      <button class="layui-btn" lay-filter="*">立即提交</button>
+		      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		    </div>
+		  </div>
+	
+   </form>
+   
+ 
+</script>-->
+ 
+
+
+
+
+<script src="../src/layui.js"></script>
+<script type="text/javascript" src="../dist/lay/modules/jquery.js"></script>
+<script>
+
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //自定义验证规则
+  form.verify({
+    title: function(value){
+      if(value.length < 5){
+        return '标题也太短了吧';
+      }
+    }
+    ,pass: [/(.+){6,12}$/, '密码必须6到12位']
+  });
+
+  
+  //事件监听
+  form.on('select', function(data){
+    console.log('select: ', this, data);
+  });
+  
+  form.on('select(quiz)', function(data){
+    console.log('select.quiz：', this, data);
+  });
+  
+  form.on('select(interest)', function(data){
+    console.log('select.interest: ', this, data);
+  });
+  
+  
+//form.on('checkbox', function(data){
+//console.log(this.checked, data.elem.checked);
+//console.log(data.elem); //得到checkbox原始DOM对象
+//console.log(data.elem.checked); //是否被选中，true或者false
+
+//});
+  
+  form.on('switch', function(data){
+    console.log(data);
+  });
+  
+  form.on('radio', function(data){
+    console.log(data);
+  });
+  
+  //监听提交
+  form.on('submit(*)', function(data){
+    console.log(data)
+//  return false;
+  });
+  
+});
+
+</script>
+
+
+
+
+<script>
+	
+	
+	
+  layui.use(['jquery','form','element','laytpl','upload'],
+function() {
+	var $ = layui.jquery;
+	var form = layui.form,
+		element = layui.element,
+		laytpl = layui.laytpl,
+		upload = layui.upload;
+
+	var params = [];
+	var odata;
+
+		
+		
+		
+		function getUrlData(name){
+		var url = window.location.href;
+		if(url.indexOf("?") == -1){
+			return "";
+		}else{
+			var str1 = url.split("?")[1];
+			if(str1 != ""){
+				var arr1 = str1.split("&");
+				var obj = {};
+				var val = "";
+				for(var i = 0; i < arr1.length; i ++){
+					var temp = arr1[i].split("=");
+					obj[temp[0]] = temp[1]; 
+				}
+				for(var data in obj){
+					if(data == name){
+						val = obj[data];
+						break;
+					}
+				}
+				return val;
+			}
+		}
+	}			
+					
+					
+					var placeId = getUrlData(placeId)
+					var empId = getUrlData(empId)
+					var roomId = getUrlData(roomId)
+					var inquireType = getUrlData(inquireType)
+					var roomname = getUrlData(roomname)
+          $('.room_name').html(roomname)
+
+	var url ="http://hqrong.dev.ngrok.gosoftapp.com/yz-rest";
+  //var url = "http://192.168.0.239:8880";
+	 $.ajax({
+			type: "get",
+			url: url + "/emp_work/inquire_room/template",
+			dataType: "json",
+			data:{
+				placeId:41,
+				token:'0d5b226e7ca884e19fb97ebde3d38784',
+				deviceId:'ML7E2CHA',		
+			},
+			success: function(data) {
+			 
+			     var odata = data.data;
+           var length =odata.length;
+              odata =odata[0].items[0]
+               var z_html ='';
+            for(var i =0;i<odata.options.length;i++){              	
+             z_html+='<li>'+odata.options[i]+'</li>'	               	
+            }
+            $('.position_ul').html(z_html)
+            
+//		       var getTpl = demo.innerHTML
+//				,view = document.getElementById('view');
+//				
+//				 laytpl(getTpl).render(data, function(html){
+//					  view.innerHTML = html;
+//				});
+			
+		       form.render();
+        }
+				 
+  });
+//    function fun(){
+//	    obj = document.getElementsByName("test");
+//	    check_val = [];
+//	    for(k in obj){
+//	        if(obj[k].checked)
+//	            check_val.push(obj[k].value);
+//	    }
+//	    
+//	    $('.layui-textarea').text(check_val)
+//	    console.log(check_val);
+//	}
+// 
+ 
+         $('.tb_hed').on('click','.hygiene',function(){       	
+            	 var that = $(this).index('.hygiene')
+            	 
+                if(that ==0){  
+                
+              	$('.hygiene').eq(0).addClass('what_one')
+              	$('.hygiene').eq(1).removeClass('what_two')
+              	  $('.tb_body').hide()
+                }
+                if(that ==1){
+              	$('.hygiene').eq(1).addClass('what_two') 
+              	$('.hygiene').eq(0).removeClass('what_one')
+                $('.tb_body').show()
+                }      	
+         	
+         })
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          	var position_hy;
+						$('.position_ul').on('click', 'li', function() {				
+							if($(this).hasClass('active')) {
+								$(this).removeClass('active')
+					
+							} else {
+								$(this).addClass('active');
+							}
+					
+							var len = $('.active').length
+					
+							var arr = []
+							$('.active').each(function() {					
+								arr.push($(this).html())
+							})
+//								position_hy = arr
+								position_hy = arr.join(',')
+							
+//							 $('.layui-textarea').text(position_hy)
+						})
+ 
+ 
+// 
+//	           function addContent (pre) {          	     
+//		  	     	var temp = [];		  
+//		  	     	 if(position_hy==[]){
+//		  	     	 for(var i=0;i < position_hy.length; i++) {
+//				  			temp.push({
+//				  				name: position_hy[i],
+//				  				remark:''
+//				  			})
+//				  		}	
+//		  	     	 }else{
+//		  	     	 	temp.push({
+//				  				name: '房台卫生全部正常',
+//				  				remark:''
+//				  			})
+//		  	     	 }
+//		  	     	
+//			  	
+//			  		params[pre] = {
+//			  			type: odata[pre].name,
+//	            name: odata[pre].type,
+//			  			items: temp
+//			  		}	
+//			  		
+//			  		console.log(params)
+//		       }
+//	
+	
+	      var img =[];
+			   upload.render({
+			    elem: '#test2'
+			    ,url: 'http://hqrong.dev.ngrok.gosoftapp.com/yz-rest/file/upload'
+			    ,multiple: true
+			    ,data:{
+			    	token:'0d5b226e7ca884e19fb97ebde3d38784',
+			    	deviceId:'ML7E2CHA',
+			    }
+			    ,number: 3
+			    ,size:1024
+			    ,before: function(obj){
+			      obj.preview(function(index, file, result){		     
+			        $('#demo2').append('<img src="'+ result +'" alt="'+ file.name +'" class="layui-upload-img">')		     
+			      });
+			    }
+			    ,done: function(res){	     
+			      img.push(res.data.path)
+			      console.log(res)
+			    }
+			    ,allDone: function(obj){
+			      console.log(obj)
+			    }
+			  });
+		  
+		
+		  
+ $('.ft_btn').click(function(){	 	
+	 	var remark = $('.layui-textarea').val()
+	 	   console.log(remark)
+	 	 if(img.length ==0){	 	 	
+	 	    var data ={
+									placeId:41,
+									token:'0d5b226e7ca884e19fb97ebde3d38784',
+									deviceId:'ML7E2CHA',
+									empId:46,
+									roomId:114,
+									inquireType:1,
+									problemOption:position_hy,
+									remark:remark,				     
+		      	 }
+	 	 }else{
+	 	  	var data ={
+									placeId:41,
+									token:'0d5b226e7ca884e19fb97ebde3d38784',
+									deviceId:'ML7E2CHA',
+									empId:46,
+									roomId:114,
+									inquireType:1,
+									problemOption:position_hy,
+									remark:remark,
+					        imgs:JSON.stringify(img),
+		          	}
+	 	 	
+	 	     }
+	 
+	     $.ajax({
+				type: "post",
+				 url: url + "/emp_work/inquire_room/do",
+				dataType: "json",
+				data:data,
+				success: function(data) {
+				   console.log(data)
+				   img =[]
+	       }		 
+	   }); 	
+ })
+          
+		  
+		  
+		  
+		  
+		  
+});
+
+
+
+         
+         
+         
+       
+         
+</script>
+</body>
+</html>

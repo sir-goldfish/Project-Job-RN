@@ -1,0 +1,244 @@
+//***html
+<section class="result-container sme-wrapper">
+    <div class="sme-inner">
+        <div class="result-table-wrapper">
+            <div class="result-table">
+                <div class="result-table-head">
+                    <div class="result-category">
+                        <div class="inner">所属大类</div>
+                    </div>
+                    <div class="table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>所属群组</td>
+                                <td>商品/服务名称</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="result-table-body">
+                    <div class="result-table-tr">
+                        <div class="result-category">
+                            <div class="inner">
+                                <div class="icon iconfont">&#xe767;</div>
+                                <div class="num">第1类</div>
+                                <div class="text">化学制剂、肥料</div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>【4211】0104 用于工业、科学的化学品、化学制剂，不属于其他类别的产品用的化学制品</td>
+                                    <td>420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="result-table-tr">
+                        <div class="result-category">
+                            <div class="inner">
+                                <div class="icon iconfont">&#xe750;</div>
+                                <div class="num">第2类</div>
+                                <div class="text">颜料油漆、染料、防腐制品</div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>【4211】0104 用于工业、科学的化学品、化学制剂，不属于其他类别的产品用的化学制品</td>
+                                    <td>420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务</td>
+                                </tr>
+                                <tr>
+                                    <td>【4211】0104 用于工业、科学的化学品、化学制剂，不属于其他类别的产品用的化学制品</td>
+                                    <td>420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务</td>
+                                </tr>
+                                <tr>
+                                    <td>【4211】0104 用于工业、科学的化学品、化学制剂，不属于其他类别的产品用的化学制品</td>
+                                    <td>420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="result-table-tr">
+                        <div class="result-category">
+                            <div class="inner">
+                                <div class="icon iconfont">&#xe747;</div>
+                                <div class="num">第3类</div>
+                                <div class="text">日化用品、洗护、香料</div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>【4211】0104 用于工业、科学的化学品、化学制剂，不属于其他类别的产品用的化学制品</td>
+                                    <td>420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务</td>
+                                </tr>
+                                <tr>
+                                    <td>【4211】0104 用于工业、科学的化学品、化学制剂，不属于其他类别的产品用的化学制品</td>
+                                    <td>420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务420007 化学分析 420030 化学服务 420031 化学研究
+                                        农用化学品研究服务420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务420007 化学分析 420030 化学服务
+                                        420031 化学研究 农用化学品研究服务
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>【4211】0104 用于工业、科学的化学品、化学制剂，不属于其他类别的产品用的化学制品</td>
+                                    <td>420007 化学分析 420030 化学服务 420031 化学研究 农用化学品研究服务</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+//***scss
+.result-container {
+  padding-bottom: 10px;
+  .result-table-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 500px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: $selfBoxShadow;
+  }
+  .result-table {
+    $selfWidth: 242px;
+    $selfBorder: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 100%;
+    .result-table-head {
+      $selfFontSize: 18px;
+      box-sizing: inherit;
+      position: relative;
+      text-align: center;
+      font-size: $selfFontSize;
+      color: #333;
+      .result-category {
+        box-sizing: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $selfWidth;
+        height: 100%;
+        font-size: 0;
+        border: $selfBorder;
+        border-right: none;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 0;
+          height: 100%;
+          vertical-align: middle;
+          font-size: 0;
+          overflow: hidden;
+        }
+        .inner {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $selfFontSize;
+        }
+      }
+      .table-box {
+        box-sizing: inherit;
+        margin-left: $selfWidth;
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          border: $selfBorder;
+          td {
+            width: 50%;
+            padding: 22px 26px;
+            border: $selfBorder;
+          }
+        }
+      }
+    }
+    .result-table-body {
+      $selfFontSize: 14px;
+      box-sizing: inherit;
+      margin-top: 9px;
+      text-align: center;
+      font-size: $selfFontSize;
+      color: #666;
+      .result-table-tr {
+        box-sizing: inherit;
+        position: relative;
+      }
+      .result-table-tr + .result-table-tr {
+        margin-top: 9px;
+      }
+      .result-category {
+        box-sizing: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $selfWidth;
+        height: 100%;
+        padding: 0 38px;
+        font-size: 0;
+        border: $selfBorder;
+        border-right: none;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 0;
+          height: 100%;
+          vertical-align: middle;
+          font-size: 0;
+          overflow: hidden;
+        }
+        .inner {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $selfFontSize;
+          .icon {
+            width: 60px - 2px;
+            height: 60px - 2px;
+            margin: 0 auto 14px;
+            line-height: 60px - 2px;
+            font-size: 38px;
+            color: $selfActiveColor;
+            border: 1px solid $selfActiveColor;
+            border-radius: 50%;
+          }
+          .text {
+            margin-top: 10px;
+            line-height: 22px;
+            font-size: 16px;
+            color: #333;
+          }
+        }
+      }
+      .table-box {
+        box-sizing: inherit;
+        min-height: 180px;
+        margin-left: $selfWidth;
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          min-height: inherit;
+          line-height: 24px;
+          border: $selfBorder;
+          td {
+            width: 50%;
+            padding: 17px 26px;
+            border: $selfBorder;
+          }
+        }
+      }
+    }
+  }
+}

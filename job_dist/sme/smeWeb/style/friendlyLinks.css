@@ -1,0 +1,52 @@
+/* main-body */
+.main-body { padding-top: 68px; }
+
+.main-body .content-container { margin: 0 50px 80px 50px; }
+
+.main-body .content-container .content-title { margin-bottom: 32px; font-size: 16px; font-weight: bold; color: #f78e24; }
+
+.main-body .content-container .content-body { margin: 0 37px; }
+
+.main-body .hot-container .content-body .list, .main-body .friendly-container .content-body .list { margin-top: -24px; margin-left: -80px; font-size: 0; }
+
+.main-body .hot-container .content-body .list li, .main-body .friendly-container .content-body .list li { display: inline-block; margin-top: 24px; margin-left: 80px; font-size: 16px; }
+
+.main-body .hot-container .content-body .list li a, .main-body .friendly-container .content-body .list li a { color: #666; }
+
+.main-body .hot-container .content-body .list li a:hover, .main-body .friendly-container .content-body .list li a:hover { color: #f78e24; }
+
+.main-body .apply-container .self-link { font-size: 0; }
+
+.main-body .apply-container .self-link .link-code, .main-body .apply-container .self-link .link-show { display: inline-block; vertical-align: top; }
+
+.main-body .apply-container .self-link .link-code .title, .main-body .apply-container .self-link .link-show .title { margin-bottom: 24px; font-size: 16px; color: #666; }
+
+.main-body .apply-container .self-link .link-code .box, .main-body .apply-container .self-link .link-show .box { margin-bottom: 12px; line-height: 30px; font-size: 14px; color: #666; border: 1px solid #c9c9c9; border-radius: 5px; }
+
+.main-body .apply-container .self-link .link-code { width: 479px; }
+
+.main-body .apply-container .self-link .link-code .box { width: 425px; padding-top: 16px; padding-left: 26px; padding-right: 26px; resize: none; }
+
+.main-body .apply-container .self-link .link-code .copy-btn { float: right; width: 54px; height: 24px; text-align: center; line-height: 24px; font-size: 14px; color: #f78e24; border: 1px solid #f78e24; border-radius: 5px; -webkit-transition: color .2s ease-out, background-color .2s ease-out; transition: color .2s ease-out, background-color .2s ease-out; }
+
+.main-body .apply-container .self-link .link-code .copy-btn:hover { color: #fff; background-color: #f78e24; }
+
+.main-body .apply-container .self-link .link-show { width: 315px; margin-left: 60px; }
+
+.main-body .apply-container .pic-link { margin-bottom: 50px; }
+
+.main-body .apply-container .pic-link .link-code .box { height: 114px; }
+
+.main-body .apply-container .pic-link .link-show .box { height: 96px; padding-top: 34px; text-align: center; }
+
+.main-body .apply-container .pic-link .link-show .box img { display: inline-block; height: 65px; }
+
+.main-body .apply-container .text-link .link-code .box { height: 81px; }
+
+.main-body .apply-container .text-link .link-show .box { height: 62px; padding-top: 35px; text-align: center; font-size: 16px; color: #666; }
+
+.main-body .steps-container .step { padding-bottom: 20px; }
+
+.main-body .steps-container .step .title { margin-bottom: 28px; font-size: 16px; color: #363636; }
+
+.main-body .steps-container .step .para { margin-bottom: 15px; font-size: 14px; color: #666; }

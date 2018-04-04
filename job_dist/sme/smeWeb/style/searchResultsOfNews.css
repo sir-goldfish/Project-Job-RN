@@ -1,0 +1,77 @@
+/* main-body */
+.main-body { padding: 10px 0; background-color: #f7f7f7; }
+
+/* main-content-container */
+.main-content-container { float: left; width: 872px; }
+
+/* search-results-container */
+.search-results-container { width: 772px; min-height: 922px; padding: 50px; background-color: #fff; }
+
+.search-results-container .container-head .search-box { width: 548px; height: 40px; margin: 0 auto 36px auto; }
+
+.search-results-container .container-head .search-box .search-input { float: left; width: 420px; height: 18px; padding: 10px 16px; line-height: 18px; color: #333; border: 1px solid #c9c9c9; border-right: none; }
+
+.search-results-container .container-head .search-box .search-input:focus { border-color: #e81111; }
+
+.search-results-container .container-head .search-box .search-btn { float: right; width: 95px; height: 40px; line-height: 40px; text-align: center; font-size: 16px; color: #fff; background-color: #e81111; }
+
+.search-results-container .container-head .search-box .search-btn:hover { background-color: #de0707; }
+
+.search-results-container .container-head .search-box .search-btn:active { background-color: #ca0000; }
+
+.search-results-container .container-head .search-notice { text-align: center; font-size: 13px; color: #999; }
+
+.search-results-container .container-head .search-notice i { margin-right: 5px; font-size: inherit; color: #f78e24; }
+
+.search-results-container .results-list { padding: 30px 0; }
+
+.search-results-container .results-list .list-item { padding: 25px 0; }
+
+.search-results-container .results-list .list-item .title { max-width: 100%; margin-bottom: 18px; font-size: 16px; color: #333; }
+
+.search-results-container .results-list .list-item .title:hover { color: #f78e24; }
+
+.search-results-container .results-list .list-item p { height: 56px; line-height: 28px; font-size: 14px; color: #999; overflow: hidden; }
+
+.search-results-container .results-list .list-item + .list-item { border-top: 1px dashed #eee; }
+
+/* aside-content-container */
+.aside-content-container { float: right; width: 318px; }
+
+.aside-content-container .aside-title { margin-bottom: 22px; line-height: 18px; font-size: 16px; color: #363636; }
+
+.aside-content-container .aside-title span { padding-left: 9px; border-left: 3px solid #f78e24; }
+
+.aside-content-container .news-list { width: 100%; background-color: #fff; }
+
+.aside-content-container .news-list .inner { padding: 20px 0 14px 0; margin: 0 20px; }
+
+.aside-content-container .news-list .list dt { position: relative; width: 276px; height: 204px; margin-bottom: 22px; border: 1px solid #eee; }
+
+.aside-content-container .news-list .list dt .pic { display: block; width: 100%; height: 100%; overflow: hidden; }
+
+.aside-content-container .news-list .list dt .pic img { width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-content-container .news-list .list dt .pic:hover img { -webkit-transform: scale(1.04); -ms-transform: scale(1.04); transform: scale(1.04); }
+
+.aside-content-container .news-list .list dt .desc { position: absolute; bottom: 0; left: 0; width: 100%; height: 39px; }
+
+.aside-content-container .news-list .list dt .desc .bg { width: 100%; height: 100%; background-color: #fff; opacity: .65; filter: alpha(opacity=65); }
+
+.aside-content-container .news-list .list dt .desc .text { position: absolute; top: 0; left: 0; width: 100%; }
+
+.aside-content-container .news-list .list dt .desc .text a { display: block; margin: 12px; font-size: 14px; font-weight: bold; color: #363636; }
+
+.aside-content-container .news-list .list dt .desc .text a:hover { color: #f78e24; }
+
+.aside-content-container .news-list .list dd { margin-bottom: 18px; font-size: 14px; }
+
+.aside-content-container .news-list .list dd a { width: 100%; color: #666; }
+
+.aside-content-container .news-list .list dd a:before { content: ''; display: inline-block; width: 4px; height: 4px; margin-right: 4px; vertical-align: middle; background-color: #666; border-radius: 50%; }
+
+.aside-content-container .news-list .list dd a:hover { color: #f78e24; }
+
+.aside-content-container .news-list .list dd a:hover:before { background-color: #f78e24; }
+
+.aside-content-container .news-list + .news-list { margin-top: 10px; }

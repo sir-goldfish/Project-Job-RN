@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfFixedHeadHeight: 16rem;
+$selfFixedFootHeight: 4.2rem;
+
+/* page-head */
+.page-head {
+  .head-inner {
+    height: 100%;
+    padding-top: 2.4rem;
+    background-image: url(../resource/img/par_pic007.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+    .avatar {
+      display: block;
+      width: 8rem;
+      height: 8rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1.4rem;
+      border: .6rem solid rgba(0, 0, 0, .15);
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+      }
+    }
+    .desc-wrap {
+      text-align: center;
+      .desc {
+        padding: .2rem;
+        vertical-align: middle;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, .15);
+        border-radius: 2.2rem;
+        .icon {
+          display: inline-block;
+          width: 1.7rem;
+          height: 1.7rem;
+          vertical-align: middle;
+          background-image: url(../resource/img/par_icon003.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+          border-radius: 50%;
+        }
+        .text {
+          display: inline-block;
+          padding: 0 .8rem;
+          vertical-align: middle;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* content-container */
+.page-body {
+  .content-container {
+    background-color: #fff;
+  }
+  .products-list {
+    .product-card {
+      $selfRightWidth: 7rem;
+      .card-inner {
+        width: 100%;
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      &:last-child {
+        .card-inner {
+          border-bottom: none;
+        }
+      }
+      &:first-child {
+        .card-inner {
+          border-bottom: 1px solid #e5e5e5;
+        }
+      }
+      .desc {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-right: $selfRightWidth;
+        .title {
+          font-size: 1.4rem;
+        }
+        .para {
+          margin-top: .5rem;
+        }
+      }
+      .price-wrap {
+        position: relative;
+        z-index: 1;
+        float: right;
+        margin-left: - $selfRightWidth;
+        text-align: right;
+        .price {
+          & > * {
+            display: inline;
+          }
+          .num {
+            font-size: 1.4rem;
+          }
+        }
+        .handle {
+          margin-top: .5rem;
+          .handle-btn {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* transaction-container */
+.page-body {
+  .transaction-container {
+    .aside-container {
+      $selfBgColor: #fff;
+      $selfBorderColor: #e5e5e5;
+      background-color: $selfBgColor;
+      border-right: 1px solid $selfBorderColor;
+      .category-nav {
+        width: 100%;
+        .nav-item {
+          display: block;
+          padding: 1rem 1.2rem;
+          margin-top: -1px;
+          font-size: 1.2rem;
+          color: #888;
+          border-top: 1px solid $selfBorderColor;
+          border-bottom: 1px solid $selfBorderColor;
+          &.current {
+            color: #f82d48;
+          }
+        }
+      }
+    }
+    .main-container {
+      .brand-list {
+        padding-top: 1.3rem;
+      }
+      .brand-item {
+        float: left;
+        width: 50%;
+        padding-bottom: 1.3rem;
+      }
+      .brand-card {
+        $selfWidth: 7.7rem;
+        width: $selfWidth;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+        .pic {
+          width: 100%;
+          height: $selfWidth;
+          text-align: center;
+          font-size: 0;
+          &:before {
+            @include globalVerticalMiddleAssist;
+          }
+          img {
+            display: inline-block;
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+          }
+        }
+        .consult-btn {
+          display: block;
+          width: 100%;
+          padding: .6rem 0;
+          text-align: center;
+          color: #fff;
+          background-color: $globeColorStress;
+          &:active {
+            background-color: $globeColorStressActive;
+          }
+        }
+      }
+      .main-foot {
+        padding-bottom: 1.3rem;
+      }
+    }
+  }
+}

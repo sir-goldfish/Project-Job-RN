@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+$selfFontColor: #d9b177;
+$selfBgColor: #f1f1f1;
+/* header */
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .logo-pic {
+    float: left;
+    display: block;
+    width: auto;
+    height: 2rem;
+  }
+}
+
+/* head-banner */
+.head-banner {
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* form-container */
+.form-container {
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
+  background: #e7dcd0 url(../resource/img/rnp_landing_bgi.jpg) no-repeat center;
+  background-size: cover;
+  .container-title {
+    $selfColor: #523031;
+    margin-bottom: 2.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $selfColor;
+    .title {
+      vertical-align: middle;
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        width: 3rem;
+        height: 0;
+        vertical-align: middle;
+        border-top: .05rem solid $selfColor;
+      }
+      &:before {
+        margin-right: .8rem;
+      }
+      &:after {
+        margin-left: .8rem;
+      }
+    }
+  }
+  .container-body {
+    .form-item {
+      $selfHeight: 3.3rem;
+      font-size: 1.2rem;
+      .input-box {
+        position: relative;
+        input[type='text'] {
+          width: 100%;
+          height: $selfHeight;
+          padding: 0 4.2rem;
+          vertical-align: top;
+          line-height: $selfHeight;
+          font-size: 1.2rem;
+          background-color: #fff;
+          border: none;
+          border-radius: $selfHeight;
+        }
+        .icon {
+          position: absolute;
+          top: 50%;
+          left: 1.2rem;
+          margin-top: -.8rem;
+          font-size: 1.6rem;
+          color: #dfc4aa;
+        }
+        &.code-input {
+          $selfWidth: 13rem;
+          input[type='text'] {
+            padding-right: $selfWidth + 1rem;
+          }
+          .code-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $selfWidth;
+            height: 100%;
+            line-height: $selfHeight;
+            text-align: center;
+            color: #d4a87d;
+            background-color: #dfe0e4;
+            border-top-right-radius: $selfHeight;
+            border-bottom-right-radius: $selfHeight;
+          }
+        }
+      }
+      &.form-handle-group {
+        .submit-btn {
+          display: block;
+          width: 100%;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          text-align: center;
+          border-radius: $selfHeight;
+          color: #523031;
+          background-color: #dec4ab;
+        }
+      }
+    }
+    .form-item + .form-item {
+      margin-top: 1rem;
+    }
+    .protocol-box {
+      margin-top: 2rem;
+      text-align: center;
+      color: #523031;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      input[type='checkbox'] {
+        margin-right: .2rem;
+      }
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+/* foot-handle-bar */
+.foot-handle-bar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  .handle-link {
+    vertical-align: middle;
+    font-size: 1.1rem;
+    color: #3e72df;
+  }
+  .handle-link + .handle-link {
+    margin-left: 1.8rem;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: $selfBgColor;
+  .version {
+    padding-top: 2.5rem;
+    padding-bottom: 1.8rem;
+    font-size: 0;
+    text-align: center;
+    a {
+      display: inline-block;
+      margin: 0 3.1rem;
+      font-size: 1.2rem;
+    }
+    .current {
+      color: #d10d16;
+    }
+  }
+  .info {
+    padding-bottom: 2rem;
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    color: #999;
+  }
+}

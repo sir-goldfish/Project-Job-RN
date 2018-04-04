@@ -1,0 +1,26 @@
+/* main-body */
+.main-body { padding: 10px 0; background-color: #f7f7f7; }
+
+.main-body .sme-inner { padding-top: 160px; padding-bottom: 190px; text-align: center; background-color: #fff; }
+
+.main-body .sme-inner .error-pic, .main-body .sme-inner .error-info { display: inline-block; vertical-align: middle; }
+
+.main-body .sme-inner .error-info { margin-left: 80px; text-align: justify; }
+
+.main-body .sme-inner .error-info .info-text { line-height: 30px; }
+
+.main-body .sme-inner .error-info .info-btn { padding-top: 16px; }
+
+.main-body .sme-inner .error-info .refresh { color: #084a9a; }
+
+.main-body .sme-inner .error-info .refresh:hover { color: #f78e24; }
+
+.main-body .sme-inner .error-info .go-home, .main-body .sme-inner .error-info .go-prev { line-height: 30px; padding: 0 25px; color: #fff; border-radius: 5px; }
+
+.main-body .sme-inner .error-info .go-home { background-color: #f78e24; }
+
+.main-body .sme-inner .error-info .go-prev { margin-left: 20px; background-color: #36a7de; }
+
+.main-body .sme-inner .error-info .go-home:hover { background-color: #ffa73d; }
+
+.main-body .sme-inner .error-info .go-prev:hover { background-color: #4abbf2; }

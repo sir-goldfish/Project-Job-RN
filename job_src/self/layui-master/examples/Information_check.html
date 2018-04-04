@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>信息核对</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../src/css/layui.css">
+    <link rel="stylesheet" href="../dist/css/modules/field_i.css">
+    <script src="../dist/rem.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div class="big_box">
+
+
+    <div class="tb_body">
+        <p class="hy_position">凯乐会-4楼-VIP07</p>
+
+        <ul class="input_ul">
+            <!--<li>美女人数	<input type="text">	</li>
+            <li>美女人数	<input type="text">	</li>
+            <li>美女人数	<input type="text">	</li>
+            <li>美女人数	<input type="text">	</li>
+            <li>美女人数	<input type="text">	</li>	-->
+        </ul>
+
+
+    </div>
+
+    <div class="tb_body_two">
+
+        <p class="xixi">凯乐会-4楼-vip03</p>
+        <p class="hygiene">卫生全部正常</p>
+        <p class="hygiene">卫生出现问题</p>
+
+        <div class="display_c">
+
+
+            <ul class="position_ul">
+                <li>哈哈</li>
+                <li>嘻嘻</li>
+                <li>嘿嘿</li>
+                <li>哎哎</li>
+            </ul>
+            <textarea class="layui-textarea" placeholder="请填写损坏位置及损坏类型和程度"></textarea>
+        </div>
+    </div>
+
+
+    <div class="tb_body_three">
+
+
+        <ul class="five_box_ul">
+            <li>
+                <div class="Personal_j">
+                    <div class="Personal_le">
+                        <div><img src="../dist/images/2.jpg"></div>
+                        <p>白雪公主</p>
+                        <p>公主-豪豪组</p>
+                    </div>
+
+                    <div class="Personal_re">
+
+                        <p class="back_g back_god">良好</p>
+                        <p class="back_bad">差评</p>
+                    </div>
+                </div>
+
+
+                <div class="bad_text">
+                    <ul class="bad_textul">
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="Personal_j">
+                    <div class="Personal_le">
+                        <div><img src="../dist/images/2.jpg"></div>
+                        <p>白雪公主</p>
+                        <p>公主-豪豪组</p>
+                    </div>
+
+                    <div class="Personal_re">
+
+                        <p class="back_g back_god">良好</p>
+                        <p class="back_bad">差评</p>
+                    </div>
+                </div>
+
+
+                <div class="bad_text">
+                    <ul class="bad_textul">
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="Personal_j">
+                    <div class="Personal_le">
+                        <div><img src="../dist/images/2.jpg"></div>
+                        <p>白雪公主</p>
+                        <p>公主-豪豪组</p>
+                    </div>
+
+                    <div class="Personal_re">
+
+                        <p class="back_g back_god">良好</p>
+                        <p class="back_bad">差评</p>
+                    </div>
+                </div>
+
+
+                <div class="bad_text">
+                    <ul class="bad_textul">
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <div class="tb_body_two">
+
+        <div class="position_tex">
+            <textarea class="layui-textarea" placeholder="请填写损坏位置及损坏类型和程度"></textarea>
+        </div>
+        <div class="layui-upload">
+            <div class="layui-upload-list" id="demo2"></div>
+            <button type="button" class="layui-btn" id="test2">添加图片</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="z_bad">
+    <ul class="bad_ul">
+        <li>常玩手机</li>
+        <li>挣歌抢麦</li>
+    </ul>
+
+    <div class="btn_cl">
+        <div class="btn_one">取消</div>
+        <div class="btn_two">确定</div>
+    </div>
+</div>
+<div class="back_t"></div>
+
+
+<div class="ft_btn">提交</div>
+<!--***begin:demo html***-->
+<ul id="test">
+    <li>li-1<input type="text" value="input-1"></li>
+    <li>li-2<input type="text" value="input-2"></li>
+    <li>li-3<input type="text" value="input-3"></li>
+</ul>
+<!--***end:demo html***-->
+
+</body>
+
+
+<script src="../src/layui.js"></script>
+<script type="text/javascript" src="../dist/lay/modules/jquery.js"></script>
+
+
+<script>
+    //***begin:demo js***
+    var returnData = {};
+    for (var i = 0; i < $('#test').find('li').length; i++) {
+        returnData[$('#test').find('li').eq(i).text()] = $('#test').find('li').eq(i).find('input').val();
+    }
+    console.log(returnData);
+    //***end:demo js***
+
+
+    layui.use(['jquery', 'form', 'element', 'laytpl', 'upload'], function () {
+        var $ = layui.jquery;
+        var form = layui.form,
+            element = layui.element,
+            laytpl = layui.laytpl,
+            upload = layui.upload;
+
+
+        var url = "http://hqrong.dev.ngrok.gosoftapp.com/yz-rest";
+
+        $.ajax({
+            type: "get",
+            url: url + "/emp_work/patrol_room/template",
+            dataType: "json",
+            data: {
+                placeId: 41,
+                roomId: 123,
+                token: '0d5b226e7ca884e19fb97ebde3d38784',
+                deviceId: 'ML7E2CHA',
+            },
+            success: function (data) {
+                var odata = data.data;
+                console.log(odata)
+                var z_html = '';
+                var c_html = '';
+                var g_html = '';
+                for (var i = 0; i < odata.length; i++) {
+                    if (odata[i].code == "VERIFY_LOCATE") {
+
+                        for (var c = 0; c < odata[i].items.length; c++) {
+                            c_html += '<li class ="conent">' + odata[i].items[c].name + '	<input type="' + odata[i].items[c].inputType + '" value="' + odata[i].items[c].defaultVal + '" class="con_input"></li>'
+                        }
+
+                        $('.input_ul').html(c_html)
+
+                    }
+                    if (odata[i].code == "ROOM_HYGIENE") {
+
+                        for (var z = 0; z < odata[i].items[0].options.length; z++) {
+
+                            g_html += '<li>' + odata[i].items[0].options[i] + '</li>'
+
+                        }
+
+
+                    }
+
+                }
+
+            }
+        });
+
+
+//	     function addContent (pre,name) {
+//	
+//		  		   var verifyLocate = {};
+//		  	       pre.each(function(i, ele) {							  							
+//									 name:$(this).find('.con_input').val(),
+//			
+//	
+//								});
+//		           console.log(verifyLocate)
+//		    }
+//	
+//	     
+//	     $('.ft_btn').click(function(){
+//	     	addContent($('.conent'))
+//	      
+//	     })
+//
+
+
+        $.ajax({
+            type: "get",
+            url: url + "/bill/report/star_tags",
+            async: true,
+            data: {
+                token: '0d5b226e7ca884e19fb97ebde3d38784',
+                deviceId: 'ML7E2CHA',
+                placeId: 41,
+            },
+            success: function (data) {
+
+                var odata = data.data;
+                var bad_html = '';
+                for (var c = 0; c < odata.badTags.length; c++) {
+                    bad_html += '<li>' + odata.badTags[c] + '</li>'
+
+                }
+                $('.bad_ul').html(bad_html)
+
+            }
+        });
+
+
+        var pre_index_what;
+        $('.tb_body_three').on('click', '.back_bad', function () {
+
+            pre_index_what = $(this).index('.back_bad')
+            console.log(pre_index_what)
+//					    pre_index =pre_index-1
+
+            $('.z_bad').show(500)
+            $('.back_t').css('display', 'block')
+        })
+
+        $('.btn_one').click(function () {
+
+            $('.z_bad').hide(500)
+            $('.back_t').css('display', 'none')
+        })
+
+
+        $('.tb_body_three').on('click', '.back_god', function () {
+            var that_vvv = $(this).index('.back_god');
+
+            $(this).addClass('back_g').siblings().removeClass('back_g')
+            $('.bad_text').eq(that_vvv).hide()
+            $('.bad_textul').eq(that_vvv).html('')
+
+        })
+
+
+        var bad_text;
+        $('.bad_ul').on('click', 'li', function () {
+
+            if ($(this).hasClass('jnl_badclass')) {
+                $(this).removeClass('jnl_badclass')
+
+            } else {
+                $(this).addClass('jnl_badclass');
+            }
+
+            var len = $('.jnl_badclass').length
+
+            var arr = []
+            $('.jnl_badclass').each(function () {
+                arr.push($(this).html())
+            })
+            bad_text = arr
+        })
+
+        $('.btn_two').click(function () {
+            if (bad_text != undefined) {
+                var html = '';
+                for (var i = 0; i < bad_text.length; i++) {
+                    html += '<li>' + bad_text[i] + '</li>'
+
+                }
+
+                $('.bad_textul').eq(pre_index_what).html(html).parent().show()
+                $('.back_bad').eq(pre_index_what).addClass('back_g').siblings().removeClass('back_g')
+
+            }
+
+
+            $('.z_bad').hide(500)
+            $('.back_t').css('display', 'none')
+
+        })
+
+
+        var img = [];
+        upload.render({
+            elem: '#test2'
+            , url: 'http://hqrong.dev.ngrok.gosoftapp.com/yz-rest/file/upload'
+            , multiple: true
+            , data: {
+                token: '0d5b226e7ca884e19fb97ebde3d38784',
+                deviceId: 'ML7E2CHA',
+            }
+            , number: 3
+            , size: 1024
+            , before: function (obj) {
+                obj.preview(function (index, file, result) {
+                    $('#demo2').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                });
+            }
+            , done: function (res) {
+                img.push(res.data.path)
+                console.log(res)
+            }
+            , allDone: function (obj) {
+                console.log(obj)
+            }
+        });
+
+    });
+
+
+</script>
+</body>
+</html>

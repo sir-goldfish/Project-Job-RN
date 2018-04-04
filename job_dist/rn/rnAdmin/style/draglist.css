@@ -1,0 +1,49 @@
+.dragslot-wrapper { width: 100%; }
+
+.dragslot-inner { width: 95%; margin: 0 auto; }
+
+.dragslot-container { width: 100%; min-height: 500px; margin-left: -1.5%; background-color: #fff; }
+
+li { list-style: none; }
+
+.slot-box { float: left; width: 15%; margin-left: 1.5%; margin-bottom: 20px; }
+
+.slot-box .slot-title { width: 100%; height: 18px; padding: 4% 1px; line-height: 1; font-size: 18px; color: #fff; border: 2px solid #fff; }
+
+.slot-box .slot { width: 100%; }
+
+.slot-box .slot:not(:last-child) { margin-right: 0; }
+
+.slot-box .empty-slot { border-width: 2px; }
+
+.slot-item { padding: 2px 5px; border-left-width: 4px; }
+
+.slot-handler { font-size: 0; }
+
+.slot-handler .avatar, .slot-handler .content { display: inline-block; vertical-align: middle; }
+
+.slot-handler .avatar { width: 20%; }
+
+.slot-handler .avatar > img { width: 100%; height: 100%; }
+
+.slot-handler .content { width: 80%; line-height: 18px; font-size: 14px; }
+
+.slot-handler .content .name { margin-left: 5%; }
+
+.slot-box-1 .slot-title { background-color: #ea7c7c; border-color: #ea7c7c; }
+
+.slot-box-1 .slot { border-color: #ea7c7c; }
+
+.slot-box-1 .slot-item { border-color: #ea7c7c; }
+
+.slot-box-2 .slot-title { background-color: #ecdb50; border-color: #ecdb50; }
+
+.slot-box-2 .slot { border-color: #ecdb50; }
+
+.slot-box-2 .slot-item { border-color: #ecdb50; }
+
+.slot-box-3 .slot-title { background-color: #61d486; border-color: #61d486; }
+
+.slot-box-3 .slot { border-color: #61d486; }
+
+.slot-box-3 .slot-item { border-color: #61d486; }

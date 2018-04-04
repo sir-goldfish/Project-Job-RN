@@ -1,0 +1,717 @@
+@charset "utf-8";
+
+/*--begin：以下为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+@import "baseNew";
+/*--end：以上为demo编写时使用的公共样式，与公共样式base.css重复，正式发布可删除*/
+
+//共用
+.rn-wrapper {
+  width: 100%;
+  min-width: 1000px;
+}
+
+.rn-inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+//清除浮动
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//单行省略号
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* head-banner */
+.head-banner {
+  height: 560px;
+  .banner-item {
+    width: 100%;
+    height: 100%;
+    background: url(../resource/img/celebration_bgi.jpg) no-repeat center;
+  }
+}
+
+/* project-section */
+.project-section {
+  background-color: #340248;
+  overflow: hidden;
+  .rn-inner {
+    position: relative;
+    padding-top: 54px;
+    padding-bottom: 88px;
+  }
+  .desc {
+    position: relative;
+    width: 904px;
+    height: 391px;
+    margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../resource/img/celebration_bgi1.jpg) no-repeat center;
+    .submit-box {
+      position: absolute;
+      bottom: 16px;
+      right: 58px;
+      text-align: center;
+      color: #fff;
+      .bp-submit-btn {
+        display: block;
+        width: 182px;
+        height: 56px;
+        margin-bottom: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../resource/img/celebration_pic.png) no-repeat center;
+      }
+      p {
+        line-height: 1;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+  .desc-text {
+    position: relative;
+    width: 446px;
+    height: 62px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    legend {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      width: 320px;
+      padding: 0 20px;
+      margin-left: -180px;
+      text-align: center;
+      line-height: 36px;
+      font-size: 28px;
+      color: #fff;
+      background-color: #340248;
+    }
+  }
+  .list {
+    ul {
+      text-align: center;
+      font-size: 0;
+      color: #fff;
+    }
+    li {
+      display: inline-block;
+      vertical-align: top;
+      .icon {
+        width: 231px;
+        height: 231px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../resource/img/celebration_sprites.png) no-repeat 999px 0;
+      }
+      h3 {
+        margin-bottom: 12px;
+        line-height: 1;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      a {
+        display: inline-block;
+        width: 108px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 36px;
+        transition: background-color .2s ease-out, border-color .2s ease-out;
+      }
+      a:hover {
+        background-color: #f41f29;
+        border-color: #f41f29;
+      }
+    }
+    li + li {
+      margin-left: 25px;
+    }
+  }
+  .ornament {
+    position: absolute;
+    display: block;
+  }
+}
+
+/* award-section */
+.award-section {
+  position: relative;
+  margin-top: -58px;
+  height: 1006px;
+  padding-top: 80px;
+  background: url(../resource/img/celebration_bgi2.png) no-repeat center top;
+  overflow: hidden;
+  .rn-inner {
+    position: relative;
+  }
+  .section-title {
+    margin-bottom: 24px;
+    text-align: center;
+    line-height: 1;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fdff04;
+  }
+  .award-rotate-container {
+    position: relative;
+    width: 555px;
+    height: 562px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    .award-wheel {
+      width: 555px;
+      height: 561px;
+      background: url(../resource/img/celebration_pic8.png) no-repeat center;
+    }
+    .award-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 173px;
+      height: 214px;
+      margin-top: -136px;
+      margin-left: -87px;
+      background: url(../resource/img/celebration_pic7.png) no-repeat center;
+    }
+  }
+  .award-desc {
+    $selfColor: #fdff38;
+    position: relative;
+    width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    color: $selfColor;
+    border: 3px solid $selfColor;
+    border-radius: 10px;
+    legend {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      width: 218px;
+      padding: 0 20px;
+      margin-left: -129px;
+      line-height: 1;
+      text-align: center;
+      font-size: 36px;
+      background-color: #e01b37;
+    }
+    .list {
+      padding: 48px 20px 15px 20px;
+      line-height: 33px;
+      font-size: 18px;
+    }
+    .list-left {
+      float: left;
+    }
+    .list-right {
+      float: right;
+    }
+    .info {
+      padding: 0 20px 22px 20px;
+      line-height: 1;
+      font-size: 14px;
+    }
+  }
+  .ornament {
+    position: absolute;
+    display: block;
+  }
+}
+
+/* boon-section */
+.boon-section {
+  position: relative;
+  margin-top: -175px;
+  height: 342px;
+  padding-top: 220px;
+  color: #fff;
+  background: url(../resource/img/celebration_bgi3.png) no-repeat center top;
+  .section-title {
+    margin-bottom: 63px;
+    line-height: 76px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    .text {
+      position: relative;
+      display: inline-block;
+    }
+    .text:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -188px;
+      display: block;
+      width: 168px;
+      height: 76px;
+      background: url(../resource/img/celebration_pic5.png) no-repeat center;
+    }
+    .text:after {
+      content: '';
+      position: absolute;
+      bottom: -14px;
+      left: 50%;
+      width: 616px;
+      height: 5px;
+      margin-left: -308px;
+      background: url(../resource/img/celebration_pic6.png) no-repeat center;
+    }
+  }
+  .desc {
+    margin: 0 55px;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .info {
+    padding-top: 18px;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+  }
+}
+
+/* celebration-dialog */
+.celebration-dialog {
+  display: none;
+  width: 408px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  .dialog-head {
+    position: relative;
+    height: 40px;
+    padding: 0 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d04045;
+    .title {
+      line-height: 40px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      display: block;
+      line-height: 1;
+      font-size: 20px;
+      color: #fff;
+      transition: transform .5s ease-out;
+    }
+    .close-btn:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .dialog-body {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: #666;
+    .form-item {
+      margin-bottom: 10px;
+      .title {
+        float: left;
+        width: 122px;
+        margin-right: -124px;
+        line-height: 32px;
+        text-align: right;
+        font-size: 12px;
+      }
+      .star-title:before {
+        content: '*';
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        margin-right: 4px;
+        line-height: 1;
+        font-size: 12px;
+        color: #fc0018;
+      }
+      .input-wrapper {
+        margin-left: 126px;
+        font-size: 0;
+        .input-box {
+          position: relative;
+          input[type='text'] {
+            width: 220px;
+            height: 12px;
+            padding: 9px 5px;
+            line-height: 12px;
+            font-size: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+          }
+          textarea {
+            width: 220px;
+            height: 67px;
+            padding: 9px 5px;
+            resize: none;
+            outline: none;
+            font-size: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    .hint-info {
+      padding-top: 3px;
+      padding-bottom: 13px;
+      text-align: center;
+      line-height: 12px;
+      font-size: 12px;
+    }
+    .form-btn-wrapper {
+      text-align: center;
+      font-size: 0;
+      .form-btn {
+        display: inline-block;
+        height: 30px;
+        min-width: 58px;
+        padding: 0 12px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #2a89c9;
+        border-radius: 4px;
+        transition: background-color .2s ease-out, color .2s ease-out;
+      }
+      .form-btn + .form-btn {
+        margin-left: 18px;
+      }
+      .form-btn:hover {
+        background-color: #2a89c9 - 15%;
+      }
+    }
+  }
+}
+
+/* bp-dialog */
+.bp-dialog {
+  .dialog-body {
+    .upload-file {
+      .add-file {
+        position: relative;
+        display: block;
+        float: left;
+        margin-left: 45px;
+        margin-bottom: 5px;
+        line-height: 1;
+        font-size: 12px;
+        color: #5071a1;
+        cursor: default;
+        transition: color .2s ease-out;
+        i, .text {
+          vertical-align: middle;
+        }
+        i {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        input[type='file'] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          filter: alpha(opacity=0);
+        }
+      }
+      .add-file:hover {
+        color: #d04045;
+      }
+      p {
+        margin-left: 55px;
+        line-height: 1;
+        font-size: 12px;
+      }
+    }
+    .form-btn-wrapper {
+      .cancel-btn {
+        color: #383838;
+        background-color: #ddd;
+      }
+      .cancel-btn:hover {
+        background-color: #ddd - 15%;
+      }
+    }
+  }
+}
+
+/* award-dialog */
+.award-dialog {
+  .dialog-body {
+    .top-info {
+      margin-bottom: 17px;
+      text-align: center;
+      line-height: 18px;
+      font-size: 12px;
+      color: #363636;
+      span {
+        font-weight: bold;
+        color: #fc0018;
+      }
+    }
+    .form-item {
+      .input-wrapper {
+        .s-input {
+          display: inline-block;
+          vertical-align: middle;
+          input[type='text'] {
+            width: 105px;
+          }
+        }
+        .msg-code {
+          display: inline-block;
+          height: 30px;
+          padding: 0 12px;
+          margin-left: 5px;
+          vertical-align: middle;
+          line-height: 30px;
+          text-align: center;
+          font-size: 12px;
+          color: #363636;
+          background-color: #e6e6e6;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          transition: background-color .2s ease-out;
+        }
+        .msg-code:hover {
+          background-color: #e6e6e6 - 15%;
+        }
+      }
+    }
+    .form-btn-wrapper {
+      .submit-btn {
+        min-width: 126px;
+        background-color: #d73a39;
+      }
+      .submit-btn:hover {
+        background-color: #d73a39 - 15%;
+      }
+    }
+  }
+}
+
+/* scratch-award-dialog */
+.scratch-award-dialog {
+  display: none;
+  width: 670px;
+  height: 473px;
+  margin: 0 auto;
+  background-color: #fff;
+  .dialog-head {
+    position: relative;
+    padding: 7px 11px;
+    background-color: #ec4148;
+    .title {
+      font-size: 0;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .text {
+        margin-left: 27px;
+      }
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      display: block;
+      line-height: 1;
+      font-size: 20px;
+      color: #fff;
+      transition: transform .5s ease-out;
+    }
+    .close-btn:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .dialog-body {
+    padding: 11px;
+    .scratch-card {
+      float: left;
+      width: 380px;
+      height: 411px;
+      background-color: #ea2858;
+      border-radius: 20px;
+      overflow: hidden;
+      .card-title {
+        width: 100%;
+        height: 72px;
+        margin-bottom: 10px;
+        background: url(../resource/img/celebration_bgi4.png) no-repeat center;
+      }
+      .card-box {
+        width: 344px;
+        height: 174px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../resource/img/celebration_bgi5.png) no-repeat center;
+        overflow: hidden;
+        .scratch-area {
+          position: relative;
+          width: 257px;
+          height: 93px;
+          margin: 18px auto 10px auto;
+          line-height: 93px;
+          text-align: center;
+          font-size: 34px;
+          font-weight: bold;
+          color: #fb5c57;
+          background-color: #fff7e3;
+          border: 1px dashed #b3b3b3;
+          .scratch-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .scratch-notice {
+          width: 297px;
+          height: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          line-height: 40px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+          color: #e50c17;
+          background: url(../resource/img/celebration_bgi7.png) no-repeat center;
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+      .card-notice {
+        .notice-title {
+          text-align: center;
+          font-size: 0;
+          span {
+            display: inline-block;
+            width: 140px;
+            height: 28px;
+            margin: 0 6px 9px 6px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #4e1a0a;
+            background-color: #fed14d;
+            border: 2px solid #391d24;
+            border-radius: 28px;
+          }
+        }
+        .notice-title:before, .notice-title:after {
+          content: '';
+          display: inline-block;
+          width: 90px;
+          height: 7px;
+          background: url(../resource/img/celebration_bgi8.png) no-repeat center;
+        }
+        .list {
+          margin-left: 25px;
+          line-height: 1;
+          font-size: 12px;
+          font-weight: bold;
+          color: #fff;
+          li {
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+    .aside-container {
+      float: right;
+      width: 256px;
+      line-height: 1;
+      font-size: 14px;
+      .aside-title {
+        padding: 7px 10px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #5b77e7;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .case-list {
+        margin-bottom: 15px;
+        .list {
+          width: 238px;
+          padding: 15px 8px;
+          background-color: #f5f5f5;
+          border: 1px solid #e8e8e8;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          ul {
+            margin-top: -12px;
+          }
+          li {
+            width: 100%;
+            margin-top: 12px;
+            font-size: 12px;
+            color: #777;
+          }
+          li:before {
+            content: '';
+            display: inline-block;
+            width: 2px;
+            height: 2px;
+            margin-right: 4px;
+            vertical-align: middle;
+            background-color: #777;
+          }
+        }
+      }
+      .choose-desc {
+        .desc {
+          width: 234px;
+          padding: 12px 10px;
+          line-height: 24px;
+          color: #777;
+          background-color: #f5f5f5;
+          border: 1px solid #e8e8e8;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          .red {
+            font-weight: bold;
+            color: #fb1e30;
+          }
+        }
+      }
+    }
+  }
+}

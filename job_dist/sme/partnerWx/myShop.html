@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的店铺-合伙人</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/myShop.css">
+</head>
+<body>
+<!--shop-head-->
+<div class="shop-head rn-wrapper" style="bottom:auto; z-index:1; height:22.7rem;">
+    <!--****
+        * 提示1：三种合伙人的样式切换是给 shop-info-panel 加不同的类名。
+        * 普通合伙人：默认，不用加标识类名。
+        * VIP合伙人：加类名 vip 。
+        * 城市代理人：加类名 city 。
+        *
+        * 提示2：除了最高级别 城市代理人 没有升级操作，其他级别均有升级操作。
+        ****-->
+    <div class="shop-info-panel rn-main-body">
+        <a href="javascript:;" class="upgrade-btn rn-btn rn-btn-grayblue rn-btn-outline rn-btn-sm">升级</a>
+        <a href="shopInfo.html" class="avatar"><img src="resource/img/par_pic006.png"></a>
+        <div class="name-wrap">
+            <a href="shopInfo.html" class="name">
+                <i class="icon"></i><span class="text">普通合伙人</span>
+            </a>
+        </div>
+        <div class="rn-content-padded">
+            <div class="info-card">
+                <a href="javascript:;" class="info-item" style="flex-basis:33.3%;">
+                    <div class="num">88</div>
+                    <div class="text">已成功推广(单)</div>
+                </a>
+                <a href="javascript:;" class="info-item" style="flex-basis:33.3%;">
+                    <div class="num">2000</div>
+                    <div class="text">可提现(元)</div>
+                </a>
+                <a href="javascript:;" class="info-item" style="flex-basis:33.3%;">
+                    <div class="num">8000</div>
+                    <div class="text">已提现(元)</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--shop-body-->
+<div class="shop-body rn-wrapper" style="top:22.7rem; bottom:4.2rem;">
+    <div class="rn-main-body">
+        <div class="rn-wrapper" style="bottom:auto; z-index:1; height:3.7rem;">
+            <div class="m-tab-nav">
+                <a href="javascript:;" class="current tab-nav-item" style="flex-basis:33.33%;">商标</a>
+                <a href="javascript:;" class="tab-nav-item" style="flex-basis:33.33%;">版权</a>
+                <a href="javascript:;" class="tab-nav-item" style="flex-basis:33.33%;">专利</a>
+            </div>
+        </div>
+        <div class="content-container m-lazyload-wrap rn-wrapper" style="top:3.7rem; overflow:auto;">
+            <div class="rn-main-body">
+                <!--****
+                    * 提示：加载中，使用 u-loading-line 结构。
+                    ****-->
+                <!--<div class="u-loading-line"><img src="resource/img/par_loading.gif"></div>-->
+                <!--****
+                    * 提示：数据空，展示 m-empty-container 。
+                    ****-->
+                <!--<div class="m-empty-container rn-wrapper">-->
+                <!--<div class="m-empty-inner">-->
+                <!--<div class="rn-font-gray">数据空文本描述</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <ul class="products-list m-lazyload-list">
+                    <li class="product-card m-lazyload-item rn-content-padded">
+                        <div class="card-inner f-clearfix">
+                            <div class="price-wrap">
+                                <div class="price rn-font-gray"><span class="num rn-font-red">￥9000</span><span
+                                        class="unit">/件</span></div>
+                                <div class="badge">赚<span>￥108.00</span></div>
+                            </div>
+                            <div class="desc">
+                                <div class="title">商标注册-任性保</div>
+                                <div class="para rn-font-gray">加急申报，随时可以申请退款</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card m-lazyload-item rn-content-padded">
+                        <div class="card-inner f-clearfix">
+                            <div class="price-wrap">
+                                <div class="price rn-font-gray"><span class="num rn-font-red">￥9000</span><span
+                                        class="unit">/件</span></div>
+                                <div class="badge">赚<span>￥108.00</span></div>
+                            </div>
+                            <div class="desc">
+                                <div class="title">商标注册-任性保</div>
+                                <div class="para rn-font-gray">加急申报，随时可以申请退款</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card m-lazyload-item rn-content-padded">
+                        <div class="card-inner f-clearfix">
+                            <div class="price-wrap">
+                                <div class="price rn-font-gray"><span class="num rn-font-red">￥9000</span><span
+                                        class="unit">/件</span></div>
+                                <div class="badge">赚<span>￥108.00</span></div>
+                            </div>
+                            <div class="desc">
+                                <div class="title">商标注册-任性保</div>
+                                <div class="para rn-font-gray">加急申报，随时可以申请退款</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card m-lazyload-item rn-content-padded">
+                        <div class="card-inner f-clearfix">
+                            <div class="price-wrap">
+                                <div class="price rn-font-gray"><span class="num rn-font-red">￥9000</span><span
+                                        class="unit">/件</span></div>
+                                <div class="badge">赚<span>￥108.00</span></div>
+                            </div>
+                            <div class="desc">
+                                <div class="title">商标注册-任性保</div>
+                                <div class="para rn-font-gray">加急申报，随时可以申请退款</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card m-lazyload-item rn-content-padded">
+                        <div class="card-inner f-clearfix">
+                            <div class="price-wrap">
+                                <div class="price rn-font-gray"><span class="num rn-font-red">￥9000</span><span
+                                        class="unit">/件</span></div>
+                                <div class="badge">赚<span>￥108.00</span></div>
+                            </div>
+                            <div class="desc">
+                                <div class="title">商标注册-任性保</div>
+                                <div class="para rn-font-gray">加急申报，随时可以申请退款</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-card m-lazyload-item rn-content-padded">
+                        <div class="card-inner f-clearfix">
+                            <div class="price-wrap">
+                                <div class="price rn-font-gray"><span class="num rn-font-red">￥9000</span><span
+                                        class="unit">/件</span></div>
+                                <div class="badge">赚<span>￥108.00</span></div>
+                            </div>
+                            <div class="desc">
+                                <div class="title">商标注册-任性保</div>
+                                <div class="para rn-font-gray">加急申报，随时可以申请退款</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--shop-foot-->
+<div class="shop-foot rn-wrapper" style="top:auto; z-index:1; height:4.2rem;">
+    <div class="rn-main-body">
+        <div class="m-fixed-foot">
+            <a href="historyChance.html" class="handle-btn" style="flex-basis:50%;">历史商机</a>
+            <a href="orderList.html" class="handle-btn" style="flex-basis:50%;">订单列表</a>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    //@ 提示：懒加载数据方法示例
+    //@   m-lazyload-wrap 为懒加载容器的包裹层
+    //@   m-lazyload-list 为懒加载数据列表
+    //@   m-lazyload-item 为懒加载数据个体
+    function lazyLoadData($dom) {
+        var $wrap = $dom,
+            $list = $dom.find('.m-lazyload-list'),
+            wrapHeight = $wrap.height(),
+            listHeight = $list.outerHeight(),
+            listInitTop = $list.offset().top,
+            listScrollHeight = 0,
+            loading = false;
+        console.log('list init height: ' + listHeight);
+        $wrap.on('scroll', function () {
+            if (loading == false) {
+                listScrollHeight = -($list.offset().top - listInitTop);
+                if (listScrollHeight >= listHeight - wrapHeight - 1) {
+                    loading = true;
+                    console.log('loading… ***动态计算的差值：' + listScrollHeight + ' ***原始计算的差值：' + (listHeight - wrapHeight));
+                    //@ 提示：在数据加载完成后，要将加载标识符 loading 重置为 false ；重新计算高度 listHeight = $list.outerHeight() 。
+                    $list.append('<li class="height:2rem;">add-item</li>');
+                    loading = false;
+                    listHeight = $list.outerHeight();
+                    console.log('list height after add: ' + listHeight);
+                }
+            }
+        });
+    }
+
+    lazyLoadData($('.content-container'));
+</script>
+</body>
+</html>

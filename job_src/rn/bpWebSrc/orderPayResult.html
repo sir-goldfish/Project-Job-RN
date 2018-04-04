@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商业计划书-订单支付结果</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/orderPayResult.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--rn-head-->
+<header class="rn-head">
+    <div class="head-bar rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <div class="bar-info f-pull-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe605;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一咨询热线：400-0996-678</span>
+            </div>
+            <ul class="bar-nav-group f-pull-right">
+                <li class="nav-item"><a href="javascript:;">商标注册</a></li>
+                <li class="nav-item"><a href="javascript:;">企业服务</a></li>
+                <li class="nav-item"><a href="javascript:;">金融服务</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <a href="javascript:;" class="logo-link f-pull-left">
+                <img src="resource/img/bp_logo_b.png" alt="logo">
+            </a>
+            <div class="logo-nav f-pull-right">
+                <div class="m-slide-nav" id="head-slide-nav">
+                    <span class="slide-btn"></span>
+                    <div class="nav-list f-clearfix">
+                        <a href="javascript:;" class="nav-item">首页</a>
+                        <a href="javascript:;" class="nav-item">产品</a>
+                        <a href="javascript:;" class="nav-item current">投资人</a>
+                        <a href="javascript:;" class="nav-item">案例</a>
+                        <a href="javascript:;" class="nav-item">融资数据</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--result-section-->
+<section class="result-section rn-wrapper">
+    <div class="rn-inner">
+        <div class="result-container">
+            <div class="container-head">支付结果</div>
+            <div class="container-body">
+                <div class="result-status">
+                    <!--支付成功-->
+                    <div class="icon"><img src="resource/img/bp_pay_pic1.png"></div>
+                    <div class="text">支付成功</div>
+                    <!--支付失败-->
+                    <div class="icon"><img src="resource/img/bp_pay_pic2.png"></div>
+                    <div class="text">支付失败</div>
+                </div>
+                <div class="result-info">
+                    <div class="info-head">支付详情</div>
+                    <ul class="info-list">
+                        <li class="f-clearfix">
+                            <div class="title">订单编号：</div>
+                            <div class="content">2017060622222</div>
+                        </li>
+                        <li class="f-clearfix">
+                            <div class="title">手机号：</div>
+                            <div class="content">13755555555</div>
+                        </li>
+                        <li class="f-clearfix">
+                            <div class="title">付款时间：</div>
+                            <div class="content">2017-06-06</div>
+                        </li>
+                        <li class="f-clearfix">
+                            <div class="title">商品信息：</div>
+                            <div class="content"><b>商标注册+商标无忧注册+商标</b></div>
+                        </li>
+                        <li class="f-clearfix">
+                            <div class="title">实付金额：</div>
+                            <div class="content"><b class="stress">6400元</b></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--rn-foot-->
+<footer class="rn-foot">
+    <div class="foot-info rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/bp_logo_w.png" alt="logo">
+            </a>
+            <div class="contact-info">
+                <div class="hot-line-info info-item">
+                    <div class="title">客服热线：</div>
+                    <div class="content">
+                        <div class="hot-line">400-0996-678</div>
+                        <div class="work-time">（工作时间：周一至周日 9:00-18:00）</div>
+                    </div>
+                </div>
+                <div class="mail-info info-item">
+                    <div class="title">邮箱：</div>
+                    <div class="content">
+                        <div class="mail">kefu@51zjxm.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copyright f-text-center rn-wrapper">
+        <div class="rn-inner">
+            ©2017 51zjxm.com Inc. All Rights Reserved.杭州融远信息技术有限公司 浙ICP备17017509号
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script src="script/set-slide-nav.js"></script>
+<script>
+    //**共用头部rn-head的#head-slide-nav调用背景滑块效果
+    setSlideNav('mouseenter', $('#head-slide-nav'));
+</script>
+</body>
+</html>

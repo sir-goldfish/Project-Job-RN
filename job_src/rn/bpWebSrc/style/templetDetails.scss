@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* main-body */
+.main-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+/* main-content-container */
+.main-content-container {
+  width: 872px;
+  .article-container {
+    min-height: 1098px - 50px;
+    padding: 50px 50px 0 50px;
+    background-color: #fff;
+    .article-title {
+      margin-bottom: 25px;
+      text-align: center;
+      line-height: 22px;
+      font-size: 18px;
+      color: #333;
+    }
+    .tools {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      & > * {
+        margin: 0 30px;
+        vertical-align: top;
+      }
+      i {
+        margin-right: 5px;
+        vertical-align: -1px;
+        font-size: 14px;
+      }
+    }
+    .article-body {
+      padding-bottom: 40px;
+      line-height: 30px;
+      color: #666;
+      img {
+        display: block;
+        max-width: 45%;
+        margin: 10px auto;
+      }
+    }
+  }
+}
+
+/* aside-content-container */
+.aside-content-container {
+  width: 308px;
+  // 共用标题
+  .aside-title {
+    margin-bottom: 22px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #333;
+    span {
+      padding-left: 9px;
+      border-left: 3px solid $globeColorStress;
+    }
+  }
+  .products-container {
+    width: 100%;
+    background-color: #fff;
+    .inner {
+      padding: 20px 0 28px 0;
+      margin: 0 20px;
+    }
+    .list {
+      .list-item {
+        width: 255px;
+        margin-left: auto;
+        margin-right: auto;
+        .card-pic {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 205px;
+          margin-bottom: 18px;
+          overflow: hidden;
+          .pic-bg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease-out;
+          }
+          .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            .icon {
+              width: 79px;
+              height: 88px;
+              margin: 36px auto 18px auto;
+              line-height: 88px;
+              font-size: 45px;
+              background: url(../resource/img/bp_sprites.png) no-repeat 0 0;
+            }
+          }
+          &:hover {
+            .pic-bg {
+              transform: scale(1.1);
+            }
+            .content {
+              color: $globeColorStress;
+              .icon {
+                background-position-x: -81px;
+              }
+            }
+          }
+        }
+        .card-title {
+          text-align: center;
+          font-size: 16px;
+          color: #333;
+        }
+      }
+      .list-item + .list-item {
+        margin-top: 18px;
+      }
+    }
+  }
+}

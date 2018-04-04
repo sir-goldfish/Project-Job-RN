@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中小企业服务-法律服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/serviceLaw.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo.jpg" alt="">
+            </a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="javascript:;" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">知识产权</a>
+                        <div class="hide-group" style="margin-left:-49px;">
+                            <ul class="group-list">
+                                <li class="group-item chosen"><a href="javascript:;">商标注册</a></li>
+                                <li class="group-item"><a href="javascript:;">版权登记</a></li>
+                                <li class="group-item"><a href="javascript:;">专利申请</a></li>
+                                <li class="group-item"><a href="javascript:;">知产交易</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">公司注册</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">人事社保</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">案例库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">资讯</a>
+                    </li>
+                </ul>
+                <div class="logo-search">
+                    <input type="text" placeholder="搜索服务">
+                    <a href="javascript:;" class="search-btn iconfont">&#xe66e;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--head-banner-->
+<section class="head-banner sme-wrapper">
+    <a href="javascript:;" class="banner-item"
+       style="background: url(resource/img/sme_banner2.jpg) no-repeat center; background-size: cover;"></a>
+</section>
+<!--service-form-->
+<section class="service-form sme-wrapper">
+    <div class="sme-inner">
+        <div class="section-title">您需要哪方面的服务？</div>
+        <div class="form-box">
+            <ul class="form-item-list f-clearfix">
+                <li class="form-item">
+                    <div class="title">
+                        <label><span class="u-custom-check"><input type="checkbox" class="uuu"></span>法律咨询</label>
+                    </div>
+                    <div class="content">
+                        <div class="input-box">
+                            <input type="text" placeholder="请填写您需要的服务">
+                        </div>
+                        <div class="hint-info"></div>
+                    </div>
+                </li>
+                <li class="form-item">
+                    <div class="title">
+                        <label><span class="u-custom-check"><input type="checkbox"></span>法律咨询</label>
+                    </div>
+                    <div class="content">
+                        <div class="input-box">
+                            <input type="text" placeholder="请填写您所需要的法律模板，如劳动合同">
+                        </div>
+                        <div class="hint-info"></div>
+                    </div>
+                </li>
+                <li class="form-item">
+                    <div class="title">
+                        <label><span class="u-custom-check"><input type="checkbox"></span>其他服务</label>
+                    </div>
+                    <div class="content">
+                        <div class="input-box">
+                            <input type="text" placeholder="请填写您需要的服务">
+                        </div>
+                        <div class="hint-info"></div>
+                    </div>
+                </li>
+                <li class="form-item">
+                    <div class="title">
+                        <label class="checked">*联系电话</label>
+                    </div>
+                    <div class="content">
+                        <div class="input-box">
+                            <input type="text" placeholder="请填写您的联系电话">
+                        </div>
+                        <div class="hint-info">*提示信息占位</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn-wrapper">
+                <a href="javascript:;" class="form-btn">立即免费服务</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--advantage-section-->
+<section class="advantage-section sme-wrapper">
+    <div class="sme-inner f-clearfix">
+        <div class="left-card">
+            <div class="card-title">我们能为您解决什么？</div>
+            <ul class="list">
+                <li>
+                    <div class="title">纠纷诉讼<span>高效解决</span></div>
+                    <p class="desc">民事诉讼、知产维权、劳动争议、合同债务等</p>
+                </li>
+                <li>
+                    <div class="title">经营合同<span>清晰权威</span></div>
+                    <p class="desc">董事会决议、期权方案、期权协议书等</p>
+                </li>
+                <li>
+                    <div class="title">股权期权<span>专业编写</span></div>
+                    <p class="desc">渠道合作、品牌授权、战略合作、股东会议等</p>
+                </li>
+                <li>
+                    <div class="title">企业人事<span>合理完善</span></div>
+                    <p class="desc">劳动合同、保密协议、竞业限制协议等</p>
+                </li>
+            </ul>
+        </div>
+        <div class="right-card">
+            <div class="card-title">为什么选择融诺网？</div>
+            <ul class="list">
+                <li>
+                    <div class="icon" style="background-position-x:0;"></div>
+                    <div class="title">专业性</div>
+                    <p class="desc">平均从业10年以上的专业律师团队为您服务侧重事前防范</p>
+                </li>
+                <li>
+                    <div class="icon" style="background-position-x:-110px;"></div>
+                    <div class="title">及时性</div>
+                    <p class="desc">7天*9小时专线电话咨询服务，响应速度快</p>
+                </li>
+                <li>
+                    <div class="icon" style="background-position-x:-220px;"></div>
+                    <div class="title">服务保障</div>
+                    <p class="desc">融诺网官方自营<br>交易流程透明</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--service-cards-->
+<section class="service-cards sme-wrapper">
+    <div class="sme-inner">
+        <div class="u-linetitle-white"><span>优质服务</span></div>
+        <div class="m-service-cards">
+            <ul class="service-cards-list f-clearfix">
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">20000</span><span class="unit">/年</span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">200</span><span class="unit">起</span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">1000</span><span class="unit">/月</span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">3500</span><span class="unit"></span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">20000</span><span class="unit">/年</span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">200</span><span class="unit">起</span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">1000</span><span class="unit">/月</span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+                <li class="service-card">
+                    <h3 class="card-title">企业法律咨询</h3>
+                    <div class="card-desc">
+                        <div class="desc-inner">
+                            <div class="circle">
+                                <div class="price"><span class="num">3500</span><span class="unit"></span></div>
+                            </div>
+                            <div class="para">经营决策的法律参谋，领导者的智囊团，用最权威的法律资讯陪伴您的整个经营过程，祝您经营之路平坦开阔。</div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="card-btn">立即购买</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--service-path-->
+<section class="service-path sme-inner">
+    <div class="path-container">
+        <div class="u-linetitle-white"><span>服务流程</span></div>
+        <div class="path-content">
+            <div class="path-item">
+                <div class="icon" style="background-position-x: 0;"></div>
+                <p class="desc">下单、付款并填写电话、邮箱</p>
+            </div>
+            <div class="path-line"></div>
+            <div class="path-item">
+                <div class="icon" style="background-position-x: -144px;"></div>
+                <p class="desc">服务人员将在接到订单1小时内将文书模板发送至您邮箱，请注意查收</p>
+            </div>
+            <div class="path-line"></div>
+            <div class="path-item">
+                <div class="icon" style="background-position-x: -288px;"></div>
+                <p class="desc">服务人员电话回访，确认客户已查收以及对我们产品的建议</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--question-cards-->
+<section class="question-cards sme-inner">
+    <div class="u-linetitle-black"><span>常见问题</span></div>
+    <div class="m-question-cards">
+        <ul class="question-cards-list f-clearfix">
+            <li class="question-card">
+                <div class="content">
+                    <a href="javascript:;" class="title">你们写一份合同要多长时间？会不会很久？</a>
+                    <div class="para">
+                        我们的服务一般在1个工作日内就能处理完成。若您比较急，可以选择加急服务，半个工作日可以完成。如果遇到比较复杂的文件，需要的时间比较长的，我们也会和您沟通协商，争取在最快的时间内给您。
+                    </div>
+                </div>
+            </li>
+            <li class="question-card">
+                <div class="content">
+                    <a href="javascript:;" class="title">你们写的合同我不满意怎么办呢？可以退款吗？</a>
+                    <div class="para">
+                        合同发送给您后，您要是不满意，觉得不完善的，也可以和我们联系，提出修改要求，我们将在7天内不限次数的免费修改。但若是我们的服务在经过多次修改后，仍然达不到您想要的效果，您可以和客服联系，申请退款。
+                    </div>
+                </div>
+            </li>
+            <li class="question-card">
+                <div class="content">
+                    <a href="javascript:;" class="title">七天不限次修改，七天后有问题还可以咨询吗？</a>
+                    <div class="para">
+                        您好，服务过了7天后，我们是不继续免费提供服务的，如您还有其他问题，可购买我们的《电话问律师》服务，您下单后30分钟内，我们的律师会和您联系。
+                    </div>
+                </div>
+            </li>
+            <li class="question-card">
+                <div class="content">
+                    <a href="javascript:;" class="title">支付成功以后，多久会和我联系？怎么提供服务？</a>
+                    <div class="para">
+                        支付成功后，律师会在5-30分钟之内和您电话联系，了解需求。律师在1个工作日内起草好合同后，会发送到您的邮箱。
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--other-services-->
+<section class="other-services sme-inner">
+    <div class="section-title">您可能还需要</div>
+    <div class="m-other-services">
+        <div class="other-services-list f-clearfix">
+            <a href="javascript:;" class="service-link">免费查询公司能否注册</a>
+            <a href="javascript:;" class="service-link">立即免费查询商标</a>
+            <a href="javascript:;" class="service-link">免费定制人力方案</a>
+        </div>
+    </div>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt><a href="javascript:;">关于我们</a></dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt><a href="javascript:;">服务支持</a></dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt><a href="javascript:;">新手指南</a></dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-6616-855</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link">
+                        <dl class="friend-links">
+                            <dt><a href="javascript:;">友情链接</a></dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure></figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<!--u-custom-check-->
+<script src="script/u-custom-check.js"></script>
+<script>
+    //input获得焦点后选中对应的checkbox
+    function focusInput($dom) {
+        $dom.find('input[type="text"]').each(function (i, ele) {
+            $(this).focus(function () {
+                if ($(this).parents('.form-item').find('input[type="checkbox"]').length) {
+                    if ($(this).parents('.form-item').find('input[type="checkbox"]').prop('checked') == false) {
+                        $(this).parents('.form-item').find('input[type="checkbox"]').prop('checked', 'checked');
+                        setCheck();
+                        changeLabel($dom);
+                    }
+                }
+            });
+        })
+    }
+    focusInput($('.service-form .form-box'));
+    //checkbox改变后，改变label
+    function changeLabel($dom) {
+        $dom.find('input[type="checkbox"]').each(function (i, ele) {
+            if ($(this).prop('checked')) {
+                $(this).parents('label').addClass('checked');
+            } else {
+                if ($(this).parents('label').hasClass('checked')) {
+                    $(this).parents('label').removeClass('checked');
+                }
+            }
+        });
+        $dom.find('input[type="checkbox"]').on('change', function () {
+            if ($(this).prop('checked')) {
+                $(this).parents('label').addClass('checked');
+            } else {
+                if ($(this).parents('label').hasClass('checked')) {
+                    $(this).parents('label').removeClass('checked');
+                }
+            }
+        });
+    }
+    changeLabel($('.service-form .form-box'));
+</script>
+
+</body>
+</html>

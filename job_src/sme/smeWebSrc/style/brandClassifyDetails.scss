@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: #03d6d0;
+$selfBoxShadow: 0 0 10px 0 rgba(24, 5, 9, .1);
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* head-container */
+.head-container {
+  height: 174px;
+  background: url(../resource/img/sme_brand_banner2.jpg) no-repeat top center;
+  .search-wrapper {
+    padding-top: 58px;
+  }
+  .search-box {
+    position: relative;
+    width: 990px;
+    height: 57px;
+    margin: 0 auto;
+    border-radius: 57px;
+    .icon {
+      position: absolute;
+      top: 14px;
+      left: 22px;
+      font-size: 29px;
+      color: #bbb;
+    }
+    .search-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 230px;
+      height: 100%;
+      line-height: 57px;
+      text-align: center;
+      font-size: 20px;
+      color: #fff;
+      background-color: $onColorOrange;
+      border-top-right-radius: 57px;
+      border-bottom-right-radius: 57px;
+      &:hover {
+        background-color: $onColorOrange - 10%;
+      }
+      &:active {
+        background-color: $onColorOrange - 30%;
+      }
+    }
+    .search-input {
+      display: block;
+      width: 990px - 2px - 65px - 260px;
+      height: 57px - 2px;
+      padding: 0 260px 0 65px;
+      line-height: 57px - 2px;
+      border: 1px solid #bbb;
+      border-radius: 57px;
+      &:focus {
+        border-color: $onColorOrange;
+        & + .icon {
+          color: $onColorOrange;
+        }
+      }
+    }
+  }
+}
+
+/* head-crumbs-nav */
+.head-crumbs-nav {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  .m-crumbs-nav {
+    background-color: transparent;
+  }
+}
+
+/* desc-container */
+.desc-container {
+  padding-bottom: 10px;
+  .stress {
+    color: $selfActiveColor;
+  }
+}
+
+/* category-info */
+.desc-container .category-info {
+  box-sizing: border-box;
+  padding: 38px 40px 33px;
+  color: #fff;
+  background-color: $selfActiveColor;
+  box-shadow: $selfBoxShadow;
+  * {
+    box-sizing: inherit;
+  }
+  .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .para {
+    margin-top: 12px;
+    line-height: 24px;
+  }
+}
+
+/* category-note */
+.desc-container .category-note {
+  box-sizing: border-box;
+  padding: 40px 40px 33px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: $selfBoxShadow;
+  * {
+    box-sizing: inherit;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .para {
+    margin-top: 10px;
+    line-height: 28px;
+  }
+}
+
+/* category-group */
+.desc-container .category-group {
+  $selfWidth: 687px;
+  $selfBorder: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-top: 10px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: $selfBoxShadow;
+  * {
+    box-sizing: inherit;
+  }
+  .group-list {
+    float: left;
+    width: $selfWidth;
+    min-height: 600px;
+    padding: 34px 40px;
+    margin-right: - $selfWidth;
+    font-size: 15px;
+    border-right: $selfBorder;
+    ul {
+      a {
+        line-height: 29px;
+        color: inherit;
+        &:hover {
+          color: $selfActiveColor;
+        }
+      }
+      li + li {
+        margin-top: 20px;
+      }
+      li.current {
+        a {
+          color: $selfActiveColor;
+        }
+      }
+    }
+  }
+  .group-desc {
+    position: relative;
+    min-height: 100px;
+    padding: 34px 40px;
+    margin-left: $selfWidth - 1px;
+    border-left: $selfBorder;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: -10px;
+      width: 10px;
+      height: 16px;
+      background: url(../resource/img/sme_icon18.jpg) no-repeat center;
+    }
+    .info {
+      color: #666;
+      .title {
+        font-weight: bold;
+      }
+      .para {
+        margin-top: 10px;
+        padding-bottom: 42px;
+        line-height: 30px;
+        font-size: 13px;
+      }
+    }
+    .note {
+      line-height: 30px;
+      font-size: 13px;
+      color: #666;
+    }
+  }
+}

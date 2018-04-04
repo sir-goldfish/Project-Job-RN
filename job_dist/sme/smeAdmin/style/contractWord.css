@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* 字体 */
+.font-simsun { font-family: SimSun; }
+
+.font-kaiti { font-family: KaiTi; }
+
+.font-yahei { font-family: "Microsoft YaHei"; }
+
+/* 字号 */
+.font-pt-3 { font-size: 16pt; }
+
+.font-pt-5 { font-size: 10.5pt; }
+
+/* 加粗 */
+b, .font-bold { font-weight: bold; }
+
+/* contract 样式 */
+.contract-container { width: 480pt; margin: 0 auto; line-height: 1.6; font-family: SimSun; font-size: 10.5pt; background-color: #fff; }
+
+.contract-main-title { margin-bottom: 10.5pt; }
+
+.contract-head { margin-bottom: 10.5pt; }
+
+.contract-body { margin-bottom: 25pt; }
+
+.contract-para { text-indent: 21pt; }
+
+.contract-title-level1 { padding-top: 2pt; padding-bottom: 2pt; text-indent: 15pt; }
+
+.contract-title-level2 { text-indent: 21pt; }
+
+.contract-table-container { padding: 10.5pt 25pt; }
+
+.contract-table { border-collapse: collapse; border-spacing: 0; width: 100%; font-family: KaiTi; }
+
+.contract-table th, .contract-table td { padding: 5px; background-color: transparent; border: 1px solid #b8b8b8; }
+
+.contract-party { width: 50%; }
+
+.contract-party .party-item { height: 34pt; }
+
+.contract-party .party-item .title { width: 52.5pt; margin-right: -52.5pt; }
+
+.contract-party .party-item .content { margin-left: 53pt; }
+
+.second-party.with-seal { background: url(../resource/img/smea_official_seal.png) no-repeat center; background-size: auto 100%; }
+
+/* contract-edit 样式 */
+.contract-edit-input { border: none; border-bottom: 1px solid #a9a9a9; outline: none; }
+
+.contract-edit-input:focus { border-bottom-color: #4D90FE; }
+
+.s-input { width: 63pt; }
+
+.contract-table .contract-edit-input { width: 100%; }
+
+.contract-foot-btn-group { padding: 15px; text-align: center; }
+
+.contract-foot-btn-group .btn { margin: 5px; }

@@ -1,0 +1,77 @@
+body { background-color: #f7f7f7; }
+
+/* m-crumbs-nav */
+.m-crumbs-nav { margin-top: 10px; margin-bottom: 10px; }
+
+/* content-container */
+.content-container { margin-bottom: 10px; }
+
+/* main-content-container */
+.main-content-container { float: left; width: 872px; }
+
+.main-content-container .article-container { min-height: 972px; padding: 50px 50px 0 50px; background-color: #fff; }
+
+.main-content-container .article-container .article-title { margin-bottom: 25px; text-align: center; line-height: 22px; font-size: 18px; color: #363636; }
+
+.main-content-container .article-container .tools { margin-bottom: 30px; text-align: center; font-size: 12px; }
+
+.main-content-container .article-container .tools > * { margin: 0 30px; vertical-align: top; }
+
+.main-content-container .article-container .tools i { margin-right: 5px; vertical-align: -1px; font-size: 14px; }
+
+.main-content-container .article-container .article-body { padding-bottom: 40px; line-height: 30px; color: #666; }
+
+.main-content-container .article-container .article-body img { display: block; max-width: 45%; margin: 10px auto; }
+
+.main-content-container .article-container .article-foot { padding: 25px 0 40px 0; font-size: 12px; border-top: 1px solid #ddd; }
+
+.main-content-container .article-container .article-foot a span { vertical-align: top; color: #363636; }
+
+.main-content-container .article-container .article-foot .prev { float: left; }
+
+.main-content-container .article-container .article-foot .next { float: right; }
+
+.main-content-container .article-container .article-foot a:hover { color: #f78e24; }
+
+.main-content-container .article-container .article-foot a:hover span { color: #f78e24; }
+
+/* aside-content-container */
+.aside-content-container { float: right; width: 318px; }
+
+.aside-content-container .aside-title { margin-bottom: 22px; line-height: 18px; font-size: 16px; color: #363636; }
+
+.aside-content-container .aside-title span { padding-left: 9px; border-left: 3px solid #f78e24; }
+
+.aside-content-container .news-list { width: 100%; background-color: #fff; }
+
+.aside-content-container .news-list .inner { padding: 20px 0 14px 0; margin: 0 20px; }
+
+.aside-content-container .news-list .list dt { position: relative; width: 276px; height: 204px; margin-bottom: 22px; border: 1px solid #eee; }
+
+.aside-content-container .news-list .list dt .pic { display: block; width: 100%; height: 100%; overflow: hidden; }
+
+.aside-content-container .news-list .list dt .pic img { width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-content-container .news-list .list dt .pic:hover img { -webkit-transform: scale(1.04); -ms-transform: scale(1.04); transform: scale(1.04); }
+
+.aside-content-container .news-list .list dt .desc { position: absolute; bottom: 0; left: 0; width: 100%; height: 39px; }
+
+.aside-content-container .news-list .list dt .desc .bg { width: 100%; height: 100%; background-color: #fff; opacity: .65; filter: alpha(opacity=65); }
+
+.aside-content-container .news-list .list dt .desc .text { position: absolute; top: 0; left: 0; width: 100%; }
+
+.aside-content-container .news-list .list dt .desc .text a { display: block; margin: 12px; font-size: 14px; font-weight: bold; color: #363636; }
+
+.aside-content-container .news-list .list dt .desc .text a:hover { color: #f78e24; }
+
+.aside-content-container .news-list .list dd { margin-bottom: 18px; font-size: 14px; }
+
+.aside-content-container .news-list .list dd a { max-width: 100%; color: #666; }
+
+.aside-content-container .news-list .list dd a:before { content: ''; display: inline-block; width: 4px; height: 4px; margin-right: 4px; vertical-align: middle; background-color: #666; border-radius: 50%; }
+
+.aside-content-container .news-list .list dd a:hover { color: #f78e24; }
+
+.aside-content-container .news-list .list dd a:hover:before { background-color: #f78e24; }
+
+.aside-content-container .news-list + .news-list { margin-top: 10px; }
