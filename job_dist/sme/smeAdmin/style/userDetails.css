@@ -9,6 +9,9 @@
 
 .aside-container-inner { padding-left: 0; padding-right: 0; }
 
+/* panel-container */
+.panel-container { padding-top: 22px; padding-bottom: 22px; margin-top: 10px; background-color: #fff; border-radius: 6px; }
+
 /* user-info-bar */
 .user-info-bar { height: 105px; padding-top: 22px; padding-bottom: 22px; background-color: #fff; border-radius: 6px; }
 
@@ -85,6 +88,58 @@
 .user-info-tab .content-info .other-info .info-item .desc { margin-left: 106px; color: #999; }
 
 .user-info-tab .content-info .other-info .info-item + .info-item { margin-top: 18px; }
+
+/* tab content-service-record */
+.user-info-tab.law-tab .content-service-record .record-wrap { height: 400px; overflow-y: auto; }
+
+.user-info-tab.law-tab .content-service-record .record-panel + .record-panel { margin-top: 2px; }
+
+.user-info-tab.law-tab .content-service-record .record-info-bar { padding: 18px 0; background-color: #f4f9fb; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content { height: 0; overflow-y: hidden; -webkit-transition: height .3s ease-out; transition: height .3s ease-out; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .content-inner { padding: 13px 0; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table { width: 100%; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-row { font-size: 0; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell { display: inline-block; padding: 5px; vertical-align: top; font-size: 14px; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-inner { display: block; width: 100%; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-title { float: left; width: 110px; margin-right: -110px; line-height: 32px; text-align: right; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-title.star-title:before { content: '*'; margin-right: 3px; color: #fc0018; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content { padding: 0 5px; margin-left: 110px; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content input[type="text"], .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content input[type="password"], .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content select, .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content textarea { width: 100%; height: 32px; padding: 6px 10px; vertical-align: middle; border: 1px solid #ddd; outline: none; background-color: #fff; border-radius: 0; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content input[type="text"]:focus, .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content input[type="password"]:focus, .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content select:focus, .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content textarea:focus { border-color: #23b7e5; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content textarea { height: auto; vertical-align: top; resize: none; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content input[type="radio"], .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content input[type="checkbox"] { margin: 0; vertical-align: middle; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content .input-label { margin-bottom: 0; margin-right: 10px; line-height: 32px; font-weight: normal; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content .input-label input[type="radio"], .user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content .input-label input[type="checkbox"] { margin-right: 3px; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content .input-box { position: relative; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-cell .cell-content .hint-info { height: 20px; line-height: 20px; font-size: 12px; color: #999; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-btn-group { padding: 5px 0; text-align: right; }
+
+.user-info-tab.law-tab .content-service-record .record-info-content .form-table .form-btn-group .form-btn { min-width: 135px; margin: 3px; }
+
+/* choose-chance-panel */
+.choose-chance-panel .choose-link { margin-right: 30px; font-size: 14px; color: #333; }
+
+.choose-chance-panel .choose-link.current { color: #31a0f6; }
+
+.choose-chance-panel .choose-link:hover { color: #31a0f6; }
 
 /* chance-card */
 .chance-card { padding-bottom: 42px; margin-top: 10px; color: #333; background-color: #fff; border-radius: 6px; }
@@ -196,6 +251,8 @@
 .chance-card.transaction-card .card-tree .tree-branch .desc .desc-list { margin-bottom: 0; }
 
 .chance-card.transaction-card .card-tree .tree-branch .desc .desc-list .desc-item + .desc-item { margin-top: 15px; }
+
+.chance-card.law-card .card-tree .case-branch .foot-info { padding-top: 12px; margin-top: 16px; border-top: 2px dotted #d8d8d8; }
 
 /* add-chance-wrapper */
 .add-chance-wrapper { padding-top: 30px; padding-bottom: 30px; text-align: center; }
