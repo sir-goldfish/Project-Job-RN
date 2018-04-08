@@ -257,6 +257,55 @@ th, td { word-wrap: break-word; word-break: break-all; }
 
 .m-follow-dialog-form .follow-info-container .date-input .icon { position: absolute; top: 0; right: 0; width: 40px; height: 100%; line-height: 32px; text-align: center; font-size: 16px; color: #31a0f6; }
 
+/* m-service-record-dialog */
+.m-service-record-dialog { width: 720px; padding: 18px 0; font-size: 14px; color: #333; background-color: #fff; }
+
+.m-service-record-dialog .form-table { width: 100%; }
+
+.m-service-record-dialog .form-table .form-row { font-size: 0; }
+
+.m-service-record-dialog .form-table .form-cell { display: inline-block; padding: 5px; vertical-align: top; font-size: 14px; }
+
+.m-service-record-dialog .form-table .form-cell .cell-inner { display: block; width: 100%; }
+
+.m-service-record-dialog .form-table .form-cell .cell-title { float: left; width: 110px; margin-right: -110px; line-height: 32px; text-align: right; }
+
+.m-service-record-dialog .form-table .form-cell .cell-title.star-title:before { content: '*'; margin-right: 3px; color: #fc0018; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content { padding: 0 5px; margin-left: 110px; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .tab-group { margin-top: -5px; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .tab-group .tab-item { display: inline-block; height: 32px; padding: 0 16px; margin: 5px 12px 0 0; line-height: 30px; vertical-align: middle; border: 1px solid #31a0f6; outline: none; background-color: #fff; border-radius: 4px; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .tab-group .tab-item.current { color: #fff; background-color: #31a0f6; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .tab-group .tab-item:hover { color: #fff; background-color: #31a0f6; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content input[type="text"], .m-service-record-dialog .form-table .form-cell .cell-content input[type="password"], .m-service-record-dialog .form-table .form-cell .cell-content select, .m-service-record-dialog .form-table .form-cell .cell-content textarea { width: 100%; height: 32px; padding: 6px 10px; vertical-align: middle; border: 1px solid #ddd; outline: none; background-color: #fff; border-radius: 0; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content input[type="text"]:focus, .m-service-record-dialog .form-table .form-cell .cell-content input[type="password"]:focus, .m-service-record-dialog .form-table .form-cell .cell-content select:focus, .m-service-record-dialog .form-table .form-cell .cell-content textarea:focus { border-color: #23b7e5; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content textarea { height: auto; vertical-align: top; resize: none; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content input[type="radio"], .m-service-record-dialog .form-table .form-cell .cell-content input[type="checkbox"] { margin: 0; vertical-align: middle; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .input-label { margin-bottom: 0; margin-right: 10px; line-height: 32px; font-weight: normal; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .input-label input[type="radio"], .m-service-record-dialog .form-table .form-cell .cell-content .input-label input[type="checkbox"] { margin-right: 3px; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .input-box { position: relative; }
+
+.m-service-record-dialog .form-table .form-cell .cell-content .hint-info { min-height: 20px; padding: 3px 0; line-height: 14px; font-size: 12px; color: #999; }
+
+.m-service-record-dialog .form-table .form-btn-group { padding: 5px 0; text-align: right; }
+
+.m-service-record-dialog .form-table .form-btn-group .form-btn { min-width: 135px; margin: 3px; }
+
+.m-service-record-dialog .record-container { padding-left: 20px; padding-right: 20px; }
+
+.m-service-record-dialog .record-container .container-body { padding-left: 20px; padding-right: 20px; }
+
 /* m-fund-dialog */
 .m-fund-dialog { width: 650px; padding: 7px 15px; font-size: 14px; color: #333; background-color: #fff; }
 

@@ -790,7 +790,7 @@
                                     class="iconfont">&#xe621;</i>延长跟进时间</a>
                             </div>
                             <div class="btn-row">
-                                <a href="javascript:;" class="btn btn-success"><i
+                                <a href="javascript:popServiceRecordDialog();" class="btn btn-success"><i
                                         class="iconfont">&#xe65d;</i>服务记录</a><a href="javascript:;"
                                                                                 class="btn btn-danger"><i
                                     class="iconfont">&#xe63f;</i>电话未接通</a>
@@ -931,6 +931,116 @@
         </div>
     </div>
 </section>
+<!--#service-record-dialog-->
+<section class="m-service-record-dialog" style="display:none;" id="service-record-dialog">
+    <div class="record-container">
+        <div class="container-body form-table">
+            <div class="form-row">
+                <div class="form-cell sme-col-12">
+                    <div class="cell-inner clearfix">
+                        <div class="cell-title">服务类型：</div>
+                        <div class="cell-content">
+                            <div class="input-box">
+                                <div class="tab-group">
+                                    <a href="javascript:;" class="tab-item current">合同起草</a>
+                                    <a href="javascript:;" class="tab-item">其他服务</a>
+                                    <a href="javascript:;" class="tab-item">合同起草</a>
+                                    <a href="javascript:;" class="tab-item">其他服务</a>
+                                    <a href="javascript:;" class="tab-item">合同起草</a>
+                                    <a href="javascript:;" class="tab-item">其他服务</a>
+                                </div>
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-cell sme-col-6">
+                    <div class="cell-inner clearfix">
+                        <div class="cell-title">合同起草时间：</div>
+                        <div class="cell-content">
+                            <div class="input-box">
+                                <input type="text">
+                            </div>
+                            <div class="hint-info">*提示信息占位</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-cell sme-col-6">
+                    <div class="cell-inner clearfix">
+                        <div class="cell-title">合同结束时间：</div>
+                        <div class="cell-content">
+                            <div class="input-box">
+                                <input type="text">
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-cell sme-col-6">
+                    <div class="cell-inner clearfix">
+                        <div class="cell-title">合同字数：</div>
+                        <div class="cell-content">
+                            <div class="input-box">
+                                <input type="text">
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-cell sme-col-6">
+                    <div class="cell-inner clearfix">
+                        <div class="cell-title">合同类型：</div>
+                        <div class="cell-content">
+                            <div class="input-box">
+                                <select>
+                                    <option value="类型1">类型1</option>
+                                    <option value="类型2">类型2</option>
+                                    <option value="类型3">类型3</option>
+                                    <option value="类型4">类型4</option>
+                                    <option value="类型5">类型5</option>
+                                </select>
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-cell sme-col-12">
+                    <div class="cell-inner clearfix">
+                        <div class="cell-title">跟进记录：</div>
+                        <div class="cell-content">
+                            <div class="input-box">
+                                <textarea rows="5" placeholder="提示：textarea的高度由rows控制。请删除该提示。"></textarea>
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-cell sme-col-12">
+                    <div class="cell-inner clearfix">
+                        <div class="cell-title">上传：</div>
+                        <div class="cell-content">
+                            <div class="input-box">
+                                <input type="text" style="width:50%;">
+                                <a href="javascript:;" class="upload-btn btn btn-info">上传</a>
+                                <a href="javascript:;"
+                                   class="preview-btn btn btn-default">在线浏览</a>
+                            </div>
+                            <div class="hint-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--script-->
 <script src="theme/js/jquery.min.js"></script>
 <script src="plugin/artDialog4.1.6/jquery.artDialog.js"></script>
@@ -945,7 +1055,8 @@
 
     //弹出框
     var editChanceDialog = null,
-        editCaseDialog = null;
+        editCaseDialog = null,
+        serviceRecordDialog = null;
 
     function popEditChanceDialog() {
         editChanceDialog = art.dialog({
@@ -976,6 +1087,22 @@
                 return true;
             },
             okVal: '确定'
+        });
+    }
+
+    function popServiceRecordDialog() {
+        serviceRecordDialog = art.dialog({
+            content: document.getElementById('service-record-dialog'),
+            title: '<div class="dialog-default-head">服务记录</div>',
+            padding: '0 0',
+            lock: true,
+            opacity: 0,
+            fixed: true,
+            cancel: true,
+            ok: function () {
+                return true;
+            },
+            okVal: '保存'
         });
     }
 
