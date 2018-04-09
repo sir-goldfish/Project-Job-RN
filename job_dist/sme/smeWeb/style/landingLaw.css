@@ -136,7 +136,7 @@
 /* reason-section */
 .reason-section { height: 500px; background: url(../resource/img/sme_landing_bgi18.jpg) no-repeat center top; }
 
-.reason-section .desc-list { padding: 10px 0 36px; text-align: center; font-size: 0; }
+.reason-section .desc-list { padding: 40px 0 36px; text-align: center; font-size: 0; }
 
 .reason-section .desc-list li { display: inline-block; vertical-align: top; }
 

@@ -361,7 +361,7 @@ $selfBoxShadow: 0 0 10px 0 rgba(24, 5, 9, .1);
   height: 500px;
   background: url(../resource/img/sme_landing_bgi18.jpg) no-repeat center top;
   .desc-list {
-    padding: 10px 0 40px - 4px;
+    padding: 10px + 30px 0 40px - 4px;
     text-align: center;
     font-size: 0;
     li {
