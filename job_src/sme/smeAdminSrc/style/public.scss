@@ -32,6 +32,18 @@ th, td {
   }
 }
 
+/* ---元件类共用(.u-开头)--- */
+/* u-loading-line */
+.u-loading-line {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  img {
+    width: 120px;
+    vertical-align: middle;
+  }
+}
+
 /* ---模块类公用(.m-开头)--- */
 /* m-dialog-notice */
 .m-dialog-notice {

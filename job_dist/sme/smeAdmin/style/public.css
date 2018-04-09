@@ -45,6 +45,12 @@ th, td { word-wrap: break-word; word-break: break-all; }
   .sme-col-11 { width: 100%; }
   .sme-col-12 { width: 100%; } }
 
+/* ---元件类共用(.u-开头)--- */
+/* u-loading-line */
+.u-loading-line { width: 100%; padding: 20px 0; text-align: center; }
+
+.u-loading-line img { width: 120px; vertical-align: middle; }
+
 /* ---模块类公用(.m-开头)--- */
 /* m-dialog-notice */
 .m-dialog-notice { min-width: 400px; max-width: 600px; padding: 30px 20px; background-color: #fff; }
