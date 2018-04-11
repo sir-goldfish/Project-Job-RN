@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $onColorOrange;
+$selfBoxShadow: 0 0 10px 0 rgba(24, 5, 9, .2);
+
+/* self-btn */
+.self-btn {
+  $selfWidth: 180px;
+  $selfHeight: 46px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: $selfWidth;
+  height: $selfHeight;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  &:hover {
+    color: #fff;
+  }
+  &.rounded-btn {
+    border-radius: $selfHeight;
+  }
+  &.linear-yellow-btn {
+    background: linear-gradient(90deg, #fcc213, $selfActiveColor);
+    &:hover {
+      background: linear-gradient(90deg, #fcc213 - 5%, $selfActiveColor - 5%);
+    }
+    &:active {
+      background: linear-gradient(90deg, #fcc213 - 15%, $selfActiveColor - 15%);
+    }
+  }
+  &.linear-blue-btn {
+    background: linear-gradient(90deg, #55e0fe, #00b7ee);
+    &:hover {
+      background: linear-gradient(90deg, #55e0fe - 5%, #00b7ee - 5%);
+    }
+    &:active {
+      background: linear-gradient(90deg, #55e0fe - 15%, #00b7ee - 15%);
+    }
+  }
+}
+
+/* head-section */
+.head-section {
+  box-sizing: border-box;
+  min-height: 574px;
+  padding-top: 40px;
+  background: url(../resource/img/sme_law_bgi001.jpg) no-repeat center;
+  * {
+    box-sizing: border-box;
+  }
+  .ad-container {
+    .container-inner {
+      float: left;
+      margin: -10px 0 0 -10px;
+    }
+    .ad-item {
+      float: left;
+      display: block;
+      width: 350px;
+      height: 205px;
+      margin: 10px 0 0 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        transition: transform .3s ease-out;
+      }
+      &.l-ad {
+        width: 840px;
+        height: 420px;
+      }
+      &:hover {
+        img {
+          transform: scale(.96);
+        }
+      }
+    }
+  }
+  .record-container {
+    $selfWidth: 160px;
+    height: 54px;
+    margin-top: 15px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: $selfBoxShadow;
+    overflow: hidden;
+    .record-title {
+      float: left;
+      width: $selfWidth;
+      padding: 17px 0 17px 40px;
+      margin-right: - $selfWidth;
+      i, span {
+        vertical-align: middle;
+      }
+      i {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #00b7ee;
+      }
+    }
+    .record-swiper {
+      margin: 17px 0 17px $selfWidth;
+      height: 20px;
+      line-height: 20px;
+      overflow: hidden;
+      .record-item {
+        float: left;
+        width: 33.333%;
+        padding: 0 10px;
+      }
+    }
+  }
+}
