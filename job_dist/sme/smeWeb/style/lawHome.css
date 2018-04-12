@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /* self-btn */
-.self-btn { box-sizing: border-box; display: inline-block; min-width: 180px; height: 46px; padding: 0 20px; vertical-align: middle; line-height: 46px; text-align: center; font-size: 20px; font-weight: bold; color: #fff; border-radius: 8px; }
+.self-btn { box-sizing: border-box; display: inline-block; min-width: 180px; height: 40px; padding: 0 20px; vertical-align: middle; line-height: 40px; text-align: center; font-size: 18px; font-weight: bold; color: #fff; border-radius: 4px; }
 
 .self-btn:hover { color: #fff; }
 
-.self-btn.rounded-btn { border-radius: 46px; }
+.self-btn.rounded-btn { border-radius: 40px; }
 
 .self-btn.linear-yellow-btn { background: -webkit-linear-gradient(left, #fcc213, #f78e24); background: linear-gradient(90deg, #fcc213, #f78e24); }
 
@@ -42,4 +43,192 @@
 
 .head-section .record-container .record-swiper { margin: 17px 0 17px 160px; height: 20px; line-height: 20px; overflow: hidden; }
 
+.head-section .record-container .record-swiper .swiper-wrapper { -webkit-transition-timing-function: linear; transition-timing-function: linear; }
+
 .head-section .record-container .record-swiper .record-item { float: left; width: 33.333%; padding: 0 10px; }
+
+/* section-head 共 */
+.section-head { padding: 47px 0; }
+
+.section-head .head-title { text-align: center; font-size: 30px; color: #333; }
+
+.section-head .head-title .line-title { display: inline-block; vertical-align: middle; }
+
+.section-head .head-title .line-title:before, .section-head .head-title .line-title:after { content: ''; display: inline-block; width: 128px; height: 24px; vertical-align: middle; background: url(../resource/img/sme_icon_sprites1.png) no-repeat 0 -70px; }
+
+.section-head .head-title .line-title:before { margin-right: 20px; }
+
+.section-head .head-title .line-title:after { margin-left: 20px; background-position-y: -96px; }
+
+/* risk-section */
+.risk-section { box-sizing: border-box; padding-bottom: 39px; }
+
+.risk-section * { box-sizing: border-box; }
+
+.risk-section .desc-container { width: 100%; height: 460px; border: 1px solid #eee; }
+
+.risk-section .desc-container .desc-flag { float: right; width: 320px; height: 100%; margin-left: -320px; background: url(../resource/img/sme_law_pic004.jpg) no-repeat center; }
+
+.risk-section .desc-container .desc-flag .handle-group { margin-top: 380px; text-align: center; }
+
+.risk-section .desc-container .desc-flag .handle-group .self-btn { min-width: 200px; }
+
+.risk-section .desc-container .desc-list { margin-right: 320px; text-align: center; font-size: 0; }
+
+.risk-section .desc-container .desc-list .desc-item { display: inline-block; margin: 27px 25px 0; vertical-align: top; }
+
+.risk-section .desc-container .desc-list .desc-item .icon { width: 150px; height: 158px; margin: 0 auto; background-repeat: no-repeat; background-position: center bottom; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.risk-section .desc-container .desc-list .desc-item .text { margin-top: 16px; line-height: 28px; font-size: 16px; color: #333; }
+
+.risk-section .desc-container .desc-list .desc-item:hover .icon { -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
+
+.risk-section .desc-container .desc-list .desc-item.horizontal { margin-left: 40px; margin-right: 0; }
+
+.risk-section .desc-container .desc-list .desc-item.horizontal .icon { display: inline-block; margin: 0; vertical-align: middle; }
+
+.risk-section .desc-container .desc-list .desc-item.horizontal .text { display: inline-block; margin-top: 0; margin-left: 28px; vertical-align: middle; text-align: justify; }
+
+/* service-section */
+.service-section { box-sizing: border-box; background: url(../resource/img/sme_law_bgi002.jpg) no-repeat center top; }
+
+.service-section * { box-sizing: border-box; }
+
+.service-section .section-head { padding-top: 50px; padding-bottom: 40px; }
+
+.service-section .service-cards { position: relative; padding: 0 25px; }
+
+.service-section .service-cards .service-swiper { width: 100%; padding: 10px 5px; overflow: hidden; }
+
+.service-section .service-cards .swiper-slide { float: left; display: block; width: 220px; margin-right: 10px; box-shadow: 0 0 5px 0 rgba(24, 5, 9, 0.15); }
+
+.service-section .service-cards .swiper-slide .pic { width: 100%; height: 150px; overflow: hidden; }
+
+.service-section .service-cards .swiper-slide .pic img { display: block; width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.service-section .service-cards .swiper-slide .title { width: 100%; height: 52px; padding: 18px 10px; text-align: center; font-size: 16px; color: #333; background-color: #fff; -webkit-transition: all .3s ease-out; transition: all .3s ease-out; }
+
+.service-section .service-cards .swiper-slide:hover .pic img { -webkit-transform: scale(1.06); -ms-transform: scale(1.06); transform: scale(1.06); }
+
+.service-section .service-cards .swiper-slide:hover .title { color: #fff; background-color: #f78e24; }
+
+.service-section .service-cards .swiper-btn { position: absolute; top: 50%; margin-top: -10px; font-size: 20px; font-weight: bold; color: #999; cursor: pointer; opacity: 1; filter: alpha(opacity=100); }
+
+.service-section .service-cards .swiper-btn:hover { color: #f78e24; }
+
+.service-section .service-cards .swiper-btn.swiper-btn-prev { left: 0; }
+
+.service-section .service-cards .swiper-btn.swiper-btn-next { right: 0; }
+
+.service-section .section-foot { padding: 39px 0 28px; text-align: center; }
+
+.service-section .section-foot .text { font-size: 18px; color: #666; }
+
+.service-section .section-foot .handle-group { padding: 19px 0; }
+
+.service-section .section-foot .handle-group .self-btn { min-width: 260px; height: 50px; line-height: 50px; }
+
+.service-section .section-foot .handle-group .self-btn.rounded-btn { border-radius: 50px; }
+
+.service-section .section-foot .handle-group .self-btn.linear-yellow-btn { box-shadow: 0 5px 10px 0 rgba(225, 122, 54, 0.45); }
+
+/* compare-section */
+.compare-section { box-sizing: border-box; }
+
+.compare-section * { box-sizing: border-box; }
+
+.compare-section .section-head { padding-top: 50px; padding-bottom: 50px; }
+
+.compare-section .compare-container { padding: 0 30px 48px; margin-left: -45px; }
+
+.compare-section .compare-container .compare-item { float: left; width: 350px; margin-left: 45px; font-size: 13px; }
+
+.compare-section .compare-container .compare-item .item-head { width: 100%; height: 223px; background: url(../resource/img/sme_law_pic016.png) no-repeat center; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.compare-section .compare-container .compare-item .item-panel { position: relative; width: 100%; padding-left: 30px; padding-right: 30px; color: #06374e; border-radius: 8px; background-color: #c3ebfe; }
+
+.compare-section .compare-container .compare-item .item-panel .font-big { font-size: 1.15em; }
+
+.compare-section .compare-container .compare-item .advantage-panel { height: 108px; padding-top: 72px; margin-top: 10px; }
+
+.compare-section .compare-container .compare-item .advantage-panel .price-bar { position: absolute; top: 0; left: 0; width: 100%; height: 50px; padding-top: 16px; text-align: center; font-size: 20px; color: #fff; background: url(../resource/img/sme_law_pic019.png) no-repeat center; }
+
+.compare-section .compare-container .compare-item .weakness-panel { height: 252px; padding-top: 32px; margin-top: 12px; }
+
+.compare-section .compare-container .compare-item .weakness-panel .para { margin-top: 8px; line-height: 21px; }
+
+.compare-section .compare-container .compare-item .weakness-panel .desc-item + .desc-item { margin-top: 16px; }
+
+.compare-section .compare-container .compare-item:hover .item-head { -webkit-transform: scale(1.04); -ms-transform: scale(1.04); transform: scale(1.04); }
+
+.compare-section .compare-container .compare-item-1 .item-head { background: url(../resource/img/sme_law_pic015.png) no-repeat center; }
+
+.compare-section .compare-container .compare-item-1 .item-panel { background-color: #d9faf8; }
+
+.compare-section .compare-container .compare-item-1 .advantage-panel .price-bar { left: -20px; width: 370px; height: 75px; background: url(../resource/img/sme_law_pic018.png) no-repeat center; }
+
+.compare-section .compare-container .compare-item-3 .item-head { background: url(../resource/img/sme_law_pic017.png) no-repeat center; }
+
+.compare-section .compare-container .compare-item-3 .item-panel { background-color: #ddedfa; }
+
+.compare-section .compare-container .compare-item-3 .advantage-panel .price-bar { width: 370px; height: 75px; background: url(../resource/img/sme_law_pic020.png) no-repeat center; }
+
+/* advantage-section */
+.advantage-section { box-sizing: border-box; background: url(../resource/img/sme_law_bgi003.jpg) no-repeat center top; }
+
+.advantage-section * { box-sizing: border-box; }
+
+.advantage-section .desc-list { padding: 0 30px 50px; margin: -28px 0 0 -45px; }
+
+.advantage-section .desc-list .desc-item { float: left; width: 350px; margin: 28px 0 0 45px; }
+
+.advantage-section .desc-list .desc-item .pic { width: 100%; height: 200px; box-shadow: 0 0 20px 0 rgba(24, 5, 9, 0.15); -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.advantage-section .desc-list .desc-item .pic img { display: block; width: 100%; height: 100%; }
+
+.advantage-section .desc-list .desc-item .text { margin-top: 28px; text-align: center; font-size: 18px; font-weight: bold; color: #333; }
+
+.advantage-section .desc-list .desc-item:hover .pic { -webkit-transform: scale(0.98); -ms-transform: scale(0.98); transform: scale(0.98); }
+
+/* path-section */
+.path-section { box-sizing: border-box; }
+
+.path-section * { box-sizing: border-box; }
+
+.path-section .path-list { padding: 6px 0 53px; text-align: center; font-size: 0; }
+
+.path-section .path-list li { display: inline-block; min-width: 170px; vertical-align: top; }
+
+.path-section .path-list li .icon { position: relative; width: 110px; height: 110px; margin: 0 auto; }
+
+.path-section .path-list li .icon .icon-pic { display: block; width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.path-section .path-list li .text { margin-top: 32px; font-size: 18px; color: #333; }
+
+.path-section .path-list li:hover .icon .icon-pic { -webkit-transform: scale(1.08); -ms-transform: scale(1.08); transform: scale(1.08); }
+
+.path-section .path-list li + li { margin-left: 110px; }
+
+.path-section .path-list li + li .icon:after { content: ''; position: absolute; top: 50px; right: 130px; display: block; width: 134px; height: 8px; background: url(../resource/img/sme_law_pic035.png) no-repeat center; }
+
+/* lawyer-section */
+.lawyer-section { box-sizing: border-box; background-color: #f1f1f1; }
+
+.lawyer-section * { box-sizing: border-box; }
+
+/* reason-section */
+.reason-section { box-sizing: border-box; }
+
+.reason-section * { box-sizing: border-box; }
+
+.reason-section .desc-list { padding: 44px 0 62px; text-align: center; font-size: 0; }
+
+.reason-section .desc-list li { display: inline-block; vertical-align: top; }
+
+.reason-section .desc-list li .icon { width: 196px; height: 120px; margin: 0 auto; background-repeat: no-repeat; background-position: center; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.reason-section .desc-list li .text { width: 181px; margin: 18px auto 0; line-height: 24px; font-size: 16px; color: #333; }
+
+.reason-section .desc-list li:hover .icon { -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
+
+.reason-section .desc-list li + li { margin-left: 75px; }
