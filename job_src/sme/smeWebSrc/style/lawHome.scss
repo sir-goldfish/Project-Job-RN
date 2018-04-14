@@ -540,6 +540,121 @@ $selfBoxShadow: 0 0 10px 0 rgba(24, 5, 9, .2);
   * {
     box-sizing: border-box;
   }
+  .lawyer-cards {
+    padding-bottom: 35px;
+    margin: -20px 0 0 -20px;
+  }
+  .lawyer-card {
+    position: relative;
+    float: left;
+    width: 285px;
+    height: 345px;
+    margin: 20px 0 0 20px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 rgba(24, 5, 9, .15);
+    .init-content {
+      .pic {
+        width: 100%;
+        height: 285px;
+        overflow: hidden;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transition: transform .5s ease-out;
+        }
+      }
+      .title {
+        width: 100%;
+        height: 345px - 285px;
+        line-height: 345px - 285px;
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        .name {
+          margin: 0 10px;
+          font-size: 24px;
+        }
+      }
+    }
+    .hover-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 25px - 5px 20px 0;
+      color: #fff;
+      background-color: rgba(0, 0, 0, .85);
+      overflow: hidden;
+      transition: top .5s ease-out;
+      .info-item {
+        $selfWidth: 60px;
+        line-height: 22px;
+        font-size: 12px;
+        .item-title {
+          float: left;
+          width: $selfWidth;
+          margin-right: - $selfWidth;
+        }
+        .item-content {
+          margin-left: $selfWidth;
+        }
+        .label-group {
+          float: left;
+          margin: -5px 0 0 -10px;
+          .label {
+            display: inline-block;
+            padding: 0 5px;
+            margin: 5px 0 0 10px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+          }
+        }
+        &.desc-item {
+          .item-title {
+            float: none;
+            width: auto;
+            margin-right: 0;
+          }
+          .item-content {
+            margin-left: 0;
+          }
+        }
+      }
+      .info-item + .info-item {
+        margin-top: 5px;
+      }
+      .handle-group {
+        padding: 20px - 5px 0;
+        text-align: center;
+        .self-btn {
+          $selfWidth: 130px;
+          $selfHeight: 36px;
+          min-width: $selfWidth;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          font-size: 16px;
+          &.rounded-btn {
+            border-radius: $selfHeight;
+          }
+        }
+      }
+    }
+    &:hover {
+      .init-content {
+        .pic {
+          img {
+            transform: scale(1.07);
+          }
+        }
+      }
+      .hover-content {
+        top: 0;
+      }
+    }
+  }
 }
 
 /* reason-section */
