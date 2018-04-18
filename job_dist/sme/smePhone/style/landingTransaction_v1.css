@@ -65,7 +65,7 @@
 
 .brand-swiper .brand-card .title { max-width: 100%; margin-top: .7rem; color: #666; }
 
-.brand-swiper .swiper-pagination { position: absolute; bottom: .2rem; }
+.brand-swiper .swiper-pagination { position: absolute; bottom: .2rem; z-index: 0; }
 
 .brand-swiper .swiper-pagination .swiper-pagination-bullet { width: 0.25rem; height: 0.25rem; vertical-align: middle; background-color: #999; border-radius: 0.25rem; opacity: 1; filter: alpha(opacity=100); -webkit-transition: width .3s ease-out; transition: width .3s ease-out; }
 
