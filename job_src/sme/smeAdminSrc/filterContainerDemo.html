@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="theme/css/animate.css">
     <link rel="stylesheet" href="theme/css/style.css">
     <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="plugin/audioplayer/audioplayer.css">
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html"/>
     <script src="script/html5.min.js"></script>
@@ -147,5 +148,21 @@
     <a href="javascript:;" class="btn btn-self-blue1">btn-self-blue1</a>
     <a href="javascript:;" class="btn btn-self-khaki">btn-self-khaki</a>
 </div>
+<h3>*音频播放demo</h3>
+<table class="table">
+    <tr>
+        <td>
+            <audio preload="auto" controls>
+                <source src="audio.mp3">
+            </audio>
+        </td>
+    </tr>
+</table>
+<!--script-->
+<script src="theme/js/jquery.min.js"></script>
+<script src="plugin/audioplayer/audioplayer.js"></script>
+<script>
+    $('audio').audioPlayer();
+</script>
 </body>
 </html>
