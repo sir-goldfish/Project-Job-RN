@@ -53,7 +53,7 @@
 
 .query-section .query-form .form-item .input-wrapper .hint-info { padding-top: .5rem; padding-bottom: .5rem; color: #f00; }
 
-.query-section .query-form .form-btn-group { padding: 1rem; }
+.query-section .query-form .form-btn-group { padding: 1rem 0 1rem 1rem; }
 
 .query-section .query-form .form-notice { padding-top: 1rem; padding-bottom: 2.4rem; text-align: center; font-size: 1.1rem; color: #fff; }
 
