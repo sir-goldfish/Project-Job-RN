@@ -168,6 +168,7 @@
     padding-bottom: 4.5rem;;
   }
   .service-card {
+    position: relative;
     display: block;
     width: 100%;
     overflow: hidden;
@@ -177,6 +178,36 @@
       display: block;
       width: 100%;
       height: auto;
+    }
+    .card-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1.75rem 1.5rem 0;
+      color: #4b67b0;
+      .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .desc {
+        margin-top: .9rem;
+        font-size: 1rem;
+      }
+      .group {
+        margin-top: 1.4rem;
+        font-size: 1rem;
+        color: #5b80e1;
+        span {
+          vertical-align: middle;
+        }
+        span + span {
+          margin-left: .5rem;
+          padding-left: .5rem;
+          border-left: 1px solid #5b80e1;
+        }
+      }
     }
   }
   .service-card + .service-card {
@@ -242,6 +273,7 @@
     width: 100%;
     margin-top: -1rem;
     .desc-card {
+      position: relative;
       width: 48.5%;
       margin-top: 1rem;
       overflow: hidden;
@@ -250,6 +282,31 @@
         display: block;
         width: 100%;
         height: auto;
+      }
+      .card-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 0;
+        color: #fff;
+        &:before {
+          @include globalVerticalMiddleAssist
+        }
+        .content-inner {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: .8rem;
+          .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          .desc {
+            margin-top: .6rem;
+          }
+        }
       }
     }
   }

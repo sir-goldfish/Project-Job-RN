@@ -73,14 +73,14 @@ $selfBoxShadow: 0 0 10px 0 rgba(24, 5, 9, .2);
         vertical-align: middle;
         transition: transform .3s ease-out;
       }
+      &:hover {
+        img {
+          transform: scale(.98);
+        }
+      }
       &.l-ad {
         width: 840px;
         height: 420px;
-      }
-      &:hover {
-        img {
-          transform: scale(.96);
-        }
       }
     }
   }

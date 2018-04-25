@@ -568,13 +568,14 @@
   .head-logo {
     box-sizing: border-box;
     position: relative;
-    padding-top: 15px;
+    //padding-top: 15px;
     background-color: #fff;
     * {
       box-sizing: border-box;
     }
     .logo-link {
       float: left;
+      margin-top: 15px;
       img {
         vertical-align: middle;
       }
@@ -586,12 +587,13 @@
       .nav-item {
         float: left;
         margin-left: 48px;
-        margin-top: 18px;
-        padding-bottom: 18px + 15px;
+        //margin-top: 18px;
+        //padding-bottom: 18px + 15px;
         color: $selfColor;
         .item-name {
-          height: 20px;
-          line-height: 20px;
+          $selfHeight: 20px + 18px + 18px + 15px + 15px;
+          height: $selfHeight;
+          line-height: $selfHeight;
           font-size: 16px;
           color: inherit;
         }

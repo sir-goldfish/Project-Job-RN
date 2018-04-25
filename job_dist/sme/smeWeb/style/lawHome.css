@@ -29,9 +29,9 @@
 
 .head-section .ad-container .ad-item img { width: 100%; height: 100%; vertical-align: middle; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
 
-.head-section .ad-container .ad-item.l-ad { width: 840px; height: 420px; }
+.head-section .ad-container .ad-item:hover img { -webkit-transform: scale(0.98); -ms-transform: scale(0.98); transform: scale(0.98); }
 
-.head-section .ad-container .ad-item:hover img { -webkit-transform: scale(0.96); -ms-transform: scale(0.96); transform: scale(0.96); }
+.head-section .ad-container .ad-item.l-ad { width: 840px; height: 420px; }
 
 .head-section .record-container { height: 54px; margin-top: 15px; color: #333; background-color: #fff; box-shadow: 0 0 10px 0 rgba(24, 5, 9, 0.2); overflow: hidden; }
 

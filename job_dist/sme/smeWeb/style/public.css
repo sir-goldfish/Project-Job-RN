@@ -231,19 +231,19 @@
 
 .sme-head6 .head-bar .bar-right .user-content .exit { margin-left: 15px; }
 
-.sme-head6 .head-logo { box-sizing: border-box; position: relative; padding-top: 15px; background-color: #fff; }
+.sme-head6 .head-logo { box-sizing: border-box; position: relative; background-color: #fff; }
 
 .sme-head6 .head-logo * { box-sizing: border-box; }
 
-.sme-head6 .head-logo .logo-link { float: left; }
+.sme-head6 .head-logo .logo-link { float: left; margin-top: 15px; }
 
 .sme-head6 .head-logo .logo-link img { vertical-align: middle; }
 
 .sme-head6 .head-logo .logo-nav { float: left; margin-left: -65px; }
 
-.sme-head6 .head-logo .logo-nav .nav-item { float: left; margin-left: 48px; margin-top: 18px; padding-bottom: 33px; color: #333; }
+.sme-head6 .head-logo .logo-nav .nav-item { float: left; margin-left: 48px; color: #333; }
 
-.sme-head6 .head-logo .logo-nav .nav-item .item-name { height: 20px; line-height: 20px; font-size: 16px; color: inherit; }
+.sme-head6 .head-logo .logo-nav .nav-item .item-name { height: 86px; line-height: 86px; font-size: 16px; color: inherit; }
 
 .sme-head6 .head-logo .logo-nav .nav-item:hover .item-name { color: #f78e24; }
 
