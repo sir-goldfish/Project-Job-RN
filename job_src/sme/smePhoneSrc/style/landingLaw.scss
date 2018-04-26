@@ -112,14 +112,15 @@ $selfActiveColor: $onColorOrange;
       background-color: #fff;
     }
     .form-body {
-      padding: 2.55rem 1.7rem 2.1rem;
-      font-size: 1.2rem;
+      $selfWidth: 1.5rem;
+      padding: 2.55rem 1rem 2.1rem;
+      font-size: 1.1rem;
       background-color: #fff;
       .check-btn {
         position: relative;
         display: inline-block;
-        width: 1.7rem;
-        height: 1.7rem;
+        width: $selfWidth;
+        height: $selfWidth;
         vertical-align: middle;
         background: url(../resource/img/smep_check_icon0.png) no-repeat center;
         background-size: 100%;
@@ -136,25 +137,25 @@ $selfActiveColor: $onColorOrange;
         }
       }
       .option {
-        $selfWidth: 1.7rem;
         .title {
           .check-btn {
             float: left;
             margin-right: - $selfWidth;
           }
           .text {
-            margin-left: $selfWidth + 1rem;
+            margin-left: $selfWidth + .5rem;
             line-height: $selfWidth;
-            font-size: 1.4rem;
+            font-size: 1.36rem;
             color: #333;
           }
         }
         .desc {
-          margin-left: $selfWidth + 1rem;
+          margin-left: $selfWidth;
           margin-top: .5rem;
         }
         &.other-option {
           .desc {
+            margin-left: $selfWidth + .5rem;
             input[type='text'] {
               width: 100%;
               height: 2.55rem;

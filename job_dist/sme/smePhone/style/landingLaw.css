@@ -40,19 +40,21 @@
 
 .head-container .form-panel .form-head { padding-top: 2.1rem; text-align: center; font-size: 1.36rem; color: #333; background-color: #fff; }
 
-.head-container .form-panel .form-body { padding: 2.55rem 1.7rem 2.1rem; font-size: 1.2rem; background-color: #fff; }
+.head-container .form-panel .form-body { padding: 2.55rem 1rem 2.1rem; font-size: 1.1rem; background-color: #fff; }
 
-.head-container .form-panel .form-body .check-btn { position: relative; display: inline-block; width: 1.7rem; height: 1.7rem; vertical-align: middle; background: url(../resource/img/smep_check_icon0.png) no-repeat center; background-size: 100%; overflow: hidden; }
+.head-container .form-panel .form-body .check-btn { position: relative; display: inline-block; width: 1.5rem; height: 1.5rem; vertical-align: middle; background: url(../resource/img/smep_check_icon0.png) no-repeat center; background-size: 100%; overflow: hidden; }
 
 .head-container .form-panel .form-body .check-btn input { position: absolute; width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0); }
 
 .head-container .form-panel .form-body .check-btn.check-btn-checked { background-image: url(../resource/img/smep_check_icon1.png); }
 
-.head-container .form-panel .form-body .option .title .check-btn { float: left; margin-right: -1.7rem; }
+.head-container .form-panel .form-body .option .title .check-btn { float: left; margin-right: -1.5rem; }
 
-.head-container .form-panel .form-body .option .title .text { margin-left: 2.7rem; line-height: 1.7rem; font-size: 1.4rem; color: #333; }
+.head-container .form-panel .form-body .option .title .text { margin-left: 2rem; line-height: 1.5rem; font-size: 1.36rem; color: #333; }
 
-.head-container .form-panel .form-body .option .desc { margin-left: 2.7rem; margin-top: .5rem; }
+.head-container .form-panel .form-body .option .desc { margin-left: 1.5rem; margin-top: .5rem; }
+
+.head-container .form-panel .form-body .option.other-option .desc { margin-left: 2rem; }
 
 .head-container .form-panel .form-body .option.other-option .desc input[type='text'] { width: 100%; height: 2.55rem; padding: 0 .7rem; vertical-align: middle; line-height: 2.55rem; border: 1px solid #c9c9c9; }
 
