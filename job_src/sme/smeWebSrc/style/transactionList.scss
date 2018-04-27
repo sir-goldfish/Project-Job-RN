@@ -342,13 +342,70 @@ body {
   width: 890px;
 }
 
-/* sort-container */
-.main-container .sort-container {
+/* search-panel */
+.main-container .search-panel {
   box-sizing: border-box;
   margin-bottom: 10px;
   background-color: #fff;
   * {
     box-sizing: border-box;
+  }
+  .search-container {
+    padding: 28px 50px 0;
+    border-bottom: 1px solid #eee;
+    .input-box {
+      $selfHeight: 44px;
+      $selfBtnWidth: 240px;
+      $selfBorderRadius: 4px;
+      position: relative;
+      width: 100%;
+      height: $selfHeight;
+      input[type='text'] {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0 $selfBtnWidth + 12px 0 12px;
+        line-height: $selfHeight - 2px;
+        font-size: 18px;
+        background-color: #fff;
+        border: 1px solid #9f9fa0;
+        border-radius: $selfBorderRadius;
+        &:focus {
+          border-color: $selfActiveColor;
+        }
+      }
+      .search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: $selfBtnWidth;
+        height: $selfHeight;
+        text-align: center;
+        line-height: $selfHeight;
+        font-size: 18px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-top-right-radius: $selfBorderRadius;
+        border-bottom-right-radius: $selfBorderRadius;
+        span {
+          margin-left: 12px;
+        }
+        &:hover {
+          background-color: $selfActiveColor - 15%;
+        }
+        &:active {
+          background-color: $selfActiveColor - 30%;
+        }
+      }
+    }
+    .hint-info {
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      font-size: 12px;
+      color: #f00;
+    }
   }
   .sort-group {
     padding: 16px 30px;
@@ -390,46 +447,6 @@ body {
             background-position-y: -14px;
           }
         }
-      }
-    }
-  }
-  .name-search {
-    $selfWidth: 257px;
-    $selfHeight: 28px;
-    position: relative;
-    width: $selfWidth;
-    height: $selfHeight;
-    margin: 10px 20px 0 0;
-    input[type='text'] {
-      width: 100%;
-      height: 100%;
-      padding: 0 30px + 5px 0 16px;
-      line-height: $selfHeight;
-      border: 1px solid #c9c9c9;
-      border-radius: $selfHeight;
-      &:focus {
-        border-color: $selfActiveColor;
-      }
-    }
-    .search-btn {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 30px;
-      height: $selfHeight;
-      line-height: $selfHeight;
-      text-align: center;
-      font-size: 16px;
-      color: #c9c9c9;
-      border-top-right-radius: $selfHeight;
-      border-bottom-right-radius: $selfHeight;
-      &:hover {
-        color: #fff;
-        background-color: $selfActiveColor;
-      }
-      &:active {
-        color: #fff;
-        background-color: $selfActiveColor - 30%;
       }
     }
   }
