@@ -362,7 +362,7 @@
 
 .sme-foot .foot-link-group .text-link .bottom-link .friend-links dd { margin-top: 24px; margin-right: 24px; }
 
-.sme-foot .foot-link-group .pic-link { position: relative; float: right; width: 151px; box-shadow: 0 0 10px 2px #ddd; }
+.sme-foot .foot-link-group .pic-link { position: relative; float: right; width: 151px; background-color: #fff; box-shadow: 0 0 10px 2px #ddd; }
 
 .sme-foot .foot-link-group .pic-link figure { width: 146px; height: 146px; margin-left: auto; margin-right: auto; background-color: #fff; }
 
