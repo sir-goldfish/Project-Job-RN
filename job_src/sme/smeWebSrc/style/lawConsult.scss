@@ -1,0 +1,308 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $onColorOrange;
+$selfBoxShadow: 0 0 15px 0 rgba(24, 5, 9, .1);
+
+/* self-btn */
+.self-btn {
+  $selfWidth: 180px;
+  $selfHeight: 58px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: $selfWidth;
+  height: $selfHeight;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 4px;
+  &:hover {
+    color: #fff;
+  }
+  &.rounded-btn {
+    border-radius: $selfHeight;
+  }
+  &.linear-yellow-btn {
+    background: linear-gradient(90deg, #f1bf08, #f2a202);
+    &:hover {
+      background: linear-gradient(90deg, #f1bf08 - 5%, #f2a202 - 5%);
+    }
+    &:active {
+      background: linear-gradient(90deg, #f1bf08 - 15%, #f2a202 - 15%);
+    }
+  }
+}
+
+/* head-section */
+.head-section {
+  padding: 128px 0 0;
+  box-sizing: border-box;
+  background: url(../resource/img/sme_law_bgi004.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .title-container {
+    .title {
+      width: 654px;
+      height: 76px;
+      margin: 0 auto;
+      background: url(../resource/img/sme_law_pic042.png) no-repeat center;
+    }
+    .subtitle {
+      margin-top: 27px;
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+  .query-container {
+    width: 587px + 366px + 10px;
+    padding: 56px 0 90px;
+    margin: 0 auto;
+    .input-box {
+      $selfHeight: 58px;
+      select, input[type='text'] {
+        height: $selfHeight;
+        padding: 0 24px;
+        line-height: $selfHeight;
+        font-size: 18px;
+        background-color: #fff;
+        border: none;
+      }
+      select {
+        float: left;
+        width: 587px;
+      }
+      input[type='text'] {
+        float: right;
+        width: 366px;
+      }
+    }
+    .hint-info {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #f00;
+    }
+    .handle-group {
+      text-align: center;
+      .self-btn {
+        min-width: 320px;
+      }
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  padding: 50px 0;
+  text-align: center;
+  color: #333;
+  .head-title {
+    font-size: 30px;
+    &:after {
+      content: '';
+      display: block;
+      width: 85px;
+      height: 2px;
+      margin: 12px auto 0;
+      background-color: #333;
+    }
+  }
+  .head-desc {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #999;
+  }
+  &.head-w {
+    color: #fff;
+    .head-title {
+      &:after {
+        background-color: #fff;
+      }
+    }
+    .head-desc {
+      color: #fff;
+    }
+  }
+}
+
+/* advantage-section */
+.advantage-section {
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-list {
+    padding: 16px 0 52px - 4px;
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      .icon {
+        width: 196px;
+        height: 120px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform .3s ease-out;
+      }
+      .text {
+        width: 181px;
+        margin: 22px - 4px auto 0;
+        line-height: 24px;
+        font-size: 16px;
+        color: #333;
+      }
+      &:hover {
+        .icon {
+          transform: translateY(-8px);
+        }
+      }
+    }
+    li + li {
+      margin-left: 75px;
+    }
+  }
+}
+
+/* path-section */
+.path-section {
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  .path-list {
+    width: 1067px;
+    min-height: 37px + 42px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+    background: url(../resource/img/sme_landing_pic52.png) no-repeat center 42px;
+    .path-item {
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: top;
+      .icon-wrap {
+        position: relative;
+        width: 132px;
+        margin: 0 auto;
+        .icon {
+          vertical-align: middle;
+          transition: transform .3s ease-out;
+        }
+        .num {
+          position: absolute;
+          top: 46px;
+          left: -80px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px - 2px;
+          font-family: Arial;
+          font-size: 24px;
+          font-weight: bold;
+          background-color: #fff;
+          border: 1px solid #c9c9c9;
+          border-radius: 50%;
+        }
+      }
+      .title {
+        margin-top: 30px;
+        font-size: 20px;
+        color: #333;
+      }
+      .desc {
+        margin-top: 16px;
+        font-size: 14px;
+      }
+      &:hover {
+        .icon-wrap {
+          .icon {
+            transform: scale(.9);
+          }
+        }
+        .title {
+          color: $selfActiveColor;
+        }
+      }
+    }
+    .path-item + .path-item {
+      margin-left: 170px;
+    }
+    .path-item:last-child {
+      margin-left: 200px;
+    }
+  }
+}
+
+/* service-section */
+.service-section {
+  box-sizing: border-box;
+  background: url(../resource/img/sme_law_bgi005.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-bottom: 34px;
+  }
+  .service-cards {
+    padding-bottom: 60px;
+    margin: -10px 0 0 -10px;
+  }
+  .service-card {
+    float: left;
+    display: block;
+    width: 450px;
+    height: 205px;
+    padding: 40px 30px 0;
+    margin: 10px 0 0 10px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: $selfBoxShadow;
+    transition: transform .3s ease-in-out;
+    .card-title {
+      font-size: 20px;
+      color: #333;
+    }
+    .card-desc {
+      margin-top: 17px - 8px;
+      line-height: 30px;
+      font-size: 14px;
+      color: #999;
+    }
+    .card-price {
+      margin-top: 54px - 8px;
+      font-size: 16px;
+      color: #333;
+      .num {
+        margin-right: 3px;
+        font-size: 1.5em;
+        color: #f00;
+        &:before {
+          content: '￥';
+          font-size: .7em;
+        }
+      }
+    }
+    &.h-card {
+      width: 280px;
+      height: 420px;
+      .card-desc {
+        margin-top: 38px - 8px;
+      }
+    }
+    &:hover {
+      transform: translateY(-6px);
+      .card-title {
+        color: #30b0ed;
+      }
+    }
+  }
+}

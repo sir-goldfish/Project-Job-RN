@@ -1,0 +1,482 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: #30b0ed;
+$selfBoxShadow: 0 0 15px 0 rgba(24, 5, 9, .1);
+
+/* self-btn */
+.self-btn {
+  $selfWidth: 180px;
+  $selfHeight: 58px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: $selfWidth;
+  height: $selfHeight;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 4px;
+  &:hover {
+    color: #fff;
+  }
+  &.rounded-btn {
+    border-radius: $selfHeight;
+  }
+  &.linear-yellow-btn {
+    background: linear-gradient(90deg, #f1bf08, #f2a202);
+    &:hover {
+      background: linear-gradient(90deg, #f1bf08 - 5%, #f2a202 - 5%);
+    }
+    &:active {
+      background: linear-gradient(90deg, #f1bf08 - 15%, #f2a202 - 15%);
+    }
+  }
+  &.linear-blue-btn {
+    background: linear-gradient(90deg, #25d6f0, #756bfe);
+    &:hover {
+      background: linear-gradient(90deg, #25d6f0 - 5%, #756bfe - 5%);
+    }
+    &:active {
+      background: linear-gradient(90deg, #25d6f0 - 15%, #756bfe - 15%);
+    }
+  }
+}
+
+/* head-section */
+.head-section {
+  padding: 124px 0 0;
+  box-sizing: border-box;
+  background: url(../resource/img/sme_law_bgi006.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .title-container {
+    .title {
+      width: 730px;
+      height: 68px;
+      margin: 0 auto;
+      background: url(../resource/img/sme_law_pic043.png) no-repeat center;
+    }
+    .subtitle {
+      margin-top: 23px;
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+  .query-container {
+    width: 587px + 366px + 10px;
+    padding: 45px 0 118px;
+    margin: 0 auto;
+    .input-box {
+      $selfHeight: 58px;
+      select, input[type='text'] {
+        height: $selfHeight;
+        padding: 0 24px;
+        line-height: $selfHeight;
+        font-size: 18px;
+        background-color: #fff;
+        border: none;
+      }
+      select {
+        float: left;
+        width: 587px;
+      }
+      input[type='text'] {
+        float: right;
+        width: 366px;
+      }
+    }
+    .hint-info {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #f00;
+    }
+    .handle-group {
+      text-align: center;
+      .self-btn {
+        min-width: 320px;
+      }
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  padding: 50px 0;
+  text-align: center;
+  color: #333;
+  .head-title {
+    font-size: 30px;
+    &:after {
+      content: '';
+      display: block;
+      width: 85px;
+      height: 2px;
+      margin: 12px auto 0;
+      background-color: #333;
+    }
+  }
+  .head-desc {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #999;
+  }
+  &.head-w {
+    color: #fff;
+    .head-title {
+      &:after {
+        background-color: #fff;
+      }
+    }
+    .head-desc {
+      color: #fff;
+    }
+  }
+}
+
+/* hot-section */
+.hot-section {
+  box-sizing: border-box;
+  padding-bottom: 34px;
+  background-color: #fffffd;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  .service-cards {
+    padding: 0 30px 34px;
+    margin-left: -45px;
+  }
+  .service-card {
+    float: left;
+    display: block;
+    width: 350px;
+    height: 275px;
+    margin: 80px 0 0 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    .desc-card {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      padding-top: 50px;
+      margin: -80px auto 0;
+      text-align: center;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      border-radius: 12px;
+      box-shadow: 0 0 20px 0 rgba(24, 5, 9, .15);
+      transition: margin-top .3s ease-in-out;
+      .card-title {
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+      }
+      .card-para {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #999;
+      }
+      .card-price {
+        margin-top: 34px;
+        font-size: 16px;
+        color: #333;
+        .num {
+          margin-right: 3px;
+          font-size: 1.5em;
+          color: #f00;
+          &:before {
+            content: '￥';
+            font-size: .7em;
+          }
+        }
+      }
+      .card-score {
+        margin-top: 36px;
+        font-size: 16px;
+        color: #999;
+        .score {
+          font-size: 20px;
+          color: #f99003;
+        }
+        .text {
+          margin-top: 11px;
+        }
+      }
+    }
+    &.hot-card {
+      .desc-card {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 15px;
+          display: block;
+          width: 37px;
+          height: 70px;
+          background: url(../resource/img/sme_law_icon001.png) no-repeat center;
+        }
+      }
+    }
+    &:hover {
+      .desc-card {
+        margin-top: -70px;
+      }
+    }
+  }
+  .consult-bar {
+    width: 100%;
+    height: 160px;
+    text-align: right;
+    font-size: 0;
+    background: url(../resource/img/sme_law_pic050.jpg) no-repeat center;
+    &:before {
+      @include globalVerticalMiddleAssist;
+    }
+    .consult-btn {
+      display: inline-block;
+      width: 190px;
+      height: 50px;
+      margin-right: 75px;
+      vertical-align: middle;
+      background: url(../resource/img/sme_law_pic051.png) no-repeat center;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px 0 rgba(24, 5, 9, .2);
+      &:hover {
+        box-shadow: 0 5px 15px 0 rgba(24, 5, 9, .4);
+      }
+      &:active {
+        box-shadow: 0 5px 15px 0 rgba(24, 5, 9, .6);
+      }
+    }
+  }
+}
+
+/* hot-type-section */
+.hot-type-section {
+  $selfFlagWidth: 280px;
+  box-sizing: border-box;
+  padding-bottom: 44px - 25px;
+  background: #fff url(../resource/img/sme_law_bgi008.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 37px;
+    padding-bottom: 34px;
+  }
+  .service-group {
+    padding-bottom: 25px;
+  }
+  .service-flag {
+    float: left;
+    width: $selfFlagWidth;
+    height: 420px;
+    padding: 57px 35px 0;
+    margin-right: -$selfFlagWidth;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    box-shadow: $selfBoxShadow;
+    .title {
+      font-size: 44px;
+      font-weight: bold;
+    }
+    .desc {
+      margin-top: 14px;
+      font-size: 16px;
+    }
+    .scope {
+      margin-top: 35px;
+      margin-left: -10px;
+      dt, dd {
+        float: left;
+        margin-left: 10px;
+      }
+      dt {
+        width: 100%;
+        margin-bottom: 13px;
+      }
+      dd {
+        width: 100px;
+        height: 36px;
+        margin-top: 6px;
+        line-height: 36px;
+        text-align: center;
+        background-color: #0581d8;
+      }
+    }
+    .foot {
+      margin-top: 45px;
+      .more-link {
+        vertical-align: middle;
+        line-height: 20px;
+        font-size: 16px;
+        color: inherit;
+        transition: transform .3s ease-in-out;
+        &:hover {
+          transform: translateX(6px);
+        }
+      }
+    }
+  }
+  .service-cards {
+    float: left;
+    margin-left: $selfFlagWidth;
+    margin-top: -10px;
+  }
+  .service-card {
+    position: relative;
+    float: left;
+    display: block;
+    width: 450px;
+    height: 205px;
+    padding: 40px 30px 0;
+    margin: 10px 0 0 10px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: $selfBoxShadow;
+    transition: transform .3s ease-in-out;
+    .card-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      text-align: center;
+      font-size: 0;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: top;
+        background-color: #23ccfb;
+        overflow: hidden;
+        transition: width .3s ease-in-out;
+      }
+    }
+    .card-title {
+      font-size: 20px;
+      color: #333;
+      transition: color .3s ease-in-out;
+    }
+    .card-desc {
+      margin-top: 17px - 3px;
+      line-height: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+    .card-price {
+      margin-top: 52px - 3px;
+      font-size: 16px;
+      color: #333;
+      .num {
+        margin-right: 3px;
+        font-size: 1.5em;
+        color: #f00;
+        &:before {
+          content: '￥';
+          font-size: .7em;
+        }
+      }
+    }
+    &.no-bgi {
+      text-align: center;
+    }
+    &.s-card {
+      width: 365px;
+    }
+    &.l-card {
+      width: 535px;
+    }
+    &:hover {
+      transform: translateY(-6px);
+      .card-line {
+        &:before {
+          width: 100%;
+        }
+      }
+      .card-title {
+        color: $selfActiveColor;
+      }
+    }
+  }
+}
+
+/* question-section */
+.question-section {
+  box-sizing: border-box;
+  background: url(../resource/img/sme_law_bgi007.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+  .question-cards {
+    padding: 0 20px;
+    margin: -35px 0 0 -40px;
+  }
+  .question-card {
+    float: left;
+    width: 360px;
+    height: 200px;
+    margin: 52px 0 0 40px;
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 0 15px 0 rgba(99, 117, 254, .3);
+    transition: transform .3s ease-in-out;
+    dl {
+      margin-top: -17px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      dt {
+        margin-bottom: 34px;
+        .self-btn {
+          $selfWidth: 180px;
+          $selfHeight: 44px;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          font-size: 20px;
+          &.rounded-btn {
+            border-radius: $selfHeight;
+          }
+          &.linear-blue-btn {
+            box-shadow: 0 2px 15px 0 rgba(111, 110, 254, .45);
+          }
+        }
+      }
+      dd {
+        margin-top: 17px;
+      }
+    }
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+  .section-foot {
+    padding: 40px 0 38px;
+    text-align: center;
+    .self-btn {
+      min-width: 300px;
+    }
+  }
+}
