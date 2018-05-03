@@ -1,0 +1,551 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $onColorOrange;
+$selfBoxShadow: 0 0 10px 0 rgba(14, 5, 10, .1);
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* head-crumbs-nav */
+.head-crumbs-nav {
+  .m-crumbs-nav {
+    background-color: transparent;
+    ul {
+      padding: 18px 0;
+    }
+  }
+}
+
+/* filter-container */
+.filter-container {
+  margin-bottom: 10px;
+}
+
+/* filter-panel */
+.filter-panel {
+  $selfWidth: 90px;
+  $selfHeight: 26px;
+  $selfFontSize: 14px;
+  box-sizing: border-box;
+  font-size: $selfFontSize;
+  background-color: #fff;
+  * {
+    box-sizing: border-box;
+  }
+  .title {
+    float: left;
+    width: $selfWidth;
+    margin-right: - $selfWidth;
+    line-height: $selfHeight;
+  }
+  .content {
+    margin-left: $selfWidth;
+    line-height: $selfHeight - 2px;
+  }
+  .results-container {
+    padding: 13px 30px;
+    border-bottom: 1px solid #eee;
+    .title {
+      padding-left: 10px + 3px;
+      color: #333;
+    }
+    .results-group {
+      float: left;
+      margin: -10px 0 0 -10px;
+      .result {
+        float: left;
+        height: $selfHeight;
+        padding: 0 8px;
+        margin: 10px 0 0 10px;
+        font-size: 0;
+        color: $selfActiveColor;
+        border: 1px solid $selfActiveColor;
+        border-radius: 4px;
+        cursor: default;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $selfFontSize;
+        }
+        .name {
+          max-width: 130px;
+        }
+        .del {
+          margin-left: 5px;
+          font-size: 12px;
+          color: inherit;
+        }
+        &:hover {
+          color: #fff;
+          background-color: $selfActiveColor;
+        }
+      }
+    }
+  }
+  .choose-container {
+    padding: 20px 30px;
+    .title {
+      color: #333;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 17px;
+        margin-right: 10px;
+        vertical-align: -4px;
+        background-color: $onColorOrange;
+      }
+    }
+    .options-box {
+      float: left;
+      width: 925px;
+    }
+    .options-group {
+      float: left;
+      width: 100%;
+      margin: -10px 0 0 -10px;
+      .option {
+        float: left;
+        height: $selfHeight;
+        padding: 0 8px;
+        margin: 10px 0 0 10px;
+        font-size: 0;
+        color: #666;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+        }
+        .name {
+          max-width: 120px;
+        }
+        &.chosen {
+          color: $onColorOrange;
+        }
+        &:hover {
+          color: $onColorOrange;
+        }
+      }
+      .custom-option {
+        float: left;
+        height: $selfHeight;
+        padding: 0 8px;
+        margin: 10px 0 0 10px;
+        font-size: 0;
+        color: #666;
+        border: 1px solid transparent;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+        }
+        .connector {
+          margin: 0 2px;
+        }
+        .unit {
+          margin: 0 5px;
+        }
+        input[type='text'] {
+          width: 70px;
+          height: $selfHeight - 2px;
+          padding: 0 10px;
+          margin: 0 5px;
+          line-height: $selfHeight - 4px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          &:focus {
+            border-color: $selfActiveColor;
+          }
+        }
+        .handle-btn {
+          display: inline-block;
+          min-width: 30px;
+          height: $selfHeight - 2px;
+          padding: 0 10px;
+          margin: 0 5px;
+          vertical-align: middle;
+          line-height: $selfHeight - 4px;
+          text-align: center;
+          color: #666;
+          background-color: #f7f7f7;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          &:hover {
+            background-color: #f7f7f7 - 15%;
+          }
+          &:active {
+            background-color: #f7f7f7 - 30%;
+          }
+          &.confirm-btn {
+            color: #fff;
+            background-color: $selfActiveColor;
+            border-color: $selfActiveColor;
+            &:hover {
+              background-color: $selfActiveColor - 15%;
+            }
+            &:active {
+              background-color: $selfActiveColor - 30%;
+            }
+          }
+        }
+        &:hover {
+          //box-shadow: 0 0 0 1px $selfActiveColor; //*171229禁
+        }
+      }
+    }
+    .options-foot-handle {
+      display: none;
+      //padding-top: 5px; //*171229禁
+      padding-top: 10px;
+      text-align: center;
+      .handle-btn {
+        display: inline-block;
+        min-width: 30px;
+        height: $selfHeight;
+        padding: 0 10px;
+        margin: 5px;
+        vertical-align: middle;
+        line-height: $selfHeight - 2px;
+        text-align: center;
+        color: #666;
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        &:hover {
+          background-color: #f7f7f7 - 15%;
+        }
+        &:active {
+          background-color: #f7f7f7 - 30%;
+        }
+        &.confirm-btn {
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-color: $selfActiveColor;
+          &:hover {
+            background-color: $selfActiveColor - 15%;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+    }
+    .handle-group {
+      float: right;
+      font-size: 0;
+      .handle-btn {
+        display: inline-block;
+        height: $selfHeight;
+        padding: 0 8px;
+        vertical-align: middle;
+        line-height: $selfHeight;
+        font-size: 14px;
+        color: #999;
+        border-radius: 4px;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1;
+          color: inherit;
+        }
+        i {
+          font-size: 16px;
+          transition: transform .4s ease-out;
+        }
+        &.hide {
+          display: none;
+        }
+        &.active {
+          color: #fff;
+          background-color: $selfActiveColor;
+          &.more-btn {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        &:hover {
+          color: #fff;
+          background-color: $selfActiveColor;
+        }
+      }
+      .handle-btn + .handle-btn {
+        margin-left: 5px;
+      }
+    }
+    .choose-item {
+      &.with-more {
+        .options-group-wrap {
+          //max-height: 26px; //*171229禁
+          height: 26px;
+          overflow: hidden;
+        }
+        &.on-more {
+          .options-box {
+            //padding: 5px; //*171229禁
+            //border: 1px solid $selfActiveColor; //*171229禁
+          }
+          .options-group-wrap {
+            //max-height: 200px; //*171229禁
+            height: auto;
+            //overflow: auto; //*171229禁
+          }
+        }
+      }
+      &.on-multiple {
+        .options-box {
+          //padding: 5px; //*171229禁
+          //border: 1px solid $selfActiveColor; //*171229禁
+        }
+        .options-foot-handle {
+          display: block;
+        }
+        &.on-more {
+          .options-box {
+            //padding: 10px 10px 5px; //*171229禁
+          }
+          .options-group-wrap {
+            //padding: 5px; //*171229禁
+            //box-shadow: 0 0 0 1px $selfActiveColor; //*171229禁
+          }
+          .options-foot-handle {
+            //padding-top: 5px; //*171229禁
+          }
+        }
+      }
+    }
+    .choose-item + .choose-item {
+      margin-top: 15px;
+    }
+  }
+}
+
+/* result-sum */
+.main-container .result-sum {
+  padding: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* result-empty */
+.main-container .result-empty {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  .pic {
+    margin: 0 auto 60px;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+/* result-cards-wrap */
+.main-container .result-cards-wrap {
+  .result-cards {
+    margin: -12px 0 0 -12px;
+    box-sizing: border-box;
+    * {
+      box-sizing: border-box;
+    }
+  }
+  .result-card {
+    float: left;
+    width: 392px;
+    margin: 12px 0 0 12px;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+    //box-shadow: $selfBoxShadow;
+    .card-belt {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 21px;
+      background: url(../resource/img/sme_law_pic090.png) no-repeat center;
+      background-size: 100%;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 348px;
+        margin-left: - (348px / 2);
+        border-top: 1px dashed #ddd;
+      }
+    }
+    .card-body {
+      padding: 32px 20px 0;
+      background-color: #fff;
+      .base-info {
+        $selfWidth: 118px;
+        height: 152px;
+        figure {
+          float: left;
+          width: $selfWidth;
+          height: $selfWidth;
+          margin-right: - $selfWidth;
+          border-radius: 50%;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+          }
+        }
+        .info-desc {
+          float: left;
+          margin-left: $selfWidth + 14px;
+          font-size: 14px;
+          .name {
+            span {
+              vertical-align: bottom;
+            }
+            span + span {
+              margin-left: 18px;
+            }
+            .big {
+              font-size: 1.3em;
+              color: #333;
+            }
+          }
+          .year {
+            margin-top: 28px;
+          }
+          .info-item {
+            $selfWidth: 70px;
+            margin-top: 18px;
+            .title {
+              float: left;
+              width: $selfWidth;
+              margin-right: - $selfWidth;
+              color: #666;
+            }
+            .content {
+              margin-left: $selfWidth;
+              word-wrap: break-word;
+              word-break: break-all;
+            }
+          }
+        }
+      }
+      .field-info {
+        height: 54px + 14px;
+        .title {
+          color: #666;
+        }
+        .field-group {
+          margin-left: -14px;
+          li {
+            float: left;
+            padding: 5px;
+            margin: 14px 0 0 14px;
+            border: 1px solid #c9c9c9;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .card-foot {
+      padding: 12px 20px 22px;
+      background-color: #fff;
+      .consult-btn {
+        $selfHeight: 32px;
+        display: block;
+        width: 124px;
+        height: $selfHeight;
+        margin: 0 auto;
+        line-height: $selfHeight - 2px;
+        text-align: center;
+        font-size: 16px;
+        color: $selfActiveColor;
+        border: 1px solid $selfActiveColor;
+        border-radius: $selfHeight;
+        &:hover {
+          color: #fff;
+          background-color: $selfActiveColor;
+        }
+        &:active {
+          background-color: $selfActiveColor - 15%;
+        }
+      }
+    }
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+/* pagination-container */
+.main-container .pagination-container {
+  padding: 30px 0;
+  .m-default-pagination {
+    $selfColor: $selfActiveColor;
+    .current {
+      background-color: $selfColor;
+    }
+    a {
+      &:hover {
+        background-color: $selfColor;
+        border-color: $selfColor;
+      }
+      &:active {
+        background-color: $selfColor - 30%;
+      }
+    }
+    input[type="text"]:focus {
+      border-color: $selfColor;
+    }
+    input[type="button"] {
+      &:hover {
+        color: #fff;
+        background-color: $selfColor;
+        border-color: $selfColor;
+      }
+      &:active {
+        background-color: $selfColor - 30%;
+      }
+    }
+  }
+  .m-group-pagination {
+    $selfColor: $selfActiveColor;
+    .current {
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    a {
+      &:hover {
+        background-color: $selfColor;
+        border-color: $selfColor;
+      }
+      &:active {
+        background-color: $selfColor - 30%;
+      }
+    }
+    input[type="text"]:focus {
+      border-color: $selfColor;
+    }
+    input[type="button"] {
+      &:hover {
+        background-color: $selfColor;
+        border-color: $selfColor;
+      }
+      &:active {
+        background-color: $selfColor - 30%;
+      }
+    }
+    .page-nav {
+      .current {
+        background-color: $selfColor;
+        border-color: $selfColor;
+      }
+    }
+  }
+}

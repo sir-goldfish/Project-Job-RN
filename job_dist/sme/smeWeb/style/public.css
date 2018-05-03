@@ -672,27 +672,27 @@ table .table-loading { min-width: 120px; height: 18px; margin: 0 auto; backgroun
 .m-dialog-pay-notice .notice-desc .handle-notice .notice-item .notice-para .handle-link:hover { color: #f78e24; }
 
 /* m-default-pagination */
-.m-default-pagination { padding: 10px 0; line-height: 30px; text-align: center; font-size: 12px; color: #666; }
+.m-default-pagination { box-sizing: border-box; padding: 10px 0; line-height: 30px; text-align: center; font-size: 12px; color: #666; }
 
-.m-default-pagination a, .m-default-pagination span, .m-default-pagination input[type="text"], .m-default-pagination input[type="button"] { display: inline-block; min-width: 14px; margin: 0 5px; vertical-align: top; }
+.m-default-pagination * { box-sizing: border-box; }
 
-.m-default-pagination span { height: 30px; padding: 0 8px; }
+.m-default-pagination a, .m-default-pagination span, .m-default-pagination input[type="text"], .m-default-pagination input[type="button"] { display: inline-block; min-width: 30px; height: 30px; margin: 0 5px; vertical-align: top; }
+
+.m-default-pagination span { padding: 0 8px; }
 
 .m-default-pagination .current { color: #fff; background-color: #f78e24; }
 
-.m-default-pagination a { height: 28px; padding: 0 7px; line-height: 28px; color: inherit; background-color: #fff; border: 1px solid #ddd; }
+.m-default-pagination a { padding: 0 7px; line-height: 28px; color: inherit; background-color: #fff; border: 1px solid #ddd; }
 
 .m-default-pagination a:hover { color: #fff; background-color: #f78e24; border-color: #f78e24; }
 
 .m-default-pagination a:active { background-color: #d97006; }
 
-.m-default-pagination input[type="text"], .m-default-pagination input[type="button"] { height: 28px; padding: 0 7px; line-height: 28px; text-align: inherit; color: inherit; background-color: #fff; border: 1px solid #ddd; outline: none; }
+.m-default-pagination input[type="text"], .m-default-pagination input[type="button"] { padding: 0 7px; line-height: 28px; text-align: inherit; color: inherit; background-color: #fff; border: 1px solid #ddd; outline: none; }
 
-.m-default-pagination input[type="text"] { width: 30px; }
+.m-default-pagination input[type="text"] { width: 48px; }
 
 .m-default-pagination input[type="text"]:focus { border-color: #f78e24; }
-
-.m-default-pagination input[type="button"] { height: 30px; }
 
 .m-default-pagination input[type="button"]:hover { color: #fff; background-color: #f78e24; border-color: #f78e24; }
 

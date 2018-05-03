@@ -1796,19 +1796,24 @@ table {
 /* m-default-pagination */
 .m-default-pagination {
   $selfColor: $onColorOrange;
+  $selfHeight: 30px;
+  box-sizing: border-box;
   padding: 10px 0;
-  line-height: 30px;
+  line-height: $selfHeight;
   text-align: center;
   font-size: 12px;
   color: #666;
+  * {
+    box-sizing: border-box;
+  }
   a, span, input[type="text"], input[type="button"] {
     display: inline-block;
-    min-width: 14px;
+    min-width: 30px;
+    height: $selfHeight;
     margin: 0 5px;
     vertical-align: top;
   }
   span {
-    height: 30px;
     padding: 0 8px;
   }
   .current {
@@ -1816,9 +1821,8 @@ table {
     background-color: $selfColor;
   }
   a {
-    height: 28px;
     padding: 0 7px;
-    line-height: 28px;
+    line-height: $selfHeight - 2px;
     color: inherit;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -1832,9 +1836,8 @@ table {
     }
   }
   input[type="text"], input[type="button"] {
-    height: 28px;
     padding: 0 7px;
-    line-height: 28px;
+    line-height: $selfHeight - 2px;
     text-align: inherit;
     color: inherit;
     background-color: #fff;
@@ -1842,13 +1845,12 @@ table {
     outline: none;
   }
   input[type="text"] {
-    width: 30px;
+    width: 48px;
   }
   input[type="text"]:focus {
     border-color: $selfColor;
   }
   input[type="button"] {
-    height: 30px;
     &:hover {
       color: #fff;
       background-color: $selfColor;
