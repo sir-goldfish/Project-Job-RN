@@ -13,13 +13,9 @@
 .self-btn.linear-yellow-btn:active { background: -webkit-linear-gradient(left, #e2b000, #e39300); background: linear-gradient(90deg, #e2b000, #e39300); }
 
 /* head-section */
-.head-section { padding: 128px 0 0; box-sizing: border-box; background: url(../resource/img/sme_law_bgi004.jpg) no-repeat center top; }
+.head-section { padding: 261px 0 0; box-sizing: border-box; background: url(../resource/img/sme_law_bgi004.jpg) no-repeat center top; }
 
 .head-section * { box-sizing: border-box; }
-
-.head-section .title-container .title { width: 654px; height: 76px; margin: 0 auto; background: url(../resource/img/sme_law_pic042.png) no-repeat center; }
-
-.head-section .title-container .subtitle { margin-top: 27px; text-align: center; font-size: 30px; color: #fff; }
 
 .head-section .query-container { width: 963px; padding: 56px 0 90px; margin: 0 auto; }
 

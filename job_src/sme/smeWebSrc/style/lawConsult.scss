@@ -38,25 +38,11 @@ $selfBoxShadow: 0 0 15px 0 rgba(24, 5, 9, .1);
 
 /* head-section */
 .head-section {
-  padding: 128px 0 0;
+  padding: 261px 0 0;
   box-sizing: border-box;
   background: url(../resource/img/sme_law_bgi004.jpg) no-repeat center top;
   * {
     box-sizing: border-box;
-  }
-  .title-container {
-    .title {
-      width: 654px;
-      height: 76px;
-      margin: 0 auto;
-      background: url(../resource/img/sme_law_pic042.png) no-repeat center;
-    }
-    .subtitle {
-      margin-top: 27px;
-      text-align: center;
-      font-size: 30px;
-      color: #fff;
-    }
   }
   .query-container {
     width: 587px + 366px + 10px;

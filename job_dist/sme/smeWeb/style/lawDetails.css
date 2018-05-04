@@ -1,0 +1,119 @@
+body { background-color: #f7f7f7; }
+
+/* head-crumbs-nav */
+.head-crumbs-nav .m-crumbs-nav { background-color: transparent; }
+
+.head-crumbs-nav .m-crumbs-nav ul { padding: 18px 0; }
+
+/* desc-panel */
+.service-panels { box-sizing: border-box; }
+
+.service-panels * { box-sizing: border-box; }
+
+.service-panels .desc-panel { width: 900px; height: 348px; padding: 30px 30px 0; color: #333; background-color: #fff; }
+
+.service-panels .desc-panel figure { float: left; width: 357px; height: 263px; margin-right: -357px; border: 1px solid #eee; }
+
+.service-panels .desc-panel figure img { display: block; width: 100%; height: 100%; }
+
+.service-panels .desc-panel .panel-content { margin-left: 392px; }
+
+.service-panels .desc-panel .panel-content .title { margin-top: 9px; font-size: 18px; font-weight: bold; }
+
+.service-panels .desc-panel .panel-content .para { height: 40px; margin-top: 12px; line-height: 20px; font-size: 13px; color: #999; overflow: hidden; }
+
+.service-panels .desc-panel .panel-content .price-row { margin-top: 14px; }
+
+.service-panels .desc-panel .panel-content .price-row > span + span { margin-left: 30px; }
+
+.service-panels .desc-panel .panel-content .price-row .stress { margin: 0 12px; font-size: 26px; color: #f00; }
+
+.service-panels .desc-panel .panel-content .price-row .price { color: #999; }
+
+.service-panels .desc-panel .panel-content .score-row { margin-top: 27px; font-size: 0; }
+
+.service-panels .desc-panel .panel-content .score-row > * { font-size: 14px; }
+
+.service-panels .desc-panel .panel-content .score-row .score .star { padding: 0 10px; }
+
+.service-panels .desc-panel .panel-content .score-row .score .star img { vertical-align: -2px; }
+
+.service-panels .desc-panel .panel-content .score-row .score .num { font-size: 18px; font-weight: bold; color: #f2ac28; }
+
+.service-panels .desc-panel .panel-content .score-row .sale-sum { margin-left: 100px; color: #999; }
+
+.service-panels .desc-panel .panel-content .handle-row { margin-top: 62px; font-size: 0; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn { display: inline-block; min-width: 150px; height: 38px; padding: 0 20px; vertical-align: middle; line-height: 38px; text-align: center; font-size: 14px; font-weight: bold; color: #fff; border-radius: 4px; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn.yellow-btn { background-color: #f2ac28; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn.yellow-btn:hover { background-color: #e8a21e; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn.yellow-btn:active { background-color: #de9814; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn.green-btn { background-color: #03d6d1; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn.green-btn:hover { background-color: #00ccc7; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn.green-btn:active { background-color: #00c2bd; }
+
+.service-panels .desc-panel .panel-content .handle-row .handle-btn + .handle-btn { margin-left: 32px; }
+
+/* consultant-panel */
+.service-panels .consultant-panel { width: 290px; height: 348px; padding: 34px 0 0; text-align: center; background-color: #fff; }
+
+.service-panels .consultant-panel figure { width: 108px; height: 108px; margin: 0 auto; border: 1px solid #ccc; border-radius: 50%; overflow: hidden; }
+
+.service-panels .consultant-panel figure img { display: block; width: 100%; height: 100%; border-radius: inherit; }
+
+.service-panels .consultant-panel .name { margin-top: 27px; font-size: 18px; color: #333; }
+
+.service-panels .consultant-panel .title { margin-top: 14px; color: #666; }
+
+.service-panels .consultant-panel .data { margin-top: 40px; font-size: 0; }
+
+.service-panels .consultant-panel .data li { display: inline-block; padding: 0 15px; vertical-align: top; font-size: 18px; }
+
+.service-panels .consultant-panel .data li .num { margin-bottom: 15px; color: #333; }
+
+/* main-container */
+.main-container { box-sizing: border-box; }
+
+.main-container * { box-sizing: border-box; }
+
+/* jump-tab-container */
+.jump-tab-container { position: relative; width: 100%; }
+
+.jump-tab-container .jump-tab-nav { position: relative; width: 1200px; height: 56px; background-color: #fff; border-bottom: 1px solid #ddd; }
+
+.jump-tab-container .jump-tab-nav ul { font-size: 0; }
+
+.jump-tab-container .jump-tab-nav ul li { position: relative; display: inline-block; width: 159px; height: 56px; line-height: 56px; text-align: center; font-size: 16px; color: #333; cursor: default; -webkit-transition: color .2s ease-out; transition: color .2s ease-out; }
+
+.jump-tab-container .jump-tab-nav ul li .line { position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; text-align: center; }
+
+.jump-tab-container .jump-tab-nav ul li .line em { display: inline-block; vertical-align: top; width: 0; height: 100%; background-color: #03d6d1; -webkit-transition: width .2s ease-out; transition: width .2s ease-out; }
+
+.jump-tab-container .jump-tab-nav ul li.current { color: #03d6d1; }
+
+.jump-tab-container .jump-tab-nav ul li.current .line em { width: 100%; }
+
+.jump-tab-container .jump-tab-nav ul li:hover { color: #03d6d1; }
+
+.jump-tab-container .jump-tab-nav ul li:hover .line em { width: 100%; }
+
+.jump-tab-container .jump-tab-content { width: 100%; background-color: #fff; }
+
+.jump-tab-container.set-nav-fixed { padding-top: 56px; }
+
+.jump-tab-container.set-nav-fixed .jump-tab-nav { position: fixed; top: 0; z-index: 10; box-shadow: 0 1px 4px 0 rgba(51, 51, 51, 0.2); }
+
+/* service-tab-container */
+.main-container .service-tab-container { margin-top: 10px; margin-bottom: 10px; }
+
+.main-container .service-tab-container .jump-content-item .content-title { padding: 40px 50px; font-size: 18px; font-weight: bold; color: #666; }
+
+.main-container .service-tab-container .jump-content-item .content-title:before { content: ''; display: inline-block; width: 8px; height: 24px; margin-right: 10px; vertical-align: middle; background-color: #05bbfd; }
+
+.main-container .service-tab-container .jump-content-item .content-body { padding-bottom: 20px; }

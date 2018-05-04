@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "publicVariable";
 
-$selfActiveColor: $onColorOrange;
+$selfActiveColor: #01cbfe;
 $selfBoxShadow: 0 0 10px 0 rgba(14, 5, 10, .1);
 
 body {
@@ -18,6 +18,57 @@ body {
   }
 }
 
+/* self-btn */
+.self-btn {
+  $selfWidth: 180px;
+  $selfHeight: 35px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: $selfWidth;
+  height: $selfHeight;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  &:hover {
+    color: #fff;
+  }
+  &.rounded-btn {
+    border-radius: $selfHeight;
+  }
+  &.linear-yellow-btn {
+    background: linear-gradient(90deg, #f1bf08, #f2a202);
+    &:hover {
+      background: linear-gradient(90deg, #f1bf08 - 5%, #f2a202 - 5%);
+    }
+    &:active {
+      background: linear-gradient(90deg, #f1bf08 - 15%, #f2a202 - 15%);
+    }
+  }
+  &.linear-blue-btn {
+    background: linear-gradient(90deg, #0390fd, #01cbfe);
+    &:hover {
+      background: linear-gradient(90deg, #0390fd - 5%, #01cbfe - 5%);
+    }
+    &:active {
+      background: linear-gradient(90deg, #0390fd - 15%, #01cbfe - 15%);
+    }
+  }
+}
+
+/* content-container */
+.content-container {
+  padding-bottom: 10px;
+}
+
+/* main-container */
+.main-container {
+  width: 890px;
+}
+
 /* filter-container */
 .filter-container {
   margin-bottom: 10px;
@@ -25,7 +76,7 @@ body {
 
 /* filter-panel */
 .filter-panel {
-  $selfWidth: 90px;
+  $selfWidth: 80px;
   $selfHeight: 26px;
   $selfFontSize: 14px;
   box-sizing: border-box;
@@ -48,7 +99,6 @@ body {
     padding: 13px 30px;
     border-bottom: 1px solid #eee;
     .title {
-      padding-left: 10px + 3px;
       color: #333;
     }
     .results-group {
@@ -88,19 +138,10 @@ body {
     padding: 20px 30px;
     .title {
       color: #333;
-      &:before {
-        content: '';
-        display: inline-block;
-        width: 3px;
-        height: 17px;
-        margin-right: 10px;
-        vertical-align: -4px;
-        background-color: $selfActiveColor;
-      }
     }
     .options-box {
       float: left;
-      width: 925px;
+      width: 660px;
     }
     .options-group {
       float: left;
@@ -279,7 +320,15 @@ body {
       }
     }
     .choose-item {
+      &.with-multiple {
+        .options-box {
+          width: 620px;
+        }
+      }
       &.with-more {
+        .options-box {
+          width: 620px;
+        }
         .options-group-wrap {
           //max-height: 26px; //*171229禁
           height: 26px;
@@ -325,12 +374,56 @@ body {
   }
 }
 
-/* result-sum */
-.main-container .result-sum {
-  padding: 18px;
+/* sort-container */
+.sort-container {
+  box-sizing: border-box;
+  padding: 0 30px;
   margin-bottom: 10px;
-  text-align: center;
   background-color: #fff;
+  * {
+    box-sizing: border-box;
+  }
+  .sort-group {
+    $selfHeight: 50px;
+    height: $selfHeight;
+    font-size: 0;
+    .sort-item {
+      position: relative;
+      display: inline-block;
+      padding: 0 2px;
+      vertical-align: middle;
+      line-height: $selfHeight;
+      font-size: 14px;
+      color: #999;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 0;
+        height: 4px;
+        background-color: $selfActiveColor;
+        overflow: hidden;
+        transition: width .3s ease-out;
+      }
+      &:hover {
+        color: $selfActiveColor;
+        &:after {
+          width: 100%;
+        }
+      }
+      &.chosen {
+        color: $selfActiveColor;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+    .sort-item + .sort-item {
+      margin-left: 38px;
+    }
+  }
 }
 
 /* result-empty */
@@ -351,7 +444,7 @@ body {
 /* result-cards-wrap */
 .main-container .result-cards-wrap {
   .result-cards {
-    margin: -12px 0 0 -12px;
+    margin: -10px 0 0 -10px;
     box-sizing: border-box;
     * {
       box-sizing: border-box;
@@ -359,133 +452,75 @@ body {
   }
   .result-card {
     float: left;
-    width: 392px;
-    margin: 12px 0 0 12px;
+    width: 290px;
+    height: 350px;
+    padding: 20px 10px 0;
+    margin: 10px 0 0 10px;
+    background-color: #fff;
     overflow: hidden;
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
     //box-shadow: $selfBoxShadow;
-    .card-belt {
-      position: relative;
+    .pic {
       display: block;
       width: 100%;
-      height: 21px;
-      background: url(../resource/img/sme_law_pic090.png) no-repeat center;
-      background-size: 100%;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 348px;
-        margin-left: - (348px / 2);
-        border-top: 1px dashed #ddd;
-      }
-    }
-    .card-body {
-      padding: 32px 20px 0;
-      background-color: #fff;
-      .base-info {
-        $selfWidth: 118px;
-        height: 152px;
-        figure {
-          float: left;
-          width: $selfWidth;
-          height: $selfWidth;
-          margin-right: - $selfWidth;
-          border-radius: 50%;
-          img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: inherit;
-          }
-        }
-        .info-desc {
-          float: left;
-          margin-left: $selfWidth + 14px;
-          font-size: 14px;
-          .name {
-            span {
-              vertical-align: bottom;
-            }
-            span + span {
-              margin-left: 18px;
-            }
-            .big {
-              font-size: 1.3em;
-              color: #333;
-            }
-          }
-          .year {
-            margin-top: 28px;
-          }
-          .info-item {
-            $selfWidth: 70px;
-            margin-top: 18px;
-            .title {
-              float: left;
-              width: $selfWidth;
-              margin-right: - $selfWidth;
-              color: #666;
-            }
-            .content {
-              margin-left: $selfWidth;
-              word-wrap: break-word;
-              word-break: break-all;
-            }
-          }
-        }
-      }
-      .field-info {
-        height: 54px + 14px;
-        .title {
-          color: #666;
-        }
-        .field-group {
-          margin-left: -14px;
-          li {
-            float: left;
-            padding: 5px;
-            margin: 14px 0 0 14px;
-            border: 1px solid #c9c9c9;
-            border-radius: 4px;
-          }
-        }
-      }
-    }
-    .card-foot {
-      padding: 12px 20px 22px;
-      background-color: #fff;
-      .consult-btn {
-        $selfHeight: 32px;
+      height: 187px;
+      border: 1px solid #eee;
+      overflow: hidden;
+      img {
         display: block;
-        width: 124px;
-        height: $selfHeight;
-        margin: 0 auto;
-        line-height: $selfHeight - 2px;
-        text-align: center;
+        width: 100%;
+        height: 100%;
+        transition: transform .3s ease-in-out;
+      }
+    }
+    .content {
+      padding: 20px 30px 0;
+      .title {
+        a {
+          max-width: 100%;
+          vertical-align: middle;
+          font-size: 14px;
+          color: #333;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      .price {
+        margin-top: 20px;
         font-size: 16px;
         color: $selfActiveColor;
-        border: 1px solid $selfActiveColor;
-        border-radius: $selfHeight;
-        &:hover {
-          color: #fff;
-          background-color: $selfActiveColor;
-        }
-        &:active {
-          background-color: $selfActiveColor - 15%;
+      }
+      .foot {
+        margin-top: 20px;
+        .tag {
+          display: inline-block;
+          padding: 0 6px;
+          margin-right: 5px;
+          vertical-align: middle;
+          line-height: 16px;
+          font-size: 14px;
+          color: $selfActiveColor;
+          border: 1px solid $selfActiveColor;
+          border-radius: 4px;
         }
       }
     }
     &:hover {
+      box-shadow: $selfBoxShadow;
       transform: translateY(-6px);
+      .pic {
+        img {
+          transform: scale(1.04);
+        }
+      }
     }
   }
 }
 
 /* pagination-container */
 .main-container .pagination-container {
-  padding: 30px 0;
+  padding: 50px 0 30px;
   .m-default-pagination {
     $selfColor: $selfActiveColor;
     .current {
@@ -547,5 +582,147 @@ body {
         border-color: $selfColor;
       }
     }
+  }
+}
+
+/* aside-container */
+.aside-container {
+  box-sizing: border-box;
+  width: 300px;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* query-panel */
+.aside-container .query-panel {
+  width: 100%;
+  padding: 40px 20px;
+  margin-bottom: 10px;
+  background: #fff url(../resource/img/sme_law_pic091.jpg) no-repeat center top;
+  .panel-head {
+    margin-bottom: 19px;
+    .head-title {
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      &:after {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 2px;
+        margin: 20px auto 0;
+        background-color: #333;
+      }
+    }
+  }
+  .panel-body {
+    .input-box {
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 15px 10px;
+        line-height: 20px;
+        font-size: 14px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        resize: none;
+        &:focus {
+          border-color: #ddd;
+        }
+      }
+    }
+    .hint-info {
+      min-height: 20px;
+      padding: 5px 0;
+      line-height: 20px;
+      font-size: 12px;
+      color: #f00;
+    }
+    .self-btn {
+      display: block;
+    }
+  }
+}
+
+/* recommend-service */
+.aside-container .recommend-service {
+  .service-head {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+  }
+  .service-card {
+    width: 100%;
+    padding: 20px 10px 30px;
+    background-color: #fff;
+    transition: box-shadow .3s ease-in-out;
+    .pic {
+      display: block;
+      width: 100%;
+      height: 190px;
+      border: 1px solid #eee;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: transform .3s ease-in-out;
+      }
+    }
+    .content {
+      padding-top: 20px;
+      text-align: center;
+      .title {
+        padding: 0 10px;
+        a {
+          max-width: 100%;
+          vertical-align: middle;
+          font-size: 14px;
+          color: #333;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      .price {
+        margin-top: 20px;
+        font-size: 16px;
+        color: $selfActiveColor;
+      }
+      .foot {
+        margin-top: 20px;
+        .self-btn {
+          min-width: 150px;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: $selfBoxShadow;
+      .pic {
+        img {
+          transform: scale(1.04);
+        }
+      }
+    }
+  }
+  .service-card + .service-card {
+    margin-top: 10px;
+  }
+}
+
+/* consult-bar */
+.consult-bar {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

@@ -1,0 +1,301 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: #03d6d1;
+$selfBoxShadow: 0 0 10px 0 rgba(14, 5, 10, .1);
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* head-crumbs-nav */
+.head-crumbs-nav {
+  .m-crumbs-nav {
+    background-color: transparent;
+    ul {
+      padding: 18px 0;
+    }
+  }
+}
+
+/* desc-panel */
+// service-panels: height 386px（稿） 348px（实际）
+.service-panels {
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.service-panels .desc-panel {
+  $selfWidth: 357px;
+  width: 900px;
+  height: 348px;
+  padding: 30px 30px 0;
+  color: #333;
+  background-color: #fff;
+  figure {
+    float: left;
+    width: $selfWidth;
+    height: 263px;
+    margin-right: - $selfWidth;
+    border: 1px solid #eee;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .panel-content {
+    margin-left: $selfWidth + 35px;
+    .title {
+      margin-top: 9px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .para {
+      height: 40px;
+      margin-top: 15px - 3px;
+      line-height: 20px;
+      font-size: 13px;
+      color: #999;
+      overflow: hidden;
+    }
+    .price-row {
+      margin-top: 37px - 20px - 3px;
+      & > span + span {
+        margin-left: 30px;
+      }
+      .stress {
+        margin: 0 12px;
+        font-size: 26px;
+        color: #f00;
+      }
+      .price {
+        color: #999;
+      }
+    }
+    .score-row {
+      margin-top: 27px;
+      font-size: 0;
+      & > * {
+        font-size: 14px;
+      }
+      .score {
+        .star {
+          padding: 0 10px;
+          img {
+            vertical-align: -2px;
+          }
+        }
+        .num {
+          font-size: 18px;
+          font-weight: bold;
+          color: #f2ac28;
+        }
+      }
+      .sale-sum {
+        margin-left: 100px;
+        color: #999;
+      }
+    }
+    .handle-row {
+      margin-top: 62px;
+      font-size: 0;
+      .handle-btn {
+        $selfWidth: 150px;
+        $selfHeight: 38px;
+        display: inline-block;
+        min-width: $selfWidth;
+        height: $selfHeight;
+        padding: 0 20px;
+        vertical-align: middle;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 4px;
+        &.yellow-btn {
+          background-color: #f2ac28;
+          &:hover {
+            background-color: #f2ac28 - 10%;
+          }
+          &:active {
+            background-color: #f2ac28 - 20%;
+          }
+        }
+        &.green-btn {
+          background-color: $selfActiveColor;
+          &:hover {
+            background-color: $selfActiveColor - 10%;
+          }
+          &:active {
+            background-color: $selfActiveColor - 20%;
+          }
+        }
+      }
+      .handle-btn + .handle-btn {
+        margin-left: 32px;
+      }
+    }
+  }
+}
+
+/* consultant-panel */
+.service-panels .consultant-panel {
+  width: 290px;
+  height: 348px;
+  padding: 34px 0 0;
+  text-align: center;
+  background-color: #fff;
+  figure {
+    $selfHeight: 108px;
+    width: $selfHeight;
+    height: $selfHeight;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+  }
+  .name {
+    margin-top: 27px;
+    font-size: 18px;
+    color: #333;
+  }
+  .title {
+    margin-top: 14px;
+    color: #666;
+  }
+  .data {
+    margin-top: 40px;
+    font-size: 0;
+    li {
+      display: inline-block;
+      padding: 0 15px;
+      vertical-align: top;
+      font-size: 18px;
+      .num {
+        margin-bottom: 15px;
+        color: #333;
+      }
+    }
+  }
+}
+
+/* main-container */
+.main-container {
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* jump-tab-container */
+.jump-tab-container {
+  $selfHeight: 56px;
+  position: relative;
+  width: 100%;
+  .jump-tab-nav {
+    $selfActiveColor: $selfActiveColor;
+    position: relative;
+    width: 1200px;
+    height: $selfHeight;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    ul {
+      font-size: 0;
+      li {
+        position: relative;
+        display: inline-block;
+        width: 159px;
+        height: $selfHeight;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        cursor: default;
+        transition: color .2s ease-out;
+        .line {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          text-align: center;
+          em {
+            display: inline-block;
+            vertical-align: top;
+            width: 0;
+            height: 100%;
+            background-color: $selfActiveColor;
+            transition: width .2s ease-out;
+          }
+        }
+        &.current {
+          color: $selfActiveColor;
+          .line {
+            em {
+              width: 100%;
+            }
+          }
+        }
+        &:hover {
+          color: $selfActiveColor;
+          .line {
+            em {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .jump-tab-content {
+    width: 100%;
+    background-color: #fff;
+  }
+  &.set-nav-fixed {
+    padding-top: $selfHeight;
+    .jump-tab-nav {
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 1px 4px 0 rgba(51, 51, 51, .2);
+    }
+  }
+}
+
+/* service-tab-container */
+.main-container .service-tab-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // 共性
+  .jump-content-item {
+    .content-title {
+      padding: 40px 50px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #666;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 24px;
+        margin-right: 10px;
+        vertical-align: middle;
+        background-color: #05bbfd;
+      }
+    }
+    .content-body {
+      padding-bottom: 20px;
+    }
+  }
+  // 个性
+}

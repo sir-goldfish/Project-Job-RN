@@ -47,25 +47,11 @@ $selfBoxShadow: 0 0 15px 0 rgba(24, 5, 9, .1);
 
 /* head-section */
 .head-section {
-  padding: 124px 0 0;
+  padding: 245px 0 0;
   box-sizing: border-box;
   background: url(../resource/img/sme_law_bgi006.jpg) no-repeat center top;
   * {
     box-sizing: border-box;
-  }
-  .title-container {
-    .title {
-      width: 730px;
-      height: 68px;
-      margin: 0 auto;
-      background: url(../resource/img/sme_law_pic043.png) no-repeat center;
-    }
-    .subtitle {
-      margin-top: 23px;
-      text-align: center;
-      font-size: 30px;
-      color: #fff;
-    }
   }
   .query-container {
     width: 587px + 366px + 10px;
@@ -237,29 +223,12 @@ $selfBoxShadow: 0 0 15px 0 rgba(24, 5, 9, .1);
     }
   }
   .consult-bar {
+    display: block;
     width: 100%;
-    height: 160px;
-    text-align: right;
-    font-size: 0;
-    background: url(../resource/img/sme_law_pic050.jpg) no-repeat center;
-    &:before {
-      @include globalVerticalMiddleAssist;
-    }
-    .consult-btn {
-      display: inline-block;
-      width: 190px;
-      height: 50px;
-      margin-right: 75px;
-      vertical-align: middle;
-      background: url(../resource/img/sme_law_pic051.png) no-repeat center;
-      border-radius: 25px;
-      box-shadow: 0 5px 15px 0 rgba(24, 5, 9, .2);
-      &:hover {
-        box-shadow: 0 5px 15px 0 rgba(24, 5, 9, .4);
-      }
-      &:active {
-        box-shadow: 0 5px 15px 0 rgba(24, 5, 9, .6);
-      }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
 }
