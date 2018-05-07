@@ -411,6 +411,15 @@ table .table-loading { min-width: 120px; height: 18px; margin: 0 auto; backgroun
 /* 右浮 */
 .f-pull-right { float: right; }
 
+/* 居中 */
+.f-text-center { text-align: center; }
+
+/* 居左 */
+.f-text-left { text-align: left; }
+
+/* 居右 */
+.f-text-right { text-align: right; }
+
 /* ---模块类公用(.m-开头)--- */
 /* m-service-cards */
 .m-service-cards .service-cards-list { margin-top: -20px; margin-left: -20px; text-align: center; }
