@@ -777,6 +777,109 @@ th, td {
   }
 }
 
+/* m-transmit-dialog */
+.m-transmit-dialog {
+  width: 600px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 14px;
+  color: #333;
+  input[type='checkbox'] {
+    margin-top: 0;
+    vertical-align: middle;
+  }
+  .transmit-head {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    span {
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+  }
+  .chance-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    .list-item {
+      $selfWidth: 13px;
+      .check-self {
+        float: left;
+        width: $selfWidth;
+        height: $selfWidth;
+        margin-right: - $selfWidth;
+        margin-top: 4px;
+      }
+      .content {
+        margin-left: $selfWidth + 8px;
+        .content-head {
+          .head-item {
+            float: left;
+          }
+          .item-id {
+            width: 33.33333%;
+          }
+          .item-name {
+            width: 41.66666%;
+            padding-right: 10px;
+            .f-ellipsis {
+              display: inline-block;
+              max-width: 100%;
+            }
+          }
+          .item-handle {
+            width: 25%;
+            .handle-btn {
+              i {
+                margin-right: 5px;
+                vertical-align: middle;
+                font-size: inherit;
+              }
+            }
+          }
+          .item-desc {
+            width: 100%;
+            margin-top: 13px;
+            color: #999;
+          }
+        }
+        .content-body {
+          .notice-wrap {
+            padding-top: 14px;
+            .form-row {
+              .input-box {
+                textarea {
+                  display: block;
+                  width: 100%;
+                  padding: 10px 12px;
+                  background-color: #fff;
+                  border: 1px solid #ddd;
+                  resize: none;
+                }
+              }
+              .hint-info {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #666;
+              }
+              .handle-group {
+                .btn + .btn {
+                  margin-left: 5px;
+                }
+              }
+              &.handle-row {
+                padding-top: 10px;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-item + .list-item {
+      margin-top: 25px;
+    }
+  }
+}
+
 /* m-fund-dialog */
 .m-fund-dialog {
   width: 650px;

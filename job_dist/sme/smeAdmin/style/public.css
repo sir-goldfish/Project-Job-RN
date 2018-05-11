@@ -312,6 +312,47 @@ th, td { word-wrap: break-word; word-break: break-all; }
 
 .m-service-record-dialog .record-container .container-body { padding-left: 20px; padding-right: 20px; }
 
+/* m-transmit-dialog */
+.m-transmit-dialog { width: 600px; padding-left: 18px; padding-right: 18px; font-size: 14px; color: #333; }
+
+.m-transmit-dialog input[type='checkbox'] { margin-top: 0; vertical-align: middle; }
+
+.m-transmit-dialog .transmit-head { padding-top: 24px; padding-bottom: 24px; }
+
+.m-transmit-dialog .transmit-head span { margin-left: 8px; vertical-align: middle; }
+
+.m-transmit-dialog .chance-list { padding-left: 20px; padding-right: 20px; }
+
+.m-transmit-dialog .chance-list .list-item .check-self { float: left; width: 13px; height: 13px; margin-right: -13px; margin-top: 4px; }
+
+.m-transmit-dialog .chance-list .list-item .content { margin-left: 21px; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-head .head-item { float: left; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-head .item-id { width: 33.33333%; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-head .item-name { width: 41.66666%; padding-right: 10px; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-head .item-name .f-ellipsis { display: inline-block; max-width: 100%; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-head .item-handle { width: 25%; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-head .item-handle .handle-btn i { margin-right: 5px; vertical-align: middle; font-size: inherit; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-head .item-desc { width: 100%; margin-top: 13px; color: #999; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-body .notice-wrap { padding-top: 14px; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-body .notice-wrap .form-row .input-box textarea { display: block; width: 100%; padding: 10px 12px; background-color: #fff; border: 1px solid #ddd; resize: none; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-body .notice-wrap .form-row .hint-info { padding-top: 10px; padding-bottom: 10px; color: #666; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-body .notice-wrap .form-row .handle-group .btn + .btn { margin-left: 5px; }
+
+.m-transmit-dialog .chance-list .list-item .content .content-body .notice-wrap .form-row.handle-row { padding-top: 10px; padding-bottom: 10px; }
+
+.m-transmit-dialog .chance-list .list-item + .list-item { margin-top: 25px; }
+
 /* m-fund-dialog */
 .m-fund-dialog { width: 650px; padding: 7px 15px; font-size: 14px; color: #333; background-color: #fff; }
 
