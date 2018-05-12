@@ -448,6 +448,61 @@
         }
       }
     }
+    .content-service-confirm {
+      .confirm-bar {
+        padding: 22px;
+        background-color: #f4f9fb;
+        .bar-item {
+          float: left;
+          padding-top: 8px;
+        }
+        .name-item {
+          width: 33.33333%;
+          padding-right: 10px;
+          .f-ellipsis {
+            display: block;
+            max-width: 100%;
+          }
+        }
+        .time-item {
+          width: 25%;
+        }
+        .person-item {
+          width: 25%;
+        }
+        .handle-item {
+          width: 16.66667%;
+          padding-top: 0;
+          .btn {
+            min-width: 70px;
+          }
+        }
+      }
+      .confirm-bar + .confirm-bar {
+        margin-top: 10px;
+      }
+    }
+    .content-transmit-record {
+      .record-panel {
+        padding: 35px 23px;
+        font-size: 14px;
+        background-color: #f4f9fb;
+        .panel-head {
+          color: #333;
+          .head-item + .head-item {
+            margin-left: 40px;
+          }
+        }
+        .panel-body {
+          padding: 20px - 8px 0 0;
+          line-height: 30px;
+          color: #666;
+        }
+      }
+      .record-panel + .record-panel {
+        margin-top: 10px;
+      }
+    }
   }
 }
 

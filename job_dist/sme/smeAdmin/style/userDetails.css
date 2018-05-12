@@ -180,6 +180,34 @@
 
 .user-info-tab.finance-tab .content-service-record .record-info-content .form-table .form-btn-group .form-btn { min-width: 135px; margin: 3px; }
 
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar { padding: 22px; background-color: #f4f9fb; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar .bar-item { float: left; padding-top: 8px; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar .name-item { width: 33.33333%; padding-right: 10px; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar .name-item .f-ellipsis { display: block; max-width: 100%; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar .time-item { width: 25%; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar .person-item { width: 25%; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar .handle-item { width: 16.66667%; padding-top: 0; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar .handle-item .btn { min-width: 70px; }
+
+.user-info-tab.finance-tab .content-service-confirm .confirm-bar + .confirm-bar { margin-top: 10px; }
+
+.user-info-tab.finance-tab .content-transmit-record .record-panel { padding: 35px 23px; font-size: 14px; background-color: #f4f9fb; }
+
+.user-info-tab.finance-tab .content-transmit-record .record-panel .panel-head { color: #333; }
+
+.user-info-tab.finance-tab .content-transmit-record .record-panel .panel-head .head-item + .head-item { margin-left: 40px; }
+
+.user-info-tab.finance-tab .content-transmit-record .record-panel .panel-body { padding: 12px 0 0; line-height: 30px; color: #666; }
+
+.user-info-tab.finance-tab .content-transmit-record .record-panel + .record-panel { margin-top: 10px; }
+
 /* choose-chance-panel */
 .choose-chance-panel .choose-link { margin-right: 30px; font-size: 14px; color: #333; }
 

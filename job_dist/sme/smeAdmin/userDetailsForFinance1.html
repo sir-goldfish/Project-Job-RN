@@ -1,10 +1,441 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户详情展示给仅工商外勤-融诺企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/css/animate.css">
+    <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/userDetails.css">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-$END$
+<body class="gray-bg">
+<div class="wrapper-content animated fadeInRight">
+    <div class="main-body-wrapper row">
+        <div class="main-container col-sm-8">
+            <!--user-info-bar-->
+            <section class="user-info-bar col-sm-12 clearfix">
+                <figure class="avatar pull-left">
+                    <img src="resource/img/smea_avatar.jpg">
+                </figure>
+                <div class="content">
+                    <div class="info-desc">
+                        <span class="desc-item">用户名：rnw-2373432</span><span
+                            class="desc-item">手机号：13890902323</span><span
+                            class="desc-item">邮箱：rongnuo@rongnuo.com</span>
+                    </div>
+                    <div class="info-btm">
+                        <span class="info-money">预计成交金额<b class="num">1800.01</b>元</span>
+                        <span class="info-money">实际成交金额<b class="num">0</b>元</span>
+                        <a href="javascript:;" class="total-buy">总付款</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="aside-container col-sm-4">
+            <div class="aside-container-inner col-sm-12">
+                <!--consultant-info-bar-->
+                <aside class="consultant-info-bar col-sm-12">
+                    <div class="head">[IPR]财税顾问：</div>
+                    <div class="content">
+                        <span class="name"><i class="iconfont">&#xe752;</i>张三丰丰（重庆销售2-1小组）</span>
+                        <a href="javascript:;" class="head-btn">更改</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="main-container col-sm-12">
+            <!--user-info-tab-->
+            <section class="user-info-tab finance-tab col-sm-12">
+                <nav class="tab-nav">
+                    <ul class="clearfix">
+                        <li class="nav-item current">服务记录</li>
+                        <li class="nav-item">服务确认</li>
+                        <li class="nav-item">转交服务记录</li>
+                        <li class="nav-item">详细</li>
+                        <li class="nav-item">账户资料</li>
+                    </ul>
+                </nav>
+                <div class="tab-content">
+                    <!--content 服务记录-->
+                    <div class="content-service-record content-item">
+                        <div class="record-head clearfix">
+                            <div class="head-item col-sm-4">服务名称</div>
+                            <div class="head-item col-sm-3">服务时间</div>
+                            <div class="head-item col-sm-3">新建人</div>
+                            <div class="head-item col-sm-2">操作</div>
+                        </div>
+                        <div class="record-wrap" style="height:auto;">
+                            <div class="record-panel">
+                                <div class="record-info-bar clearfix">
+                                    <div class="bar-item col-sm-4">服务名称服务名称</div>
+                                    <div class="bar-item col-sm-3">2018-04-04 12:12</div>
+                                    <div class="bar-item col-sm-3">一二三四</div>
+                                    <div class="bar-item col-sm-2"><a href="javascript:;" class="toggle-btn">查看</a>
+                                    </div>
+                                </div>
+                                <div class="record-info-content">
+                                    <div class="content-inner">
+                                        <div class="form-table">
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-6">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">服务名称：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info">*提示信息占位</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-6">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">服务时间：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-6">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">描述：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-12">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">上传：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text" style="width:50%;">
+                                                                <a href="javascript:;" class="upload-btn btn btn-info">上传</a>
+                                                                <a href="javascript:;"
+                                                                   class="preview-btn btn btn-default">在线浏览</a>
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-panel">
+                                <div class="record-info-bar clearfix">
+                                    <div class="bar-item col-sm-4">服务名称服务名称</div>
+                                    <div class="bar-item col-sm-3">2018-04-04 12:12</div>
+                                    <div class="bar-item col-sm-3">一二三四</div>
+                                    <div class="bar-item col-sm-2"><a href="javascript:;" class="toggle-btn">查看</a>
+                                    </div>
+                                </div>
+                                <div class="record-info-content">
+                                    <div class="content-inner">
+                                        <div class="form-table">
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-6">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">服务名称：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info">*提示信息占位</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-6">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">服务时间：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-6">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">描述：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-12">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">上传：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text" style="width:50%;">
+                                                                <a href="javascript:;" class="upload-btn btn btn-info">上传</a>
+                                                                <a href="javascript:;"
+                                                                   class="preview-btn btn btn-default">在线浏览</a>
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="record-foot" style="padding-top:30px; padding-bottom:30px;">
+                            <div class="text-center">
+                                <a href="javascript:;" class="btn btn-danger">新建服务记录</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content 服务确认-->
+                    <div class="content-service-confirm content-item">
+                        <ul class="confirm-bars list-unstyled">
+                            <li class="confirm-bar clearfix">
+                                <div class="name-item bar-item">
+                                    <span class="f-ellipsis" title="工商注册--纯注册">服务名称：工商注册--纯注册</span>
+                                </div>
+                                <div class="time-item bar-item">付款时间：2018-05-07 12:20</div>
+                                <div class="person-item bar-item">确认人：一二三四</div>
+                                <div class="handle-item bar-item">
+                                    <a href="javascrpt:;" class="btn btn-danger">保存</a>
+                                </div>
+                            </li>
+                            <li class="confirm-bar clearfix">
+                                <div class="name-item bar-item">
+                                    <span class="f-ellipsis" title="工商注册--纯注册">服务名称：工商注册--纯注册</span>
+                                </div>
+                                <div class="time-item bar-item">付款时间：2018-05-07 12:20</div>
+                                <div class="person-item bar-item"></div>
+                                <div class="handle-item bar-item">
+                                    <a href="javascrpt:;" class="btn btn-default">已完成</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--content 转交服务记录-->
+                    <div class="content-transmit-record content-item">
+                        <ul class="record-panels list-unstyled">
+                            <li class="record-panel">
+                                <div class="panel-head">
+                                    <span class="head-item">机会ID：1111</span><span
+                                        class="head-item">（公司注册----公司注册）</span><span
+                                        class="head-item">有限责任公司+推荐地址+纯注册</span>
+                                </div>
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                                    dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+                                    vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio
+                                </div>
+                            </li>
+                            <li class="record-panel">
+                                <div class="panel-head">
+                                    <span class="head-item">机会ID：1111</span><span
+                                        class="head-item">（公司注册----公司注册）</span><span
+                                        class="head-item">有限责任公司+推荐地址+纯注册</span>
+                                </div>
+                                <div class="panel-body">
+                                    无转交记录
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--content 详细-->
+                    <div class="content-details content-item">
+                        <div class="base-info">
+                            <div class="base-info-inner clearfix">
+                                <div class="info-item col-sm-5 col-xs-12">
+                                    机会来源：免费查询
+                                </div>
+                                <div class="info-item col-sm-7 col-xs-12">&nbsp;</div>
+                                <div class="info-item col-sm-5 col-xs-12">
+                                    联系电话：13890902323
+                                </div>
+                                <div class="info-item col-sm-7 col-xs-12">
+                                    联系人：张无忌
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-list">
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人名称：</span>
+                                <div class="desc">李元霸霸</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人类型：</span>
+                                <div class="desc">不晓得</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人性别：</span>
+                                <div class="desc">汉子</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">联系人：</span>
+                                <div class="desc">李元霸霸</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">邮箱：</span>
+                                <div class="desc">waixingren@163.com</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">电话号码：</span>
+                                <div class="desc">158 6666 6666</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">QQ号码：</span>
+                                <div class="desc">310000000</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">微信：</span>
+                                <div class="desc">310002</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">经营行业：</span>
+                                <div class="desc">?</div>
+                            </div>
+                            <div class="info-item clearfix">
+                                <span class="title pull-left">申请人地址：</span>
+                                <div class="desc">南山南</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content 用户资料-->
+                    <div class="content-info content-item">
+                        <div class="base-info info-container">
+                            <div class="container-title">基础信息：</div>
+                            <div class="container-body">
+                                <div class="container-body-inner clearfix">
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">会员性质：</span>
+                                        <div class="desc">个人</div>
+                                    </div>
+                                    <div class="info-item col-sm-7 col-xs-12 clearfix">
+                                        <span class="title pull-left">用户名：</span>
+                                        <div class="desc">rnw-123456789</div>
+                                    </div>
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">昵称：</span>
+                                        <div class="desc">路途上的月光</div>
+                                    </div>
+                                    <div class="info-item col-sm-7 col-xs-12 clearfix">
+                                        <span class="title pull-left">性别：</span>
+                                        <div class="desc">汉子</div>
+                                    </div>
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">手机号：</span>
+                                        <div class="desc">15012349876</div>
+                                    </div>
+                                    <div class="info-item col-sm-7 col-xs-12 clearfix">
+                                        <span class="title pull-left">邮箱：</span>
+                                        <div class="desc">mailmailmailmail@163.com</div>
+                                    </div>
+                                    <div class="info-item col-sm-5 col-xs-12 clearfix">
+                                        <span class="title pull-left">所在地区：</span>
+                                        <div class="desc">青岛</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-info info-container">
+                            <div class="container-title">其他信息：</div>
+                            <div class="container-body">
+                                <div class="info-item">
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">公司名称：</span>
+                                        <div class="desc">融诺网</div>
+                                    </div>
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">公司地址：</span>
+                                        <div class="desc">山东省青岛市市南区福州南路6号</div>
+                                    </div>
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">固定电话：</span>
+                                        <div class="desc">0532-88888888</div>
+                                    </div>
+                                    <div class="info-item clearfix">
+                                        <span class="title pull-left">QQ：</span>
+                                        <div class="desc">111111</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="theme/js/jquery.min.js"></script>
+<script src="plugin/artDialog4.1.6/jquery.artDialog.js"></script>
+<script>
+    //--user-info-tab切换示例
+    $('.user-info-tab .tab-nav').find('.nav-item').on('click', function () {
+        if ($(this).hasClass('current') == false) {
+            $(this).siblings('.current').removeClass('current');
+            $(this).addClass('current');
+        }
+    });
+
+    // 服务记录详情展示效果示例
+    function toggleServiceDetails($dom) {
+        var $triggerBtn = $dom.find('.toggle-btn'),
+            $thisToggleWrap,
+            $thisToggleInner,
+            $otherToggleWrap;
+        $triggerBtn.on('click', function () {
+            $thisToggleWrap = $(this).parents('.record-panel').find('.record-info-content');
+            $thisToggleInner = $thisToggleWrap.find('.content-inner');
+            $otherToggleWrap = $(this).parents('.record-panel').siblings('.record-panel').find('.record-info-content');
+            if ($(this).parents('.record-panel').hasClass('open') == false) {
+                $(this).text('收起');
+                $(this).parents('.record-panel').addClass('open')
+                    .siblings('.record-panel').removeClass('open').find('.toggle-btn').text('查看');
+                $thisToggleWrap.height($thisToggleInner.innerHeight());
+                $otherToggleWrap.height(0);
+            } else {
+                $(this).text('查看');
+                $(this).parents('.record-panel').removeClass('open');
+                $thisToggleWrap.height(0);
+            }
+        });
+    }
+
+    toggleServiceDetails($('.user-info-tab.finance-tab .content-service-record'));
+</script>
 </body>
 </html>
