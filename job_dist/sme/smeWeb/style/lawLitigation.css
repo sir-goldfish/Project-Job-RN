@@ -142,9 +142,9 @@ body { background-color: #f7f7f7; }
 
 .main-container .result-cards-wrap .result-card .card-body .base-info { height: 152px; }
 
-.main-container .result-cards-wrap .result-card .card-body .base-info figure { float: left; width: 118px; height: 118px; margin-right: -118px; border-radius: 50%; }
+.main-container .result-cards-wrap .result-card .card-body .base-info figure { float: left; width: 118px; height: 118px; margin-right: -118px; border-radius: 50%; overflow: hidden; }
 
-.main-container .result-cards-wrap .result-card .card-body .base-info figure img { display: block; width: 100%; height: 100%; border-radius: inherit; }
+.main-container .result-cards-wrap .result-card .card-body .base-info figure img { display: block; width: 100%; }
 
 .main-container .result-cards-wrap .result-card .card-body .base-info .info-desc { float: left; margin-left: 132px; font-size: 14px; }
 
