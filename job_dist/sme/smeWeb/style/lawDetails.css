@@ -182,7 +182,7 @@ body { background-color: #f7f7f7; }
 
 .main-container .service-tab-container .item-desc .base-desc-body { padding-left: 180px; padding-right: 180px; }
 
-.main-container .service-tab-container .item-desc .base-desc-body .service-desc .desc-panel { padding: 21px 26px; margin-top: 10px; margin-bottom: 10px; line-height: 24px; color: #666; background-color: #fbfbfb; background-repeat: no-repeat; background-position: right top; background-size: cover; }
+.main-container .service-tab-container .item-desc .base-desc-body .service-desc .desc-panel { padding: 21px 222px 21px 26px; margin-top: 10px; margin-bottom: 10px; line-height: 24px; color: #666; background-color: #fbfbfb; background-repeat: no-repeat; background-position: right top; background-size: cover; }
 
 .main-container .service-tab-container .item-desc .base-desc-body .service-desc .desc-panel .title { display: inline; color: #333; }
 
