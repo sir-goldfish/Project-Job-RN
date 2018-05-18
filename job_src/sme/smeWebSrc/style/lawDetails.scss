@@ -458,7 +458,7 @@ body {
       padding-right: $selfBodyPaddingX;
       .service-desc {
         .desc-panel {
-          padding: 26px - 5px 222px 26px - 5px 26px;
+          padding: 26px - 5px 26px;
           margin-top: 10px;
           margin-bottom: 10px;
           line-height: 24px;
@@ -474,6 +474,7 @@ body {
           dl {
             padding-top: 40px - ( 26px - 5px );
             padding-bottom: 40px - ( 26px - 5px );
+            //padding-right: 222px - 26px;
             dt {
               margin-bottom: 32px - 5px;
               font-size: 18px;
