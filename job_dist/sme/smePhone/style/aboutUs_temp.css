@@ -1,0 +1,28 @@
+/* sme-head */
+.sme-head .head-right a { font-size: 1.2rem; }
+
+/* desc-section */
+.desc-section { padding-bottom: 1.5rem; margin-top: 1rem; background-color: #fff; }
+
+.desc-section .desc-content { padding-left: 1rem; padding-right: 1rem; }
+
+.desc-section .desc-content .content-head { padding-top: 2rem; padding-bottom: .5rem; }
+
+.desc-section .desc-content .content-head .head-title { padding: 0 .8rem; font-size: 1.5rem; font-weight: bold; color: #333; border-left: 0.45rem solid #ff0010; }
+
+.desc-section .desc-content .content-body { line-height: 2rem; font-size: 1rem; color: #333; }
+
+.desc-section .desc-content .content-body .desc-pic { display: block; width: 100%; height: auto; margin: 1rem auto; }
+
+.desc-section .desc-content.org-desc .content-body p { text-indent: 2em; }
+
+/* contact-info-section */
+.contact-info-section { padding-top: 2.1rem; padding-bottom: 2.1rem; margin-top: 1rem; background-color: #fff; }
+
+.contact-info-section .info-list { margin-top: -1.1rem; font-size: 0; }
+
+.contact-info-section .info-list .info-item { display: inline-block; width: 50%; margin-top: 1.1rem; vertical-align: top; }
+
+.contact-info-section .info-list .info-item .icon { display: inline-block; width: 1.35rem; height: 1.2rem; vertical-align: middle; background-repeat: no-repeat; background-position: center; background-size: auto 100%; }
+
+.contact-info-section .info-list .info-item .text { display: inline-block; margin-left: .7rem; vertical-align: middle; font-size: 1rem; color: #666; }
