@@ -265,6 +265,8 @@
 
 .service-section * { box-sizing: border-box; }
 
+.service-section .section-body { padding-left: 122px; padding-right: 122px; }
+
 .service-section .service-cards { margin: -20px 0 0 -20px; }
 
 .service-section .service-card { float: left; width: 224px; height: 140px; margin: 20px 0 0 20px; text-align: center; font-size: 0; background-repeat: no-repeat; background-position: center; background-size: 100%; overflow: hidden; -webkit-transition: background-size .3s ease-out; transition: background-size .3s ease-out; }

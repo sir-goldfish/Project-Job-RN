@@ -646,6 +646,10 @@ $selfBoxShadow: 0 5px 15px 0 rgba(24, 5, 9, .15);
   * {
     box-sizing: border-box;
   }
+  .section-body {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
   .service-cards {
     margin: -20px 0 0 -20px;
   }
