@@ -168,6 +168,10 @@
 
 .service-desc-section .desc-pic img { display: block; margin: 0 auto; }
 
+.service-desc-section .section-foot { padding: 22px 0 40px; text-align: center; }
+
+.service-desc-section .section-foot .self-btn { min-width: 360px; }
+
 /* advantage-section */
 .advantage-section { box-sizing: border-box; background: url(../resource/img/sme_landing_bgi33.jpg) no-repeat center top; }
 
@@ -258,7 +262,7 @@
 
 .path-section .section-foot { padding: 40px 0; text-align: center; }
 
-.path-section .section-foot .self-btn { min-width: 200px; }
+.path-section .section-foot .self-btn { min-width: 360px; }
 
 /* other-service-section */
 .other-service-section { box-sizing: border-box; padding-bottom: 40px; background: url(../resource/img/sme_landing_bgi26.jpg) no-repeat center top; }
