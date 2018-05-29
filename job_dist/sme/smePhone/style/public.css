@@ -63,7 +63,7 @@
 
 .m-default-fixed-foot .foot-tools-bar { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; height: 6.5rem; text-align: center; background-color: #fff; box-shadow: 0 0 1px 0 #ddd; }
 
-.m-default-fixed-foot .foot-tool { padding: 1rem 0; font-size: 1.2rem; color: #333; }
+.m-default-fixed-foot .foot-tool { position: relative; -ms-flex-preferred-size: 33.33333%; flex-basis: 33.33333%; padding: 1rem 0; font-size: 1.2rem; color: #333; }
 
 .m-default-fixed-foot .foot-tool .tool-btn { color: inherit; }
 
@@ -76,6 +76,18 @@
 .m-default-fixed-foot .foot-tool.inquiry-tool .tool-btn .inquiry-icon .iconfont { width: 100%; height: 100%; line-height: 4.55rem; font-size: 2.8rem; color: #fff; background-color: #f78e24; border-radius: 50%; }
 
 .m-default-fixed-foot .foot-tool.inquiry-tool .tool-btn .text { position: relative; z-index: 1; }
+
+.m-default-fixed-foot .foot-tool.has-extension .tool-extension { position: absolute; bottom: calc(100% - .6rem); left: 0; width: 100%; height: 0; font-size: 1.2rem; color: #333; background-color: #fff; box-shadow: 0 0 0.75rem 0 rgba(170, 170, 170, 0.9); border-radius: .3rem; overflow: hidden; }
+
+.m-default-fixed-foot .foot-tool.has-extension .extension-list { text-align: center; }
+
+.m-default-fixed-foot .foot-tool.has-extension .extension-list .list-item a { width: 100%; padding: .7rem; }
+
+.m-default-fixed-foot .foot-tool.has-extension .extension-list .list-item a:hover { color: inherit; background-color: #ececec; }
+
+.m-default-fixed-foot .foot-tool.has-extension .extension-list .list-item a:active { color: inherit; background-color: #ddd; }
+
+.m-default-fixed-foot .foot-tool.has-extension.open .tool-extension { height: auto; }
 
 .with-default-fixed-foot { margin-bottom: 8.95rem; }
 

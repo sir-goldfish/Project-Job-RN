@@ -1,0 +1,338 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: #03cad6;
+
+/* self-btn */
+.self-btn {
+  $selfWidth: 8.5rem;
+  $selfHeight: 4rem;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: $selfWidth;
+  height: $selfHeight;
+  padding: 0 .85rem;
+  vertical-align: middle;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: .5rem;
+  &:hover {
+    color: #fff;
+  }
+  &.rounded-btn {
+    border-radius: $selfHeight;
+  }
+  &.block-btn {
+    display: block;
+    width: 100%;
+  }
+  &.green-btn {
+    background: linear-gradient(90deg, #03cad6, #03d6d0);
+    box-shadow: 0 .5rem .5rem 0 rgba(3, 202, 214, .3);
+    &:active {
+      background: linear-gradient(90deg, #03cad6 - 15%, #03d6d0 - 15%)
+    }
+  }
+}
+
+/* head-banner */
+.head-banner {
+  width: 100%;
+  overflow: hidden;
+  .banner-pic {
+    display: block;
+    img {
+      display: block;
+      width: 100%;
+      //height: 17rem;
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  text-align: center;
+  .head-title {
+    font-size: 1.8rem;
+    color: #333;
+    .line-title {
+      display: inline-block;
+      vertical-align: middle;
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 2.8rem;
+        height: 1px;
+        background-color: #c9c9c9;
+      }
+      &:before {
+        margin-right: 1.1rem;
+      }
+      &:after {
+        margin-left: 1.1rem;
+      }
+    }
+  }
+}
+
+/* query-section */
+.query-section {
+  background-color: #fff;
+  .query-form {
+    .stress {
+      color: $selfActiveColor;
+    }
+    .form-item {
+      $selfWidth: 6rem;
+      .input-label {
+        float: left;
+        width: $selfWidth;
+        margin-right: - $selfWidth;
+        line-height: 3.5rem;
+        font-size: 1.2rem;
+        color: #333;
+      }
+      .input-wrapper {
+        margin-left: $selfWidth;
+      }
+      .input-box {
+        input[type='text'] {
+          display: block;
+          width: 100%;
+          height: 3.5rem;
+          padding: 0 1.2rem;
+          line-height: 3.5rem;
+          font-size: 1.2rem;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          &:focus {
+            border-color: #ddd - 50%;
+          }
+        }
+      }
+      .hint-info {
+        padding: .5rem 0;
+        color: #f00;
+      }
+    }
+    .form-handle-item {
+      padding: .5rem 0 2.6rem;
+    }
+  }
+}
+
+/* record-panel */
+.record-panel {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  .record-swiper {
+    height: 6.7rem;
+    overflow: hidden;
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+    .swiper-slide {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
+
+/* desc-section */
+.desc-section {
+  margin-top: 1rem;
+  background-color: #fff;
+  .section-body {
+    padding-bottom: 2.2rem;
+    .desc-pic {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+/* case-section */
+.case-section {
+  margin-top: 1rem;
+  background-color: #fff;
+  .case-bars {
+    padding-bottom: 1.3rem;
+  }
+  .case-bar {
+    padding-bottom: .9rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-size: 0;
+    & > * {
+      padding: .4rem 0;
+      font-size: 1.2rem;
+    }
+    .bar-item {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      color: #333;
+      &:nth-child(even) {
+        padding-left: 1.2rem;
+      }
+    }
+    .bar-foot {
+      &.success {
+        color: $selfActiveColor;
+      }
+      &.fail {
+        color: #999;
+      }
+    }
+  }
+  .case-bar + .case-bar {
+    padding-top: .9rem;
+    border-top: 1px dashed #ddd;
+  }
+  .query-link {
+    display: block;
+    width: 100%;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* advantage-section */
+.advantage-section {
+  margin-top: 1rem;
+  background-color: #fff;
+  .section-body {
+    .desc-pic {
+      display: block;
+      width: 100%;
+    }
+  }
+  .section-foot {
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* reason-section */
+.reason-section {
+  margin-top: 1rem;
+  background-color: #fff;
+  .section-body {
+    .desc-pic {
+      display: block;
+      width: 100%;
+    }
+  }
+  .section-foot {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* path-section */
+.path-section {
+  margin-top: 1rem;
+  background-color: #fff;
+  .section-body {
+    .desc-pic {
+      display: block;
+      width: 18rem;
+      margin: 0 auto;
+    }
+  }
+  .section-foot {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    .desc-pic {
+      display: block;
+      width: 24.2rem;
+      margin: 1.8rem auto 0;
+    }
+  }
+}
+
+/* other-service-section */
+.other-service-section {
+  margin-top: 1rem;
+  background-color: #fff;
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    margin-top: -1.5rem;
+  }
+  .service-card {
+    width: 9rem;
+    height: 3.25rem;
+    margin-top: 1.5rem;
+    line-height: 3.25rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $selfActiveColor;
+    background: url(../resource/img/smep_pic48.png) no-repeat center;
+    background-size: 100%;
+  }
+}
+
+/* foot-query-section */
+.foot-query-section {
+  padding-top: 1.7rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  .input-box {
+    $selfHeight: 4rem;
+    $selfBtnWidth: 10rem;
+    position: relative;
+    font-size: 1.2rem;
+    input[type='text'] {
+      display: block;
+      width: 100%;
+      height: $selfHeight;
+      padding: 0 1.2rem + $selfBtnWidth 0 1.2rem;
+      line-height: $selfHeight;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-top-right-radius: $selfHeight;
+      border-bottom-right-radius: $selfHeight;
+    }
+    .query-btn {
+      $selfWidth: $selfBtnWidth;
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: $selfWidth;
+      height: $selfHeight;
+      line-height: $selfHeight;
+      &.rounded-btn {
+        border-radius: $selfHeight;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      &.green-btn {
+        box-shadow: none;
+      }
+    }
+  }
+  .hint-info {
+    padding-top: .7rem;
+    padding-bottom: 1rem;
+    color: #f00;
+  }
+}

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* self-btn */
+.self-btn { box-sizing: border-box; display: inline-block; min-width: 8.5rem; height: 4rem; padding: 0 .85rem; vertical-align: middle; line-height: 4rem; text-align: center; font-size: 1.5rem; color: #fff; border-radius: .5rem; }
+
+.self-btn:hover { color: #fff; }
+
+.self-btn.rounded-btn { border-radius: 4rem; }
+
+.self-btn.block-btn { display: block; width: 100%; }
+
+.self-btn.green-btn { background: -webkit-linear-gradient(left, #03cad6, #03d6d0); background: linear-gradient(90deg, #03cad6, #03d6d0); box-shadow: 0 0.5rem 0.5rem 0 rgba(3, 202, 214, 0.3); }
+
+.self-btn.green-btn:active { background: -webkit-linear-gradient(left, #00bbc7, #00c7c1); background: linear-gradient(90deg, #00bbc7, #00c7c1); }
+
+/* head-banner */
+.head-banner { width: 100%; overflow: hidden; }
+
+.head-banner .banner-pic { display: block; }
+
+.head-banner .banner-pic img { display: block; width: 100%; }
+
+/* section-head 共 */
+.section-head { padding-top: 1.8rem; padding-bottom: 1.8rem; text-align: center; }
+
+.section-head .head-title { font-size: 1.8rem; color: #333; }
+
+.section-head .head-title .line-title { display: inline-block; vertical-align: middle; }
+
+.section-head .head-title .line-title:before, .section-head .head-title .line-title:after { content: ''; display: inline-block; vertical-align: middle; width: 2.8rem; height: 1px; background-color: #c9c9c9; }
+
+.section-head .head-title .line-title:before { margin-right: 1.1rem; }
+
+.section-head .head-title .line-title:after { margin-left: 1.1rem; }
+
+/* query-section */
+.query-section { background-color: #fff; }
+
+.query-section .query-form .stress { color: #03cad6; }
+
+.query-section .query-form .form-item .input-label { float: left; width: 6rem; margin-right: -6rem; line-height: 3.5rem; font-size: 1.2rem; color: #333; }
+
+.query-section .query-form .form-item .input-wrapper { margin-left: 6rem; }
+
+.query-section .query-form .form-item .input-box input[type='text'] { display: block; width: 100%; height: 3.5rem; padding: 0 1.2rem; line-height: 3.5rem; font-size: 1.2rem; background-color: #fff; border: 1px solid #ddd; }
+
+.query-section .query-form .form-item .input-box input[type='text']:focus { border-color: #ababab; }
+
+.query-section .query-form .form-item .hint-info { padding: .5rem 0; color: #f00; }
+
+.query-section .query-form .form-handle-item { padding: .5rem 0 2.6rem; }
+
+/* record-panel */
+.record-panel { padding-top: 1.5rem; padding-bottom: 1.5rem; margin-top: 1rem; background-color: #fff; }
+
+.record-panel .record-swiper { height: 6.7rem; overflow: hidden; }
+
+.record-panel .record-swiper .swiper-wrapper { -webkit-transition-timing-function: linear; transition-timing-function: linear; }
+
+.record-panel .record-swiper .swiper-slide { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; width: 100%; height: 1.5rem; line-height: 1.5rem; font-size: 1rem; color: #666; }
+
+/* desc-section */
+.desc-section { margin-top: 1rem; background-color: #fff; }
+
+.desc-section .section-body { padding-bottom: 2.2rem; }
+
+.desc-section .section-body .desc-pic { display: block; width: 100%; }
+
+/* case-section */
+.case-section { margin-top: 1rem; background-color: #fff; }
+
+.case-section .case-bars { padding-bottom: 1.3rem; }
+
+.case-section .case-bar { padding-bottom: .9rem; margin-left: .5rem; margin-right: .5rem; font-size: 0; }
+
+.case-section .case-bar > * { padding: .4rem 0; font-size: 1.2rem; }
+
+.case-section .case-bar .bar-item { display: inline-block; width: 50%; vertical-align: top; color: #333; }
+
+.case-section .case-bar .bar-item:nth-child(even) { padding-left: 1.2rem; }
+
+.case-section .case-bar .bar-foot.success { color: #03cad6; }
+
+.case-section .case-bar .bar-foot.fail { color: #999; }
+
+.case-section .case-bar + .case-bar { padding-top: .9rem; border-top: 1px dashed #ddd; }
+
+.case-section .query-link { display: block; width: 100%; }
+
+.case-section .query-link img { display: block; width: 100%; height: auto; }
+
+/* advantage-section */
+.advantage-section { margin-top: 1rem; background-color: #fff; }
+
+.advantage-section .section-body .desc-pic { display: block; width: 100%; }
+
+.advantage-section .section-foot { padding-top: 2.2rem; padding-bottom: 2.5rem; }
+
+/* reason-section */
+.reason-section { margin-top: 1rem; background-color: #fff; }
+
+.reason-section .section-body .desc-pic { display: block; width: 100%; }
+
+.reason-section .section-foot { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+/* path-section */
+.path-section { margin-top: 1rem; background-color: #fff; }
+
+.path-section .section-body .desc-pic { display: block; width: 18rem; margin: 0 auto; }
+
+.path-section .section-foot { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+.path-section .section-foot .desc-pic { display: block; width: 24.2rem; margin: 1.8rem auto 0; }
+
+/* other-service-section */
+.other-service-section { margin-top: 1rem; background-color: #fff; }
+
+.other-service-section .service-cards { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; padding-bottom: 2rem; margin-top: -1.5rem; }
+
+.other-service-section .service-card { width: 9rem; height: 3.25rem; margin-top: 1.5rem; line-height: 3.25rem; text-align: center; font-size: 1.5rem; color: #03cad6; background: url(../resource/img/smep_pic48.png) no-repeat center; background-size: 100%; }
+
+/* foot-query-section */
+.foot-query-section { padding-top: 1.7rem; margin-top: 1rem; background-color: #fff; }
+
+.foot-query-section .input-box { position: relative; font-size: 1.2rem; }
+
+.foot-query-section .input-box input[type='text'] { display: block; width: 100%; height: 4rem; padding: 0 11.2rem 0 1.2rem; line-height: 4rem; background-color: #fff; border: 1px solid #ddd; border-top-right-radius: 4rem; border-bottom-right-radius: 4rem; }
+
+.foot-query-section .input-box .query-btn { position: absolute; top: 0; right: 0; min-width: 10rem; height: 4rem; line-height: 4rem; }
+
+.foot-query-section .input-box .query-btn.rounded-btn { border-radius: 4rem; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.foot-query-section .input-box .query-btn.green-btn { box-shadow: none; }
+
+.foot-query-section .hint-info { padding-top: .7rem; padding-bottom: 1rem; color: #f00; }
