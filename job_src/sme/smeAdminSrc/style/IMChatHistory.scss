@@ -1,0 +1,203 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfColorStress: #5fb878;
+$selfColorStressHover: #5fb878 - 15%;
+$selfColorStressActive: #5fb878 - 30%;
+
+.chat-handle {
+  color: $selfColorStress;
+  &:hover, &:focus {
+    color: $selfColorStressHover;
+  }
+  &:active {
+    color: $selfColorStressActive;
+  }
+}
+
+/* chat-history-container */
+.chat-history-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+/* chat-body */
+.chat-history-container .chat-body {
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* chat-foot */
+.chat-history-container .chat-foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 0;
+  background-color: #fff;
+  box-shadow: 0 -5px 10px 0 rgba(24, 5, 9, 0.1);
+  &:before {
+    @include globalVerticalMiddleAssist;
+  }
+  .foot-inner {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+}
+
+/* chat-bars */
+.chat-history-container .chat-bars {
+  padding: 15px;
+}
+
+.chat-history-container .chat-bar {
+  $selfAvatarWidth: 40px;
+  $selfBgColor: #e2e2e2;
+  text-align: left;
+  .avatar {
+    float: left;
+    width: $selfAvatarWidth;
+    height: $selfAvatarWidth;
+    margin-right: - $selfAvatarWidth;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      display: block;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+    }
+  }
+  .content {
+    margin-left: $selfAvatarWidth + 20px;
+    .user-info {
+      font-size: 13px;
+      color: #999;
+      white-space: nowrap;
+      span + span {
+        margin-left: 15px;
+      }
+    }
+    .chat-wrap {
+      .chat-box {
+        position: relative;
+        display: inline-block;
+        min-height: 38px;
+        padding: 8px 15px;
+        margin-top: 10px;
+        line-height: 22px;
+        font-size: 14px;
+        color: #333;
+        word-wrap: break-word;
+        word-break: break-all;
+        background-color: $selfBgColor;
+        border-radius: 3px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: -10px;
+          top: 13px;
+          width: 0;
+          height: 0;
+          border-style: dashed;
+          border-color: transparent;
+          border-width: 10px;
+          border-top-style: solid;
+          border-top-color: $selfBgColor;
+          overflow: hidden;
+        }
+        &.chat-img {
+          img {
+            display: block;
+            max-width: 100%;
+          }
+          img + img {
+            margin-top: 8px;
+          }
+        }
+        &.chat-file {
+          $selfFontColor: #333;
+          text-align: center;
+          .icon {
+            display: block;
+            line-height: 1;
+            font-size: 80px;
+            color: $selfFontColor;
+          }
+          .file-handle {
+            margin-top: 5px;
+            vertical-align: middle;
+            color: $selfFontColor;
+            &:hover, &:focus {
+              color: $selfFontColor + 15%;
+            }
+            &:active {
+              color: $selfFontColor + 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.chat-self {
+    $selfBgColor: $selfColorStress;
+    text-align: right;
+    .avatar {
+      float: right;
+      margin-left: - $selfAvatarWidth;
+      margin-right: 0;
+    }
+    .content {
+      margin-right: $selfAvatarWidth + 20px;
+      margin-left: 0;
+      .chat-wrap {
+        .chat-box {
+          color: #fff;
+          background-color: $selfBgColor;
+          &:before {
+            left: auto;
+            right: -10px;
+            border-top-color: $selfBgColor;
+          }
+          &.chat-file {
+            $selfFontColor: #fff;
+            text-align: center;
+            .icon {
+              display: block;
+              line-height: 1;
+              font-size: 80px;
+              color: $selfFontColor;
+            }
+            .file-handle {
+              margin-top: 5px;
+              vertical-align: middle;
+              color: $selfFontColor;
+              &:hover, &:focus {
+                color: $selfFontColor - 15%;
+              }
+              &:active {
+                color: $selfFontColor - 30%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.chat-history-container .chat-bar + .chat-bar {
+  margin-top: 10px;
+}

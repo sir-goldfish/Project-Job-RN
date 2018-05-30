@@ -157,9 +157,32 @@ $selfActiveColor: #03cad6;
   background-color: #fff;
   .section-body {
     padding-bottom: 2.2rem;
-    .desc-pic {
-      display: block;
-      width: 100%;
+  }
+  .desc-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -1rem;
+    .stress {
+      color: $selfActiveColor;
+    }
+    li {
+      width: 48%;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      margin-top: 1rem;
+      text-align: center;
+      border: 1px solid $selfActiveColor;
+      &:before {
+        @include globalVerticalMiddleAssist;
+      }
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        color: #666;
+      }
     }
   }
 }
@@ -217,10 +240,32 @@ $selfActiveColor: #03cad6;
 .advantage-section {
   margin-top: 1rem;
   background-color: #fff;
-  .section-body {
-    .desc-pic {
-      display: block;
+  .desc-list {
+    padding-left: .5rem;
+    li {
+      position: relative;
       width: 100%;
+      padding: .5rem 2rem;
+      font-size: 1.2rem;
+      color: #666;
+      border: 1px solid $selfActiveColor;
+      border-radius: .4rem;
+      .num {
+        position: absolute;
+        top: -.5rem;
+        left: -.5rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        line-height: 1.8rem;
+        text-align: center;
+        font-family: Arial;
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-radius: 50%;
+      }
+    }
+    li + li {
+      margin-top: 1rem;
     }
   }
   .section-foot {
@@ -233,10 +278,73 @@ $selfActiveColor: #03cad6;
 .reason-section {
   margin-top: 1rem;
   background-color: #fff;
-  .section-body {
-    .desc-pic {
-      display: block;
-      width: 100%;
+  .desc-panels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .desc-panel {
+    $selfColor: #c9c9c9;
+    width: 46%;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    h3 {
+      padding: .6rem 0;
+      font-size: 1.2rem;
+      font-weight: normal;
+      border: 1px solid $selfColor;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+    }
+    .list {
+      margin-top: 1.6rem;
+      display: inline-block;
+      ul {
+        line-height: 1;
+        text-align: justify;
+        border-left: 1px dashed $selfColor;
+      }
+      li {
+        position: relative;
+        padding-left: 1.5rem;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -.5rem;
+          width: .9rem;
+          height: .9rem;
+          background-color: #fff;
+          border: 1px solid $selfColor;
+          border-radius: 50%;
+        }
+        &:last-child {
+          &:before {
+            top: .1rem;
+          }
+        }
+      }
+      li + li {
+        margin-top: 1.3rem;
+      }
+    }
+    &:nth-child(even) {
+      $selfColor: $selfActiveColor;
+      h3 {
+        color: $selfColor;
+        border-color: $selfColor;
+      }
+      .list {
+        ul {
+          border-left-color: $selfColor;
+        }
+        li {
+          &:before {
+            border-color: $selfColor;
+          }
+        }
+      }
     }
   }
   .section-foot {
@@ -249,20 +357,69 @@ $selfActiveColor: #03cad6;
 .path-section {
   margin-top: 1rem;
   background-color: #fff;
-  .section-body {
-    .desc-pic {
-      display: block;
-      width: 18rem;
-      margin: 0 auto;
+  .path-list {
+    width: 100%;
+    text-align: center;
+    li > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    li + li {
+      margin-top: 1rem;
+    }
+    .border-text {
+      padding: .5rem 1.5rem;
+      font-size: 1.2rem;
+      color: $selfActiveColor;
+      border: 1px solid $selfActiveColor;
+      border-radius: .3rem;
+    }
+    .arrow {
+      width: 1.2rem;
+      height: 1.05rem;
+      background: url(../resource/img/smep_icon15.png) no-repeat center;
+      background-size: auto 100%;
+    }
+    .icon {
+      width: 4.4rem;
+      height: 4.9rem;
+      line-height: 4.9rem;
+      font-size: 2.8rem;
+      color: $selfActiveColor;
+      background: url(../resource/img/smep_pic42.png) no-repeat center;
+      background-size: auto 100%;
+    }
+    .text {
+      font-size: 1.2rem;
+      color: #333;
     }
   }
   .section-foot {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    .desc-pic {
-      display: block;
+    .foot-info {
       width: 24.2rem;
+      padding: 1.2rem 0;
       margin: 1.8rem auto 0;
+      text-align: center;
+      font-size: 0;
+      border: 1px solid #f39700;
+      border-radius: .3rem;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i {
+        font-size: 2.5rem;
+        color: #f39700;
+      }
+      span {
+        margin-left: .9rem;
+        text-align: justify;
+        line-height: 1.5rem;
+        font-size: .9rem;
+        color: #999;
+      }
     }
   }
 }
@@ -311,6 +468,9 @@ $selfActiveColor: #03cad6;
       border: 1px solid #ddd;
       border-top-right-radius: $selfHeight;
       border-bottom-right-radius: $selfHeight;
+      &:focus {
+        border-color: #ddd - 50%;
+      }
     }
     .query-btn {
       $selfWidth: $selfBtnWidth;

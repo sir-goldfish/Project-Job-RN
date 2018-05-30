@@ -1,0 +1,73 @@
+.chat-handle { color: #5fb878; }
+
+.chat-handle:hover, .chat-handle:focus { color: #50a969; }
+
+.chat-handle:active { color: #419a5a; }
+
+/* chat-history-container */
+.chat-history-container { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #fff; }
+
+/* chat-body */
+.chat-history-container .chat-body { position: absolute; top: 0; bottom: 50px; left: 0; width: 100%; overflow-y: auto; overflow-x: hidden; }
+
+/* chat-foot */
+.chat-history-container .chat-foot { position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; font-size: 0; background-color: #fff; box-shadow: 0 -5px 10px 0 rgba(24, 5, 9, 0.1); }
+
+.chat-history-container .chat-foot:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.chat-history-container .chat-foot .foot-inner { display: inline-block; width: 100%; vertical-align: middle; font-size: 14px; }
+
+/* chat-bars */
+.chat-history-container .chat-bars { padding: 15px; }
+
+.chat-history-container .chat-bar { text-align: left; }
+
+.chat-history-container .chat-bar .avatar { float: left; width: 40px; height: 40px; margin-right: -40px; border-radius: 50%; overflow: hidden; }
+
+.chat-history-container .chat-bar .avatar img { display: block; width: inherit; height: inherit; border-radius: inherit; }
+
+.chat-history-container .chat-bar .content { margin-left: 60px; }
+
+.chat-history-container .chat-bar .content .user-info { font-size: 13px; color: #999; white-space: nowrap; }
+
+.chat-history-container .chat-bar .content .user-info span + span { margin-left: 15px; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box { position: relative; display: inline-block; min-height: 38px; padding: 8px 15px; margin-top: 10px; line-height: 22px; font-size: 14px; color: #333; word-wrap: break-word; word-break: break-all; background-color: #e2e2e2; border-radius: 3px; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box:before { content: ''; position: absolute; left: -10px; top: 13px; width: 0; height: 0; border-style: dashed; border-color: transparent; border-width: 10px; border-top-style: solid; border-top-color: #e2e2e2; overflow: hidden; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-img img { display: block; max-width: 100%; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-img img + img { margin-top: 8px; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-file { text-align: center; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-file .icon { display: block; line-height: 1; font-size: 80px; color: #333; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-file .file-handle { margin-top: 5px; vertical-align: middle; color: #333; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-file .file-handle:hover, .chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-file .file-handle:focus { color: #424242; }
+
+.chat-history-container .chat-bar .content .chat-wrap .chat-box.chat-file .file-handle:active { color: #515151; }
+
+.chat-history-container .chat-bar.chat-self { text-align: right; }
+
+.chat-history-container .chat-bar.chat-self .avatar { float: right; margin-left: -40px; margin-right: 0; }
+
+.chat-history-container .chat-bar.chat-self .content { margin-right: 60px; margin-left: 0; }
+
+.chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box { color: #fff; background-color: #5fb878; }
+
+.chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box:before { left: auto; right: -10px; border-top-color: #5fb878; }
+
+.chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box.chat-file { text-align: center; }
+
+.chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box.chat-file .icon { display: block; line-height: 1; font-size: 80px; color: #fff; }
+
+.chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box.chat-file .file-handle { margin-top: 5px; vertical-align: middle; color: #fff; }
+
+.chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box.chat-file .file-handle:hover, .chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box.chat-file .file-handle:focus { color: #f0f0f0; }
+
+.chat-history-container .chat-bar.chat-self .content .chat-wrap .chat-box.chat-file .file-handle:active { color: #e1e1e1; }
+
+.chat-history-container .chat-bar + .chat-bar { margin-top: 10px; }
