@@ -728,6 +728,148 @@
   }
 }
 
+// 财税服务公用头部
+.sme-head7 {
+  .head-bar {
+    $font: 12px;
+    padding: 10px 0;
+    font-size: $font;
+    background-color: #333;
+    a {
+      &:hover {
+        color: $globeFinanceColorStress;
+      }
+    }
+    .bar-left {
+      float: left;
+      .location-box {
+        display: inline-block;
+        .res-city {
+          i {
+            margin-right: 2px;
+            vertical-align: top;
+            font-size: 12px;
+            color: #fff;
+          }
+        }
+      }
+      .hot-line, .stock-code {
+        margin-left: 20px;
+      }
+      .stock-code {
+        em {
+          color: $globeFinanceColorStress;
+        }
+      }
+    }
+    .bar-right {
+      float: right;
+      font-size: 0;
+      .nav-item {
+        display: inline-block;
+        margin-left: 15px;
+        font-size: $font;
+      }
+      .stress {
+        a {
+          color: $globeFinanceColorStress;
+        }
+      }
+      .user-content {
+        .register {
+          margin-left: 15px;
+        }
+        .exit {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .head-logo {
+    padding: 16px 0;
+    background-color: #fff;
+    .logo-link {
+      float: left;
+      img {
+        vertical-align: middle;
+      }
+    }
+    .logo-nav {
+      $selfColor: #333;
+      float: left;
+      padding-top: 4px;
+      margin-left: -35px;
+      .nav-item {
+        position: relative;
+        float: left;
+        margin-left: 35px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: $selfColor;
+        .item-name {
+          font-size: 16px;
+          color: inherit;
+          &:hover {
+            color: $globeFinanceColorStress;
+          }
+        }
+        .hide-group {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          z-index: 5;
+          display: none;
+          padding-top: 18px;
+          .group-list {
+            position: relative;
+            min-width: 58px;
+            padding: 20px 20px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, .9);
+            border-radius: 5px;
+            box-shadow: 0 0 8px 0 rgba(19, 5, 10, .3);
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 50%;
+              width: 22px;
+              height: 13px;
+              margin: -13px 0 0 -11px;
+              background: url(../resource/img/sme_icon19.png) no-repeat center;
+            }
+            .group-item {
+              padding-bottom: 20px;
+              a {
+                color: $selfColor;
+                &:hover {
+                  color: $globeFinanceColorStress;
+                }
+              }
+              &.chosen {
+                a {
+                  color: $globeFinanceColorStress;
+                }
+              }
+            }
+          }
+        }
+        &.current {
+          .item-name {
+            font-weight: bold;
+            color: $globeFinanceColorStress;
+          }
+        }
+        &:hover {
+          .hide-group {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* sme-foot */
 .sme-foot {
   $iconColor: #cacaca;
@@ -799,9 +941,11 @@
     .text-link {
       float: left;
       width: 100%;
-      margin-right: -236px;
+      margin-right: -200px;
+      //margin-right: -236px;
       .text-link-inner {
-        margin-right: 236px;
+        margin-right: 200px;
+        //margin-right: 236px;
       }
       .top-link {
         margin-bottom: 15px;
@@ -823,10 +967,12 @@
           }
         }
         .about-links {
-          width: 28%;
+          width: 27%;
+          //width: 28%;
         }
         .service-links {
-          width: 19%;
+          width: 15%;
+          //width: 19%;
           dd {
             width: 100%;
           }
@@ -835,7 +981,8 @@
           width: 28%;
         }
         .hot-line {
-          width: 23%;
+          width: 29%;
+          //width: 23%;
           dd {
             width: 100%;
           }

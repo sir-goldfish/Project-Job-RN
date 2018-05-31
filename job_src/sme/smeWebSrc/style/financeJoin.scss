@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeFinanceColorStress;
+$selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
+
+/* self-btn */
+.self-btn {
+  $selfWidth: 180px;
+  $selfHeight: 50px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: $selfWidth;
+  height: $selfHeight;
+  padding: 0 20px;
+  vertical-align: middle;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  &:hover {
+    color: #fff;
+  }
+  &.rounded-btn {
+    border-radius: $selfHeight;
+  }
+  &.red-btn {
+    background: $selfActiveColor;
+    &:hover {
+      background: $selfActiveColor - 15%;
+    }
+    &:active {
+      background: $selfActiveColor - 30%;
+    }
+  }
+}
+
+/* head-section */
+.head-section {
+  box-sizing: border-box;
+  height: 450px;
+  background: url(../resource/img/sme_finance_pic001.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .query-container {
+    padding-top: 329px;
+    .input-box {
+      $selfHeight: 50px;
+      position: relative;
+      width: 414px;
+      margin: 0 auto;
+      input[type='text'] {
+        display: block;
+        width: 100%;
+        height: $selfHeight;
+        padding: 15px 25px + 130px 15px 25px;
+        line-height: 20px;
+        background-color: #fff;
+        border: 1px solid $selfActiveColor;
+        border-radius: $selfHeight;
+      }
+      .query-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 130px;
+        &.rounded-btn {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+    .hint-info {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #f00;
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  text-align: center;
+  .head-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+  }
+  &.head-w {
+    .head-title {
+      color: #fff;
+    }
+  }
+}
+
+/* problem-section */
+.problem-section {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-list {
+    padding-bottom: 70px;
+    margin: -58px 0 0 -30px;
+    li {
+      float: left;
+      width: 380px;
+      height: 250px;
+      margin: 58px 0 0 30px;
+      background-color: #fff;
+      box-shadow: $selfBoxShadow;
+      figure {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .content {
+        padding: 16px 20px;
+        font-size: 14px;
+        color: #333;
+        h3 {
+          font-size: inherit;
+          font-weight: bold;
+        }
+        p {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
+
+/* desc-section */
+.desc-section {
+  box-sizing: border-box;
+  height: 548px;
+  padding-top: 68px;
+  background: url(../resource/img/sme_finance_pic008.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .market {
+    width: 724px;
+    dt {
+      font-size: 30px;
+      font-weight: bold;
+      color: $selfActiveColor;
+    }
+    dd {
+      margin-top: 53px - 8px;
+      line-height: 30px;
+      font-size: 14px;
+      color: #fff;
+    }
+    dd + dd {
+      margin-top: 86px - 8px - 8px;
+    }
+  }
+  .self {
+    dt {
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+    }
+    dd {
+      width: 340px;
+      height: 150px;
+      margin-top: 48px;
+      text-align: center;
+      font-size: 0;
+      border: 1px solid #fff;
+      &:before {
+        @include globalVerticalMiddleAssist;
+      }
+      .inner {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        color: #fff;
+      }
+      p {
+        margin-top: 23px;
+      }
+    }
+    dd + dd {
+      margin-top: 38px;
+    }
+  }
+}
+
+/* advantage-section */
+.advantage-section {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-list {
+    padding-bottom: 90px;
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+      .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        background: url(../resource/img/sme_finance_sprites.png) no-repeat 0 -102px;
+      }
+      h3 {
+        margin-top: 19px;
+        font-size: inherit;
+        font-weight: normal;
+        color: #333;
+      }
+    }
+    li + li {
+      margin-left: 104px;
+    }
+  }
+}
+
+/* path-section */
+.path-section {
+  box-sizing: border-box;
+  background: url(../resource/img/sme_finance_pic009.jpg) no-repeat center top;
+  background-size: cover;
+  * {
+    box-sizing: border-box;
+  }
+  .section-body {
+    padding-bottom: 64px;
+  }
+  .path-list {
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+      color: #fff;
+      .icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background: url(../resource/img/sme_finance_sprites.png) no-repeat 0 0;
+      }
+      h3 {
+        margin-top: 30px;
+        font-size: inherit;
+        font-weight: bold;
+      }
+      p {
+        margin-top: 22px - 2px;
+        line-height: 18px;
+        font-size: 14px;
+      }
+      &.arrow {
+        margin: 25px 20px 0;
+        font-size: 50px;
+        color: $onColorOrange;
+      }
+    }
+  }
+  .query-container {
+    padding-top: 64px;
+    .input-box {
+      $selfHeight: 50px;
+      position: relative;
+      width: 534px;
+      margin: 0 auto;
+      input[type='text'] {
+        display: block;
+        width: 100%;
+        height: $selfHeight;
+        padding: 15px 25px + 130px 15px 25px;
+        line-height: 20px;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: $selfHeight;
+        &:focus {
+          border-color: $selfActiveColor;
+        }
+      }
+      .query-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 189px;
+      }
+    }
+    .hint-info {
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      font-size: 12px;
+      color: #f00;
+    }
+  }
+  .phone-pic {
+    display: block;
+    margin: 0 auto;
+  }
+}

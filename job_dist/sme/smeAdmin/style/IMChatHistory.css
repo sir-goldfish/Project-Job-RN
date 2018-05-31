@@ -32,7 +32,7 @@
 
 .chat-history-container .chat-bar .content .user-info span + span { margin-left: 15px; }
 
-.chat-history-container .chat-bar .content .chat-wrap .chat-box { position: relative; display: inline-block; min-height: 38px; padding: 8px 15px; margin-top: 10px; line-height: 22px; font-size: 14px; color: #333; word-wrap: break-word; word-break: break-all; background-color: #e2e2e2; border-radius: 3px; }
+.chat-history-container .chat-bar .content .chat-wrap .chat-box { position: relative; display: inline-block; min-height: 38px; padding: 8px 15px; margin-top: 10px; line-height: 22px; text-align: justify; font-size: 14px; color: #333; word-wrap: break-word; word-break: break-all; background-color: #e2e2e2; border-radius: 3px; }
 
 .chat-history-container .chat-bar .content .chat-wrap .chat-box:before { content: ''; position: absolute; left: -10px; top: 13px; width: 0; height: 0; border-style: dashed; border-color: transparent; border-width: 10px; border-top-style: solid; border-top-color: #e2e2e2; overflow: hidden; }
 

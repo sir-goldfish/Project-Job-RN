@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* self-btn */
+.self-btn { box-sizing: border-box; display: inline-block; min-width: 180px; height: 50px; padding: 0 20px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 16px; color: #fff; border-radius: 4px; }
+
+.self-btn:hover { color: #fff; }
+
+.self-btn.rounded-btn { border-radius: 50px; }
+
+.self-btn.red-btn { background: #e00000; }
+
+.self-btn.red-btn:hover { background: #d10000; }
+
+.self-btn.red-btn:active { background: #c20000; }
+
+/* head-section */
+.head-section { box-sizing: border-box; height: 450px; background: url(../resource/img/sme_finance_pic001.jpg) no-repeat center top; }
+
+.head-section * { box-sizing: border-box; }
+
+.head-section .query-container { padding-top: 329px; }
+
+.head-section .query-container .input-box { position: relative; width: 414px; margin: 0 auto; }
+
+.head-section .query-container .input-box input[type='text'] { display: block; width: 100%; height: 50px; padding: 15px 155px 15px 25px; line-height: 20px; background-color: #fff; border: 1px solid #e00000; border-radius: 50px; }
+
+.head-section .query-container .input-box .query-btn { position: absolute; top: 0; right: 0; min-width: 130px; }
+
+.head-section .query-container .input-box .query-btn.rounded-btn { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.head-section .query-container .hint-info { padding: 10px 0; text-align: center; font-size: 12px; color: #f00; }
+
+/* section-head 共 */
+.section-head { padding-top: 66px; padding-bottom: 66px; text-align: center; }
+
+.section-head .head-title { font-size: 30px; font-weight: bold; color: #333; }
+
+.section-head.head-w .head-title { color: #fff; }
+
+/* problem-section */
+.problem-section { box-sizing: border-box; background-color: #f8f8f8; }
+
+.problem-section * { box-sizing: border-box; }
+
+.problem-section .desc-list { padding-bottom: 70px; margin: -58px 0 0 -30px; }
+
+.problem-section .desc-list li { float: left; width: 380px; height: 250px; margin: 58px 0 0 30px; background-color: #fff; box-shadow: 0 0 10px 1px #eeeeee; }
+
+.problem-section .desc-list li figure { width: 100%; height: 180px; overflow: hidden; }
+
+.problem-section .desc-list li figure img { display: block; width: 100%; height: 100%; }
+
+.problem-section .desc-list li .content { padding: 16px 20px; font-size: 14px; color: #333; }
+
+.problem-section .desc-list li .content h3 { font-size: inherit; font-weight: bold; }
+
+.problem-section .desc-list li .content p { margin-top: 12px; }
+
+/* desc-section */
+.desc-section { box-sizing: border-box; height: 548px; padding-top: 68px; background: url(../resource/img/sme_finance_pic008.jpg) no-repeat center top; }
+
+.desc-section * { box-sizing: border-box; }
+
+.desc-section .market { width: 724px; }
+
+.desc-section .market dt { font-size: 30px; font-weight: bold; color: #e00000; }
+
+.desc-section .market dd { margin-top: 45px; line-height: 30px; font-size: 14px; color: #fff; }
+
+.desc-section .market dd + dd { margin-top: 70px; }
+
+.desc-section .self dt { font-size: 30px; font-weight: bold; color: #fff; }
+
+.desc-section .self dd { width: 340px; height: 150px; margin-top: 48px; text-align: center; font-size: 0; border: 1px solid #fff; }
+
+.desc-section .self dd:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.desc-section .self dd .inner { display: inline-block; vertical-align: middle; font-size: 14px; color: #fff; }
+
+.desc-section .self dd p { margin-top: 23px; }
+
+.desc-section .self dd + dd { margin-top: 38px; }
+
+/* advantage-section */
+.advantage-section { box-sizing: border-box; background-color: #f8f8f8; }
+
+.advantage-section * { box-sizing: border-box; }
+
+.advantage-section .desc-list { padding-bottom: 90px; text-align: center; font-size: 0; }
+
+.advantage-section .desc-list li { display: inline-block; vertical-align: top; font-size: 16px; }
+
+.advantage-section .desc-list li .icon { width: 80px; height: 80px; margin: 0 auto; background: url(../resource/img/sme_finance_sprites.png) no-repeat 0 -102px; }
+
+.advantage-section .desc-list li h3 { margin-top: 19px; font-size: inherit; font-weight: normal; color: #333; }
+
+.advantage-section .desc-list li + li { margin-left: 104px; }
+
+/* path-section */
+.path-section { box-sizing: border-box; background: url(../resource/img/sme_finance_pic009.jpg) no-repeat center top; background-size: cover; }
+
+.path-section * { box-sizing: border-box; }
+
+.path-section .section-body { padding-bottom: 64px; }
+
+.path-section .path-list { text-align: center; font-size: 0; }
+
+.path-section .path-list li { display: inline-block; vertical-align: top; font-size: 16px; color: #fff; }
+
+.path-section .path-list li .icon { width: 100px; height: 100px; margin: 0 auto; background: url(../resource/img/sme_finance_sprites.png) no-repeat 0 0; }
+
+.path-section .path-list li h3 { margin-top: 30px; font-size: inherit; font-weight: bold; }
+
+.path-section .path-list li p { margin-top: 20px; line-height: 18px; font-size: 14px; }
+
+.path-section .path-list li.arrow { margin: 25px 20px 0; font-size: 50px; color: #f78e24; }
+
+.path-section .query-container { padding-top: 64px; }
+
+.path-section .query-container .input-box { position: relative; width: 534px; margin: 0 auto; }
+
+.path-section .query-container .input-box input[type='text'] { display: block; width: 100%; height: 50px; padding: 15px 155px 15px 25px; line-height: 20px; background-color: #fff; border: 1px solid #fff; border-radius: 50px; }
+
+.path-section .query-container .input-box input[type='text']:focus { border-color: #e00000; }
+
+.path-section .query-container .input-box .query-btn { position: absolute; top: 0; right: 0; min-width: 189px; }
+
+.path-section .query-container .hint-info { height: 34px; line-height: 34px; text-align: center; font-size: 12px; color: #f00; }
+
+.path-section .phone-pic { display: block; margin: 0 auto; }

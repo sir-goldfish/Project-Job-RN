@@ -6,6 +6,9 @@ $onColorOrangeHover: #f78e24 - 15%;
 $onColorOrangeActive: #f78e24 - 30%;
 $facilitatorBaseBlue: #22447a;
 $facilitatorBaseOrange: #ff6a00;
+$globeFinanceColorStress: #e00000;
+$globeFinanceColorStressHover: #e00000 - 15%;
+$globeFinanceColorStressActive: #e00000 - 30%;
 @mixin globalVerticalMiddleAssist {
   content: '';
   display: inline-block;

@@ -287,6 +287,62 @@
 
 .sme-head6 .head-logo .logo-nav .nav-item.has-extension:hover .item-extension { height: auto; border-top: 1px solid #eee; box-shadow: 0 6px 10px 0 rgba(24, 5, 9, 0.2); overflow: auto; opacity: 1; filter: alpha(opacity=100); }
 
+.sme-head7 .head-bar { padding: 10px 0; font-size: 12px; background-color: #333; }
+
+.sme-head7 .head-bar a:hover { color: #e00000; }
+
+.sme-head7 .head-bar .bar-left { float: left; }
+
+.sme-head7 .head-bar .bar-left .location-box { display: inline-block; }
+
+.sme-head7 .head-bar .bar-left .location-box .res-city i { margin-right: 2px; vertical-align: top; font-size: 12px; color: #fff; }
+
+.sme-head7 .head-bar .bar-left .hot-line, .sme-head7 .head-bar .bar-left .stock-code { margin-left: 20px; }
+
+.sme-head7 .head-bar .bar-left .stock-code em { color: #e00000; }
+
+.sme-head7 .head-bar .bar-right { float: right; font-size: 0; }
+
+.sme-head7 .head-bar .bar-right .nav-item { display: inline-block; margin-left: 15px; font-size: 12px; }
+
+.sme-head7 .head-bar .bar-right .stress a { color: #e00000; }
+
+.sme-head7 .head-bar .bar-right .user-content .register { margin-left: 15px; }
+
+.sme-head7 .head-bar .bar-right .user-content .exit { margin-left: 15px; }
+
+.sme-head7 .head-logo { padding: 16px 0; background-color: #fff; }
+
+.sme-head7 .head-logo .logo-link { float: left; }
+
+.sme-head7 .head-logo .logo-link img { vertical-align: middle; }
+
+.sme-head7 .head-logo .logo-nav { float: left; padding-top: 4px; margin-left: -35px; }
+
+.sme-head7 .head-logo .logo-nav .nav-item { position: relative; float: left; margin-left: 35px; margin-top: 8px; margin-bottom: 8px; color: #333; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .item-name { font-size: 16px; color: inherit; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .item-name:hover { color: #e00000; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .hide-group { position: absolute; top: 100%; left: 50%; z-index: 5; display: none; padding-top: 18px; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list { position: relative; min-width: 58px; padding: 20px 20px 0; text-align: center; background-color: rgba(255, 255, 255, 0.9); border-radius: 5px; box-shadow: 0 0 8px 0 rgba(19, 5, 10, 0.3); }
+
+.sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list:before { content: ''; position: absolute; top: 0; left: 50%; width: 22px; height: 13px; margin: -13px 0 0 -11px; background: url(../resource/img/sme_icon19.png) no-repeat center; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list .group-item { padding-bottom: 20px; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list .group-item a { color: #333; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list .group-item a:hover { color: #e00000; }
+
+.sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list .group-item.chosen a { color: #e00000; }
+
+.sme-head7 .head-logo .logo-nav .nav-item.current .item-name { font-weight: bold; color: #e00000; }
+
+.sme-head7 .head-logo .logo-nav .nav-item:hover .hide-group { display: block; }
+
 /* sme-foot */
 .sme-foot .foot-desc { font-size: 0; background-color: #f1f1f1; }
 
@@ -312,9 +368,9 @@
 
 .sme-foot .foot-link-group { padding: 33px 0; background-color: #f1f1f1; }
 
-.sme-foot .foot-link-group .text-link { float: left; width: 100%; margin-right: -236px; }
+.sme-foot .foot-link-group .text-link { float: left; width: 100%; margin-right: -200px; }
 
-.sme-foot .foot-link-group .text-link .text-link-inner { margin-right: 236px; }
+.sme-foot .foot-link-group .text-link .text-link-inner { margin-right: 200px; }
 
 .sme-foot .foot-link-group .text-link .top-link { margin-bottom: 15px; font-size: 0; }
 
@@ -324,15 +380,15 @@
 
 .sme-foot .foot-link-group .text-link .top-link dl dd { display: inline-block; width: 49%; margin-top: 24px; vertical-align: top; font-size: 14px; }
 
-.sme-foot .foot-link-group .text-link .top-link .about-links { width: 28%; }
+.sme-foot .foot-link-group .text-link .top-link .about-links { width: 27%; }
 
-.sme-foot .foot-link-group .text-link .top-link .service-links { width: 19%; }
+.sme-foot .foot-link-group .text-link .top-link .service-links { width: 15%; }
 
 .sme-foot .foot-link-group .text-link .top-link .service-links dd { width: 100%; }
 
 .sme-foot .foot-link-group .text-link .top-link .guide-links { width: 28%; }
 
-.sme-foot .foot-link-group .text-link .top-link .hot-line { width: 23%; }
+.sme-foot .foot-link-group .text-link .top-link .hot-line { width: 29%; }
 
 .sme-foot .foot-link-group .text-link .top-link .hot-line dd { width: 100%; }
 
