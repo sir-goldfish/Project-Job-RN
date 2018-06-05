@@ -76,6 +76,8 @@
 
 .desc-section .self dd .inner { display: inline-block; vertical-align: middle; font-size: 14px; color: #fff; }
 
+.desc-section .self dd i.iconfont { font-size: 52px; }
+
 .desc-section .self dd p { margin-top: 23px; }
 
 .desc-section .self dd + dd { margin-top: 38px; }
