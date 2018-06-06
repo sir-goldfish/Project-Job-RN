@@ -2,4 +2,513 @@
 @import "publicVariable";
 
 $selfActiveColor: $globeFinanceColorStress;
-$selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
+$selfBoxShadow: 0 4px 15px 0 rgba(102, 102, 102, .45);
+
+/* head-section */
+.head-section {
+  box-sizing: border-box;
+  min-height: 490px;
+  padding-top: 348px;
+  background: #f6f7fb url(../resource/img/sme_finance_pic022.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .query-container {
+    min-height: 140px;
+    padding: 35px 80px 25px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .35);
+    .input-box {
+      $selfHeight: 50px;
+      font-size: 0;
+      .input-item {
+        display: inline-block;
+        height: $selfHeight;
+        padding: 15px 18px;
+        vertical-align: middle;
+        line-height: 20px;
+        font-size: 12px;
+        border: 1px solid $selfActiveColor;
+        background-color: #fff;
+        &:first-child {
+          border-top-left-radius: $selfHeight;
+          border-bottom-left-radius: $selfHeight;
+        }
+      }
+      .input-item + .input-item {
+        margin-left: 10px;
+      }
+      .query-btn {
+        display: inline-block;
+        width: 190px;
+        height: $selfHeight;
+        margin-left: 10px;
+        vertical-align: middle;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-top-right-radius: $selfHeight;
+        border-bottom-right-radius: $selfHeight;
+        &:hover {
+          background-color: $selfActiveColor - 15%;
+        }
+        &:active {
+          background-color: $selfActiveColor - 30%;
+        }
+      }
+    }
+    .hint-info {
+      padding: 9px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #f00;
+    }
+    .notice {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+  .ad-cards {
+    margin: -20px 0 0 -20px;
+  }
+  .ad-card {
+    float: left;
+    width: 285px;
+    height: 160px;
+    padding: 35px 18px 0;
+    margin: 20px 0 0 20px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 11px;
+      font-size: 14px;
+    }
+    .card-btn {
+      width: 90px;
+      height: 28px;
+      margin-top: 18px;
+      line-height: 28px - 2px;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 28px;
+      &:hover {
+        color: #333;
+        background-color: #fff;
+      }
+      &:active {
+        background-color: #fff - 15%;
+      }
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: $selfBoxShadow;
+    }
+  }
+}
+
+/* service-section */
+.service-section {
+  box-sizing: border-box;
+  padding: 60px 0;
+  background-color: #f6f7fb;
+  * {
+    box-sizing: border-box;
+  }
+  .service-cards {
+    margin: -20px 0 0 -20px;
+  }
+  .service-card {
+    float: left;
+    margin: 20px 0 0 20px;
+  }
+  div.service-card {
+    width: 285px;
+    height: 356px;
+    color: #fff;
+    padding: 55px 48px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    ul {
+      min-height: 124px;
+      margin-top: 33px;
+      font-size: 16px;
+      li + li {
+        margin-top: 20px;
+      }
+    }
+    .more-btn {
+      width: 120px;
+      height: 40px;
+      margin-top: 63px - 16px - 20px;
+      line-height: 40px - 2px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      border: 1px solid #fff;
+      &:hover {
+        color: #333;
+        background-color: #fff;
+      }
+      &:active {
+        background-color: #fff - 15%;
+      }
+    }
+  }
+  a.service-card {
+    width: 285px;
+    height: 168px;
+    padding: 20px;
+    color: #333;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: 0 0 5px 0 rgba(221, 221, 221, 1);
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+    .price {
+      margin-top: 22px;
+      font-size: 14px;
+      color: $selfActiveColor;
+      .num {
+        font-size: 1.7em;
+        font-weight: bold;
+      }
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: $selfBoxShadow;
+      h3 {
+        color: $selfActiveColor;
+      }
+    }
+    &.l-card {
+      width: 590px;
+    }
+    &.h-card {
+      height: 356px;
+    }
+    &.wide-padded {
+      padding: 40px 35px;
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  box-sizing: border-box;
+  padding: 35px 0;
+  text-align: center;
+  * {
+    box-sizing: border-box;
+  }
+  .stress {
+    color: $selfActiveColor;
+  }
+  .head-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+  }
+  .head-desc {
+    margin-top: 29px;
+    font-size: 14px;
+    color: #666;
+  }
+  &.w-head {
+    .head-title {
+      color: #fff;
+    }
+    .head-desc {
+      color: #ccc;
+    }
+  }
+}
+
+/* compare-section */
+.compare-section {
+  box-sizing: border-box;
+  padding: 15px 0 65px;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-panel {
+    width: 100%;
+    color: #333;
+    .rn {
+      text-align: right;
+    }
+    .self {
+      text-align: left;
+    }
+    .panel-head {
+      font-size: 0;
+      span {
+        display: inline-block;
+        width: 50%;
+        height: 90px;
+        vertical-align: middle;
+        line-height: 90px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .rn {
+        padding-right: 93px;
+        color: #fff;
+        background-color: $selfActiveColor;
+      }
+      .self {
+        padding-left: 93px;
+        background-color: #ddd;
+      }
+    }
+    .panel-body {
+      padding-bottom: 32px;
+      text-align: center;
+      background-color: #f2f6ff;
+      ul {
+        padding: 26px 0 32px;
+        li {
+          font-size: 0;
+          & > * {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 18px;
+          }
+          &:hover {
+            .circle {
+              color: #fff;
+              background-color: $selfActiveColor;
+            }
+          }
+        }
+        li + li {
+          margin-top: 12px;
+        }
+        .circle {
+          width: 60px;
+          height: 60px;
+          margin: 0 63px;
+          line-height: 60px - 2px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bold;
+          background-color: #fff;
+          box-shadow: 0 0 0 .5px $selfActiveColor;
+          border-radius: 50%;
+        }
+        .rn, .self {
+          & > * {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          i {
+            font-size: 18px;
+          }
+        }
+        .rn {
+          i {
+            margin-left: 16px;
+            color: #7ab61d;
+          }
+        }
+        .self {
+          i {
+            margin-right: 16px;
+            color: $selfActiveColor;
+          }
+        }
+      }
+      .query-btn {
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 40px;
+        background-color: $selfActiveColor;
+        &:hover {
+          background-color: $selfActiveColor - 15%;
+        }
+        &:active {
+          background-color: $selfActiveColor - 30%;
+        }
+      }
+    }
+  }
+}
+
+/* path-section */
+.path-section {
+  box-sizing: border-box;
+  padding-top: 40px;
+  background-color: #f6f7fb;
+  * {
+    box-sizing: border-box;
+  }
+  .path-list {
+    position: relative;
+    padding: 30px 0 63px;
+    text-align: center;
+    font-size: 0;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 30px + 80px + 19px + 3px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: $selfActiveColor;
+    }
+    li {
+      display: inline-block;
+      vertical-align: top;
+      transition: transform .3s ease-out;
+      i {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        background: url(../resource/img/sme_finance_sprites001.png) no-repeat 0 0;
+      }
+      b {
+        display: block;
+        width: 9px;
+        height: 9px;
+        margin: 19px auto 0;
+        background: $selfActiveColor;
+        border-radius: 50%;
+      }
+      p {
+        margin-top: 24px;
+        font-size: 14px;
+        color: #333;
+      }
+      &:hover {
+        transform: scale(1.06);
+      }
+    }
+    li + li {
+      margin-left: 80px;
+    }
+  }
+}
+
+/* pass-section */
+.pass-section {
+  box-sizing: border-box;
+  padding-top: 35px;
+  background: url(../resource/img/sme_finance_pic023.jpg) no-repeat center top;
+  background-size: cover;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-list {
+    padding: 20px 0 76px;
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      figure {
+        width: 168px;
+        height: 145px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #bfbfbf;
+        overflow: hidden;
+        &:before {
+          @include globalVerticalMiddleAssist;
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      p {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+    li + li {
+      margin-left: 138px;
+    }
+  }
+}
+
+/* other-service-section */
+.other-service-section {
+  box-sizing: border-box;
+  padding-top: 20px;
+  background-color: #f6f7fb;
+  * {
+    box-sizing: border-box;
+  }
+  .service-cards {
+    padding: 30px 0 64px;
+    text-align: center;
+    font-size: 0;
+  }
+  .service-card {
+    display: inline-block;
+    width: 140px;
+    height: 178px;
+    padding-top: 26px;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    i {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      background: url(../resource/img/sme_finance_sprites001.png) no-repeat 0 0;
+    }
+    p {
+      margin-top: 27px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: $selfBoxShadow;
+      p {
+        color: $selfActiveColor;
+      }
+    }
+  }
+  .service-card + .service-card {
+    margin-left: 162px;
+  }
+}

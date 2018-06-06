@@ -213,6 +213,8 @@
 
 .hot-service-section .service-card:hover { -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2); }
 
+.hot-service-section .service-card:hover h3 { color: #e00000; }
+
 /* problem-section */
 .problem-section { box-sizing: border-box; }
 
@@ -285,6 +287,8 @@
 .category-section .category-card h3 { font-size: 16px; font-weight: bold; color: #333; }
 
 .category-section .category-card:hover { -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2); }
+
+.category-section .category-card:hover h3 { color: #e00000; }
 
 /* case-section */
 .case-section { box-sizing: border-box; }

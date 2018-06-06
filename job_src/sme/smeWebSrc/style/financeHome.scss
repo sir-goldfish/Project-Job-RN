@@ -586,6 +586,9 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
     &:hover {
       transform: translateY(-6px);
       box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .2);
+      h3 {
+        color: $selfActiveColor;
+      }
     }
   }
 }
@@ -761,6 +764,9 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
     &:hover {
       transform: translateY(-6px);
       box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+      h3 {
+        color: $selfActiveColor;
+      }
     }
   }
 }
