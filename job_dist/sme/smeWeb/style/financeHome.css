@@ -224,11 +224,11 @@
 
 .problem-section .desc-bars { margin: -40px 0 0 -48px; }
 
-.problem-section .desc-bar { position: relative; float: left; width: 464px; height: 40px; padding: 0 45px; margin: 40px 0 0 48px; line-height: 38px; font-size: 14px; color: #333; border: 1px solid #ccc; border-radius: 40px; box-shadow: 6px 6px 0 1px #eee; }
+.problem-section .desc-bar { position: relative; float: left; width: 464px; height: 40px; padding: 0 45px; margin: 40px 0 0 48px; line-height: 38px; font-size: 14px; color: #333; border: 1px solid #ccc; border-radius: 40px; box-shadow: 6px 6px 0 1px #eee; -webkit-transition: box-shadow .3s ease-out; transition: box-shadow .3s ease-out; }
 
 .problem-section .desc-bar:before { content: ''; position: absolute; top: 12px; left: 14px; width: 14px; height: 14px; background-color: #e00000; border-radius: 50%; }
 
-.problem-section .desc-bar:hover { color: #e00000; }
+.problem-section .desc-bar:hover { color: #e00000; box-shadow: 6px 6px 0 1px #dfdfdf; }
 
 /* advantage-section */
 .advantage-section { box-sizing: border-box; }
@@ -237,7 +237,7 @@
 
 .advantage-section .desc-cards { margin: -55px 0 0 -60px; }
 
-.advantage-section .desc-card { position: relative; float: left; width: 360px; height: 270px; margin: 55px 0 0 60px; font-size: 0; color: #333; background-color: #ddd; overflow: hidden; }
+.advantage-section .desc-card { position: relative; float: left; width: 360px; height: 270px; margin: 55px 0 0 60px; font-size: 0; color: #333; background-color: #ddd; border: 1px solid transparent; overflow: hidden; }
 
 .advantage-section .desc-card i.iconfont { font-size: 100px; color: #e00000; }
 
@@ -263,7 +263,7 @@
 
 .advantage-section .desc-card .init-content .desc .text { margin-left: 70px; }
 
-.advantage-section .desc-card .hover-content { position: absolute; top: 100%; left: 0; width: 100%; height: 100%; text-align: center; background-color: #fff; border: 1px solid #e00000; -webkit-transition: top .3s ease-out; transition: top .3s ease-out; }
+.advantage-section .desc-card .hover-content { position: absolute; top: 100%; left: 0; width: 100%; height: 100%; text-align: center; background-color: #fff; -webkit-transition: top .3s ease-out; transition: top .3s ease-out; }
 
 .advantage-section .desc-card .hover-content:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
 
@@ -272,6 +272,8 @@
 .advantage-section .desc-card .hover-content h3 { margin-top: 25px; }
 
 .advantage-section .desc-card .hover-content p { margin-top: 20px; }
+
+.advantage-section .desc-card:hover { border-color: #e00000; }
 
 .advantage-section .desc-card:hover .hover-content { top: 0; }
 

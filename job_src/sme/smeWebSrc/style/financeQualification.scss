@@ -1,0 +1,388 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeFinanceColorStress;
+$selfBoxShadow: 0 4px 15px 0 rgba(102, 102, 102, .45);
+$selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
+
+/* head-section */
+.head-section {
+  box-sizing: border-box;
+  height: 450px;
+  background: url(../resource/img/sme_finance_pic044.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .sme-inner {
+    height: inherit;
+  }
+  .form-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    float: right;
+    height: inherit;
+  }
+  .form-panel {
+    width: 320px;
+    padding: 16px 0 34px;
+    background-color: rgba(255, 255, 255, .9);
+    border: 1px solid $selfActiveColor;
+    .form-head {
+      padding-bottom: 18px;
+      text-align: center;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      p {
+        margin-top: 14px;
+        font-size: 14px;
+        color: #033;
+      }
+    }
+    .form-body {
+      padding: 0 33px;
+    }
+    .form-item {
+      .input-box {
+        $selfHeight: 40px;
+        input[type='text'] {
+          display: block;
+          width: 100%;
+          height: $selfHeight;
+          padding: 10px 16px;
+          line-height: $selfHeight - 2px - 20px;
+          font-size: 12px;
+          background-color: #fff;
+          border: 1px solid #bfbfbf;
+          &:focus {
+            border-color: $selfActiveColor;
+          }
+        }
+      }
+      .hint-info {
+        padding: 10px 0;
+        font-size: 12px;
+        color: $selfActiveColor;
+      }
+    }
+    .form-handle-item {
+      .form-btn {
+        $selfHeight: 50px;
+        display: block;
+        height: $selfHeight;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        &:hover {
+          background-color: $selfActiveColor - 15%;
+        }
+        &:active {
+          background-color: $selfActiveColor - 30%;
+        }
+      }
+    }
+  }
+}
+
+/* service-desc-section */
+.service-desc-section {
+  box-sizing: border-box;
+  padding: 20px 0 15px;
+  background-color: #f1f1f1;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-list {
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i {
+        width: 68px;
+        height: 74px;
+        background: url(../resource/img/sme_finance_sprites005.png) no-repeat 0 0;
+      }
+      h3 {
+        line-height: 24px;
+        margin-left: 14px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+    li + li {
+      margin-left: 100px;
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  box-sizing: border-box;
+  padding: 50px 0;
+  text-align: center;
+  color: #333;
+  * {
+    box-sizing: border-box;
+  }
+  .head-title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &.w-head {
+    color: #fff;
+  }
+}
+
+/* category-section */
+.category-section {
+  box-sizing: border-box;
+  background-color: #fff;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 60px;
+  }
+  .service-cards {
+    padding-bottom: 60px;
+    margin: -9px 0 0 -9px;
+  }
+  .service-card {
+    float: left;
+    width: 394px;
+    height: 170px;
+    padding: 40px 42px 0;
+    margin: 9px 0 0 9px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 100%;
+    box-shadow: $selfInitBoxShadow;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+    .card-btn {
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      margin-top: 21px;
+      line-height: 30px - 2px;
+      text-align: center;
+      color: #333;
+      background-color: #fff;
+      border-radius: 32px;
+      border: 1px solid #999;
+      &:hover {
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-color: $selfActiveColor;
+      }
+      &:active {
+        background-color: $selfActiveColor - 30%;
+      }
+    }
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: $selfBoxShadow;
+      h3 {
+        color: $selfActiveColor;
+      }
+    }
+    &.more-card {
+      padding: 0;
+      text-align: center;
+      font-size: 0;
+      background-color: #f1f0f0;
+      &:before {
+        @include globalVerticalMiddleAssist;
+      }
+      .inner {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i {
+        font-size: 76px;
+        color: #ccc;
+      }
+      p {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #666;
+      }
+      &:hover {
+        i, p {
+          color: $selfActiveColor;
+        }
+      }
+    }
+  }
+}
+
+/* service-section */
+.service-section {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  * {
+    box-sizing: border-box;
+  }
+  .section-body {
+    padding: 53px 0;
+  }
+  .service-cards {
+    margin: -20px 0 0 -20px;
+  }
+  .service-card {
+    float: left;
+    margin: 20px 0 0 20px;
+  }
+  div.service-card {
+    width: 285px;
+    height: 356px;
+    color: #fff;
+    padding: 55px 48px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: $selfInitBoxShadow;
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    ul {
+      min-height: 124px;
+      margin-top: 33px;
+      font-size: 16px;
+      li + li {
+        margin-top: 20px;
+      }
+    }
+    .more-btn {
+      width: 120px;
+      height: 40px;
+      margin-top: 63px - 16px - 20px;
+      line-height: 40px - 2px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      border: 1px solid #fff;
+      &:hover {
+        color: #333;
+        background-color: #fff;
+      }
+      &:active {
+        background-color: #fff - 15%;
+      }
+    }
+  }
+  a.service-card {
+    width: 285px;
+    height: 168px;
+    padding: 20px;
+    color: #333;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: $selfInitBoxShadow;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+    .price {
+      margin-top: 22px;
+      font-size: 14px;
+      color: $selfActiveColor;
+      .num {
+        font-size: 1.7em;
+        font-weight: bold;
+      }
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: $selfBoxShadow;
+      h3 {
+        color: $selfActiveColor;
+      }
+    }
+    &.l-card {
+      width: 590px;
+    }
+    &.h-card {
+      height: 356px;
+    }
+    &.wide-padded {
+      padding: 40px 35px;
+    }
+  }
+}
+
+/* problem-section */
+.problem-section {
+  box-sizing: border-box;
+  padding: 52px 0 55px;
+  background: url(../resource/img/sme_landing_bgi30.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-title {
+    text-align: center;
+    span {
+      display: inline-block;
+      padding: 18px 44px;
+      vertical-align: middle;
+      font-size: 26px;
+      font-weight: bold;
+      color: #333;
+      background-color: #fff;
+      border-radius: 65px;
+    }
+  }
+  .desc-list {
+    position: relative;
+    width: 912px;
+    min-height: 82px + 228px;
+    margin: 12px auto 0;
+    background: url(../resource/img/sme_landing_pic127_0.png) no-repeat center top;
+    li {
+      position: absolute;
+      top: 81px;
+      width: 200px;
+      text-align: center;
+      .icon {
+        display: block;
+        margin: 0 auto;
+      }
+      h3 {
+        margin-top: 22px - 4px;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+  .section-foot {
+    padding-top: 60px - 4px;
+    text-align: center;
+    .self-btn {
+      $selfWidth: 300px;
+      min-width: $selfWidth;
+    }
+  }
+}

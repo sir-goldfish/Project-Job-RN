@@ -622,6 +622,7 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
     border: 1px solid #ccc;
     border-radius: $selfHeight;
     box-shadow: 6px 6px 0 1px #eee;
+    transition: box-shadow .3s ease-out;
     &:before {
       content: '';
       position: absolute;
@@ -634,6 +635,7 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
     }
     &:hover {
       color: $selfActiveColor;
+      box-shadow: 6px 6px 0 1px #eee - 15%;
     }
   }
 }
@@ -656,6 +658,7 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
     font-size: 0;
     color: #333;
     background-color: #ddd;
+    border: 1px solid transparent;
     overflow: hidden;
     i.iconfont {
       font-size: 100px;
@@ -713,7 +716,6 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
       height: 100%;
       text-align: center;
       background-color: #fff;
-      border: 1px solid $selfActiveColor;
       transition: top .3s ease-out;
       &:before {
         @include globalVerticalMiddleAssist;
@@ -730,6 +732,7 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
       }
     }
     &:hover {
+      border-color: $selfActiveColor;
       .hover-content {
         top: 0;
       }

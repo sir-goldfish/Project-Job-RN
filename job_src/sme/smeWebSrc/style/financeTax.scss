@@ -1,0 +1,542 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeFinanceColorStress;
+$selfBoxShadow: 0 4px 15px 0 rgba(102, 102, 102, .45);
+
+/* head-section */
+.head-section {
+  box-sizing: border-box;
+  height: 450px;
+  padding-top: 328px;
+  background: url(../resource/img/sme_finance_pic037.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .query-container {
+    width: 916px;
+    margin: 0 auto;
+    .input-box {
+      $selfHeight: 50px;
+      position: relative;
+      width: 100%;
+      height: $selfHeight;
+      font-size: 0;
+      background-color: #fff;
+      border-radius: $selfHeight;
+      overflow: hidden;
+      input[type='text'] {
+        display: block;
+        width: 100%;
+        height: $selfHeight;
+        padding: 15px 24px;
+        line-height: 20px;
+        font-size: 12px;
+        border: none;
+        background-color: transparent;
+      }
+      .inputwrap {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        &:last-of-type {
+          input[type='text'] {
+            padding-right: 24px + 190px;
+          }
+        }
+      }
+      .inputwrap + .inputwrap {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 18px;
+          bottom: 18px;
+          left: 0;
+          width: 1px;
+          background-color: #ccc;
+        }
+      }
+      .query-btn {
+        $selfBgColor: #6536fe;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 190px;
+        height: $selfHeight;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: $selfBgColor;
+        border-top-right-radius: $selfHeight;
+        border-bottom-right-radius: $selfHeight;
+        &:hover {
+          background-color: $selfBgColor - 15%;
+        }
+        &:active {
+          background-color: $selfBgColor - 30%;
+        }
+      }
+    }
+    .hint-info {
+      padding: 9px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #f00;
+    }
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  box-sizing: border-box;
+  padding: 40px 0;
+  text-align: center;
+  color: #333;
+  * {
+    box-sizing: border-box;
+  }
+  .stress {
+    color: $selfActiveColor;
+  }
+  .head-title {
+    font-size: 30px;
+    font-weight: bold;
+    .line-title {
+      display: inline-block;
+      vertical-align: middle;
+      &:before, &:after {
+        content: '';
+        display: inline-block;
+        width: 102px;
+        height: 3px;
+        vertical-align: middle;
+        background-color: $selfActiveColor;
+      }
+      &:before {
+        margin-right: 24px;
+      }
+      &:after {
+        margin-left: 24px;
+      }
+    }
+  }
+  &.w-head {
+    color: #fff;
+    .head-title {
+      .line-title {
+        &:before, &:after {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* service-section */
+.service-section {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  * {
+    box-sizing: border-box;
+  }
+  .service-panels {
+    padding-bottom: 70px;
+    margin: -20px 0 0 -60px;
+  }
+  .service-panel {
+    float: left;
+    margin: 20px 0 0 60px;
+    font-size: 0;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .desc-list {
+      font-size: 14px;
+      li {
+        position: relative;
+        padding-left: 20px;
+        line-height: 16px;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: 0;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background-color: #000;
+          border-radius: 50%;
+        }
+      }
+    }
+    .panel-handle {
+      $selfHeight: 32px;
+      display: inline-block;
+      height: $selfHeight;
+      padding: 0 18px;
+      vertical-align: middle;
+      line-height: $selfHeight - 2px;
+      font-size: 14px;
+      color: #333;
+      background-color: #fff;
+      border: 1px solid #999;
+      border-radius: $selfHeight;
+      &:hover {
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-color: $selfActiveColor;
+      }
+      &:active {
+        background-color: $selfActiveColor - 30%;
+      }
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: $selfBoxShadow;
+      h3 {
+        color: $selfActiveColor;
+      }
+    }
+    &.text-panel {
+      width: 1200px;
+      height: 200px;
+      .panel-head {
+        display: inline-block;
+        width: 296px;
+        height: 100%;
+        vertical-align: top;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: auto 100%;
+        h3 {
+          padding: 47px 0 0 60px;
+        }
+      }
+      .panel-body {
+        display: inline-block;
+        width: 720px + 44px;
+        height: 100%;
+        padding: 55px 44px 0;
+        vertical-align: middle;
+        .desc-list {
+          margin: -18px 0 0 -24px;
+          li {
+            float: left;
+            margin: 18px 0 0 24px;
+            &:before {
+              background-color: #666;
+            }
+          }
+        }
+      }
+      .panel-foot {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &.pic-panel {
+      width: 570px;
+      height: 237px;
+      padding: 30px 48px 0;
+      margin-top: 53px;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: cover;
+      .desc-list {
+        margin-top: 18px;
+        li + li {
+          margin-top: 14px;
+        }
+      }
+      .panel-handle {
+        margin-top: 23px;
+      }
+    }
+  }
+}
+
+/* advantage-section */
+.advantage-section {
+  box-sizing: border-box;
+  padding-top: 24px;
+  background: url(../resource/img/sme_finance_pic038.jpg) no-repeat center;
+  background-size: cover;
+  * {
+    box-sizing: border-box;
+  }
+  .desc-wrap {
+    padding-top: 29px;
+    padding-bottom: 69px;
+    text-align: center;
+    font-size: 0;
+    .desc-list {
+      display: inline-block;
+      vertical-align: middle;
+      color: #333;
+      li + li {
+        margin-top: 66px;
+      }
+      li > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i {
+        width: 90px;
+        height: 90px;
+        background: url(../resource/img/sme_finance_sprites003.png) no-repeat 0 0;
+      }
+      .text {
+        width: 330px;
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      p {
+        margin-top: 13px - 3px;
+        line-height: 18px;
+        font-size: 12px;
+      }
+      &.left {
+        margin-right: 30px;
+        text-align: right;
+        .text {
+          margin-right: 10px;
+        }
+      }
+      &.right {
+        margin-left: 30px;
+        text-align: left;
+        .text {
+          margin-left: 10px;
+        }
+      }
+    }
+    .title {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+/* case-section */
+.case-section {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .case-cards {
+    position: relative;
+    padding: 0 55px 80px;
+    .case-swiper {
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+    }
+    .swiper-slide {
+      $selfWidth: 340px;
+      float: left;
+      display: block;
+      width: 100%;
+      height: 350px;
+      background-color: #fff;
+      overflow: hidden;
+      figure {
+        float: left;
+        width: $selfWidth;
+        margin-right: - $selfWidth;
+      }
+      .desc-content {
+        position: relative;
+        padding: 35px 30px 0;
+        margin-left: $selfWidth;
+        .tag {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          display: block;
+          height: 26px;
+          padding: 0 9px;
+          line-height: 26px - 2px;
+          font-size: 14px;
+          color: $selfActiveColor;
+          border: 1px solid $selfActiveColor;
+          border-radius: 26px;
+        }
+        h3 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+        }
+        .desc-list {
+          li {
+            padding: 20px - 5px 0;
+            line-height: 24px;
+            .title {
+              color: #333;
+            }
+            &.foot {
+              line-height: 1;
+              .num {
+                font-size: 1.7em;
+                color: $selfActiveColor;
+              }
+            }
+          }
+          li + li {
+            border-top: 1px dashed #ddd;
+          }
+        }
+      }
+    }
+    .swiper-btn {
+      position: absolute;
+      top: 50%;
+      width: 22px;
+      height: 60px;
+      margin-top: - ( 30px + 40px );
+      line-height: 60px;
+      text-align: center;
+      font-size: 20px;
+      color: #fff;
+      background-color: #ccc;
+      cursor: pointer;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      &:hover {
+        background-color: $selfActiveColor;
+      }
+      &:active {
+        background-color: $selfActiveColor - 30%;
+      }
+      &.swiper-btn-prev {
+        left: 0;
+      }
+      &.swiper-btn-next {
+        right: 0;
+      }
+    }
+  }
+}
+
+/* question-section */
+.question-section {
+  box-sizing: border-box;
+  background: url(../resource/img/sme_finance_pic039.jpg) no-repeat center;
+  background-size: cover;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 83px;
+    padding-bottom: 60px;
+  }
+  .question-bars {
+    padding: 0 48px 83px;
+    margin: -26px 0 0 -64px;
+    font-size: 0;
+  }
+  .question-bar {
+    position: relative;
+    display: inline-block;
+    width: 520px;
+    min-height: 46px;
+    padding: 13px 22px 13px 42px;
+    margin: 26px 0 0 64px;
+    vertical-align: top;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    transition: transform .3s ease-out, background-color .3s ease-out;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      margin-top: -7px;
+      width: 20px;
+      height: 18px;
+      background: url(../resource/img/sme_finance_icon004.png) no-repeat center;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, .85);
+      transform: translateY(-3px);
+    }
+  }
+}
+
+/* path-section */
+.path-section {
+  box-sizing: border-box;
+  background-color: #fff;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 72px;
+    padding-bottom: 86px;
+  }
+  .path-list {
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      min-width: 206px;
+      font-size: 16px;
+      color: #333;
+      i {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background: url(../resource/img/sme_finance_sprites003.png) no-repeat 0 -92px;
+      }
+      p {
+        margin-top: 23px;
+      }
+      &.arrow {
+        width: 36px;
+        min-width: 36px;
+        font-size: 36px;
+        margin-top: 40px;
+        color: #ddd;
+      }
+    }
+  }
+  .section-foot {
+    padding: 60px 0;
+    text-align: center;
+    .query-btn {
+      display: inline-block;
+      width: 224px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      background-color: $selfActiveColor;
+      border-radius: 45px;
+      &:hover {
+        background-color: $selfActiveColor - 15%;
+      }
+      &:active {
+        background-color: $selfActiveColor - 30%;
+      }
+    }
+  }
+}

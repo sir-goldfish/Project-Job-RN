@@ -180,7 +180,7 @@ $selfBoxShadow: 0 4px 15px 0 rgba(102, 102, 102, .45);
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: right bottom;
-    box-shadow: 0 0 5px 0 rgba(221, 221, 221, 1);
+    box-shadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
     transition: transform .3s ease-out, box-shadow .3s ease-out;
     h3 {
       font-size: 20px;
@@ -489,10 +489,8 @@ $selfBoxShadow: 0 4px 15px 0 rgba(102, 102, 102, .45);
     transition: transform .3s ease-out, box-shadow .3s ease-out;
     i {
       display: block;
-      width: 80px;
-      height: 80px;
-      margin: 0 auto;
-      background: url(../resource/img/sme_finance_sprites001.png) no-repeat 0 0;
+      font-size: 80px;
+      color: $selfActiveColor;
     }
     p {
       margin-top: 27px;

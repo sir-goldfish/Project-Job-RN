@@ -63,7 +63,7 @@
 
 .service-section div.service-card .more-btn:active { background-color: #f0f0f0; }
 
-.service-section a.service-card { width: 285px; height: 168px; padding: 20px; color: #333; background-color: #fff; background-repeat: no-repeat; background-position: right bottom; box-shadow: 0 0 5px 0 #dddddd; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
+.service-section a.service-card { width: 285px; height: 168px; padding: 20px; color: #333; background-color: #fff; background-repeat: no-repeat; background-position: right bottom; box-shadow: 0 2px 5px 0 #dddddd; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
 
 .service-section a.service-card h3 { font-size: 20px; font-weight: normal; }
 
@@ -194,7 +194,7 @@
 
 .other-service-section .service-card { display: inline-block; width: 140px; height: 178px; padding-top: 26px; vertical-align: top; background-color: #fff; border: 1px solid #d2d2d2; border-radius: 10px; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
 
-.other-service-section .service-card i { display: block; width: 80px; height: 80px; margin: 0 auto; background: url(../resource/img/sme_finance_sprites001.png) no-repeat 0 0; }
+.other-service-section .service-card i { display: block; font-size: 80px; color: #e00000; }
 
 .other-service-section .service-card p { margin-top: 27px; font-size: 14px; font-weight: bold; color: #333; }
 
