@@ -1,0 +1,418 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeFinanceColorStress;
+$selfBoxShadow: 0 4px 15px 0 rgba(102, 102, 102, .45);
+$selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
+
+/* m-default-pagination */
+.m-default-pagination {
+  $selfColor: $selfActiveColor;
+  .current {
+    background-color: $selfColor;
+  }
+  a {
+    &:hover {
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    &:active {
+      background-color: $selfColor - 30%;
+    }
+  }
+  input[type="text"]:focus {
+    border-color: $selfColor;
+  }
+  input[type="button"] {
+    &:hover {
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    &:active {
+      background-color: $selfColor - 30%;
+    }
+  }
+}
+
+/* head-section */
+.head-section {
+  box-sizing: border-box;
+  padding: 30px 0;
+  background: url(../resource/img/sme_finance_pic060.jpg) no-repeat center;
+  background-size: cover;
+  * {
+    box-sizing: border-box;
+  }
+  .news-panels {
+    margin: -10px 0 0 -10px;
+  }
+  .news-panel {
+    float: left;
+    margin: 10px 0 0 10px;
+    &.news-swiper {
+      position: relative;
+      width: 800px;
+      height: 390px;
+      overflow: hidden;
+      .swiper-slide {
+        position: relative;
+        width: 800px;
+        height: 390px;
+        .pic {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+          transition: background-size .3s ease-out;
+          &:hover {
+            background-size: 103%;
+          }
+        }
+        h3 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 18px 22px;
+          font-size: 16px;
+          font-weight: normal;
+          color: #fff;
+          background-color: rgba(0, 0, 0, .8);
+          a {
+            max-width: 100%;
+            vertical-align: middle;
+            color: inherit;
+            transition: transform .3s ease-out;
+            &:hover {
+              transform: translateX(6px);
+            }
+          }
+        }
+      }
+      .swiper-pagination {
+        position: absolute;
+        bottom: 54px + 14px;
+        right: 35px;
+        left: auto;
+        width: auto;
+        font-size: 0;
+        .swiper-pagination-bullet {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          margin: 0 5px;
+          vertical-align: middle;
+          line-height: 18px;
+          font-size: 12px;
+          color: #fff;
+          background-color: #124fa9;
+          opacity: 1;
+          filter: alpha(opacity=100);
+          border-radius: 50%;
+          &:hover {
+            background-color: $selfActiveColor;
+          }
+        }
+        .swiper-pagination-bullet-active {
+          background-color: $selfActiveColor;
+        }
+      }
+    }
+    &.l-panel {
+      width: 390px;
+      height: 228px;
+    }
+    &.s-panel {
+      width: 190px;
+      height: 150px;
+    }
+    &.pic-news {
+      overflow: hidden;
+      transition: transform .3s ease-out;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        transform: translateY(-6px);
+      }
+    }
+  }
+}
+
+/* nav-bar */
+.content-container {
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.content-container .nav-bar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(187, 187, 187, .2);
+  .tab-nav {
+    li {
+      float: left;
+      height: 60px;
+      padding: 0 20px;
+      line-height: 60px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      &:hover {
+        color: $selfActiveColor;
+      }
+      &.current {
+        color: #fff;
+        background-color: $selfActiveColor;
+      }
+    }
+  }
+}
+
+/* main-content */
+.content-container .main-content {
+  min-height: 1200px;
+  width: 800px;
+  padding: 20px 22px;
+  background-color: #fff;
+  .news-panels {
+    padding-bottom: 20px;
+  }
+  .news-panel {
+    $selfPicWidth: 183px;
+    .pic {
+      float: left;
+      width: $selfPicWidth;
+      height: 110px;
+      margin-right: - $selfPicWidth;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: transform .3s ease-out;
+      }
+      &:hover {
+        img {
+          transform: scale(1.06);
+        }
+      }
+    }
+    .desc {
+      margin-left: $selfPicWidth + 20px;
+      font-size: 12px;
+      color: #333;
+      a {
+        max-width: 100%;
+        vertical-align: middle;
+        color: inherit;
+        transition: transform .3s ease-out;
+        &:hover {
+          color: $selfActiveColor;
+          transform: translateX(6px);
+        }
+        &:active {
+          color: $selfActiveColor - 30%;
+        }
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      p {
+        height: 40px;
+        margin-top: 24px - 4px;
+        line-height: 20px;
+        overflow: hidden;
+      }
+      .info {
+        margin-top: 24px - 4px;
+        color: #999;
+        i {
+          margin-right: 5px;
+          font-size: inherit;
+        }
+        span {
+          vertical-align: middle;
+        }
+        span + span {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+  .news-panel + .news-panel {
+    margin-top: 30px;
+  }
+  .pagination-container {
+    padding: 30px 0;
+  }
+}
+
+/* aside-content */
+.content-container .aside-content {
+  width: 390px;
+  & > aside + aside {
+    margin-top: 10px;
+  }
+  .service-cards {
+    margin: -10px 0 0 -10px;
+  }
+  .service-card {
+    float: left;
+    width: 190px;
+    height: 100px;
+    margin: 10px 0 0 10px;
+    text-align: center;
+    font-size: 0;
+    color: #223c62;
+    background: #fff;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    &:before {
+      @include globalVerticalMiddleAssist;
+    }
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h3 {
+      margin-right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    i {
+      width: 56px;
+      height: 51px;
+      background: url(../resource/img/sme_finance_sprites007.png) no-repeat 0 0;
+    }
+    &:hover {
+      box-shadow: 0 4px 12px 0 rgba(221, 221, 221, 1);
+      transform: translateY(-3px);
+    }
+    &.l-card {
+      width: 390px;
+    }
+    &.bg-card {
+      color: #fff;
+      background: linear-gradient(90deg, #ff8d8d, #e24d4d);
+      h3 {
+        margin-left: 34px;
+      }
+    }
+  }
+  .aside-panel {
+    padding: 23px 20px;
+    background-color: #fff;
+    .panel-head {
+      padding-bottom: 20px;
+      .head-title {
+        float: left;
+        padding-left: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        border-left: 5px solid $selfActiveColor;
+      }
+      .head-handle {
+        float: right;
+        color: #333;
+        .handle-btn {
+          vertical-align: middle;
+          line-height: 16px;
+          font-size: 12px;
+          color: inherit;
+          &:hover {
+            color: $selfActiveColor;
+          }
+          &:active {
+            color: $selfActiveColor - 30%;
+          }
+        }
+      }
+    }
+  }
+  .news-panel {
+    .news-list {
+      .pic-news {
+        $selfPicWidth: 117px;
+        .pic {
+          float: left;
+          width: $selfPicWidth;
+          height: 70px;
+          margin-right: - $selfPicWidth;
+          overflow: hidden;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease-out;
+          }
+          &:hover {
+            img {
+              transform: scale(1.06);
+            }
+          }
+        }
+        .desc {
+          margin-left: $selfPicWidth + 12px;
+          font-size: 12px;
+          color: #333;
+          a {
+            max-width: 100%;
+            vertical-align: middle;
+            color: inherit;
+            transition: transform .3s ease-out;
+            &:hover {
+              color: $selfActiveColor;
+              transform: translateX(6px);
+            }
+            &:active {
+              color: $selfActiveColor - 30%;
+            }
+          }
+          h3 {
+            font-size: 14px;
+            font-weight: bold;
+          }
+          p {
+            margin-top: 16px - 2px;
+            line-height: 16px;
+            color: #999;
+          }
+          p + p {
+            margin-top: 14px - 4px;
+          }
+        }
+      }
+      .pic-news + .pic-news {
+        margin-top: 20px;
+      }
+      .text-news {
+        padding: 15px 0;
+        font-size: 14px;
+        color: #333;
+        border-bottom: 1px solid #d1d1d1;
+        a {
+          max-width: 100%;
+          vertical-align: middle;
+          color: inherit;
+          transition: transform .3s ease-out;
+          &:hover {
+            color: $selfActiveColor;
+            transform: translateX(6px);
+          }
+          &:active {
+            color: $selfActiveColor - 30%;
+          }
+        }
+      }
+    }
+  }
+}

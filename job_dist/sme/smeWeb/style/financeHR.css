@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* head-section */
+.head-section { box-sizing: border-box; height: 450px; padding-top: 328px; background: url(../resource/img/sme_finance_pic053.jpg) no-repeat center top; }
+
+.head-section * { box-sizing: border-box; }
+
+.head-section .query-container { width: 555px; margin: 0 auto; }
+
+.head-section .query-container .input-box { position: relative; }
+
+.head-section .query-container .input-box input[type='text'] { display: block; width: 100%; height: 50px; padding: 15px 184px 15px 24px; line-height: 20px; font-size: 12px; border: none; background-color: #fff; border-radius: 50px; }
+
+.head-section .query-container .input-box .query-btn { position: absolute; top: 0; right: 0; width: 160px; height: 50px; line-height: 50px; text-align: center; font-size: 14px; color: #fff; background-color: #e00000; border-top-right-radius: 50px; border-bottom-right-radius: 50px; }
+
+.head-section .query-container .input-box .query-btn:hover { background-color: #d10000; }
+
+.head-section .query-container .input-box .query-btn:active { background-color: #c20000; }
+
+.head-section .query-container .hint-info { padding: 9px 0; text-align: center; font-size: 12px; color: #f00; }
+
+/* section-head 共 */
+.section-head { box-sizing: border-box; padding: 50px 0; text-align: center; color: #333; }
+
+.section-head * { box-sizing: border-box; }
+
+.section-head .head-title { font-size: 30px; font-weight: bold; }
+
+/* service-section */
+.service-section { box-sizing: border-box; background-color: #fff; }
+
+.service-section * { box-sizing: border-box; }
+
+.service-section .service-list { padding-bottom: 90px; text-align: center; font-size: 0; }
+
+.service-section .service-list .service-item { display: inline-block; vertical-align: top; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.service-section .service-list .service-item i { display: block; width: 80px; height: 80px; margin: 0 auto; background: url(../resource/img/sme_finance_sprites006.png) no-repeat 0 0; border-radius: 50%; box-shadow: 0 2px 5px 0.5px #ffb6b6; -webkit-transition: box-shadow .3s ease-out; transition: box-shadow .3s ease-out; }
+
+.service-section .service-list .service-item p { margin-top: 30px; font-size: 14px; color: #333; }
+
+.service-section .service-list .service-item:hover { -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); }
+
+.service-section .service-list .service-item:hover i { box-shadow: 0 5px 15px 0.8px #ffb6b6; }
+
+.service-section .service-list .service-item:hover p { color: #e00000; }
+
+.service-section .service-list .service-item + .service-item { margin-left: 60px; }
+
+/* service-desc-section */
+.service-desc-section { box-sizing: border-box; background: url(../resource/img/sme_finance_pic054.jpg) no-repeat center; background-size: cover; }
+
+.service-desc-section * { box-sizing: border-box; }
+
+.service-desc-section .desc-list { margin: -40px 0 0 -26px; }
+
+.service-desc-section .desc-list li { float: left; width: 280px; height: 230px; padding-top: 22px; margin: 40px 0 0 26px; text-align: center; color: #333; border: 1px solid #e00000; border-radius: 10px; }
+
+.service-desc-section .desc-list li i { display: block; width: 80px; height: 80px; margin: 0 auto; background: url(../resource/img/sme_finance_sprites006.png) no-repeat 0 -82px; }
+
+.service-desc-section .desc-list li h3 { margin-top: 22px; font-size: 16px; font-weight: bold; }
+
+.service-desc-section .desc-list li p { margin-top: 17px; line-height: 18px; font-size: 12px; }
+
+.service-desc-section .section-foot { padding: 50px 0; text-align: center; }
+
+.service-desc-section .section-foot .query-btn { display: inline-block; width: 240px; height: 50px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 16px; color: #fff; background-color: #e00000; border-radius: 50px; }
+
+.service-desc-section .section-foot .query-btn:hover { background-color: #d10000; }
+
+.service-desc-section .section-foot .query-btn:active { background-color: #c20000; }
+
+/* advantage-section */
+.advantage-section { box-sizing: border-box; background-color: #fff; }
+
+.advantage-section * { box-sizing: border-box; }
+
+.advantage-section .desc-list { padding-bottom: 68px; text-align: center; font-size: 0; }
+
+.advantage-section .desc-list li { display: inline-block; vertical-align: top; width: 270px; }
+
+.advantage-section .desc-list li figure { width: 100%; height: 180px; overflow: hidden; }
+
+.advantage-section .desc-list li figure img { display: block; width: 100%; height: 100%; }
+
+.advantage-section .desc-list li .text { height: 100px; background-color: #ececec; }
+
+.advantage-section .desc-list li .text:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.advantage-section .desc-list li .text h3 { display: inline-block; vertical-align: middle; font-size: 18px; font-weight: bold; color: #333; }
+
+.advantage-section .desc-list li + li { margin-left: 40px; }
+
+/* desc-section */
+.desc-section { box-sizing: border-box; background: url(../resource/img/sme_finance_pic055.jpg) no-repeat center; background-size: cover; }
+
+.desc-section * { box-sizing: border-box; }
+
+.desc-section .section-body { padding: 80px 0 65px; text-align: center; font-size: 0; }
+
+.desc-section .section-body > * { display: inline-block; vertical-align: top; }
+
+.desc-section .section-body article { width: 450px; padding-top: 63px; margin-left: 60px; text-align: justify; color: #333; }
+
+.desc-section .section-body article h3 { font-size: 30px; font-weight: bold; }
+
+.desc-section .section-body article p { line-height: 26px; font-size: 14px; text-indent: 2em; }
+
+.desc-section .section-body article p:first-of-type { margin-top: 30px; }
+
+/* foot-section */
+.foot-section { box-sizing: border-box; padding: 64px 0 77px; background-color: #fff; }
+
+.foot-section * { box-sizing: border-box; }
+
+.foot-section .panel-head { padding-bottom: 30px; }
+
+.foot-section .panel-head .head-title { float: left; padding-left: 8px; font-size: 20px; font-weight: bold; color: #333; border-left: 10px solid #e00000; }
+
+.foot-section .news-panel { width: 768px; }
+
+.foot-section .news-panel .news-cards { margin: -30px 0 0 -32px; }
+
+.foot-section .news-panel .news-card { float: left; width: 368px; margin: 30px 0 0 32px; }
+
+.foot-section .news-panel .news-card .pic { float: left; width: 120px; height: 90px; margin-right: -120px; overflow: hidden; }
+
+.foot-section .news-panel .news-card .pic img { display: block; width: 100%; height: 100%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.foot-section .news-panel .news-card .pic:hover img { -webkit-transform: scale(1.06); -ms-transform: scale(1.06); transform: scale(1.06); }
+
+.foot-section .news-panel .news-card .desc { margin-left: 132px; font-size: 12px; color: #333; }
+
+.foot-section .news-panel .news-card .desc a { max-width: 100%; vertical-align: middle; color: inherit; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.foot-section .news-panel .news-card .desc a:hover { color: #e00000; -webkit-transform: translateX(6px); -ms-transform: translateX(6px); transform: translateX(6px); }
+
+.foot-section .news-panel .news-card .desc a:active { color: #c20000; }
+
+.foot-section .news-panel .news-card .desc h3 { font-size: 14px; font-weight: bold; }
+
+.foot-section .news-panel .news-card .desc p { height: 40px; margin-top: 12px; line-height: 20px; overflow: hidden; }
+
+.foot-section .news-panel .news-card .desc .info { margin-top: 11px; color: #999; }
+
+.foot-section .question-panel { width: 372px; }
+
+.foot-section .question-panel .question-list { font-size: 14px; color: #333; }
+
+.foot-section .question-panel .question-list a { max-width: 100%; vertical-align: middle; color: inherit; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.foot-section .question-panel .question-list a:before { content: '·'; margin-right: 10px; font-size: 18px; font-weight: bold; }
+
+.foot-section .question-panel .question-list a:hover { color: #e00000; -webkit-transform: translateX(6px); -ms-transform: translateX(6px); transform: translateX(6px); }
+
+.foot-section .question-panel .question-list a:active { color: #c20000; }
+
+.foot-section .question-panel .question-list li { padding: 13px 0; border-bottom: 1px solid #afafaf; }

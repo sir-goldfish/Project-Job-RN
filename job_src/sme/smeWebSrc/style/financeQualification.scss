@@ -237,46 +237,56 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
   * {
     box-sizing: border-box;
   }
+  .section-head {
+    padding-top: 62px;
+    padding-bottom: 0;
+  }
   .section-body {
     padding: 53px 0;
   }
   .service-cards {
-    margin: -20px 0 0 -20px;
+    margin: -10px 0 0 -10px;
   }
   .service-card {
     float: left;
-    margin: 20px 0 0 20px;
+    margin: 10px 0 0 10px;
   }
   div.service-card {
-    width: 285px;
-    height: 356px;
+    width: 292px;
+    height: 390px;
+    text-align: center;
+    font-size: 0;
     color: #fff;
-    padding: 55px 48px 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: $selfInitBoxShadow;
+    &:before {
+      @include globalVerticalMiddleAssist;
+    }
+    .inner {
+      display: inline-block;
+      vertical-align: middle;
+    }
     h3 {
-      font-size: 30px;
+      font-size: 24px;
       font-weight: bold;
     }
-    ul {
-      min-height: 124px;
-      margin-top: 33px;
-      font-size: 16px;
-      li + li {
-        margin-top: 20px;
-      }
+    p {
+      margin-top: 30px - 2px;
+      line-height: 18px;
+      font-size: 14px;
     }
     .more-btn {
       width: 120px;
       height: 40px;
-      margin-top: 63px - 16px - 20px;
+      margin-top: 80px - 2px;
       line-height: 40px - 2px;
       text-align: center;
       font-size: 14px;
       color: #fff;
       border: 1px solid #fff;
+      border-radius: 40px;
       &:hover {
         color: #333;
         background-color: #fff;
@@ -287,9 +297,9 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
     }
   }
   a.service-card {
-    width: 285px;
-    height: 168px;
-    padding: 20px;
+    width: 292px;
+    height: 190px;
+    padding: 34px 24px 0;
     color: #333;
     background-color: #fff;
     background-repeat: no-repeat;
@@ -297,15 +307,15 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
     box-shadow: $selfInitBoxShadow;
     transition: transform .3s ease-out, box-shadow .3s ease-out;
     h3 {
-      font-size: 20px;
-      font-weight: normal;
+      font-size: 18px;
+      font-weight: bold;
     }
     p {
       margin-top: 20px;
-      font-size: 12px;
+      font-size: 14px;
     }
     .price {
-      margin-top: 22px;
+      margin-top: 24px;
       font-size: 14px;
       color: $selfActiveColor;
       .num {
@@ -320,14 +330,15 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
         color: $selfActiveColor;
       }
     }
+    &.sl-card {
+      width: 444px;
+    }
     &.l-card {
-      width: 590px;
+      width: 594px;
     }
     &.h-card {
-      height: 356px;
-    }
-    &.wide-padded {
-      padding: 40px 35px;
+      height: 390px;
+      padding: 50px 30px 0;
     }
   }
 }
@@ -335,54 +346,149 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
 /* problem-section */
 .problem-section {
   box-sizing: border-box;
-  padding: 52px 0 55px;
-  background: url(../resource/img/sme_landing_bgi30.jpg) no-repeat center top;
+  background: url(../resource/img/sme_finance_pic046.jpg) no-repeat center;
+  background-size: cover;
   * {
     box-sizing: border-box;
   }
-  .desc-title {
-    text-align: center;
-    span {
-      display: inline-block;
-      padding: 18px 44px;
-      vertical-align: middle;
-      font-size: 26px;
-      font-weight: bold;
-      color: #333;
-      background-color: #fff;
-      border-radius: 65px;
-    }
+  .section-head {
+    padding-top: 86px;
+    padding-bottom: 98px;
   }
   .desc-list {
-    position: relative;
-    width: 912px;
-    min-height: 82px + 228px;
-    margin: 12px auto 0;
-    background: url(../resource/img/sme_landing_pic127_0.png) no-repeat center top;
+    text-align: center;
+    font-size: 0;
     li {
-      position: absolute;
-      top: 81px;
-      width: 200px;
-      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      width: 160px;
       .icon {
         display: block;
         margin: 0 auto;
       }
       h3 {
-        margin-top: 22px - 4px;
+        margin-top: 30px - 5px;
         line-height: 24px;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: normal;
         color: #fff;
       }
     }
+    li + li {
+      margin-left: 136px;
+    }
   }
   .section-foot {
-    padding-top: 60px - 4px;
+    padding-top: 65px - 5px;
+    padding-bottom: 57px;
     text-align: center;
-    .self-btn {
-      $selfWidth: 300px;
-      min-width: $selfWidth;
+    .query-btn {
+      $selfHeight: 50px;
+      display: inline-block;
+      width: 240px;
+      height: $selfHeight;
+      vertical-align: middle;
+      line-height: $selfHeight - 2px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: $selfHeight;
+      &:hover {
+        color: #333;
+        background-color: #fff;
+      }
+      &:active {
+        background-color: #fff - 15%;
+      }
+    }
+  }
+}
+
+/* path-section */
+.path-section {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+  .path-list {
+    padding-bottom: 95px;
+    text-align: center;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      i {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: url(../resource/img/sme_finance_sprites004.png) no-repeat 0 0;
+        box-shadow: 0 5px 15px 0 rgba(147, 1, 1, .25);
+      }
+      p {
+        margin-top: 40px;
+        font-size: 16px;
+        color: #333;
+      }
+      &.arrow {
+        margin: 35px 20px 0;
+        font-size: 50px;
+        color: #ddd;
+      }
+    }
+  }
+}
+
+/* question-section */
+.question-section {
+  box-sizing: border-box;
+  background-color: #fff;
+  * {
+    box-sizing: border-box;
+  }
+  .section-head {
+    padding-top: 73px;
+    padding-bottom: 24px;
+  }
+  .question-wrap {
+    min-height: 450px;
+    padding: 56px 310px 100px 50px;
+    background: url(../resource/img/sme_finance_pic047.jpg) no-repeat 765px -44px;
+  }
+  .question-bars {
+    margin: -70px 0 0 -20px;
+    font-size: 0;
+  }
+  .question-bar {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    min-height: 18px;
+    padding: 0 30px;
+    margin: 70px 0 0 20px;
+    vertical-align: top;
+    line-height: 16px;
+    font-size: 14px;
+    color: #333;
+    transition: transform .3s ease-out;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 18px;
+      background: url(../resource/img/sme_finance_icon004.png) no-repeat center;
+    }
+    &:hover {
+      transform: translateX(-12px);
     }
   }
 }
