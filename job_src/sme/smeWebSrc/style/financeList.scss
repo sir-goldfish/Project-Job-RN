@@ -1,0 +1,508 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeFinanceColorStress;
+$selfBoxShadow: 0 4px 15px 0 rgba(204, 204, 204, .9);
+$selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* head-crumbs-nav */
+.head-crumbs-nav {
+  .m-crumbs-nav {
+    background-color: transparent;
+    dl {
+      & > * {
+        font-size: 12px;
+        color: #333;
+        a {
+          color: inherit;;
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+        span {
+          color: #999;
+        }
+      }
+      dd + dd:before {
+        color: inherit;
+      }
+    }
+  }
+}
+
+/* filter-panel */
+.filter-panel {
+  $selfWidth: 80px;
+  $selfHeight: 26px;
+  $selfFontSize: 14px;
+  box-sizing: border-box;
+  font-size: $selfFontSize;
+  color: #333;
+  background-color: #fff;
+  * {
+    box-sizing: border-box;
+  }
+  .title {
+    float: left;
+    width: $selfWidth;
+    margin-right: - $selfWidth;
+    line-height: $selfHeight;
+  }
+  .content {
+    margin-left: $selfWidth;
+    line-height: $selfHeight - 2px;
+  }
+  .results-container {
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee;
+    .results-group {
+      float: left;
+      margin: -10px 0 0 -10px;
+      .result {
+        float: left;
+        height: $selfHeight;
+        padding: 0 8px;
+        margin: 10px 0 0 10px;
+        font-size: 0;
+        color: $selfActiveColor;
+        border: 1px solid $selfActiveColor;
+        border-radius: 4px;
+        cursor: default;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $selfFontSize;
+        }
+        .name {
+          max-width: 140px;
+        }
+        .del {
+          margin-left: 5px;
+          font-size: 12px;
+          color: inherit;
+        }
+        &:hover {
+          color: #fff;
+          background-color: $selfActiveColor;
+        }
+      }
+    }
+  }
+  .choose-container {
+    padding: 20px 30px 30px;
+    .options-box {
+      float: left;
+      width: 925px;
+    }
+    .options-group {
+      float: left;
+      width: 100%;
+      margin: -10px 0 0 -10px;
+      .option {
+        float: left;
+        height: $selfHeight;
+        padding: 0 8px;
+        margin: 10px 0 0 10px;
+        font-size: 0;
+        color: #666;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+        }
+        .name {
+          max-width: 140px;
+        }
+        &.chosen {
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-color: $selfActiveColor;
+        }
+        &:hover {
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-color: $selfActiveColor;
+        }
+      }
+      .custom-option {
+        float: left;
+        height: $selfHeight;
+        padding: 0 8px;
+        margin: 10px 0 0 10px;
+        font-size: 0;
+        color: #666;
+        border: 1px solid transparent;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+        }
+        .connector {
+          margin: 0 2px;
+        }
+        .unit {
+          margin: 0 5px;
+        }
+        input[type='text'] {
+          width: 70px;
+          height: $selfHeight - 2px;
+          padding: 0 10px;
+          margin: 0 5px;
+          line-height: $selfHeight - 4px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          &:focus {
+            border-color: $selfActiveColor;
+          }
+        }
+        .handle-btn {
+          display: inline-block;
+          min-width: 30px;
+          height: $selfHeight - 2px;
+          padding: 0 10px;
+          margin: 0 5px;
+          vertical-align: middle;
+          line-height: $selfHeight - 4px;
+          text-align: center;
+          color: #666;
+          background-color: #f7f7f7;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          &:hover {
+            background-color: #f7f7f7 - 15%;
+          }
+          &:active {
+            background-color: #f7f7f7 - 30%;
+          }
+          &.confirm-btn {
+            color: #fff;
+            background-color: $selfActiveColor;
+            border-color: $selfActiveColor;
+            &:hover {
+              background-color: $selfActiveColor - 15%;
+            }
+            &:active {
+              background-color: $selfActiveColor - 30%;
+            }
+          }
+        }
+        &:hover {
+          //box-shadow: 0 0 0 1px $selfActiveColor; //*171229禁
+        }
+      }
+    }
+    .options-foot-handle {
+      display: none;
+      //padding-top: 5px; //*171229禁
+      padding-top: 10px;
+      text-align: center;
+      .handle-btn {
+        display: inline-block;
+        min-width: 30px;
+        height: $selfHeight;
+        padding: 0 10px;
+        margin: 5px;
+        vertical-align: middle;
+        line-height: $selfHeight - 2px;
+        text-align: center;
+        color: #666;
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        &:hover {
+          background-color: #f7f7f7 - 15%;
+        }
+        &:active {
+          background-color: #f7f7f7 - 30%;
+        }
+        &.confirm-btn {
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-color: $selfActiveColor;
+          &:hover {
+            background-color: $selfActiveColor - 15%;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+    }
+    .handle-group {
+      float: right;
+      font-size: 0;
+      .handle-btn {
+        display: inline-block;
+        height: $selfHeight;
+        padding: 0 8px;
+        vertical-align: middle;
+        line-height: $selfHeight;
+        font-size: 14px;
+        color: #999;
+        border-radius: 4px;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1;
+          color: inherit;
+        }
+        i {
+          font-size: 16px;
+          transition: transform .4s ease-out;
+        }
+        &.hide {
+          display: none;
+        }
+        &.active {
+          color: #fff;
+          background-color: $selfActiveColor;
+          &.more-btn {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        &:hover {
+          color: #fff;
+          background-color: $selfActiveColor;
+        }
+      }
+      .handle-btn + .handle-btn {
+        margin-left: 5px;
+      }
+    }
+    .choose-item {
+      &.with-more {
+        .options-group-wrap {
+          //max-height: 26px; //*171229禁
+          height: 26px;
+          overflow: hidden;
+        }
+        &.on-more {
+          .options-box {
+            //padding: 5px; //*171229禁
+            //border: 1px solid $selfActiveColor; //*171229禁
+          }
+          .options-group-wrap {
+            //max-height: 200px; //*171229禁
+            height: auto;
+            //overflow: auto; //*171229禁
+          }
+        }
+      }
+      &.on-multiple {
+        .options-box {
+          //padding: 5px; //*171229禁
+          //border: 1px solid $selfActiveColor; //*171229禁
+        }
+        .options-foot-handle {
+          display: block;
+        }
+        &.on-more {
+          .options-box {
+            //padding: 10px 10px 5px; //*171229禁
+          }
+          .options-group-wrap {
+            //padding: 5px; //*171229禁
+            //box-shadow: 0 0 0 1px $selfActiveColor; //*171229禁
+          }
+          .options-foot-handle {
+            //padding-top: 5px; //*171229禁
+          }
+        }
+      }
+    }
+    .choose-item + .choose-item {
+      margin-top: 15px;
+    }
+  }
+}
+
+/* filter-bar */
+.filter-bar {
+  margin-top: 10px;
+  .bar-panel {
+    $selfHeight: 26px;
+    $selfFont: 14px;
+    padding: 15px 30px;
+    line-height: $selfHeight;
+    font-size: $selfFont;
+    color: #333;
+    background-color: #fff;
+    .filter-group {
+      font-size: 0;
+      .filter-item {
+        display: inline-block;
+        vertical-align: middle;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $selfFont;
+        }
+        .content {
+          padding-left: 12px;
+          select {
+            max-width: 108px;
+            height: $selfHeight;
+            padding: 0 12px;
+            line-height: $selfHeight - 2px;
+            border: 1px solid #ddd;
+          }
+        }
+      }
+      .filter-item + .filter-item {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+/* content-container */
+.content-container {
+  box-sizing: border-box;
+  padding: 22px 0;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* main-content */
+.content-container .main-content {
+  .service-cards {
+    margin: -20px 0 0 -20px;
+  }
+  .service-card {
+    float: left;
+    width: 285px;
+    height: 320px;
+    margin: 20px 0 0 20px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: $selfInitBoxShadow;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+    .pic {
+      display: block;
+      width: 100%;
+      height: 210px;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: transform .3s ease-out;
+      }
+      &:hover {
+        img {
+          transform: scale(1.06);
+        }
+      }
+    }
+    .desc {
+      padding: 18px 10px 0;
+      h3 {
+        font-size: 14px;
+        font-weight: normal;
+        a {
+          max-width: 100%;
+          vertical-align: middle;
+          color: inherit;
+          transition: transform .3s ease-out;
+          &:hover {
+            color: $selfActiveColor;
+            transform: translateX(6px);
+          }
+          &:active {
+            color: $selfActiveColor - 30%;
+          }
+        }
+      }
+      .info {
+        margin-top: 15px;
+        line-height: 1.4;
+        font-size: 14px;
+        color: #999;
+        .price {
+          line-height: 1;
+          color: $selfActiveColor;
+          .num {
+            font-size: 1.4em;
+            font-weight: bold;
+          }
+        }
+      }
+      .foot-info {
+        margin-top: 15px;
+        line-height: 16px;
+        font-size: 14px;
+        color: #666;
+        .tag {
+          display: inline-block;
+          padding: 0 6px;
+          height: 16px;
+          vertical-align: middle;
+          font-size: 12px;
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-radius: 16px;
+        }
+        .tag + .tag {
+          margin-left: 8px;
+        }
+      }
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: $selfBoxShadow;
+    }
+  }
+  .content-empty {
+    padding: 100px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    .pic {
+      margin: 0 auto 60px;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  .pagination-container {
+    padding: 20px 0;
+    .m-default-pagination {
+      $selfColor: $selfActiveColor;
+      .current {
+        background-color: $selfColor;
+      }
+      a {
+        &:hover {
+          background-color: $selfColor;
+          border-color: $selfColor;
+        }
+        &:active {
+          background-color: $selfColor - 30%;
+        }
+      }
+      input[type="text"]:focus {
+        border-color: $selfColor;
+      }
+      input[type="button"] {
+        &:hover {
+          color: #fff;
+          background-color: $selfColor;
+          border-color: $selfColor;
+        }
+        &:active {
+          background-color: $selfColor - 30%;
+        }
+      }
+    }
+  }
+}

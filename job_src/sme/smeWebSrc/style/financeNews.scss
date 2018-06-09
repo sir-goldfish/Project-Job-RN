@@ -86,6 +86,7 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
             color: inherit;
             transition: transform .3s ease-out;
             &:hover {
+              color: $selfActiveColor;
               transform: translateX(6px);
             }
           }
@@ -178,7 +179,7 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
 
 /* main-content */
 .content-container .main-content {
-  min-height: 1200px;
+  min-height: 1195px;
   width: 800px;
   padding: 20px 22px;
   background-color: #fff;

@@ -47,7 +47,7 @@
 .service-section .service-list .service-item + .service-item { margin-left: 60px; }
 
 /* service-desc-section */
-.service-desc-section { box-sizing: border-box; background: url(../resource/img/sme_finance_pic054.jpg) no-repeat center; background-size: cover; }
+.service-desc-section { box-sizing: border-box; background: url(../resource/img/sme_finance_pic054.jpg) no-repeat center top; }
 
 .service-desc-section * { box-sizing: border-box; }
 

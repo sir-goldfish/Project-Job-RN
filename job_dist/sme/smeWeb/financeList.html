@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>财税列表页-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/financeList.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head7">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="javascript:;" class="logo-link">
+                <img src="resource/img/sme_logo_finance.png">
+            </a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="javascript:;" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">开办公司</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">代理记账</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">税收筹划</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">办理资质</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">人事社保</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">招商加盟</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="item-name">财税学院</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--head-crumbs-nav-->
+<section class="head-crumbs-nav sme-wrapper">
+    <nav class="m-crumbs-nav sme-inner">
+        <dl>
+            <dt>您当前的位置：</dt>
+            <dd><a href="javascript:;">首页</a></dd>
+            <dd><span>服务列表</span></dd>
+        </dl>
+    </nav>
+</section>
+<!--filter-container-->
+<section class="filter-container sme-wrapper">
+    <div class="sme-inner">
+        <section class="filter-panel">
+            <div class="results-container f-clearfix">
+                <div class="title">已选条件：</div>
+                <div class="content f-clearfix">
+                    <ul class="results-group f-clearfix">
+                        <li class="result">
+                            <span class="name f-ellipsis" title="服务类型：三个字">服务类型：三个字</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="服务范围：来五个字吧">服务范围：来五个字吧</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="服务分类：七个字七个字吧">服务分类：七个字七个字吧</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="全部清除">全部清除</span>
+                            <a href="javascript:;" class="del-all del iconfont">&#xe723;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="choose-container">
+                <div class="choose-item">
+                    <div class="title">一般操作：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option chosen">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item with-more">
+                    <div class="title">更多操作：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="handle-group">
+                            <a href="javascript:;" class="more-btn handle-btn">
+                                <i class="iconfont">&#xe9a2;</i><span>更多</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item with-multiple">
+                    <div class="title">多选操作：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="options-foot-handle">
+                                <a href="javascript:;" class="confirm-btn handle-btn">确定</a>
+                                <a href="javascript:;" class="cancel-btn handle-btn">取消</a>
+                            </div>
+                        </div>
+                        <div class="handle-group">
+                            <a href="javascript:;" class="multiple-btn handle-btn">
+                                <i class="iconfont">&#xe772;</i><span>多选</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item with-more with-multiple">
+                    <div class="title">组合操作：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="六个字六个字">六个字六个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来十个字吧来十个字吧">来十个字吧来十个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="六个字六个字">六个字六个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来十个字吧来十个字吧">来十个字吧来十个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="来五个字吧">来五个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="四个字吧">四个字吧</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="三个字">三个字</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="options-foot-handle">
+                                <a href="javascript:;" class="confirm-btn handle-btn">确定</a>
+                                <a href="javascript:;" class="cancel-btn handle-btn">取消</a>
+                            </div>
+                        </div>
+                        <div class="handle-group">
+                            <a href="javascript:;" class="multiple-btn handle-btn">
+                                <i class="iconfont">&#xe772;</i><span>多选</span>
+                            </a>
+                            <a href="javascript:;" class="more-btn handle-btn">
+                                <i class="iconfont">&#xe9a2;</i><span>更多</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<!--filter-bar-->
+<section class="filter-bar sme-wrapper">
+    <div class="sme-inner">
+        <div class="bar-panel f-clearfix">
+            <div class="filter-group f-pull-left">
+                <div class="filter-item">
+                    <span class="title">当前服务城市</span>
+                    <span class="content">
+                        <select>
+                            <option value="重庆">重庆</option>
+                            <option value="杭州">杭州</option>
+                            <option value="地区">地区</option>
+                            <option value="地区">地区</option>
+                            <option value="地区">地区</option>
+                            <option value="地区">地区</option>
+                            <option value="地区">地区</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="filter-info f-pull-right">共有 50 个结果</div>
+        </div>
+    </div>
+</section>
+<!--content-container-->
+<section class="content-container sme-wrapper">
+    <div class="sme-inner f-clearfix">
+        <!--main-content-->
+        <main class="main-content">
+            <!--service-content-->
+            <section class="service-content">
+                <div class="content-empty">
+                    <div class="pic"><img src="resource/img/sme_icon25.png"></div>
+                    <div class="text">没有相关内容……</div>
+                </div>
+                <ul class="service-cards f-clearfix">
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_1.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_2.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_3.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_1.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_2.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_3.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_1.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_2.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_3.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_1.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_2.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_3.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_1.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_2.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_3.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-card">
+                        <a href="javascript:;" class="pic" title="服务名称"><img
+                                src="resource/img/sme_finance_pic057_1.jpg"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:;" class="f-ellipsis" title="服务名称">服务名称</a></h3>
+                            <div class="info f-clearfix">
+                                <span class="price f-pull-left"><span class="num">￥5888</span> 元起</span>
+                                <span class="f-pull-right">重庆</span>
+                            </div>
+                            <div class="foot-info f-clearfix">
+                                <span class="f-pull-left">融诺财税</span>
+                                <span class="f-pull-right"><span class="tag">自营</span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pagination-container">
+                    <div class="m-default-pagination">100 条记录 2/3 页<a href='javascript:;'>上一页</a><a href="javascript:;">1</a><span
+                            class='current'>2</span><a href='javascript:;'>3</a><a href="javascript:;">下一页</a></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</section>
+<!--共用底部-->
+<footer class="sme-foot">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe7d0;</i>
+                    <div class="text">
+                        <h6>品质</h6>
+                        <p>15年以上财税经验积累国内IDG投资互联网财税企业</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe7d3;</i>
+                    <div class="text">
+                        <h6>专业</h6>
+                        <p>15年以上财税经验积累国内IDG投资互联网财税企业</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe7d1;</i>
+                    <div class="text">
+                        <h6>安全</h6>
+                        <p>15年以上财税经验积累国内IDG投资互联网财税企业</p>
+                    </div>
+                </li>
+                <li class="desc-item">
+                    <i class="iconfont">&#xe7d4;</i>
+                    <div class="text">
+                        <h6>多元</h6>
+                        <p>15年以上财税经验积累国内IDG投资互联网财税企业</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-group sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="text-link">
+                <div class="text-link-inner">
+                    <div class="top-link">
+                        <dl class="about-links">
+                            <dt>关于我们</dt>
+                            <dd><a href="javascript:;">公司介绍</a></dd>
+                            <dd><a href="javascript:;">企业文化</a></dd>
+                            <dd><a href="javascript:;">专家团队</a></dd>
+                            <dd><a href="javascript:;">发展历程</a></dd>
+                        </dl>
+                        <dl class="service-links">
+                            <dt>服务支持</dt>
+                            <dd><a href="javascript:;">联系我们</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                        </dl>
+                        <dl class="guide-links">
+                            <dt>新手指南</dt>
+                            <dd><a href="javascript:;">注册新用户</a></dd>
+                            <dd><a href="javascript:;">雇主入门</a></dd>
+                            <dd><a href="javascript:;">服务商入门</a></dd>
+                            <dd><a href="javascript:;">规则中心</a></dd>
+                        </dl>
+                        <dl class="hot-line">
+                            <dt>客服热线：</dt>
+                            <dd class="phone">400-619-6199 转 2</dd>
+                            <dd class="time">工作时间：<br>周一至周日9：00-18：00</dd>
+                        </dl>
+                    </div>
+                    <div class="bottom-link f-clearfix">
+                        <dl class="service-links f-pull-left">
+                            <dt>融诺旗下服务</dt>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#f99003;">&#xe708;</a>
+                                <a href="javascript:;" class="text">融诺知产</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#f21e02;">&#xe706;</a>
+                                <a href="javascript:;" class="text">融诺工商</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#d69f56;">&#xe8b2;</a>
+                                <a href="javascript:;" class="text">融诺法律</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#00b7ee;">&#xe705;</a>
+                                <a href="javascript:;" class="text">融诺人事</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="icon iconfont"
+                                   style="background-color:#e60012;">&#xe707;</a>
+                                <a href="javascript:;" class="text">融诺金融</a>
+                            </dd>
+                        </dl>
+                        <dl class="friend-links f-pull-right">
+                            <dt>友情链接</dt>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">支付宝</a></dd>
+                            <dd><a href="javascript:;">前程无忧</a></dd>
+                            <dd><a href="javascript:;">网易</a></dd>
+                            <dd><a href="javascript:;">聚美优品</a></dd>
+                            <dd><a href="javascript:;">淘宝网</a></dd>
+                            <dd><a href="javascript:;">更多</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-link">
+                <figure>
+                    <img src="resource/img/sme_wx_qrcode.png">
+                </figure>
+                <p>扫一扫关注我们</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>© 2017 RongNuo.Com Inc. All Rights Reserved. 渝ICP备18006208号-1</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    // 筛选相关功能示例
+    $('.handle-group').find('.handle-btn').on('click', function () {
+        if ($(this).hasClass('more-btn') == true) {
+            if ($(this).hasClass('active') == false) {
+                $(this).addClass('active').find('span').text('收起');
+                $(this).parents('.choose-item').addClass('on-more');
+            } else {
+                $(this).parents('.choose-item').find('.options-group-wrap').scrollTop(0);
+                $(this).removeClass('active').find('span').text('更多');
+                $(this).parents('.choose-item').removeClass('on-more');
+            }
+        }
+        if ($(this).hasClass('multiple-btn') == true) {
+            if ($(this).hasClass('active') == false) {
+                $(this).addClass('active');
+                $(this).parents('.choose-item').addClass('on-multiple');
+                if ($(this).siblings('.more-btn').length > 0) {
+                    $(this).siblings('.more-btn').addClass('hide');
+                    if ($(this).siblings('.more-btn').hasClass('active') == false) {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
+                }
+            } else {
+                $(this).removeClass('active');
+                $(this).parents('.choose-item').removeClass('on-multiple');
+                if ($(this).siblings('.more-btn').length > 0) {
+                    $(this).siblings('.more-btn').removeClass('hide');
+                    if ($(this).siblings('.more-btn').hasClass('active') == true) {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
