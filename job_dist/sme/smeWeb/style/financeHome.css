@@ -133,10 +133,6 @@
 
 .query-section .query-entry .query-tab .tab-content { margin-top: 30px; width: 740px; height: 80px; }
 
-.query-section .query-entry .query-tab .tab-content .content-item { display: none; }
-
-.query-section .query-entry .query-tab .tab-content .content-item.current { display: block; }
-
 .query-section .query-entry .query-tab .tab-content .input-box { position: relative; width: 100%; }
 
 .query-section .query-entry .query-tab .tab-content .input-box input[type='text'] { display: inline-block; height: 50px; padding: 14px 16px; line-height: 20px; vertical-align: middle; font-size: 12px; color: #333; border: 1px solid #aaa; }

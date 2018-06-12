@@ -65,6 +65,14 @@
 
 .service-info-tab .content-item.set-type-content .head-handle { padding: 10px 0; }
 
+.service-info-tab .content-item.set-type-content .head-handle .control-handle { display: inline-block; vertical-align: middle; margin-left: 15px; }
+
+.service-info-tab .content-item.set-type-content .head-handle .control-handle label { margin-bottom: 0; font-weight: normal; }
+
+.service-info-tab .content-item.set-type-content .head-handle .control-handle label input[type='radio'] { margin-top: 0; }
+
+.service-info-tab .content-item.set-type-content .head-handle .control-handle label + label { margin-left: 10px; }
+
 .service-info-tab .content-item.set-type-content .set-type-form .form-cell .cell-title { width: 85px; margin-right: -85px; }
 
 .service-info-tab .content-item.set-type-content .set-type-form .form-cell .cell-content { margin-left: 85px; }
@@ -75,7 +83,19 @@
 
 .service-info-tab .content-item.set-type-content .set-type-form .handle-cell .btn { padding-top: 4px; padding-bottom: 4px; }
 
+.service-info-tab .content-item.set-type-content .set-type-form .handle-cell .btn + .btn { margin-left: 5px; }
+
 .service-info-tab .content-item.set-type-content .set-type-form .form-tbody .form-row + .form-row { padding-top: 10px; margin-top: 7px; border-top: 2px dotted #ddd; }
+
+.service-info-tab .content-item.set-type-content .set-type-form.multilevel-form .level-item { position: relative; padding: 10px 0; border-radius: 6px; }
+
+.service-info-tab .content-item.set-type-content .set-type-form.multilevel-form .level-item.level1-item:nth-child(even) { background-color: #f4f4f4; }
+
+.service-info-tab .content-item.set-type-content .set-type-form.multilevel-form .level-item.level1-item + .level1-item { margin-top: 15px; }
+
+.service-info-tab .content-item.set-type-content .set-type-form.multilevel-form .level-item.level2-item:before { content: ''; position: absolute; top: 0; left: 25px; right: 25px; border-top: 1px dashed #ccc; }
+
+.service-info-tab .content-item.set-type-content .set-type-form.multilevel-form .level-item.level2-item:first-child:before { left: 10px; right: 10px; border-top: 1px solid #ccc; }
 
 .service-info-tab .content-item.set-desc-content .set-desc-form .form-cell .cell-title { float: none; width: auto; margin-right: auto; text-align: justify; font-weight: bold; }
 

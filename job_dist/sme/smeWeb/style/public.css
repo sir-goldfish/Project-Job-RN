@@ -560,35 +560,33 @@ table .table-loading { min-width: 120px; height: 18px; margin: 0 auto; backgroun
 .m-crumbs-nav dl dd + dd:before { content: '>'; display: inline-block; margin: 0 6px; color: #666; }
 
 /* m-area-choose */
-.m-area-choose { position: relative; z-index: 20; color: #666; }
+.m-area-choose { box-sizing: border-box; position: relative; z-index: 5; color: #666; }
 
-.m-area-choose .icon { position: absolute; top: 11px; right: 12px; display: inline-block; width: 8px; height: 5px; background: url(../resource/img/sme_icon_sprites.png) no-repeat -23px 0; }
+.m-area-choose * { box-sizing: border-box; }
 
-.m-area-choose .result-container { position: relative; z-index: 1; height: 26px; padding-left: 10px; padding-right: 12px; line-height: 26px; background-color: #fff; border: 1px solid #ddd; }
+.m-area-choose .icon { position: absolute; top: 50%; right: 12px; display: inline-block; margin-top: -3px; border: 4px solid transparent; border-top: 5px solid #f78e24; border-bottom: none; }
+
+.m-area-choose .result-container { position: relative; z-index: 1; height: 26px; padding-left: 10px; padding-right: 12px; line-height: 24px; background-color: #fff; border: 1px solid #ddd; }
 
 .m-area-choose .result-container .result-text { min-width: 185px; padding-right: 15px; font-size: 12px; }
 
-.m-area-choose .choose-container { position: absolute; top: 27px; left: 0; display: none; width: 518px; padding: 17px 25px 44px; background-color: #fff; border: 1px solid #ddd; }
+.m-area-choose .choose-container { position: absolute; top: 25px; left: 0; display: none; width: 568px; padding: 17px 25px 44px; background-color: #fff; border: 1px solid #ddd; }
 
 .m-area-choose .choose-container .choose-tab-nav { position: relative; height: 26px; padding: 0 7px; border-bottom: 1px solid #f78e24; }
 
 .m-area-choose .choose-container .choose-tab-nav ul { font-size: 0; }
 
-.m-area-choose .choose-container .choose-tab-nav li { position: relative; top: 1px; display: none; min-width: 48px; height: 24px; padding-left: 14px; padding-right: 26px; margin-left: 15px; vertical-align: top; line-height: 24px; font-size: 12px; color: #000; border: 1px solid #ddd; border-bottom: none; cursor: pointer; }
-
-.m-area-choose .choose-container .choose-tab-nav li .icon { top: 10px; right: 10px; }
+.m-area-choose .choose-container .choose-tab-nav li { position: relative; top: 0; display: none; min-width: 48px; height: 26px; padding-left: 14px; padding-right: 26px; margin-left: 15px; vertical-align: top; line-height: 24px; font-size: 12px; color: inherit; border: 1px solid #ddd; border-bottom-color: transparent; cursor: pointer; }
 
 .m-area-choose .choose-container .choose-tab-nav .current { display: inline-block; border-color: #f78e24; border-bottom: 1px solid #fff; }
-
-.m-area-choose .choose-container .choose-tab-nav .current .icon { background-position-x: -33px; }
 
 .m-area-choose .choose-container .choose-tab-nav .show-nav { display: inline-block; }
 
 .m-area-choose .choose-container .choose-tab-content .content-item { display: none; min-height: 70px; padding-top: 24px; }
 
-.m-area-choose .choose-container .choose-tab-content .content-item ul { margin-left: -6px; margin-top: -6px; font-size: 0; }
+.m-area-choose .choose-container .choose-tab-content .content-item ul { margin: -6px 0 0 -6px; font-size: 0; }
 
-.m-area-choose .choose-container .choose-tab-content .content-item li { display: inline-block; padding: 6px 8px; margin-left: 6px; margin-top: 6px; line-height: 1; font-size: 12px; cursor: pointer; -webkit-transition: background-color .2s ease-out, color .2s ease-out; transition: background-color .2s ease-out, color .2s ease-out; }
+.m-area-choose .choose-container .choose-tab-content .content-item li { display: inline-block; padding: 6px 8px; margin: 6px 0 0 6px; line-height: 1; font-size: 12px; cursor: pointer; -webkit-transition: background-color .2s ease-out, color .2s ease-out; transition: background-color .2s ease-out, color .2s ease-out; }
 
 .m-area-choose .choose-container .choose-tab-content .content-item .chose-option, .m-area-choose .choose-container .choose-tab-content .content-item li:hover { color: #fff; background-color: #f78e24; }
 

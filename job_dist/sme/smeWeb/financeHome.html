@@ -478,45 +478,13 @@
                         <li>人事社保</li>
                     </ul>
                     <div class="tab-content">
-                        <div class="content-item current">
+                        <div class="content-item">
                             <div class="input-box">
                                 <input type="text" placeholder="请输入公司名称，例：融诺企业服务有限公司" style="width:44%;">
                                 <input type="text" placeholder="输入您的手机号码，以便接收查询结果" style="width:56%;">
                                 <a href="javascript:;" class="query-btn">免费核名</a>
                             </div>
                             <div class="hint-info">*提示信息占位</div>
-                        </div>
-                        <div class="content-item">
-                            <div class="input-box">
-                                <input type="text" placeholder="请输入您公司的营业额，如：100万" style="width:44%;">
-                                <input type="text" placeholder="输入您的手机号码，以便接收查询结果" style="width:56%;">
-                                <a href="javascript:;" class="query-btn">免费获取代账方案</a>
-                            </div>
-                            <div class="hint-info"></div>
-                        </div>
-                        <div class="content-item">
-                            <div class="input-box">
-                                <input type="text" placeholder="请填写所需办理的资质，如建筑资质" style="width:44%;">
-                                <input type="text" placeholder="输入您的手机号码，以便接收查询结果" style="width:56%;">
-                                <a href="javascript:;" class="query-btn">免费咨询代办细节</a>
-                            </div>
-                            <div class="hint-info"></div>
-                        </div>
-                        <div class="content-item">
-                            <div class="input-box">
-                                <input type="text" placeholder="输入您的姓名，如：张先生/公司名称" style="width:44%;">
-                                <input type="text" placeholder="输入您的手机号码，以便接收查询结果" style="width:56%;">
-                                <a href="javascript:;" class="query-btn">免费咨询税收方案</a>
-                            </div>
-                            <div class="hint-info"></div>
-                        </div>
-                        <div class="content-item">
-                            <div class="input-box">
-                                <input type="text" placeholder="定制专属化人力解决方案" style="width:44%;">
-                                <input type="text" placeholder="输入您的手机号码，以便接收查询结果" style="width:56%;">
-                                <a href="javascript:;" class="query-btn">立即咨询</a>
-                            </div>
-                            <div class="hint-info"></div>
                         </div>
                     </div>
                 </div>
@@ -996,12 +964,16 @@
 </footer>
 <!--script-->
 <script src="script/jquery.min.js"></script>
-<script src="script/switch-tab.js"></script>
 <script src="plugin/swiper-3.4.2/swiper-3.4.2.jquery.min.js"></script>
 <script>
     // query-tab
-    switchTab($('.query-tab'), 'click');
-
+    $('.query-tab .tab-nav').find('li').on('click', function () {
+        if ($(this).hasClass('current') == false) {
+            $(this).addClass('current').siblings().removeClass('current');
+        }
+        var currentIndex = $(this).index();
+        console.log(currentIndex);
+    });
     // case-swiper
     var caseSwiper = new Swiper('.case-swiper', {
         initialSlide: 0,

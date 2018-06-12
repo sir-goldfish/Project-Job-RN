@@ -154,6 +154,21 @@
   &.set-type-content {
     .head-handle {
       padding: 10px 0;
+      .control-handle {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        label {
+          margin-bottom: 0;
+          font-weight: normal;
+          input[type='radio'] {
+            margin-top: 0;
+          }
+        }
+        label + label {
+          margin-left: 10px;
+        }
+      }
     }
     .set-type-form {
       .form-cell {
@@ -179,12 +194,45 @@
           padding-top: 4px;
           padding-bottom: 4px;
         }
+        .btn + .btn {
+          margin-left: 5px;
+        }
       }
       .form-tbody {
         .form-row + .form-row {
           padding-top: 10px;
           margin-top: 7px;
           border-top: 2px dotted #ddd;
+        }
+      }
+      &.multilevel-form {
+        .level-item {
+          position: relative;
+          padding: 10px 0;
+          border-radius: 6px;
+          &.level1-item {
+            &:nth-child(even) {
+              background-color: #f4f4f4;
+            }
+            & + .level1-item {
+              margin-top: 15px;
+            }
+          }
+          &.level2-item {
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 25px;
+              right: 25px;
+              border-top: 1px dashed #ccc;
+            }
+            &:first-child:before {
+              left: 10px;
+              right: 10px;
+              border-top: 1px solid #ccc;
+            }
+          }
         }
       }
     }

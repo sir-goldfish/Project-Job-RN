@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>财税用设置服务信息-融诺企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/css/animate.css">
+    <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/setServiceInfo.css">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body class="gray-bg">
+<div class="wrapper-content animated fadeInRight">
+    <div class="main-body-wrapper row">
+        <div class="main-container col-sm-12">
+            <!--service-info-container-->
+            <section class="service-info-container col-sm-12">
+                <div class="service-info-form form-table">
+                    <div class="form-row">
+                        <div class="form-cell sme-col-4">
+                            <div class="cell-inner clearfix">
+                                <div class="cell-title star-title">标题长度有多长呢：</div>
+                                <div class="cell-content">
+                                    <div class="input-box">
+                                        <input type="text">
+                                    </div>
+                                    <div class="hint-info">*提示信息占位</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-cell sme-col-4">
+                            <div class="cell-inner clearfix">
+                                <div class="cell-title">select：</div>
+                                <div class="cell-content">
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="Option1">Option1</option>
+                                            <option value="Option2">Option2</option>
+                                            <option value="Option3">Option3</option>
+                                            <option value="Option4">Option4</option>
+                                            <option value="Option5">Option5</option>
+                                        </select>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-cell sme-col-4">
+                            <div class="cell-inner clearfix">
+                                <div class="cell-title">radio：</div>
+                                <div class="cell-content">
+                                    <div class="input-box">
+                                        <label class="input-label">
+                                            <input type="radio" name="radio">Radio1
+                                        </label>
+                                        <label class="input-label">
+                                            <input type="radio" name="radio">Radio2
+                                        </label>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-cell sme-col-4">
+                            <div class="cell-inner clearfix">
+                                <div class="cell-title">checkbox：</div>
+                                <div class="cell-content">
+                                    <div class="input-box">
+                                        <label class="input-label">
+                                            <input type="checkbox">Checkbox1
+                                        </label>
+                                        <label class="input-label">
+                                            <input type="checkbox">Checkbox2
+                                        </label>
+                                        <label class="input-label">
+                                            <input type="checkbox">Checkbox3
+                                        </label>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-cell sme-col-4">
+                            <div class="cell-inner clearfix">
+                                <div class="cell-title">textarea：</div>
+                                <div class="cell-content">
+                                    <div class="input-box">
+                                        <textarea></textarea>
+                                    </div>
+                                    <div class="hint-info"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-cell sme-col-12">
+                            <div class="form-btn-group">
+                                <a href="javascript:;" class="form-btn btn btn-danger">提交</a>
+                                <a href="javascript:;" class="form-btn btn btn-info">取消</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--service-info-tab-->
+            <section class="service-info-tab col-sm-12">
+                <nav class="tab-nav">
+                    <ul class="clearfix">
+                        <li class="nav-item current">服务类型设置</li>
+                        <li class="nav-item">服务介绍设置</li>
+                        <li class="nav-item">常见问题设置</li>
+                        <li class="nav-item">客户反馈设置</li>
+                    </ul>
+                </nav>
+                <div class="tab-content">
+                    <!--设置类型-->
+                    <div class="current set-type-content content-item">
+                        <div class="head-handle clearfix">
+                            <div class="pull-right">
+                                <a href="javascript:;" class="add-type-btn btn btn-self-orange">新增服务类型</a>
+                                <div class="control-handle">
+                                    <span>是否包含套餐：</span><label><input type="radio"> 是</label><label><input type="radio">
+                                    否</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set-type-form multilevel-form form-table">
+                            <div class="level1-wrap">
+                                <div class="level1-item level-item">
+                                    <div class="form-row">
+                                        <div class="form-cell sme-col-4">
+                                            <div class="cell-inner clearfix">
+                                                <div class="cell-title">类型名称：</div>
+                                                <div class="cell-content">
+                                                    <div class="input-box">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="hint-info"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="handle-cell form-cell sme-col-8">
+                                            <div class="cell-inner clearfix">
+                                                <div class="cell-content">
+                                                    <a href="javascript:;"
+                                                       class="add-sub-btn btn btn-self-orange1">新增下级套餐</a>
+                                                    <a href="javascript:;"
+                                                       class="del-self-btn btn btn-self-green">移除该类型</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="level2-wrap">
+                                        <div class="level2-item level-item">
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-4">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">input：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-3">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">input：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-3">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">select：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <select>
+                                                                    <option value="option1">option1</option>
+                                                                    <option value="option2">option2</option>
+                                                                    <option value="option3">option3</option>
+                                                                    <option value="option4">option4</option>
+                                                                    <option value="option5">option5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="handle-cell form-cell sme-col-2">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-content">
+                                                            <a href="javascript:;"
+                                                               class="del-self-btn btn btn-self-green">移除该套餐</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="level1-item level-item">
+                                    <div class="form-row">
+                                        <div class="form-cell sme-col-4">
+                                            <div class="cell-inner clearfix">
+                                                <div class="cell-title">类型名称：</div>
+                                                <div class="cell-content">
+                                                    <div class="input-box">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="hint-info"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="handle-cell form-cell sme-col-8">
+                                            <div class="cell-inner clearfix">
+                                                <div class="cell-content">
+                                                    <a href="javascript:;"
+                                                       class="add-sub-btn btn btn-self-orange1">新增下级套餐</a>
+                                                    <a href="javascript:;"
+                                                       class="del-self-btn btn btn-self-green">移除该类型</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="level2-wrap">
+                                        <div class="level2-item level-item">
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-4">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">input：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-3">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">input：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-3">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">select：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <select>
+                                                                    <option value="option1">option1</option>
+                                                                    <option value="option2">option2</option>
+                                                                    <option value="option3">option3</option>
+                                                                    <option value="option4">option4</option>
+                                                                    <option value="option5">option5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="handle-cell form-cell sme-col-2">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-content">
+                                                            <a href="javascript:;"
+                                                               class="del-self-btn btn btn-self-green">移除该套餐</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="level2-item level-item">
+                                            <div class="form-row">
+                                                <div class="form-cell sme-col-4">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">input：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-3">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">input：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cell sme-col-3">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-title">select：</div>
+                                                        <div class="cell-content">
+                                                            <div class="input-box">
+                                                                <select>
+                                                                    <option value="option1">option1</option>
+                                                                    <option value="option2">option2</option>
+                                                                    <option value="option3">option3</option>
+                                                                    <option value="option4">option4</option>
+                                                                    <option value="option5">option5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="hint-info"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="handle-cell form-cell sme-col-2">
+                                                    <div class="cell-inner clearfix">
+                                                        <div class="cell-content">
+                                                            <a href="javascript:;"
+                                                               class="del-self-btn btn btn-self-green">移除该套餐</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-cell sme-col-12">
+                                    <div class="form-btn-group">
+                                        <a href="javascript:;" class="form-btn btn btn-danger">提交</a>
+                                        <a href="javascript:;" class="form-btn btn btn-info">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--设置服务介绍-->
+                    <div class="set-desc-content content-item">
+                        <div class="set-desc-form form-table">
+                            <div class="form-row">
+                                <div class="form-cell sme-col-10">
+                                    <div class="cell-inner clearfix">
+                                        <div class="cell-title">设置服务介绍：</div>
+                                        <div class="cell-content">
+                                            <div class="input-box">
+                                                <textarea></textarea>
+                                            </div>
+                                            <div class="hint-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-cell sme-col-12">
+                                    <div class="form-btn-group">
+                                        <a href="javascript:;" class="form-btn btn btn-danger">提交</a>
+                                        <a href="javascript:;" class="form-btn btn btn-info">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--设置常见问题-->
+                    <div class="set-desc-content content-item">
+                        <div class="set-desc-form form-table">
+                            <div class="form-row">
+                                <div class="form-cell sme-col-10">
+                                    <div class="cell-inner clearfix">
+                                        <div class="cell-title">设置常见问题：</div>
+                                        <div class="cell-content">
+                                            <div class="input-box">
+                                                <textarea></textarea>
+                                            </div>
+                                            <div class="hint-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-cell sme-col-12">
+                                    <div class="form-btn-group">
+                                        <a href="javascript:;" class="form-btn btn btn-danger">提交</a>
+                                        <a href="javascript:;" class="form-btn btn btn-info">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--设置客户反馈-->
+                    <div class="set-desc-content content-item">
+                        <div class="set-desc-form form-table">
+                            <div class="form-row">
+                                <div class="form-cell sme-col-10">
+                                    <div class="cell-inner clearfix">
+                                        <div class="cell-title">设置客户反馈：</div>
+                                        <div class="cell-content">
+                                            <div class="input-box">
+                                                <textarea></textarea>
+                                            </div>
+                                            <div class="hint-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-cell sme-col-12">
+                                    <div class="form-btn-group">
+                                        <a href="javascript:;" class="form-btn btn btn-danger">提交</a>
+                                        <a href="javascript:;" class="form-btn btn btn-info">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="theme/js/jquery.min.js"></script>
+<script>
+    //--user-info-tab切换示例
+    function switchTab($dom, handle) {
+        var $tabNav = $dom.find('.tab-nav'),
+            $tabContent = $dom.find('.tab-content'),
+            $naves = $tabNav.find('.nav-item'),
+            $contents = $tabContent.find('.content-item');
+        $naves.on(handle, function () {
+            if ($(this).hasClass('current') == false) {
+                var currentIndex = $(this).index();
+                if ($tabNav.find('.current').length > 0) {
+                    $tabNav.find('.current').removeClass('current');
+                }
+                $(this).addClass('current');
+                if ($tabContent.find('.current').length > 0) {
+                    $tabContent.find('.current').removeClass('current');
+                }
+                $contents.eq(currentIndex).addClass('current');
+            }
+        });
+    }
+
+    switchTab($('.service-info-tab'), 'click');
+</script>
+</body>
+</html>
