@@ -31,23 +31,7 @@
 .sme-head4 .head-logo .right-info .hot-line { color: #fff; }
 
 /* head-section */
-.head-section { padding-top: 50px; padding-bottom: 73px; }
-
-.head-section .head-title { text-align: center; color: #fff; }
-
-.head-section .head-title .main-title .text { position: relative; display: inline-block; width: 700px; height: 67px; vertical-align: top; background: url(../resource/img/sme_landing_pic50.png) no-repeat center; }
-
-.head-section .head-title .main-title .text:before { content: ''; position: absolute; top: -6px; left: -38px; display: inline-block; width: 46px; height: 36px; background: url(../resource/img/sme_landing_pic48.png) no-repeat center; }
-
-.head-section .head-title .sub-title { margin-top: 19px; }
-
-.head-section .head-title .sub-title .text { display: inline-block; vertical-align: top; font-size: 45px; font-style: italic; }
-
-.head-section .head-title .sub-title .text:before, .head-section .head-title .sub-title .text:after { content: ''; display: inline-block; width: 120px; height: 0; margin-top: 7px; vertical-align: top; border-top: 1px solid #fff; }
-
-.head-section .head-title .sub-title .text:before { margin-right: 12px; }
-
-.head-section .head-title .sub-title .text:after { margin-left: 28px; }
+.head-section { padding-top: 181px; padding-bottom: 73px; }
 
 .head-section .query-panel { box-sizing: border-box; position: relative; width: 100%; margin-top: 30px; }
 
