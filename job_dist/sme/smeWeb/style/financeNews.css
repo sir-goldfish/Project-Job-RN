@@ -115,8 +115,6 @@
 
 .content-container .aside-content .service-card h3 { margin-right: 12px; font-size: 18px; font-weight: bold; }
 
-.content-container .aside-content .service-card i { width: 56px; height: 51px; background: url(../resource/img/sme_finance_sprites007.png) no-repeat 0 0; }
-
 .content-container .aside-content .service-card:hover { box-shadow: 0 4px 12px 0 #dddddd; -webkit-transform: translateY(-3px); -ms-transform: translateY(-3px); transform: translateY(-3px); }
 
 .content-container .aside-content .service-card.l-card { width: 390px; }

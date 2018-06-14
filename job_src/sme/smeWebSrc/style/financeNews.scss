@@ -288,11 +288,11 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
       font-size: 18px;
       font-weight: bold;
     }
-    i {
-      width: 56px;
-      height: 51px;
-      background: url(../resource/img/sme_finance_sprites007.png) no-repeat 0 0;
-    }
+    //i {
+    //  width: 56px;
+    //  height: 51px;
+    //  background: url(../resource/img/sme_finance_sprites007.png) no-repeat 0 0;
+    //}
     &:hover {
       box-shadow: 0 4px 12px 0 rgba(221, 221, 221, 1);
       transform: translateY(-3px);

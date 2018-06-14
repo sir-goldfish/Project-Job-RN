@@ -16,6 +16,7 @@ function setFloatConsult($dom, beginPoint) {
         winH = $(window).height();
         setRight();
     });
+
     //设置位置
     function setRight() {
         if ((winW - 1200) / 2 >= domW + 34) {
@@ -46,4 +47,23 @@ function setFloatConsult($dom, beginPoint) {
         });
     });
 }
+
 setFloatConsult($('.m-default-float-consult'), 100);
+//退出登录
+$(".exit").click(function () {
+    $.get('/loginout', {}, function (res) {
+        if (res.code == 200) {
+            if (res.js) {
+                var js_content = "";
+                $(res.js).each(function (i, v) {
+                    js_content += v;
+                });
+                console.log(js_content);
+                $("header").append(js_content);
+                setTimeout(function () {
+                    location.href = '/index';
+                }, 1500);
+            }
+        }
+    })
+})

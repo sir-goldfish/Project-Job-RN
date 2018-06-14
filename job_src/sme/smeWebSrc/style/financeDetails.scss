@@ -390,6 +390,34 @@ body {
           }
         }
       }
+      .common-advantage-desc {
+        .list-wrap {
+          margin: 0 20px;
+        }
+        .desc-list {
+          margin: -20px 0 0 -26px;
+          li {
+            float: left;
+            margin: 20px 0 0 26px;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+            figure {
+              width: 245px;
+              height: 127px;
+              box-shadow: $selfInitBoxShadow;
+              img {
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            p {
+              padding: 22px 0;
+            }
+          }
+        }
+      }
     }
     // 个性
     .item-desc {
@@ -487,11 +515,460 @@ body {
             }
           }
         }
+        .advantage-desc {
+          .common-body-head {
+            padding-top: 52px;
+          }
+          .list-wrap {
+            margin: 0 66px;
+          }
+          .desc-list {
+            margin: -28px 0 0 -38px;
+            li {
+              float: left;
+              width: 215px;
+              height: 110px;
+              padding-top: 10px;
+              margin: 28px 0 0 38px;
+              text-align: center;
+              font-size: 12px;
+              color: #333;
+              background-color: #fff;
+              box-shadow: $selfInitBoxShadow;
+              i {
+                display: block;
+                width: 36px;
+                height: 36px;
+                margin: 0 auto;
+                background: url(../resource/img/sme_finance_sprites008.png) no-repeat 0 -72px;
+              }
+              h3 {
+                margin-top: 12px;
+                font-size: inherit;
+                font-weight: normal;
+              }
+              p {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+      .icp-desc {
+        .bg-panel {
+          $selfColor: #3974e6;
+          padding-left: 40px;
+          padding-right: 163px;
+          font-size: 12px;
+          color: #333;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          .stress {
+            color: $selfColor;
+          }
+          .panel-head {
+            padding: 40px 0 34px - 6px;
+            .head-title {
+              font-size: 20px;
+              font-weight: bold;
+              color: $selfColor;
+            }
+          }
+          .panel-body {
+            padding-bottom: 40px;
+            line-height: 2;
+          }
+          .material-list {
+            $selfWidth: 16px;
+            dd {
+              margin-top: 4px;
+              & > * {
+                display: inline-block;
+                vertical-align: top;
+                line-height: $selfWidth;
+              }
+              i {
+                width: $selfWidth;
+                height: $selfWidth;
+                margin-right: - $selfWidth;
+                text-align: center;
+                font-style: normal;
+                color: #fff;
+                background-color: $selfColor;
+                border-radius: 50%;
+              }
+              span {
+                margin-left: $selfWidth + 10px;
+              }
+            }
+          }
+          .require-list {
+            li {
+              line-height: 16px;
+              b {
+                margin-right: 16px;
+                font-size: 14px;
+              }
+            }
+            li + li {
+              margin-top: 36px;
+            }
+          }
+        }
+        .bg-panel + .bg-panel {
+          margin-top: 20px;
+        }
+      }
+      .company-desc {
+        .bg-panel {
+          $selfColor: $selfActiveColor;
+          padding-left: 40px;
+          padding-right: 163px;
+          font-size: 12px;
+          color: #333;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          .stress {
+            color: $selfColor;
+          }
+          .panel-head {
+            padding: 40px 0 34px - 6px;
+            .head-title {
+              font-size: 20px;
+              font-weight: bold;
+              color: $selfColor;
+            }
+          }
+          .panel-body {
+            padding-bottom: 40px;
+            line-height: 2;
+          }
+        }
+        .bg-panel + .bg-panel {
+          margin-top: 20px;
+        }
+        .panel {
+          padding: 20px 40px;
+          .panel-head {
+            padding: 35px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: $selfActiveColor;
+          }
+          .advantage-list {
+            font-size: 0;
+            margin: -50px 0 0 -10px;
+            li {
+              $selfWidth: 50px;
+              display: inline-block;
+              width: 320px;
+              margin: 50px 0 0 10px;
+              vertical-align: top;
+              & > * {
+                display: inline-block;
+                vertical-align: top;
+              }
+              i {
+                width: $selfWidth;
+                height: $selfWidth;
+                margin-right: - $selfWidth;
+                background: url(../resource/img/sme_finance_sprites008.png) no-repeat 0 -110px;
+              }
+              .text {
+                padding-top: 7px;
+                margin-left: $selfWidth + 10px;
+                font-size: 12px;
+                color: #333;
+                h3 {
+                  font-weight: bold;
+                }
+                p {
+                  margin-top: 12px;
+                }
+              }
+            }
+          }
+          .path-list {
+            position: relative;
+            text-align: center;
+            font-size: 0;
+            &:before {
+              content: '';
+              position: absolute;
+              top: 53px + 12px + 2px;
+              left: 0;
+              right: 0;
+              height: 2px;
+              background-color: $selfActiveColor;
+            }
+            li {
+              display: inline-block;
+              min-width: 110px;
+              vertical-align: top;
+              i {
+                display: block;
+                width: 53px;
+                height: 53px;
+                margin: 0 auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+              }
+              b {
+                display: block;
+                width: 6px;
+                height: 6px;
+                margin: 12px auto 0;
+                background: $selfActiveColor;
+                border-radius: 50%;
+              }
+              p {
+                margin-top: 14px;
+                font-size: 12px;
+                color: #333;
+              }
+            }
+            li + li {
+              //margin-left: 0;
+            }
+          }
+        }
+      }
+      .personal-tax-desc {
+        .bg-panel {
+          $selfColor: $selfActiveColor;
+          padding-left: 40px;
+          padding-right: 163px;
+          font-size: 12px;
+          color: #333;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          .stress {
+            color: $selfColor;
+          }
+          .panel-head {
+            padding: 40px 0 34px - 6px;
+            .head-title {
+              font-size: 20px;
+              font-weight: bold;
+              color: $selfColor;
+            }
+          }
+          .panel-body {
+            padding-bottom: 40px;
+            line-height: 2;
+          }
+          .scope-list {
+            dd {
+              padding-left: 2.5em;
+              margin-top: 4px;
+            }
+          }
+          .scope-list + .scope-list {
+            margin-top: 10px;
+          }
+          .material-list {
+            dd {
+              margin-top: 4px;
+            }
+          }
+          .policy-list {
+            li {
+              position: relative;
+              padding-left: 15px;
+              &:before {
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $selfActiveColor;
+              }
+            }
+            li + li {
+              margin-top: 4px;
+            }
+          }
+        }
+        .bg-panel + .bg-panel {
+          margin-top: 20px;
+        }
+      }
+      .benefit-tax-desc {
+        .desc-table {
+          $selfBgColor: #f7f9fe;
+          $selfBgColor1: #636c96;
+          $selfBgColor2: #aeb5d8;
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          line-height: 1.7;
+          font-size: 12px;
+          color: #636c98;
+          .stress {
+            color: $selfActiveColor;
+          }
+          .head-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: $selfActiveColor;
+          }
+          td {
+            padding: 20px;
+            border: 1px solid #bdc6de;
+            background-color: $selfBgColor;
+            &:first-of-type {
+              color: #fff;
+              background-color: $selfBgColor1;
+            }
+          }
+          thead {
+            td {
+              font-size: 14px;
+              font-weight: bold;
+              background-color: $selfBgColor2;
+            }
+            tr {
+              &:first-of-type {
+                td {
+                  background-color: $selfBgColor;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+        .desc-table + .desc-table {
+          margin-top: 42px;
+        }
       }
     }
     .item-question {
+      .question-list {
+        padding-left: 64px;
+        padding-right: 90px;
+        color: #333;
+        h3, p {
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        h3 {
+          position: relative;
+          padding-left: 30px;
+          font-size: 16px;
+          font-weight: bold;
+          &:before {
+            background-image: url(../resource/img/sme_finance_icon004_1.png);
+          }
+        }
+        p {
+          position: relative;
+          padding-left: 30px;
+          margin-top: 20px - 2px;
+          line-height: 16px;
+          font-size: 12px;
+          &:before {
+            background-image: url(../resource/img/sme_finance_icon004_2.png);
+          }
+        }
+        li + li {
+          margin-top: 50px - 2px;
+        }
+      }
     }
     .item-evaluation {
+      .evaluation-list {
+        padding-left: 63px;
+        padding-right: 53px;
+        padding-bottom: 20px;
+        .user {
+          display: table;
+          width: 100%;
+          font-size: 12px;
+          color: #333;
+          & > * {
+            display: table-cell;
+            vertical-align: top;
+          }
+          figure {
+            width: 54px;
+            height: 54px;
+            overflow: hidden;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+          .desc {
+            padding-top: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+            .name {
+              font-size: 14px;
+              font-weight: bold;
+            }
+            .tags {
+              margin: 12px - 10px 0 0 -10px;
+              li {
+                display: inline-block;
+                height: 20px;
+                padding: 0 8px;
+                margin: 10px 0 0 10px;
+                vertical-align: top;
+                line-height: 20px;
+                color: #fff;
+                background-color: #32b70e;
+              }
+            }
+          }
+          .info {
+            padding-top: 6px;
+            min-width: 180px;
+            text-align: right;
+          }
+        }
+        .evaluation {
+          $selfBgColor: #f5f4f4;
+          position: relative;
+          padding: 14px - 2px 16px;
+          margin-top: 22px;
+          line-height: 16px;
+          font-size: 12px;
+          color: #333;
+          background-color: $selfBgColor;
+          border-radius: 8px;
+          &:before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-left-color: $selfBgColor;
+            border-right: none;
+            overflow: hidden;
+          }
+        }
+        li + li {
+          margin-top: 50px;
+        }
+      }
     }
   }
 }
