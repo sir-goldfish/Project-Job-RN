@@ -504,5 +504,39 @@ body {
         }
       }
     }
+    .m-group-pagination {
+      $selfColor: $selfActiveColor;
+      .current {
+        background-color: $selfColor;
+        border-color: $selfColor;
+      }
+      a {
+        &:hover {
+          background-color: $selfColor;
+          border-color: $selfColor;
+        }
+        &:active {
+          background-color: $selfColor - 30%;
+        }
+      }
+      input[type="text"]:focus {
+        border-color: $selfColor;
+      }
+      input[type="button"] {
+        &:hover {
+          background-color: $selfColor;
+          border-color: $selfColor;
+        }
+        &:active {
+          background-color: $selfColor - 30%;
+        }
+      }
+      .page-nav {
+        .current {
+          background-color: $selfColor;
+          border-color: $selfColor;
+        }
+      }
+    }
   }
 }

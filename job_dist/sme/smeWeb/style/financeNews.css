@@ -98,6 +98,14 @@
 
 .content-container .main-content .news-panel + .news-panel { margin-top: 30px; }
 
+.content-container .main-content .content-foot { padding: 40px 0; text-align: center; }
+
+.content-container .main-content .content-foot .handle-btn { display: inline-block; min-width: 128px; height: 38px; padding: 0 25px; vertical-align: middle; line-height: 38px; text-align: center; color: #bbb; background-color: #efefef; border-radius: 10px; }
+
+.content-container .main-content .content-foot .handle-btn:hover { color: #fff; background-color: #e00000; }
+
+.content-container .main-content .content-foot .handle-btn:active { color: #fff; background-color: #c20000; }
+
 .content-container .main-content .pagination-container { padding: 30px 0; }
 
 /* aside-content */

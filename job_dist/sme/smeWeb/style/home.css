@@ -501,7 +501,7 @@
 .case-section .case-cards-tab .current { display: block; }
 
 /* fixed-head */
-.fixed-head { position: fixed; top: 0; left: 0; z-index: 100; display: none; background-color: #fff; border-bottom: 2px solid #f78e24; box-shadow: 0 3px 3px 0 rgba(4, 4, 4, 0.2); }
+.fixed-head { position: fixed; top: 0; left: 0; z-index: 10; display: none; background-color: #fff; border-bottom: 2px solid #f78e24; box-shadow: 0 3px 3px 0 rgba(4, 4, 4, 0.2); }
 
 .fixed-head .sme-inner { padding: 13px 0; }
 
@@ -520,7 +520,7 @@
 .fixed-head .search-input .search-btn:hover { background-color: #ffa73d; }
 
 /* aside-lift-nav */
-.aside-lift-nav { position: fixed; top: 50%; z-index: 99; display: none; }
+.aside-lift-nav { position: fixed; top: 50%; z-index: 15; display: none; }
 
 .aside-lift-nav .lift-item { margin-top: 2px; text-align: center; background-color: #545454; cursor: pointer; -webkit-transition: background-color .2s ease-out; transition: background-color .2s ease-out; }
 

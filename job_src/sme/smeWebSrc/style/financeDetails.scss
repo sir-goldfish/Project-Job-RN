@@ -332,6 +332,17 @@ body {
           }
         }
       }
+      .input-box {
+        select {
+          width: 180px;
+          height: 28px;
+          padding: 0 0 0 10px;
+          vertical-align: middle;
+          line-height: 28px - 2px;
+          font-size: inherit;
+          border: 1px solid #ddd;
+        }
+      }
     }
   }
   .service-tab-container {

@@ -192,3 +192,17 @@ body { background-color: #f7f7f7; }
 .content-container .main-content .pagination-container .m-default-pagination input[type="button"]:hover { color: #fff; background-color: #e00000; border-color: #e00000; }
 
 .content-container .main-content .pagination-container .m-default-pagination input[type="button"]:active { background-color: #c20000; }
+
+.content-container .main-content .pagination-container .m-group-pagination .current { background-color: #e00000; border-color: #e00000; }
+
+.content-container .main-content .pagination-container .m-group-pagination a:hover { background-color: #e00000; border-color: #e00000; }
+
+.content-container .main-content .pagination-container .m-group-pagination a:active { background-color: #c20000; }
+
+.content-container .main-content .pagination-container .m-group-pagination input[type="text"]:focus { border-color: #e00000; }
+
+.content-container .main-content .pagination-container .m-group-pagination input[type="button"]:hover { background-color: #e00000; border-color: #e00000; }
+
+.content-container .main-content .pagination-container .m-group-pagination input[type="button"]:active { background-color: #c20000; }
+
+.content-container .main-content .pagination-container .m-group-pagination .page-nav .current { background-color: #e00000; border-color: #e00000; }

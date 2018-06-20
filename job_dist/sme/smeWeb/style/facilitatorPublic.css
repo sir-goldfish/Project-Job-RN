@@ -2,17 +2,13 @@
 body { background-color: #f7f7f7; }
 
 /* sme-head3个性 */
+.sme-head3 a:hover { color: #ff6a00; }
+
 .sme-head3 .head-bar { color: #fff; background-color: #22447a; }
-
-.sme-head3 .head-bar a { color: #fff; }
-
-.sme-head3 .head-bar a:hover { color: #ff6a00; }
 
 .sme-head3 .head-bar .bar-left .stock-code em { color: #fff; }
 
-.sme-head3 .head-bar .bar-right .stress a { color: #fff; }
-
-.sme-head3 .head-bar .bar-right .stress a:hover { color: #ff6a00; }
+.sme-head3 .head-bar .bar-right .stress { color: #fff; }
 
 .sme-head3 .head-logo .back-home { color: #22447a; }
 

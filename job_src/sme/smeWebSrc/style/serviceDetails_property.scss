@@ -46,7 +46,7 @@ $selfActiveColor: #03d6d1;
       position: absolute;
       top: 0;
       left: 100%;
-      z-index: 10;
+      z-index: 5;
       display: none;
       width: 457px;
       height: 307px;
@@ -86,7 +86,7 @@ $selfActiveColor: #03d6d1;
     }
     &:hover {
       .category-title {
-        z-index: 11;
+        z-index: 6;
         color: $selfActiveColor;
         background-color: #fff;
       }

@@ -136,6 +136,8 @@ body { background-color: #f7f7f7; }
 
 .content-container .main-content .service-desc-panel .form-table .m-area-choose .choose-container .choose-tab-content .content-item .chose-option, .content-container .main-content .service-desc-panel .form-table .m-area-choose .choose-container .choose-tab-content .content-item li:hover { background-color: #e00000; }
 
+.content-container .main-content .service-desc-panel .form-table .input-box select { width: 180px; height: 28px; padding: 0 0 0 10px; vertical-align: middle; line-height: 26px; font-size: inherit; border: 1px solid #ddd; }
+
 .content-container .main-content .service-tab-container .jump-tab-nav { padding-left: 20px; padding-right: 20px; }
 
 .content-container .main-content .service-tab-container .jump-tab-content { padding-left: 20px; padding-right: 20px; }

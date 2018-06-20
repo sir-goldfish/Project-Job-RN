@@ -252,6 +252,31 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
   .news-panel + .news-panel {
     margin-top: 30px;
   }
+  .content-foot {
+    padding: 40px 0;
+    text-align: center;
+    .handle-btn {
+      $selfHeight: 38px;
+      display: inline-block;
+      min-width: 128px;
+      height: $selfHeight;
+      padding: 0 25px;
+      vertical-align: middle;
+      line-height: $selfHeight;
+      text-align: center;
+      color: #bbb;
+      background-color: #efefef;
+      border-radius: 10px;
+      &:hover {
+        color: #fff;
+        background-color: $selfActiveColor;
+      }
+      &:active {
+        color: #fff;
+        background-color: $selfActiveColor - 30%;
+      }
+    }
+  }
   .pagination-container {
     padding: 30px 0;
   }

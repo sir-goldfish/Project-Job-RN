@@ -8,15 +8,15 @@ body {
 // *blue:#22447a;
 /* sme-head3个性 */
 .sme-head3 {
+  $selfActiveColor: $facilitatorBaseOrange;
+  a {
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
   .head-bar {
     color: #fff;
     background-color: #22447a;
-    a {
-      color: #fff;
-      &:hover {
-        color: $facilitatorBaseOrange;
-      }
-    }
     .bar-left {
       .stock-code {
         em {
@@ -26,12 +26,7 @@ body {
     }
     .bar-right {
       .stress {
-        a {
-          color: #fff;
-          &:hover {
-            color: $facilitatorBaseOrange;
-          }
-        }
+        color: #fff;
       }
     }
   }
@@ -39,7 +34,7 @@ body {
     .back-home {
       color: #22447a;
       &:hover {
-        color: $facilitatorBaseOrange;
+        color: $selfActiveColor;
       }
     }
   }

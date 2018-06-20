@@ -13,9 +13,20 @@
   margin-right: auto;
 }
 
-/* sme-head */
-// 主要公用头部
+/* - sme-head - */
+/* header 主要 */
 .sme-head {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
   .head-bar {
     $font: 12px;
     padding: 10px 0;
@@ -39,7 +50,7 @@
       }
       .stock-code {
         em {
-          color: $onColorOrange;
+          color: $selfActiveColor;
         }
       }
     }
@@ -52,9 +63,7 @@
         font-size: $font;
       }
       .stress {
-        a {
-          color: $onColorOrange;
-        }
+        color: $selfActiveColor;
       }
       .user-content {
         .register {
@@ -89,10 +98,6 @@
         color: $selfColor;
         .item-name {
           font-size: 16px;
-          color: inherit;
-          &:hover {
-            color: $onColorOrange;
-          }
         }
         .hide-group {
           position: absolute;
@@ -103,7 +108,7 @@
           padding-top: 18px;
           .group-list {
             position: relative;
-            min-width: 58px;
+            min-width: 98px;
             padding: 20px 20px 0;
             text-align: center;
             background-color: rgba(255, 255, 255, .9);
@@ -121,16 +126,8 @@
             }
             .group-item {
               padding-bottom: 20px;
-              a {
-                color: $selfColor;
-                &:hover {
-                  color: $onColorOrange;
-                }
-              }
               &.chosen {
-                a {
-                  color: $onColorOrange;
-                }
+                color: $selfActiveColor;
               }
             }
           }
@@ -138,7 +135,7 @@
         &.current {
           .item-name {
             font-weight: bold;
-            color: $onColorOrange;
+            color: $selfActiveColor;
           }
         }
         &:hover {
@@ -153,8 +150,8 @@
       float: right;
       margin-top: 2px;
       input {
-        width: 142px;
-        height: 18px;
+        width: 180px;
+        height: 28px;
         padding: 4px 31px 4px 5px;
         line-height: 18px;
         vertical-align: middle;
@@ -174,19 +171,23 @@
         transition: all .2s ease-out;
       }
       input:focus {
-        border-color: $onColorOrange;
+        border-color: $selfActiveColor;
       }
       .search-btn:hover {
         color: #fff;
-        background-color: $onColorOrange;
+        background-color: $selfActiveColor;
       }
     }
   }
 }
 
-// 登录/注册公用头部
+/* header 登录/注册 */
 .sme-head1 {
+  box-sizing: border-box;
   padding: 28px 0;
+  * {
+    box-sizing: border-box;
+  }
   .logo-link {
     float: left;
     display: block;
@@ -204,8 +205,19 @@
   }
 }
 
-// 关于我们公用头部
+/* header 关于我们 */
 .sme-head2 {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
   .head-bar {
     $font: 12px;
     padding: 10px 0;
@@ -229,7 +241,7 @@
       }
       .stock-code {
         em {
-          color: $onColorOrange;
+          color: $selfActiveColor;
         }
       }
     }
@@ -242,9 +254,7 @@
         font-size: $font;
       }
       .stress {
-        a {
-          color: $onColorOrange;
-        }
+        color: $selfActiveColor;
       }
       .user-content {
         .register {
@@ -275,20 +285,12 @@
         display: inline-block;
         padding: 0 30px 0 0;
         margin: 7px 0;
-        a {
-          font-size: 18px;
-          font-weight: bold;
-          color: #666;
-          transition: color .2s ease-out;
-        }
-        a:hover {
-          color: $onColorOrange;
-        }
+        font-size: 18px;
+        font-weight: bold;
+        color: #666;
       }
       .active-link {
-        a {
-          color: $onColorOrange;
-        }
+        color: $selfActiveColor;
       }
       li + li:before {
         content: '';
@@ -302,8 +304,19 @@
   }
 }
 
-// 会员中心公用头部
+/* header 会员中心 */
 .sme-head3 {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
   .head-bar {
     $font: 12px;
     padding: 10px 0;
@@ -327,7 +340,7 @@
       }
       .stock-code {
         em {
-          color: $onColorOrange;
+          color: $selfActiveColor;
         }
       }
     }
@@ -340,9 +353,7 @@
         font-size: $font;
       }
       .stress {
-        a {
-          color: $onColorOrange;
-        }
+        color: $selfActiveColor;
       }
       .user-content {
         .exit {
@@ -371,19 +382,24 @@
         font-weight: bold;
       }
       &:hover {
-        color: $onColorOrange;
+        color: $selfActiveColor;
       }
     }
   }
 }
 
-// 引流页公用头部
+/* header 推广页 */
 .sme-head4 {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
   .head-logo {
     padding: 16px 0;
     background-color: #fff;
     .stress {
-      color: $onColorOrange;
+      color: $selfActiveColor;
     }
     .logo-link {
       float: left;
@@ -403,7 +419,7 @@
         vertical-align: middle;
         color: #363636;
         &:hover {
-          color: $onColorOrange;
+          color: $selfActiveColor;
         }
       }
       .hot-line {
@@ -415,8 +431,19 @@
   }
 }
 
-// 知识产权公用头部
+/* header 知识产权 */
 .sme-head5 {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
   .head-bar {
     $font: 12px;
     padding: 10px 0;
@@ -440,7 +467,7 @@
       }
       .stock-code {
         em {
-          color: $onColorOrange;
+          color: $selfActiveColor;
         }
       }
     }
@@ -457,9 +484,7 @@
         }
       }
       .stress {
-        a {
-          color: $onColorOrange;
-        }
+        color: $selfActiveColor;
       }
       .user-content {
         .register {
@@ -493,15 +518,11 @@
         color: $selfColor;
         .item-name {
           font-size: 18px;
-          color: inherit;
-          &:hover {
-            color: $onColorOrange;
-          }
         }
         &.current {
           .item-name {
             font-weight: 700;
-            color: $onColorOrange;
+            color: $selfActiveColor;
           }
         }
       }
@@ -509,8 +530,19 @@
   }
 }
 
-// 法律服务公用头部
+/* header 法律服务 */
 .sme-head6 {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
   .head-bar {
     $font: 12px;
     padding: 10px 0;
@@ -534,7 +566,7 @@
       }
       .stock-code {
         em {
-          color: $onColorOrange;
+          color: $selfActiveColor;
         }
       }
     }
@@ -551,9 +583,7 @@
         }
       }
       .stress {
-        a {
-          color: $onColorOrange;
-        }
+        color: $selfActiveColor;
       }
       .user-content {
         .register {
@@ -566,13 +596,8 @@
     }
   }
   .head-logo {
-    box-sizing: border-box;
     position: relative;
-    //padding-top: 15px;
     background-color: #fff;
-    * {
-      box-sizing: border-box;
-    }
     .logo-link {
       float: left;
       margin-top: 15px;
@@ -587,25 +612,22 @@
       .nav-item {
         float: left;
         margin-left: 48px;
-        //margin-top: 18px;
-        //padding-bottom: 18px + 15px;
         color: $selfColor;
         .item-name {
           $selfHeight: 20px + 18px + 18px + 15px + 15px;
           height: $selfHeight;
           line-height: $selfHeight;
           font-size: 16px;
-          color: inherit;
         }
         &:hover {
           .item-name {
-            color: $onColorOrange;
+            color: $selfActiveColor;
           }
         }
         &.current {
           .item-name {
             font-weight: 700;
-            color: $onColorOrange;
+            color: $selfActiveColor;
           }
         }
         &.has-extension {
@@ -628,7 +650,7 @@
             position: absolute;
             left: 0;
             top: 100%;
-            z-index: 1;
+            z-index: 5;
             height: 0;
             font-size: 13px;
             color: #666;
@@ -637,12 +659,6 @@
             opacity: 0;
             filter: alpha(opacity=0);
             transition: opacity .3s ease-out;
-            a {
-              color: inherit;
-              &:hover {
-                color: $onColorOrange;
-              }
-            }
             .extension-list {
               padding: 23px 0;
               text-align: center;
@@ -702,14 +718,14 @@
           &.current {
             .item-name {
               &:after {
-                border-top-color: $onColorOrange;
+                border-top-color: $selfActiveColor;
               }
             }
           }
           &:hover {
             .item-name {
               &:after {
-                border-top-color: $onColorOrange;
+                border-top-color: $selfActiveColor;
                 transform: rotate(180deg);
               }
             }
@@ -728,42 +744,129 @@
   }
 }
 
-// 财税服务公用头部
+/* header 财税服务 */
 .sme-head7 {
+  $selfActiveColor: $globeFinanceColorStress;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
   .head-bar {
     $font: 12px;
-    padding: 10px 0;
     font-size: $font;
     background-color: #333;
-    a {
-      &:hover {
-        color: $globeFinanceColorStress;
-      }
-    }
     .bar-left {
       float: left;
+      & > * {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 10px;
+      }
       .location-box {
+        position: relative;
         display: inline-block;
-        .res-city {
-          i {
-            margin-right: 2px;
-            vertical-align: top;
-            font-size: 12px;
-            color: #fff;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        .trigger-box {
+          position: relative;
+          padding: 10px;
+          cursor: pointer;
+          .res-city {
+            i {
+              margin-right: 2px;
+              vertical-align: top;
+              font-size: 12px;
+              color: #fff;
+            }
+          }
+        }
+        .extension-box {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          display: none;
+          width: 358px;
+          min-height: 100px;
+          padding: 0 24px;
+          font-size: 12px;
+          background-color: #fff;
+          box-shadow: 0 4px 10px 0 rgba(24, 5, 9, .2);
+          a {
+            color: inherit;
+            &:hover {
+              color: $selfActiveColor;
+            }
+            &:active {
+              color: $selfActiveColor - 30%;
+            }
+          }
+          .hot-area {
+            padding: 14px - 4px 0;
+            color: #999;
+            border-bottom: 1px dashed #c5c5c5;
+            .cell {
+              display: table-cell;
+              vertical-align: top;
+              line-height: 20px;
+            }
+            .title {
+              width: 72px;
+            }
+            .option-group {
+              margin: 0 0 0 -18px;
+              li {
+                display: inline-block;
+                margin: 0 0 0 18px;
+              }
+            }
+          }
+          .total-area {
+            padding: 18px - 8px 0;
+            color: #333;
+            .option-group {
+              margin: -( 14px - 8px ) 0 0 -18px;
+              line-height: 20px;
+              li {
+                display: inline-block;
+                margin: 14px - 8px 0 0 18px;
+              }
+            }
+          }
+        }
+        &:hover {
+          z-index: 6;
+          .trigger-box {
+            z-index: 1;
+            color: #999;
+            background-color: #fff;
+            .res-city {
+              color: #333;
+              i {
+                color: #999;
+              }
+            }
+          }
+          .extension-box {
+            display: block;
           }
         }
       }
-      .hot-line, .stock-code {
-        margin-left: 20px;
-      }
       .stock-code {
         em {
-          color: $globeFinanceColorStress;
+          color: $selfActiveColor;
         }
       }
     }
     .bar-right {
       float: right;
+      padding: 10px 0;
       font-size: 0;
       .nav-item {
         display: inline-block;
@@ -771,9 +874,7 @@
         font-size: $font;
       }
       .stress {
-        a {
-          color: $globeFinanceColorStress;
-        }
+        color: $selfActiveColor;
       }
       .user-content {
         .register {
@@ -808,10 +909,6 @@
         color: $selfColor;
         .item-name {
           font-size: 16px;
-          color: inherit;
-          &:hover {
-            color: $globeFinanceColorStress;
-          }
         }
         .hide-group {
           position: absolute;
@@ -822,7 +919,7 @@
           padding-top: 18px;
           .group-list {
             position: relative;
-            min-width: 58px;
+            min-width: 98px;
             padding: 20px 20px 0;
             text-align: center;
             background-color: rgba(255, 255, 255, .9);
@@ -840,16 +937,8 @@
             }
             .group-item {
               padding-bottom: 20px;
-              a {
-                color: $selfColor;
-                &:hover {
-                  color: $globeFinanceColorStress;
-                }
-              }
               &.chosen {
-                a {
-                  color: $globeFinanceColorStress;
-                }
+                color: $selfActiveColor;
               }
             }
           }
@@ -857,7 +946,7 @@
         &.current {
           .item-name {
             font-weight: bold;
-            color: $globeFinanceColorStress;
+            color: $selfActiveColor;
           }
         }
         &:hover {
@@ -870,10 +959,16 @@
   }
 }
 
-/* sme-foot */
+/* - sme-foot - */
+/* footer 主要 */
 .sme-foot {
+  $selfActiveColor: $onColorOrange;
   $iconColor: #cacaca;
   $fontBlack: #363636;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
   .foot-desc {
     font-size: 0;
     background-color: #f1f1f1;
@@ -882,112 +977,133 @@
       padding-bottom: 35px;
       border-bottom: 1px solid #ddd;
     }
-    ul {
+    .desc-list {
       margin-left: -85px;
-    }
-    .desc-item {
-      display: inline-block;
-      margin-left: 85px;
-      i {
+      li {
         display: inline-block;
-        width: 61px;
-        height: 61px;
-        margin-right: 14px;
-        vertical-align: middle;
-        text-align: center;
-        line-height: 61px;
-        font-size: 36px;
-        color: $iconColor;
-        border: 1px solid $iconColor;
-        border-radius: 50%;
-        transition: all .2s ease-out;
-      }
-      .text {
-        display: inline-block;
-        width: 158px;
-        vertical-align: middle;
-        h6 {
-          margin-bottom: 10px;
-          font-size: 16px;
-          font-weight: normal;
-          color: #363636;
+        margin-left: 85px;
+        vertical-align: top;
+        i {
+          display: inline-block;
+          width: 61px;
+          height: 61px;
+          margin-right: 14px;
+          vertical-align: middle;
+          text-align: center;
+          line-height: 61px;
+          font-size: 36px;
+          color: $iconColor;
+          border: 1px solid $iconColor;
+          border-radius: 50%;
           transition: all .2s ease-out;
         }
-        p {
-          line-height: 18px;
-          font-size: 12px;
-          transition: all .2s ease-out;
+        .text {
+          display: inline-block;
+          width: 158px;
+          vertical-align: middle;
+          h6 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #363636;
+            transition: all .2s ease-out;
+          }
+          p {
+            line-height: 18px;
+            font-size: 12px;
+            transition: all .2s ease-out;
+          }
         }
-      }
-    }
-    .desc-item:hover {
-      i {
-        color: $onColorOrange;
-        border-color: $onColorOrange;
-      }
-      .text {
-        h6 {
-          color: $onColorOrange;
-        }
-        p {
-          color: $onColorOrange + 20%;
+        &:hover {
+          i {
+            color: $selfActiveColor;
+            border-color: $selfActiveColor;
+          }
+          .text {
+            h6 {
+              color: $selfActiveColor;
+            }
+            p {
+              color: $selfActiveColor + 20%;
+            }
+          }
         }
       }
     }
   }
   .foot-link-group {
+    $selfWidth: 150px;
     padding: 33px 0;
     background-color: #f1f1f1;
-    .text-link {
-      float: left;
-      width: 100%;
-      margin-right: -200px;
-      //margin-right: -236px;
-      .text-link-inner {
-        margin-right: 200px;
-        //margin-right: 236px;
+    a {
+      &:hover {
+        color: $selfActiveColor;
       }
-      .top-link {
-        margin-bottom: 15px;
-        font-size: 0;
-        dl {
+      &:active {
+        color: $selfActiveColor - 30%;
+      }
+    }
+    .qrcode {
+      float: right;
+      width: $selfWidth;
+      margin-left: - $selfWidth;
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 rgba(14, 5, 10, .1);
+      figure {
+        width: 146px;
+        height: 146px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        padding: 10px 0;
+        text-align: center;
+        color: #fff;
+        background-color: $selfActiveColor;
+      }
+    }
+    .link-group {
+      float: left;
+      margin-top: -20px;
+      margin-left: -44px;
+      margin-right: $selfWidth + 20px;
+      font-size: 0;
+      dl {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 44px;
+        vertical-align: top;
+        dt {
+          width: 100%;
+          font-size: 18px;
+          color: $fontBlack;
+        }
+        dd {
           display: inline-block;
+          margin-top: 24px;
           vertical-align: top;
-          dt {
-            width: 100%;
-            font-size: 18px;
-            color: $fontBlack;
-          }
+          font-size: 14px;
+        }
+        &.two-col-links {
           dd {
-            display: inline-block;
-            width: 49%;
-            margin-top: 24px;
-            vertical-align: top;
-            font-size: 14px;
+            width: 50%;
           }
         }
-        .about-links {
-          width: 27%;
-          //width: 28%;
-        }
-        .service-links {
-          width: 15%;
-          //width: 19%;
+        &.one-col-links {
           dd {
             width: 100%;
           }
         }
-        .guide-links {
-          width: 28%;
-        }
-        .hot-line {
-          width: 29%;
-          //width: 23%;
+        &.hot-line {
           dd {
             width: 100%;
           }
           .phone {
-            margin-top: 25px;
             font-size: 30px;
             font-weight: bold;
             color: $fontBlack;
@@ -997,28 +1113,10 @@
             line-height: 18px;
           }
         }
-      }
-      .bottom-link {
-        font-size: 0;
-        dl {
-          display: inline-block;
-          vertical-align: top;
-          dt {
-            width: 100%;
-            font-size: 18px;
-            color: $fontBlack;
-          }
+        &.service-links {
+          margin-right: 90px;
           dd {
-            display: inline-block;
-            vertical-align: top;
-            font-size: 14px;
-          }
-        }
-        .service-links {
-          dd {
-            width: 60px;
             margin-top: 20px;
-            margin-right: 38px;
             text-align: center;
             .icon {
               display: block;
@@ -1039,25 +1137,114 @@
               margin-top: 12px;
             }
           }
-        }
-        .friend-links {
-          width: 420px;
-          dt {
-            padding-bottom: 8px;
+          dd + dd {
+            margin-left: 40px;
           }
+        }
+        &.friendly-links {
           dd {
-            margin-top: 24px;
-            margin-right: 24px;
+            padding-right: 20px;
           }
         }
       }
     }
-    .pic-link {
-      position: relative;
+  }
+  .foot-copy {
+    padding: 18px 0;
+    text-align: center;
+    background-color: #333;
+  }
+}
+
+/* footer 财税服务 */
+.sme-foot1 {
+  $selfActiveColor: $globeFinanceColorStress;
+  $iconColor: #cacaca;
+  $fontBlack: #363636;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  .foot-desc {
+    font-size: 0;
+    background-color: #f1f1f1;
+    .sme-inner {
+      padding-top: 57px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid #ddd;
+    }
+    .desc-list {
+      margin-left: -85px;
+      li {
+        display: inline-block;
+        margin-left: 85px;
+        vertical-align: top;
+        i {
+          display: inline-block;
+          width: 61px;
+          height: 61px;
+          margin-right: 14px;
+          vertical-align: middle;
+          text-align: center;
+          line-height: 61px;
+          font-size: 36px;
+          color: $iconColor;
+          border: 1px solid $iconColor;
+          border-radius: 50%;
+          transition: all .2s ease-out;
+        }
+        .text {
+          display: inline-block;
+          width: 158px;
+          vertical-align: middle;
+          h6 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #363636;
+            transition: all .2s ease-out;
+          }
+          p {
+            line-height: 18px;
+            font-size: 12px;
+            transition: all .2s ease-out;
+          }
+        }
+        &:hover {
+          i {
+            color: $selfActiveColor;
+            border-color: $selfActiveColor;
+          }
+          .text {
+            h6 {
+              color: $selfActiveColor;
+            }
+            p {
+              color: $selfActiveColor + 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .foot-link-group {
+    $selfWidth: 150px;
+    padding: 33px 0;
+    background-color: #f1f1f1;
+    a {
+      &:hover {
+        color: $selfActiveColor;
+      }
+      &:active {
+        color: $selfActiveColor - 30%;
+      }
+    }
+    .qrcode {
       float: right;
-      width: 151px;
+      width: $selfWidth;
+      margin-left: - $selfWidth;
       background-color: #fff;
-      box-shadow: 0 0 10px 2px #ddd;
+      box-shadow: 0 0 10px 0 rgba(14, 5, 10, .1);
       figure {
         width: 146px;
         height: 146px;
@@ -1073,7 +1260,88 @@
         padding: 10px 0;
         text-align: center;
         color: #fff;
-        background-color: $onColorOrange;
+        background-color: $selfActiveColor;
+      }
+    }
+    .link-group {
+      float: left;
+      margin-top: -20px;
+      margin-left: -44px;
+      margin-right: $selfWidth + 20px;
+      font-size: 0;
+      dl {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 44px;
+        vertical-align: top;
+        dt {
+          width: 100%;
+          font-size: 18px;
+          color: $fontBlack;
+        }
+        dd {
+          display: inline-block;
+          margin-top: 24px;
+          vertical-align: top;
+          font-size: 14px;
+        }
+        &.two-col-links {
+          dd {
+            width: 50%;
+          }
+        }
+        &.one-col-links {
+          dd {
+            width: 100%;
+          }
+        }
+        &.hot-line {
+          dd {
+            width: 100%;
+          }
+          .phone {
+            font-size: 30px;
+            font-weight: bold;
+            color: $fontBlack;
+          }
+          .time {
+            margin-top: 10px;
+            line-height: 18px;
+          }
+        }
+        &.service-links {
+          margin-right: 90px;
+          dd {
+            margin-top: 20px;
+            text-align: center;
+            .icon {
+              display: block;
+              width: 38px;
+              height: 38px;
+              margin: 0 auto;
+              line-height: 40px;
+              text-align: center;
+              font-size: 22px;
+              color: #fff;
+              border-radius: 50%;
+              transition: transform .15s ease-out;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+            .text {
+              margin-top: 12px;
+            }
+          }
+          dd + dd {
+            margin-left: 40px;
+          }
+        }
+        &.friendly-links {
+          dd {
+            padding-right: 20px;
+          }
+        }
       }
     }
   }
@@ -2134,13 +2402,18 @@ table {
 
 /* m-default-float-consult */
 .m-default-float-consult {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
   position: fixed;
   top: 50%;
   right: -60px;
-  z-index: 100;
+  z-index: 15;
   height: 237px;
   margin-top: -118px;
   font-size: 14px;
+  * {
+    box-sizing: border-box;
+  }
   .consult-head {
     width: 53px;
     height: 66px;
@@ -2175,7 +2448,7 @@ table {
     .consult-btn {
       padding: 15px 0;
       line-height: 16px;
-      background-color: $onColorOrange;
+      background-color: $selfActiveColor;
       span {
         display: block;
         width: 14px;
@@ -2193,8 +2466,8 @@ table {
         color: #fff;
         background-color: #585858;
         .pic {
-          width: 80px;
-          height: 80px;
+          width: 84px;
+          height: 84px;
           padding: 2px;
           margin-bottom: 6px;
           background-color: #fff;
@@ -2215,18 +2488,23 @@ table {
       font-size: 15px;
     }
     .content-item:hover {
-      background-color: $onColorOrange + 20%;
+      background-color: $selfActiveColor + 20%;
     }
   }
 }
 
 /* m-landing-float-consult */
 .m-landing-float-consult {
+  $selfActiveColor: #f82d48;
+  box-sizing: border-box;
   position: fixed;
   bottom: 50px;
   right: 0;
-  z-index: 99;
+  z-index: 15;
   font-size: 14px;
+  * {
+    box-sizing: border-box;
+  }
   .lift-item {
     position: relative;
     margin-top: 2px;
@@ -2236,7 +2514,7 @@ table {
       width: 80px;
       height: 80px;
       color: #fff;
-      background-color: #f82d48;
+      background-color: $selfActiveColor;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
       transition: background-color .2s ease-out;
@@ -2260,7 +2538,7 @@ table {
     }
     &:hover {
       .item-init {
-        background-color: #df072e;
+        background-color: $selfActiveColor - 30%;
       }
       .item-hide {
         display: block;
@@ -2281,9 +2559,9 @@ table {
   .lift-go-top {
     display: none;
     .item-init {
+      padding-top: 20px;
       .icon {
         height: 20px;
-        padding-top: 20px;
         line-height: 20px;
         font-size: 16px;
       }
@@ -2302,7 +2580,7 @@ table {
   //$selfColorRed: #fe4654;
   $selfColorRed: $onColorOrange;
   position: fixed;
-  z-index: 120;
+  z-index: 15;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .45);

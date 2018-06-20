@@ -46,7 +46,7 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
     .form-item {
       .input-box {
         $selfHeight: 40px;
-        input[type='text'] {
+        input[type='text'], select {
           display: block;
           width: 100%;
           height: $selfHeight;
@@ -58,6 +58,9 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
           &:focus {
             border-color: $selfActiveColor;
           }
+        }
+        select {
+          padding-right: 0;
         }
       }
       .hint-info {
