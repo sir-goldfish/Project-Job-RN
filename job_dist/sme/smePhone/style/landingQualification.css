@@ -47,9 +47,9 @@
 /* service-section */
 .service-section { margin-top: 1rem; background-color: #fff; }
 
-.service-section .service-cards { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; padding-bottom: 3.2rem; margin-top: -2.2rem; }
+.service-section .service-cards { display: -webkit-box; display: flex; flex-wrap: wrap; -webkit-box-pack: justify; justify-content: space-between; width: 100%; padding-bottom: 3.2rem; margin-top: -2.2rem; }
 
-.service-section .service-cards .service-card { -ms-flex-preferred-size: 33.33333%; flex-basis: 33.33333%; margin-top: 2.2rem; text-align: center; }
+.service-section .service-cards .service-card { flex-basis: 33.33333%; margin-top: 2.2rem; text-align: center; }
 
 .service-section .service-cards .service-card .icon { width: 6rem; height: 6rem; margin: 0 auto; font-size: 0; background-color: #fff4f3; border-radius: 50%; overflow: hidden; }
 

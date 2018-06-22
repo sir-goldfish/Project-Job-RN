@@ -23,7 +23,7 @@ html { min-height: 100%; }
 
 body { min-height: 100%; line-height: 1.2; font-family: 'Microsoft YaHei', Helvitica, Verdana, Tohoma, Arial, san-serif; font-size: 1rem; color: #999; background-color: #f1f1f1; }
 
-a { display: inline-block; text-decoration: none; color: inherit; -webkit-tap-highlight-color: transparent; }
+a { display: inline-block; text-decoration: none; color: inherit; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 a:hover, a:active { color: #f78e24; }
 
@@ -33,7 +33,7 @@ th, td { word-wrap: break-word; word-break: break-all; }
 
 fieldset, img { border: none; }
 
-input, button, textarea, select { outline: none; font-size: 1em; -webkit-tap-highlight-color: transparent; }
+input, button, textarea, select { outline: none; font-size: 1em; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 textarea { resize: none; }
 

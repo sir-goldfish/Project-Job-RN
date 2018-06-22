@@ -53,7 +53,7 @@
 /* 共 brand-swiper */
 .brand-swiper { position: relative; width: 100%; padding-bottom: 2.1rem; overflow: hidden; }
 
-.brand-swiper .swiper-slide { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; width: 100%; margin-top: -1.4rem; }
+.brand-swiper .swiper-slide { display: -webkit-box; display: flex; flex-wrap: wrap; justify-content: space-around; width: 100%; margin-top: -1.4rem; }
 
 .brand-swiper .brand-card { width: 9.2rem; margin-top: 1.4rem; text-align: center; }
 
@@ -74,7 +74,7 @@
 .brand-swiper .swiper-pagination .swiper-pagination-bullet:hover { background-color: #03d6d0; }
 
 /* hot-category-section */
-.hot-category-section .category-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; width: 100%; padding-bottom: 1rem; margin-top: -.6rem; }
+.hot-category-section .category-list { display: -webkit-box; display: flex; flex-wrap: wrap; justify-content: space-around; width: 100%; padding-bottom: 1rem; margin-top: -.6rem; }
 
 .hot-category-section .category-card { width: 7rem; height: 7.3rem; margin-top: .6rem; text-align: center; background-color: #fff; }
 

@@ -114,7 +114,7 @@
 
 .lawyer-section .lawyer-swiper { position: relative; width: 100%; padding-top: 3.4rem; padding-bottom: 2rem; overflow: hidden; }
 
-.lawyer-section .lawyer-swiper .swiper-slide { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; width: 100%; margin-top: -1.3rem; }
+.lawyer-section .lawyer-swiper .swiper-slide { display: -webkit-box; display: flex; flex-wrap: wrap; justify-content: space-around; width: 100%; margin-top: -1.3rem; }
 
 .lawyer-section .lawyer-swiper .lawyer-card { position: relative; width: 13.2rem; height: 14.7rem; margin-top: 1.3rem; text-align: center; }
 
@@ -139,7 +139,7 @@
 
 .other-services .section-head .head-title .text { vertical-align: middle; font-size: 1.4rem; }
 
-.other-services .services-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; padding-top: 3.4rem; padding-bottom: 3.8rem; margin-top: -1rem; }
+.other-services .services-list { display: -webkit-box; display: flex; flex-wrap: wrap; -webkit-box-pack: justify; justify-content: space-between; width: 100%; padding-top: 3.4rem; padding-bottom: 3.8rem; margin-top: -1rem; }
 
 .other-services .services-list .service-btn { width: 8.9rem; height: 2.55rem; margin-top: 1rem; line-height: 2.55rem; text-align: center; font-size: 1.19rem; color: #333; background-color: #fff; border: 1px solid #fff; }
 

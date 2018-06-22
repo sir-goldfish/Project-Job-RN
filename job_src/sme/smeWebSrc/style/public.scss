@@ -959,6 +959,154 @@
   }
 }
 
+/* header 财税服务工具 */
+.sme-head8 {
+  $selfActiveColor: $globeFinanceColorStress;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
+  .head-bar {
+    $font: 12px;
+    padding: 10px 0;
+    font-size: $font;
+    background-color: #333;
+    .bar-left {
+      float: left;
+      & > * {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 10px;
+        vertical-align: middle;
+      }
+      .location-box {
+        position: relative;
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        vertical-align: initial;
+        .trigger-box {
+          position: relative;
+          padding: 10px;
+          cursor: pointer;
+          .res-city {
+            i {
+              margin-right: 2px;
+              vertical-align: top;
+              font-size: 12px;
+              color: #fff;
+            }
+          }
+        }
+        .extension-box {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          display: none;
+          width: 358px;
+          min-height: 100px;
+          padding: 0 24px;
+          font-size: 12px;
+          background-color: #fff;
+          box-shadow: 0 4px 10px 0 rgba(24, 5, 9, .2);
+          a {
+            color: inherit;
+            &:hover {
+              color: $selfActiveColor;
+            }
+            &:active {
+              color: $selfActiveColor - 30%;
+            }
+          }
+          .hot-area {
+            padding: 14px - 4px 0;
+            color: #999;
+            border-bottom: 1px dashed #c5c5c5;
+            .cell {
+              display: table-cell;
+              vertical-align: top;
+              line-height: 20px;
+            }
+            .title {
+              width: 72px;
+            }
+            .option-group {
+              margin: 0 0 0 -18px;
+              li {
+                display: inline-block;
+                margin: 0 0 0 18px;
+              }
+            }
+          }
+          .total-area {
+            padding: 18px - 8px 0;
+            color: #333;
+            .option-group {
+              margin: -( 14px - 8px ) 0 0 -18px;
+              line-height: 20px;
+              li {
+                display: inline-block;
+                margin: 14px - 8px 0 0 18px;
+              }
+            }
+          }
+        }
+        &:hover {
+          z-index: 6;
+          .trigger-box {
+            z-index: 1;
+            color: #999;
+            background-color: #fff;
+            .res-city {
+              color: #333;
+              i {
+                color: #999;
+              }
+            }
+          }
+          .extension-box {
+            display: block;
+          }
+        }
+      }
+      .stock-code {
+        em {
+          color: $selfActiveColor;
+        }
+      }
+    }
+    .bar-right {
+      float: right;
+      padding: 10px + 13px 0;
+      font-size: 0;
+      .nav-item {
+        display: inline-block;
+        margin-left: 15px;
+        font-size: $font;
+      }
+      .stress {
+        color: $selfActiveColor;
+      }
+      .user-content {
+        .register {
+          margin-left: 15px;
+        }
+        .exit {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
 /* - sme-foot - */
 /* footer 主要 */
 .sme-foot {

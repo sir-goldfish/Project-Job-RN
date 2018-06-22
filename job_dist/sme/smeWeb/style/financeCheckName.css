@@ -1,0 +1,85 @@
+/* head-bg-wrapper */
+.head-bg-wrapper { background: url(../resource/img/sme_finance_pic038.jpg) no-repeat center top; }
+
+/* sme-head8 */
+.sme-head8 .head-bar { background-color: transparent; }
+
+/* head-section */
+.head-section { box-sizing: border-box; padding-top: 280px; }
+
+.head-section * { box-sizing: border-box; }
+
+.head-section .query-container .query-info { text-align: center; font-size: 0; }
+
+.head-section .query-container .query-info > * { display: inline-block; padding: 0 10px; vertical-align: top; font-size: 14px; color: #fff; }
+
+.head-section .query-container .query-info .stress { font-size: 1.2em; color: #fe591c; }
+
+.head-section .query-container .query-box .input-container { width: 945px; height: 70px; padding: 5px; margin: 23px auto 0; font-size: 0; background-color: #e8f4ff; border-radius: 70px; }
+
+.head-section .query-container .query-box .input-container > * { display: inline-block; vertical-align: middle; font-size: 14px; }
+
+.head-section .query-container .query-box .input-container .input-box { position: relative; height: 60px; background-color: #fff; }
+
+.head-section .query-container .query-box .input-container .input-box .input-item { width: 100%; height: 100%; padding: 20px; line-height: 20px; font-size: inherit; background-color: inherit; border: none; }
+
+.head-section .query-container .query-box .input-container .input-box .query-btn { width: 100%; height: 100%; line-height: 60px; text-align: center; font-weight: bold; color: #fff; background-color: #e00000; }
+
+.head-section .query-container .query-box .input-container .input-box .query-btn:hover { background-color: #d10000; }
+
+.head-section .query-container .query-box .input-container .input-box .query-btn:active { background-color: #c20000; }
+
+.head-section .query-container .query-box .input-container .input-box select { padding-right: 0; }
+
+.head-section .query-container .query-box .input-container .input-box.with-icon { padding-left: 25px; }
+
+.head-section .query-container .query-box .input-container .input-box.with-icon .icon { position: absolute; top: 50%; left: 20px; width: 20px; height: 20px; margin-top: -10px; background: url(../resource/img/sme_finance_pic008.jpg) no-repeat 0 0; }
+
+.head-section .query-container .query-box .input-container .input-box.with-icon:first-child { padding-left: 50px; }
+
+.head-section .query-container .query-box .input-container .input-box.with-icon:first-child .icon { left: 30px; }
+
+.head-section .query-container .query-box .input-container .input-box:first-child { border-top-left-radius: 60px; border-bottom-left-radius: 60px; }
+
+.head-section .query-container .query-box .input-container .input-box:last-child { border-top-right-radius: 60px; border-bottom-right-radius: 60px; }
+
+.head-section .query-container .query-box .input-container .input-box:last-child .query-btn { border-radius: inherit; }
+
+.head-section .query-container .query-box .input-container .input-box + .input-box { border-left: 2px solid #e00000; }
+
+.head-section .query-container .query-box .hint-info { padding: 10px 0; text-align: center; font-size: 12px; color: #f00; }
+
+.head-section .query-container .notice { text-align: center; font-size: 12px; color: #d3c0c0; }
+
+.head-section .record-panel { width: 810px; padding: 0 60px; margin: 68px auto 0; background-color: #fff; border-radius: 10px; box-shadow: 0 2px 5px 0 rgba(153, 153, 153, 0.35); }
+
+.head-section .record-panel .panel-head { padding: 35px 0 25px 0; text-align: center; font-size: 24px; color: #e00000; }
+
+.head-section .record-panel .panel-body { padding-bottom: 40px; }
+
+.head-section .record-panel .record-swiper { height: 65px; overflow: hidden; }
+
+.head-section .record-panel .swiper-wrapper { -webkit-transition-timing-function: linear; transition-timing-function: linear; }
+
+.head-section .record-panel .swiper-slide > * { width: 50%; vertical-align: top; line-height: 30px; font-size: 14px; color: #333; }
+
+/* question-section */
+.question-section { box-sizing: border-box; }
+
+.question-section * { box-sizing: border-box; }
+
+.question-section .section-head { padding: 57px 0 50px; text-align: center; color: #e00000; }
+
+.question-section .section-head .head-title { font-size: 24px; }
+
+.question-section .list-wrap { width: 658px; margin: 0 auto; }
+
+.question-section .question-list { padding-bottom: 80px; margin: -50px 0 0 -50px; font-size: 0; }
+
+.question-section .question-list li { display: inline-block; width: 304px; margin: 50px 0 0 50px; vertical-align: top; font-size: 14px; color: #999; }
+
+.question-section .question-list li h3 { position: relative; font-size: 16px; font-weight: bold; color: #333; }
+
+.question-section .question-list li h3:before { content: ''; position: absolute; top: 1px; left: -24px; width: 14px; height: 14px; background: url(../resource/img/sme_finance_pic008.jpg) no-repeat 0 0; }
+
+.question-section .question-list li p { margin-top: 16px; line-height: 22px; }

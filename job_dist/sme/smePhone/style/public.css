@@ -61,9 +61,9 @@
 /* m-default-fixed-foot */
 .m-default-fixed-foot { bottom: 0; z-index: 1; }
 
-.m-default-fixed-foot .foot-tools-bar { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; height: 6.5rem; text-align: center; background-color: #fff; box-shadow: 0 0 1px 0 #ddd; }
+.m-default-fixed-foot .foot-tools-bar { display: -webkit-box; display: flex; justify-content: space-around; height: 6.5rem; text-align: center; background-color: #fff; box-shadow: 0 0 1px 0 #ddd; }
 
-.m-default-fixed-foot .foot-tool { position: relative; -ms-flex-preferred-size: 33.33333%; flex-basis: 33.33333%; padding: 1rem 0; font-size: 1.2rem; color: #333; }
+.m-default-fixed-foot .foot-tool { position: relative; flex-basis: 33.33333%; padding: 1rem 0; font-size: 1.2rem; color: #333; }
 
 .m-default-fixed-foot .foot-tool .tool-btn { color: inherit; }
 
