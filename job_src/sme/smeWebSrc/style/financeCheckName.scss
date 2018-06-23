@@ -7,7 +7,7 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
 
 /* head-bg-wrapper */
 .head-bg-wrapper {
-  background: url(../resource/img/sme_finance_pic038.jpg) no-repeat center top;
+  background: url(../resource/img/sme_finance_pic071.jpg) no-repeat center top;
 }
 
 /* sme-head8 */
@@ -93,10 +93,10 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
               position: absolute;
               top: 50%;
               left: 20px;
-              width: 20px;
-              height: 20px;
-              margin-top: -10px;
-              background: url(../resource/img/sme_finance_pic008.jpg) no-repeat 0 0;
+              width: 16px;
+              height: 16px;
+              margin-top: -8px;
+              background: url(../resource/img/sme_finance_sprites009.png) no-repeat 0 0;
             }
             &:first-child {
               padding-left: 50px;
@@ -210,7 +210,7 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
           left: - ( 14px + 10px );
           width: 14px;
           height: 14px;
-          background: url(../resource/img/sme_finance_pic008.jpg) no-repeat 0 0;
+          background: url(../resource/img/sme_finance_sprites009.png) no-repeat 0 -18px;
         }
       }
       p {

@@ -1,5 +1,5 @@
 /* head-bg-wrapper */
-.head-bg-wrapper { background: url(../resource/img/sme_finance_pic038.jpg) no-repeat center top; }
+.head-bg-wrapper { background: url(../resource/img/sme_finance_pic071.jpg) no-repeat center top; }
 
 /* sme-head8 */
 .sme-head8 .head-bar { background-color: transparent; }
@@ -33,7 +33,7 @@
 
 .head-section .query-container .query-box .input-container .input-box.with-icon { padding-left: 25px; }
 
-.head-section .query-container .query-box .input-container .input-box.with-icon .icon { position: absolute; top: 50%; left: 20px; width: 20px; height: 20px; margin-top: -10px; background: url(../resource/img/sme_finance_pic008.jpg) no-repeat 0 0; }
+.head-section .query-container .query-box .input-container .input-box.with-icon .icon { position: absolute; top: 50%; left: 20px; width: 16px; height: 16px; margin-top: -8px; background: url(../resource/img/sme_finance_sprites009.png) no-repeat 0 0; }
 
 .head-section .query-container .query-box .input-container .input-box.with-icon:first-child { padding-left: 50px; }
 
@@ -80,6 +80,6 @@
 
 .question-section .question-list li h3 { position: relative; font-size: 16px; font-weight: bold; color: #333; }
 
-.question-section .question-list li h3:before { content: ''; position: absolute; top: 1px; left: -24px; width: 14px; height: 14px; background: url(../resource/img/sme_finance_pic008.jpg) no-repeat 0 0; }
+.question-section .question-list li h3:before { content: ''; position: absolute; top: 1px; left: -24px; width: 14px; height: 14px; background: url(../resource/img/sme_finance_sprites009.png) no-repeat 0 -18px; }
 
 .question-section .question-list li p { margin-top: 16px; line-height: 22px; }
