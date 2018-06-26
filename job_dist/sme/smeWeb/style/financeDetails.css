@@ -54,7 +54,7 @@ body { background-color: #f7f7f7; }
 
 .content-container .main-content .service-desc-panel .pic-area { float: left; width: 295px; margin-right: -295px; }
 
-.content-container .main-content .service-desc-panel .pic-area figure { width: 100%; height: 262px; overflow: hidden; }
+.content-container .main-content .service-desc-panel .pic-area figure { width: 100%; height: 217px; overflow: hidden; }
 
 .content-container .main-content .service-desc-panel .pic-area figure img { display: block; width: 100%; height: 100%; }
 
