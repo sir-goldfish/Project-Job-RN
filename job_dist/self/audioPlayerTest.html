@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>audioPlayerTest</title>
+    <!--style-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="audioPlayerTest.css">
+</head>
+<body>
+<div class="col-sm-3">
+    <table>
+        <tbody>
+        <tr>
+            <td>音频测试11</td>
+            <td>
+                <audio preload="auto" controls>
+                    <source src="audio.mp3">
+                </audio>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--script-->
+<script src="jquery.min.js"></script>
+<script src="audioplayer.js"></script>
+<script>
+    $('audio').audioPlayer();
+</script>
+</body>
+</html>
