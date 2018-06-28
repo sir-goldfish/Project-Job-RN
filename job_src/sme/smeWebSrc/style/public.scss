@@ -40,7 +40,7 @@
           i {
             margin-right: 2px;
             vertical-align: top;
-            font-size: 12px;
+            font-size: 1em;
             color: #fff;
           }
         }
@@ -61,6 +61,10 @@
         display: inline-block;
         margin-left: 15px;
         font-size: $font;
+        .icon {
+          margin: 0 4px;
+          font-size: 1em;
+        }
       }
       .stress {
         color: $selfActiveColor;
@@ -181,6 +185,467 @@
   }
 }
 
+/* header 主要 v1 */
+.sme-head-v1 {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
+  .head-login-wrap {
+    color: #666;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    .nav {
+      font-size: 0;
+      & > * {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 10px;
+        vertical-align: middle;
+        font-size: 12px;
+      }
+      .user-content {
+        & > * {
+          display: inline-block;
+        }
+        & > * + * {
+          margin-left: 20px;
+        }
+      }
+    }
+    .location-box {
+      position: relative;
+      display: inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin: 0;
+      .iconfont {
+        font-size: 1em;
+      }
+      .trigger-box {
+        position: relative;
+        padding: 10px;
+        cursor: pointer;
+        .res-city {
+          i {
+            margin-right: 2px;
+            vertical-align: top;
+            font-size: 1em;
+            color: #999;
+          }
+        }
+      }
+      .extension-box {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 358px;
+        min-height: 60px;
+        padding: 0 24px;
+        font-size: 12px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px 0 rgba(24, 5, 9, .2);
+        a {
+          color: inherit;
+          &:hover {
+            color: $selfActiveColor;
+          }
+          &:active {
+            color: $selfActiveColor - 30%;
+          }
+        }
+        .hot-area {
+          padding: 14px - 4px 0;
+          color: #999;
+          .cell {
+            display: table-cell;
+            vertical-align: top;
+            line-height: 20px;
+          }
+          .title {
+            width: 72px;
+            color: #666;
+          }
+          .option-group {
+            margin: 0 0 0 -18px;
+            li {
+              display: inline-block;
+              margin: 0 0 0 18px;
+            }
+          }
+        }
+        .total-area {
+          padding: 18px - 8px 0;
+          color: #333;
+          border-top: 1px dashed #c5c5c5;
+          .option-group {
+            margin: -( 14px - 8px ) 0 0 -18px;
+            line-height: 20px;
+            li {
+              display: inline-block;
+              margin: 14px - 8px 0 0 18px;
+            }
+          }
+        }
+      }
+      &:hover {
+        z-index: 6;
+        .trigger-box {
+          z-index: 1;
+          color: #999;
+          background-color: #fff;
+          .res-city {
+            color: #333;
+            i {
+              color: #999;
+            }
+          }
+        }
+        .extension-box {
+          display: block;
+        }
+      }
+    }
+  }
+  .head-search-wrap {
+    background-color: #fff;
+    .logo-wrap {
+      padding: 18px 0;
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          display: block;
+        }
+      }
+    }
+    .hot-line-wrap {
+      padding: 24px 0;
+      margin-left: 44px;
+      text-align: right;
+      font-size: 14px;
+      color: #333;
+      .num {
+        margin-top: 5px;
+        font-family: Arial;
+        font-size: 1.7em;
+        font-weight: bold;
+        color: $selfActiveColor;
+        i {
+          margin-right: 6px;
+          font-size: inherit;
+          font-weight: normal;
+        }
+      }
+    }
+    .search-wrap {
+      $selfWidth: 496px;
+      $selfHeight: 42px;
+      padding-top: 24px;
+      .input-box {
+        position: relative;
+        width: $selfWidth;
+        height: $selfHeight;
+        font-size: 0;
+        border: 1px solid #ddd;
+        .inputwrap {
+          position: relative;
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+          font-size: 14px;
+        }
+        .inputwrap + .inputwrap {
+          &:before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            bottom: 4px;
+            left: 0;
+            border-left: 1px solid #ddd;
+          }
+        }
+        .input-item {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: ($selfHeight - 18px - 2px) / 2 12px;
+          line-height: 18px;
+          font-size: inherit;
+          border: none;
+          background-color: #fff;
+        }
+        select.input-item {
+          padding-right: 0;
+        }
+        .inputwrap:last-of-type {
+          .input-item {
+            padding-right: 12px + 120px;
+          }
+        }
+        .query-btn {
+          position: absolute;
+          top: -1px;
+          right: -1px;
+          width: 120px;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          text-align: center;
+          font-size: 14px;
+          color: #fff;
+          background-color: $selfActiveColor;
+          i {
+            margin-right: 7px;
+            font-size: inherit;
+            font-weight: bold;
+          }
+          &:hover {
+            background-color: $selfActiveColor - 15%;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+      .hint-info {
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        font-size: 12px;
+        color: #f00;
+      }
+      .hot-search {
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #ccc;
+        & > * {
+          display: inline-block;
+          vertical-align: top;
+        }
+        span {
+          color: #999;
+        }
+        a {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .head-nav-wrap {
+    $selfHeight: 40px;
+    $selfLeftNavWidth: 230px;
+    background-color: #fff;
+    border-bottom: 2px solid $selfActiveColor;
+    .sme-inner {
+      position: relative;
+      padding-left: $selfLeftNavWidth;
+    }
+    .nav-wrap {
+      margin-left: 20px;
+      .nav-list {
+        .stress {
+          color: $selfActiveColor;
+        }
+        & > * {
+          float: left;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          font-size: 16px;
+          color: #333;
+          .nav-name {
+            display: block;
+            height: inherit;
+            line-height: inherit;
+          }
+        }
+        dd {
+          position: relative;
+          .nav-name {
+            padding: 0 30px;
+          }
+          &.current {
+            .nav-name {
+              color: #fff;
+              background-color: $selfActiveColor;
+            }
+          }
+        }
+        dt {
+          float: right;
+        }
+      }
+    }
+    .category-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: $selfLeftNavWidth;
+      .container-head {
+        height: $selfHeight;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: #1d2842;
+        cursor: default;
+      }
+      .container-extension {
+        display: none;
+        background-color: rgba(27, 37, 61, .9);
+      }
+      .container-item {
+        width: 100%;
+        .init-content {
+          position: relative;
+          width: 100%;
+          padding: 15px 20px;
+          font-size: 0;
+          border: 1px solid transparent;
+          border-top-color: #384566;
+          dl {
+            margin-left: -15px;
+          }
+          dt {
+            margin-left: 15px;
+            font-size: 14px;
+            color: #fff;
+          }
+          dd {
+            display: inline-block;
+            margin: 15px 0 0 15px;
+            vertical-align: top;
+            font-size: 12px;
+            color: #828794;
+          }
+        }
+        .extension-content {
+          $selfAdWidth: 308px;
+          position: absolute;
+          top: $selfHeight + 2px; // 2px == head-nav-wrap border-bottom
+          bottom: 0;
+          left: 100%;
+          display: none;
+          width: 1200px - $selfLeftNavWidth;
+          color: #666;
+          background-color: #fff;
+          box-shadow: 1px 0 1px 1px #eee;
+          .nav-content {
+            height: 100%;
+            font-size: 0;
+            .content-inner {
+              height: 100%;
+              overflow-x: hidden;
+              overflow-y: auto;
+            }
+            a {
+              i {
+                margin-right: 9px;
+                vertical-align: middle;
+                font-size: 1.2em;
+                color: $selfActiveColor;
+              }
+            }
+            .nav-group {
+              display: inline-block;
+              width: 50%;
+              padding: 30px 35px 15px;
+              vertical-align: top;
+              h3 {
+                padding-bottom: 10px;
+                font-size: 14px;
+                font-weight: normal;
+                color: #333;
+                border-bottom: 1px solid #d9d9d9;
+                a {
+                  transition: transform .3s ease-out;
+                  &:hover {
+                    transform: translateX(6px);
+                  }
+                }
+              }
+              .items {
+                margin-left: -14px;
+                span {
+                  display: inline-block;
+                  margin: 12px 0 0 14px;
+                  vertical-align: top;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          .init-content {
+            z-index: 1;
+            background-color: #141e37;
+            dt {
+              color: #e2ebff;
+            }
+            dd {
+              color: #7b808e;
+            }
+          }
+          .extension-content {
+            display: block;
+          }
+        }
+      }
+      .container-foot {
+        padding: 24px 0;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        border-top: 1px solid #384566;
+        .query-btn {
+          height: 32px;
+          padding: 0 44px;
+          margin-top: 20px;
+          line-height: 32px;
+          font-size: 14px;
+          color: #302f37;
+          background-color: #fff;
+          border-radius: 32px;
+          &:hover {
+            color: #fff;
+            background-color: $selfActiveColor;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+      &:hover {
+        .container-head {
+          height: $selfHeight + 2px;
+        }
+        .container-extension {
+          display: block;
+        }
+      }
+      &.open {
+        .container-head {
+          height: $selfHeight + 2px;
+        }
+        .container-extension {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 /* header 登录/注册 */
 .sme-head1 {
   box-sizing: border-box;
@@ -231,7 +696,7 @@
           i {
             margin-right: 2px;
             vertical-align: top;
-            font-size: 12px;
+            font-size: 1em;
             color: #fff;
           }
         }
@@ -252,6 +717,10 @@
         display: inline-block;
         margin-left: 15px;
         font-size: $font;
+        .icon {
+          margin: 0 4px;
+          font-size: 1em;
+        }
       }
       .stress {
         color: $selfActiveColor;
@@ -330,7 +799,7 @@
           i {
             margin-right: 2px;
             vertical-align: top;
-            font-size: 12px;
+            font-size: 1em;
             color: #fff;
           }
         }
@@ -351,6 +820,10 @@
         display: inline-block;
         margin-left: 15px;
         font-size: $font;
+        .icon {
+          margin: 0 4px;
+          font-size: 1em;
+        }
       }
       .stress {
         color: $selfActiveColor;
@@ -457,7 +930,7 @@
           i {
             margin-right: 2px;
             vertical-align: top;
-            font-size: 12px;
+            font-size: 1em;
             color: #fff;
           }
         }
@@ -480,7 +953,7 @@
         font-size: $font;
         .icon {
           margin: 0 4px;
-          font-size: 13px;
+          font-size: 1em;
         }
       }
       .stress {
@@ -556,7 +1029,7 @@
           i {
             margin-right: 2px;
             vertical-align: top;
-            font-size: 12px;
+            font-size: 1em;
             color: #fff;
           }
         }
@@ -579,7 +1052,7 @@
         font-size: $font;
         .icon {
           margin: 0 4px;
-          font-size: 13px;
+          font-size: 1em;
         }
       }
       .stress {
@@ -774,6 +1247,9 @@
         padding-top: 0;
         padding-bottom: 0;
         margin: 0;
+        .iconfont {
+          font-size: 1em;
+        }
         .trigger-box {
           position: relative;
           padding: 10px;
@@ -782,7 +1258,7 @@
             i {
               margin-right: 2px;
               vertical-align: top;
-              font-size: 12px;
+              font-size: 1em;
               color: #fff;
             }
           }
@@ -793,7 +1269,7 @@
           left: 0;
           display: none;
           width: 358px;
-          min-height: 100px;
+          min-height: 60px;
           padding: 0 24px;
           font-size: 12px;
           background-color: #fff;
@@ -810,7 +1286,6 @@
           .hot-area {
             padding: 14px - 4px 0;
             color: #999;
-            border-bottom: 1px dashed #c5c5c5;
             .cell {
               display: table-cell;
               vertical-align: top;
@@ -818,6 +1293,7 @@
             }
             .title {
               width: 72px;
+              color: #666;
             }
             .option-group {
               margin: 0 0 0 -18px;
@@ -830,6 +1306,7 @@
           .total-area {
             padding: 18px - 8px 0;
             color: #333;
+            border-top: 1px dashed #c5c5c5;
             .option-group {
               margin: -( 14px - 8px ) 0 0 -18px;
               line-height: 20px;
@@ -872,6 +1349,10 @@
         display: inline-block;
         margin-left: 15px;
         font-size: $font;
+        .icon {
+          margin: 0 4px;
+          font-size: 1em;
+        }
       }
       .stress {
         color: $selfActiveColor;
@@ -992,7 +1473,9 @@
         padding-top: 0;
         padding-bottom: 0;
         margin: 0;
-        vertical-align: initial;
+        .iconfont {
+          font-size: 1em;
+        }
         .trigger-box {
           position: relative;
           padding: 10px;
@@ -1001,7 +1484,7 @@
             i {
               margin-right: 2px;
               vertical-align: top;
-              font-size: 12px;
+              font-size: 1em;
               color: #fff;
             }
           }
@@ -1012,7 +1495,7 @@
           left: 0;
           display: none;
           width: 358px;
-          min-height: 100px;
+          min-height: 60px;
           padding: 0 24px;
           font-size: 12px;
           background-color: #fff;
@@ -1029,7 +1512,6 @@
           .hot-area {
             padding: 14px - 4px 0;
             color: #999;
-            border-bottom: 1px dashed #c5c5c5;
             .cell {
               display: table-cell;
               vertical-align: top;
@@ -1037,6 +1519,7 @@
             }
             .title {
               width: 72px;
+              color: #666;
             }
             .option-group {
               margin: 0 0 0 -18px;
@@ -1049,6 +1532,7 @@
           .total-area {
             padding: 18px - 8px 0;
             color: #333;
+            border-top: 1px dashed #c5c5c5;
             .option-group {
               margin: -( 14px - 8px ) 0 0 -18px;
               line-height: 20px;
@@ -1091,6 +1575,10 @@
         display: inline-block;
         margin-left: 15px;
         font-size: $font;
+        .icon {
+          margin: 0 4px;
+          font-size: 1em;
+        }
       }
       .stress {
         color: $selfActiveColor;

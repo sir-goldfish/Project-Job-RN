@@ -21,72 +21,465 @@
 </head>
 <body>
 <!--共用头部-->
-<header class="sme-head">
-    <div class="head-bar sme-wrapper">
+<header class="sme-head-v1">
+    <div class="head-login-wrap sme-wrapper">
         <div class="sme-inner f-clearfix">
-            <div class="bar-left">
-                <div class="location-box">
-                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+            <div class="f-pull-left">
+                <div class="nav">
+                    <div class="location-box">
+                        <div class="trigger-box">
+                            <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                            <span>【切换城市】</span>
+                        </div>
+                        <div class="extension-box">
+                            <div class="hot-area">
+                                <div class="cell">
+                                    <div class="title">热门城市：</div>
+                                </div>
+                                <div class="cell">
+                                    <ul class="option-group">
+                                        <li><a href="javascript:;">城市</a></li>
+                                        <li><a href="javascript:;">城市</a></li>
+                                        <li><a href="javascript:;">城市</a></li>
+                                        <li><a href="javascript:;">城市</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="total-area">
+                                <ul class="option-group">
+                                    <li><a href="javascript:;">城市</a></li>
+                                    <li><a href="javascript:;">城市城市</a></li>
+                                    <li><a href="javascript:;">城市城</a></li>
+                                    <li><a href="javascript:;">城市</a></li>
+                                    <li><a href="javascript:;">城市</a></li>
+                                    <li><a href="javascript:;">城市城</a></li>
+                                    <li><a href="javascript:;">城市</a></li>
+                                    <li><a href="javascript:;">城市城市</a></li>
+                                    <li><a href="javascript:;">城市城</a></li>
+                                    <li><a href="javascript:;">城市</a></li>
+                                    <li><a href="javascript:;">城市</a></li>
+                                    <li><a href="javascript:;">城市城市</a></li>
+                                    <li><a href="javascript:;">城市城</a></li>
+                                    <li><a href="javascript:;">城市</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-content">
+                        <a href="javascript:;" class="login">登录</a><a href="javascript:;" class="register">免费注册</a>
+                    </div>
+                    <!--begin-登录后用户信息-->
+                    <div class="user-content" style="display: none;">
+                        <a href="javascript:;" class="name">用户名</a><a href="javascript:;" class="exit">退出</a>
+                    </div>
+                    <!--end-登录后用户信息-->
                 </div>
-                <span class="hot-line">全国统一资讯热线：400-6616-855</span>
-                <span class="stock-code">股票代码：<em>666666</em></span>
             </div>
-            <ul class="bar-right">
-                <li class="nav-item user-content">
-                    <a href="javascript:;" class="login">登录</a>
-                    <a href="javascript:;" class="register">免费注册</a>
-                </li>
-                <!--begin-登录后用户信息-->
-                <li class="nav-item user-content" style="display: none;">
-                    <a href="javascript:;" class="name">用户名</a>
-                    <a href="javascript:;" class="exit">退出</a>
-                </li>
-                <!--end-登录后用户信息-->
-                <li class="nav-item stress"><a href="javascript:;">服务商加盟</a></li>
-                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
-                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
-                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
-            </ul>
+            <div class="f-pull-right">
+                <ul class="nav" style="margin-right:-10px;">
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li><a href="javascript:;">新手指引</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li><a href="javascript:;">网站导航</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="head-logo sme-wrapper">
+    <div class="head-search-wrap sme-wrapper">
         <div class="sme-inner f-clearfix">
-            <a href="javascript:;" class="logo-link">
-                <img src="resource/img/sme_logo.jpg" alt="">
-            </a>
-            <div class="f-pull-right f-clearfix">
-                <ul class="logo-nav f-clearfix">
-                    <li class="current nav-item">
-                        <a href="javascript:;" class="item-name">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:;" class="item-name">知识产权</a>
-                        <div class="hide-group" style="margin-left:-49px;">
-                            <ul class="group-list">
-                                <li class="group-item chosen"><a href="javascript:;">商标注册</a></li>
-                                <li class="group-item"><a href="javascript:;">版权登记</a></li>
-                                <li class="group-item"><a href="javascript:;">专利申请</a></li>
-                                <li class="group-item"><a href="javascript:;">知产交易</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:;" class="item-name">公司注册</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:;" class="item-name">人事社保</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:;" class="item-name">案例库</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:;" class="item-name">资讯</a>
-                    </li>
-                </ul>
-                <div class="logo-search">
-                    <input type="text" placeholder="搜索服务">
-                    <a href="javascript:;" class="search-btn iconfont">&#xe66e;</a>
+            <div class="logo-wrap f-pull-left">
+                <a href="javascript:;" class="logo"><img src="resource/img/sme_logo_b.png"></a>
+            </div>
+            <div class="hot-line-wrap f-pull-right">
+                <div>客服热线</div>
+                <div class="num"><i class="iconfont">&#xe7fd;</i>400-619-6199</div>
+            </div>
+            <div class="search-wrap f-pull-right">
+                <div class="input-box">
+                    <div class="inputwrap" style="width:22%;">
+                        <select class="input-item">
+                            <option value="服务搜索">服务搜索</option>
+                            <option value="搜索">搜索</option>
+                            <option value="搜索">搜索</option>
+                        </select>
+                    </div>
+                    <div class="inputwrap" style="width:78%;">
+                        <input type="text" class="input-item" placeholder="请输入关键词">
+                    </div>
+                    <a href="javascript:;" class="query-btn"><i class="iconfont">&#xe6fa;</i>搜索</a>
                 </div>
+                <div class="hint-info"></div>
+            </div>
+        </div>
+    </div>
+    <div class="head-nav-wrap sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <!--****
+                * 重要提示：
+                * 1/ 在中小企业大首页时，分类默认展开，category-container需加类名open
+                * 2/ 在其他页面时，分类默认闭合，需hover触发，此时category-container需去除类名open
+                ****-->
+            <div class="category-container open">
+                <div class="container-head">全部服务分类</div>
+                <div class="container-extension">
+                    <div class="container-item">
+                        <div class="init-content">
+                            <dl>
+                                <dt><a href="javascript:;">开办公司</a></dt>
+                                <dd><a href="javascript:;">公司注册</a></dd>
+                                <dd><a href="javascript:;">公司变更</a></dd>
+                                <dd><a href="javascript:;">公司注销</a></dd>
+                            </dl>
+                        </div>
+                        <div class="extension-content">
+                            <div class="nav-content">
+                                <div class="content-inner">
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe639;</i>公司注册</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">有限公司注册</a></span>
+                                            <span><a href="javascript:;">合伙企业注册</a></span>
+                                            <span><a href="javascript:;">分公司注册</a></span>
+                                            <span><a href="javascript:;">个人独资企业注册</a></span>
+                                            <span><a href="javascript:;">外商独资企业注册</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe640;</i>代理记账</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">小规模代理记账</a></span>
+                                            <span><a href="javascript:;">一般纳税人代理记账</a></span>
+                                            <span><a href="javascript:;">注册代账套餐</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe655;</i>公司变更</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">法人变更</a></span>
+                                            <span><a href="javascript:;">公司经营范围变更</a></span>
+                                            <span><a href="javascript:;">公司名称变更</a></span>
+                                            <span><a href="javascript:;">公司股东变更</a></span>
+                                            <span><a href="javascript:;">基本户变更</a></span>
+                                            <span><a href="javascript:;">注册资金变更</a></span>
+                                            <span><a href="javascript:;">公司注册地址变更</a></span>
+                                            <span><a href="javascript:;">公司经营期限变更</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe653;</i>税务服务</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">加计扣除专项服务</a></span>
+                                            <span><a href="javascript:;">企业所得税优惠备案</a></span>
+                                            <span><a href="javascript:;">资产损失专项服务</a></span>
+                                            <span><a href="javascript:;">个人所得税定期申报</a></span>
+                                            <span><a href="javascript:;">流转税定期申报</a></span>
+                                            <span><a href="javascript:;">发票领购增量</a></span>
+                                            <span><a href="javascript:;">出口退（免）税申报</a></span>
+                                            <span><a href="javascript:;">企业所得税年度纳税申报审核</a></span>
+                                            <span><a href="javascript:;">增值税一般纳税人资格认定申请</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe64a;</i>公司注销</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">内资公司注销</a></span>
+                                            <span><a href="javascript:;">外资公司注销</a></span>
+                                            <span><a href="javascript:;">合资公司注销</a></span>
+                                            <span><a href="javascript:;">注销银行基本账户</a></span>
+                                            <span><a href="javascript:;">税务登记注销</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <dl>
+                                <dt><a href="javascript:;">商标注册</a></dt>
+                                <dd><a href="javascript:;">商标注册</a></dd>
+                                <dd><a href="javascript:;">版权服务</a></dd>
+                                <dd><a href="javascript:;">专利服务</a></dd>
+                            </dl>
+                        </div>
+                        <div class="extension-content">
+                            <div class="nav-content">
+                                <div class="content-inner">
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe639;</i>公司注册</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">有限公司注册</a></span>
+                                            <span><a href="javascript:;">合伙企业注册</a></span>
+                                            <span><a href="javascript:;">分公司注册</a></span>
+                                            <span><a href="javascript:;">个人独资企业注册</a></span>
+                                            <span><a href="javascript:;">外商独资企业注册</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe640;</i>代理记账</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">小规模代理记账</a></span>
+                                            <span><a href="javascript:;">一般纳税人代理记账</a></span>
+                                            <span><a href="javascript:;">注册代账套餐</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe655;</i>公司变更</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">法人变更</a></span>
+                                            <span><a href="javascript:;">公司经营范围变更</a></span>
+                                            <span><a href="javascript:;">公司名称变更</a></span>
+                                            <span><a href="javascript:;">公司股东变更</a></span>
+                                            <span><a href="javascript:;">基本户变更</a></span>
+                                            <span><a href="javascript:;">注册资金变更</a></span>
+                                            <span><a href="javascript:;">公司注册地址变更</a></span>
+                                            <span><a href="javascript:;">公司经营期限变更</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe653;</i>税务服务</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">加计扣除专项服务</a></span>
+                                            <span><a href="javascript:;">企业所得税优惠备案</a></span>
+                                            <span><a href="javascript:;">资产损失专项服务</a></span>
+                                            <span><a href="javascript:;">个人所得税定期申报</a></span>
+                                            <span><a href="javascript:;">流转税定期申报</a></span>
+                                            <span><a href="javascript:;">发票领购增量</a></span>
+                                            <span><a href="javascript:;">出口退（免）税申报</a></span>
+                                            <span><a href="javascript:;">企业所得税年度纳税申报审核</a></span>
+                                            <span><a href="javascript:;">增值税一般纳税人资格认定申请</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe64a;</i>公司注销</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">内资公司注销</a></span>
+                                            <span><a href="javascript:;">外资公司注销</a></span>
+                                            <span><a href="javascript:;">合资公司注销</a></span>
+                                            <span><a href="javascript:;">注销银行基本账户</a></span>
+                                            <span><a href="javascript:;">税务登记注销</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe64a;</i>公司注销</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">内资公司注销</a></span>
+                                            <span><a href="javascript:;">外资公司注销</a></span>
+                                            <span><a href="javascript:;">合资公司注销</a></span>
+                                            <span><a href="javascript:;">注销银行基本账户</a></span>
+                                            <span><a href="javascript:;">税务登记注销</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <dl>
+                                <dt><a href="javascript:;">财税服务</a></dt>
+                                <dd><a href="javascript:;">法律咨询</a></dd>
+                                <dd><a href="javascript:;">劳动人事</a></dd>
+                                <dd><a href="javascript:;">公司经营</a></dd>
+                            </dl>
+                        </div>
+                        <div class="extension-content">
+                            <div class="nav-content">
+                                <div class="content-inner">
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe639;</i>公司注册</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">有限公司注册</a></span>
+                                            <span><a href="javascript:;">合伙企业注册</a></span>
+                                            <span><a href="javascript:;">分公司注册</a></span>
+                                            <span><a href="javascript:;">个人独资企业注册</a></span>
+                                            <span><a href="javascript:;">外商独资企业注册</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe640;</i>代理记账</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">小规模代理记账</a></span>
+                                            <span><a href="javascript:;">一般纳税人代理记账</a></span>
+                                            <span><a href="javascript:;">注册代账套餐</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe655;</i>公司变更</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">法人变更</a></span>
+                                            <span><a href="javascript:;">公司经营范围变更</a></span>
+                                            <span><a href="javascript:;">公司名称变更</a></span>
+                                            <span><a href="javascript:;">公司股东变更</a></span>
+                                            <span><a href="javascript:;">基本户变更</a></span>
+                                            <span><a href="javascript:;">注册资金变更</a></span>
+                                            <span><a href="javascript:;">公司注册地址变更</a></span>
+                                            <span><a href="javascript:;">公司经营期限变更</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe653;</i>税务服务</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">加计扣除专项服务</a></span>
+                                            <span><a href="javascript:;">企业所得税优惠备案</a></span>
+                                            <span><a href="javascript:;">资产损失专项服务</a></span>
+                                            <span><a href="javascript:;">个人所得税定期申报</a></span>
+                                            <span><a href="javascript:;">流转税定期申报</a></span>
+                                            <span><a href="javascript:;">发票领购增量</a></span>
+                                            <span><a href="javascript:;">出口退（免）税申报</a></span>
+                                            <span><a href="javascript:;">企业所得税年度纳税申报审核</a></span>
+                                            <span><a href="javascript:;">增值税一般纳税人资格认定申请</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <dl>
+                                <dt><a href="javascript:;">营销推广</a></dt>
+                                <dd><a href="javascript:;">网络推广</a></dd>
+                                <dd><a href="javascript:;">SEO优化</a></dd>
+                                <dd><a href="javascript:;">网络营销</a></dd>
+                            </dl>
+                        </div>
+                        <div class="extension-content">
+                            <div class="nav-content">
+                                <div class="content-inner">
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe639;</i>公司注册</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">有限公司注册</a></span>
+                                            <span><a href="javascript:;">合伙企业注册</a></span>
+                                            <span><a href="javascript:;">分公司注册</a></span>
+                                            <span><a href="javascript:;">个人独资企业注册</a></span>
+                                            <span><a href="javascript:;">外商独资企业注册</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe640;</i>代理记账</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">小规模代理记账</a></span>
+                                            <span><a href="javascript:;">一般纳税人代理记账</a></span>
+                                            <span><a href="javascript:;">注册代账套餐</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe655;</i>公司变更</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">法人变更</a></span>
+                                            <span><a href="javascript:;">公司经营范围变更</a></span>
+                                            <span><a href="javascript:;">公司名称变更</a></span>
+                                            <span><a href="javascript:;">公司股东变更</a></span>
+                                            <span><a href="javascript:;">基本户变更</a></span>
+                                            <span><a href="javascript:;">注册资金变更</a></span>
+                                            <span><a href="javascript:;">公司注册地址变更</a></span>
+                                            <span><a href="javascript:;">公司经营期限变更</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe653;</i>税务服务</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">加计扣除专项服务</a></span>
+                                            <span><a href="javascript:;">企业所得税优惠备案</a></span>
+                                            <span><a href="javascript:;">资产损失专项服务</a></span>
+                                            <span><a href="javascript:;">个人所得税定期申报</a></span>
+                                            <span><a href="javascript:;">流转税定期申报</a></span>
+                                            <span><a href="javascript:;">发票领购增量</a></span>
+                                            <span><a href="javascript:;">出口退（免）税申报</a></span>
+                                            <span><a href="javascript:;">企业所得税年度纳税申报审核</a></span>
+                                            <span><a href="javascript:;">增值税一般纳税人资格认定申请</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe64a;</i>公司注销</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">内资公司注销</a></span>
+                                            <span><a href="javascript:;">外资公司注销</a></span>
+                                            <span><a href="javascript:;">合资公司注销</a></span>
+                                            <span><a href="javascript:;">注销银行基本账户</a></span>
+                                            <span><a href="javascript:;">税务登记注销</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe64a;</i>公司注销</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">内资公司注销</a></span>
+                                            <span><a href="javascript:;">外资公司注销</a></span>
+                                            <span><a href="javascript:;">合资公司注销</a></span>
+                                            <span><a href="javascript:;">注销银行基本账户</a></span>
+                                            <span><a href="javascript:;">税务登记注销</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <dl>
+                                <dt><a href="javascript:;">人事代理</a></dt>
+                                <dd><a href="javascript:;">企业社保</a></dd>
+                                <dd><a href="javascript:;">人事工具</a></dd>
+                                <dd><a href="javascript:;">招聘服务</a></dd>
+                            </dl>
+                        </div>
+                        <div class="extension-content">
+                            <div class="nav-content">
+                                <div class="content-inner">
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe639;</i>公司注册</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">有限公司注册</a></span>
+                                            <span><a href="javascript:;">合伙企业注册</a></span>
+                                            <span><a href="javascript:;">分公司注册</a></span>
+                                            <span><a href="javascript:;">个人独资企业注册</a></span>
+                                            <span><a href="javascript:;">外商独资企业注册</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe640;</i>代理记账</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">小规模代理记账</a></span>
+                                            <span><a href="javascript:;">一般纳税人代理记账</a></span>
+                                            <span><a href="javascript:;">注册代账套餐</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-group">
+                                        <h3><a href="javascript:;"><i class="iconfont">&#xe655;</i>公司变更</a></h3>
+                                        <div class="items">
+                                            <span><a href="javascript:;">法人变更</a></span>
+                                            <span><a href="javascript:;">公司经营范围变更</a></span>
+                                            <span><a href="javascript:;">公司名称变更</a></span>
+                                            <span><a href="javascript:;">公司股东变更</a></span>
+                                            <span><a href="javascript:;">基本户变更</a></span>
+                                            <span><a href="javascript:;">注册资金变更</a></span>
+                                            <span><a href="javascript:;">公司注册地址变更</a></span>
+                                            <span><a href="javascript:;">公司经营期限变更</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-foot">
+                        <p>找不到你需要的服务？</p>
+                        <a href="javascript:;" class="query-btn">免费咨询</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-wrap">
+                <dl class="nav-list f-clearfix">
+                    <dd class="current"><a href="javascript:;" class="nav-name">首页</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">工商财税</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">知识产权</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">法律服务</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">人事社保</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">融诺学院</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">融易算</a></dd>
+                    <dt class="stress"><a href="javascript:;" class="nav-name">服务商加盟</a></dt>
+                </dl>
             </div>
         </div>
     </div>
@@ -877,15 +1270,15 @@
                         <div class="current content-item">
                             <ul class="question-list">
                                 <li>
-                                    <h3 class="f-ellipsis">知识产权</h3>
+                                    <h3><a href="javascript:;" class="f-ellipsis">知识产权</a></h3>
                                     <p>工资薪金个税工资薪金个人所得税率是个人所得税税额与应纳税所得额之间的比例，最新的工资薪金个税税率是</p>
                                 </li>
                                 <li>
-                                    <h3 class="f-ellipsis">知识产权</h3>
+                                    <h3><a href="javascript:;" class="f-ellipsis">知识产权</a></h3>
                                     <p>工资薪金个税工资薪金个人所得税率是个人所得税税额与应纳税所得额之间的比例，最新的工资薪金个税税率是</p>
                                 </li>
                                 <li>
-                                    <h3 class="f-ellipsis">知识产权</h3>
+                                    <h3><a href="javascript:;" class="f-ellipsis">知识产权</a></h3>
                                     <p>工资薪金个税工资薪金个人所得税率是个人所得税税额与应纳税所得额之间的比例，最新的工资薪金个税税率是</p>
                                 </li>
                             </ul>
@@ -893,15 +1286,15 @@
                         <div class="content-item">
                             <ul class="question-list">
                                 <li>
-                                    <h3 class="f-ellipsis">工商财税</h3>
+                                    <h3><a href="javascript:;" class="f-ellipsis">工商财税</a></h3>
                                     <p>工资薪金个税工资薪金个人所得税率是个人所得税税额与应纳税所得额之间的比例，最新的工资薪金个税税率是</p>
                                 </li>
                                 <li>
-                                    <h3 class="f-ellipsis">工商财税</h3>
+                                    <h3><a href="javascript:;" class="f-ellipsis">工商财税</a></h3>
                                     <p>工资薪金个税工资薪金个人所得税率是个人所得税税额与应纳税所得额之间的比例，最新的工资薪金个税税率是</p>
                                 </li>
                                 <li>
-                                    <h3 class="f-ellipsis">工商财税</h3>
+                                    <h3><a href="javascript:;" class="f-ellipsis">工商财税</a></h3>
                                     <p>工资薪金个税工资薪金个人所得税率是个人所得税税额与应纳税所得额之间的比例，最新的工资薪金个税税率是</p>
                                 </li>
                             </ul>

@@ -60,7 +60,7 @@
 
 .head-container .head-content .category-container .container-item .extension-content .nav-content a { color: inherit; }
 
-.head-container .head-content .category-container .container-item .extension-content .nav-content a i { margin-right: 9px; vertical-align: middle; font-size: 18px; color: #e00000; }
+.head-container .head-content .category-container .container-item .extension-content .nav-content a i { margin-right: 9px; vertical-align: middle; font-size: 1.2em; color: #e00000; }
 
 .head-container .head-content .category-container .container-item .extension-content .nav-content a:hover { color: #e00000; }
 
@@ -80,7 +80,7 @@
 
 .head-container .head-content .category-container .container-item .extension-content .nav-content dt a:hover { -webkit-transform: translateX(6px); -ms-transform: translateX(6px); transform: translateX(6px); }
 
-.head-container .head-content .category-container .container-item .extension-content .nav-content dd { min-width: 115px; margin-top: 12px; text-align: center; font-size: 12px; }
+.head-container .head-content .category-container .container-item .extension-content .nav-content dd { margin-top: 12px; font-size: 12px; }
 
 .head-container .head-content .category-container .container-item .extension-content .nav-content dd:after { content: ''; position: absolute; top: 1px; bottom: 1px; left: 0; width: 1px; background-color: #999; }
 

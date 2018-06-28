@@ -168,7 +168,7 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
               i {
                 margin-right: 9px;
                 vertical-align: middle;
-                font-size: 18px;
+                font-size: 1.2em;
                 color: $selfActiveColor;
               }
               &:hover {
@@ -212,9 +212,7 @@ $selfBoxShadow: 0 0 10px 1px rgba(238, 238, 238, 1);
               }
             }
             dd {
-              min-width: 115px;
               margin-top: 12px;
-              text-align: center;
               font-size: 12px;
               &:after {
                 content: '';

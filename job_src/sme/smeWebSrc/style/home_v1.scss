@@ -30,19 +30,21 @@ $selfInitBoxShadow: 0 3px 6px 0 rgba(153, 153, 153, .35);
     }
     .swiper-pagination {
       position: absolute;
-      bottom: 18px;
-      width: 100%;
+      bottom: 150px + 20px;
+      width: 1200px;
+      padding-left: $selfLeftNavWidth + 100px;
+      margin: 0 auto;
       text-align: center;
       font-size: 0;
       .swiper-pagination-bullet {
         display: inline-block;
-        width: 30px;
-        height: 3px;
+        width: 10px;
+        height: 10px;
         margin: 0 8px;
         background-color: #c1c1c1;
         opacity: 1;
         filter: alpha(opacity=100);
-        border-radius: 0;
+        border-radius: 50%;
       }
       .swiper-pagination-bullet-active {
         background-color: $selfActiveColor;
@@ -776,22 +778,24 @@ $selfInitBoxShadow: 0 3px 6px 0 rgba(153, 153, 153, .35);
   width: 566px;
   .question-list {
     li {
-      position: relative;
       padding-left: 30px;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 18px;
-        background: url(../resource/img/sme_finance_icon004.png) no-repeat center;
-      }
       h3 {
-        max-width: 100%;
+        position: relative;
         font-size: 16px;
         font-weight: normal;
         color: #333;
+        a {
+          max-width: 100%;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -30px;
+          width: 20px;
+          height: 18px;
+          background: url(../resource/img/sme_finance_icon004.png) no-repeat center;
+        }
       }
       p {
         $selfBgColor: #fff;
