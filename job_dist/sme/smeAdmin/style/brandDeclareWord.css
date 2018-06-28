@@ -24,7 +24,7 @@ b, .font-bold { font-weight: bold; }
 .stress1 { color: #00f; }
 
 /* document style */
-.document-container { width: 500pt; margin: 0 auto; line-height: 1.6; font-family: SimSun; font-size: 10.5pt; color: #000; background-color: #fff; }
+.document-container { width: 500pt; margin: 0 auto; line-height: 1.6; font-size: 10.5pt; color: #000; background-color: #fff; }
 
 .document-table { border-collapse: collapse; border-spacing: 0; width: 100%; max-width: 100%; line-height: 1.4; background-color: #fff; border: 1px solid #999; }
 
