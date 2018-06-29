@@ -759,6 +759,93 @@
 
 .sme-foot .foot-copy { padding: 18px 0; text-align: center; background-color: #333; }
 
+/* footer 主要 v1 */
+.sme-foot-v1 { box-sizing: border-box; }
+
+.sme-foot-v1 * { box-sizing: border-box; }
+
+.sme-foot-v1 a { color: inherit; }
+
+.sme-foot-v1 a:hover { color: #f78e24; }
+
+.sme-foot-v1 .foot-desc { padding-top: 50px; padding-bottom: 44px; background-color: #f8f8f8; }
+
+.sme-foot-v1 .foot-desc .desc-list { text-align: center; font-size: 0; }
+
+.sme-foot-v1 .foot-desc .desc-list li { display: inline-block; width: 240px; vertical-align: top; }
+
+.sme-foot-v1 .foot-desc .desc-list li i { display: inline-block; width: 60px; height: 60px; margin-right: -60px; vertical-align: middle; line-height: 60px; text-align: center; font-size: 32px; color: #fff; background-color: #ccc; border-radius: 50%; }
+
+.sme-foot-v1 .foot-desc .desc-list li .text { display: inline-block; margin-left: 80px; vertical-align: middle; text-align: justify; color: #333; }
+
+.sme-foot-v1 .foot-desc .desc-list li .text h6 { font-size: 18px; font-weight: normal; }
+
+.sme-foot-v1 .foot-desc .desc-list li .text p { margin-top: 4px; line-height: 24px; font-size: 12px; }
+
+.sme-foot-v1 .foot-desc .desc-list li:hover i { background-color: #f78e24; }
+
+.sme-foot-v1 .foot-desc .desc-list li:hover .text { color: #f78e24; }
+
+.sme-foot-v1 .foot-desc .desc-list li + li { margin-left: 80px; }
+
+.sme-foot-v1 .foot-link-wrap { padding-top: 30px; padding-bottom: 40px; background-color: #4b4b4b; }
+
+.sme-foot-v1 .foot-link-wrap .sme-inner { position: relative; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap { float: left; width: 483px; margin-right: -483px; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap:before { content: ''; position: absolute; top: 2px; bottom: 2px; left: 483px; border-left: 1px solid #6e6e6e; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .logo { display: inline-block; vertical-align: top; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .logo img { display: block; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .hot-line { margin-top: 42px; font-size: 12px; color: #888; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .hot-line li + li { margin-top: 14px; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .hot-line .title { font-size: 14px; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .hot-line .phone { font-family: Avenir; font-size: 24px; color: #ddd; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .service-links { margin-top: 40px; margin-left: -40px; font-size: 0; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .service-links li { display: inline-block; margin-left: 40px; vertical-align: top; color: #888; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .service-links li .icon { display: block; width: 38px; height: 38px; margin: 0 auto; line-height: 38px; text-align: center; font-size: 20px; color: #fff; border-radius: 50%; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .service-links li .icon:hover { -webkit-transform: scale(1.15); -ms-transform: scale(1.15); transform: scale(1.15); }
+
+.sme-foot-v1 .foot-link-wrap .left-wrap .service-links li .text { margin-top: 14px; font-size: 12px; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap { margin-left: 483px; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group { position: relative; padding-right: 250px; font-size: 0; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group .qrcode { position: absolute; top: 0; right: 0; text-align: center; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group .qrcode figure { width: 140px; height: 140px; margin: 0 auto; background-color: #fff; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group .qrcode figure img { display: block; width: 100%; height: 100%; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group .qrcode p { margin-top: 8px; font-size: 12px; color: #ccc; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl { display: inline-block; padding-left: 47px; vertical-align: top; font-size: 12px; color: #bbb; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl dt { margin-bottom: 20px; font-size: 14px; color: #fff; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl dd { margin-top: 12px; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group { padding-left: 47px; margin-top: 75px; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links { margin-left: -20px; font-size: 0; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links dt { margin-bottom: 8px; margin-left: 20px; font-size: 14px; color: #fff; }
+
+.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links dd { display: inline-block; margin: 12px 0 0 20px; font-size: 12px; color: #bbb; }
+
+.sme-foot-v1 .foot-copy { padding: 15px 0; text-align: center; font-size: 12px; color: #999; background-color: #333; }
+
 /* footer 财税服务 */
 .sme-foot1 { box-sizing: border-box; }
 

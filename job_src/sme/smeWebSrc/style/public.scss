@@ -1792,6 +1792,224 @@
   }
 }
 
+/* footer 主要 v1 */
+.sme-foot-v1 {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $selfActiveColor;
+    }
+  }
+  .foot-desc {
+    padding-top: 50px;
+    padding-bottom: 50px - 6px;
+    background-color: #f8f8f8;
+    .desc-list {
+      text-align: center;
+      font-size: 0;
+      li {
+        $selfIconWidth: 60px;
+        display: inline-block;
+        width: 240px;
+        vertical-align: top;
+        i {
+          display: inline-block;
+          width: $selfIconWidth;
+          height: $selfIconWidth;
+          margin-right: - $selfIconWidth;
+          vertical-align: middle;
+          line-height: $selfIconWidth;
+          text-align: center;
+          font-size: 32px;
+          color: #fff;
+          background-color: #ccc;
+          border-radius: 50%;
+        }
+        .text {
+          display: inline-block;
+          margin-left: $selfIconWidth + 20px;
+          vertical-align: middle;
+          text-align: justify;
+          color: #333;
+          h6 {
+            font-size: 18px;
+            font-weight: normal;
+          }
+          p {
+            margin-top: 10px - 6px;
+            line-height: 24px;
+            font-size: 12px;
+          }
+        }
+        &:hover {
+          i {
+            background-color: $selfActiveColor;
+          }
+          .text {
+            color: $selfActiveColor;
+          }
+        }
+      }
+      li + li {
+        margin-left: 80px;
+      }
+    }
+  }
+  .foot-link-wrap {
+    $selfLeftWidth: 483px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #4b4b4b;
+    .sme-inner {
+      position: relative;
+    }
+    .left-wrap {
+      float: left;
+      width: $selfLeftWidth;
+      margin-right: - $selfLeftWidth;
+      &:before { // divider line
+        content: '';
+        position: absolute;
+        top: 2px;
+        bottom: 2px;
+        left: $selfLeftWidth;
+        border-left: 1px solid #6e6e6e;
+      }
+      .logo {
+        display: inline-block;
+        vertical-align: top;
+        img {
+          display: block;
+        }
+      }
+      .hot-line {
+        margin-top: 42px;
+        font-size: 12px;
+        color: #888;
+        li + li {
+          margin-top: 14px;
+        }
+        .title {
+          font-size: 14px;
+        }
+        .phone {
+          font-family: Avenir;
+          font-size: 24px;
+          color: #ddd;
+        }
+      }
+      .service-links {
+        margin-top: 40px;
+        margin-left: -40px;
+        font-size: 0;
+        li {
+          $selfIconWidth: 38px;
+          display: inline-block;
+          margin-left: 40px;
+          vertical-align: top;
+          color: #888;
+          .icon {
+            display: block;
+            width: $selfIconWidth;
+            height: $selfIconWidth;
+            margin: 0 auto;
+            line-height: $selfIconWidth;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 50%;
+            transition: transform .3s ease-out;
+            &:hover {
+              transform: scale(1.15);
+            }
+          }
+          .text {
+            margin-top: 14px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .right-wrap {
+      margin-left: $selfLeftWidth;
+      .top-group {
+        position: relative;
+        padding-right: 250px;
+        font-size: 0;
+        .qrcode {
+          position: absolute;
+          top: 0;
+          right: 0;
+          text-align: center;
+          figure {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;
+            background-color: #fff;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          p {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #ccc;
+          }
+        }
+        dl {
+          display: inline-block;
+          padding-left: 47px;
+          vertical-align: top;
+          font-size: 12px;
+          color: #bbb;
+          dt {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #fff;
+          }
+          dd {
+            margin-top: 12px;
+          }
+        }
+      }
+      .bottom-group {
+        padding-left: 47px;
+        margin-top: 75px;
+        .friendly-links {
+          margin-left: -20px;
+          font-size: 0;
+          dt {
+            margin-bottom: 20px - 12px;
+            margin-left: 20px;
+            font-size: 14px;
+            color: #fff;
+          }
+          dd {
+            display: inline-block;
+            margin: 12px 0 0 20px;
+            font-size: 12px;
+            color: #bbb;
+          }
+        }
+      }
+    }
+  }
+  .foot-copy {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    background-color: #333;
+  }
+}
+
 /* footer 财税服务 */
 .sme-foot1 {
   $selfActiveColor: $globeFinanceColorStress;
