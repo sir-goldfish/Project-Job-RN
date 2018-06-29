@@ -591,7 +591,7 @@
             z-index: 1;
             background-color: #141e37;
             dt {
-              color: #e2ebff;
+              color: $selfActiveColor;
             }
             dd {
               color: #7b808e;
@@ -1889,7 +1889,7 @@
       }
       .hot-line {
         margin-top: 42px;
-        font-size: 12px;
+        font-size: 13px;
         color: #888;
         li + li {
           margin-top: 14px;
@@ -1930,7 +1930,7 @@
           }
           .text {
             margin-top: 14px;
-            font-size: 12px;
+            font-size: 13px;
           }
         }
       }
@@ -1967,11 +1967,11 @@
           display: inline-block;
           padding-left: 47px;
           vertical-align: top;
-          font-size: 12px;
+          font-size: 13px;
           color: #bbb;
           dt {
             margin-bottom: 20px;
-            font-size: 14px;
+            font-size: 15px;
             color: #fff;
           }
           dd {
@@ -1988,13 +1988,13 @@
           dt {
             margin-bottom: 20px - 12px;
             margin-left: 20px;
-            font-size: 14px;
+            font-size: 15px;
             color: #fff;
           }
           dd {
             display: inline-block;
             margin: 12px 0 0 20px;
-            font-size: 12px;
+            font-size: 13px;
             color: #bbb;
           }
         }
@@ -2002,9 +2002,9 @@
     }
   }
   .foot-copy {
-    padding: 15px 0;
+    padding: 16px 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     color: #999;
     background-color: #333;
   }

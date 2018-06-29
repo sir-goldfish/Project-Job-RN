@@ -76,7 +76,7 @@
 
 .content-container .main-content .news-panel .pic:hover img { -webkit-transform: scale(1.06); -ms-transform: scale(1.06); transform: scale(1.06); }
 
-.content-container .main-content .news-panel .desc { margin-left: 203px; font-size: 12px; color: #333; }
+.content-container .main-content .news-panel .desc { margin-left: 203px; font-size: 13px; color: #333; }
 
 .content-container .main-content .news-panel .desc a { max-width: 100%; vertical-align: middle; color: inherit; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
 
@@ -88,7 +88,7 @@
 
 .content-container .main-content .news-panel .desc p { height: 40px; margin-top: 20px; line-height: 20px; overflow: hidden; }
 
-.content-container .main-content .news-panel .desc .info { margin-top: 20px; color: #999; }
+.content-container .main-content .news-panel .desc .info { margin-top: 20px; font-size: 12px; color: #999; }
 
 .content-container .main-content .news-panel .desc .info i { margin-right: 5px; font-size: inherit; }
 

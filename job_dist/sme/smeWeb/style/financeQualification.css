@@ -126,9 +126,9 @@
 
 .service-section a.service-card h3 { font-size: 18px; font-weight: bold; }
 
-.service-section a.service-card p { margin-top: 20px; font-size: 14px; }
+.service-section a.service-card p { min-height: 40px; margin-top: 16px; line-height: 20px; font-size: 14px; }
 
-.service-section a.service-card .price { margin-top: 24px; font-size: 14px; color: #e00000; }
+.service-section a.service-card .price { margin-top: 20px; font-size: 14px; color: #e00000; }
 
 .service-section a.service-card .price .num { font-size: 1.7em; font-weight: bold; }
 

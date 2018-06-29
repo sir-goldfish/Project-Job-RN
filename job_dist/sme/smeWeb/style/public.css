@@ -239,7 +239,7 @@
 
 .sme-head-v1 .head-nav-wrap .category-container .container-item:hover .init-content { z-index: 1; background-color: #141e37; }
 
-.sme-head-v1 .head-nav-wrap .category-container .container-item:hover .init-content dt { color: #e2ebff; }
+.sme-head-v1 .head-nav-wrap .category-container .container-item:hover .init-content dt { color: #f78e24; }
 
 .sme-head-v1 .head-nav-wrap .category-container .container-item:hover .init-content dd { color: #7b808e; }
 
@@ -800,7 +800,7 @@
 
 .sme-foot-v1 .foot-link-wrap .left-wrap .logo img { display: block; }
 
-.sme-foot-v1 .foot-link-wrap .left-wrap .hot-line { margin-top: 42px; font-size: 12px; color: #888; }
+.sme-foot-v1 .foot-link-wrap .left-wrap .hot-line { margin-top: 42px; font-size: 13px; color: #888; }
 
 .sme-foot-v1 .foot-link-wrap .left-wrap .hot-line li + li { margin-top: 14px; }
 
@@ -816,7 +816,7 @@
 
 .sme-foot-v1 .foot-link-wrap .left-wrap .service-links li .icon:hover { -webkit-transform: scale(1.15); -ms-transform: scale(1.15); transform: scale(1.15); }
 
-.sme-foot-v1 .foot-link-wrap .left-wrap .service-links li .text { margin-top: 14px; font-size: 12px; }
+.sme-foot-v1 .foot-link-wrap .left-wrap .service-links li .text { margin-top: 14px; font-size: 13px; }
 
 .sme-foot-v1 .foot-link-wrap .right-wrap { margin-left: 483px; }
 
@@ -830,9 +830,9 @@
 
 .sme-foot-v1 .foot-link-wrap .right-wrap .top-group .qrcode p { margin-top: 8px; font-size: 12px; color: #ccc; }
 
-.sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl { display: inline-block; padding-left: 47px; vertical-align: top; font-size: 12px; color: #bbb; }
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl { display: inline-block; padding-left: 47px; vertical-align: top; font-size: 13px; color: #bbb; }
 
-.sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl dt { margin-bottom: 20px; font-size: 14px; color: #fff; }
+.sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl dt { margin-bottom: 20px; font-size: 15px; color: #fff; }
 
 .sme-foot-v1 .foot-link-wrap .right-wrap .top-group dl dd { margin-top: 12px; }
 
@@ -840,11 +840,11 @@
 
 .sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links { margin-left: -20px; font-size: 0; }
 
-.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links dt { margin-bottom: 8px; margin-left: 20px; font-size: 14px; color: #fff; }
+.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links dt { margin-bottom: 8px; margin-left: 20px; font-size: 15px; color: #fff; }
 
-.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links dd { display: inline-block; margin: 12px 0 0 20px; font-size: 12px; color: #bbb; }
+.sme-foot-v1 .foot-link-wrap .right-wrap .bottom-group .friendly-links dd { display: inline-block; margin: 12px 0 0 20px; font-size: 13px; color: #bbb; }
 
-.sme-foot-v1 .foot-copy { padding: 15px 0; text-align: center; font-size: 12px; color: #999; background-color: #333; }
+.sme-foot-v1 .foot-copy { padding: 16px 0; text-align: center; font-size: 13px; color: #999; background-color: #333; }
 
 /* footer 财税服务 */
 .sme-foot1 { box-sizing: border-box; }

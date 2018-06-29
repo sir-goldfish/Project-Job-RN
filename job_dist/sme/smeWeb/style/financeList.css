@@ -129,7 +129,7 @@ body { background-color: #f7f7f7; }
 
 .filter-bar .bar-panel .filter-group .filter-item .content { padding-left: 12px; }
 
-.filter-bar .bar-panel .filter-group .filter-item .content select { max-width: 108px; height: 26px; padding: 0 12px; line-height: 24px; border: 1px solid #ddd; }
+.filter-bar .bar-panel .filter-group .filter-item .content select { max-width: 108px; height: 26px; padding: 0 12px; line-height: 24px; font-size: 13px; border: 1px solid #ddd; }
 
 .filter-bar .bar-panel .filter-group .filter-item + .filter-item { margin-left: 20px; }
 
