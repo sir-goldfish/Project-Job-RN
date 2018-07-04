@@ -213,6 +213,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="cell">
+                                <div class="form-title">服务地区：</div>
+                            </div>
+                            <div class="cell">
+                                <div class="m-default-area-choose" id="service-city">
+                                    <div class="result-panel">
+                                        <i class="icon iconfont">&#xe604;</i>
+                                        <input type="text" class="choose-trigger" placeholder="请选择地区" readonly>
+                                        <input type="hidden" class="choose-result">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="area-foot">
                         <a href="javascript:;" class="handle-btn">立即购买</a>
@@ -1220,9 +1234,11 @@
         </div>
     </div>
 </footer>
+<div id="test"></div>
 <!--script-->
 <script src="script/jquery.min.js"></script>
 <script src="plugin/jquery.smooth_scroll/jquery.smooth-scroll.min.js"></script>
+<script src="script/default-choose-city.js"></script>
 <script>
     //--地区选择功能示例
     function chooseArea($dom) {
@@ -1328,6 +1344,10 @@
     }
 
     setJumpTab($('.service-tab-container'));
+
+    // service city choose
+    var hotData = ['测试城市|ceshichengshi|cscs|000', '测试城市|ceshichengshi|cscs|111'];
+    var cityChoose = new SmeChooseCity($('#service-city'), hotData);
 </script>
 </body>
 </html>

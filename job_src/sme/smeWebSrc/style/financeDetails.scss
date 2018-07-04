@@ -345,6 +345,52 @@ body {
         }
       }
     }
+    .m-default-area-choose {
+      $selfActiveColor: $selfActiveColor;
+      .choose-panel {
+        a {
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+        .tab-panel {
+          .tab-nav {
+            li {
+              &.current {
+                color: $selfActiveColor;
+              }
+              &:hover {
+                color: $selfActiveColor;
+              }
+            }
+          }
+          .tab-content-item {
+            dl {
+              dt {
+                color: $selfActiveColor;
+              }
+              dd {
+                .area-option {
+                  &:hover {
+                    background-color: $selfActiveColor;
+                  }
+                  &:active {
+                    background-color: $selfActiveColor - 30%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.open {
+        .result-panel {
+          .icon {
+            color: $selfActiveColor;
+          }
+        }
+      }
+    }
   }
   .service-tab-container {
     $selfBodyPaddingX: 20px;

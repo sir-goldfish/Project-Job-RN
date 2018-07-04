@@ -2697,6 +2697,184 @@ table {
   }
 }
 
+/* m-default-area-choose */
+.m-default-area-choose {
+  $selfActiveColor: $onColorOrange;
+  box-sizing: border-box;
+  position: relative;
+  width: 180px;
+  * {
+    box-sizing: border-box;
+  }
+  .result-panel {
+    $selfHeight: 28px;
+    position: relative;
+    width: 100%;
+    height: $selfHeight;
+    background-color: #fff;
+    border: none;
+    cursor: default;
+    & > * {
+      cursor: inherit;
+    }
+    input {
+      font-size: inherit;
+    }
+    .icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -6px;
+      font-size: 12px;
+      color: #666;
+    }
+    .choose-trigger {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0 30px 0 10px;
+      background-color: transparent;
+      border: 1px solid #ddd;
+    }
+  }
+  .choose-panel {
+    $selfBaseFontSize: 12px;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    z-index: 10;
+    display: none;
+    width: 510px;
+    padding: 0 14px;
+    font-size: $selfBaseFontSize;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    a {
+      color: inherit;
+      &:hover {
+        color: $selfActiveColor;
+      }
+    }
+    .hot-panel {
+      padding: 14px - 4px 0;
+      line-height: 20px;
+      color: #999;
+      dl {
+        $selfLeftWidth: 60px;
+        dt {
+          float: left;
+          color: #666;
+        }
+        dd {
+          padding-left: $selfLeftWidth;
+          font-size: 0;
+          span {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 8px;
+            font-size: $selfBaseFontSize;
+          }
+        }
+      }
+    }
+    .tab-panel {
+      padding: 14px 0;
+      border-top: 1px dashed #c5c5c5;
+      .tab-nav {
+        position: relative;
+        font-size: 0;
+        li {
+          position: relative;
+          display: inline-block;
+          height: 25px;
+          padding: 0 12px;
+          vertical-align: top;
+          line-height: 25px - 2px;
+          font-size: 13px;
+          border: 1px solid transparent;
+          cursor: pointer;
+          &.current {
+            z-index: 1;
+            color: $selfActiveColor;
+            border-color: #d6dceb;
+            border-bottom-color: #fff;
+          }
+          &:hover {
+            color: $selfActiveColor;
+          }
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: calc(100% - 1px);
+          left: 0;
+          width: 100%;
+          border-bottom: 1px solid #d6dceb;
+        }
+      }
+      .tab-content {
+        padding: 14px 0 0;
+      }
+      .tab-content-item {
+        display: none;
+        line-height: 20px;
+        dl {
+          $selfLeftWidth: 28px - 4px;
+          dt {
+            float: left;
+            width: $selfLeftWidth;
+            margin-top: -1px;
+            text-align: center;
+            font-size: 13px;
+            color: $selfActiveColor;
+          }
+          dd {
+            padding-left: $selfLeftWidth;
+            font-size: 0;
+            span {
+              display: inline-block;
+              width: (12px * 5) + 6px + 6px + 4px;
+              padding-left: 4px;
+              vertical-align: top;
+              font-size: $selfBaseFontSize;
+            }
+            .area-option {
+              max-width: 100%;
+              padding: 0 6px;
+              line-height: 20px;
+              &:hover {
+                color: #fff;
+                background-color: $selfActiveColor;
+              }
+              &:active {
+                background-color: $selfActiveColor - 30%;
+              }
+            }
+          }
+        }
+        dl + dl {
+          margin-top: 5px;
+        }
+        &.current {
+          display: block;
+        }
+      }
+    }
+  }
+  &.open {
+    .result-panel {
+      .icon {
+        color: $selfActiveColor;
+      }
+    }
+    .choose-panel {
+      display: block;
+    }
+  }
+}
+
 /* m-upload-preview */
 .m-upload-preview {
   .preview-file {

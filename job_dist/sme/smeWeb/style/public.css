@@ -1089,6 +1089,71 @@ table .table-loading { min-width: 120px; height: 18px; margin: 0 auto; backgroun
 
 .m-area-choose.show .choose-container { display: block; }
 
+/* m-default-area-choose */
+.m-default-area-choose { box-sizing: border-box; position: relative; width: 180px; }
+
+.m-default-area-choose * { box-sizing: border-box; }
+
+.m-default-area-choose .result-panel { position: relative; width: 100%; height: 28px; background-color: #fff; border: none; cursor: default; }
+
+.m-default-area-choose .result-panel > * { cursor: inherit; }
+
+.m-default-area-choose .result-panel input { font-size: inherit; }
+
+.m-default-area-choose .result-panel .icon { position: absolute; right: 10px; top: 50%; margin-top: -6px; font-size: 12px; color: #666; }
+
+.m-default-area-choose .result-panel .choose-trigger { position: relative; display: block; width: 100%; height: 100%; padding: 0 30px 0 10px; background-color: transparent; border: 1px solid #ddd; }
+
+.m-default-area-choose .choose-panel { position: absolute; top: calc(100% - 1px); left: 0; z-index: 10; display: none; width: 510px; padding: 0 14px; font-size: 12px; color: #333; background-color: #fff; border: 1px solid #ddd; }
+
+.m-default-area-choose .choose-panel a { color: inherit; }
+
+.m-default-area-choose .choose-panel a:hover { color: #f78e24; }
+
+.m-default-area-choose .choose-panel .hot-panel { padding: 10px 0; line-height: 20px; color: #999; }
+
+.m-default-area-choose .choose-panel .hot-panel dl dt { float: left; color: #666; }
+
+.m-default-area-choose .choose-panel .hot-panel dl dd { padding-left: 60px; font-size: 0; }
+
+.m-default-area-choose .choose-panel .hot-panel dl dd span { display: inline-block; vertical-align: top; padding: 0 8px; font-size: 12px; }
+
+.m-default-area-choose .choose-panel .tab-panel { padding: 14px 0; border-top: 1px dashed #c5c5c5; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-nav { position: relative; font-size: 0; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-nav li { position: relative; display: inline-block; height: 25px; padding: 0 12px; vertical-align: top; line-height: 23px; font-size: 13px; border: 1px solid transparent; cursor: pointer; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-nav li.current { z-index: 1; color: #f78e24; border-color: #d6dceb; border-bottom-color: #fff; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-nav li:hover { color: #f78e24; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-nav:after { content: ''; position: absolute; top: calc(100% - 1px); left: 0; width: 100%; border-bottom: 1px solid #d6dceb; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content { padding: 14px 0 0; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item { display: none; line-height: 20px; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dt { float: left; width: 24px; margin-top: -1px; text-align: center; font-size: 13px; color: #f78e24; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd { padding-left: 24px; font-size: 0; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd span { display: inline-block; width: 76px; padding-left: 4px; vertical-align: top; font-size: 12px; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd .area-option { max-width: 100%; padding: 0 6px; line-height: 20px; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd .area-option:hover { color: #fff; background-color: #f78e24; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd .area-option:active { background-color: #d97006; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl + dl { margin-top: 5px; }
+
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item.current { display: block; }
+
+.m-default-area-choose.open .result-panel .icon { color: #f78e24; }
+
+.m-default-area-choose.open .choose-panel { display: block; }
+
 /* m-upload-preview */
 .m-upload-preview .preview-file { position: relative; display: inline-block; width: 70px; height: 70px; vertical-align: top; line-height: 70px; text-align: center; background-color: #fff; overflow: hidden; }
 

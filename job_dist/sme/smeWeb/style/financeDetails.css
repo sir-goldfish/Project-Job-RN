@@ -138,6 +138,20 @@ body { background-color: #f7f7f7; }
 
 .content-container .main-content .service-desc-panel .form-table .input-box select { width: 180px; height: 28px; padding: 0 0 0 10px; vertical-align: middle; line-height: 26px; font-size: inherit; border: 1px solid #ddd; }
 
+.content-container .main-content .service-desc-panel .m-default-area-choose .choose-panel a:hover { color: #e00000; }
+
+.content-container .main-content .service-desc-panel .m-default-area-choose .choose-panel .tab-panel .tab-nav li.current { color: #e00000; }
+
+.content-container .main-content .service-desc-panel .m-default-area-choose .choose-panel .tab-panel .tab-nav li:hover { color: #e00000; }
+
+.content-container .main-content .service-desc-panel .m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dt { color: #e00000; }
+
+.content-container .main-content .service-desc-panel .m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd .area-option:hover { background-color: #e00000; }
+
+.content-container .main-content .service-desc-panel .m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd .area-option:active { background-color: #c20000; }
+
+.content-container .main-content .service-desc-panel .m-default-area-choose.open .result-panel .icon { color: #e00000; }
+
 .content-container .main-content .service-tab-container .jump-tab-nav { padding-left: 20px; padding-right: 20px; }
 
 .content-container .main-content .service-tab-container .jump-tab-content { padding-left: 20px; padding-right: 20px; }
