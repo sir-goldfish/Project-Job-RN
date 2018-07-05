@@ -768,7 +768,7 @@
 
 .sme-foot-v1 a:hover { color: #f78e24; }
 
-.sme-foot-v1 .foot-desc { padding-top: 50px; padding-bottom: 44px; background-color: #f8f8f8; }
+.sme-foot-v1 .foot-desc { padding-top: 50px; padding-bottom: 44px; background-color: #f1f1f1; }
 
 .sme-foot-v1 .foot-desc .desc-list { text-align: center; font-size: 0; }
 
@@ -1134,7 +1134,7 @@ table .table-loading { min-width: 120px; height: 18px; margin: 0 auto; backgroun
 
 .m-default-area-choose .choose-panel .tab-panel .tab-content-item { display: none; line-height: 20px; }
 
-.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dt { float: left; width: 24px; margin-top: -1px; text-align: center; font-size: 13px; color: #f78e24; }
+.m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dt { float: left; width: 24px; text-align: center; font-size: 13px; color: #f78e24; }
 
 .m-default-area-choose .choose-panel .tab-panel .tab-content-item dl dd { padding-left: 24px; font-size: 0; }
 

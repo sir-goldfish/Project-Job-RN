@@ -101,7 +101,7 @@
 
 .time-axis-section .time-axis-tab .content-item .title-panel { float: left; width: 270px; height: 450px; padding-top: 64px; text-align: center; margin-right: -270px; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-.time-axis-section .time-axis-tab .content-item .title-panel h3 { font-size: 36px; font-weight: bold; color: #e0e0fa; text-shadow: 0 3px 7px rgba(55, 55, 138, 0.35); }
+.time-axis-section .time-axis-tab .content-item .title-panel h3 { font-size: 36px; font-weight: bold; color: #fff; text-shadow: 0 3px 7px rgba(55, 55, 138, 0.35); }
 
 .time-axis-section .time-axis-tab .content-item .title-panel p { margin-top: 215px; line-height: 36px; font-size: 14px; color: #fff; }
 

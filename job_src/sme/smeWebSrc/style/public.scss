@@ -1808,7 +1808,7 @@
   .foot-desc {
     padding-top: 50px;
     padding-bottom: 50px - 6px;
-    background-color: #f8f8f8;
+    background-color: #f1f1f1;
     .desc-list {
       text-align: center;
       font-size: 0;
@@ -2825,7 +2825,6 @@ table {
           dt {
             float: left;
             width: $selfLeftWidth;
-            margin-top: -1px;
             text-align: center;
             font-size: 13px;
             color: $selfActiveColor;
