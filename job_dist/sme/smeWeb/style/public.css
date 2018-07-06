@@ -209,7 +209,7 @@
 
 .sme-head-v1 .head-nav-wrap .category-container .container-item { width: 100%; }
 
-.sme-head-v1 .head-nav-wrap .category-container .container-item .init-content { position: relative; width: 100%; padding: 15px 20px; font-size: 0; border: 1px solid transparent; border-top-color: #384566; }
+.sme-head-v1 .head-nav-wrap .category-container .container-item .init-content { position: relative; width: 100%; max-height: 98px; padding: 15px 20px; font-size: 0; border: 1px solid transparent; border-top-color: #384566; overflow: hidden; }
 
 .sme-head-v1 .head-nav-wrap .category-container .container-item .init-content dl { margin-left: -15px; }
 
