@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商标查询列表页-中小企业服务</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/trademarkSearchList.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="sme-head5">
+    <div class="head-bar sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="bar-left">
+                <div class="location-box">
+                    <span class="res-city"><i class="iconfont">&#xe604;</i><em>青岛</em></span>
+                </div>
+                <span class="hot-line">全国统一咨询热线：400-6616-855</span>
+                <span class="stock-code">股票代码：<em>666666</em></span>
+            </div>
+            <ul class="bar-right">
+                <li class="nav-item stress"><a href="home.html"><i class="icon iconfont">&#xe601;</i>首页</a></li>
+                <li class="nav-item user-content">
+                    <a href="javascript:;" class="login">登录</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+                <!--begin-登录后用户信息-->
+                <li class="nav-item user-content" style="display: none;">
+                    <a href="javascript:;" class="name">用户名</a>
+                    <a href="javascript:;" class="exit">退出</a>
+                </li>
+                <!--end-登录后用户信息-->
+                <li class="nav-item"><a href="javascript:;">服务商加盟</a></li>
+                <li class="nav-item"><a href="javascript:;">新手指引</a></li>
+                <li class="nav-item"><a href="javascript:;">帮助中心</a></li>
+                <li class="nav-item"><a href="javascript:;">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-logo sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <a href="serviceBrand_v1.html" class="logo-link"><img src="resource/img/sme_logo_property.jpg"></a>
+            <div class="f-pull-right f-clearfix">
+                <ul class="logo-nav f-clearfix">
+                    <li class="current nav-item">
+                        <a href="serviceBrand_v1.html" class="item-name">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="serviceBrand_v2.html" class="item-name">商标服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="serviceCopyright.html" class="item-name">版权服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicePatent.html" class="item-name">专利服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="transactionHome.html" class="item-name">交易市场</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--head-crumbs-nav-->
+<section class="head-crumbs-nav sme-wrapper">
+    <nav class="m-crumbs-nav sme-inner">
+        <dl>
+            <dt>当前位置：</dt>
+            <dd><a href="javascript:;">知产工具</a></dd>
+            <dd><a href="javascript:;">商标查询</a></dd>
+            <dd><span>查询列表</span></dd>
+        </dl>
+    </nav>
+</section>
+<!--head-section-->
+<section class="head-section sme-wrapper">
+    <div class="sme-inner">
+        <div class="query-tab">
+            <ul class="tab-nav">
+                <li class="current">商标查询</li>
+                <li>商标号查询</li>
+            </ul>
+            <div class="tab-content">
+                <div class="content-item">
+                    <div class="input-box">
+                        <input type="text" placeholder="请输入您想要查询的商标名称">
+                        <a href="javascript:;" class="query-btn">查询该商标</a>
+                    </div>
+                    <div class="hint-info">*提示信息占位，如不需要，不填充内容即可</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--main-container-->
+<section class="main-container sme-wrapper">
+    <div class="sme-inner">
+        <!--filter-panel-->
+        <section class="filter-panel">
+            <div class="results-container f-clearfix">
+                <div class="title">已选条件：</div>
+                <div class="content f-clearfix">
+                    <ul class="results-group f-clearfix">
+                        <li class="result">
+                            <span class="name f-ellipsis" title="商标类型：01类 化学原料">商标类型：01类 化学原料</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="申请状态：申请中">申请状态：申请中</span>
+                            <a href="javascript:;" class="del-self del iconfont">&#xe723;</a>
+                        </li>
+                        <li class="result">
+                            <span class="name f-ellipsis" title="全部清除">全部清除</span>
+                            <a href="javascript:;" class="del-all del iconfont">&#xe723;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="choose-container">
+                <div class="choose-item with-more">
+                    <div class="title">商标类型：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option chosen">
+                                        <span class="name f-ellipsis" title="全部">全部</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="handle-group">
+                            <a href="javascript:;" class="more-btn handle-btn">
+                                <i class="iconfont">&#xe9a2;</i><span>更多</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item">
+                    <div class="title">申请状态：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option chosen">
+                                        <span class="name f-ellipsis" title="全部">全部</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="等待受理通知书">等待受理通知书</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="初审公告">初审公告</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item">
+                    <div class="title">默认：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option chosen">
+                                        <span class="name f-ellipsis" title="全部">全部</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="选项">选项</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="选项">选项</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item with-more">
+                    <div class="title">更多：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option chosen">
+                                        <span class="name f-ellipsis" title="全部">全部</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="handle-group">
+                            <a href="javascript:;" class="more-btn handle-btn">
+                                <i class="iconfont">&#xe9a2;</i><span>更多</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-item with-more with-multiple">
+                    <div class="title">组合：</div>
+                    <div class="content f-clearfix">
+                        <div class="options-box">
+                            <div class="options-group-wrap f-clearfix">
+                                <ul class="options-group f-clearfix">
+                                    <li class="option chosen">
+                                        <span class="name f-ellipsis" title="全部">全部</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="name f-ellipsis" title="01类 化学原料">01类 化学原料</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="options-foot-handle">
+                                <a href="javascript:;" class="confirm-btn handle-btn">确定</a>
+                                <a href="javascript:;" class="cancel-btn handle-btn">取消</a>
+                            </div>
+                        </div>
+                        <div class="handle-group">
+                            <a href="javascript:;" class="multiple-btn handle-btn">
+                                <i class="iconfont">&#xe772;</i><span>多选</span>
+                            </a>
+                            <a href="javascript:;" class="more-btn handle-btn">
+                                <i class="iconfont">&#xe9a2;</i><span>更多</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--sort-bar-->
+        <section class="sort-bar f-clearfix">
+            <div class="f-pull-left">
+                <div class="sort-group">
+                    <span class="sort-title">搜索类别：</span>
+                    <span class="sort-item"><span class="text">时间</span><i class="ascend sort-icon"></i><i
+                            class="descend sort-icon"></i></span>
+                </div>
+            </div>
+            <div class="f-pull-right">
+                <div class="filter-info">为您找到相关结果188个</div>
+            </div>
+        </section>
+        <!--result-panel-->
+        <section class="result-panel">
+            <div class="content-empty">
+                <div class="pic"><img src="resource/img/sme_icon25.png"></div>
+                <div class="text">没有相关内容……</div>
+            </div>
+            <ul class="trademark-bars">
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic10.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic11.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">商标注册申请-等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic9.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic8.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic10.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic11.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+                <li class="trademark-bar f-clearfix">
+                    <a href="javascript:;" class="pic"><img src="resource/img/sme_transaction_pic9.jpg"></a>
+                    <div class="handle-group">
+                        <ul>
+                            <li><a href="javascript:" class="handle-btn">详情</a></li>
+                            <li><a href="javascript:" class="handle-btn">注册</a></li>
+                            <li><a href="javascript:" class="handle-btn">咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="desc">
+                        <div class="cell f-ellipsis"><a href="javascript:;">商标名称：XXX</a></div>
+                        <div class="cell f-ellipsis">商标类别：12类 化工原料</div>
+                        <div class="cell f-ellipsis">申请号：23420342</div>
+                        <div class="cell f-ellipsis">申请人：青岛融诺网信息技术有限公司</div>
+                        <div class="cell f-ellipsis">当前状态：<span class="stress">等待受理通知书发文</span></div>
+                        <div class="cell f-ellipsis">申请日期：2018-06-27</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="pagination-container">
+                <div class="m-group-pagination">
+                    <div class="page-nav">
+                        <a href="javascript:;">首页</a><a href="javascript:;">&lt; 上一页</a><a
+                            href="javascript:;">1</a><span class="current">2</span><a
+                            href="javascript:;">3</a><span>…</span><a href="javascript:;">下一页 &gt;</a>
+                    </div>
+                    <div class="page-jump">
+                        到第<input type="text" value="10">页<input type="button" value="确定">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--foot-ad-->
+        <section class="foot-ad">
+            <a href="javascript:;" class="ad"><img src="resource/img/sme_trademark_pic002.jpg"></a>
+        </section>
+    </div>
+</section>
+<!--共用底部-->
+<footer class="sme-foot-v1">
+    <div class="foot-desc sme-wrapper">
+        <div class="sme-inner">
+            <ul class="desc-list">
+                <li>
+                    <i class="iconfont">&#xe606;</i>
+                    <div class="text">
+                        <h6>资质认证</h6>
+                        <p>服务商100%实名审核认证，明码标价，支付安全</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe605;</i>
+                    <div class="text">
+                        <h6>全程服务</h6>
+                        <p>售前咨询,下单24小时内响应，关键环节100%提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe635;</i>
+                    <div class="text">
+                        <h6>多元产品</h6>
+                        <p>从财税市场营销人力资源满足创业各阶段不同需求</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe67f;</i>
+                    <div class="text">
+                        <h6>售后支持</h6>
+                        <p>购买产品后,有疑问可拨打400电话进行售后服务</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-link-wrap sme-wrapper">
+        <div class="sme-inner f-clearfix">
+            <div class="left-wrap">
+                <a href="javascript:;" class="logo"><img src="resource/img/sme_logo_text.png"></a>
+                <ul class="hot-line">
+                    <li class="title">融诺网服务热线</li>
+                    <li class="phone">400-619-6199</li>
+                    <li class="time">周一至周日 9:00-18:00</li>
+                </ul>
+                <ul class="service-links">
+                    <li>
+                        <a href="javascript:;" class="icon iconfont" style="background-color:#f99003;">&#xe708;</a>
+                        <a href="javascript:;" class="text">融诺知产</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="icon iconfont" style="background-color:#f21e02;">&#xe706;</a>
+                        <a href="javascript:;" class="text">融诺工商</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="icon iconfont" style="background-color:#d69f56;">&#xe8b2;</a>
+                        <a href="javascript:;" class="text">融诺法律</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="icon iconfont" style="background-color:#00b7ee;">&#xe705;</a>
+                        <a href="javascript:;" class="text">融诺人事</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="icon iconfont" style="background-color:#e60012;">&#xe707;</a>
+                        <a href="javascript:;" class="text">融诺金融</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-wrap">
+                <div class="top-group">
+                    <dl style="width:33.33333%;">
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">企业文化</a></dd>
+                        <dd><a href="javascript:;">专家团队</a></dd>
+                        <dd><a href="javascript:;">发展历程</a></dd>
+                    </dl>
+                    <dl style="width:33.33333%;">
+                        <dt>服务支持</dt>
+                        <dd><a href="javascript:;">联系我们</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                    </dl>
+                    <dl style="width:33.33333%;">
+                        <dt>新手指南</dt>
+                        <dd><a href="javascript:;">注册新用户</a></dd>
+                        <dd><a href="javascript:;">雇主入门</a></dd>
+                        <dd><a href="javascript:;">服务商入门</a></dd>
+                        <dd><a href="javascript:;">规则中心</a></dd>
+                    </dl>
+                    <div class="qrcode">
+                        <figure><img src="resource/img/sme_wx_qrcode.png"></figure>
+                        <p>扫码关注，掌握一手资讯</p>
+                    </div>
+                </div>
+                <div class="bottom-group">
+                    <dl class="friendly-links">
+                        <dt>友情链接</dt>
+                        <dd><a href="javascript:;">淘宝网</a></dd>
+                        <dd><a href="javascript:;">支付宝</a></dd>
+                        <dd><a href="javascript:;">前程无忧</a></dd>
+                        <dd><a href="javascript:;">网易</a></dd>
+                        <dd><a href="javascript:;">聚美优品</a></dd>
+                        <dd><a href="javascript:;">淘宝网</a></dd>
+                        <dd><a href="javascript:;">支付宝</a></dd>
+                        <dd><a href="javascript:;">前程无忧</a></dd>
+                        <dd><a href="javascript:;">网易</a></dd>
+                        <dd><a href="javascript:;">聚美优品</a></dd>
+                        <dd><a href="javascript:;">淘宝网</a></dd>
+                        <dd><a href="javascript:;">更多</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy sme-wrapper">
+        <div class="sme-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 44030502000237号</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    // 筛选相关功能示例
+    $('.handle-group').find('.handle-btn').on('click', function () {
+        if ($(this).hasClass('more-btn') == true) {
+            if ($(this).hasClass('active') == false) {
+                $(this).addClass('active').find('span').text('收起');
+                $(this).parents('.choose-item').addClass('on-more');
+            } else {
+                $(this).parents('.choose-item').find('.options-group-wrap').scrollTop(0);
+                $(this).removeClass('active').find('span').text('更多');
+                $(this).parents('.choose-item').removeClass('on-more');
+            }
+        }
+        if ($(this).hasClass('multiple-btn') == true) {
+            if ($(this).hasClass('active') == false) {
+                $(this).addClass('active');
+                $(this).parents('.choose-item').addClass('on-multiple');
+                if ($(this).siblings('.more-btn').length > 0) {
+                    $(this).siblings('.more-btn').addClass('hide');
+                    if ($(this).siblings('.more-btn').hasClass('active') == false) {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
+                }
+            } else {
+                $(this).removeClass('active');
+                $(this).parents('.choose-item').removeClass('on-multiple');
+                if ($(this).siblings('.more-btn').length > 0) {
+                    $(this).siblings('.more-btn').removeClass('hide');
+                    if ($(this).siblings('.more-btn').hasClass('active') == true) {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
+                }
+            }
+        }
+    });
+
+    // 排序筛选
+    function sortFilter($dom) {
+        var $sortItem = $dom.find('.sort-item');
+        $sortItem.on('click', function () {
+            if ($(this).find('.sort-icon').length > 0) {
+                if (!$(this).hasClass('ascending') && !$(this).hasClass('descending')) {
+                    $(this).addClass('ascending');
+                } else if ($(this).hasClass('ascending')) {
+                    $(this).addClass('descending').removeClass('ascending')
+                } else if ($(this).hasClass('descending')) {
+                    $(this).addClass('ascending').removeClass('descending')
+                }
+            }
+        });
+    }
+
+    sortFilter($('.sort-bar .sort-group'));
+</script>
+</body>
+</html>

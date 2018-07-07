@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfBaseActiveColor: $onColorOrange;
+$selfActiveColor: #03d6d0;
+
+/* head-section */
+.head-section {
+  box-sizing: border-box;
+  padding-top: 307px;
+  padding-bottom: 115px;
+  background: url(../resource/img/sme_trademark_pic001.jpg) no-repeat center top;
+  * {
+    box-sizing: border-box;
+  }
+  .query-tab {
+    .tab-nav {
+      text-align: center;
+      font-size: 0;
+      li {
+        $selfHeight: 42px;
+        position: relative;
+        display: inline-block;
+        height: $selfHeight;
+        padding: 0 30px;
+        vertical-align: top;
+        line-height: $selfHeight;
+        font-size: 14px;
+        color: #333;
+        border-radius: $selfHeight;
+        background-color: #fff;
+        cursor: default;
+        &:hover {
+          color: $selfBaseActiveColor;
+        }
+        &.current {
+          color: #fff;
+          background-color: $selfBaseActiveColor;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            margin-left: -2.5px;
+            overflow: hidden;
+            border: 5px solid transparent;
+            border-top-color: $selfBaseActiveColor;
+            border-bottom: none;
+          }
+        }
+      }
+      li + li {
+        margin-left: 80px;
+      }
+    }
+    .tab-content {
+      .content-item {
+        $selfWidth: 945px;
+        $selfHeight: 70px;
+        width: $selfWidth;
+        margin: 40px auto 0;
+        .input-box {
+          position: relative;
+          width: 100%;
+          height: $selfHeight;
+          padding: 5px;
+          font-size: 14px;
+          background-color: #fff;
+          border-radius: $selfHeight;
+          overflow: hidden;
+          input[type='text'] {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 45px + 174px 0 45px;
+            font-size: inherit;
+            background-color: transparent;
+            border: none;
+            border-radius: $selfHeight - 5px - 5px;
+          }
+          .query-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 174px;
+            height: $selfHeight - 5px - 5px;
+            line-height: $selfHeight - 5px - 5px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            background-color: $selfActiveColor;
+            border-top-right-radius: $selfHeight - 5px - 5px;
+            border-bottom-right-radius: $selfHeight - 5px - 5px;
+            &:hover {
+              background-color: $selfActiveColor - 15%;
+            }
+            &:active {
+              background-color: $selfActiveColor - 30%;
+            }
+          }
+        }
+        .hint-info {
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 12px;
+          color: #f00;
+        }
+      }
+    }
+  }
+  .notice-bar {
+    margin-top: 70px - 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    span {
+      b {
+        font-size: 1.4em;
+        color: $selfActiveColor;
+      }
+    }
+    span + span {
+      margin-left: 20px;
+    }
+  }
+}
