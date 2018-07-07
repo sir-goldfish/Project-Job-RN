@@ -71,7 +71,7 @@
                         </div>
                         <div class="input-box with-icon" style="width:200px;">
                             <i class="icon" style="background-position-x:-36px;"></i>
-                            <input type="text" class="input-item" placeholder="行业 如：网络">
+                            <input type="text" class="trade-input input-item" placeholder="行业 如：网络">
                         </div>
                         <div class="input-box" style="width:157px;">
                             <i class="icon"></i>
@@ -83,8 +83,64 @@
                                 <option value="公司类型">公司类型</option>
                             </select>
                         </div>
-                        <div class="input-box" style="width:175px;">
+                        <div class="input-box handle-box" style="width:175px;">
                             <a href="javascript:;" class="query-btn">免费核名</a>
+                        </div>
+                        <div class="trade-extension extension-wrap">
+                            <dl>
+                                <dt>科技类</dt>
+                                <dd>
+                                    <a href="javascript:;" class="choose-option">网络技术</a>
+                                    <a href="javascript:;" class="choose-option">电子商务</a>
+                                    <a href="javascript:;" class="choose-option">信息技术</a>
+                                    <a href="javascript:;" class="choose-option">游戏</a>
+                                    <a href="javascript:;" class="choose-option">电子</a>
+                                    <a href="javascript:;" class="choose-option">软件</a>
+                                    <a href="javascript:;" class="choose-option">新材料</a>
+                                    <a href="javascript:;" class="choose-option">生物科技</a>
+                                    <a href="javascript:;" class="choose-option">教育科技</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>许可类</dt>
+                                <dd>
+                                    <a href="javascript:;" class="choose-option">投资管理</a>
+                                    <a href="javascript:;" class="choose-option">金融</a>
+                                    <a href="javascript:;" class="choose-option">资产</a>
+                                    <a href="javascript:;" class="choose-option">商业保理</a>
+                                    <a href="javascript:;" class="choose-option">融资租赁</a>
+                                    <a href="javascript:;" class="choose-option">人力资源</a>
+                                    <a href="javascript:;" class="choose-option">食品</a>
+                                    <a href="javascript:;" class="choose-option">劳务派遣</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>服务类</dt>
+                                <dd>
+                                    <a href="javascript:;" class="choose-option">广告</a>
+                                    <a href="javascript:;" class="choose-option">文化传播</a>
+                                    <a href="javascript:;" class="choose-option">建筑装潢</a>
+                                    <a href="javascript:;" class="choose-option">设计</a>
+                                    <a href="javascript:;" class="choose-option">美容美发</a>
+                                    <a href="javascript:;" class="choose-option">房地产中介</a>
+                                    <a href="javascript:;" class="choose-option">物业管理</a>
+                                    <a href="javascript:;" class="choose-option">商务咨询</a>
+                                    <a href="javascript:;" class="choose-option">企业管理</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>其他</dt>
+                                <dd>
+                                    <a href="javascript:;" class="choose-option">贸易</a>
+                                    <a href="javascript:;" class="choose-option">实业</a>
+                                    <a href="javascript:;" class="choose-option">制造</a>
+                                    <a href="javascript:;" class="choose-option">服饰</a>
+                                    <a href="javascript:;" class="choose-option">化妆品</a>
+                                    <a href="javascript:;" class="choose-option">农业</a>
+                                    <a href="javascript:;" class="choose-option">餐饮管理</a>
+                                    <a href="javascript:;" class="choose-option">物流</a>
+                                </dd>
+                            </dl>
                         </div>
                     </div>
                     <div class="hint-info">*提示信息占位</div>
@@ -275,6 +331,29 @@
         speed: 2200,
         autoplay: 1
     });
+
+    // 查询input扩展
+    function queryExtension($input, $extension) {
+        $extension.find('.choose-option').on('click', function () {
+            $input.val($(this).text());
+        });
+        $input.on({
+            'focus': function () {
+                if (!$extension.hasClass('open')) {
+                    $extension.addClass('open');
+                }
+            },
+            'blur keydown': function () {
+                if ($extension.hasClass('open')) {
+                    setTimeout(function () {
+                        $extension.removeClass('open');
+                    }, 100);
+                }
+            }
+        });
+    }
+
+    queryExtension($('.trade-input'), $('.trade-extension'));
 </script>
 </body>
 </html>

@@ -43,6 +43,7 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
     .query-box {
       .input-container {
         $selfHeight: 70px;
+        position: relative;
         width: 945px;
         height: $selfHeight;
         padding: 5px;
@@ -109,7 +110,7 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
             border-top-left-radius: $selfHeight;
             border-bottom-left-radius: $selfHeight;
           }
-          &:last-child {
+          &.handle-box {
             border-top-right-radius: $selfHeight;
             border-bottom-right-radius: $selfHeight;
             .query-btn {
@@ -119,6 +120,57 @@ $selfInitBoxShadow: 0 2px 5px 0 rgba(221, 221, 221, 1);
         }
         .input-box + .input-box {
           border-left: 2px solid $selfActiveColor;
+        }
+        .extension-wrap {
+          position: absolute;
+          top: calc(100% + 1px);
+          left: 30px;
+          right: 30px;
+          z-index: 2;
+          display: none;
+          padding: 10px;
+          background-color: #fff;
+          box-shadow: 0 2px 5px 0 rgba(153, 153, 153, .35);
+          a {
+            color: inherit;
+            &:hover {
+              color: $selfActiveColor;
+            }
+          }
+          &.open {
+            display: block;
+          }
+          &.trade-extension {
+            $selfDtWidth: 50px;
+            left: 120px;
+            right: 120px;
+            dl {
+              line-height: 24px;
+              font-size: 0;
+              color: #666;
+            }
+            dl + dl {
+              margin-top: 10px;
+            }
+            dt {
+              float: left;
+              width: $selfDtWidth;
+              height: 24px;
+              text-align: center;
+              font-size: 13px;
+              background-color: #f0f1f3;
+            }
+            dd {
+              padding-left: $selfDtWidth;
+            }
+            .choose-option {
+              display: inline-block;
+              margin-left: 12px;
+              vertical-align: top;
+              line-height: inherit;
+              font-size: 12px;
+            }
+          }
         }
       }
       .hint-info {
