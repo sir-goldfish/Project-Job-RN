@@ -16,17 +16,17 @@ body { background-color: #f7f7f7; }
 
 .head-section .query-tab .tab-nav { text-align: center; font-size: 0; }
 
-.head-section .query-tab .tab-nav li { position: relative; display: inline-block; height: 30px; padding: 0 15px; vertical-align: top; line-height: 30px; font-size: 14px; color: #333; border-radius: 30px; background-color: #fff; cursor: default; }
+.head-section .query-tab .tab-nav li { position: relative; display: inline-block; height: 42px; padding: 0 30px; vertical-align: top; line-height: 42px; font-size: 16px; color: #333; border-radius: 42px; background-color: #fff; cursor: default; }
 
 .head-section .query-tab .tab-nav li:hover { color: #f78e24; }
 
 .head-section .query-tab .tab-nav li.current { color: #fff; background-color: #f78e24; }
 
-.head-section .query-tab .tab-nav li.current:after { content: ''; position: absolute; top: 100%; left: 50%; width: 0; height: 0; margin-left: -2px; overflow: hidden; border: 4px solid transparent; border-top-color: #f78e24; border-bottom: none; }
+.head-section .query-tab .tab-nav li.current:after { content: ''; position: absolute; top: 100%; left: 50%; width: 0; height: 0; margin-left: -2.5px; overflow: hidden; border: 5px solid transparent; border-top-color: #f78e24; border-bottom: none; }
 
-.head-section .query-tab .tab-nav li + li { margin-left: 40px; }
+.head-section .query-tab .tab-nav li + li { margin-left: 90px; }
 
-.head-section .query-tab .tab-content .content-item { width: 890px; margin: 34px auto 0; }
+.head-section .query-tab .tab-content .content-item { display: none; width: 890px; margin: 34px auto 0; }
 
 .head-section .query-tab .tab-content .content-item .input-box { position: relative; width: 100%; height: 50px; font-size: 14px; background-color: #fff; border-radius: 50px; overflow: hidden; }
 
@@ -39,6 +39,8 @@ body { background-color: #f7f7f7; }
 .head-section .query-tab .tab-content .content-item .input-box .query-btn:active { background-color: #00b8b2; }
 
 .head-section .query-tab .tab-content .content-item .hint-info { line-height: 30px; text-align: center; font-size: 12px; color: #f00; }
+
+.head-section .query-tab .tab-content .content-item.current { display: block; }
 
 /* main-container */
 .main-container { padding-top: 20px; padding-bottom: 80px; }

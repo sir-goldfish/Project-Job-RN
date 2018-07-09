@@ -59,6 +59,7 @@ $selfActiveColor: #03d6d0;
       .content-item {
         $selfWidth: 945px;
         $selfHeight: 70px;
+        display: none;
         width: $selfWidth;
         margin: 40px auto 0;
         .input-box {
@@ -107,6 +108,9 @@ $selfActiveColor: #03d6d0;
           text-align: center;
           font-size: 12px;
           color: #f00;
+        }
+        &.current {
+          display: block;
         }
       }
     }

@@ -93,12 +93,19 @@
                 <li>商标号查询</li>
             </ul>
             <div class="tab-content">
-                <div class="content-item">
+                <div class="current content-item">
                     <div class="input-box">
                         <input type="text" placeholder="请输入您想要查询的商标名称">
                         <a href="javascript:;" class="query-btn">查询该商标</a>
                     </div>
                     <div class="hint-info">*提示信息占位，如不需要，不填充内容即可</div>
+                </div>
+                <div class="content-item">
+                    <div class="input-box">
+                        <input type="text" placeholder="第二个">
+                        <a href="javascript:;" class="query-btn">查询该商标</a>
+                    </div>
+                    <div class="hint-info">*第二个提示信息占位</div>
                 </div>
             </div>
         </div>
@@ -631,7 +638,11 @@
 </footer>
 <!--script-->
 <script src="script/jquery.min.js"></script>
+<script src="script/switch-tab.js"></script>
 <script>
+    // query-tab
+    switchTab($('.query-tab'), 'click');
+    
     // 筛选相关功能示例
     $('.handle-group').find('.handle-btn').on('click', function () {
         if ($(this).hasClass('more-btn') == true) {
