@@ -10,3 +10,4 @@
 = bp web: 8009 | gulp bpWebGulp | job_src/rn/bpWebSrc---job_dist/rn/bpWeb
 = rn app: 8010 | gulp rnAppGulp | job_src/rn/rnAppSrc---job_dist/rn/rnApp
 = partner wx: 8011 | gulp partnerWxGulp | job_src/sme/partnerWxSrc---job_dist/sme/partnerWx
+= 51zj web: 8012 | gulp 51WebGulp | job_src/rn/51WebSrc---job_dist/rn/51Web

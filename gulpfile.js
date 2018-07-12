@@ -666,3 +666,57 @@ gulp.task('partnerWxLivereload', function () {
 });
 
 gulp.task('partnerWxGulp', ['partnerWxResource', 'partnerWxPlugin', 'partnerWxScript', 'partnerWxStyle', 'partnerWxHtml', 'partnerWxLivereload']);
+
+// ----- 51zj web gulp -----
+gulp.task('51WebResource', function () {
+    return gulp.src('./job_src/rn/51WebSrc/resource/**/*')
+        .pipe(watch('./job_src/rn/51WebSrc/resource/**/*'), {events: ['add', 'change', 'unlink', 'addDir', 'unlinkDir']})
+        .pipe(gulp.dest('./job_dist/rn/51Web/resource'))
+        .pipe(connect.reload());
+});
+
+gulp.task('51WebPlugin', function () {
+    return gulp.src('./job_src/rn/51WebSrc/plugin/**/*')
+        .pipe(watch('./job_src/rn/51WebSrc/plugin/**/*'), {events: ['add', 'change', 'unlink', 'addDir', 'unlinkDir']})
+        .pipe(gulp.dest('./job_dist/rn/51Web/plugin'))
+        .pipe(connect.reload());
+});
+
+gulp.task('51WebScript', function () {
+    return gulp.src('./job_src/rn/51WebSrc/script/*')
+        .pipe(watch('./job_src/rn/51WebSrc/script/*'))
+        .pipe(gulp.dest('./job_dist/rn/51Web/script'))
+        .pipe(connect.reload());
+});
+
+gulp.task('51WebStyle', function () {
+    return gulp.src('./job_src/rn/51WebSrc/style/*.scss')
+        .pipe(watch('./job_src/rn/51WebSrc/style/*.scss'))
+        .pipe(sass({
+            outputStyle: 'compact'
+        }))
+        .pipe(autoprefixer({
+            browsers: ['>0.1%'],
+            cascade: true
+        }))
+        .pipe(gulp.dest('./job_dist/rn/51Web/style'))
+        .pipe(connect.reload());
+});
+
+gulp.task('51WebHtml', function () {
+    return gulp.src('./job_src/rn/51WebSrc/*.html')
+        .pipe(watch('./job_src/rn/51WebSrc/*.html'))
+        .pipe(gulp.dest('./job_dist/rn/51Web'))
+        .pipe(connect.reload());
+});
+
+// connect版实时刷新
+gulp.task('51WebLivereload', function () {
+    connect.server({
+        root: 'job_dist/rn/51Web',
+        port: '8012',
+        livereload: true
+    });
+});
+
+gulp.task('51WebGulp', ['51WebResource', '51WebPlugin', '51WebScript', '51WebStyle', '51WebHtml', '51WebLivereload']);

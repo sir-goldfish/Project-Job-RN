@@ -22,7 +22,7 @@
 
 .head-section .head-content .ad-card { float: left; width: 303px; height: 130px; padding: 40px 24px 0; margin: 20px 0 0 20px; color: #333; background-color: #fff; background-repeat: no-repeat; background-position: right center; box-shadow: 0 3px 6px 0 rgba(153, 153, 153, 0.35); -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, transform .3s ease-out; transition: box-shadow .3s ease-out, transform .3s ease-out, -webkit-transform .3s ease-out; }
 
-.head-section .head-content .ad-card h3 { font-size: 14px; font-weight: normal; }
+.head-section .head-content .ad-card h3 { font-size: 14px; font-weight: bold; }
 
 .head-section .head-content .ad-card p { margin-top: 12px; line-height: 16px; font-size: 12px; }
 
@@ -41,21 +41,17 @@
 
 .recommend-section .service-cards { padding-bottom: 42px; margin: -20px 0 0 -20px; }
 
-.recommend-section .service-card { position: relative; float: left; width: 285px; height: 140px; margin: 20px 0 0 20px; text-align: center; font-size: 0; color: #fff; box-shadow: 0 3px 6px 0 rgba(153, 153, 153, 0.35); -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, transform .3s ease-out; transition: box-shadow .3s ease-out, transform .3s ease-out, -webkit-transform .3s ease-out; }
-
-.recommend-section .service-card .inner { display: inline-block; vertical-align: middle; }
-
-.recommend-section .service-card:after { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+.recommend-section .service-card { position: relative; float: left; width: 285px; height: 140px; padding: 35px 24px 0; margin: 20px 0 0 20px; font-size: 0; color: #333; border: 1px solid #ccc; }
 
 .recommend-section .service-card h3 { font-size: 16px; font-weight: normal; }
 
-.recommend-section .service-card p { margin-top: 8px; line-height: 16px; font-size: 12px; }
+.recommend-section .service-card p { margin-top: 16px; line-height: 20px; font-size: 12px; }
 
-.recommend-section .service-card .icon { display: inline-block; width: 30px; height: 30px; margin-top: 12px; background: url(../resource/img/sme_icon33.png) no-repeat center; background-size: 100% 100%; }
+.recommend-section .service-card.recommend:before { content: ''; position: absolute; top: -1px; left: -1px; width: 50px; height: 50px; background: url(../resource/img/sme_icon31.png) no-repeat center; }
 
-.recommend-section .service-card.recommend:before { content: ''; position: absolute; top: 0; left: 0; width: 50px; height: 50px; background: url(../resource/img/sme_icon31.png) no-repeat center; }
+.recommend-section .service-card:hover { border-color: #f78e24; }
 
-.recommend-section .service-card:hover { box-shadow: 0 4px 15px 0 rgba(153, 153, 153, 0.6); -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); }
+.recommend-section .service-card:hover h3 { color: #f78e24; }
 
 /* section-head 共 */
 .section-head { box-sizing: border-box; padding: 30px 0; color: #333; }

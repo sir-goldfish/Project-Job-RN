@@ -81,7 +81,7 @@ $selfInitBoxShadow: 0 3px 6px 0 rgba(153, 153, 153, .35);
       transition: box-shadow .3s ease-out, transform .3s ease-out;
       h3 {
         font-size: 14px;
-        font-weight: normal;
+        font-weight: bold;
       }
       p {
         margin-top: 14px - 2px;
@@ -125,50 +125,36 @@ $selfInitBoxShadow: 0 3px 6px 0 rgba(153, 153, 153, .35);
     float: left;
     width: 285px;
     height: 140px;
+    padding: 35px 24px 0;
     margin: 20px 0 0 20px;
-    text-align: center;
     font-size: 0;
-    color: #fff;
-    box-shadow: $selfInitBoxShadow;
-    transition: box-shadow .3s ease-out, transform .3s ease-out;
-    .inner {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    &:after {
-      @include globalVerticalMiddleAssist;
-    }
+    color: #333;
+    border: 1px solid #ccc;
     h3 {
       font-size: 16px;
       font-weight: normal;
     }
     p {
-      margin-top: 10px - 2px;
-      line-height: 16px;
+      margin-top: 20px - 4px;
+      line-height: 20px;
       font-size: 12px;
-    }
-    .icon {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin-top: 14px - 2px;
-      background: url(../resource/img/sme_icon33.png) no-repeat center;
-      background-size: 100% 100%;
     }
     &.recommend {
       &:before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -1px;
+        left: -1px;
         width: 50px;
         height: 50px;
         background: url(../resource/img/sme_icon31.png) no-repeat center;
       }
     }
     &:hover {
-      box-shadow: $selfBoxShadow;
-      transform: translateY(-6px);
+      border-color: $selfActiveColor;
+      h3 {
+        color: $selfActiveColor;
+      }
     }
   }
 }
