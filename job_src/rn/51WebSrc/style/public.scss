@@ -1,0 +1,727 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* ---rn公用样式--- */
+.rn-wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.rn-inner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* - rn-head - */
+/* header 主要 */
+.rn-head {
+  $selfActiveColor: $globeColorStressDeep;
+  .head-login-wrap {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    .nav {
+      font-size: 0;
+      & > * {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 10px;
+        vertical-align: top;
+        font-size: 12px;
+      }
+      .user {
+        & > * {
+          display: inline-block;
+        }
+        & > * + * {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .head-search-wrap {
+    background-color: #fff;
+    .logo-wrap {
+      padding: 24px 0;
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          display: block;
+        }
+      }
+    }
+    .capital-wrap {
+      padding: 20px 0;
+      margin-left: 86px;
+      .capital {
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          display: block;
+        }
+      }
+    }
+    .search-wrap {
+      $selfWidth: 418px;
+      $selfHeight: 36px;
+      padding-top: 22px;
+      .input-box {
+        position: relative;
+        width: $selfWidth;
+        height: $selfHeight;
+        font-size: 0;
+        border: 1px solid $selfActiveColor;
+        .inputwrap {
+          position: relative;
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+          font-size: 14px;
+        }
+        .inputwrap + .inputwrap {
+          &:before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            bottom: 7px;
+            left: 0;
+            border-left: 1px solid $selfActiveColor;
+          }
+        }
+        .input-item {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: ($selfHeight - 18px - 2px) / 2 12px;
+          line-height: 18px;
+          background-color: #fff;
+          border: none;
+        }
+        select.input-item {
+          padding-right: 0;
+        }
+        .inputwrap:last-of-type {
+          .input-item {
+            padding-right: 12px + 40px;
+          }
+        }
+        .query-btn {
+          position: absolute;
+          top: -1px;
+          right: -1px;
+          width: 40px;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          text-align: center;
+          font-size: 14px;
+          color: $selfActiveColor;
+          i {
+            font-size: 1.2em;
+            font-weight: bold;
+          }
+          &:hover {
+            color: #fff;
+            background-color: $selfActiveColor;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+      .hint-info {
+        height: 22px - 5px;
+        line-height: 22px - 5px;
+        text-align: center;
+        font-size: 12px;
+        color: #f00;
+      }
+      .hot-list {
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #999;
+        dt {
+          float: left;
+          width: 60px;
+          color: #666;
+        }
+        dd {
+          margin-left: 60px;
+          a {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+  .head-nav-wrap {
+    $selfHeight: 50px;
+    $selfLeftNavWidth: 230px;
+    background-color: $globeColorStress;
+    .rn-inner {
+      position: relative;
+      padding-left: $selfLeftNavWidth;
+    }
+    .nav-wrap {
+      margin-left: 20px;
+      .nav-list {
+        .stress {
+          color: $selfActiveColor;
+        }
+        & > * {
+          float: left;
+          height: $selfHeight;
+          line-height: $selfHeight;
+          font-size: 16px;
+          color: #333;
+          .nav-name {
+            display: block;
+            height: inherit;
+            line-height: inherit;
+          }
+        }
+        dd {
+          position: relative;
+          .nav-name {
+            padding: 0 30px;
+            color: #fff;
+            &:hover {
+              background-color: $selfActiveColor + 32%;
+            }
+          }
+          &.current {
+            .nav-name {
+              color: #fff;
+              background-color: $selfActiveColor;
+            }
+          }
+        }
+      }
+    }
+    .category-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: $selfLeftNavWidth;
+      .container-head {
+        height: $selfHeight;
+        padding: 0 20px;
+        line-height: $selfHeight;
+        font-size: 16px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        cursor: default;
+      }
+      .container-extension {
+        display: none;
+        height: 420px;
+        background-color: rgba(255, 255, 255, .9);
+        overflow: hidden;
+      }
+      .container-item {
+        width: 100%;
+        .init-content {
+          position: relative;
+          width: 100%;
+          max-height: 110px;
+          padding: 0 20px;
+          font-size: 0;
+          overflow: hidden;
+          .init-inner {
+            padding: 20px 0;
+          }
+          dl {
+            margin-left: -18px;
+          }
+          dt {
+            margin-left: 18px;
+            margin-bottom: 15px - 12px;
+            font-size: 14px;
+            color: #333;
+          }
+          dd {
+            display: inline-block;
+            margin: 12px 0 0 18px;
+            vertical-align: top;
+            font-size: 12px;
+            color: #666;
+          }
+        }
+        &:hover {
+          .init-content {
+            z-index: 1;
+            background-color: rgba(255, 255, 255, .4);
+            dt {
+              color: $selfActiveColor;
+              a {
+                transition: transform .3s ease-out;
+                &:hover {
+                  transform: translateX(6px);
+                }
+              }
+            }
+          }
+        }
+      }
+      .container-item + .container-item {
+        .init-content {
+          .init-inner {
+            border-top: 1px solid #ddd;
+          }
+        }
+      }
+      &:hover {
+        .container-extension {
+          display: block;
+        }
+      }
+      &.open {
+        .container-extension {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* - rn-foot - */
+/* footer 主要 */
+.rn-foot {
+  $selfActiveColor: $globeColorStressDeep;
+  background-color: #4b4b4b;
+  .foot-link-wrap {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    dt {
+      margin-bottom: 28px;
+      font-size: 16px;
+      color: #fff;
+    }
+    dd {
+      font-size: 12px;
+      color: #ddd;
+    }
+    .link-group {
+      width: 247px;
+      dd {
+        margin-top: 20px;
+      }
+    }
+    .qrcode {
+      figure {
+        width: 120px;
+        height: 120px;
+        background-color: #fff;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .contact {
+      dd {
+        margin-top: 16px;
+      }
+      .phone {
+        font-family: "Arial Black";
+        font-size: 30px;
+      }
+      .mail {
+        font-family: "Arial Black";
+        font-size: 18px;
+      }
+    }
+  }
+  .foot-friendly-wrap {
+    .rn-inner {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-top: 1px solid #666;
+    }
+    dt {
+      float: left;
+      font-size: 18px;
+      color: #fff;
+    }
+    dd {
+      margin-left: 72px;
+      font-size: 14px;
+      color: #ddd;
+      span {
+        display: inline-block;
+        margin: 4px 0 0 20px;
+      }
+    }
+  }
+  .foot-copy {
+    .rn-inner {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-top: 1px solid #666;
+    }
+    font-size: 12px;
+    color: #ccc;
+  }
+}
+
+/* ---方法类公用(.f-开头)--- */
+/* 清除浮动 */
+.f-clearfix {
+  zoom: 1;
+  &:after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+  }
+}
+
+/* 单行省略号 */
+.f-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 强制换行 */
+.f-word-break {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* 左浮 */
+.f-pull-left {
+  float: left;
+}
+
+/* 右浮 */
+.f-pull-right {
+  float: right;
+}
+
+/* 居中 */
+.f-text-center {
+  text-align: center;
+}
+
+/* 居左 */
+.f-text-left {
+  text-align: left;
+}
+
+/* 居右 */
+.f-text-right {
+  text-align: right;
+}
+
+/* ---模块类公用(.m-开头)--- */
+/* m-crumbs-nav */
+.m-crumbs-nav {
+  $selfActiveColor: $globeColorStressDeep;
+  background-color: #fff;
+  ul {
+    padding: 15px 10px;
+    font-size: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      span {
+        color: #999;
+      }
+    }
+    li + li:before {
+      content: '>';
+      display: inline-block;
+      margin: 0 6px;
+    }
+  }
+  dl {
+    padding: 15px 0;
+    font-size: 0;
+    & > * {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      span {
+        color: #999;
+      }
+    }
+    dd + dd:before {
+      content: '>';
+      display: inline-block;
+      margin: 0 6px;
+    }
+  }
+}
+
+/* m-default-pagination */
+.m-default-pagination {
+  $selfColor: $globeColorStressDeep;
+  $selfHeight: 30px;
+  padding: 10px 0;
+  line-height: $selfHeight;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  a, span, input[type="text"], input[type="button"] {
+    display: inline-block;
+    min-width: 30px;
+    height: $selfHeight;
+    margin: 0 5px;
+    vertical-align: top;
+  }
+  span {
+    padding: 0 8px;
+  }
+  .current {
+    color: #fff;
+    background-color: $selfColor;
+  }
+  a {
+    padding: 0 7px;
+    line-height: $selfHeight - 2px;
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    &:hover {
+      color: #fff;
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    &:active {
+      background-color: $selfColor - 30%;
+    }
+  }
+  input[type="text"], input[type="button"] {
+    padding: 0 7px;
+    line-height: $selfHeight - 2px;
+    text-align: inherit;
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  input[type="text"] {
+    width: 48px;
+  }
+  input[type="text"]:focus {
+    border-color: $selfColor;
+  }
+  input[type="button"] {
+    &:hover {
+      color: #fff;
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    &:active {
+      background-color: $selfColor - 30%;
+    }
+  }
+}
+
+/* m-group-pagination */
+.m-group-pagination {
+  $selfColor: $globeColorStressDeep;
+  $selfFontSize: 12px;
+  $selfBorder: 1px solid #ddd;
+  $selfBorderRadius: 5px;
+  padding: 10px 0;
+  line-height: 30px;
+  text-align: center;
+  font-size: $selfFontSize;
+  color: #666;
+  a, span, input[type="text"], input[type="button"] {
+    display: inline-block;
+    min-width: 30px;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 5px;
+    line-height: 30px - 2px;
+    text-align: center;
+    vertical-align: top;
+    font-size: $selfFontSize;
+    color: inherit;
+    background-color: #fff;
+    border: $selfBorder;
+    border-radius: $selfBorderRadius;
+  }
+  span {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .current {
+    color: #fff;
+    background-color: $selfColor;
+    border-color: $selfColor;
+  }
+  a {
+    &:hover {
+      color: #fff;
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    &:active {
+      background-color: $selfColor - 30%;
+    }
+  }
+  input[type="text"] {
+    width: 46px;
+  }
+  input[type="text"]:focus {
+    border-color: $selfColor;
+  }
+  input[type="button"] {
+    &:hover {
+      color: #fff;
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    &:active {
+      background-color: $selfColor - 30%;
+    }
+  }
+  .page-nav, .page-jump {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+  }
+  .page-nav {
+    font-size: 0;
+    * {
+      margin: 0 0 0 -1px;
+      font-size: $selfFontSize;
+      border-radius: 0;
+    }
+    span {
+      background-color: #fff;
+      border: $selfBorder;
+    }
+    .current {
+      color: #fff;
+      background-color: $selfColor;
+      border-color: $selfColor;
+    }
+    *:first-child {
+      border-top-left-radius: $selfBorderRadius;
+      border-bottom-left-radius: $selfBorderRadius;
+    }
+    *:last-child {
+      border-top-right-radius: $selfBorderRadius;
+      border-bottom-right-radius: $selfBorderRadius;
+    }
+  }
+}
+
+/* ---元件类公用(.u-开头)--- */
+/* u-loading-circle */
+.u-loading-circle {
+  min-width: 70px;
+  min-height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../resource/img/rn_loading_circle.gif) no-repeat center;
+}
+
+/* artdialog个性 */
+.aui_dialog {
+  $selfActiveColor: $globeColorStressDeep;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(8, 8, 8, .3);
+  .aui_titleBar {
+    position: relative;
+    background-color: $selfActiveColor;
+    .aui_title {
+      .dialog_confirm_head {
+        padding-left: 10px;
+        background-color: #f78e24;
+        height: 46px;
+        text-align: left;
+        line-height: 40px;
+        text-indent: 5px;
+        color: #FFF;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .dialog-head {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        text-align: center;
+        color: #fff;
+        background-color: $selfActiveColor;
+        h3 {
+          padding-top: 43px;
+          margin-bottom: 13px;
+          font-size: 24px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .aui_close {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 40px;
+      color: #fff;
+      outline: none;
+    }
+  }
+  .aui_main {
+    background-color: #f7f7f7;
+  }
+  .aui_loading {
+    width: 300px;
+    height: 70px;
+    font-size: 0;
+    background: #fff url("../resource/img/rn_loading.gif") no-repeat center;
+  }
+  .aui_icon {
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    div {
+      width: 48px;
+      height: 48px;
+      margin: 10px 0 10px 10px;
+    }
+  }
+  .aui_footer {
+    .aui_buttons {
+      padding: 10px 0 30px 0;
+      text-align: center;
+      background-color: #fff;
+      & > * {
+        display: inline-block;
+        min-width: 200px;
+        height: 40px;
+        padding: 0 30px;
+        margin: 0 10px;
+        line-height: 40px;
+        font-size: 14px;
+        background-color: #ddd;
+        border: none;
+        border-radius: 5px;
+        &:active {
+          background-color: #ddd - 25%;
+        }
+      }
+      .aui_state_highlight {
+        color: #fff;
+        background-color: $selfActiveColor;
+        &:active {
+          background-color: $selfActiveColor - 25%;
+        }
+      }
+    }
+  }
+}

@@ -195,7 +195,9 @@
 
 .sme-head-v1 .head-nav-wrap .nav-wrap .nav-list dd { position: relative; }
 
-.sme-head-v1 .head-nav-wrap .nav-wrap .nav-list dd .nav-name { padding: 0 30px; }
+.sme-head-v1 .head-nav-wrap .nav-wrap .nav-list dd .nav-name { position: relative; padding: 0 30px; }
+
+.sme-head-v1 .head-nav-wrap .nav-wrap .nav-list dd.hot .nav-name:after { content: ''; position: absolute; top: -6px; right: 0; width: 30px; height: 20px; background: url(../resource/img/sme_icon_hot.gif) no-repeat center; }
 
 .sme-head-v1 .head-nav-wrap .nav-wrap .nav-list dd.current .nav-name { color: #fff; background-color: #f78e24; }
 

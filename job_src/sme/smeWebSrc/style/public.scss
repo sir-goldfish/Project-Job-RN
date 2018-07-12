@@ -471,7 +471,21 @@
         dd {
           position: relative;
           .nav-name {
+            position: relative;
             padding: 0 30px;
+          }
+          &.hot {
+            .nav-name {
+              &:after {
+                content: '';
+                position: absolute;
+                top: -6px;
+                right: 0;
+                width: 30px;
+                height: 20px;
+                background: url(../resource/img/sme_icon_hot.gif) no-repeat center;
+              }
+            }
           }
           &.current {
             .nav-name {

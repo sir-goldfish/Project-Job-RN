@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import "publicVariable";
+
+/* ---全局样式重置--- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  &:before, &:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  line-height: 1.15;
+  font-family: "微软雅黑", sans-serif, "Times New Roman";
+  font-size: 14px;
+  color: #666;
+  background-color: #fff;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  &:hover, &:active {
+    color: $globeColorStressDeep;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+ul, ol, dl {
+  list-style: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  margin: .5em auto;
+  border-top-width: 1px;
+}
+
+em {
+  font-style: normal;
+}
+
+.iconfont {
+  font-size: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  .table-loading {
+    min-width: 120px;
+    height: 18px;
+    margin: 0 auto;
+    background: url(../resource/img/rn_loading.gif) no-repeat center;
+  }
+  th, td {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
+
+input, button, textarea, select {
+  font-size: inherit;
+  outline: none;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-size: 1em;
+  color: #999;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 1em;
+  color: #999;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 1em;
+  color: #999;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 1em;
+  color: #999;
+}
+
+textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-size: 1em;
+  color: #999;
+}
+
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 1em;
+  color: #999;
+}
+
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 1em;
+  color: #999;
+}
+
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 1em;
+  color: #999;
+}
