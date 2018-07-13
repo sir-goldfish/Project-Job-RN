@@ -151,7 +151,7 @@ $selfInitBoxShadow: 0 3px 6px 0 rgba(153, 153, 153, .35);
       }
     }
     &:hover {
-      border-color: $selfActiveColor;
+      border: 2px solid $selfActiveColor;
       h3 {
         color: $selfActiveColor;
       }
