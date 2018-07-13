@@ -320,18 +320,19 @@
   .head-search-wrap {
     background-color: #fff;
     .logo-wrap {
-      padding: 18px 0;
+      padding: 24px 0;
       .logo {
         display: inline-block;
         vertical-align: middle;
         img {
           display: block;
+          width: 180px;
         }
       }
     }
     .hot-line-wrap {
       padding: 24px 0;
-      margin-left: 44px;
+      margin-left: 80px;
       text-align: right;
       font-size: 14px;
       color: #333;
@@ -349,7 +350,7 @@
       }
     }
     .search-wrap {
-      $selfWidth: 496px;
+      $selfWidth: 600px;
       $selfHeight: 42px;
       padding-top: 24px;
       .input-box {
@@ -1395,7 +1396,7 @@
     .logo-nav {
       $selfColor: #333;
       float: left;
-      padding-top: 4px;
+      padding-top: 22px;
       margin-left: -35px;
       .nav-item {
         position: relative;
@@ -1405,6 +1406,7 @@
         margin-bottom: 8px;
         color: $selfColor;
         .item-name {
+          position: relative;
           font-size: 16px;
         }
         .hide-group {
@@ -1437,6 +1439,19 @@
               &.chosen {
                 color: $selfActiveColor;
               }
+            }
+          }
+        }
+        &.hot {
+          .item-name {
+            &:after {
+              content: '';
+              position: absolute;
+              top: -18px;
+              left: 100%;
+              width: 30px;
+              height: 20px;
+              background: url(../resource/img/sme_icon_hot.gif) no-repeat center;
             }
           }
         }

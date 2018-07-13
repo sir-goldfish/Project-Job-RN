@@ -1,0 +1,515 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeColorStressDeep;
+
+/* head-section */
+.head-section {
+  $selfContainerHeight: 420px;
+  position: relative;
+  height: $selfContainerHeight;
+  // head-banner
+  .head-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: $selfContainerHeight;
+    overflow: hidden;
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .head-swiper-pagination {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      z-index: 1;
+      text-align: center;
+      font-size: 0;
+      .swiper-pagination-bullet {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 6px;
+        background-color: #c1c1c1;
+        opacity: 1;
+        border-radius: 50%;
+      }
+      .swiper-pagination-bullet:hover {
+        background-color: $selfActiveColor;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $selfActiveColor;
+      }
+    }
+  }
+  // head-content
+  .head-content {
+    position: relative;
+    z-index: 2;
+    .table-wrap {
+      height: $selfContainerHeight;
+    }
+    .entry-panel {
+      $selfBorderRadius: 10px;
+      width: 260px;
+      min-height: 340px;
+      color: #f1f1f1;
+      background-color: rgba(51, 51, 51, .5);
+      border-radius: $selfBorderRadius;
+      overflow: hidden;
+      &.login-tab-panel {
+        .tab-nav {
+          text-align: center;
+          font-size: 0;
+          .nav-item {
+            display: inline-block;
+            width: 50%;
+            height: 50px;
+            vertical-align: top;
+            line-height: 50px;
+            font-size: 14px;
+            color: #fff;
+            cursor: default;
+            &.current {
+              background-color: #534f54;
+            }
+          }
+        }
+        .content-item {
+          display: none;
+          padding: 22px 20px;
+          .input-box {
+            font-size: 0;
+            & > * {
+              font-size: 12px;
+            }
+          }
+          .input-item {
+            display: inline-block;
+            width: 100%;
+            height: 36px;
+            padding: 0 10px;
+            vertical-align: middle;
+            font-size: 12px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 5px;
+          }
+          .label-item {
+            input[type='checkbox'] {
+              width: 12px;
+              height: 12px;
+            }
+            span {
+              margin-left: 4px;
+            }
+          }
+          .form-control-btn {
+            $selfColor: #d1aa6e;
+            display: inline-block;
+            width: 100px;
+            height: 36px;
+            vertical-align: middle;
+            line-height: 36px;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            background-color: $selfColor;
+            border-radius: 5px;
+            overflow: hidden;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+            &:hover {
+              background-color: $selfColor - 15%;
+            }
+            &:active {
+              background-color: $selfColor - 30%;
+            }
+          }
+          .hint-info {
+            min-height: 20px;
+            padding: 5px 0;
+            line-height: 14px;
+            font-size: 12px;
+            color: #f00;
+          }
+          .handle-btn {
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+            vertical-align: middle;
+            line-height: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            background-color: $selfActiveColor;
+            border-radius: 5px;
+            &:hover {
+              background-color: $selfActiveColor - 15%;
+            }
+            &:active {
+              background-color: $selfActiveColor - 30%;
+            }
+          }
+          &.current {
+            display: block;
+          }
+        }
+      }
+      &.user-panel {
+        padding: 30px 20px 25px;
+        .user {
+          text-align: center;
+          font-size: 0;
+          & > * {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            color: #fff;
+          }
+          figure {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .info {
+            margin-left: 20px - 5px;
+            text-align: justify;
+            h3 {
+              max-width: 118px;
+              padding-left: 5px;
+              font-size: 16px;
+              font-weight: normal;
+              a {
+                max-width: 100%;
+              }
+            }
+            p {
+              margin-top: 20px;
+            }
+          }
+        }
+        .grid-group {
+          margin-top: 18px;
+          font-size: 0;
+          color: #f1f1f1;
+          .grid {
+            display: inline-block;
+            width: 50%;
+            padding: 10px 5px;
+            vertical-align: top;
+            text-align: center;
+            font-size: 12px;
+            h3 {
+              font-size: 18px;
+              color: $selfActiveColor;
+            }
+            p {
+              margin-top: 12px;
+            }
+          }
+        }
+        .panel-foot {
+          margin-top: 22px;
+          .handle-btn {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background-color: $selfActiveColor;
+            border-radius: 5px;
+            &:hover {
+              background-color: $selfActiveColor - 15%;
+            }
+            &:active {
+              background-color: $selfActiveColor - 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* head-desc-section */
+.head-desc-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  ul {
+    text-align: center;
+    font-size: 0;
+  }
+  li {
+    display: inline-block;
+    width: 16%;
+    height: 72px;
+    padding-top: 10px;
+    vertical-align: top;
+    font-size: 14px;
+    color: #999;
+    h3 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #d89435;
+      .stress {
+        padding: 0 2px;
+        font-family: "Arial Black";
+        font-size: 30px;
+        em {
+          font-size: 14px;
+        }
+      }
+    }
+    p {
+      margin-top: 14px;
+    }
+  }
+  li + li {
+    border-left: 1px solid #eee;
+  }
+}
+
+/* section-head 共 */
+.section-head {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  .head-desc {
+    padding: 4px 0;
+    font-size: 0;
+    & > * {
+      display: inline-block;
+      vertical-align: baseline;
+      font-size: 12px;
+      color: #333;
+    }
+    .title {
+      font-size: 24px;
+      .en {
+        margin-left: 10px;
+        font-size: .6em;
+        text-transform: uppercase;
+        color: #999;
+      }
+    }
+    .para {
+      margin-left: 15px;
+    }
+  }
+  .handle-group {
+    .handle-btn {
+      $selfHeight: 36px;
+      $selfBgColor: #f1f1f1;
+      display: inline-block;
+      height: $selfHeight;
+      padding: 0 24px;
+      vertical-align: middle;
+      line-height: $selfHeight - 2px;
+      text-align: center;
+      font-size: 12px;
+      color: #4c4c4c;
+      background-color: $selfBgColor;
+      border: 1px solid #ddd;
+      border-radius: $selfHeight;
+      &:hover {
+        background-color: $selfBgColor - 15%;
+      }
+      &:active {
+        background-color: $selfBgColor - 30%;
+      }
+    }
+    .handle-btn + .handle-btn {
+      margin-left: 10px;
+    }
+  }
+}
+
+/* fund-section */
+.fund-section {
+  $selfAdWidth: 386px;
+  background-color: #f1f1f1;
+  .ad-panel {
+    float: right;
+    width: $selfAdWidth;
+    height: 420px;
+    margin-left: - $selfAdWidth;
+    background-color: #fff;
+    overflow: hidden;
+    .pic-ads {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .pic {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease-out;
+          }
+          &:hover {
+            img {
+              transform: scale(1.06);
+            }
+          }
+        }
+        h3 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 12px 20px;
+          font-size: 14px;
+          font-weight: normal;
+          color: #fff;
+          background-color: rgba(0, 0, 0, .5);
+          a {
+            max-width: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+      .picad-swiper-pagination {
+        position: absolute;
+        bottom: 40px + 10px;
+        left: 0;
+        z-index: 1;
+        text-align: center;
+        font-size: 0;
+        .swiper-pagination-bullet {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          margin: 0 6px;
+          background-color: #c1c1c1;
+          opacity: 1;
+          border-radius: 50%;
+        }
+        .swiper-pagination-bullet:hover {
+          background-color: $selfActiveColor;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: $selfActiveColor;
+        }
+      }
+    }
+    .text-ads {
+li{
+  a{
+
+  }
+}
+    }
+  }
+  .service-cards {
+    float: left;
+    margin: -20px $selfAdWidth 0 -20px;
+    .service-card, .more-card {
+      float: left;
+      width: 386px;
+      height: 200px;
+      margin: 20px 0 0 20px;
+      background-color: #fff;
+      background-position: right bottom;
+    }
+    .service-card {
+      padding: 48px 30px 0;
+      h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+      p {
+        margin-top: 18px - 3px;
+        line-height: 20px;
+      }
+      .card-foot {
+        margin-top: 20px;
+        .foot-btn {
+          $selfHeight: 36px;
+          display: inline-block;
+          height: $selfHeight;
+          padding: 0 24px;
+          vertical-align: middle;
+          line-height: $selfHeight - 2px;
+          font-size: 12px;
+          background-color: #fff;
+          border: 1px solid #e7e6e6;
+          border-radius: $selfHeight;
+          &:hover {
+            color: #fff;
+            background-color: $selfActiveColor;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+      &:hover {
+        h3 {
+          color: $selfActiveColor;
+        }
+      }
+    }
+    .more-card {
+      text-align: center;
+      font-size: 0;
+      &:before {
+        @include globalVerticalMiddleAssist;
+      }
+      .inner {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        h3 {
+          font-size: 16px;
+          font-weight: bold;
+          color: #333;
+        }
+        .handle-btn {
+          $selfHeight: 54px;
+          display: inline-block;
+          width: 150px;
+          height: $selfHeight;
+          margin-top: 27px;
+          vertical-align: middle;
+          line-height: $selfHeight - 2px;
+          background-color: #fff;
+          border: 1px solid #e7e6e6;
+          border-radius: $selfHeight;
+          &:hover {
+            color: #fff;
+            background-color: $selfActiveColor;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+    }
+  }
+}

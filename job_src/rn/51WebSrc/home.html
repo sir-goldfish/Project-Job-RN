@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="plugin/swiper-3.4.2/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/home.css">
     <!--ie9以下兼容h5新标签-->
     <!--[if lt IE 9]>
     <script src="script/html5.min.js"></script>
@@ -153,7 +154,229 @@
         </div>
     </div>
 </header>
-<img src="resource/img/rn_home_pic002.jpg">
+<!--head-section-->
+<section class="head-section rn-wrapper">
+    <!--head-banner-->
+    <div class="head-banner">
+        <div class="swiper-wrapper">
+            <a href="javascript:;" class="swiper-slide"
+               style="background-image:url(resource/img/rn_home_pic002.jpg);"></a>
+            <a href="javascript:;" class="swiper-slide"
+               style="background-image:url(resource/img/rn_home_pic003.jpg);"></a>
+        </div>
+        <div class="head-swiper-pagination"></div>
+    </div>
+    <!--head-content-->
+    <div class="head-content rn-inner">
+        <div class="f-pull-right">
+            <table class="table-wrap">
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="login-tab-panel entry-panel">
+                            <ul class="tab-nav">
+                                <li class="current nav-item">请登录</li>
+                                <li class="nav-item">免费注册</li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="current login-panel content-item">
+                                    <div class="form-item">
+                                        <div class="input-box">
+                                            <input type="text" class="input-item" placeholder="请输入手机号码">
+                                        </div>
+                                        <div class="hint-info">*提示信息占位</div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="input-box">
+                                            <input type="text" class="input-item" placeholder="请输入密码">
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="input-box f-clearfix">
+                                            <div class="label-item f-pull-left"><input
+                                                    type="checkbox"><span>两周内自动登录</span></div>
+                                            <a href="javascript:;" class="form-control-text f-pull-right">忘记密码？</a>
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                    <div class="form-item">
+                                        <a href="javascript:;" class="handle-btn">登录</a>
+                                    </div>
+                                </div>
+                                <div class="register-panel content-item">
+                                    <div class="form-item">
+                                        <div class="input-box">
+                                            <input type="text" class="input-item" placeholder="请输入手机号码">
+                                        </div>
+                                        <div class="hint-info">*提示信息占位</div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="input-box f-clearfix">
+                                            <input type="text" class="input-item f-pull-left" placeholder="请输入计算结果"
+                                                   style="width:110px;">
+                                            <a href="javascript:;" class="form-control-btn f-pull-right"><img
+                                                    src="resource/img/rn_home_pic001.png"></a>
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="input-box f-clearfix">
+                                            <input type="text" class="input-item f-pull-left" placeholder="请输入验证码"
+                                                   style="width:110px;">
+                                            <a href="javascript:;" class="form-control-btn f-pull-right">获取验证码</a>
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="input-box">
+                                            <div class="label-item"><input type="checkbox" checked><span>我已阅读并同意<a
+                                                    href="javascript:;">《融诺服务协议》</a></span></div>
+                                        </div>
+                                        <div class="hint-info"></div>
+                                    </div>
+                                    <div class="form-item">
+                                        <a href="javascript:;" class="handle-btn">立即注册</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--****
+                            * 提示：
+                            * 登录后结构。实际使用，去掉 style="display:none;"。
+                            ****-->
+                        <div class="user-panel entry-panel" style="display:none;">
+                            <div class="user">
+                                <figure><img src="resource/img/rn_avatar.png" alt="头像"></figure>
+                                <div class="info">
+                                    <h3><a href="javascript:;" class="f-ellipsis">用户名</a></h3>
+                                    <p><a href="javascript:;">【退出】</a></p>
+                                </div>
+                            </div>
+                            <ul class="grid-group">
+                                <li class="grid">
+                                    <h3>0</h3>
+                                    <p><a href="javascript:;">消息提醒</a></p>
+                                </li>
+                                <li class="grid">
+                                    <h3>0</h3>
+                                    <p><a href="javascript:;">已发信息</a></p>
+                                </li>
+                                <li class="grid">
+                                    <h3>0</h3>
+                                    <p><a href="javascript:;">收到约谈</a></p>
+                                </li>
+                                <li class="grid">
+                                    <h3>0</h3>
+                                    <p><a href="javascript:;">收到留言</a></p>
+                                </li>
+                            </ul>
+                            <div class="panel-foot">
+                                <a href="javascript:;" class="handle-btn">会员中心</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!--head-desc-section-->
+<section class="head-desc-section rn-wrapper">
+    <div class="rn-inner">
+        <ul>
+            <li>
+                <h3><span class="stress">23</span>年</h3>
+                <p>项目对接</p>
+            </li>
+            <li>
+                <h3><span class="stress">34</span>万+</h3>
+                <p>资金方</p>
+            </li>
+            <li>
+                <h3><span class="stress">260</span>万+</h3>
+                <p>项目方</p>
+            </li>
+            <li>
+                <h3><span class="stress">2<em>,</em>170</span>亿</h3>
+                <p>融资金额</p>
+            </li>
+            <li>
+                <h3><span class="stress">70<em>,</em>000</span>亿+</h3>
+                <p>总持有资金</p>
+            </li>
+            <li>
+                <h3>超<span class="stress">500</span>场</h3>
+                <p>举办活动</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--fund-section-->
+<section class="fund-section rn-wrapper">
+    <div class="rn-inner">
+        <div class="section-head f-clearfix">
+            <div class="head-desc f-pull-left">
+                <span class="title"><span class="cn">找资金</span><span class="en">/ Look for funds</span></span>
+            </div>
+        </div>
+        <div class="section-body f-clearfix">
+            <div class="ad-panel">
+                <div class="pic-ads">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic007.jpg"></a>
+                            <h3><a href="javascript:;" class="f-ellipsis">标题标题</a></h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic007.jpg"></a>
+                            <h3><a href="javascript:;" class="f-ellipsis">标题标题</a></h3>
+                        </div>
+                    </div>
+                    <div class="picad-swiper-pagination"></div>
+                </div>
+                <ul class="text-ads">
+                    <li><a href="javascript:;" class="f-ellipsis">标题标题标题标题标题标题</a></li>
+                    <li><a href="javascript:;" class="f-ellipsis">标题标题标题标题标题标题</a></li>
+                    <li><a href="javascript:;" class="f-ellipsis">标题标题标题标题标题标题</a></li>
+                    <li><a href="javascript:;" class="f-ellipsis">标题标题标题标题标题标题</a></li>
+                    <li><a href="javascript:;" class="f-ellipsis">标题标题标题标题标题标题</a></li>
+                    <li><a href="javascript:;" class="f-ellipsis">标题标题标题标题标题标题</a></li>
+                </ul>
+            </div>
+            <ul class="service-cards f-clearfix">
+                <li class="service-card" style="background-image:url(resource/img/rn_home_pic004_1.jpg);">
+                    <h3>股权投资</h3>
+                    <p>一段描述</p>
+                    <div class="card-foot">
+                        <a href="javascript:;" class="foot-btn">查看更多</a>
+                    </div>
+                </li>
+                <li class="service-card" style="background-image:url(resource/img/rn_home_pic004_2.jpg);">
+                    <h3>债权投资</h3>
+                    <p>一段描述</p>
+                    <div class="card-foot">
+                        <a href="javascript:;" class="foot-btn">查看更多</a>
+                    </div>
+                </li>
+                <li class="service-card" style="background-image:url(resource/img/rn_home_pic004_3.jpg);">
+                    <h3>BT/BOT</h3>
+                    <p>一段描述</p>
+                    <div class="card-foot">
+                        <a href="javascript:;" class="foot-btn">查看更多</a>
+                    </div>
+                </li>
+                <li class="more-card">
+                    <div class="inner">
+                        <h3>想要寻找更多合适资金</h3>
+                        <a href="javascript:;" class="handle-btn">发布资金</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 <!--共用底部-->
 <footer class="rn-foot">
     <div class="foot-link-wrap rn-wrapper">
@@ -212,8 +435,44 @@
 <!--script-->
 <script src="script/jquery.min.js"></script>
 <script src="plugin/swiper-3.4.2/swiper-3.4.2.jquery.min.js"></script>
+<script src="script/switch-tab.js"></script>
 <script>
+    // head-banner
+    var bannerSwiper = new Swiper('.head-banner', {
+        initialSlide: 0,
+        loop: true,
+        speed: 1800,
+        autoplay: 3800,
+        autoplayDisableOnInteraction: false,
+        centeredSlides: true,
+        pagination: '.head-swiper-pagination',
+        paginationClickable: true
+    });
+    $('.head-banner .swiper-slide').hover(function () {
+        bannerSwiper.stopAutoplay();
+    }, function () {
+        bannerSwiper.startAutoplay();
+    });
 
+    // login-tab
+    switchTab($('.login-tab-panel'), 'click');
+
+    // pic-ads
+    var picAdSwiper = new Swiper('.pic-ads', {
+        initialSlide: 0,
+        loop: true,
+        speed: 1200,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        centeredSlides: true,
+        pagination: '.picad-swiper-pagination',
+        paginationClickable: true
+    });
+    $('.pic-ads .swiper-slide').hover(function () {
+        picAdSwiper.stopAutoplay();
+    }, function () {
+        picAdSwiper.startAutoplay();
+    });
 </script>
 </body>
 </html>

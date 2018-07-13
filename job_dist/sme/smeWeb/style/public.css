@@ -137,13 +137,13 @@
 
 .sme-head-v1 .head-search-wrap { background-color: #fff; }
 
-.sme-head-v1 .head-search-wrap .logo-wrap { padding: 18px 0; }
+.sme-head-v1 .head-search-wrap .logo-wrap { padding: 24px 0; }
 
 .sme-head-v1 .head-search-wrap .logo-wrap .logo { display: inline-block; vertical-align: middle; }
 
-.sme-head-v1 .head-search-wrap .logo-wrap .logo img { display: block; }
+.sme-head-v1 .head-search-wrap .logo-wrap .logo img { display: block; width: 180px; }
 
-.sme-head-v1 .head-search-wrap .hot-line-wrap { padding: 24px 0; margin-left: 44px; text-align: right; font-size: 14px; color: #333; }
+.sme-head-v1 .head-search-wrap .hot-line-wrap { padding: 24px 0; margin-left: 80px; text-align: right; font-size: 14px; color: #333; }
 
 .sme-head-v1 .head-search-wrap .hot-line-wrap .num { margin-top: 5px; font-family: Arial; font-size: 1.7em; font-weight: bold; color: #f78e24; }
 
@@ -151,7 +151,7 @@
 
 .sme-head-v1 .head-search-wrap .search-wrap { padding-top: 24px; }
 
-.sme-head-v1 .head-search-wrap .search-wrap .input-box { position: relative; width: 496px; height: 42px; font-size: 0; border: 1px solid #ddd; }
+.sme-head-v1 .head-search-wrap .search-wrap .input-box { position: relative; width: 600px; height: 42px; font-size: 0; border: 1px solid #ddd; }
 
 .sme-head-v1 .head-search-wrap .search-wrap .input-box .inputwrap { position: relative; display: inline-block; height: 100%; vertical-align: middle; font-size: 14px; }
 
@@ -594,11 +594,11 @@
 
 .sme-head7 .head-logo .logo-link img { vertical-align: middle; }
 
-.sme-head7 .head-logo .logo-nav { float: left; padding-top: 4px; margin-left: -35px; }
+.sme-head7 .head-logo .logo-nav { float: left; padding-top: 22px; margin-left: -35px; }
 
 .sme-head7 .head-logo .logo-nav .nav-item { position: relative; float: left; margin-left: 35px; margin-top: 8px; margin-bottom: 8px; color: #333; }
 
-.sme-head7 .head-logo .logo-nav .nav-item .item-name { font-size: 16px; }
+.sme-head7 .head-logo .logo-nav .nav-item .item-name { position: relative; font-size: 16px; }
 
 .sme-head7 .head-logo .logo-nav .nav-item .hide-group { position: absolute; top: 100%; left: 50%; z-index: 5; display: none; padding-top: 18px; }
 
@@ -609,6 +609,8 @@
 .sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list .group-item { padding-bottom: 20px; }
 
 .sme-head7 .head-logo .logo-nav .nav-item .hide-group .group-list .group-item.chosen { color: #e00000; }
+
+.sme-head7 .head-logo .logo-nav .nav-item.hot .item-name:after { content: ''; position: absolute; top: -18px; left: 100%; width: 30px; height: 20px; background: url(../resource/img/sme_icon_hot.gif) no-repeat center; }
 
 .sme-head7 .head-logo .logo-nav .nav-item.current .item-name { font-weight: bold; color: #e00000; }
 
