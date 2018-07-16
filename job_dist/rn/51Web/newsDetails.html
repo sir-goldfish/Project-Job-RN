@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资讯详情页-51资金项目</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/newsDetails.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="rn-head">
+    <div class="head-login-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <div class="f-pull-left">
+                <ul class="nav" style="margin-left:-10px;">
+                    <li>欢迎来到51资金项目网！</li>
+                </ul>
+            </div>
+            <div class="f-pull-right">
+                <ul class="nav" style="margin-right:-10px;">
+                    <!--登录前 user-->
+                    <li class="user"><a href="javascript:;">登录</a><a href="javascript:;">免费注册</a></li>
+                    <!--登录后 user-->
+                    <!--<li class="user">你好，<a href="javascript:;">会员名</a><a href="javascript:;">退出</a></li>-->
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-search-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <div class="logo-wrap f-pull-left">
+                <a href="javascript:;" class="logo"><img src="resource/img/rn_logo.png"></a>
+            </div>
+            <div class="capital-wrap f-pull-right">
+                <a href="javascript:;" class="capital"><img src="resource/img/rn_home_pic001.png"></a>
+            </div>
+            <div class="search-wrap f-pull-right">
+                <div class="input-box">
+                    <div class="inputwrap" style="width:24%;">
+                        <select class="input-item">
+                            <option value="选项">选项</option>
+                            <option value="选项">选项</option>
+                            <option value="选项">选项</option>
+                        </select>
+                    </div>
+                    <div class="inputwrap" style="width:76%;">
+                        <input type="text" class="input-item" placeholder="请输入关键词">
+                    </div>
+                    <a href="javascript:;" class="query-btn"><i class="iconfont">&#xe6fa;</i></a>
+                </div>
+                <dl class="hot-list">
+                    <dt>热门搜索：</dt>
+                    <dd>
+                        <a href="javascript:;">热门关键词</a>
+                        <a href="javascript:;">热门关键词</a>
+                        <a href="javascript:;">热门关键词</a>
+                    </dd>
+                </dl>
+                <div class="hint-info"></div>
+            </div>
+        </div>
+    </div>
+    <div class="head-nav-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <!--****
+                * 重要提示：
+                * 1/ 在首页时，分类默认展开，category-container需加类名open
+                * 2/ 在其他页面时，分类默认闭合，需hover触发，此时category-container需去除类名open
+                ****-->
+            <div class="category-container">
+                <div class="container-head">投融信息分类</div>
+                <div class="container-extension">
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 实力资金</a></dt>
+                                    <dd><a href="javascript:;">股权投资</a></dd>
+                                    <dd><a href="javascript:;">债权投资</a></dd>
+                                    <dd><a href="javascript:;">BT/BOT</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 优质项目</a></dt>
+                                    <dd><a href="javascript:;">股权融资</a></dd>
+                                    <dd><a href="javascript:;">债权融资</a></dd>
+                                    <dd><a href="javascript:;">交易资产</a></dd>
+                                    <dd><a href="javascript:;">股权转让</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 真实人脉</a></dt>
+                                    <dd><a href="javascript:;">项目人脉</a></dd>
+                                    <dd><a href="javascript:;">资金人脉</a></dd>
+                                    <dd><a href="javascript:;">企业</a></dd>
+                                    <dd><a href="javascript:;">政府</a></dd>
+                                    <dd><a href="javascript:;">个人</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 会员服务</a></dt>
+                                    <dd><a href="javascript:;">融易通</a></dd>
+                                    <dd><a href="javascript:;">投易通</a></dd>
+                                    <dd><a href="javascript:;">信息投递</a></dd>
+                                    <dd><a href="javascript:;">委托刷新</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-wrap">
+                <dl class="nav-list f-clearfix">
+                    <dd class="current"><a href="javascript:;" class="nav-name">首页</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">实力资金</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">优质项目</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">聚人脉</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">资讯</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">成功案例</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">会员服务</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</header>
+<!--m-crumbs-nav-->
+<nav class="m-crumbs-nav rn-inner">
+    <dl>
+        <dt>当前位置：</dt>
+        <dd><a href="javascript:;">首页</a></dd>
+        <dd><a href="javascript:;">资讯</a></dd>
+        <dd><span>这是一段资讯标题</span></dd>
+    </dl>
+</nav>
+<div class="container-wrap rn-inner f-clearfix">
+    <!--main-wrap-->
+    <main class="main-container">
+        <!--article-panel-->
+        <section class="article-panel">
+            <div class="panel-head">
+                <h3>这是一个标题这是一个标题这是一个标题</h3>
+                <div class="info"><span><i class="iconfont">&#xe67c;</i>2018-08-08</span><span><i class="iconfont">&#xe612;</i>阅读（311）</span>
+                </div>
+            </div>
+            <article>
+                导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业
+                <img src="resource/img/rn_home_pic008.jpg">
+                导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业
+                <img src="resource/img/rn_home_pic002.jpg">
+                导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业导读：在年初的股市暴涨后，目前中国股市走进低估，这就意味着将有更多资本流入市场，投资公司有钱，想投新项目，好项目。而互联网创业
+            </article>
+        </section>
+        <!--recommend-panel-->
+        <section class="recommend-panel">
+            <div class="common-panel-head"><span class="title">相关资讯推荐</span></div>
+            <div class="panel-body">
+                <ul class="news-list">
+                    <li class="f-clearfix">
+                        <span class="after">2018-08-09</span>
+                        <span class="before">资讯类别</span>
+                        <p><a href="javascript:;" class="f-ellipsis">这是一条相关资讯推荐</a></p>
+                    </li>
+                    <li class="f-clearfix">
+                        <span class="after">2018-08-09</span>
+                        <span class="before">资讯类别</span>
+                        <p><a href="javascript:;" class="f-ellipsis">这是一条相关资讯推荐这是一条相关资讯推荐</a></p>
+                    </li>
+                    <li class="f-clearfix">
+                        <span class="after">2018-08-09</span>
+                        <span class="before">资讯类别</span>
+                        <p><a href="javascript:;" class="f-ellipsis">这是一条相关资讯推荐</a></p>
+                    </li>
+                    <li class="f-clearfix">
+                        <span class="after">2018-08-09</span>
+                        <span class="before">资讯类别</span>
+                        <p><a href="javascript:;" class="f-ellipsis">这是一条相关资讯推荐这是一条相关资讯推荐</a></p>
+                    </li>
+                    <li class="f-clearfix">
+                        <span class="after">2018-08-09</span>
+                        <span class="before">资讯类别</span>
+                        <p><a href="javascript:;" class="f-ellipsis">这是一条相关资讯推荐</a></p>
+                    </li>
+                    <li class="f-clearfix">
+                        <span class="after">2018-08-09</span>
+                        <span class="before">资讯类别</span>
+                        <p><a href="javascript:;" class="f-ellipsis">这是一条相关资讯推荐这是一条相关资讯推荐</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--comment-panel-->
+        <section class="comment-panel">
+            <div class="common-panel-head"><span class="title">用户评论</span></div>
+            <div class="panel-body">
+                <div class="comment-publish">
+                    <div class="input-box">
+                        <textarea rows="5" placeholder="提示：严禁发布含有联系方式和广告性质的内容，违者一律删除"></textarea>
+                    </div>
+                    <div class="hint-info">*提示信息占位</div>
+                    <div class="handle-group">
+                        <a href="javascript:;" class="handle-btn">发布留言</a>
+                    </div>
+                </div>
+                <div class="comment-exhibition">
+                    <!--无评论 结构-->
+                    <div class="empty-content"><i class="iconfont">&#xe611;</i>暂时还没有用户评论</div>
+                    <!--comment-bars-->
+                    <ul class="comment-bars">
+                        <li class="comment-bar f-clearfix">
+                            <figure><img src="resource/img/rn_avatar.png"></figure>
+                            <div class="desc">
+                                <div class="info">
+                                    <div class="time">2018-08-08 22:22:22</div>
+                                    <div class="user f-ellipsis"><span><a
+                                            href="javascript:;">张先生</a></span><em>xx公司总监</em></div>
+                                </div>
+                                <div class="para">上海某4A景区现在由当地政府及某港股上市公司共同持有，现我司想要接手此项目，需求资金合作。</div>
+                                <div class="reply-para">回复：具体是什么项目啊！</div>
+                            </div>
+                        </li>
+                        <li class="comment-bar f-clearfix">
+                            <figure><img src="resource/img/rn_avatar.png"></figure>
+                            <div class="desc">
+                                <div class="info">
+                                    <div class="time">2018-08-08 22:22:22</div>
+                                    <div class="user f-ellipsis"><span><a
+                                            href="javascript:;">张先生</a></span><em>xx公司总监</em></div>
+                                </div>
+                                <div class="para">上海某4A景区现在由当地政府及某港股上市公司共同持有，现我司想要接手此项目，需求资金合作。现我司想要接手此项目，需求资金合作。</div>
+                                <div class="reply-para">回复：具体是什么项目啊！</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination-wrap">
+                        <div class="m-default-pagination">100 条记录 2/3 页<a href='javascript:;'>上一页</a><a
+                                href="javascript:;">1</a><span
+                                class='current'>2</span><a href='javascript:;'>3</a><a href="javascript:;">下一页</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--aside-wrap-->
+    <aside class="aside-container">
+        <!--hot-news-->
+        <aside class="hot-news">
+            <div class="aside-head">热门资讯</div>
+            <dl>
+                <dd>
+                    <div class="title">
+                        <span>国外经济</span>
+                        <h3><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></h3>
+                    </div>
+                    <p>公司介绍 山东某自控设备有限公司主要从事电气、仪表、DCS等自动化控制系统的设计制造、系统集成、安装调试等全方位服务。主营业务公</p>
+                </dd>
+                <dd>
+                    <div class="title">
+                        <span>行业热点</span>
+                        <h3><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></h3>
+                    </div>
+                    <p>公司介绍 山东某自控设备有限公司主要从事电气、仪表、DCS等自动化控制系统的设计制造、系统集成、安装调试等全方位服务。主营业务公</p>
+                </dd>
+                <dt>
+                    <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic008.jpg"></a>
+                </dt>
+            </dl>
+        </aside>
+        <!--news-panel-->
+        <aside class="news-panel">
+            <div class="panel-head"><span class="title">主编推荐</span></div>
+            <dl>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻这是一条爆炸性新闻这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dt>
+                    <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic008.jpg"></a>
+                </dt>
+            </dl>
+        </aside>
+        <aside class="news-panel">
+            <div class="panel-head"><span class="title">媒体报道</span></div>
+            <dl>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻这是一条爆炸性新闻这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dd><a href="javascript:;" class="f-ellipsis">这是一条爆炸性新闻</a></dd>
+                <dt>
+                    <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic008.jpg"></a>
+                </dt>
+            </dl>
+        </aside>
+    </aside>
+</div>
+<!--共用底部-->
+<footer class="rn-foot">
+    <div class="foot-link-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <dl class="link-group f-pull-left">
+                <dt>新手指导</dt>
+                <dd><a href="javascript:;">注册登录</a></dd>
+                <dd><a href="javascript:;">完善资料</a></dd>
+                <dd><a href="javascript:;">信息发布</a></dd>
+                <dd><a href="javascript:;">常见问题</a></dd>
+            </dl>
+            <dl class="link-group f-pull-left">
+                <dt>融诺金融服务</dt>
+                <dd><a href="javascript:;">融易通</a></dd>
+                <dd><a href="javascript:;">投易通</a></dd>
+                <dd><a href="javascript:;">信息投递</a></dd>
+                <dd><a href="javascript:;">信息刷新</a></dd>
+            </dl>
+            <dl class="link-group f-pull-left">
+                <dt>关于融诺金融</dt>
+                <dd><a href="javascript:;">融诺金融介绍</a></dd>
+                <dd><a href="javascript:;">联系我们</a></dd>
+                <dd><a href="javascript:;">网站公告</a></dd>
+                <dd><a href="javascript:;">网站地图</a></dd>
+            </dl>
+            <dl class="qrcode f-pull-left">
+                <dt>微信关注</dt>
+                <dd>
+                    <figure><img src="resource/img/rn_wx_qrcode.jpg"></figure>
+                </dd>
+            </dl>
+            <dl class="contact f-pull-right">
+                <dt>融诺网服务热线</dt>
+                <dd class="phone">400-6616-855</dd>
+                <dd class="time">（工作日 8:00-22:00 周六 9:00-18:00）</dd>
+                <dd class="mail">kefu@rongnuo.com</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-friendly-wrap rn-wrapper">
+        <div class="rn-inner">
+            <dl>
+                <dt>友情链接</dt>
+                <dd>
+                    <span><a href="javascript:;">友链</a></span><span><a href="javascript:;">友链</a></span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-copy rn-wrapper">
+        <div class="rn-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 4403050号</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

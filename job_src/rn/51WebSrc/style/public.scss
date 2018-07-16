@@ -218,7 +218,8 @@
       .container-extension {
         display: none;
         height: 420px;
-        background-color: rgba(255, 255, 255, .9);
+        background-color: #fff;
+        box-shadow: 0 2px 8px 0 rgba(221, 221, 221, .8);
         overflow: hidden;
       }
       .container-item {
@@ -252,8 +253,6 @@
         }
         &:hover {
           .init-content {
-            z-index: 1;
-            background-color: rgba(255, 255, 255, .4);
             dt {
               color: $selfActiveColor;
               a {
@@ -424,9 +423,9 @@
 /* m-crumbs-nav */
 .m-crumbs-nav {
   $selfActiveColor: $globeColorStressDeep;
-  background-color: #fff;
+  background-color: transparent;
   ul {
-    padding: 15px 10px;
+    padding: 20px 15px;
     font-size: 0;
     li {
       display: inline-block;
@@ -443,7 +442,7 @@
     }
   }
   dl {
-    padding: 15px 0;
+    padding: 20px 0;
     font-size: 0;
     & > * {
       display: inline-block;
@@ -626,102 +625,4 @@
   margin-left: auto;
   margin-right: auto;
   background: url(../resource/img/rn_loading_circle.gif) no-repeat center;
-}
-
-/* artdialog个性 */
-.aui_dialog {
-  $selfActiveColor: $globeColorStressDeep;
-  border-collapse: collapse;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 0 10px 0 rgba(8, 8, 8, .3);
-  .aui_titleBar {
-    position: relative;
-    background-color: $selfActiveColor;
-    .aui_title {
-      .dialog_confirm_head {
-        padding-left: 10px;
-        background-color: #f78e24;
-        height: 46px;
-        text-align: left;
-        line-height: 40px;
-        text-indent: 5px;
-        color: #FFF;
-        font-weight: 700;
-        font-size: 16px;
-      }
-      .dialog-head {
-        position: relative;
-        width: 100%;
-        height: 130px;
-        text-align: center;
-        color: #fff;
-        background-color: $selfActiveColor;
-        h3 {
-          padding-top: 43px;
-          margin-bottom: 13px;
-          font-size: 24px;
-          font-weight: bold;
-        }
-        p {
-          font-size: 16px;
-        }
-      }
-    }
-    .aui_close {
-      position: absolute;
-      top: 0;
-      right: 15px;
-      font-size: 40px;
-      color: #fff;
-      outline: none;
-    }
-  }
-  .aui_main {
-    background-color: #f7f7f7;
-  }
-  .aui_loading {
-    width: 300px;
-    height: 70px;
-    font-size: 0;
-    background: #fff url("../resource/img/rn_loading.gif") no-repeat center;
-  }
-  .aui_icon {
-    vertical-align: middle;
-    background-color: #f7f7f7;
-    div {
-      width: 48px;
-      height: 48px;
-      margin: 10px 0 10px 10px;
-    }
-  }
-  .aui_footer {
-    .aui_buttons {
-      padding: 10px 0 30px 0;
-      text-align: center;
-      background-color: #fff;
-      & > * {
-        display: inline-block;
-        min-width: 200px;
-        height: 40px;
-        padding: 0 30px;
-        margin: 0 10px;
-        line-height: 40px;
-        font-size: 14px;
-        background-color: #ddd;
-        border: none;
-        border-radius: 5px;
-        &:active {
-          background-color: #ddd - 25%;
-        }
-      }
-      .aui_state_highlight {
-        color: #fff;
-        background-color: $selfActiveColor;
-        &:active {
-          background-color: $selfActiveColor - 25%;
-        }
-      }
-    }
-  }
 }

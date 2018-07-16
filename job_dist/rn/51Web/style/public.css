@@ -86,7 +86,7 @@
 
 .rn-head .head-nav-wrap .category-container .container-head { height: 50px; padding: 0 20px; line-height: 50px; font-size: 16px; color: #fff; background-color: #ec6527; cursor: default; }
 
-.rn-head .head-nav-wrap .category-container .container-extension { display: none; height: 420px; background-color: rgba(255, 255, 255, 0.9); overflow: hidden; }
+.rn-head .head-nav-wrap .category-container .container-extension { display: none; height: 420px; background-color: #fff; box-shadow: 0 2px 8px 0 rgba(221, 221, 221, 0.8); overflow: hidden; }
 
 .rn-head .head-nav-wrap .category-container .container-item { width: 100%; }
 
@@ -99,8 +99,6 @@
 .rn-head .head-nav-wrap .category-container .container-item .init-content dt { margin-left: 18px; margin-bottom: 3px; font-size: 14px; color: #333; }
 
 .rn-head .head-nav-wrap .category-container .container-item .init-content dd { display: inline-block; margin: 12px 0 0 18px; vertical-align: top; font-size: 12px; color: #666; }
-
-.rn-head .head-nav-wrap .category-container .container-item:hover .init-content { z-index: 1; background-color: rgba(255, 255, 255, 0.4); }
 
 .rn-head .head-nav-wrap .category-container .container-item:hover .init-content dt { color: #ec6527; }
 
@@ -179,9 +177,9 @@
 
 /* ---模块类公用(.m-开头)--- */
 /* m-crumbs-nav */
-.m-crumbs-nav { background-color: #fff; }
+.m-crumbs-nav { background-color: transparent; }
 
-.m-crumbs-nav ul { padding: 15px 10px; font-size: 0; }
+.m-crumbs-nav ul { padding: 20px 15px; font-size: 0; }
 
 .m-crumbs-nav ul li { display: inline-block; vertical-align: top; font-size: 14px; }
 
@@ -189,7 +187,7 @@
 
 .m-crumbs-nav ul li + li:before { content: '>'; display: inline-block; margin: 0 6px; }
 
-.m-crumbs-nav dl { padding: 15px 0; font-size: 0; }
+.m-crumbs-nav dl { padding: 20px 0; font-size: 0; }
 
 .m-crumbs-nav dl > * { display: inline-block; vertical-align: top; font-size: 14px; }
 
@@ -260,36 +258,3 @@
 /* ---元件类公用(.u-开头)--- */
 /* u-loading-circle */
 .u-loading-circle { min-width: 70px; min-height: 70px; margin-left: auto; margin-right: auto; background: url(../resource/img/rn_loading_circle.gif) no-repeat center; }
-
-/* artdialog个性 */
-.aui_dialog { border-collapse: collapse; border-radius: 6px; overflow: hidden; box-shadow: 0 0 10px 0 rgba(8, 8, 8, 0.3); }
-
-.aui_dialog .aui_titleBar { position: relative; background-color: #ec6527; }
-
-.aui_dialog .aui_titleBar .aui_title .dialog_confirm_head { padding-left: 10px; background-color: #f78e24; height: 46px; text-align: left; line-height: 40px; text-indent: 5px; color: #FFF; font-weight: 700; font-size: 16px; }
-
-.aui_dialog .aui_titleBar .aui_title .dialog-head { position: relative; width: 100%; height: 130px; text-align: center; color: #fff; background-color: #ec6527; }
-
-.aui_dialog .aui_titleBar .aui_title .dialog-head h3 { padding-top: 43px; margin-bottom: 13px; font-size: 24px; font-weight: bold; }
-
-.aui_dialog .aui_titleBar .aui_title .dialog-head p { font-size: 16px; }
-
-.aui_dialog .aui_titleBar .aui_close { position: absolute; top: 0; right: 15px; font-size: 40px; color: #fff; outline: none; }
-
-.aui_dialog .aui_main { background-color: #f7f7f7; }
-
-.aui_dialog .aui_loading { width: 300px; height: 70px; font-size: 0; background: #fff url("../resource/img/rn_loading.gif") no-repeat center; }
-
-.aui_dialog .aui_icon { vertical-align: middle; background-color: #f7f7f7; }
-
-.aui_dialog .aui_icon div { width: 48px; height: 48px; margin: 10px 0 10px 10px; }
-
-.aui_dialog .aui_footer .aui_buttons { padding: 10px 0 30px 0; text-align: center; background-color: #fff; }
-
-.aui_dialog .aui_footer .aui_buttons > * { display: inline-block; min-width: 200px; height: 40px; padding: 0 30px; margin: 0 10px; line-height: 40px; font-size: 14px; background-color: #ddd; border: none; border-radius: 5px; }
-
-.aui_dialog .aui_footer .aui_buttons > *:active { background-color: #c4c4c4; }
-
-.aui_dialog .aui_footer .aui_buttons .aui_state_highlight { color: #fff; background-color: #ec6527; }
-
-.aui_dialog .aui_footer .aui_buttons .aui_state_highlight:active { background-color: #d34c0e; }
