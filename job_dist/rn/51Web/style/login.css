@@ -1,0 +1,56 @@
+/* content-container */
+.content-container { min-height: 500px; background: url(../resource/img/rn_pic001.jpg) no-repeat center; background-size: cover; }
+
+.table-wrap { min-height: 500px; }
+
+.login-tab-panel { width: 360px; min-height: 400px; background-color: #fff; overflow: hidden; }
+
+.login-tab-panel .tab-nav { text-align: center; font-size: 0; border-bottom: 1px solid #eee; }
+
+.login-tab-panel .tab-nav .nav-item { position: relative; display: inline-block; width: 50%; height: 60px; vertical-align: top; line-height: 60px; font-size: 18px; color: #333; cursor: default; }
+
+.login-tab-panel .tab-nav .nav-item.current { color: #ec6527; }
+
+.login-tab-panel .tab-nav .nav-item + .nav-item:before { content: ''; position: absolute; top: 21px; bottom: 21px; left: 0; border-left: 1px solid #ddd; }
+
+.login-tab-panel .content-item { display: none; padding: 24px 30px; }
+
+.login-tab-panel .content-item .input-box { position: relative; font-size: 0; }
+
+.login-tab-panel .content-item .input-box > * { font-size: 14px; }
+
+.login-tab-panel .content-item .input-box .icon { position: absolute; top: 50%; left: 10px; margin-top: -12px; font-size: 24px; color: #999; }
+
+.login-tab-panel .content-item .input-item { position: relative; z-index: 1; display: inline-block; width: 100%; height: 50px; padding: 0 10px 0 45px; vertical-align: middle; font-size: 14px; background-color: transparent; border: 1px solid #ddd; }
+
+.login-tab-panel .content-item .input-item:focus { border-color: #ec6527; }
+
+.login-tab-panel .content-item .input-item:focus + .icon { color: #ec6527; }
+
+.login-tab-panel .content-item .label-item input[type='checkbox'] { width: 12px; height: 12px; }
+
+.login-tab-panel .content-item .label-item span { margin-left: 4px; }
+
+.login-tab-panel .content-item .form-control-btn { display: inline-block; width: 130px; height: 50px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 14px; color: #fff; background-color: #ec6527; overflow: hidden; }
+
+.login-tab-panel .content-item .form-control-btn img { display: block; width: 100%; height: 100%; }
+
+.login-tab-panel .content-item .form-control-btn:hover { background-color: #dd5618; }
+
+.login-tab-panel .content-item .form-control-btn:active { background-color: #ce4709; }
+
+.login-tab-panel .content-item .hint-info { width: 100%; min-height: 20px; padding: 5px 0; line-height: 14px; font-size: 12px; color: #f00; }
+
+.login-tab-panel .content-item .handle-btn { display: inline-block; width: 100%; height: 50px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 18px; color: #fff; background-color: #ec6527; }
+
+.login-tab-panel .content-item .handle-btn:hover { background-color: #dd5618; }
+
+.login-tab-panel .content-item .handle-btn:active { background-color: #ce4709; }
+
+.login-tab-panel .content-item .notice { padding-top: 20px; }
+
+.login-tab-panel .content-item .notice a { color: #ec6527; }
+
+.login-tab-panel .content-item .notice a:hover { text-decoration: underline; }
+
+.login-tab-panel .content-item.current { display: block; }

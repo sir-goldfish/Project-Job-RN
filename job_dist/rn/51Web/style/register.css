@@ -1,0 +1,46 @@
+/* content-container */
+.content-container { min-height: 587px; background: url(../resource/img/rn_pic002.jpg) no-repeat center; background-size: cover; }
+
+.table-wrap { min-height: 587px; }
+
+.register-panel { width: 400px; min-height: 482px; padding: 24px 30px; background-color: #fff; overflow: hidden; }
+
+.register-panel .panel-head { padding-bottom: 20px; font-size: 18px; }
+
+.register-panel .panel-body .input-box { position: relative; font-size: 0; }
+
+.register-panel .panel-body .input-box > * { font-size: 14px; }
+
+.register-panel .panel-body .input-box .icon { position: absolute; top: 50%; left: 10px; margin-top: -12px; font-size: 24px; color: #999; }
+
+.register-panel .panel-body .input-item { position: relative; z-index: 1; display: inline-block; width: 100%; height: 50px; padding: 0 10px 0 45px; vertical-align: middle; font-size: 14px; background-color: transparent; border: 1px solid #ddd; }
+
+.register-panel .panel-body .input-item:focus { border-color: #ec6527; }
+
+.register-panel .panel-body .input-item:focus + .icon { color: #ec6527; }
+
+.register-panel .panel-body .label-item input[type='checkbox'] { width: 12px; height: 12px; }
+
+.register-panel .panel-body .label-item span { margin-left: 4px; }
+
+.register-panel .panel-body .form-control-btn { display: inline-block; width: 130px; height: 50px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 14px; color: #fff; background-color: #ec6527; overflow: hidden; }
+
+.register-panel .panel-body .form-control-btn img { display: block; width: 100%; height: 100%; }
+
+.register-panel .panel-body .form-control-btn:hover { background-color: #dd5618; }
+
+.register-panel .panel-body .form-control-btn:active { background-color: #ce4709; }
+
+.register-panel .panel-body .hint-info { width: 100%; min-height: 20px; padding: 5px 0; line-height: 14px; font-size: 12px; color: #f00; }
+
+.register-panel .panel-body .handle-btn { display: inline-block; width: 100%; height: 50px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 18px; color: #fff; background-color: #ec6527; }
+
+.register-panel .panel-body .handle-btn:hover { background-color: #dd5618; }
+
+.register-panel .panel-body .handle-btn:active { background-color: #ce4709; }
+
+.register-panel .panel-body .notice { padding-top: 20px; }
+
+.register-panel .panel-body .notice a { color: #ec6527; }
+
+.register-panel .panel-body .notice a:hover { text-decoration: underline; }

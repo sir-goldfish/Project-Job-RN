@@ -1,0 +1,223 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeColorStressDeep;
+body {
+  background-color: #eff1f7;
+}
+
+/* content-container */
+.content-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.reset-panel {
+  padding: 0 30px;
+  background-color: #fff;
+  .panel-head {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    h3 {
+      font-size: 18px;
+      font-weight: normal;
+      color: #333;
+    }
+    .notice {
+      line-height: 18px;
+      a {
+        color: $selfActiveColor;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .panel-body {
+    padding: 36px 0 64px;
+    .path-form {
+      width: 600px;
+      margin: 0 auto;
+      .foot-notice {
+        text-align: center;
+        color: #999;
+      }
+    }
+    .path-nav {
+      width: 100%;
+      text-align: center;
+      font-size: 0;
+      li {
+        $selfColor: #ccc;
+        position: relative;
+        display: inline-block;
+        width: 33.33333%;
+        padding-bottom: 26px;
+        vertical-align: bottom;
+        font-size: 14px;
+        color: $selfColor;
+        border-bottom: 2px solid $selfColor;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          width: 8px;
+          height: 8px;
+          margin-left: -4px;
+          border-radius: 50%;
+          background-color: $selfColor;
+        }
+        &.current {
+          $selfColor: $selfActiveColor;
+          color: $selfColor;
+          border-bottom-color: $selfColor;
+          &:after {
+            background-color: $selfColor;
+          }
+        }
+        &.passed {
+          $selfColor: #fdc48a;
+          color: $selfColor;
+          border-bottom-color: $selfColor;
+          &:after {
+            background-color: $selfColor;
+          }
+        }
+      }
+    }
+    .path-content {
+      padding: 66px 0 50px;
+      .content-item {
+        display: none;
+        &.current {
+          display: block;
+        }
+        .form-item {
+          width: 400px;
+          margin: 0 auto;
+          .title-cell {
+            display: table-cell;
+            width: 98px;
+            vertical-align: top;
+            text-align: right;
+            line-height: 50px;
+            font-size: 14px;
+            color: #333;
+          }
+          .input-cell {
+            display: table-cell;
+            width: 400px - 98px;
+            vertical-align: top;
+          }
+          .handle-btn {
+            width: 100%;
+          }
+        }
+        .input-box {
+          position: relative;
+          font-size: 0;
+          & > * {
+            font-size: 14px;
+          }
+        }
+        .input-item {
+          display: inline-block;
+          width: 100%;
+          height: 50px;
+          padding: 0 12px;
+          vertical-align: middle;
+          font-size: 14px;
+          background-color: transparent;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          &:focus {
+            border-color: $selfActiveColor;
+          }
+        }
+        .form-control-btn {
+          $selfColor: $selfActiveColor;
+          display: inline-block;
+          width: 130px;
+          height: 50px;
+          vertical-align: middle;
+          line-height: 50px;
+          text-align: center;
+          font-size: 14px;
+          color: #fff;
+          background-color: $selfColor;
+          border-radius: 5px;
+          overflow: hidden;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+          &:hover {
+            background-color: $selfColor - 15%;
+          }
+          &:active {
+            background-color: $selfColor - 30%;
+          }
+        }
+        .hint-info {
+          width: 100%;
+          min-height: 30px;
+          padding: 5px 0;
+          line-height: 14px;
+          font-size: 12px;
+          color: #f00;
+        }
+        .handle-btn {
+          display: inline-block;
+          min-width: 200px;
+          height: 50px;
+          padding: 0 32px;
+          vertical-align: middle;
+          line-height: 50px;
+          text-align: center;
+          font-size: 16px;
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-radius: 5px;
+          &:hover {
+            background-color: $selfActiveColor - 15%;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+        .result-notice {
+          padding-bottom: 40px;
+          text-align: center;
+          font-size: 0;
+          & > * {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .icon {
+            font-size: 60px;
+            &.success {
+              color: #1dc038;
+            }
+            &.fail {
+              color: #f43d3d;
+            }
+          }
+          .text {
+            margin-left: 20px;
+            text-align: justify;
+            font-size: 12px;
+            color: #999;
+            h3 {
+              padding: 5px 0;
+              font-size: 18px;
+              font-weight: bold;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+}
