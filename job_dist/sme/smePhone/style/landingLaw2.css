@@ -1,0 +1,153 @@
+/* self-btn */
+.self-btn { box-sizing: border-box; display: inline-block; min-width: 8.5rem; height: 3.7rem; padding: 0 .85rem; vertical-align: middle; line-height: 3.7rem; text-align: center; font-size: 1.4rem; font-weight: bold; color: #fff; border-radius: .5rem; }
+
+.self-btn:hover { color: #fff; }
+
+.self-btn.rounded-btn { border-radius: 3.7rem; }
+
+.self-btn.block-btn { display: block; width: 100%; }
+
+.self-btn.linear-yellow-btn { background: -webkit-linear-gradient(#fcc213, #f78e24); background: linear-gradient(#fcc213, #f78e24); }
+
+.self-btn.linear-yellow-btn:active { background: -webkit-linear-gradient(#edb304, #e87f15); background: linear-gradient(#edb304, #e87f15); }
+
+/* head-bg-wrapper */
+.head-bg-wrapper { padding-bottom: 6.3rem; background: #091120 url(../resource/img/smep_bgi13.jpg) no-repeat center top; background-size: 100% auto; }
+
+.sme-head { background-color: transparent; }
+
+.sme-head .head-right a { font-size: 1.2rem; color: #fff; }
+
+.head-container { padding-top: 15rem; }
+
+.head-container .form-panel { padding: 0 1rem; }
+
+.head-container .form-panel .input-box textarea { display: block; width: 100%; min-width: 100%; max-width: 100%; padding: 1rem 1.2rem; line-height: 1.3; font-size: 1.36rem; background-color: #fff; border-radius: .7rem; }
+
+.head-container .form-panel .hint-info { padding: .75rem 0; color: #f00; }
+
+.head-container .form-panel .foot-notice { padding-top: 2.2rem; text-align: center; font-size: 1.05rem; color: #fff; }
+
+.head-container .form-panel .foot-notice em { color: #f78e24; }
+
+.head-container .form-panel .foot-notice > span + span { margin-left: 2.7rem; }
+
+/* section-head-common */
+.section-head-common .head-title { text-align: center; color: #333; }
+
+.section-head-common .head-title .text { vertical-align: middle; font-size: 1.4rem; font-weight: bold; }
+
+.section-head-common .head-title .text:before, .section-head-common .head-title .text:after { content: ''; display: inline-block; vertical-align: middle; width: 1.6rem; height: 1.27rem; background-repeat: no-repeat; background-position: center; background-size: 100%; }
+
+.section-head-common .head-title .text:before { margin-right: .85rem; background-image: url(../resource/img/smep_icon8_0.png); }
+
+.section-head-common .head-title .text:after { margin-left: .85rem; background-image: url(../resource/img/smep_icon8_1.png); }
+
+.section-head-common .head-title .text span { display: inline-block; vertical-align: middle; }
+
+.section-head-common .head-desc { margin-top: 1.1rem; text-align: center; color: #666; }
+
+.section-head-common .head-desc .text { vertical-align: middle; font-size: 1.2rem; }
+
+.section-head-common .head-desc .text:before, .section-head-common .head-desc .text:after { content: ''; display: inline-block; vertical-align: middle; width: 1.36rem; height: 0; border-top: 1px solid #666; }
+
+.section-head-common .head-desc .text:before { margin-right: .34rem; }
+
+.section-head-common .head-desc .text:after { margin-left: .34rem; }
+
+.section-head-common.head-w .head-title { color: #fff; }
+
+.section-head-common.head-w .head-desc { color: #fff; }
+
+/* service-section */
+.service-section { padding-top: 4.25rem; padding-bottom: 6.4rem; margin-top: -3rem; background: url(../resource/img/smep_bgi14.png) no-repeat center top; background-size: 100% auto; }
+
+.service-section .service-list { display: -webkit-box; display: flex; flex-wrap: wrap; -webkit-box-pack: justify; justify-content: space-between; width: 100%; padding-top: 2.8rem; margin-top: -2.5rem; }
+
+.service-section .service-list li { width: 50%; margin-top: 2.5rem; text-align: center; }
+
+.service-section .service-list li img { display: block; width: 5.8rem; height: 5.8rem; margin: 0 auto; }
+
+.service-section .service-list li h3 { margin-top: 1.1rem; font-size: 1.1rem; font-weight: normal; color: #333; }
+
+.service-section .service-list li .self-btn { min-width: 9rem; height: 2.3rem; margin-top: 1.1rem; line-height: 2.3rem; font-size: 1.1rem; }
+
+.service-section .service-list.w-service { padding-top: 7.23rem; }
+
+.service-section .service-list.w-service li h3 { color: #ddd; }
+
+/* path-section */
+.path-section { padding-top: 4.25rem; padding-bottom: 6.4rem; margin-top: -3rem; background: url(../resource/img/smep_bgi11.png) no-repeat center top; background-size: 100% auto; }
+
+.path-section .path-list { padding-top: 3.65rem; padding-bottom: 3.83rem; text-align: center; font-size: 0; color: #666; }
+
+.path-section .path-list .path-item { display: inline-block; margin-right: 3.1rem; vertical-align: top; }
+
+.path-section .path-list .path-item .icon { position: relative; width: 6.89rem; height: 6.89rem; margin: 0 auto; }
+
+.path-section .path-list .path-item .icon img { display: block; width: 100%; height: 100%; }
+
+.path-section .path-list .path-item .icon:after { content: ''; position: absolute; top: 50%; left: 100%; display: block; width: 2.68rem; height: .25rem; margin-top: -.12rem; background: url(../resource/img/smep_icon7.png) no-repeat center; background-size: 100%; }
+
+.path-section .path-list .path-item .title { margin-top: 0.81rem; line-height: 1.95rem; font-size: 1.1rem; }
+
+.path-section .path-list .path-item:last-child { margin-right: 0; }
+
+.path-section .path-list .path-item:last-child .icon:after { width: 0; height: 0; overflow: hidden; }
+
+.path-section .section-foot { padding: 0 .85rem; }
+
+/* reason-section */
+.reason-section { padding-top: 4.25rem; padding-bottom: 5rem; margin-top: -3rem; background: url(../resource/img/smep_bgi8.png) no-repeat center top; background-size: 100% auto; }
+
+.reason-section .reason-desc { position: relative; margin-top: 4.34rem; margin-bottom: 6.46rem; }
+
+.reason-section .reason-desc .bg-pic { display: block; width: 100%; height: auto; }
+
+.reason-section .reason-desc .desc-item { position: absolute; display: block; width: 9.23rem; height: auto; }
+
+.reason-section .section-foot { padding: 0 .85rem; }
+
+/* lawyer-section */
+.lawyer-section { padding-top: 4.25rem; padding-bottom: 6.9rem; margin-top: -3rem; background: url(../resource/img/smep_bgi9.png) no-repeat center top; background-size: 100% auto; }
+
+.lawyer-section .section-body { padding: 2.4rem 0 2.12rem; }
+
+.lawyer-section .exhibition { position: relative; width: 100%; overflow: hidden; }
+
+.lawyer-section .exhibition img { display: block; width: 100%; height: auto; }
+
+.lawyer-section .exhibition h3 { position: absolute; bottom: 0; left: 0; width: 100%; padding: .76rem 0; text-align: center; font-weight: normal; font-size: 1.05rem; color: #fff; background-color: #f78e24; }
+
+.lawyer-section .exhibition h3 span { display: inline-block; max-width: 100%; }
+
+.lawyer-section .lawyer-cards { display: -webkit-box; display: flex; flex-wrap: wrap; -webkit-box-pack: justify; justify-content: space-between; width: 100%; padding-top: 2.4rem; margin-top: -1.06rem; }
+
+.lawyer-section .lawyer-cards .lawyer-card { width: 23%; margin-top: 1.06rem; text-align: center; }
+
+.lawyer-section .lawyer-cards .lawyer-card img { display: block; width: 100%; height: auto; }
+
+.lawyer-section .lawyer-cards .lawyer-card h3 { max-width: 100%; margin-top: .85rem; font-size: 1.05rem; font-weight: normal; color: #333; }
+
+.lawyer-section .lawyer-cards .lawyer-card .tag { padding: 0 .25rem; margin-top: .38rem; font-size: .68rem; color: #f78e24; border: 1px solid #f78e24; border-radius: .25rem; }
+
+.lawyer-section .section-foot { padding: 0 .85rem; }
+
+/* other-services */
+.other-services { padding-top: 4.25rem; padding-bottom: 4rem; margin-top: -3rem; background: url(../resource/img/smep_bgi15.png) no-repeat center top; background-size: 100% auto; }
+
+.other-services .section-head .head-title { text-align: center; color: #fff; }
+
+.other-services .section-head .head-title .text { vertical-align: middle; font-size: 1.4rem; }
+
+.other-services .service-cards { display: -webkit-box; display: flex; flex-wrap: wrap; justify-content: space-around; width: 100%; padding-top: 2.5rem; padding-bottom: 2.5rem; text-align: center; }
+
+.other-services .service-cards li img { display: block; width: 6.7rem; height: 6.7rem; margin: 0 auto; }
+
+.other-services .service-cards li h3 { margin-top: 1.27rem; font-size: 1.19rem; font-weight: normal; color: #fff; }
+
+.other-services .section-foot { padding: 0 .85rem; }
+
+.other-services .section-foot .input-box input[type='text'] { display: block; width: 100%; height: 3.74rem; padding: 0 1.27rem; font-size: 1.19rem; background-color: #fff; border-radius: .68rem; }
+
+.other-services .section-foot .hint-info { padding: .45rem 0; color: #f00; }
