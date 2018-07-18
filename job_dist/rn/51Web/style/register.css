@@ -1,3 +1,5 @@
+body { background-color: #eff1f7; }
+
 /* content-container */
 .content-container { min-height: 600px; background: url(../resource/img/rn_pic002.jpg) no-repeat center; background-size: cover; }
 
@@ -44,3 +46,26 @@
 .register-panel .panel-body .notice a { color: #ec6527; }
 
 .register-panel .panel-body .notice a:hover { text-decoration: underline; }
+
+/* result-container */
+.result-container { padding-top: 20px; padding-bottom: 20px; }
+
+.result-container .result-panel { padding: 150px 20px; text-align: center; background-color: #fff; }
+
+.result-container .result-panel .notice > * { display: inline-block; vertical-align: middle; }
+
+.result-container .result-panel .notice .icon { font-size: 86px; color: #1dc038; }
+
+.result-container .result-panel .notice .text { margin-left: 18px; text-align: justify; }
+
+.result-container .result-panel .notice h3 { padding: 5px 0; font-size: 18px; font-weight: bold; color: #333; }
+
+.result-container .result-panel .notice p { padding: 5px 0; }
+
+.result-container .result-panel .handle-group { padding: 40px 0 20px; }
+
+.result-container .result-panel .handle-group .handle-btn { display: inline-block; min-width: 180px; height: 50px; padding: 0 24px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 14px; color: #fff; background-color: #ec6527; border-radius: 5px; }
+
+.result-container .result-panel .handle-group .handle-btn:hover { background-color: #dd5618; }
+
+.result-container .result-panel .handle-group .handle-btn:active { background-color: #ce4709; }

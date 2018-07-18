@@ -4,6 +4,10 @@
 $selfActiveColor: $globeColorStressDeep;
 $selfContainerHeight: 600px;
 
+body {
+  background-color: #eff1f7;
+}
+
 /* content-container */
 .content-container {
   min-height: $selfContainerHeight;
@@ -123,6 +127,63 @@ $selfContainerHeight: 600px;
         color: $selfActiveColor;
         &:hover {
           text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* result-container */
+.result-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .result-panel {
+    padding: 150px 20px;
+    text-align: center;
+    background-color: #fff;
+    .notice {
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .icon {
+        font-size: 86px;
+        color: #1dc038;
+      }
+      .text {
+        margin-left: 18px;
+        text-align: justify;
+      }
+      h3 {
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+      }
+      p {
+        padding: 5px 0;
+      }
+    }
+    .handle-group {
+      padding: 40px 0 20px;
+      .handle-btn {
+        $selfHeight: 50px;
+        display: inline-block;
+        min-width: 180px;
+        height: $selfHeight;
+        padding: 0 24px;
+        vertical-align: middle;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-radius: 5px;
+        &:hover {
+          background-color: $selfActiveColor - 15%;
+        }
+        &:active {
+          background-color: $selfActiveColor - 30%;
         }
       }
     }
