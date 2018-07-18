@@ -286,6 +286,29 @@
   }
 }
 
+/* header 登录/注册 */
+.rn-head1 {
+  .head-logo-wrap {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #fff;
+    .logo-wrap {
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          display: block;
+        }
+      }
+    }
+    .text-wrap {
+      padding: 10px 0;
+      font-size: 18px;
+      color: #333;
+    }
+  }
+}
+
 /* - rn-foot - */
 /* footer 主要 */
 .rn-foot {

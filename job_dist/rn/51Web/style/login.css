@@ -1,7 +1,7 @@
 /* content-container */
-.content-container { min-height: 500px; background: url(../resource/img/rn_pic001.jpg) no-repeat center; background-size: cover; }
+.content-container { min-height: 600px; background: url(../resource/img/rn_pic001.jpg) no-repeat center; background-size: cover; }
 
-.table-wrap { min-height: 500px; }
+.table-wrap { min-height: 600px; }
 
 .login-tab-panel { width: 360px; min-height: 400px; background-color: #fff; overflow: hidden; }
 

@@ -65,7 +65,7 @@ body { background-color: #eff1f7; }
 
 .main-container .news-category-section .news-bar p { max-height: 72px; margin-top: 15px; line-height: 24px; font-size: 14px; color: #333; overflow: hidden; }
 
-.main-container .news-category-section .news-bar + .news-bar { margin-top: 20px; }
+.main-container .news-category-section .news-bar + .news-bar { margin-top: 10px; }
 
 .main-container .news-category-section .pagination-wrap { padding: 20px 0; }
 

@@ -112,6 +112,15 @@
 
 .rn-head .head-nav-wrap .category-container.open .container-extension { display: block; }
 
+/* header 登录/注册 */
+.rn-head1 .head-logo-wrap { padding-top: 24px; padding-bottom: 24px; background-color: #fff; }
+
+.rn-head1 .head-logo-wrap .logo-wrap .logo { display: inline-block; vertical-align: middle; }
+
+.rn-head1 .head-logo-wrap .logo-wrap .logo img { display: block; }
+
+.rn-head1 .head-logo-wrap .text-wrap { padding: 10px 0; font-size: 18px; color: #333; }
+
 /* - rn-foot - */
 /* footer 主要 */
 .rn-foot { background-color: #4b4b4b; }
