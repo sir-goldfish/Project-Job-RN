@@ -44,7 +44,7 @@
   .head-search-wrap {
     background-color: #fff;
     .logo-wrap {
-      padding: 24px 0;
+      padding: 25px 0;
       .logo {
         display: inline-block;
         vertical-align: middle;
@@ -53,21 +53,36 @@
         }
       }
     }
-    .capital-wrap {
-      padding: 20px 0;
-      margin-left: 86px;
-      .capital {
+    .phone-wrap {
+      padding: 32px 0;
+      margin-left: 55px;
+      & > * {
         display: inline-block;
         vertical-align: middle;
-        img {
-          display: block;
-        }
+      }
+      i {
+        $selfHeight: 22px;
+        width: $selfHeight;
+        height: $selfHeight;
+        line-height: $selfHeight;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-radius: 50%;
+      }
+      span {
+        margin-left: 10px;
+        font-family: Arial;
+        font-style: italic;
+        font-size: 24px;
+        color: $selfActiveColor;
       }
     }
     .search-wrap {
-      $selfWidth: 418px;
-      $selfHeight: 36px;
-      padding-top: 22px;
+      $selfWidth: 520px;
+      $selfHeight: 48px;
+      padding-top: 20px;
       .input-box {
         position: relative;
         width: $selfWidth;
@@ -105,26 +120,26 @@
         }
         .inputwrap:last-of-type {
           .input-item {
-            padding-right: 12px + 40px;
+            padding-right: 12px + 86px;
           }
         }
         .query-btn {
           position: absolute;
           top: -1px;
           right: -1px;
-          width: 40px;
+          width: 86px;
           height: $selfHeight;
           line-height: $selfHeight;
           text-align: center;
           font-size: 14px;
-          color: $selfActiveColor;
+          color: #fff;
+          background-color: $selfActiveColor;
           i {
-            font-size: 1.2em;
             font-weight: bold;
           }
           &:hover {
             color: #fff;
-            background-color: $selfActiveColor;
+            background-color: $selfActiveColor  - 15%;
           }
           &:active {
             background-color: $selfActiveColor - 30%;
@@ -132,34 +147,19 @@
         }
       }
       .hint-info {
-        height: 22px - 5px;
-        line-height: 22px - 5px;
+        height: 20px;
+        line-height: 20px;
         text-align: center;
         font-size: 12px;
         color: #f00;
       }
-      .hot-list {
-        padding: 5px 10px;
-        font-size: 12px;
-        color: #999;
-        dt {
-          float: left;
-          width: 60px;
-          color: #666;
-        }
-        dd {
-          margin-left: 60px;
-          a {
-            margin-right: 6px;
-          }
-        }
-      }
     }
   }
   .head-nav-wrap {
-    $selfHeight: 50px;
+    $selfHeight: 42px;
     $selfLeftNavWidth: 230px;
-    background-color: $globeColorStress;
+    padding-bottom: 10px;
+    background-color: #fff;
     .rn-inner {
       position: relative;
       padding-left: $selfLeftNavWidth;
@@ -186,9 +186,9 @@
           position: relative;
           .nav-name {
             padding: 0 30px;
-            color: #fff;
+            border-radius: 5px;
             &:hover {
-              background-color: $selfActiveColor + 32%;
+              color: $selfActiveColor;
             }
           }
           &.current {
@@ -197,6 +197,9 @@
               background-color: $selfActiveColor;
             }
           }
+        }
+        dt {
+          float: right;
         }
       }
     }
@@ -207,17 +210,24 @@
       z-index: 5;
       width: $selfLeftNavWidth;
       .container-head {
+        position: relative;
         height: $selfHeight;
         padding: 0 20px;
         line-height: $selfHeight;
         font-size: 16px;
         color: #fff;
         background-color: $selfActiveColor;
+        border-radius: 5px;
         cursor: default;
+        em {
+          position: absolute;
+          right: 10px;
+        }
       }
       .container-extension {
         display: none;
-        height: 420px;
+        height: 420px + 10px;
+        padding-top: 10px;
         background-color: #fff;
         box-shadow: 0 2px 8px 0 rgba(221, 221, 221, .8);
         overflow: hidden;
@@ -305,6 +315,79 @@
       padding: 10px 0;
       font-size: 18px;
       color: #333;
+    }
+  }
+}
+
+/* header 关于我们/重置密码等 */
+.rn-head3 {
+  $selfActiveColor: $globeColorStressDeep;
+  .head-login-wrap {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    .nav {
+      font-size: 0;
+      & > * {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 10px;
+        vertical-align: top;
+        font-size: 12px;
+      }
+      .user {
+        & > * {
+          display: inline-block;
+        }
+        & > * + * {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .head-nav-wrap {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(204, 204, 204, .3);
+    .logo-wrap {
+      padding: 25px 0;
+      font-size: 0;
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          display: block;
+        }
+      }
+      h3 {
+        display: inline-block;
+        padding-left: 12px;
+        margin-left: 20px;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: normal;
+        color: #666;
+        border-left: 1px solid #666;
+      }
+    }
+    .nav-wrap {
+      padding: 12px + 25px 0;
+      .nav-list {
+        margin-right: -40px;
+        font-size: 0;
+        li {
+          display: inline-block;
+          margin-right: 40px;
+          vertical-align: top;
+          font-size: 16px;
+          color: #333;
+          &.current {
+            color: $selfActiveColor;
+          }
+        }
+      }
     }
   }
 }
