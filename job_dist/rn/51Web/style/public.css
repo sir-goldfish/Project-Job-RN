@@ -264,6 +264,87 @@
 
 .m-group-pagination .page-nav *:last-child { border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
 
+/* m-default-filter-panel */
+.m-default-filter-panel .filter-result { display: table; padding: 5px 0 10px; font-size: 14px; color: #333; }
+
+.m-default-filter-panel .filter-result dt { display: table-cell; width: 70px; vertical-align: top; line-height: 22px; }
+
+.m-default-filter-panel .filter-result dd { display: table-cell; vertical-align: top; font-size: 0; }
+
+.m-default-filter-panel .filter-result dd ul { float: left; margin: -5px 0 0 -20px; }
+
+.m-default-filter-panel .filter-result dd li { display: inline-block; height: 22px; padding: 0 5px; margin: 5px 0 0 20px; vertical-align: middle; line-height: 20px; font-size: 14px; border: 1px dashed #999; cursor: pointer; }
+
+.m-default-filter-panel .filter-result dd li > * { display: inline-block; vertical-align: middle; }
+
+.m-default-filter-panel .filter-result dd li em { max-width: 150px; }
+
+.m-default-filter-panel .filter-result dd li i { margin-left: 4px; }
+
+.m-default-filter-panel .filter-result dd li:hover { color: #ec6527; border-color: #ec6527; }
+
+.m-default-filter-panel .filter-bar { background-color: #fff; font-size: 0; color: #333; }
+
+.m-default-filter-panel .filter-bar span { position: relative; display: inline-block; padding: 18px; vertical-align: middle; font-size: 16px; cursor: pointer; }
+
+.m-default-filter-panel .filter-bar span:hover { color: #ec6527; }
+
+.m-default-filter-panel .filter-bar span.chosen { color: #ec6527; }
+
+.m-default-filter-panel .filter-bar span.chosen:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; border-top: 2px solid #ec6527; }
+
+.m-default-filter-panel .filter-panel { display: table; width: 100%; margin-top: 10px; color: #333; }
+
+.m-default-filter-panel .filter-panel .filter-row { display: table-row; background-color: #fff; }
+
+.m-default-filter-panel .filter-panel .filter-cell { display: table-cell; vertical-align: top; }
+
+.m-default-filter-panel .filter-panel .title-cell { width: 110px; padding: 14px; line-height: 22px; background-color: #eee; }
+
+.m-default-filter-panel .filter-panel .content-cell { position: relative; padding: 14px 30px; border-bottom: 1px solid #eff1f7; }
+
+.m-default-filter-panel .filter-panel .choose-content { height: 22px; margin-right: 150px; overflow: hidden; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-options { margin: -14px 0 0 -20px; font-size: 0; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-options .choose-option { display: inline-block; margin: 14px 0 0 20px; vertical-align: top; height: 22px; padding: 0 5px; line-height: 20px; font-size: 14px; border: 1px solid transparent; cursor: pointer; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-options .choose-option:hover { color: #ec6527; border-color: #ec6527; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-options .choose-option.chosen { color: #fff; background-color: #ec6527; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-btn-group { display: none; padding-top: 20px; text-align: center; font-size: 0; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-btn-group .choose-btn { display: inline-block; min-width: 70px; height: 26px; padding: 0 12px; margin: 0 10px; vertical-align: middle; line-height: 26px; text-align: center; font-size: 14px; color: #fff; background-color: #ccc; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-btn-group .choose-btn:hover { background-color: #bdbdbd; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-btn-group .choose-btn:active { background-color: #aeaeae; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-btn-group .choose-btn.confirm-btn { background-color: #ec6527; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-btn-group .choose-btn.confirm-btn:hover { background-color: #dd5618; }
+
+.m-default-filter-panel .filter-panel .choose-content .choose-btn-group .choose-btn.confirm-btn:active { background-color: #ce4709; }
+
+.m-default-filter-panel .filter-panel .handle-content { position: absolute; top: 0; right: 30px; padding: 14px 0; font-size: 12px; color: #999; }
+
+.m-default-filter-panel .filter-panel .handle-content .handle-btn { display: inline-block; vertical-align: middle; line-height: 22px; }
+
+.m-default-filter-panel .filter-panel .handle-content .handle-btn > * { display: inline-block; vertical-align: middle; }
+
+.m-default-filter-panel .filter-panel .handle-content .handle-btn i { margin-left: 4px; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.m-default-filter-panel .filter-panel .handle-content .handle-btn.active { color: #ec6527; }
+
+.m-default-filter-panel .filter-panel .handle-content .handle-btn.active.more-btn i { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+.m-default-filter-panel .filter-panel .handle-content .handle-btn + .handle-btn { margin-left: 14px; }
+
+.m-default-filter-panel .filter-panel .filter-row.open .choose-content { height: auto; }
+
+.m-default-filter-panel .filter-panel .filter-row.multiple .choose-content .choose-btn-group { display: block; }
+
 /* ---元件类公用(.u-开头)--- */
 /* u-loading-circle */
 .u-loading-circle { min-width: 70px; min-height: 70px; margin-left: auto; margin-right: auto; background: url(../resource/img/rn_loading_circle.gif) no-repeat center; }

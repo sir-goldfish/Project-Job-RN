@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找项目首页-51资金项目</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/projectHome.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="rn-head">
+    <div class="head-login-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <div class="f-pull-left">
+                <ul class="nav" style="margin-left:-10px;">
+                    <li>欢迎来到51资金项目网！</li>
+                </ul>
+            </div>
+            <div class="f-pull-right">
+                <ul class="nav" style="margin-right:-10px;">
+                    <!--登录前 user-->
+                    <li class="user"><a href="javascript:;">登录</a><a href="javascript:;">免费注册</a></li>
+                    <!--登录后 user-->
+                    <!--<li class="user">你好，<a href="javascript:;">会员名</a><a href="javascript:;">退出</a></li>-->
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-search-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <div class="logo-wrap f-pull-left">
+                <a href="javascript:;" class="logo"><img src="resource/img/rn_logo.png"></a>
+            </div>
+            <div class="capital-wrap f-pull-right">
+                <a href="javascript:;" class="capital"><img src="resource/img/rn_home_pic001.png"></a>
+            </div>
+            <div class="search-wrap f-pull-right">
+                <div class="input-box">
+                    <div class="inputwrap" style="width:24%;">
+                        <select class="input-item">
+                            <option value="选项">选项</option>
+                            <option value="选项">选项</option>
+                            <option value="选项">选项</option>
+                        </select>
+                    </div>
+                    <div class="inputwrap" style="width:76%;">
+                        <input type="text" class="input-item" placeholder="请输入关键词">
+                    </div>
+                    <a href="javascript:;" class="query-btn"><i class="iconfont">&#xe6fa;</i></a>
+                </div>
+                <dl class="hot-list">
+                    <dt>热门搜索：</dt>
+                    <dd>
+                        <a href="javascript:;">热门关键词</a>
+                        <a href="javascript:;">热门关键词</a>
+                        <a href="javascript:;">热门关键词</a>
+                    </dd>
+                </dl>
+                <div class="hint-info"></div>
+            </div>
+        </div>
+    </div>
+    <div class="head-nav-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <!--****
+                * 重要提示：
+                * 1/ 在首页时，分类默认展开，category-container需加类名open
+                * 2/ 在其他页面时，分类默认闭合，需hover触发，此时category-container需去除类名open
+                ****-->
+            <div class="category-container">
+                <div class="container-head">投融信息分类</div>
+                <div class="container-extension">
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 实力资金</a></dt>
+                                    <dd><a href="javascript:;">股权投资</a></dd>
+                                    <dd><a href="javascript:;">债权投资</a></dd>
+                                    <dd><a href="javascript:;">BT/BOT</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 优质项目</a></dt>
+                                    <dd><a href="javascript:;">股权融资</a></dd>
+                                    <dd><a href="javascript:;">债权融资</a></dd>
+                                    <dd><a href="javascript:;">交易资产</a></dd>
+                                    <dd><a href="javascript:;">股权转让</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 真实人脉</a></dt>
+                                    <dd><a href="javascript:;">项目人脉</a></dd>
+                                    <dd><a href="javascript:;">资金人脉</a></dd>
+                                    <dd><a href="javascript:;">企业</a></dd>
+                                    <dd><a href="javascript:;">政府</a></dd>
+                                    <dd><a href="javascript:;">个人</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="init-content">
+                            <div class="init-inner">
+                                <dl>
+                                    <dt><a href="javascript:;"><i class="iconfont">&</i> 会员服务</a></dt>
+                                    <dd><a href="javascript:;">融易通</a></dd>
+                                    <dd><a href="javascript:;">投易通</a></dd>
+                                    <dd><a href="javascript:;">信息投递</a></dd>
+                                    <dd><a href="javascript:;">委托刷新</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-wrap">
+                <dl class="nav-list f-clearfix">
+                    <dd class="current"><a href="javascript:;" class="nav-name">首页</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">实力资金</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">优质项目</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">聚人脉</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">资讯</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">成功案例</a></dd>
+                    <dd><a href="javascript:;" class="nav-name">会员服务</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="filter-container rn-inner">
+    <!--m-default-filter-panel-->
+    <div class="m-default-filter-panel">
+        <div class="filter-result">
+            <dl>
+                <dt>已选条件：</dt>
+                <dd>
+                    <ul>
+                        <li class="result-option"><em class="f-ellipsis" title="融资方式：四个字吧">融资方式：四个字吧</em><i
+                                class="remove-self iconfont">&#xe681;</i></li>
+                        <li class="result-option"><em class="f-ellipsis" title="融资方式：四个字吧">融资方式：四个字吧</em><i
+                                class="remove-self iconfont">&#xe681;</i></li>
+                        <li class="result-option"><em class="f-ellipsis" title="融资方式：四个字吧">融资方式：四个字吧</em><i
+                                class="remove-self iconfont">&#xe681;</i></li>
+                        <li class="result-option"><em class="f-ellipsis" title="融资方式：四个字吧">融资方式：四个字吧</em><i
+                                class="remove-self iconfont">&#xe681;</i></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="filter-bar">
+            <span class="chosen">项目融资</span><span>资产交易</span><span>政府招商</span><span>投资理财</span>
+        </div>
+        <div class="filter-panel">
+            <div class="filter-row">
+                <div class="title-cell filter-cell">融资方式：</div>
+                <div class="content-cell filter-cell">
+                    <div class="choose-content">
+                        <ul class="choose-options">
+                            <li class="choose-option chosen">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                        </ul>
+                    </div>
+                    <div class="handle-content"></div>
+                </div>
+            </div>
+            <div class="filter-row">
+                <div class="title-cell filter-cell">所属行业：</div>
+                <div class="content-cell filter-cell">
+                    <div class="choose-content">
+                        <ul class="choose-options">
+                            <li class="choose-option chosen">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                        </ul>
+                        <div class="choose-btn-group">
+                            <a href="javascript:;" class="confirm-btn choose-btn">确 定</a>
+                            <a href="javascript:;" class="cancel-btn choose-btn">取 消</a>
+                        </div>
+                    </div>
+                    <div class="handle-content">
+                        <a href="javascript:;" class="more-btn handle-btn"><span>更多</span><i
+                                class="iconfont">&#xe9a2;</i></a>
+                        <a href="javascript:;" class="multiple-btn handle-btn"><span>多选</span><i class="iconfont">&#xe632;</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-row">
+                <div class="title-cell filter-cell">所在地区：</div>
+                <div class="content-cell filter-cell">
+                    <div class="choose-content">
+                        <ul class="choose-options">
+                            <li class="choose-option chosen">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                        </ul>
+                        <div class="choose-btn-group">
+                            <a href="javascript:;" class="confirm-btn choose-btn">确 定</a>
+                            <a href="javascript:;" class="cancel-btn choose-btn">取 消</a>
+                        </div>
+                    </div>
+                    <div class="handle-content">
+                        <a href="javascript:;" class="more-btn handle-btn"><span>更多</span><i
+                                class="iconfont">&#xe9a2;</i></a>
+                        <a href="javascript:;" class="multiple-btn handle-btn"><span>多选</span><i class="iconfont">&#xe632;</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-row">
+                <div class="title-cell filter-cell">融资金额：</div>
+                <div class="content-cell filter-cell">
+                    <div class="choose-content">
+                        <ul class="choose-options">
+                            <li class="choose-option chosen">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                            <li class="choose-option">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                            <li class="choose-option">俩字</li>
+                        </ul>
+                    </div>
+                    <div class="handle-content">
+                        <a href="javascript:;" class="more-btn handle-btn"><span>更多</span><i
+                                class="iconfont">&#xe9a2;</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-row">
+                <div class="title-cell filter-cell">项目阶段：</div>
+                <div class="content-cell filter-cell">
+                    <div class="choose-content">
+                        <ul class="choose-options">
+                            <li class="choose-option chosen">四个字吧</li>
+                            <li class="choose-option">三个字</li>
+                            <li class="choose-option">来五个字吧</li>
+                        </ul>
+                    </div>
+                    <div class="handle-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-wrap rn-inner f-clearfix">
+    <!--main-wrap-->
+    <main class="main-container">
+        <!--search-bar-->
+        <section class="search-bar f-clearfix">
+            <div class="f-pull-left">
+                <dl class="sort-group">
+                    <dt>排序：</dt>
+                    <dd class="chosen">综合排序</dd>
+                    <dd>更新时间</dd>
+                </dl>
+            </div>
+            <div class="search-wrap f-pull-right">
+                <input type="text" placeholder="在当前条件下搜索关键字试试">
+                <a href="javascript:;" class="search-btn">搜索</a>
+            </div>
+        </section>
+        <!--project-exhibition-->
+        <section class="project-exhibition">
+            <!--加载中 结构-->
+            <div class="u-loading-circle"></div>
+            <!--无内容 结构-->
+            <div class="empty-content">
+                <div class="icon iconfont">&#xe63b;</div>
+                <p>抱歉，没有找到符合条件的内容。</p>
+            </div>
+            <ul class="project-bars">
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+                <li class="project-bar">
+                    <div class="desc-cell">
+                        <div class="desc-head">
+                            <span class="title"><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目这是一个项目</a></span>
+                            <span><a href="javascript:;">某经理某经理</a></span>
+                        </div>
+                        <ul class="desc-list">
+                            <li class="f-ellipsis">所在地区：<span>浙江省</span></li>
+                            <li class="f-ellipsis">所在行业：<span>旅游酒店</span></li>
+                            <li class="f-ellipsis">投资资金：<span class="stress">100万～5亿</span></li>
+                            <li class="f-ellipsis">融资方式：<span>股权融资</span></li>
+                            <li class="f-ellipsis">融资用途：<span>项目建设用途</span></li>
+                        </ul>
+                        <div class="desc-foot">
+                            <span><i class="iconfont">&#xe67c;</i>2018-08-08</span>
+                            <span><i class="iconfont">&#xe605;</i>36次投递</span>
+                            <span><i class="iconfont">&#xe601;</i>10条留言</span>
+                        </div>
+                    </div>
+                    <div class="handle-cell">
+                        <a href="javascript:;" class="handle-btn">约谈项目</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="pagination-wrap">
+                <div class="m-default-pagination">100 条记录 2/3 页<a href='javascript:;'>上一页</a><a
+                        href="javascript:;">1</a><span
+                        class='current'>2</span><a href='javascript:;'>3</a><a href="javascript:;">下一页</a></div>
+            </div>
+        </section>
+    </main>
+    <!--aside-wrap-->
+    <aside class="aside-container">
+        <!--recommend-project-->
+        <aside class="recommend-project">
+            <div class="aside-head"><span class="title">优质推荐</span></div>
+            <ul class="project-cards">
+                <li class="project-card">
+                    <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic003.jpg"></a>
+                    <dl>
+                        <dt><a href="javascript:;" class="f-ellipsis">这是一个项目</a></dt>
+                        <dd class="f-ellipsis">投资行业：<span>行业行业行业</span></dd>
+                        <dd class="f-ellipsis">所在地区：<span>地区地区</span></dd>
+                        <dd class="f-ellipsis">投资金额：<span>500万～5亿</span></dd>
+                    </dl>
+                </li>
+                <li class="project-card">
+                    <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic003.jpg"></a>
+                    <dl>
+                        <dt><a href="javascript:;" class="f-ellipsis">这是一个项目这是一个项目</a></dt>
+                        <dd class="f-ellipsis">投资行业：<span>行业行业行业</span></dd>
+                        <dd class="f-ellipsis">所在地区：<span>地区地区</span></dd>
+                        <dd class="f-ellipsis">投资金额：<span>500万～5亿</span></dd>
+                    </dl>
+                </li>
+                <li class="project-card">
+                    <a href="javascript:;" class="pic"><img src="resource/img/rn_home_pic003.jpg"></a>
+                    <dl>
+                        <dt><a href="javascript:;" class="f-ellipsis">这是一个项目</a></dt>
+                        <dd class="f-ellipsis">投资行业：<span>行业行业行业</span></dd>
+                        <dd class="f-ellipsis">所在地区：<span>地区地区</span></dd>
+                        <dd class="f-ellipsis">投资金额：<span>500万～5亿</span></dd>
+                    </dl>
+                </li>
+            </ul>
+        </aside>
+    </aside>
+</div>
+<!--共用底部-->
+<footer class="rn-foot">
+    <div class="foot-link-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <dl class="link-group f-pull-left">
+                <dt>新手指导</dt>
+                <dd><a href="javascript:;">注册登录</a></dd>
+                <dd><a href="javascript:;">完善资料</a></dd>
+                <dd><a href="javascript:;">信息发布</a></dd>
+                <dd><a href="javascript:;">常见问题</a></dd>
+            </dl>
+            <dl class="link-group f-pull-left">
+                <dt>融诺金融服务</dt>
+                <dd><a href="javascript:;">融易通</a></dd>
+                <dd><a href="javascript:;">投易通</a></dd>
+                <dd><a href="javascript:;">信息投递</a></dd>
+                <dd><a href="javascript:;">信息刷新</a></dd>
+            </dl>
+            <dl class="link-group f-pull-left">
+                <dt>关于融诺金融</dt>
+                <dd><a href="javascript:;">融诺金融介绍</a></dd>
+                <dd><a href="javascript:;">联系我们</a></dd>
+                <dd><a href="javascript:;">网站公告</a></dd>
+                <dd><a href="javascript:;">网站地图</a></dd>
+            </dl>
+            <dl class="qrcode f-pull-left">
+                <dt>微信关注</dt>
+                <dd>
+                    <figure><img src="resource/img/rn_wx_qrcode.jpg"></figure>
+                </dd>
+            </dl>
+            <dl class="contact f-pull-right">
+                <dt>融诺网服务热线</dt>
+                <dd class="phone">400-6616-855</dd>
+                <dd class="time">（工作日 8:00-22:00 周六 9:00-18:00）</dd>
+                <dd class="mail">kefu@rongnuo.com</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-friendly-wrap rn-wrapper">
+        <div class="rn-inner">
+            <dl>
+                <dt>友情链接</dt>
+                <dd>
+                    <span><a href="javascript:;">友链</a></span><span><a href="javascript:;">友链</a></span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-copy rn-wrapper">
+        <div class="rn-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 4403050号</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    // m-default-filter-panel相关操作
+    function filterHandle($dom) {
+        var $moreBtn = $dom.find('.more-btn'),
+            $multipleBtn = $dom.find('.multiple-btn'),
+            $confirmBtn = $dom.find('.confirm-btn'),
+            $cancelBtn = $dom.find('.cancel-btn');
+        $moreBtn.on('click', function () {
+            if (!$(this).hasClass('active')) {
+                $(this).find('span').text('收起');
+                $(this).addClass('active').parents('.filter-row').addClass('open');
+            } else {
+                $(this).find('span').text('更多');
+                $(this).removeClass('active').parents('.filter-row').removeClass('open');
+                if ($(this).parents('.filter-row').hasClass('multiple')) {
+                    $(this).siblings('.multiple-btn').trigger('click');
+                }
+            }
+        });
+        $multipleBtn.on('click', function () {
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active').parents('.filter-row').addClass('multiple');
+                if (!$(this).parents('.filter-row').hasClass('open')) {
+                    $(this).siblings('.more-btn').trigger('click');
+                }
+            } else {
+                $(this).removeClass('active').parents('.filter-row').removeClass('multiple');
+                removeMultipleOptions($(this).parents('.filter-row').find('.choose-options'));
+            }
+        });
+        $cancelBtn.on('click', function () {
+            removeMultipleOptions($(this).parents('.filter-row').find('.choose-options'));
+        });
+
+        // 移除多选选项
+        function removeMultipleOptions($wrap) {
+            $wrap.find('.choose-option').removeClass('chosen');
+        }
+    }
+
+    filterHandle($('.m-default-filter-panel .filter-panel'));
+</script>
+</body>
+</html>

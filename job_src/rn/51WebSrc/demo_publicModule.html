@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共用组件展示-51资金项目</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+
+        .demo-panel .demo-panel-head {
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ec6527;
+        }
+
+        .demo-panel .demo-panel-head:before {
+            content: '§';
+            padding-right: 10px;
+        }
+
+        .demo-panel .demo-panel-body {
+            padding: 10px 0;
+        }
+    </style>
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="rn-inner">
+    <div class="demo-panel">
+        <div class="demo-panel-head">共用筛选 / m-default-filter-panel</div>
+        <div class="demo-panel-body">
+            <!--m-default-filter-panel-->
+            <div class="m-default-filter-panel">
+                <div class="filter-result">
+                    <dl>
+                        <dt>已选条件：</dt>
+                        <dd>
+                            <ul>
+                                <li class="result-option"><em class="f-ellipsis" title="标题标题：选项选项">标题标题：选项选项</em><i
+                                        class="remove-self iconfont">&#xe681;</i></li>
+                                <li class="result-option"><em class="f-ellipsis" title="标题标题：选项选项">标题标题：选项选项</em><i
+                                        class="remove-self iconfont">&#xe681;</i></li>
+                                <li class="result-option"><em class="f-ellipsis" title="标题标题：选项选项">标题标题：选项选项</em><i
+                                        class="remove-self iconfont">&#xe681;</i></li>
+                                <li class="result-option"><em class="f-ellipsis" title="标题标题：选项选项">标题标题：选项选项</em><i
+                                        class="remove-self iconfont">&#xe681;</i></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="filter-bar">
+                    <span class="chosen">选项</span><span>选项</span><span>选项</span><span>选项</span>
+                </div>
+                <div class="filter-panel">
+                    <div class="filter-row">
+                        <div class="title-cell filter-cell">多选/更多：</div>
+                        <div class="content-cell filter-cell">
+                            <div class="choose-content">
+                                <ul class="choose-options">
+                                    <li class="choose-option chosen">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                    <li class="choose-option">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                    <li class="choose-option">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                    <li class="choose-option">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                </ul>
+                                <div class="choose-btn-group">
+                                    <a href="javascript:;" class="confirm-btn choose-btn">确 定</a>
+                                    <a href="javascript:;" class="cancel-btn choose-btn">取 消</a>
+                                </div>
+                            </div>
+                            <div class="handle-content">
+                                <a href="javascript:;" class="more-btn handle-btn"><span>更多</span><i class="iconfont">&#xe9a2;</i></a>
+                                <a href="javascript:;" class="multiple-btn handle-btn"><span>多选</span><i
+                                        class="iconfont">&#xe632;</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <div class="title-cell filter-cell">更多：</div>
+                        <div class="content-cell filter-cell">
+                            <div class="choose-content">
+                                <ul class="choose-options">
+                                    <li class="choose-option chosen">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                    <li class="choose-option">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                    <li class="choose-option">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                    <li class="choose-option">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                </ul>
+                            </div>
+                            <div class="handle-content">
+                                <a href="javascript:;" class="more-btn handle-btn"><span>更多</span><i class="iconfont">&#xe9a2;</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <div class="title-cell filter-cell">默认：</div>
+                        <div class="content-cell filter-cell">
+                            <div class="choose-content">
+                                <ul class="choose-options">
+                                    <li class="choose-option chosen">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                </ul>
+                            </div>
+                            <div class="handle-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="demo-panel">
+        <div class="demo-panel-head">共用面包屑导航 / m-crumbs-nav</div>
+        <div class="demo-panel-body">
+            <!--m-crumbs-nav dl版-->
+            <nav class="m-crumbs-nav">
+                <dl>
+                    <dt>当前位置：</dt>
+                    <dd><a href="javascript:;">路径</a></dd>
+                    <dd><a href="javascript:;">路径</a></dd>
+                    <dd><span>标题</span></dd>
+                </dl>
+            </nav>
+            <!--m-crumbs-nav ul版-->
+            <nav class="m-crumbs-nav">
+                <ul>
+                    <li><a href="javascript:;">路径</a></li>
+                    <li><a href="javascript:;">路径</a></li>
+                    <li><span>标题</span></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="demo-panel">
+        <div class="demo-panel-head">共用默认分页器 / m-default-pagination</div>
+        <div class="demo-panel-body">
+            <!--m-default-pagination-->
+            <div class="m-default-pagination">100 条记录 2/3 页<a href="javascript:;">上一页</a><a
+                    href="javascript:;">1</a><span class="current">2</span><a href="javascript:;">3</a><a
+                    href="javascript:;">下一页</a></div>
+        </div>
+    </div>
+    <div class="demo-panel">
+        <div class="demo-panel-head">共用组合分页器 / m-group-pagination</div>
+        <div class="demo-panel-body">
+            <!--m-group-pagination-->
+            <div class="m-group-pagination">
+                <div class="page-nav">
+                    <a href="javascript:;">首页</a><a href="javascript:;">&lt; 上一页</a><a href="javascript:;">1</a><span
+                        class="current">2</span><a href="javascript:;">3</a><span>…</span><a href="javascript:;">下一页
+                    &gt;</a>
+                </div>
+                <div class="page-jump">
+                    到第<input type="text" value="10">页<input type="button" value="确定">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="demo-panel">
+        <div class="demo-panel-head">共用加载中 / u-loading-circle</div>
+        <div class="demo-panel-body">
+            <!--u-loading-circle-->
+            <div class="u-loading-circle"></div>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script>
+    // m-default-filter-panel相关操作
+    function filterHandle($dom) {
+        var $moreBtn = $dom.find('.more-btn'),
+            $multipleBtn = $dom.find('.multiple-btn'),
+            $confirmBtn = $dom.find('.confirm-btn'),
+            $cancelBtn = $dom.find('.cancel-btn');
+        $moreBtn.on('click', function () {
+            if (!$(this).hasClass('active')) {
+                $(this).find('span').text('收起');
+                $(this).addClass('active').parents('.filter-row').addClass('open');
+            } else {
+                $(this).find('span').text('更多');
+                $(this).removeClass('active').parents('.filter-row').removeClass('open');
+                if ($(this).parents('.filter-row').hasClass('multiple')) {
+                    $(this).siblings('.multiple-btn').trigger('click');
+                }
+            }
+        });
+        $multipleBtn.on('click', function () {
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active').parents('.filter-row').addClass('multiple');
+                if (!$(this).parents('.filter-row').hasClass('open')) {
+                    $(this).siblings('.more-btn').trigger('click');
+                }
+            } else {
+                $(this).removeClass('active').parents('.filter-row').removeClass('multiple');
+                removeMultipleOptions($(this).parents('.filter-row').find('.choose-options'));
+            }
+        });
+        $cancelBtn.on('click', function () {
+            removeMultipleOptions($(this).parents('.filter-row').find('.choose-options'));
+        });
+
+        // 移除多选选项
+        function removeMultipleOptions($wrap) {
+            $wrap.find('.choose-option').removeClass('chosen');
+        }
+    }
+
+    filterHandle($('.m-default-filter-panel .filter-panel'));
+</script>
+</body>
+</html>

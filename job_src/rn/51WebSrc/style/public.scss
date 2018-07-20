@@ -640,6 +640,223 @@
   }
 }
 
+/* m-default-filter-panel */
+.m-default-filter-panel {
+  $selfActiveColor: $globeColorStressDeep;
+  .filter-result {
+    $selfHeight: 22px;
+    $selfWidth: 70px;
+    display: table;
+    padding: 5px 0 10px;
+    font-size: 14px;
+    color: #333;
+    dt {
+      display: table-cell;
+      width: $selfWidth;
+      vertical-align: top;
+      line-height: $selfHeight;
+    }
+    dd {
+      display: table-cell;
+      vertical-align: top;
+      font-size: 0;
+      ul {
+        float: left;
+        margin: -5px 0 0 -20px;
+      }
+      li {
+        display: inline-block;
+        height: $selfHeight;
+        padding: 0 5px;
+        margin: 5px 0 0 20px;
+        vertical-align: middle;
+        line-height: $selfHeight - 2px;
+        font-size: 14px;
+        border: 1px dashed #999;
+        cursor: pointer;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        em {
+          max-width: 150px;
+        }
+        i {
+          margin-left: 4px;
+        }
+        &:hover {
+          color: $selfActiveColor;
+          border-color: $selfActiveColor;
+        }
+      }
+    }
+  }
+  .filter-bar {
+    background-color: #fff;
+    font-size: 0;
+    color: #333;
+    span {
+      position: relative;
+      display: inline-block;
+      padding: 18px;
+      vertical-align: middle;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        color: $selfActiveColor;
+      }
+      &.chosen {
+        color: $selfActiveColor;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          border-top: 2px solid $selfActiveColor;
+        }
+      }
+    }
+  }
+  .filter-panel {
+    $selfOptionHeight: 22px;
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+    color: #333;
+    .filter-row {
+      display: table-row;
+      background-color: #fff;
+    }
+    .filter-cell {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .title-cell {
+      width: 110px;
+      padding: 14px;
+      line-height: $selfOptionHeight;
+      background-color: #eee;
+    }
+    .content-cell {
+      position: relative;
+      padding: 14px 30px;
+      border-bottom: 1px solid #eff1f7;
+    }
+    .choose-content {
+      height: 22px;
+      margin-right: 150px;
+      overflow: hidden;
+      .choose-options {
+        margin: -14px 0 0 -20px;
+        font-size: 0;
+        .choose-option {
+          display: inline-block;
+          margin: 14px 0 0 20px;
+          vertical-align: top;
+          height: $selfOptionHeight;
+          padding: 0 5px;
+          line-height: $selfOptionHeight - 2px;
+          font-size: 14px;
+          border: 1px solid transparent;
+          cursor: pointer;
+          &:hover {
+            color: $selfActiveColor;
+            border-color: $selfActiveColor;
+          }
+          &.chosen {
+            color: #fff;
+            background-color: $selfActiveColor;
+          }
+        }
+      }
+      .choose-btn-group {
+        display: none;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 0;
+        .choose-btn {
+          $selfHeight: 26px;
+          $selfColor: #ccc;
+          display: inline-block;
+          min-width: 70px;
+          height: $selfHeight;
+          padding: 0 12px;
+          margin: 0 10px;
+          vertical-align: middle;
+          line-height: $selfHeight;
+          text-align: center;
+          font-size: 14px;
+          color: #fff;
+          background-color: $selfColor;
+          &:hover {
+            background-color: $selfColor - 15%;
+          }
+          &:active {
+            background-color: $selfColor - 30%;
+          }
+          &.confirm-btn {
+            $selfColor: $selfActiveColor;
+            background-color: $selfColor;
+            &:hover {
+              background-color: $selfColor - 15%;
+            }
+            &:active {
+              background-color: $selfColor - 30%;
+            }
+          }
+        }
+      }
+    }
+    .handle-content {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      padding: 14px 0;
+      font-size: 12px;
+      color: #999;
+      .handle-btn {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 22px;
+        & > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        i {
+          margin-left: 4px;
+          transition: transform .3s ease-out;
+        }
+        &.active {
+          color: $selfActiveColor;
+          &.more-btn {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+      .handle-btn + .handle-btn {
+        margin-left: 14px;
+      }
+    }
+    .filter-row {
+      &.open {
+        .choose-content {
+          height: auto;
+        }
+      }
+      &.multiple {
+        .choose-content {
+          .choose-btn-group {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* ---元件类公用(.u-开头)--- */
 /* u-loading-circle */
 .u-loading-circle {

@@ -1,0 +1,291 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeColorStressDeep;
+
+body {
+  background-color: #eff1f7;
+}
+
+/* filter-container */
+.filter-container {
+  padding-top: 20px;
+}
+
+.container-wrap {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* main-container */
+.main-container {
+  float: left;
+  width: 920px;
+  & > section + section {
+    margin-top: 20px;
+  }
+  // search-bar
+  .search-bar {
+    padding: 10px 20px;
+    background-color: #fff;
+    .sort-group {
+      $selfHeight: 26px;
+      padding: 2px 0;
+      font-size: 0;
+      dt, dd {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+      }
+      dt {
+        line-height: $selfHeight;
+        color: #333;
+      }
+      dd {
+        height: $selfHeight;
+        padding: 0 10px;
+        line-height: $selfHeight - 2px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        &:hover {
+          color: $selfActiveColor;
+          border-color: $selfActiveColor;
+        }
+        &.chosen {
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-color: $selfActiveColor;
+        }
+      }
+      dd + dd {
+        margin-left: 10px;
+      }
+    }
+    .search-wrap {
+      $selfHeight: 30px;
+      font-size: 0;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+      }
+      input[type='text'] {
+        width: 237px;
+        height: $selfHeight;
+        padding: 0 14px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        &:focus {
+          border-color: $selfActiveColor;
+        }
+      }
+      .search-btn {
+        height: $selfHeight;
+        padding: 0 16px;
+        margin-left: 10px;
+        line-height: $selfHeight;
+        color: #fff;
+        background-color: $selfActiveColor;
+        &:hover {
+          background-color: $selfActiveColor - 15%;
+        }
+        &:active {
+          background-color: $selfActiveColor - 30%;
+        }
+      }
+    }
+  }
+  // project-exhibition
+  .project-exhibition {
+    margin-top: 10px;
+    .empty-content {
+      padding: 60px 0;
+      text-align: center;
+      font-size: 16px;
+      color: #ccc;
+      background-color: #fff;
+      .icon {
+        font-size: 72px;
+      }
+      p {
+        margin-top: 20px - 2px;
+        line-height: 20px;
+      }
+    }
+    .project-bar {
+      width: 100%;
+      padding: 20px;
+      font-size: 0;
+      background-color: #fff;
+      border: 1px solid transparent;
+      .desc-cell {
+        display: inline-block;
+        width: 920px - 150px - 20px - 20px - 2px;
+        vertical-align: middle;
+        font-size: 14px;
+        .desc-head {
+          font-size: 0;
+          & > span {
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            &.title {
+              max-width: 500px;
+              font-size: 16px;
+            }
+            & + span {
+              margin-left: 30px;
+            }
+            a {
+              max-width: 100%;
+              vertical-align: middle;
+            }
+          }
+        }
+        .desc-list {
+          margin-top: 10px;
+          font-size: 0;
+          li {
+            display: inline-block;
+            width: 33.33333%;
+            padding: 10px 10px 10px 0;
+            font-size: 12px;
+            span {
+              color: #333;
+            }
+            .stress {
+              font-size: 16px;
+              font-weight: bold;
+              color: $selfActiveColor;
+            }
+          }
+        }
+        .desc-foot {
+          margin-top: 10px;
+          font-size: 0;
+          & > span {
+            font-size: 12px;
+            & + span {
+              margin-left: 40px;
+            }
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      .handle-cell {
+        display: inline-block;
+        width: 150px;
+        vertical-align: middle;
+        text-align: right;
+        font-size: 14px;
+        .handle-btn {
+          $selfHeight: 40px;
+          display: inline-block;
+          min-width: 120px;
+          height: $selfHeight;
+          padding: 0 24px;
+          vertical-align: middle;
+          line-height: $selfHeight;
+          text-align: center;
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-radius: 5px;
+          &:hover {
+            background-color: $selfActiveColor - 15%;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+      &:hover {
+        border-color: $selfActiveColor;
+      }
+    }
+    .project-bar + .project-bar {
+      margin-top: 10px;
+    }
+    .pagination-wrap {
+      padding: 20px 0;
+    }
+  }
+}
+
+/* aside-container */
+.aside-container {
+  float: right;
+  width: 260px;
+  & > aside + aside {
+    margin-top: 20px;
+  }
+  // recommend-project
+  .recommend-project {
+    .aside-head {
+      background-color: #fff;
+      .title {
+        position: relative;
+        display: inline-block;
+        padding: 18px 12px;
+        vertical-align: middle;
+        color: #333;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          border-bottom: 2px solid #d00;
+        }
+      }
+    }
+    .project-card {
+      width: 100%;
+      margin-top: 10px;
+      background-color: #fff;
+      .pic {
+        display: block;
+        width: 100%;
+        height: 213px;
+        overflow: hidden;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transition: transform .3s ease-out;
+        }
+        &:hover {
+          img {
+            transform: scale(1.03);
+          }
+        }
+      }
+      dl {
+        padding: 20px;
+      }
+      dt {
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: $selfActiveColor;
+        a {
+          max-width: 100%;
+          transition: transform .3s ease-out;
+          &:hover {
+            transform: translateX(6px);
+          }
+        }
+      }
+      dd {
+        width: 100%;
+        margin-top: 12px;
+        font-size: 12px;
+        span {
+          color: #333;
+        }
+      }
+    }
+  }
+}
