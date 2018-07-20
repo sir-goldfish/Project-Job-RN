@@ -100,6 +100,28 @@
                         </div>
                     </div>
                     <div class="filter-row">
+                        <div class="title-cell filter-cell">多选：</div>
+                        <div class="content-cell filter-cell">
+                            <div class="choose-content">
+                                <ul class="choose-options">
+                                    <li class="choose-option chosen">四个字吧</li>
+                                    <li class="choose-option">三个字</li>
+                                    <li class="choose-option">来五个字吧</li>
+                                    <li class="choose-option">俩字</li>
+                                    <li class="choose-option">四个字吧</li>
+                                </ul>
+                                <div class="choose-btn-group">
+                                    <a href="javascript:;" class="confirm-btn choose-btn">确 定</a>
+                                    <a href="javascript:;" class="cancel-btn choose-btn">取 消</a>
+                                </div>
+                            </div>
+                            <div class="handle-content">
+                                <a href="javascript:;" class="multiple-btn handle-btn"><span>多选</span><i
+                                        class="iconfont">&#xe632;</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-row">
                         <div class="title-cell filter-cell">更多：</div>
                         <div class="content-cell filter-cell">
                             <div class="choose-content">
@@ -224,11 +246,18 @@
             if (!$(this).hasClass('active')) {
                 $(this).addClass('active').parents('.filter-row').addClass('multiple');
                 if (!$(this).parents('.filter-row').hasClass('open')) {
-                    $(this).siblings('.more-btn').trigger('click');
+                    if (!$(this).siblings('.more-btn').length) {
+                        $(this).parents('.filter-row').addClass('open');
+                    } else {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
                 }
             } else {
                 $(this).removeClass('active').parents('.filter-row').removeClass('multiple');
                 removeMultipleOptions($(this).parents('.filter-row').find('.choose-options'));
+                if (!$(this).siblings('.more-btn').length) {
+                    $(this).parents('.filter-row').removeClass('open');
+                }
             }
         });
         $cancelBtn.on('click', function () {

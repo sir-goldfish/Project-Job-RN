@@ -639,11 +639,18 @@
             if (!$(this).hasClass('active')) {
                 $(this).addClass('active').parents('.filter-row').addClass('multiple');
                 if (!$(this).parents('.filter-row').hasClass('open')) {
-                    $(this).siblings('.more-btn').trigger('click');
+                    if (!$(this).siblings('.more-btn').length) {
+                        $(this).parents('.filter-row').addClass('open');
+                    } else {
+                        $(this).siblings('.more-btn').trigger('click');
+                    }
                 }
             } else {
                 $(this).removeClass('active').parents('.filter-row').removeClass('multiple');
                 removeMultipleOptions($(this).parents('.filter-row').find('.choose-options'));
+                if (!$(this).siblings('.more-btn').length) {
+                    $(this).parents('.filter-row').removeClass('open');
+                }
             }
         });
         $cancelBtn.on('click', function () {
