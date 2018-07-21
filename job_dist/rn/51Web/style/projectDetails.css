@@ -83,6 +83,8 @@ body { background-color: #eff1f7; }
 
 .main-container .common-panel-body .file-list .cell { display: table-cell; vertical-align: middle; }
 
+.main-container .common-panel-body .file-list .cell.link-cell { max-width: 600px; }
+
 .main-container .common-panel-body .file-list .cell.link-cell a { max-width: 100%; }
 
 .main-container .common-panel-body .file-list .cell.handle-cell { width: 150px; text-align: right; }
@@ -111,7 +113,7 @@ body { background-color: #eff1f7; }
 
 .main-container .comment-panel .comment-publish { padding: 20px 0 0; }
 
-.main-container .comment-panel .comment-publish .input-box textarea { width: 100%; min-width: 100%; max-width: 100%; padding: 10px; font-size: 12px; color: #333; background-color: transparent; border: 1px solid #eff1f7; }
+.main-container .comment-panel .comment-publish .input-box textarea { width: 100%; min-height: 40px; padding: 10px; font-size: 12px; color: #333; background-color: transparent; border: 1px solid #eff1f7; }
 
 .main-container .comment-panel .comment-publish .input-box textarea:focus { border-color: #d1d3d9; }
 

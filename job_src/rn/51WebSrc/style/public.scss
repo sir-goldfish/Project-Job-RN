@@ -940,6 +940,150 @@
   }
 }
 
+/* m-default-dialog-form */
+.m-default-dialog-form {
+  $selfActiveColor: $globeColorStressDeep;
+  $selfHeight: 32px;
+  $selfBorderRadius: 5px;
+  width: 580px;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .stress {
+    color: $selfActiveColor;
+  }
+  .hint-info {
+    min-height: 20px;
+    padding: 5px 0;
+    line-height: 14px;
+    font-size: 12px;
+    color: #f00;
+  }
+  .notice {
+    line-height: 18px;
+  }
+  .handle-btn {
+    $selfColor: $selfActiveColor;
+    display: inline-block;
+    height: $selfHeight;
+    padding: 0 12px;
+    vertical-align: top;
+    line-height: $selfHeight;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: $selfColor;
+    border-radius: $selfBorderRadius;
+    overflow: hidden;
+    &:hover {
+      background-color: $selfColor - 15%;
+    }
+    &:active {
+      background-color: $selfColor - 30%;
+    }
+    &.blue-btn {
+      $selfColor: #5a98df;
+      background-color: $selfColor;
+      &:hover {
+        background-color: $selfColor - 15%;
+      }
+      &:active {
+        background-color: $selfColor - 30%;
+      }
+    }
+  }
+  .form-row {
+    display: table-row;
+    width: 100%;
+  }
+  .form-cell {
+    display: table-cell;
+    vertical-align: top;
+    &.title-cell {
+      width: 25%;
+      text-align: right;
+      .title {
+        display: inline-block;
+        padding: ($selfHeight - 18px ) /2 0;
+        line-height: 18px;
+        &.star-title {
+          &:before {
+            content: '*';
+            margin-right: 2px;
+            font-size: .8em;
+            color: #f00;
+          }
+        }
+      }
+    }
+    &.content-cell {
+      width: 75%;
+      padding-right: 30px;
+    }
+    input[type='text'],
+    input[type='password'],
+    textarea,
+    select {
+      width: 100%;
+      height: $selfHeight;
+      padding: 0 12px;
+      vertical-align: top;
+      background-color: transparent;
+      border: 1px solid #ddd;
+      border-radius: $selfBorderRadius;
+      &:focus {
+        border-color: $selfActiveColor;
+      }
+    }
+    textarea {
+      min-height: $selfHeight + 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: auto;
+    }
+    select {
+      padding-right: 0;
+    }
+    input[type='checkbox'], input[type='radio'] {
+      vertical-align: middle;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+      line-height: 18px;
+      input[type='checkbox'], input[type='radio'] {
+        margin-right: 4px;
+      }
+    }
+    .label-group {
+      padding: ($selfHeight - 18px) / 2 0;
+      label {
+        margin-right: 10px;
+        vertical-align: top;
+      }
+    }
+    .handle-btn.input-btn {
+      padding: 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .notice {
+      padding: ($selfHeight - 18px ) /2 0;
+    }
+  }
+}
+
 /* ---元件类公用(.u-开头)--- */
 /* u-loading-circle */
 .u-loading-circle {

@@ -80,6 +80,10 @@ input, button, textarea, select {
   outline: none;
 }
 
+textarea {
+  resize: vertical;
+}
+
 input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   font-size: 1em;
   color: #999;

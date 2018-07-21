@@ -372,6 +372,65 @@
 
 .m-default-filter-panel .filter-panel .filter-row.multiple .choose-content .choose-btn-group { display: block; }
 
+/* m-default-dialog-form */
+.m-default-dialog-form { width: 580px; padding: 20px; margin: 0 auto; font-size: 14px; color: #333; background-color: #fff; }
+
+.m-default-dialog-form img { display: block; max-width: 100%; height: auto; margin-left: auto; margin-right: auto; }
+
+.m-default-dialog-form .stress { color: #ec6527; }
+
+.m-default-dialog-form .hint-info { min-height: 20px; padding: 5px 0; line-height: 14px; font-size: 12px; color: #f00; }
+
+.m-default-dialog-form .notice { line-height: 18px; }
+
+.m-default-dialog-form .handle-btn { display: inline-block; height: 32px; padding: 0 12px; vertical-align: top; line-height: 32px; text-align: center; font-size: 12px; color: #fff; background-color: #ec6527; border-radius: 5px; overflow: hidden; }
+
+.m-default-dialog-form .handle-btn:hover { background-color: #dd5618; }
+
+.m-default-dialog-form .handle-btn:active { background-color: #ce4709; }
+
+.m-default-dialog-form .handle-btn.blue-btn { background-color: #5a98df; }
+
+.m-default-dialog-form .handle-btn.blue-btn:hover { background-color: #4b89d0; }
+
+.m-default-dialog-form .handle-btn.blue-btn:active { background-color: #3c7ac1; }
+
+.m-default-dialog-form .form-row { display: table-row; width: 100%; }
+
+.m-default-dialog-form .form-cell { display: table-cell; vertical-align: top; }
+
+.m-default-dialog-form .form-cell.title-cell { width: 25%; text-align: right; }
+
+.m-default-dialog-form .form-cell.title-cell .title { display: inline-block; padding: 7px 0; line-height: 18px; }
+
+.m-default-dialog-form .form-cell.title-cell .title.star-title:before { content: '*'; margin-right: 2px; font-size: .8em; color: #f00; }
+
+.m-default-dialog-form .form-cell.content-cell { width: 75%; padding-right: 30px; }
+
+.m-default-dialog-form .form-cell input[type='text'], .m-default-dialog-form .form-cell input[type='password'], .m-default-dialog-form .form-cell textarea, .m-default-dialog-form .form-cell select { width: 100%; height: 32px; padding: 0 12px; vertical-align: top; background-color: transparent; border: 1px solid #ddd; border-radius: 5px; }
+
+.m-default-dialog-form .form-cell input[type='text']:focus, .m-default-dialog-form .form-cell input[type='password']:focus, .m-default-dialog-form .form-cell textarea:focus, .m-default-dialog-form .form-cell select:focus { border-color: #ec6527; }
+
+.m-default-dialog-form .form-cell textarea { min-height: 52px; padding-top: 10px; padding-bottom: 10px; height: auto; }
+
+.m-default-dialog-form .form-cell select { padding-right: 0; }
+
+.m-default-dialog-form .form-cell input[type='checkbox'], .m-default-dialog-form .form-cell input[type='radio'] { vertical-align: middle; }
+
+.m-default-dialog-form .form-cell label { display: inline-block; margin-bottom: 5px; line-height: 18px; }
+
+.m-default-dialog-form .form-cell label input[type='checkbox'], .m-default-dialog-form .form-cell label input[type='radio'] { margin-right: 4px; }
+
+.m-default-dialog-form .form-cell .label-group { padding: 7px 0; }
+
+.m-default-dialog-form .form-cell .label-group label { margin-right: 10px; vertical-align: top; }
+
+.m-default-dialog-form .form-cell .handle-btn.input-btn { padding: 0; }
+
+.m-default-dialog-form .form-cell .handle-btn.input-btn img { width: 100%; height: 100%; }
+
+.m-default-dialog-form .form-cell .notice { padding: 7px 0; }
+
 /* ---元件类公用(.u-开头)--- */
 /* u-loading-circle */
 .u-loading-circle { min-width: 70px; min-height: 70px; margin-left: auto; margin-right: auto; background: url(../resource/img/rn_loading_circle.gif) no-repeat center; }

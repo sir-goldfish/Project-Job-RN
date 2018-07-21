@@ -30,6 +30,8 @@ table th, table td { word-wrap: break-word; word-break: break-all; }
 
 input, button, textarea, select { font-size: inherit; outline: none; }
 
+textarea { resize: vertical; }
+
 input::-webkit-input-placeholder { /* WebKit, Blink, Edge */ font-size: 1em; color: #999; }
 
 input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ font-size: 1em; color: #999; }
