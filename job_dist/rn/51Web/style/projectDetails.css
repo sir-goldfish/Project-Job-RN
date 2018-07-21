@@ -109,6 +109,38 @@ body { background-color: #eff1f7; }
 
 .main-container .common-panel-body .tags dd a:active { background-color: #ce4709; }
 
+.main-container .common-panel-body .file-exhibition-wrap { width: 100%; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition { position: relative; width: 100%; overflow: hidden; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .swiper-slide { float: left; width: 100%; padding: 20px 40px; text-align: center; font-size: 0; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .swiper-slide:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .swiper-slide img { display: inline-block; max-width: 100%; max-height: 100%; vertical-align: middle; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-prev-btn, .main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-next-btn { position: absolute; top: 50%; z-index: 1; width: 24px; height: 24px; margin-top: -12px; line-height: 24px; text-align: center; font-size: 12px; color: #666; background-color: #eff1f7; border-radius: 50%; overflow: hidden; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-prev-btn:hover, .main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-next-btn:hover { color: #fff; background-color: #ec6527; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-prev-btn:active, .main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-next-btn:active { background-color: #ce4709; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-prev-btn.swiper-button-disabled, .main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-next-btn.swiper-button-disabled { color: #fff; background-color: #ddd; cursor: not-allowed; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-prev-btn { left: 10px; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-next-btn { right: 10px; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav { width: 100%; padding: 10px 0; background-color: #eff1f7; overflow: hidden; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav .swiper-slide { float: left; width: 80px; height: 100px; padding: 5px; text-align: center; font-size: 0; background-color: #fff; border: 1px solid transparent; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav .swiper-slide:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav .swiper-slide img { display: inline-block; max-width: 100%; max-height: 100%; vertical-align: middle; }
+
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav .swiper-slide.swiper-slide-active { border-color: #ec6527; }
+
 .main-container .comment-panel { padding: 20px 30px; background-color: #fff; }
 
 .main-container .comment-panel .comment-publish { padding: 20px 0 0; }

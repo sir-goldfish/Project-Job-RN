@@ -289,6 +289,92 @@ body {
         }
       }
     }
+    .file-exhibition-wrap {
+      width: 100%;
+      .file-exhibition {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .swiper-slide {
+          float: left;
+          width: 100%;
+          padding: 20px 40px;
+          text-align: center;
+          font-size: 0;
+          &:before {
+            @include globalVerticalMiddleAssist;
+          }
+          img {
+            display: inline-block;
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+          }
+        }
+        .exhibition-prev-btn, .exhibition-next-btn {
+          $selfHeight: 24px;
+          position: absolute;
+          top: 50%;
+          z-index: 1;
+          width: $selfHeight;
+          height: $selfHeight;
+          margin-top: - $selfHeight / 2;
+          line-height: $selfHeight;
+          text-align: center;
+          font-size: 12px;
+          color: #666;
+          background-color: #eff1f7;
+          border-radius: 50%;
+          overflow: hidden;
+          &:hover {
+            color: #fff;
+            background-color: $selfActiveColor;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+          &.swiper-button-disabled {
+            color: #fff;
+            background-color: #ddd;
+            cursor: not-allowed;
+          }
+        }
+        .exhibition-prev-btn {
+          left: 10px;
+        }
+        .exhibition-next-btn {
+          right: 10px;
+        }
+      }
+      .file-exhibition-nav {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #eff1f7;
+        overflow: hidden;
+        .swiper-slide {
+          float: left;
+          width: 80px;
+          height: 100px;
+          padding: 5px;
+          text-align: center;
+          font-size: 0;
+          background-color: #fff;
+          border: 1px solid transparent;
+          &:before {
+            @include globalVerticalMiddleAssist;
+          }
+          img {
+            display: inline-block;
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+          }
+          &.swiper-slide-active {
+            border-color: $selfActiveColor;
+          }
+        }
+      }
+    }
   }
   // comment-panel
   .comment-panel {
