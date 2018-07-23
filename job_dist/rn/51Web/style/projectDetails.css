@@ -113,7 +113,7 @@ body { background-color: #eff1f7; }
 
 .main-container .common-panel-body .file-exhibition-wrap .file-exhibition { position: relative; width: 100%; overflow: hidden; }
 
-.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .swiper-slide { float: left; width: 100%; padding: 20px 40px; text-align: center; font-size: 0; }
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition .swiper-slide { float: left; width: 100%; height: 600px; padding: 20px 40px; text-align: center; font-size: 0; }
 
 .main-container .common-panel-body .file-exhibition-wrap .file-exhibition .swiper-slide:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
 
@@ -131,7 +131,7 @@ body { background-color: #eff1f7; }
 
 .main-container .common-panel-body .file-exhibition-wrap .file-exhibition .exhibition-next-btn { right: 10px; }
 
-.main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav { width: 100%; padding: 10px 0; background-color: #eff1f7; overflow: hidden; }
+.main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav { width: 100%; height: 120px; padding: 10px 0; background-color: #eff1f7; overflow: hidden; }
 
 .main-container .common-panel-body .file-exhibition-wrap .file-exhibition-nav .swiper-slide { float: left; width: 80px; height: 100px; padding: 5px; text-align: center; font-size: 0; background-color: #fff; border: 1px solid transparent; }
 
