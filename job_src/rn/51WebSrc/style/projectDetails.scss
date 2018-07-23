@@ -507,6 +507,38 @@ body {
       .comment-bar {
         $selfPicWidth: 60px;
         padding: 20px 0;
+        .handle-btn {
+          $selfHeight: 24px;
+          $selfColor: $selfActiveColor;
+          display: inline-block;
+          height: $selfHeight;
+          padding: 0 12px;
+          vertical-align: middle;
+          line-height: $selfHeight;
+          font-size: 12px;
+          color: #fff;
+          background-color: $selfColor;
+          border-radius: 5px;
+          &:hover {
+            background-color: $selfColor - 15%;
+          }
+          &:active {
+            background-color: $selfColor - 30%;
+          }
+          &.blue-btn {
+            $selfColor: #5a98df;
+            background-color: $selfColor;
+            &:hover {
+              background-color: $selfColor - 15%;
+            }
+            &:active {
+              background-color: $selfColor - 30%;
+            }
+          }
+        }
+        .handle-btn + .handle-btn {
+          margin-left: 10px;
+        }
         figure {
           float: left;
           width: $selfPicWidth;
@@ -559,6 +591,10 @@ body {
               }
             }
           }
+          .bar-handle-group {
+            padding: 10px 0;
+            text-align: right;
+          }
           .para {
             margin-top: 20px - 2px;
             line-height: 18px;
@@ -586,6 +622,19 @@ body {
               border-right-color: transparent;
               border-top: none;
               overflow: hidden;
+            }
+            .stress {
+              color: $selfActiveColor;
+            }
+            textarea {
+              display: block;
+              width: 100%;
+              background-color: transparent;
+              border: none;
+            }
+            .reply-handle-group {
+              padding-top: 15px;
+              text-align: right;
             }
           }
         }
