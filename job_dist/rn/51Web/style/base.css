@@ -22,7 +22,7 @@ em { font-style: normal; }
 
 .iconfont { font-size: inherit; }
 
-table { border-collapse: collapse; border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; font-size: inherit; }
 
 table .table-loading { min-width: 120px; height: 18px; margin: 0 auto; background: url(../resource/img/rn_loading.gif) no-repeat center; }
 

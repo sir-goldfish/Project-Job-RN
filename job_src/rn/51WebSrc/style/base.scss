@@ -63,6 +63,7 @@ em {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-size: inherit;
   .table-loading {
     min-width: 120px;
     height: 18px;
