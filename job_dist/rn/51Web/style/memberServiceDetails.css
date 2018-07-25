@@ -1,0 +1,67 @@
+body { background-color: #eff1f7; }
+
+/* head-ad */
+.head-ad { height: 260px; }
+
+.head-ad .ad-link { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; }
+
+/* compare-wrap */
+.compare-wrap { padding-top: 30px; padding-bottom: 50px; }
+
+.compare-table { width: 100%; }
+
+.compare-table th, .compare-table td { background-color: #fff; }
+
+.compare-table thead th { position: relative; padding: 27px; font-size: 18px; font-weight: bold; color: #fff; }
+
+.compare-table thead th.recommend:before { content: ''; position: absolute; top: 0; left: 0; width: 40px; height: 18px; background: url(../resource/img/rn_pic007.png) no-repeat center; }
+
+.compare-table thead th:nth-child(1) { font-size: 24px; background-color: #da3c3c; }
+
+.compare-table thead th:nth-child(2) { background-color: #2fcb87; }
+
+.compare-table thead th:nth-child(3) { background-color: #ffad1d; border-right: 1px solid #ffad1d; }
+
+.compare-table tbody { color: #333; }
+
+.compare-table tbody th, .compare-table tbody td { border-bottom: 1px solid #e4e7ef; }
+
+.compare-table tbody th { padding: 20px 50px; font-size: 0; font-weight: normal; }
+
+.compare-table tbody th > * { display: inline-block; vertical-align: middle; }
+
+.compare-table tbody th .icon { width: 32px; height: 30px; background: url(../resource/img/rn_sprites001.png) no-repeat 0 0; }
+
+.compare-table tbody th .text { margin-left: 30px; }
+
+.compare-table tbody th h3 { font-size: 16px; }
+
+.compare-table tbody th p { margin-top: 10px; font-size: 12px; }
+
+.compare-table tbody td { padding: 20px; }
+
+.compare-table tbody td:nth-child(2) { border-left: 1px solid #2fcb87; }
+
+.compare-table tbody td:nth-child(3) { border-left: 1px solid #ffad1d; border-right: 1px solid #ffad1d; }
+
+.compare-table tbody td .status-icon { display: inline-block; width: 25px; height: 20px; background: url(../resource/img/rn_pic007_1.png) no-repeat center; }
+
+.compare-table tbody td .status-icon.no { background-image: url(../resource/img/rn_pic007_2.png); }
+
+.compare-table tbody td .handle-group { font-size: 0; }
+
+.compare-table tbody td .handle-group > * { display: inline-block; vertical-align: middle; }
+
+.compare-table tbody td .handle-group .price { font-size: 12px; }
+
+.compare-table tbody td .handle-group .price .num { font-size: 1.6em; color: #ec6527; }
+
+.compare-table tbody td .handle-group .handle-btn { padding: 0 28px; margin-left: 24px; line-height: 40px; font-size: 16px; color: #fff; background-color: #ec6527; border-radius: 5px; }
+
+.compare-table tbody td .handle-group .handle-btn:hover { background-color: #dd5618; }
+
+.compare-table tbody td .handle-group .handle-btn:active { background-color: #ce4709; }
+
+.compare-table tbody tr:last-child td:nth-child(2) { border-bottom: 1px solid #2fcb87; }
+
+.compare-table tbody tr:last-child td:nth-child(3) { border-bottom: 1px solid #ffad1d; }

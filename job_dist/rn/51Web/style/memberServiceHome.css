@@ -1,0 +1,63 @@
+body { background-color: #eff1f7; }
+
+/* head-ad */
+.head-ad { height: 260px; }
+
+.head-ad .ad-link { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; }
+
+/* service-panel */
+.service-panel-wrap { margin-top: 20px; }
+
+.service-panel { padding: 10px 30px 40px; color: #333; background-color: #fff; }
+
+.service-panel .panel-head { border-bottom: 1px solid #eff1f7; }
+
+.service-panel .panel-head .title { position: relative; display: inline-block; padding: 20px 0; }
+
+.service-panel .panel-head .title:after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; border-bottom: 2px solid #d00; }
+
+.service-panel .panel-body { padding-top: 20px; }
+
+.service-panel .service-card { float: left; width: 550px; height: 455px; background-color: #fff; border-top-left-radius: 10px; border-top-right-radius: 10px; box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.35); overflow: hidden; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
+
+.service-panel .service-card .card-head { padding: 38px 0; text-align: center; font-size: 24px; font-weight: bold; color: #fff; }
+
+.service-panel .service-card .card-body { padding: 30px 0 0; margin: 0 40px; border-bottom: 1px solid #e4e7ef; }
+
+.service-panel .service-card .card-body .icon { width: 100px; height: 100px; margin: 0 auto; background-repeat: no-repeat; background-position: center; background-size: 100%; border-radius: 50%; box-shadow: 0 2px 5px 0 rgba(51, 51, 51, 0.35); }
+
+.service-panel .service-card .card-body p { height: 88px; margin-top: 22px; line-height: 30px; text-align: center; font-size: 14px; }
+
+.service-panel .service-card .card-foot { display: table; width: 100%; padding: 0 40px; }
+
+.service-panel .service-card .card-foot .cell { display: table-cell; padding-top: 28px; vertical-align: middle; }
+
+.service-panel .service-card .card-foot .price .num { font-size: 2em; color: #ec6527; }
+
+.service-panel .service-card .card-foot .handle-btn { padding: 0 30px; line-height: 40px; text-align: center; color: #fff; background-color: #ec6527; border-radius: 5px; }
+
+.service-panel .service-card .card-foot .handle-btn:hover { background-color: #dd5618; }
+
+.service-panel .service-card .card-foot .handle-btn:active { background-color: #ce4709; }
+
+.service-panel .service-card:hover { -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); box-shadow: 0 4px 10px 0 rgba(153, 153, 153, 0.35); }
+
+.service-panel .service-cards { margin: -20px 0 0 -40px; }
+
+.service-panel .service-cards .service-card { margin: 20px 0 0 40px; }
+
+.service-panel .service-cards.single-service-cards .service-card { width: 353px; height: 410px; }
+
+.service-panel .service-cards.single-service-cards .service-card .card-head { padding-top: 18px; padding-bottom: 18px; }
+
+.service-panel .service-cards.single-service-cards .service-card .card-body { padding-top: 40px; margin-left: 35px; margin-right: 35px; }
+
+.service-panel .service-cards.single-service-cards .service-card .card-body .icon { width: 90px; height: 90px; }
+
+.service-panel .service-cards.single-service-cards .service-card .card-body p { height: 85px; margin-top: 40px; line-height: 24px; text-align: justify; }
+
+.service-panel .service-cards.single-service-cards .service-card .card-foot { padding-left: 35px; padding-right: 35px; }
+
+.service-panel .service-cards.single-service-cards .service-card .card-foot .cell { padding-top: 24px; }
+
+.service-panel .service-cards.single-service-cards .service-card .card-foot .handle-btn { padding: 0 20px; }
