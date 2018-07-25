@@ -69,11 +69,11 @@ body { background-color: #eff1f7; }
 
 .user-panel .panel-body .desc .desc-foot ul li + li { margin-left: 40px; }
 
-.user-panel .panel-body .desc .desc-foot .handle-btn { padding: 0 35px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 18px; color: #fff; background-color: #ec6527; border-radius: 8px; }
+.user-panel .panel-body .handle-group .handle-btn { padding: 0 35px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 18px; color: #fff; background-color: #ec6527; border-radius: 8px; }
 
-.user-panel .panel-body .desc .desc-foot .handle-btn:hover { background-color: #dd5618; }
+.user-panel .panel-body .handle-group .handle-btn:hover { background-color: #dd5618; }
 
-.user-panel .panel-body .desc .desc-foot .handle-btn:active { background-color: #ce4709; }
+.user-panel .panel-body .handle-group .handle-btn:active { background-color: #ce4709; }
 
 .user-panel .panel-foot-line { width: 100%; }
 

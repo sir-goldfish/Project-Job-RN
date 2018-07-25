@@ -38,7 +38,7 @@ body { background-color: #eff1f7; }
 
 .main-container .connection-exhibition .connection-cards { position: relative; margin: -20px 0 0 -20px; }
 
-.main-container .connection-exhibition .connection-card { position: absolute; float: left; width: 285px; padding: 20px 20px 12px; margin: 20px 0 0 20px; background-color: #fff; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
+.main-container .connection-exhibition .connection-card { float: left; width: 285px; padding: 20px 20px 12px; margin: 20px 0 0 20px; background-color: #fff; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
 
 .main-container .connection-exhibition .connection-card:hover { -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); box-shadow: 0 2px 6px 0 rgba(14, 5, 10, 0.1); }
 

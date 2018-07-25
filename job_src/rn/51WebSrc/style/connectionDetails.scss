@@ -165,21 +165,23 @@ body {
             margin-left: 40px;
           }
         }
-        .handle-btn {
-          padding: 0 35px;
-          vertical-align: middle;
-          line-height: 50px;
-          text-align: center;
-          font-size: 18px;
-          color: #fff;
-          background-color: $selfActiveColor;
-          border-radius: 8px;
-          &:hover {
-            background-color: $selfActiveColor - 15%;
-          }
-          &:active {
-            background-color: $selfActiveColor - 30%;
-          }
+      }
+    }
+    .handle-group {
+      .handle-btn {
+        padding: 0 35px;
+        vertical-align: middle;
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        background-color: $selfActiveColor;
+        border-radius: 8px;
+        &:hover {
+          background-color: $selfActiveColor - 15%;
+        }
+        &:active {
+          background-color: $selfActiveColor - 30%;
         }
       }
     }

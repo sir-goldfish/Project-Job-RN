@@ -138,7 +138,7 @@
 
 .rn-head3 .head-nav-wrap .logo-wrap .logo img { display: block; }
 
-.rn-head3 .head-nav-wrap .logo-wrap h3 { display: inline-block; padding-left: 12px; margin-left: 20px; vertical-align: middle; font-size: 24px; font-weight: normal; color: #666; border-left: 1px solid #666; }
+.rn-head3 .head-nav-wrap .logo-wrap h3 { display: inline-block; padding: 6px 0 6px 10px; margin-left: 20px; vertical-align: middle; font-size: 20px; font-weight: normal; color: #666; border-left: 2px solid #999; }
 
 .rn-head3 .head-nav-wrap .nav-wrap { padding: 37px 0; }
 

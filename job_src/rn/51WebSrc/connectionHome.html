@@ -725,6 +725,7 @@
 </footer>
 <!--script-->
 <script src="script/jquery.min.js"></script>
+<script src="plugin/masonry/masonry.pkgd.min.js"></script>
 <script>
     // m-default-filter-panel相关操作
     function filterHandle($dom) {
@@ -773,7 +774,11 @@
     }
 
     filterHandle($('.m-default-filter-panel .filter-panel'));
+
     // 瀑布流
+    $('.connection-cards').masonry({
+        itemSelector: '.connection-card'
+    });
 </script>
 </body>
 </html>
