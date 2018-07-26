@@ -1133,3 +1133,37 @@
   margin-right: auto;
   background: url(../resource/img/rn_loading_circle.gif) no-repeat center;
 }
+
+/* u-member-level */
+.u-member-level {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  &.level1 {
+    background-image: url(../resource/img/rn_member_level_1.png);
+  }
+  &.level3 {
+    background-image: url(../resource/img/rn_member_level_3.png);
+  }
+  &.level4 {
+    background-image: url(../resource/img/rn_member_level_4.png);
+  }
+  &.level5 {
+    background-image: url(../resource/img/rn_member_level_5.png);
+  }
+  &.level6 {
+    background-image: url(../resource/img/rn_member_level_6.png);
+  }
+  &.level7 {
+    background-image: url(../resource/img/rn_member_level_7.png);
+  }
+  &.level9 {
+    background-image: url(../resource/img/rn_member_level_9.png);
+  }
+  &.level10 {
+    background-image: url(../resource/img/rn_member_level_10.png);
+  }
+}

@@ -24,7 +24,7 @@ body { background-color: #eff1f7; }
 
 .main-panel .product-body .desc-list dt > * { display: inline-block; vertical-align: top; }
 
-.main-panel .product-body .desc-list dt i { width: 20px; height: 20px; margin-top: -3px; background: url(../resource/img/rn_pic007_3.png) no-repeat center; background-size: 100% auto; }
+.main-panel .product-body .desc-list dt i { width: 20px; height: 20px; margin-top: -2px; background: url(../resource/img/rn_pic007_3.png) no-repeat center; background-size: 100% auto; }
 
 .main-panel .product-body .desc-list dt span { margin-left: 8px; }
 
@@ -57,6 +57,16 @@ body { background-color: #eff1f7; }
 .main-panel .product-body .product-card:hover { border-color: #ec6527; }
 
 .main-panel .product-body .product-card:hover .card-body .price .num { color: #ec6527; }
+
+.main-panel .product-body.product-table { display: table; width: 100%; padding-top: 30px; }
+
+.main-panel .product-body.product-table .cell { display: table-cell; vertical-align: top; }
+
+.main-panel .product-body.product-table .desc-list dd { display: block; padding-top: 20px; }
+
+.main-panel .product-body.product-table .desc-list dd + dd { padding-top: 30px; }
+
+.main-panel .product-body.product-table .product-card { display: inline-block; float: none; margin: 0; }
 
 .main-panel .desc-body { padding: 30px 0 50px; }
 

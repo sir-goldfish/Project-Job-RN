@@ -450,3 +450,22 @@
 /* ---元件类公用(.u-开头)--- */
 /* u-loading-circle */
 .u-loading-circle { min-width: 70px; min-height: 70px; margin-left: auto; margin-right: auto; background: url(../resource/img/rn_loading_circle.gif) no-repeat center; }
+
+/* u-member-level */
+.u-member-level { display: inline-block; width: 20px; height: 20px; background-repeat: no-repeat; background-position: center; background-size: 100% auto; }
+
+.u-member-level.level1 { background-image: url(../resource/img/rn_member_level_1.png); }
+
+.u-member-level.level3 { background-image: url(../resource/img/rn_member_level_3.png); }
+
+.u-member-level.level4 { background-image: url(../resource/img/rn_member_level_4.png); }
+
+.u-member-level.level5 { background-image: url(../resource/img/rn_member_level_5.png); }
+
+.u-member-level.level6 { background-image: url(../resource/img/rn_member_level_6.png); }
+
+.u-member-level.level7 { background-image: url(../resource/img/rn_member_level_7.png); }
+
+.u-member-level.level9 { background-image: url(../resource/img/rn_member_level_9.png); }
+
+.u-member-level.level10 { background-image: url(../resource/img/rn_member_level_10.png); }

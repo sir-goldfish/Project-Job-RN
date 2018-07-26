@@ -144,18 +144,10 @@ body {
               display: inline-block;
               vertical-align: middle;
             }
-            .member-level {
+            .u-member-level {
               width: 18px;
               height: 18px;
               margin-left: 10px;
-              background: url(../resource/img/rn_member_level_1.png) no-repeat center;
-              background-size: 100% auto;
-              &.level2 {
-                background-image: url(../resource/img/rn_member_level_2.png);
-              }
-              &.level3 {
-                background-image: url(../resource/img/rn_member_level_3.png);
-              }
             }
           }
           ul {

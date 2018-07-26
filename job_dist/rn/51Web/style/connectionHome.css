@@ -60,11 +60,7 @@ body { background-color: #eff1f7; }
 
 .main-container .connection-exhibition .connection-card .user .text h3 > * { display: inline-block; vertical-align: middle; }
 
-.main-container .connection-exhibition .connection-card .user .text h3 .member-level { width: 18px; height: 18px; margin-left: 10px; background: url(../resource/img/rn_member_level_1.png) no-repeat center; background-size: 100% auto; }
-
-.main-container .connection-exhibition .connection-card .user .text h3 .member-level.level2 { background-image: url(../resource/img/rn_member_level_2.png); }
-
-.main-container .connection-exhibition .connection-card .user .text h3 .member-level.level3 { background-image: url(../resource/img/rn_member_level_3.png); }
+.main-container .connection-exhibition .connection-card .user .text h3 .u-member-level { width: 18px; height: 18px; margin-left: 10px; }
 
 .main-container .connection-exhibition .connection-card .user .text ul li { margin-top: 5px; font-size: 12px; }
 

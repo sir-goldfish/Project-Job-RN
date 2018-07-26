@@ -23,11 +23,7 @@ body { background-color: #eff1f7; }
 
 .user-panel .panel-body .desc .desc-head h3 > * { vertical-align: middle; }
 
-.user-panel .panel-body .desc .desc-head h3 .member-level { display: inline-block; width: 24px; height: 24px; margin-left: 14px; background: url(../resource/img/rn_member_level_1.png) no-repeat center; background-size: 100% auto; }
-
-.user-panel .panel-body .desc .desc-head h3 .member-level.level2 { background-image: url(../resource/img/rn_member_level_2.png); }
-
-.user-panel .panel-body .desc .desc-head h3 .member-level.level3 { background-image: url(../resource/img/rn_member_level_3.png); }
+.user-panel .panel-body .desc .desc-head h3 .u-member-level { width: 24px; height: 24px; margin-left: 14px; }
 
 .user-panel .panel-body .desc .desc-head h5 { margin-top: 22px; font-size: 16px; font-weight: bold; }
 
