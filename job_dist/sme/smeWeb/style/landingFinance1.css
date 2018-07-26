@@ -28,11 +28,11 @@
 .head-bg-wrapper { height: 459px; background: url(../resource/img/sme_landing_bgi27.jpg) no-repeat center top; }
 
 /* sme-head4 */
-.sme-head4 .head-logo { padding-top: 25px; background-color: transparent; }
+.sme-head4 .head-logo { padding-top: 15px; padding-bottom: 15px; background-color: transparent; }
 
 .sme-head4 .head-logo .stress { color: #fff; }
 
-.sme-head4 .head-logo .right-info { line-height: 49px; }
+.sme-head4 .head-logo .right-info { line-height: 60px; }
 
 .sme-head4 .head-logo .right-info .hot-line { color: #fff; }
 

@@ -592,9 +592,9 @@
 
 .sme-head7 .head-logo .logo-link { float: left; }
 
-.sme-head7 .head-logo .logo-link img { vertical-align: middle; }
+.sme-head7 .head-logo .logo-link img { width: 300px; vertical-align: middle; }
 
-.sme-head7 .head-logo .logo-nav { float: left; padding-top: 22px; margin-left: -35px; }
+.sme-head7 .head-logo .logo-nav { float: left; padding-top: 8px; margin-left: -35px; }
 
 .sme-head7 .head-logo .logo-nav .nav-item { position: relative; float: left; margin-left: 35px; margin-top: 8px; margin-bottom: 8px; color: #333; }
 
@@ -630,6 +630,8 @@
 .sme-head8 .head-bar .bar-left { float: left; }
 
 .sme-head8 .head-bar .bar-left > * { display: inline-block; padding-top: 10px; padding-bottom: 10px; margin: 0 10px; vertical-align: middle; }
+
+.sme-head8 .head-bar .bar-left .logo-link img { width: 160px; }
 
 .sme-head8 .head-bar .bar-left .location-box { position: relative; display: inline-block; padding-top: 0; padding-bottom: 0; margin: 0; }
 
@@ -675,7 +677,7 @@
 
 .sme-head8 .head-bar .bar-left .stock-code em { color: #e00000; }
 
-.sme-head8 .head-bar .bar-right { float: right; padding: 23px 0; font-size: 0; }
+.sme-head8 .head-bar .bar-right { float: right; padding: 34px 0; font-size: 0; }
 
 .sme-head8 .head-bar .bar-right .nav-item { display: inline-block; margin-left: 15px; font-size: 12px; }
 
