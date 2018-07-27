@@ -90,22 +90,30 @@
 
 .head-section .head-content .entry-panel.user-panel .panel-foot .handle-btn:active { background-color: #ce4709; }
 
-/* head-desc-section */
-.head-desc-section { padding-top: 20px; padding-bottom: 20px; background-color: #fff; }
+/* rolling-notice-section */
+.rolling-notice-section { padding: 28px 0; background-color: #fff; }
 
-.head-desc-section ul { text-align: center; font-size: 0; }
+.rolling-notice-section .rolling-wrap .title { float: left; width: 230px; padding: 10px; margin-right: -230px; text-align: center; }
 
-.head-desc-section li { display: inline-block; width: 16%; height: 72px; padding-top: 10px; vertical-align: top; font-size: 14px; color: #999; }
+.rolling-notice-section .rolling-wrap .title span { display: inline-block; width: 178px; height: 36px; background: url(../resource/img/rn_pic010.png) no-repeat center; }
 
-.head-desc-section li h3 { font-size: 16px; font-weight: normal; color: #d89435; }
+.rolling-notice-section .rolling-wrap .content { position: relative; margin-left: 230px; }
 
-.head-desc-section li h3 .stress { padding: 0 2px; font-family: "Arial Black"; font-size: 30px; }
+.rolling-notice-section .rolling-wrap .content:before, .rolling-notice-section .rolling-wrap .content:after { content: ''; position: absolute; top: 0; bottom: 0; z-index: 2; width: 50px; }
 
-.head-desc-section li h3 .stress em { font-size: 14px; }
+.rolling-notice-section .rolling-wrap .content:before { left: 0; background: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0)); background: linear-gradient(90deg, white, rgba(255, 255, 255, 0)); }
 
-.head-desc-section li p { margin-top: 14px; }
+.rolling-notice-section .rolling-wrap .content:after { right: 0; background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white); background: linear-gradient(90deg, rgba(255, 255, 255, 0), white); }
 
-.head-desc-section li + li { border-left: 1px solid #eee; }
+.rolling-notice-section .rolling-wrap .content .notice-swiper { overflow: hidden; }
+
+.rolling-notice-section .rolling-wrap .content .notice-swiper .swiper-wrapper { -webkit-transition-timing-function: linear; transition-timing-function: linear; }
+
+.rolling-notice-section .rolling-wrap .content .notice-swiper .swiper-slide { float: left; width: auto; margin-right: 35px; }
+
+.rolling-notice-section .rolling-wrap .content .notice-swiper .swiper-slide p + p { margin-top: 24px; }
+
+.rolling-notice-section .rolling-wrap .content .notice-swiper .swiper-slide span { display: inline-block; margin-left: 10px; color: #333; }
 
 /* section-head 共 */
 .section-head { padding-top: 35px; padding-bottom: 35px; }

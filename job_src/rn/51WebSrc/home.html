@@ -278,35 +278,34 @@
         </div>
     </div>
 </section>
-<!--head-desc-section-->
-<section class="head-desc-section rn-wrapper">
+<!--rolling-notice-section-->
+<section class="rolling-notice-section rn-wrapper">
     <div class="rn-inner">
-        <ul>
-            <li>
-                <h3><span class="stress">23</span>年</h3>
-                <p>项目对接</p>
-            </li>
-            <li>
-                <h3><span class="stress">34</span>万+</h3>
-                <p>资金方</p>
-            </li>
-            <li>
-                <h3><span class="stress">260</span>万+</h3>
-                <p>项目方</p>
-            </li>
-            <li>
-                <h3><span class="stress">2<em>,</em>170</span>亿</h3>
-                <p>融资金额</p>
-            </li>
-            <li>
-                <h3><span class="stress">70<em>,</em>000</span>亿+</h3>
-                <p>总持有资金</p>
-            </li>
-            <li>
-                <h3>超<span class="stress">500</span>场</h3>
-                <p>举办活动</p>
-            </li>
-        </ul>
+        <div class="rolling-wrap f-clearfix">
+            <div class="title"><span></span></div>
+            <div class="content">
+                <div class="notice-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>2018-08-08<span>北京某幼教项目债权融资1800万元权融资1800万元</span></p>
+                            <p>2018-08-08<span>北京某幼教项目债权融资1800万元</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>2018-08-08<span>上海某幼教项目债权融资1800万元</span></p>
+                            <p>2018-08-08<span>上海某幼教项目债权融资债权融资债权融资1800万元</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>2018-08-08<span>杭州某幼教项目债权融资1800万元</span></p>
+                            <p>2018-08-08<span>杭州某幼教项目项目债权融资1800万元</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>2018-08-08<span>深圳某幼教项目债权融资1800万元</span></p>
+                            <p>2018-08-08<span>深圳某幼教项目债权融资1800万元</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!--fund-section-->
@@ -1073,6 +1072,16 @@
         picNewsSwiper.stopAutoplay();
     }, function () {
         picNewsSwiper.startAutoplay();
+    });
+
+    // rolling-notice-swiper
+    var noticeSwiper = new Swiper('.notice-swiper', {
+        initialSlide: 0,
+        simulateTouch: false,
+        slidesPerView: 'auto',
+        loop: true,
+        speed: 5000,
+        autoplay: 1
     });
 </script>
 </body>
