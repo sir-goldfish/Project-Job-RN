@@ -1,0 +1,98 @@
+body { background-color: #eff1f7; }
+
+/* main-wrap */
+.main-wrap { padding-top: 20px; padding-bottom: 30px; }
+
+.main-wrap section + section { margin-top: 20px; }
+
+.panel { padding: 0 30px; background-color: #fff; }
+
+.panel .panel-head { border-bottom: 1px solid #eff1f7; }
+
+.panel .panel-head .title { position: relative; display: inline-block; padding: 18px 0; color: #333; }
+
+.panel .panel-head .title:after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; border-bottom: 2px solid #d00; }
+
+.panel .panel-body { padding: 20px 0 40px; }
+
+.panel .panel-body table { width: 100%; color: #333; }
+
+.panel .panel-body table th, .panel .panel-body table td { padding: 20px 24px; border: 1px solid #eff1f7; }
+
+.order-panel .sum-table { display: table; width: 100%; margin-top: 10px; font-size: 16px; color: #333; }
+
+.order-panel .sum-table .cell { position: relative; display: table-cell; padding: 20px 24px; vertical-align: middle; border: 1px solid #eff1f7; border-right: none; }
+
+.order-panel .sum-table .cell.amount-cell { width: 260px; font-weight: bold; color: #fff; background-color: #ec6527; border-color: #ec6527; }
+
+.order-panel .sum-table .cell.amount-cell:after { content: ''; position: absolute; top: 50%; left: -10px; width: 0; height: 0; margin-top: -10px; border: 10px solid transparent; border-right-color: #ec6527; border-left: none; overflow: hidden; }
+
+.order-panel .sum-table .cell + .cell { border-left: none; }
+
+.order-panel .pay-tab { margin-top: 20px; color: #333; }
+
+.order-panel .pay-tab .tab-nav { font-size: 0; border-bottom: 1px solid #eff1f7; }
+
+.order-panel .pay-tab .tab-nav .nav-item { position: relative; display: inline-block; padding: 20px 24px; vertical-align: bottom; font-size: 14px; border: 1px solid transparent; border-bottom: none; cursor: pointer; }
+
+.order-panel .pay-tab .tab-nav .nav-item:hover { color: #ec6527; }
+
+.order-panel .pay-tab .tab-nav .nav-item.current { color: #ec6527; border-color: #eff1f7; }
+
+.order-panel .pay-tab .tab-nav .nav-item.current:after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; border-bottom: 1px solid #fff; }
+
+.order-panel .pay-tab .tab-content .content-item { display: none; padding: 20px 0; }
+
+.order-panel .pay-tab .tab-content .content-item.current { display: block; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-notice { padding: 10px 0; font-size: 12px; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-notice i { margin-right: 5px; color: #ec6527; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-tags { padding: 10px 0; margin: -20px 0 0 -35px; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-tags .pay-tag { position: relative; float: left; width: 160px; height: 55px; margin: 20px 0 0 35px; text-align: center; font-size: 0; background-color: #fff; border: 1px solid #ddd; overflow: hidden; cursor: pointer; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-tags .pay-tag:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-tags .pay-tag img { display: inline-block; vertical-align: middle; max-width: 100%; max-height: 100%; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-tags .pay-tag:hover { border-color: #ec6527; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-tags .pay-tag.chosen { border-color: #ec6527; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-tags .pay-tag.chosen:after { content: ''; position: absolute; bottom: 0; right: 0; width: 17px; height: 16px; background: url(../resource/img/rn_pic008.png) no-repeat center; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap { padding: 30px 0 20px; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap .handle-group .handle-btn { display: inline-block; min-width: 160px; padding: 0 24px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 18px; color: #fff; background-color: #ec6527; border-radius: 5px; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap .handle-group .handle-btn:hover { background-color: #dd5618; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap .handle-group .handle-btn:active { background-color: #ce4709; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap .handle-group span { display: inline-block; margin-left: 12px; font-size: 12px; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap .protocol { margin-top: 16px; font-size: 12px; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap .protocol input[type='checkbox'] { vertical-align: middle; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-control-wrap .protocol span { margin-left: 6px; }
+
+.order-panel .pay-tab .tab-content .content-item .table-wrap { padding: 20px 0; }
+
+.order-panel .pay-tab .tab-content .content-item .pay-table td { text-align: center; }
+
+.order-panel .pay-tab .tab-content .content-item .notice-article { padding: 10px 0; line-height: 30px; }
+
+.question-panel .question-list dd { line-height: 30px; font-size: 14px; }
+
+.question-panel .question-list dd h3 { font-size: inherit; font-weight: normal; }
+
+.question-panel .question-list dd p { padding-left: 1.5em; }
+
+.question-panel .question-list dd + dd { margin-top: 14px; }
+
+.question-panel .question-list dt { margin-top: 20px; font-weight: bold; color: #ec6527; }
+
+.question-panel .question-list dt a:hover { text-decoration: underline; }

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单支付-51资金项目</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--style-->
+    <link rel="stylesheet" href="resource/iconfont/iconfont.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/orderPay.css">
+    <!--ie9以下兼容h5新标签-->
+    <!--[if lt IE 9]>
+    <script src="script/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--共用头部-->
+<header class="rn-head3">
+    <div class="head-login-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <div class="f-pull-left">
+                <ul class="nav" style="margin-left:-10px;">
+                    <li>欢迎来到51资金项目网！</li>
+                </ul>
+            </div>
+            <div class="f-pull-right">
+                <ul class="nav" style="margin-right:-10px;">
+                    <!--登录前 user-->
+                    <li class="user"><a href="javascript:;">登录</a><a href="javascript:;">免费注册</a></li>
+                    <!--登录后 user-->
+                    <!--<li class="user">你好，<a href="javascript:;">会员名</a><a href="javascript:;">退出</a></li>-->
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-nav-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <div class="logo-wrap f-pull-left">
+                <a href="javascript:;" class="logo"><img src="resource/img/rn_logo.png"></a>
+                <h3>订单支付</h3>
+            </div>
+            <div class="nav-wrap f-pull-right">
+                <ul class="nav-list">
+                    <li class="current"><a href="javascript:;">首页</a></li>
+                    <li><a href="javascript:;">实力资金</a></li>
+                    <li><a href="javascript:;">优质项目</a></li>
+                    <li><a href="javascript:;">聚人脉</a></li>
+                    <li><a href="javascript:;">资讯</a></li>
+                    <li><a href="javascript:;">成功案例</a></li>
+                    <li><a href="javascript:;">会员服务</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-wrap rn-inner">
+    <!--order-panel-->
+    <section class="order-panel panel">
+        <div class="panel-head"><span class="title">订单信息</span></div>
+        <div class="panel-body">
+            <table class="order-table">
+                <colgroup>
+                    <col style="width:14%;">
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td class="f-text-right">订单号：</td>
+                    <td>2018000333999</td>
+                </tr>
+                <tr>
+                    <td class="f-text-right">购买服务：</td>
+                    <td>重点项目推荐</td>
+                </tr>
+                <tr>
+                    <td class="f-text-right">购买数量：</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="f-text-right">金额：</td>
+                    <td>¥6800.00</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="sum-table">
+                <div class="cell">购买服务内容：重点项目推荐 - 1条 - ￥6800.00</div>
+                <div class="amount-cell cell">订单结算：¥6800.00 元</div>
+            </div>
+            <div class="pay-tab">
+                <ul class="tab-nav">
+                    <li class="nav-item current">支付宝/微信支付</li>
+                    <li class="nav-item">网银在线支付</li>
+                    <li class="nav-item">柜台汇款</li>
+                </ul>
+                <div class="tab-content">
+                    <div class="content-item current">
+                        <ul class="pay-tags f-clearfix">
+                            <li class="pay-tag chosen"><img src="resource/img/rn_pic009_2.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_1.png"></li>
+                        </ul>
+                        <div class="pay-control-wrap">
+                            <div class="handle-group">
+                                <a href="javascript:;" class="handle-btn">下一步</a>
+                            </div>
+                            <div class="protocol">
+                                <input type="checkbox"><span>已阅读并同意<a href="javascript:;">《融诺金融在线服务协议》</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div class="pay-notice">
+                            <i class="iconfont">&#xe607;</i>请选择支付银行：请确保您的银行卡已开通网银支付功能。
+                        </div>
+                        <ul class="pay-tags f-clearfix">
+                            <li class="pay-tag chosen"><img src="resource/img/rn_pic009_2.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_1.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_2.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_3.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_1.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_2.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_3.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_1.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_2.png"></li>
+                            <li class="pay-tag"><img src="resource/img/rn_pic009_3.png"></li>
+                        </ul>
+                        <div class="pay-control-wrap">
+                            <div class="handle-group">
+                                <a href="javascript:;" class="handle-btn">下一步</a>
+                                <span>订单完成后请点击银行支付页面“返回按钮”确保顺利完成订单确认！</span>
+                            </div>
+                            <div class="protocol">
+                                <input type="checkbox"><span>已阅读并同意<a href="javascript:;">《融诺金融在线服务协议》</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div class="pay-notice">
+                            <i class="iconfont">&#xe607;</i>友情提示：银行转账一般1-2个工作日到账，邮局汇款一般1-5个工作日到账。
+                        </div>
+                        <div class="table-wrap">
+                            <table class="pay-table">
+                                <colgroup></colgroup>
+                                <thead>
+                                <tr>
+                                    <td>银行名称</td>
+                                    <td>汇款账号</td>
+                                    <td>开户行</td>
+                                    <td>开户名</td>
+                                    <td>短信发送账号</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>招商银行</td>
+                                    <td>6660006606066006660</td>
+                                    <td>招商银行杭州分行城西支行招商</td>
+                                    <td>青岛融诺网信息技术有限公司</td>
+                                    <td><a href="javascript:;">发短信</a></td>
+                                </tr>
+                                <tr>
+                                    <td>招商银行</td>
+                                    <td>666000660606600</td>
+                                    <td>招商银行杭州分行城西支行</td>
+                                    <td>青岛融诺网信息技术有限公司术有限公司</td>
+                                    <td><a href="javascript:;">发短信</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="notice-article">
+                            请您汇款后将汇款信息（ 汇款方式、日期、金额、购买的服务名称、汇款人真实姓名、会员ID、昵称 ）通过以下任一方式告之融诺网。<br>
+                            （1）周一至周五致电4006616855<br>
+                            （2）将汇款信息发送至kefu@rongnuo.com<br>
+                            如果收到您的款项，我们会电话联系您，同时我们将为您开通所购买的对应服务。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--question-panel-->
+    <section class="question-panel panel">
+        <div class="panel-head"><span class="title">付款遇到问题</span></div>
+        <div class="panel-body">
+            <dl class="question-list">
+                <dd>
+                    <h3>1、为什么我不能在银行页面进行付款？</h3>
+                    <p>答：请确认您的银行卡是否开启网上支付功能，如没有开通网上支付功能，请到相应银行的网上银行</p>
+                </dd>
+                <dd>
+                    <h3>2、为什么我不能在银行页面进行付款？</h3>
+                    <p>答：请确认您的银行卡是否开启网上支付功能，如没有开通网上支付功能，请到相应银行的网上银行如没有开通网上支付功能，请到相应银行的网上银行如没有开通网上支付功能，请到相应银行的网上银行</p>
+                </dd>
+                <dd>
+                    <h3>3、为什么我不能在银行页面进行付款为什么我不能在银行页面进行付款？</h3>
+                    <p>答：请确认您的银行卡是否开启网上支付功能，如没有开通网上支付功能，请到相应银行的网上银行</p>
+                </dd>
+                <dd>
+                    <h3>4、为什么我不能在银行页面进行付款？</h3>
+                    <p>答：请确认您的银行卡是否开启网上支付功能，如没有开通网上支付功能，请到相应银行的网上银行如没有开通网上支付功能，请到相应银行的网上银行如没有开通网上支付功能，请到相应银行的网上银行</p>
+                </dd>
+                <dd>
+                    <h3>5、为什么我不能在银行页面进行付款为什么我不能在银行页面进行付款？</h3>
+                    <p>答：请确认您的银行卡是否开启网上支付功能，如没有开通网上支付功能，请到相应银行的网上银行</p>
+                </dd>
+                <dt><a href="javascript:;">更多支付相关帮助&gt;&gt;</a></dt>
+            </dl>
+        </div>
+    </section>
+</div>
+<!--共用底部-->
+<footer class="rn-foot">
+    <div class="foot-link-wrap rn-wrapper">
+        <div class="rn-inner f-clearfix">
+            <dl class="link-group f-pull-left">
+                <dt>新手指导</dt>
+                <dd><a href="javascript:;">注册登录</a></dd>
+                <dd><a href="javascript:;">完善资料</a></dd>
+                <dd><a href="javascript:;">信息发布</a></dd>
+                <dd><a href="javascript:;">常见问题</a></dd>
+            </dl>
+            <dl class="link-group f-pull-left">
+                <dt>融诺金融服务</dt>
+                <dd><a href="javascript:;">融易通</a></dd>
+                <dd><a href="javascript:;">投易通</a></dd>
+                <dd><a href="javascript:;">信息投递</a></dd>
+                <dd><a href="javascript:;">信息刷新</a></dd>
+            </dl>
+            <dl class="link-group f-pull-left">
+                <dt>关于融诺金融</dt>
+                <dd><a href="javascript:;">融诺金融介绍</a></dd>
+                <dd><a href="javascript:;">联系我们</a></dd>
+                <dd><a href="javascript:;">网站公告</a></dd>
+                <dd><a href="javascript:;">网站地图</a></dd>
+            </dl>
+            <dl class="qrcode f-pull-left">
+                <dt>微信关注</dt>
+                <dd>
+                    <figure><img src="resource/img/rn_wx_qrcode.jpg"></figure>
+                </dd>
+            </dl>
+            <dl class="contact f-pull-right">
+                <dt>融诺网服务热线</dt>
+                <dd class="phone">400-6616-855</dd>
+                <dd class="time">（工作日 8:00-22:00 周六 9:00-18:00）</dd>
+                <dd class="mail">kefu@rongnuo.com</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-friendly-wrap rn-wrapper">
+        <div class="rn-inner">
+            <dl>
+                <dt>友情链接</dt>
+                <dd>
+                    <span><a href="javascript:;">友链</a></span><span><a href="javascript:;">友链</a></span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-copy rn-wrapper">
+        <div class="rn-inner">
+            <p>Copyright 2013-2017 深圳商集企业服务有限公司粤ICP备15106072号-3 粤公网安备 4403050号</p>
+        </div>
+    </div>
+</footer>
+<!--script-->
+<script src="script/jquery.min.js"></script>
+<script src="script/switch-tab.js"></script>
+<script>
+    // pay-tab
+    switchTab($('.pay-tab'), 'click');
+</script>
+</body>
+</html>
