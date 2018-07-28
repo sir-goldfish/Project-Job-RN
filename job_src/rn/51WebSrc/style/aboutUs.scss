@@ -148,12 +148,19 @@ body {
             position: relative;
             padding-left: 28px;
             &:before {
-              content: '·';
+              content: '';
               position: absolute;
-              top: 0;
-              left: 8px;
-              font-size: 28px;
-              font-weight: bold;
+              top: 7px;
+              left: 10px;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background-color: #666;
+            }
+            &:hover {
+              &:before {
+                background-color: $selfActiveColor;
+              }
             }
           }
         }
