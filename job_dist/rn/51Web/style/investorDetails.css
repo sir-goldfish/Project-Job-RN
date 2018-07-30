@@ -1,0 +1,107 @@
+body { background-color: #eff1f7; }
+
+.container-wrap { padding-bottom: 40px; }
+
+.container-wrap .panel { padding: 0 30px; color: #333; background-color: #fff; }
+
+.container-wrap .panel .panel-head { border-bottom: 1px solid #ddd; }
+
+.container-wrap .panel .panel-head .title { position: relative; display: inline-block; padding: 20px 0; font-size: 16px; color: #333; }
+
+.container-wrap .panel .panel-head .title:after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; border-bottom: 2px solid #d00; }
+
+.container-wrap .panel .panel-body { padding: 20px 0; }
+
+.container-wrap .panel .panel-body article { line-height: 2em; }
+
+.container-wrap .panel .panel-body article img { display: block; margin: 10px 0; max-width: 100%; }
+
+.container-wrap .panel .panel-body .empty-content { padding: 20px 0; text-align: center; font-size: 14px; color: #b5b5b5; }
+
+/* main-container */
+.main-container { float: left; width: 920px; }
+
+.main-container > section + section { margin-top: 20px; }
+
+.main-container .investor-panel .panel-body figure { float: left; width: 166px; height: 120px; text-align: center; font-size: 0; border: 1px solid #eff1f7; overflow: hidden; }
+
+.main-container .investor-panel .panel-body figure:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.main-container .investor-panel .panel-body figure img { display: inline-block; max-width: 100%; max-height: 100%; vertical-align: middle; }
+
+.main-container .investor-panel .panel-body .handle-group { float: right; width: 160px; padding-top: 34px; }
+
+.main-container .investor-panel .panel-body .handle-group .handle-btn { display: inline-block; width: 160px; vertical-align: middle; line-height: 50px; text-align: center; font-size: 16px; color: #fff; background-color: #ec6527; border-radius: 5px; }
+
+.main-container .investor-panel .panel-body .handle-group .handle-btn:hover { background-color: #dd5618; }
+
+.main-container .investor-panel .panel-body .handle-group .handle-btn:active { background-color: #ce4709; }
+
+.main-container .investor-panel .panel-body .content { margin-left: 186px; margin-right: 180px; }
+
+.main-container .investor-panel .panel-body .content .info dt { margin-bottom: 28px; font-size: 24px; font-weight: bold; }
+
+.main-container .investor-panel .panel-body .content .info dd { margin-top: 24px; color: #666; }
+
+.main-container .experience-panel .experience-table { width: 100%; }
+
+.main-container .experience-panel .experience-table th, .main-container .experience-panel .experience-table td { padding: 18px 12px; text-align: center; }
+
+.main-container .experience-panel .experience-table thead td { background-color: #eff1f7; }
+
+.main-container .experience-panel .experience-table tbody tr:hover td { background-color: #f5f7fd; }
+
+.main-container .experience-panel .pagination-wrap { padding: 10px 0; }
+
+.main-container .news-panel .news-list li .time { float: right; text-align: right; color: #666; }
+
+.main-container .news-panel .news-list li .text { margin-right: 150px; }
+
+.main-container .news-panel .news-list li .text a { max-width: 100%; }
+
+.main-container .news-panel .news-list li + li { margin-top: 24px; }
+
+/* aside-container */
+.aside-container { float: right; width: 260px; }
+
+.aside-container .panel { padding-left: 20px; padding-right: 20px; }
+
+.aside-container > aside + aside { margin-top: 20px; }
+
+.aside-container .investor-panel .investor-card { padding: 10px; border: 1px solid #ddd; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-container .investor-panel .investor-card .avatar { float: left; width: 90px; height: 66px; text-align: center; font-size: 0; border: 1px solid #ddd; overflow: hidden; }
+
+.aside-container .investor-panel .investor-card .avatar:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.aside-container .investor-panel .investor-card .avatar img { display: inline-block; max-width: 100%; max-height: 100%; vertical-align: middle; }
+
+.aside-container .investor-panel .investor-card .avatar:hover { border-color: #ec6527; }
+
+.aside-container .investor-panel .investor-card dl { padding-top: 12px; margin-left: 110px; }
+
+.aside-container .investor-panel .investor-card dl dt a { max-width: 100%; }
+
+.aside-container .investor-panel .investor-card dl dd { width: 100%; margin-top: 8px; }
+
+.aside-container .investor-panel .investor-card:hover { -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); box-shadow: 0 2px 10px 0 rgba(153, 153, 153, 0.35); }
+
+.aside-container .investor-panel .investor-card + .investor-card { margin-top: 20px; }
+
+.aside-container .org-panel .org-card { border: 1px solid #ddd; -webkit-transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: box-shadow .3s ease-out, -webkit-transform .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out; transition: transform .3s ease-out, box-shadow .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-container .org-panel .org-card .pic { width: 100%; height: 110px; text-align: center; font-size: 0; overflow: hidden; }
+
+.aside-container .org-panel .org-card .pic:before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; font-size: 0; overflow: hidden; }
+
+.aside-container .org-panel .org-card .pic img { display: inline-block; max-width: 100%; max-height: 100%; vertical-align: middle; -webkit-transition: -webkit-transform .3s ease-out; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+
+.aside-container .org-panel .org-card .pic:hover img { -webkit-transform: scale(1.09); -ms-transform: scale(1.09); transform: scale(1.09); }
+
+.aside-container .org-panel .org-card h3 { padding: 10px 16px; font-size: 14px; font-weight: normal; background-color: #eff1f7; }
+
+.aside-container .org-panel .org-card h3 a { vertical-align: middle; max-width: 100%; }
+
+.aside-container .org-panel .org-card:hover { -webkit-transform: translateY(-6px); -ms-transform: translateY(-6px); transform: translateY(-6px); box-shadow: 0 2px 10px 0 rgba(153, 153, 153, 0.35); }
+
+.aside-container .org-panel .org-card + .org-card { margin-top: 20px; }

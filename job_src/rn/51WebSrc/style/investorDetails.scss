@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import "publicVariable";
+
+$selfActiveColor: $globeColorStressDeep;
+
+body {
+  background-color: #eff1f7;
+}
+
+.container-wrap {
+  padding-bottom: 40px;
+  .panel {
+    padding: 0 30px;
+    color: #333;
+    background-color: #fff;
+    .panel-head {
+      border-bottom: 1px solid #ddd;
+      .title {
+        position: relative;
+        display: inline-block;
+        padding: 20px 0;
+        font-size: 16px;
+        color: #333;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          border-bottom: 2px solid #d00;
+        }
+      }
+    }
+    .panel-body {
+      padding: 20px 0;
+      article {
+        line-height: 2em;
+        img {
+          display: block;
+          margin: 10px 0;
+          max-width: 100%;
+        }
+      }
+      .empty-content {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #b5b5b5;
+      }
+    }
+  }
+}
+
+/* main-container */
+.main-container {
+  float: left;
+  width: 920px;
+  & > section + section {
+    margin-top: 20px;
+  }
+  .investor-panel {
+    .panel-body {
+      $selfFigureWidth: 166px;
+      $selfHandleGroupWidth: 160px;
+      figure {
+        float: left;
+        width: $selfFigureWidth;
+        height: 120px;
+        text-align: center;
+        font-size: 0;
+        border: 1px solid #eff1f7;
+        overflow: hidden;
+        &:before {
+          @include globalVerticalMiddleAssist;
+        }
+        img {
+          display: inline-block;
+          max-width: 100%;
+          max-height: 100%;
+          vertical-align: middle;
+        }
+      }
+      .handle-group {
+        float: right;
+        width: $selfHandleGroupWidth;
+        padding-top: 34px;
+        .handle-btn {
+          display: inline-block;
+          width: $selfHandleGroupWidth;
+          vertical-align: middle;
+          line-height: 50px;
+          text-align: center;
+          font-size: 16px;
+          color: #fff;
+          background-color: $selfActiveColor;
+          border-radius: 5px;
+          &:hover {
+            background-color: $selfActiveColor - 15%;
+          }
+          &:active {
+            background-color: $selfActiveColor - 30%;
+          }
+        }
+      }
+      .content {
+        margin-left: $selfFigureWidth + 20px;
+        margin-right: $selfHandleGroupWidth + 20px;
+        .info {
+          dt {
+            margin-bottom: 28px;
+            font-size: 24px;
+            font-weight: bold;
+          }
+          dd {
+            margin-top: 24px;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+  .experience-panel {
+    .experience-table {
+      width: 100%;
+      th, td {
+        padding: 18px 12px;
+        text-align: center;
+      }
+      thead {
+        td {
+          background-color: #eff1f7;
+        }
+      }
+      tbody {
+        tr {
+          &:hover {
+            td {
+              background-color: #eff1f7 + 6%;
+            }
+          }
+        }
+      }
+    }
+    .pagination-wrap {
+      padding: 10px 0;
+    }
+  }
+  .news-panel {
+    .news-list {
+      li {
+        $selfWidth: 144px;
+        .time {
+          float: right;
+          text-align: right;
+          color: #666;
+        }
+        .text {
+          margin-right: $selfWidth + 6px;
+          a {
+            max-width: 100%;
+          }
+        }
+      }
+      li + li {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+/* aside-container */
+.aside-container {
+  float: right;
+  width: 260px;
+  .panel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  & > aside + aside {
+    margin-top: 20px;
+  }
+  .investor-panel {
+    .investor-card {
+      $selfWidth: 90px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      transition: transform .3s ease-out, box-shadow .3s ease-out;
+      .avatar {
+        float: left;
+        width: $selfWidth;
+        height: 66px;
+        text-align: center;
+        font-size: 0;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        &:before {
+          @include globalVerticalMiddleAssist;
+        }
+        img {
+          display: inline-block;
+          max-width: 100%;
+          max-height: 100%;
+          vertical-align: middle;
+        }
+        &:hover {
+          border-color: $selfActiveColor;
+        }
+      }
+      dl {
+        padding-top: 12px;
+        margin-left: $selfWidth + 20px;
+        dt {
+          a {
+            max-width: 100%;
+          }
+        }
+        dd {
+          width: 100%;
+          margin-top: 8px;
+        }
+      }
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 2px 10px 0 rgba(153, 153, 153, 0.35);
+      }
+    }
+    .investor-card + .investor-card {
+      margin-top: 20px;
+    }
+  }
+  .org-panel {
+    .org-card {
+      border: 1px solid #ddd;
+      transition: transform .3s ease-out, box-shadow .3s ease-out;
+      .pic {
+        width: 100%;
+        height: 110px;
+        text-align: center;
+        font-size: 0;
+        overflow: hidden;
+        &:before {
+          @include globalVerticalMiddleAssist;
+        }
+        img {
+          display: inline-block;
+          max-width: 100%;
+          max-height: 100%;
+          vertical-align: middle;
+          transition: transform .3s ease-out;
+        }
+        &:hover {
+          img {
+            transform: scale(1.09);
+          }
+        }
+      }
+      h3 {
+        padding: 10px 16px;
+        font-size: 14px;
+        font-weight: normal;
+        background-color: #eff1f7;
+        a {
+          vertical-align: middle;
+          max-width: 100%;
+        }
+      }
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 2px 10px 0 rgba(153, 153, 153, 0.35);
+      }
+    }
+    .org-card + .org-card {
+      margin-top: 20px;
+    }
+  }
+}
