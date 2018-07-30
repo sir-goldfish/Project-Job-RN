@@ -105,7 +105,7 @@ body { background-color: #eff1f7; }
 
 .info-panel .info-bar { width: 100%; padding: 20px; font-size: 0; background-color: #fff; border: 1px solid transparent; }
 
-.info-panel .info-bar .desc-cell { display: inline-block; width: 1008px; vertical-align: middle; font-size: 14px; }
+.info-panel .info-bar .desc-cell { display: inline-block; width: 1034px; vertical-align: middle; font-size: 14px; }
 
 .info-panel .info-bar .desc-cell .desc-head { font-size: 0; }
 
@@ -113,7 +113,7 @@ body { background-color: #eff1f7; }
 
 .info-panel .info-bar .desc-cell .desc-head > span.title { max-width: 500px; font-size: 16px; }
 
-.info-panel .info-bar .desc-cell .desc-head > span + span { margin-left: 30px; }
+.info-panel .info-bar .desc-cell .desc-head > span + span { margin-left: 15px; }
 
 .info-panel .info-bar .desc-cell .desc-head > span a { max-width: 100%; vertical-align: middle; }
 
@@ -133,7 +133,7 @@ body { background-color: #eff1f7; }
 
 .info-panel .info-bar .desc-cell .desc-foot > span i { margin-right: 5px; }
 
-.info-panel .info-bar .handle-cell { display: inline-block; width: 150px; vertical-align: middle; text-align: right; font-size: 14px; }
+.info-panel .info-bar .handle-cell { display: inline-block; width: 124px; vertical-align: middle; text-align: right; font-size: 14px; }
 
 .info-panel .info-bar .handle-cell .handle-btn { display: inline-block; min-width: 120px; height: 40px; padding: 0 24px; vertical-align: middle; line-height: 40px; text-align: center; color: #fff; background-color: #ec6527; border-radius: 5px; }
 

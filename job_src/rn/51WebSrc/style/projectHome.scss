@@ -120,7 +120,7 @@ body {
       border: 1px solid transparent;
       .desc-cell {
         display: inline-block;
-        width: 920px - 150px - 20px - 20px - 2px;
+        width: 920px - 124px - 20px - 20px - 2px;
         vertical-align: middle;
         font-size: 14px;
         .desc-head {
@@ -136,7 +136,7 @@ body {
               font-size: 16px;
             }
             & + span {
-              margin-left: 30px;
+              margin-left: 15px;
             }
             a {
               max-width: 100%;
@@ -178,7 +178,7 @@ body {
       }
       .handle-cell {
         display: inline-block;
-        width: 150px;
+        width: 124px;
         vertical-align: middle;
         text-align: right;
         font-size: 14px;
